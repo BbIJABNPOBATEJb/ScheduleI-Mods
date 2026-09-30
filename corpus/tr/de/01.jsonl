@@ -1,0 +1,200 @@
+{"id": 200, "t": "Befehl/Anwendungsbeispiel"}
+{"id": 201, "t": "Gemeinde-\nzentrum"}
+{"id": 202, "t": "Community-Abstimmung"}
+{"id": 203, "t": "Abgeschlossen"}
+{"id": 204, "t": "Deal abschließen"}
+{"id": 205, "t": "Filter konfigurieren"}
+{"id": 206, "t": "Bestätigen"}
+{"id": 207, "t": "BESTÄTIGEN"}
+{"id": 208, "t": "Bestätigen (${0} sauberes Bargeld)"}
+{"id": 209, "t": "Bestätigen (${0} online)"}
+{"id": 210, "t": "Bestätigen (${0})"}
+{"id": 211, "t": "Aussehen bestätigen?"}
+{"id": 212, "t": "Konsole"}
+{"id": 213, "t": "KONSOLE >"}
+{"id": 214, "t": "Konsolenbefehle"}
+{"id": 215, "t": "Baustelle"}
+{"id": 216, "t": "Kontakte"}
+{"id": 217, "t": "Inhalt"}
+{"id": 218, "t": "Weiter"}
+{"id": 219, "t": "WEITER"}
+{"id": 220, "t": "Strg"}
+{"id": 221, "t": "Steuerung"}
+{"id": 222, "t": "KOCHEN"}
+{"id": 223, "t": "Filter kopieren"}
+{"id": 224, "t": "RICHTIG!"}
+{"id": 225, "t": "Gegenangebot"}
+{"id": 226, "t": "Neuen Mix erstellen"}
+{"id": 227, "t": "Erstellt"}
+{"id": 228, "t": "Erstellt von"}
+{"id": 229, "t": "Credits"}
+{"id": 230, "t": "Ducken"}
+{"id": 231, "t": "Cruiser\n${0}"}
+{"id": 232, "t": "Wird gefesselt..."}
+{"id": 233, "t": "AUSGANGSSPERRE AKTIV\n{0}PM - {1}AM"}
+{"id": 234, "t": "AUSGANGSSPERRE HEUTE NACHT\n{0}PM - {1}AM"}
+{"id": 235, "t": "Aktuelle Schulden"}
+{"id": 236, "t": "Aktuelle Uhrzeit"}
+{"id": 237, "t": "Aktuelle Summe"}
+{"id": 238, "t": "Cursortext"}
+{"id": 239, "t": "Kunde"}
+{"id": 240, "t": "Kundenname"}
+{"id": 241, "t": "Kunde erhält"}
+{"id": 242, "t": "Aussehen anpassen"}
+{"id": 243, "t": "Anteil"}
+{"id": 244, "t": "Steuerkreuz unten"}
+{"id": 245, "t": "Steuerkreuz links"}
+{"id": 246, "t": "Steuerkreuz rechts"}
+{"id": 247, "t": "Steuerkreuz oben"}
+{"id": 248, "t": "Tageslohn:"}
+{"id": 249, "t": "Dan's\nHardware"}
+{"id": 250, "t": "DAN'S  HARDWARE"}
+{"id": 251, "t": "Deal abgeschlossen für  Jimmy Bimbo"}
+{"id": 252, "t": "DEALER"}
+{"id": 253, "t": "Dealer"}
+{"id": 254, "t": "Dealer-Einnahmen"}
+{"id": 255, "t": "Dealerverwaltung"}
+{"id": 256, "t": "Dealer"}
+{"id": 257, "t": "Debbie Cannell"}
+{"id": 258, "t": "Ablehnen"}
+{"id": 259, "t": "Dekoration"}
+{"id": 260, "t": "Verringern"}
+{"id": 261, "t": "Besiegt"}
+{"id": 262, "t": "Löschen"}
+{"id": 263, "t": "Lieferungen"}
+{"id": 264, "t": "Liefergebühr"}
+{"id": 265, "t": "Lieferzeit"}
+{"id": 266, "t": "EINZAHLEN"}
+{"id": 267, "t": "Alle abwählen"}
+{"id": 268, "t": "Ziel"}
+{"id": 269, "t": "Dialoge"}
+{"id": 270, "t": "Verschiedene Objekttypen können nicht gemeinsam bearbeitet werden"}
+{"id": 271, "t": "Wegwerfen"}
+{"id": 272, "t": "Verwerfen"}
+{"id": 273, "t": "Absteigen"}
+{"id": 274, "t": "Anzeige"}
+{"id": 275, "t": "Anzeigemodus"}
+{"id": 276, "t": "Docks-\nLagerhaus"}
+{"id": 277, "t": "FERTIG"}
+{"id": 278, "t": "Doppelter Dutt"}
+{"id": 279, "t": "Doug"}
+{"id": 280, "t": "Doug<color=#A0A0A0FF> (Downtown)</color>"}
+{"id": 281, "t": "Ziehe Verpackung + Produkt in die Slots"}
+{"id": 282, "t": "Fahrer als Mitarbeiter, die Gegenstände zwischen deinen Immobilien, Geschäften und Dealern transportieren."}
+{"id": 283, "t": "EINWERFEN"}
+{"id": 284, "t": "Produkt einwerfen"}
+{"id": 285, "t": "TROCKNEN"}
+{"id": 286, "t": "Dynamische Polizeipräsenz, Bundesagenten, Gesetzlosen-Status und härtere Konsequenzen, wenn du erwischt wirst."}
+{"id": 287, "t": "Verdiene ${0} ({1}/${2})"}
+{"id": 288, "t": "Filter bearbeiten"}
+{"id": 289, "t": "Text bearbeiten"}
+{"id": 290, "t": "{0} Objekte bearbeiten"}
+{"id": 291, "t": "Effekte"}
+{"id": 292, "t": "Egg Run"}
+{"id": 293, "t": "EGG RUN"}
+{"id": 294, "t": "Mitarbeiter \ndes Monats"}
+{"id": 295, "t": "Mitarbeiter"}
+{"id": 296, "t": "ENDSTATION"}
+{"id": 297, "t": "Vollstrecker"}
+{"id": 298, "t": "Vollstrecker I"}
+{"id": 299, "t": "Vollstrecker II"}
+{"id": 300, "t": "Vollstrecker III"}
+{"id": 301, "t": "Vollstrecker IV"}
+{"id": 302, "t": "Vollstrecker V"}
+{"id": 303, "t": "English"}
+{"id": 304, "t": "ENTER"}
+{"id": 305, "t": "Enter"}
+{"id": 306, "t": "Name eingeben..."}
+{"id": 307, "t": "Preis eingeben..."}
+{"id": 308, "t": "einsteigen"}
+{"id": 309, "t": "Objektname"}
+{"id": 310, "t": "Eintrag"}
+{"id": 311, "t": "Eintragsbezeichnung"}
+{"id": 312, "t": "Eintragstitel"}
+{"id": 313, "t": "Enum"}
+{"id": 314, "t": "Ausrüsten / Ablegen"}
+{"id": 315, "t": "Ausrüstung"}
+{"id": 316, "t": "Fehler"}
+{"id": 317, "t": "Esc"}
+{"id": 318, "t": "GEGR.  {0}"}
+{"id": 319, "t": "Verlassen"}
+{"id": 320, "t": "VERLASSEN"}
+{"id": 321, "t": "Aussteigen"}
+{"id": 322, "t": "Exportieren"}
+{"id": 323, "t": "Player-prev.log exportieren"}
+{"id": 324, "t": "Player.log exportieren"}
+{"id": 325, "t": "Export erfolgreich!"}
+{"id": 326, "t": "Extra langlebige Erde"}
+{"id": 327, "t": "Augapfelfarbe"}
+{"id": 328, "t": "Augenbrauen-Ruhewinkel"}
+{"id": 329, "t": "Augenbrauen-Ruhehöhe"}
+{"id": 330, "t": "Augenbrauengröße"}
+{"id": 331, "t": "Augenbrauendicke"}
+{"id": 332, "t": "Augenbrauen"}
+{"id": 333, "t": "F.P"}
+{"id": 334, "t": "Gesicht"}
+{"id": 335, "t": "Intensität der Gesichtsdetails"}
+{"id": 336, "t": "Gesichtsdetails"}
+{"id": 337, "t": "Gesichtsbehaarung"}
+{"id": 338, "t": "Fehlgeschlagen"}
+{"id": 339, "t": "Fairer Preis:"}
+{"id": 340, "t": "Fairer Preis: ${0}"}
+{"id": 341, "t": "Schicker handgewebter Stofftopf, der die Wurzeln belüftet. Erhöht die Wachstumsgeschwindigkeit um {0}%, aber auch den Feuchtigkeitsverlust um {1}%"}
+{"id": 342, "t": "Favorit"}
+{"id": 343, "t": "Lieblingsdroge"}
+{"id": 344, "t": "Lieblingseffekte"}
+{"id": 345, "t": "Lieblingsprodukt"}
+{"id": 346, "t": "Favoriten"}
+{"id": 347, "t": "Weiblich"}
+{"id": 348, "t": "Problem mit Dateiberechtigungen"}
+{"id": 349, "t": "Filter"}
+{"id": 350, "t": "Filter legen fest, welche Gegenstände Mitarbeiter\\n in diesen Slot legen dürfen und welche nicht."}
+{"id": 351, "t": "Abschließen"}
+{"id": 352, "t": "Graffiti abschließen?"}
+{"id": 353, "t": "Feuerwache"}
+{"id": 354, "t": "Vorname\nNachname"}
+{"id": 355, "t": "Taschenlampe / Scheinwerfer"}
+{"id": 356, "t": "Foldout"}
+{"id": 357, "t": "Schritte"}
+{"id": 358, "t": "Aufgeben und ${0} kassieren"}
+{"id": 359, "t": "Vorwärts"}
+{"id": 360, "t": "FOV"}
+{"id": 361, "t": "Sommersprossen"}
+{"id": 362, "t": "Freitag"}
+{"id": 363, "t": "Freundlich"}
+{"id": 364, "t": "Bob mit Pony"}
+{"id": 365, "t": "Von"}
+{"id": 366, "t": "Möbel"}
+{"id": 367, "t": "Spiel"}
+{"id": 368, "t": "SPIEL VORBEI!"}
+{"id": 369, "t": "Spiel gespeichert!"}
+{"id": 370, "t": "Spieleinstellungen können nur vom Host geändert werden"}
+{"id": 371, "t": "Spielstatus"}
+{"id": 372, "t": "Gamepad"}
+{"id": 373, "t": "Müll-Benzin"}
+{"id": 374, "t": "Tankstelle"}
+{"id": 375, "t": "Gas-Mart"}
+{"id": 376, "t": "Geschlecht"}
+{"id": 377, "t": "Allgemeiner (legaler) Bedarf"}
+{"id": 378, "t": "Allgemeiner illegaler Bedarf"}
+{"id": 379, "t": "Komm so nah wie möglich an {0} heran, ohne dich zu überkaufen."}
+{"id": 380, "t": "Gibt dem Spieler den angegebenen Gegenstand. Optional kann eine Anzahl angegeben werden."}
+{"id": 381, "t": "Spitzbart"}
+{"id": 382, "t": "Lichtstrahlen"}
+{"id": 383, "t": "Goldenes Skateboard\n${0}"}
+{"id": 384, "t": "Greifen"}
+{"id": 385, "t": "Alle nehmen"}
+{"id": 386, "t": "Graffiti von <color=#5CCF4A>Cody To</color>"}
+{"id": 387, "t": "Grafik"}
+{"id": 388, "t": "Haare"}
+{"id": 389, "t": "Haarfarbe"}
+{"id": 390, "t": "Frisur"}
+{"id": 391, "t": "HAM\nLegal"}
+{"id": 392, "t": "Handbremse"}
+{"id": 393, "t": "Verpackern kann Folgendes zugewiesen werden:\n- Verpackungsstationen\n- Ziegelpressen"}
+{"id": 394, "t": "Verpacker versuchen, Gegenstände von jedem \n„Quell“-Objekt zum zugehörigen „Ziel“ zu bringen."}
+{"id": 395, "t": "Handy Hank's\nHardware"}
+{"id": 396, "t": "Baumarkt"}
+{"id": 397, "t": "Ernten"}
+{"id": 398, "t": "Überschrift"}
+{"id": 399, "t": "Scheinwerfer"}

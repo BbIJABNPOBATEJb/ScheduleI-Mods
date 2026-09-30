@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mods", "mods", "{4CD1B84F-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polyglot", "mods\Polyglot\Polyglot.csproj", "{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorldRates", "mods\WorldRates\WorldRates.csproj", "{D9A74326-D949-4DF5-8F97-869A3483184D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Il2Cpp|Any CPU = Il2Cpp|Any CPU
@@ -15,6 +17,14 @@ Global
 		MonoDev|Any CPU = MonoDev|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Il2Cpp|Any CPU.ActiveCfg = Il2Cpp|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Il2Cpp|Any CPU.Build.0 = Il2Cpp|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Il2CppDev|Any CPU.ActiveCfg = Il2CppDev|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.Il2CppDev|Any CPU.Build.0 = Il2CppDev|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.MonoDev|Any CPU.ActiveCfg = MonoDev|Any CPU
+		{D9A74326-D949-4DF5-8F97-869A3483184D}.MonoDev|Any CPU.Build.0 = MonoDev|Any CPU
 		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2Cpp|Any CPU.ActiveCfg = Il2Cpp|Any CPU
 		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2Cpp|Any CPU.Build.0 = Il2Cpp|Any CPU
 		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
@@ -25,6 +35,7 @@ Global
 		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.MonoDev|Any CPU.Build.0 = MonoDev|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{D9A74326-D949-4DF5-8F97-869A3483184D} = {4CD1B84F-67FA-40E1-AECC-4FCE2880CEA0}
 		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7} = {4CD1B84F-67FA-40E1-AECC-4FCE2880CEA0}
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution

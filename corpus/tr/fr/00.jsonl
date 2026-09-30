@@ -1,0 +1,200 @@
+{"id": 0, "t": "(Maintenir) Consommer"}
+{"id": 1, "t": "(Maintenir) Vider le contenu"}
+{"id": 2, "t": "(Maintenir) Sauter"}
+{"id": 3, "t": "(Maintenir) Monter"}
+{"id": 4, "t": "(Maintenir) Recommencer"}
+{"id": 5, "t": "(Maintenir) Fumer"}
+{"id": 6, "t": "(Maintenir) Sniffer"}
+{"id": 7, "t": "+ Attribut {0}"}
+{"id": 8, "t": "+ Et plus      <color=#FFC73D>Bombe de peinture</color> dispo au Gas-Mart"}
+{"id": 9, "t": "+ {0} autres"}
+{"id": 10, "t": "+${0} de bonus"}
+{"id": 11, "t": "- Chef d'accusation {0}"}
+{"id": 12, "t": "- Sanction"}
+{"id": 13, "t": "- Effet"}
+{"id": 14, "t": "- Effet\n- Effet\n- Effet"}
+{"id": 15, "t": "- Effet\n- Effet\n- Effet\n- Effet"}
+{"id": 16, "t": "<color=#A0A0A0FF>Aucun achat récent</color>"}
+{"id": 17, "t": "<color=#D0D0D0>Neutralité</color>"}
+{"id": 18, "t": "<color=#FFD19BFF>•  Calmant</color>\n<color=#CA6D57FF>•  Fringale</color>\n<color=#7CBC31FF>•  Puant</color>"}
+{"id": 19, "t": "[ESPACE]"}
+{"id": 20, "t": "^ Si activé, charger une sauvegarde existante sur une nouvelle version du jeu créera automatiquement une copie de secours."}
+{"id": 21, "t": "^ Les fournitures seront récupérées ici"}
+{"id": 22, "t": "^Tout le matériel nécessaire sera automatiquement récupéré ici"}
+{"id": 23, "t": "^La récolte sera automatiquement déplacée vers la destination par le botaniste assigné"}
+{"id": 24, "t": "^Quantité minimale de têtes/feuilles pour que le botaniste assigné lance le séchage"}
+{"id": 25, "t": "^La station de mélange doit contenir au moins cette quantité de produit/ingrédients avant que le mélange commence"}
+{"id": 26, "t": "^Le résultat sera automatiquement déplacé vers la destination par le botaniste assigné"}
+{"id": 27, "t": "^Le résultat sera automatiquement déplacé vers la destination par le chimiste assigné"}
+{"id": 28, "t": "^Le résultat sera automatiquement déplacé vers la destination par le manutentionnaire assigné"}
+{"id": 29, "t": "^Le botaniste assigné retirera les objets du séchoir dès qu'ils atteindront cette qualité"}
+{"id": 30, "t": "un grand espace ouvert plein de gros matos rutilant"}
+{"id": 31, "t": "A.H"}
+{"id": 32, "t": "Accélérer/Freiner"}
+{"id": 33, "t": "ACCEPTER"}
+{"id": 34, "t": "Acceptez l'offre ou faites une contre-offre"}
+{"id": 35, "t": "Seul l'hôte peut effectuer cette action"}
+{"id": 36, "t": "EN COURS"}
+{"id": 37, "t": "Écran actif"}
+{"id": 38, "t": "Commandes en cours"}
+{"id": 39, "t": "Adam Walton"}
+{"id": 40, "t": "Ajouter"}
+{"id": 41, "t": "Ajouter un objet..."}
+{"id": 42, "t": "Ajouter"}
+{"id": 43, "t": "Ajouter au panier"}
+{"id": 44, "t": "Dépendance"}
+{"id": 45, "t": "Potentiel addictif"}
+{"id": 46, "t": "Additif {0}"}
+{"id": 47, "t": "Avancé"}
+{"id": 48, "t": "Afro"}
+{"id": 49, "t": "Agité"}
+{"id": 50, "t": "Agriculture"}
+{"id": 51, "t": "Viser"}
+{"id": 52, "t": "Albert Hoover (fournisseur d'herbe)"}
+{"id": 53, "t": "Tout"}
+{"id": 54, "t": "TOUT ()"}
+{"id": 55, "t": "Toutes les opérations de blanchiment en cours"}
+{"id": 56, "t": "Objets autorisés"}
+{"id": 57, "t": "Qualité autorisée"}
+{"id": 58, "t": "Ambiance"}
+{"id": 59, "t": "Montant"}
+{"id": 60, "t": "Montant..."}
+{"id": 61, "t": "Quantité :"}
+{"id": 62, "t": "Andy"}
+{"id": 63, "t": "Andy<color=#A0A0A0FF> (Downtown)</color>"}
+{"id": 64, "t": "Répondre"}
+{"id": 65, "t": "Réponse {0}"}
+{"id": 66, "t": "Anticrénelage"}
+{"id": 67, "t": "Tout le matériel nécessaire sera automatiquement récupéré ici"}
+{"id": 68, "t": "Appliquer la couleur"}
+{"id": 69, "t": "Appliquer l'engrais"}
+{"id": 70, "t": "Appliquer le PGR"}
+{"id": 71, "t": "Appliquer les paramètres"}
+{"id": 72, "t": "Appliquer le SpeedGrow"}
+{"id": 73, "t": "Appliquer aux emplacements voisins"}
+{"id": 74, "t": "Voulez-vous vraiment \nécraser cette sauvegarde ?"}
+{"id": 75, "t": "Êtes-vous sûr ?"}
+{"id": 76, "t": "Marchand d'armes"}
+{"id": 77, "t": "Livrée"}
+{"id": 78, "t": "Prix demandé"}
+{"id": 79, "t": "Assigner un client"}
+{"id": 80, "t": "Clients assignés ({0}/{1})"}
+{"id": 81, "t": "Stations d'emballage assignées"}
+{"id": 82, "t": "Stations assignées"}
+{"id": 83, "t": "Distributeur"}
+{"id": 84, "t": "Audio"}
+{"id": 85, "t": "Austin Steiner"}
+{"id": 86, "t": "Austin Steiner<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 87, "t": "Copies de secours automatiques"}
+{"id": 88, "t": "Disponible dans \nle jeu complet"}
+{"id": 89, "t": "Retour"}
+{"id": 90, "t": "Retour / Annuler (non modifiable)"}
+{"id": 91, "t": "Les copies de secours sont stockées dans ce dossier :\n%USERPROFILE%\\AppData\\LocalLow\\TVGS\\Schedule I\\Saves\\<STEAM_ID>\\Backups"}
+{"id": 92, "t": "Reculer"}
+{"id": 93, "t": "Ensacher les déchets"}
+{"id": 94, "t": "Porte-valise"}
+{"id": 95, "t": "Porte-valise I"}
+{"id": 96, "t": "Porte-valise II"}
+{"id": 97, "t": "Porte-valise III"}
+{"id": 98, "t": "Porte-valise IV"}
+{"id": 99, "t": "Porte-valise V"}
+{"id": 100, "t": "Baron"}
+{"id": 101, "t": "Baron I"}
+{"id": 102, "t": "Baron II"}
+{"id": 103, "t": "Baron III"}
+{"id": 104, "t": "Baron IV"}
+{"id": 105, "t": "Baron V"}
+{"id": 106, "t": "Basique"}
+{"id": 107, "t": "Des informations système de base seront envoyées avec votre rapport."}
+{"id": 108, "t": "Terrain de\nbasket"}
+{"id": 109, "t": "Journée à la plage"}
+{"id": 110, "t": "COMMENCER"}
+{"id": 111, "t": "Commencer la partie"}
+{"id": 112, "t": "Benji Coleman"}
+{"id": 113, "t": "Influence des Benzies à Northville"}
+{"id": 114, "t": "Mise"}
+{"id": 115, "t": "MULTIPLICATEUR DE MISE"}
+{"id": 116, "t": "BÊTA"}
+{"id": 117, "t": "PLUS DE CHANCE LA PROCHAINE FOIS..."}
+{"id": 118, "t": "GROS GAIN !"}
+{"id": 119, "t": "Touches"}
+{"id": 120, "t": "BitField"}
+{"id": 121, "t": "Blackjack"}
+{"id": 122, "t": "BLACKJACK !"}
+{"id": 123, "t": "Liste noire"}
+{"id": 124, "t": "Bleuball\nBoutique"}
+{"id": 125, "t": "Bleuball's Boutique"}
+{"id": 126, "t": "Boss du quartier"}
+{"id": 127, "t": "Boss du quartier I"}
+{"id": 128, "t": "Boss du quartier II"}
+{"id": 129, "t": "Boss du quartier III"}
+{"id": 130, "t": "Boss du quartier IV"}
+{"id": 131, "t": "Boss du quartier V"}
+{"id": 132, "t": "Corps"}
+{"id": 133, "t": "Atelier de\ncarrosserie"}
+{"id": 134, "t": "Fouille"}
+{"id": 135, "t": "FOUILLE"}
+{"id": 136, "t": "Botaniste"}
+{"id": 137, "t": "Les botanistes peuvent être assignés à :\n- Pots\n- Séchoirs\n- Bacs à champignons\n- Stations de mycélium"}
+{"id": 138, "t": "Les botanistes prendront tous les objets nécessaires (terreau, graines, additifs, etc.) dans cet objet."}
+{"id": 139, "t": "Coupe au bol"}
+{"id": 140, "t": "Casser les morceaux"}
+{"id": 141, "t": "Pont"}
+{"id": 142, "t": "Luminosité"}
+{"id": 143, "t": "Immeuble\nmarron"}
+{"id": 144, "t": "Bud's\nBar"}
+{"id": 145, "t": "Bug"}
+{"id": 146, "t": "Signaler un bug/Avis"}
+{"id": 147, "t": "Bungalow"}
+{"id": 148, "t": "Commerce"}
+{"id": 149, "t": "Gestion du commerce"}
+{"id": 150, "t": "Commerces à vendre"}
+{"id": 151, "t": "SAUTÉ !"}
+{"id": 152, "t": "ARRESTATION"}
+{"id": 153, "t": "Bouton"}
+{"id": 154, "t": "Acheter"}
+{"id": 155, "t": "ACHETER"}
+{"id": 156, "t": "Coupe rase"}
+{"id": 157, "t": "Sonner à l'interphone"}
+{"id": 158, "t": "CAFÉ & BOULANGERIE"}
+{"id": 159, "t": "Nom de l'appelant"}
+{"id": 160, "t": "Rompre l'accord avec les Benzies est irréversible. \n\nIls deviendront immédiatement hostiles envers vous."}
+{"id": 161, "t": "Balancement de la caméra"}
+{"id": 162, "t": "Sensibilité de la caméra"}
+{"id": 163, "t": "Canal"}
+{"id": 164, "t": "Annuler"}
+{"id": 165, "t": "ANNULER"}
+{"id": 166, "t": "Modification multiple impossible"}
+{"id": 167, "t": "Lavage auto"}
+{"id": 168, "t": "Panier"}
+{"id": 169, "t": "Influence du cartel à Northtown"}
+{"id": 170, "t": "Influence du cartel à Northtown"}
+{"id": 171, "t": "Casino"}
+{"id": 172, "t": "Catégorie"}
+{"id": 173, "t": "Changer la quantité"}
+{"id": 174, "t": "Modifier la quantité"}
+{"id": 175, "t": "Personnage"}
+{"id": 176, "t": "Skateboard pas cher\n${0}"}
+{"id": 177, "t": "Les chimistes peuvent être assignés à :\n- Stations de chimie\n- Fours de labo\n- Chaudrons\n- Stations de mélange"}
+{"id": 178, "t": "Torse"}
+{"id": 179, "t": "Restaurant \nchinois"}
+{"id": 180, "t": "Texte du choix"}
+{"id": 181, "t": "Choisir la couleur"}
+{"id": 182, "t": "Choisissez qui faire venir"}
+{"id": 183, "t": "Effacer"}
+{"id": 184, "t": "Réinitialiser le filtre"}
+{"id": 185, "t": "Cliquez sur un produit pour le mettre en vente/le retirer. Les clients n'achètent que les produits en vente."}
+{"id": 186, "t": "Maintenez le clic sur une option pour voter"}
+{"id": 187, "t": "Maintenez le clic sur les objets pour les cacher"}
+{"id": 188, "t": "Maintenez le<color=#62BDFF> clic droit</color> sur un objet pour le ramasser."}
+{"id": 189, "t": "Fermer"}
+{"id": 190, "t": "FERMER"}
+{"id": 191, "t": "TERMINÉ"}
+{"id": 192, "t": "Vêtements"}
+{"id": 193, "t": "Feuilles de coca"}
+{"id": 194, "t": "Graines de coca"}
+{"id": 195, "t": "Armer/Tirer"}
+{"id": 196, "t": "Cody To"}
+{"id": 197, "t": "Récupérer le liquide"}
+{"id": 198, "t": "Couleur"}
+{"id": 199, "t": "Arrive le {0} janvier"}

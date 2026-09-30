@@ -1,0 +1,200 @@
+{"id": 2200, "t": "Hola, jefe. Solo te aviso que me quedé sin producto."}
+{"id": 2201, "t": "¿Qué hay, hermano?"}
+{"id": 2202, "t": "Hola. Un amigo me dijo que vendías. ¿Me consigues <PRODUCT>? Puedo pagar <PRICE>"}
+{"id": 2203, "t": "¡Hola, hola! ¿Te puedo ayudar en algo?"}
+{"id": 2204, "t": "Mmm, bueno. ¿A qué hora?"}
+{"id": 2205, "t": "Mmm..."}
+{"id": 2206, "t": "Mmm... Oscar vio una tirada por algún lado de <color=blue><REGION></color>, creo..."}
+{"id": 2207, "t": "¿Mmm?"}
+{"id": 2208, "t": "Mmmm... Supongo que hay algo de <color=red>RDX</color> allá en la planta. Eso sin duda haría el trabajo."}
+{"id": 2209, "t": "mmmmm ESTÁ BIEN. ¿Cuándo?"}
+{"id": 2210, "t": "Un momento"}
+{"id": 2211, "t": "¡No se mueva! ¡Está bajo arresto!"}
+{"id": 2212, "t": "No se mueva mientras hago el registro"}
+{"id": 2213, "t": "¡Santo cielo!"}
+{"id": 2214, "t": "¡Mierda!"}
+{"id": 2215, "t": "Ojalá deje de llover pronto..."}
+{"id": 2216, "t": "¿Qué tal <AMOUNT>?"}
+{"id": 2217, "t": "¿Cómo lo soluciono?"}
+{"id": 2218, "t": "¿Cómo asigno una fuente de suministros?"}
+{"id": 2219, "t": "¿Cómo asigno macetas?"}
+{"id": 2220, "t": "¿Cómo te asigno tu casillero?"}
+{"id": 2221, "t": "¿Cómo te pago?"}
+{"id": 2222, "t": "¿Cómo selecciono una semilla para cada maceta?"}
+{"id": 2223, "t": "¿Cómo especifico el destino de cada maceta?"}
+{"id": 2224, "t": "¿Qué te parece <AMOUNT>?"}
+{"id": 2225, "t": "¿Cuánto cuesta contratar a alguien?"}
+{"id": 2226, "t": "¿Cuánto producto necesitas?"}
+{"id": 2227, "t": "¿Cuánto me vas a pagar?"}
+{"id": 2228, "t": "¿Te sirve <AMOUNT>?"}
+{"id": 2229, "t": "¿Cómo va todo, hermano?"}
+{"id": 2230, "t": "Hola, amigo. Si buscas protección, estás en el lugar indicado."}
+{"id": 2231, "t": "Hola, amigo. ¿Necesitas algo?"}
+{"id": 2232, "t": "Hola, soy Marco. Si buscas una buena mano de pintura o necesitas que remolquen tu auto, soy el indicado."}
+{"id": 2233, "t": "Sin embargo, me gustaría hacerte una oferta. Nos venderás producto de forma regular: de {0} a {1} veces por semana. Grandes cantidades a precio de mayorista."}
+{"id": 2234, "t": "¿Eh?"}
+{"id": 2235, "t": "¡¿Eh?!"}
+{"id": 2236, "t": "¡¿Qué?! Te voy a echar a la poli encima"}
+{"id": 2237, "t": "Hyland Manor (<PRICE>)"}
+{"id": 2238, "t": "Hyland Point fue fundada en {0} gracias a los esfuerzos de P.P. Hyland."}
+{"id": 2239, "t": "También necesito semillas de hierba"}
+{"id": 2240, "t": "Te puedo dar <AMOUNT>. ¿Trato hecho?"}
+{"id": 2241, "t": "Puedo hacerlo, pero cavar agujeros en propiedad ajena no es precisamente legal. Ese tipo de trabajo te va a salir caro."}
+{"id": 2242, "t": "Puedo darte <AMOUNT>"}
+{"id": 2243, "t": "Te puedo ayudar con eso. ¿Qué tipo de empleado buscas?"}
+{"id": 2244, "t": "Ya me encargué del ladrón que no paraba de robarte los suministros."}
+{"id": 2245, "t": "No conozco a ningún proveedor de pseudo, así que en esto no te puedo ayudar. Debería haber alguien en <h1>Westville</h> que pueda conseguirte lo que necesitas."}
+{"id": 2246, "t": "No me gusta mucho eso..."}
+{"id": 2247, "t": "Creo que no. Olvídalo"}
+{"id": 2248, "t": "Creo que no..."}
+{"id": 2249, "t": "Supongo"}
+{"id": 2250, "t": "Supongo que está bien, bro. ¿Cuándo?"}
+{"id": 2251, "t": "Supongo que está bien. ¿Cuándo?"}
+{"id": 2252, "t": "¡ODIO la lluvia!"}
+{"id": 2253, "t": "Tengo una propuesta de negocios que me gustaría discutir contigo. Nos vemos en el estacionamiento junto a Taco Ticklers. Estaré en el todoterreno negro."}
+{"id": 2254, "t": "Hace demasiado que no me meto nada, necesito algo ya mismo, bro. ¿Tienes algo que pueda comprar??"}
+{"id": 2255, "t": "Hace demasiado que no me meto nada, necesito algo ya mismo. ¿Tienes algo que pueda comprar??"}
+{"id": 2256, "t": "A mí la lluvia me gusta un poco..."}
+{"id": 2257, "t": "NECESITO <PRODUCT>. TENGO <PRICE>. ¿TRATO?"}
+{"id": 2258, "t": "Necesito acceso al túnel bajo Hyland Manor"}
+{"id": 2259, "t": "Yo digo que les des a estos payasos una dosis de su propia medicina. Si pudieras plantar una <h1>bomba</h> en ese túnel... bueno, digamos que ya no serán ningún problema."}
+{"id": 2260, "t": "Lo veo merodeando por los muelles de noche de vez en cuando. Tiene que desaparecer. Hazme ese favor y te armo lo que necesites."}
+{"id": 2261, "t": "Quiero ayudarte, pero me quedo sin trabajo si el alcalde se entera. Necesitaré <PRICE> para que valga la pena el riesgo."}
+{"id": 2262, "t": "Quiero comprar una llave de acceso a la alcantarilla"}
+{"id": 2263, "t": "Quiero contratar a un empleado"}
+{"id": 2264, "t": "Trabajo en la agricultura"}
+{"id": 2265, "t": "Me gustaría cortarme el pelo"}
+{"id": 2266, "t": "Me gustaría disculparme por el pequeño altercado de antes con tu autocaravana. Tenemos una operación bastante exitosa aquí en Hyland Point y no nos entusiasma compartir el mercado."}
+{"id": 2267, "t": "Me gustaría ver tu mercancía"}
+{"id": 2268, "t": "Me gustaría comprar un skate"}
+{"id": 2269, "t": "Me gustaría comprar la habitación"}
+{"id": 2270, "t": "Me gustaría hacerme un tatuaje"}
+{"id": 2271, "t": "Me gustaría empeñar algo"}
+{"id": 2272, "t": "Me gustaría comprar un negocio"}
+{"id": 2273, "t": "Me gustaría comprar una propiedad"}
+{"id": 2274, "t": "Me gustaría comprar un vehículo"}
+{"id": 2275, "t": "Me gustaría comprar algo"}
+{"id": 2276, "t": "Me gustaría alquilar una habitación"}
+{"id": 2277, "t": "Me gustaría repintar mi vehículo"}
+{"id": 2278, "t": "Termino enseguida"}
+{"id": 2279, "t": "Lo pensaré"}
+{"id": 2280, "t": "Soy un hombre de Dios, amigo. \"No matarás\" - Éxodo {0}"}
+{"id": 2281, "t": "Busco <PRODUCT>. Te pago <PRICE> por eso. ¿¿Trato??"}
+{"id": 2282, "t": "Soy Dan, llevo esta ferretería. ¿A qué te dedicas?"}
+{"id": 2283, "t": "Ya me cansé de ti. No hay trato."}
+{"id": 2284, "t": "¡Me muero por algo! ¿Tienes algo que pueda comprar??"}
+{"id": 2285, "t": "¡Te voy a partir la cara!"}
+{"id": 2286, "t": "Estoy bien"}
+{"id": 2287, "t": "Estoy bien, gracias"}
+{"id": 2288, "t": "Estoy bien, gracias, hermano"}
+{"id": 2289, "t": "Vengo por el paquete de Nelson"}
+{"id": 2290, "t": "Busco armamento."}
+{"id": 2291, "t": "Ahora hago entregas. Haz un pedido con la app de entregas y te lo llevo a la puerta lo antes posible."}
+{"id": 2292, "t": "Sigo esperando un pago de <DEBT>. Deposítalo en mi alijo cuando tengas un momento."}
+{"id": 2293, "t": "Tengo un par de llaves de repuesto por ahí, pero la verdad es que no deberías andar allá abajo si no es por asuntos oficiales de la ciudad..."}
+{"id": 2294, "t": "Tengo unos asuntos con unos tipos que se quedan en el motel; diles que vienes por el paquete de Nelson. No tienes que pagar nada."}
+{"id": 2295, "t": "Tengo lo que me pediste."}
+{"id": 2296, "t": "Si no me falla la memoria, tengo algo de efectivo escondido por ahí. No es mucho, pero te alcanzará para volver a ponerte en pie."}
+{"id": 2297, "t": "Si mueres en un jugador, volverás a tu última partida guardada. Si mueres en multijugador, le harás una costosa visita a la clínica."}
+{"id": 2298, "t": "Si quieres convertir más efectivo en saldo en línea, vas a tener que empezar a <h1>blanquear</h>."}
+{"id": 2299, "t": "Si quiere pasar por aquí, tendré que registrar su vehículo."}
+{"id": 2300, "t": "Si vas a la ciudad a cerrar unos tratos, ¿te importaría traerme algo?"}
+{"id": 2301, "t": "Si necesitas pseudo, soy la indicada. Mándame un mensaje y lo resolvemos"}
+{"id": 2302, "t": "Si quieres comprar suministros para ti, ponlos en mi cuenta."}
+{"id": 2303, "t": "Si vas en serio de verdad, puedo enviarte semillas directamente a cualquiera de tus propiedades. Usa tu app de entregas para hacer un pedido y te llegará en nada."}
+{"id": 2304, "t": "Si necesitas pedir cantidades más grandes de suministros, ahora puedes organizar una reunión en persona conmigo. Mándame un mensaje."}
+{"id": 2305, "t": "Si no trabajas con nosotros, estás contra nosotros. Te vas a arrepentir de haber venido a esta ciudad..."}
+{"id": 2306, "t": "Si quieres iniciarte en el arte de cultivar hongos mágicos, ¡estás de suerte!"}
+{"id": 2307, "t": "Si te registraron hace poco en un control, puedes pasar por ese mismo control varias veces sin otro registro."}
+{"id": 2308, "t": "A cambio, no volaremos ninguna otra propiedad tuya ni te molestaremos de ninguna manera. Puedes seguir operando en tu rincón del mercado, siempre que cumplas tu parte del trato."}
+{"id": 2309, "t": "¡Está subiendo las escaleras detrás de mi restaurante! Rodea el edificio y lo verás."}
+{"id": 2310, "t": "Hace poco sufrió unos daños menores: una fuga de gas, una avería eléctrica o algo así. ¡Pero se renovó por completo y está impecable, lista para un nuevo dueño!"}
+{"id": 2311, "t": "Ya está pagado"}
+{"id": 2312, "t": "Es el gran edificio de ladrillo detrás de la tienda de licores. Ve para allá y a ver si logras colarte. Eso sí, solo te dejarán entrar cuando te hayas ganado una buena reputación."}
+{"id": 2313, "t": "¡Por Dios!"}
+{"id": 2314, "t": "Solo te recuerdo que me debes <DEBT>. Deposita la cantidad en mi alijo cuando puedas."}
+{"id": 2315, "t": "Mándame un mensaje si quieres que nos veamos."}
+{"id": 2316, "t": "Sigue probando distintas recetas de mezcla y podrás hacer producto de muchísimo valor."}
+{"id": 2317, "t": "El blanqueo consiste en usar un negocio legal para ocultar el origen de tu efectivo no tan legal."}
+{"id": 2318, "t": "A ver, deja que piense..."}
+{"id": 2319, "t": "Déjame pensar..."}
+{"id": 2320, "t": "Déjame probar..."}
+{"id": 2321, "t": "Digamos <AMOUNT>. ¿Trato hecho?"}
+{"id": 2322, "t": "Digamos <DIG_PRICE> en efectivo, y te lo tengo listo de la noche a la mañana."}
+{"id": 2323, "t": "Digamos... <color=blue>{0} gramos de polvo blanco</color>. Puro, sin aditivos ni mierdas. Tráeme eso y tendrás tu RDX."}
+{"id": 2324, "t": "A ver..."}
+{"id": 2325, "t": "Montemos otra planta de OG Kush. Ya tenemos la semilla; ahora solo necesitamos una maceta, un soporte de suspensión, una lámpara de cultivo y algo de tierra."}
+{"id": 2326, "t": "Acabemos con esto de una vez"}
+{"id": 2327, "t": "Que empiece la fiesta"}
+{"id": 2328, "t": "Parece que estás diversificando tu gama de productos, buena idea. Solo recuerda poner tu nuevo producto a la venta en la <h1>app Gestor de productos</h>."}
+{"id": 2329, "t": "Parece que vas a necesitar un sitio discreto donde quedarte un tiempo. Ve al <h1>motel</h> y pregunta por una habitación."}
+{"id": 2330, "t": "Parece que alcanzaste tu <h1>límite semanal de depósitos...</h> Para no levantar sospechas, solo puedes depositar cierta cantidad de efectivo por semana en los cajeros."}
+{"id": 2331, "t": "Qué buen tiempo, ¿eh?"}
+{"id": 2332, "t": "Por suerte para ti, hasta ahora ha cumplido su palabra. Pero dile que más le vale saldar esa cuenta muy pronto..."}
+{"id": 2333, "t": "Asegúrate de darles a tus dealers producto de la calidad adecuada para sus clientes asignados."}
+{"id": 2334, "t": "Hermano, estoy bien..."}
+{"id": 2335, "t": "Hermano, llueve como el demonio"}
+{"id": 2336, "t": "Quizá no fui claro: VAS a trabajar con nosotros. Y si no lo haces, vamos a hacerte la vida muy, muy difícil. ¿Está claro?"}
+{"id": 2337, "t": "Armas cuerpo a cuerpo, contundentes y cortantes, y por supuesto, armas de fuego. Munición también. De vez en cuando me llega más material."}
+{"id": 2338, "t": "Rocía tus hongos en crecimiento con un pulverizador para mantenerlos hidratados. También tendrás que mantenerlos frescos con un aire acondicionado. ¡Al cabo de un rato estarán listos para cosechar!"}
+{"id": 2339, "t": "Mmm, nada mal... Te escribo"}
+{"id": 2340, "t": "Mmm, no está mal... Te escribo"}
+{"id": 2341, "t": "Mmm..."}
+{"id": 2342, "t": "Mmm... está bien."}
+{"id": 2343, "t": "Buenos días, bro"}
+{"id": 2344, "t": "Mañana"}
+{"id": 2345, "t": "Buenos días, amigo. Ven a hablar conmigo cuando termines todo en la autocaravana."}
+{"id": 2346, "t": "Buenos días, amigo. Qué día tan bonito, ¿verdad?"}
+{"id": 2347, "t": "Buenos días, amigo. ¿Qué te sirvo?"}
+{"id": 2348, "t": "¡Buenos días!"}
+{"id": 2349, "t": "La mayoría de las plantas crecen más rápido a temperaturas cálidas."}
+{"id": 2350, "t": "Te lo agradezco mucho"}
+{"id": 2351, "t": "Te lo agradezco, compa"}
+{"id": 2352, "t": "Te lo agradezco, mulato. A lo mejor deberías hablar con <NAME>. Creo que le gustaría tu producto"}
+{"id": 2353, "t": "Se agradece."}
+{"id": 2354, "t": "Te lo agradezco. A lo mejor deberías hablar con <NAME>. Creo que le gustaría tu producto"}
+{"id": 2355, "t": "Las macetas que tengo asignadas deben tener una semilla seleccionada para que sepa qué plantar en cada una."}
+{"id": 2356, "t": "Mi vehículo está atascado"}
+{"id": 2357, "t": "Nah, bro. Olvídalo"}
+{"id": 2358, "t": "Nah, estoy bien, hermano"}
+{"id": 2359, "t": "Nah, hermano, esto no es lo que pedí..."}
+{"id": 2360, "t": "Nah, olvídalo, hermano"}
+{"id": 2361, "t": "Nah, no es lo mío, hermano"}
+{"id": 2362, "t": "Nah, es demasiado."}
+{"id": 2363, "t": "Nah..."}
+{"id": 2364, "t": "¡Necesito <PRODUCT>! Pago <PRICE>, ¿¿sí??"}
+{"id": 2365, "t": "¿Necesitas efectivo extra? Recoge basura y llévala a una máquina 'Trash for Cash'."}
+{"id": 2366, "t": "¿Necesitas algo?"}
+{"id": 2367, "t": "¿Necesitas esconderte de las autoridades? Prueba con un arbusto, un contenedor o un árbol grande,"}
+{"id": 2368, "t": "Olvídalo"}
+{"id": 2369, "t": "Olvídalo, hermano, esto no es lo que quería"}
+{"id": 2370, "t": "¡Olvídalo!"}
+{"id": 2371, "t": "Bien"}
+{"id": 2372, "t": "No"}
+{"id": 2373, "t": "Ni hablar, amigo."}
+{"id": 2374, "t": "Todo en orden."}
+{"id": 2375, "t": "Pues no. De hecho, el viejo Nellie ya nos debe una buena suma..."}
+{"id": 2376, "t": "No hay problema, compa, nos vemos."}
+{"id": 2377, "t": "No, gracias"}
+{"id": 2378, "t": "No, gracias"}
+{"id": 2379, "t": "No, gracias, bro"}
+{"id": 2380, "t": "No, gracias, bróder"}
+{"id": 2381, "t": "No, gracias, bro. Buscaré en otro lado"}
+{"id": 2382, "t": "No, gracias, mulato"}
+{"id": 2383, "t": "No, gracias. Buscaré en otro lado"}
+{"id": 2384, "t": "No, gracias..."}
+{"id": 2385, "t": "Ni hablar"}
+{"id": 2386, "t": "¡Ni hablar, hermano! Voy a llamar a la poli"}
+{"id": 2387, "t": "Ni hablar, hermano"}
+{"id": 2388, "t": "¡Ni hablar! Voy a llamar a la poli"}
+{"id": 2389, "t": "¡¡Ni hablar!!"}
+{"id": 2390, "t": "Sin problema, aquí tienes."}
+{"id": 2391, "t": "¡No!"}
+{"id": 2392, "t": "¡¡¡NO!!! Olvídalo"}
+{"id": 2393, "t": "No, ahora no"}
+{"id": 2394, "t": "¡Noooo!"}
+{"id": 2395, "t": "Noooo..."}
+{"id": 2396, "t": "Nop"}
+{"id": 2397, "t": "Nop, olvídalo"}
+{"id": 2398, "t": "Nop, hermano"}
+{"id": 2399, "t": "¡¡Nop!! Olvídalo"}

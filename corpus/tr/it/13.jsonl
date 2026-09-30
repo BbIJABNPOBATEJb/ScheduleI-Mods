@@ -1,0 +1,200 @@
+{"id": 2600, "t": "Dinkler (<PRICE>)"}
+{"id": 2601, "t": "Magazzino dei Docks (<PRICE>)"}
+{"id": 2602, "t": "La consegna è pronta. La trovi <LOCATION>"}
+{"id": 2603, "t": "Che cazzo ti prende?"}
+{"id": 2604, "t": "Ma che cazzo?"}
+{"id": 2605, "t": "Ma che diavolo, fra?"}
+{"id": 2606, "t": "Che diavolo ti prende?"}
+{"id": 2607, "t": "Che diavolo era?"}
+{"id": 2608, "t": "Ma che diavolo?"}
+{"id": 2609, "t": "Ma che diavolo?!"}
+{"id": 2610, "t": "Hotbox (<PRICE>)"}
+{"id": 2611, "t": "Hounddog (<PRICE>)"}
+{"id": 2612, "t": "Il lavoro è fatto. L'ingresso è sulla parete della scogliera, proprio sotto il lato nord della casa."}
+{"id": 2613, "t": "Lavanderia (<PRICE>)"}
+{"id": 2614, "t": "Ufficio postale (<PRICE>)"}
+{"id": 2615, "t": "Shitbox (<PRICE>)"}
+{"id": 2616, "t": "Box deposito da Stash & Dash (<PRICE>)"}
+{"id": 2617, "t": "Questo sole è troppo forte, dannazione!"}
+{"id": 2618, "t": "Veeper (<PRICE>)"}
+{"id": 2619, "t": "In teoria, se a qualcuno servissero degli esplosivi, potresti dargli una mano?"}
+{"id": 2620, "t": "Per tua comodità, ci sono diversi bancomat sparsi per Hyland Point."}
+{"id": 2621, "t": "Ci sono piante pronte per il raccolto, ma manca la destinazione. Ogni vaso deve avere una destinazione selezionata, così so dove portare il raccolto."}
+{"id": 2622, "t": "C'è una stanza economica in vendita sopra il ristorante cinese, poco a nord della tua stanza del motel. Metti da parte <h1>${0}</h>, poi vai a chiedere di comprarla."}
+{"id": 2623, "t": "In città c'è un cartello potente, la <h1>famiglia Benzies.</h> Immaginavo che prima o poi sarebbero diventati un problema, ma non pensavo che ti avrebbero trovato così in fretta..."}
+{"id": 2624, "t": "C'è un vecchio <h1>tunnel di fuga</h> che scende dalla villa fino alla scogliera sottostante. È sigillato dall'interno, ma se riuscissi ad accedervi, potresti arrivargli vicinissimo senza che se ne accorgano..."}
+{"id": 2625, "t": "Questa dannata pioggia..."}
+{"id": 2626, "t": "Questa è roba buona. Potrebbe interessare a <NAME>. Dovresti andarci a parlare."}
+{"id": 2627, "t": "Non è un incontro che ti conviene perdere. Hai {0} ore per arrivare qui."}
+{"id": 2628, "t": "Questa è la città dei Benzies!"}
+{"id": 2629, "t": "Non va bene. L'affare salta."}
+{"id": 2630, "t": "Non è quello che ho chiesto! L'affare salta."}
+{"id": 2631, "t": "Thomas e gli ultimi suoi scagnozzi sono asserragliati a Hyland Manor. È un vecchio posto ben fortificato, quindi attaccarli frontalmente sarebbe un suicidio. Per fortuna, potrebbe esserci un'altra strada..."}
+{"id": 2632, "t": "Quei Benzies del cazzo hanno appena provato a derubarmi: li ho respinti ma ho perso un po' di roba, scusa capo."}
+{"id": 2633, "t": "È ora di portare fuori la spazzatura. Che Dio ti assista, campione."}
+{"id": 2634, "t": "È ora di pensare a reclutare uno <h1>spacciatore</h>. C'è un tizio... mmh... <h1>Benji Coleman</h>, si chiama, mi pare. Sarà il primo spacciatore con cui potrai lavorare."}
+{"id": 2635, "t": "Per cominciare, vai a comprare una <h1>stazione di miscelazione</h> da Dan's Hardware. Dopodiché, prendi qualcosa da mescolare alla tua erba al Gas-Mart del posto."}
+{"id": 2636, "t": "Per stare dietro a più clienti ti servirà più prodotto. La stanza del motel non basterà ancora per molto: è ora di fare un salto di qualità."}
+{"id": 2637, "t": "Troppo BAGNATO, dannazione!"}
+{"id": 2638, "t": "TROPPO TEMPO!! Lascia perdere"}
+{"id": 2639, "t": "Troppa pioggia..."}
+{"id": 2640, "t": "Hai <PRODUCT>??? Ti do <PRICE>. AFFARE FATTO?"}
+{"id": 2641, "t": "Ehm... no"}
+{"id": 2642, "t": "Su per le scale, nell'ufficio, c'è l'<h1>intermediario</h> del posto: è lui l'uomo giusto se vuoi assumere dipendenti."}
+{"id": 2643, "t": "Veicolo bloccato? Vai in carrozzeria per farlo rimorchiare."}
+{"id": 2644, "t": "Molto bene"}
+{"id": 2645, "t": "Molto bene, fra. Potrebbe interessare a <NAME>. Dovresti andarci a parlare."}
+{"id": 2646, "t": "Molto bene!"}
+{"id": 2647, "t": "Molto bene. Potrebbe interessare a <NAME>. Dovresti andarci a parlare."}
+{"id": 2648, "t": "Molto bene. Ci si vede in giro..."}
+{"id": 2649, "t": "Visita il cimitero e rifletti sulla tua mortalità!"}
+{"id": 2650, "t": "Alt! È in arresto"}
+{"id": 2651, "t": "Ci serve <PRODUCT>. Hai <DUE_DAYS> giorni per consegnarcelo. Il pagamento è di <PAYMENT>."}
+{"id": 2652, "t": "Faremo abbastanza soldi per pagare quei tizi, e poi potremo concentrarci sull'avviare un giro serio."}
+{"id": 2653, "t": "Lavoriamo insieme da un po' ormai, e ti sei dimostrato piuttosto affidabile."}
+{"id": 2654, "t": "Benvenuti al Gas-Mart"}
+{"id": 2655, "t": "Benvenuti da Hyland Auto. Cosa posso fare per Lei?"}
+{"id": 2656, "t": "Eccoti al magazzino: qui trovi tutto ciò che ti serve per la tua carriera criminale."}
+{"id": 2657, "t": "Be', ti lascio lavorare. Ci vediamo domani, bello."}
+{"id": 2658, "t": "Be', merda... non è il massimo."}
+{"id": 2659, "t": "Be', a quanto pare hai avuto il tuo bel da fare! Hai influenza su quasi ogni angolo di Hyland Point. Non avrei saputo fare di meglio, campione. Ben fatto."}
+{"id": 2660, "t": "Di che stai parlando?"}
+{"id": 2661, "t": "Cosa posso fare per te?"}
+{"id": 2662, "t": "Cosa avete in vendita?"}
+{"id": 2663, "t": "Cosa vendi?"}
+{"id": 2664, "t": "Che vuoi?"}
+{"id": 2665, "t": "Cos'è questa roba? L'affare salta!"}
+{"id": 2666, "t": "Che genere di roba vendi?"}
+{"id": 2667, "t": "Ma che diavolo, amico?"}
+{"id": 2668, "t": "Che diavolo?"}
+{"id": 2669, "t": "E io cosa ci guadagno?"}
+{"id": 2670, "t": "Come butta, socio, cosa posso fare per te?"}
+{"id": 2671, "t": "Ma che problemi hai?"}
+{"id": 2672, "t": "Qual è il tuo problema?"}
+{"id": 2673, "t": "Cosa?"}
+{"id": 2674, "t": "COSA?"}
+{"id": 2675, "t": "Cosa?!"}
+{"id": 2676, "t": "Cosa?! Chiamo la polizia"}
+{"id": 2677, "t": "Come butta, fra"}
+{"id": 2678, "t": "Come butta, fra, cerco <PRODUCT>. Posso pagare <PRICE>."}
+{"id": 2679, "t": "Quando è in vigore il coprifuoco, tutti i cittadini sono obbligati per legge a restare nelle proprie abitazioni dalle {0}pm alle {1}am."}
+{"id": 2680, "t": "Quando puoi, deposita <DEBT> nella mia cassetta segreta: il tuo debito non è ancora saldato."}
+{"id": 2681, "t": "Dov'è la mia stanza?"}
+{"id": 2682, "t": "Finché sei in tregua con la famiglia Benzies, puoi vendere solo ai clienti di Northtown o Westville."}
+{"id": 2683, "t": "Chi diavolo sei?"}
+{"id": 2684, "t": "Chi diavolo sei? Sparisci."}
+{"id": 2685, "t": "Perché no"}
+{"id": 2686, "t": "Perché non te ne occupi tu stesso?"}
+{"id": 2687, "t": "Troppo figo, bello, che tavola cerchi?"}
+{"id": 2688, "t": "Con l'aiuto di Benji, riuscirai a smerciare una buona quantità di prodotto. Ora è il momento di iniziare a produrre e vendere prodotti di <h1>valore più alto</h>."}
+{"id": 2689, "t": "Uoh, zio"}
+{"id": 2690, "t": "Uoh, amico..."}
+{"id": 2691, "t": "Uoh!"}
+{"id": 2692, "t": "Uuuh, questa è roba seria, compare. Non preoccuparti, non ti chiederò a cosa serve. Dammi un secondo..."}
+{"id": 2693, "t": "Ci sto lavorando. Dovrebbe essere pronto tra circa <TIME>"}
+{"id": 2694, "t": "Wow, è davvero buona, ti scrivo"}
+{"id": 2695, "t": "Sì, va bene. Credo di poterlo fare."}
+{"id": 2696, "t": "Sì, si può fare."}
+{"id": 2697, "t": "Sì, ok"}
+{"id": 2698, "t": "Sì, ok, grazie..."}
+{"id": 2699, "t": "Sì, va bene. Sai trattare, amico."}
+{"id": 2700, "t": "Nah, non è quello che cerco, socio"}
+{"id": 2701, "t": "Sì?"}
+{"id": 2702, "t": "Sì??"}
+{"id": 2703, "t": "Sìììì, più o meno. Probabilmente la maggior parte non è del tutto non-illegale... ma tu perché lo chiedi, comunque?"}
+{"id": 2704, "t": "Sì"}
+{"id": 2705, "t": "Sì!"}
+{"id": 2706, "t": "Sì"}
+{"id": 2707, "t": "Sì (<PRICE>)"}
+{"id": 2708, "t": "Sì, grazie!"}
+{"id": 2709, "t": "Sì, grazie!!. Ehi, la tua roba potrebbe interessare a <NAME>, che conosco. Dovresti andarci a parlare."}
+{"id": 2710, "t": "Sì!"}
+{"id": 2711, "t": "Sì!!!"}
+{"id": 2712, "t": "Sì?"}
+{"id": 2713, "t": "Accidenti!"}
+{"id": 2714, "t": "Yo socio, mi dai <PRODUCT>? Pago <PRICE>"}
+{"id": 2715, "t": "La stiamo perquisendo"}
+{"id": 2716, "t": "Faresti meglio a guardarti le spalle: questa città non tollererà ancora a lungo la feccia come te..."}
+{"id": 2717, "t": "Puoi assegnarmi dei clienti con l'app Gestione spacciatori sul telefono."}
+{"id": 2718, "t": "Li trovi nascosti vicino alla <h1>fontana del municipio, nel canale,</h> e <h1>dietro il supermercato</h>. Vai a prenderli, torna al camper e poi vediamo."}
+{"id": 2719, "t": "Puoi mettere i contanti nel mio armadietto."}
+{"id": 2720, "t": "Puoi rinominare stazioni, vasi, scaffali ecc. usando la tua cartellina di gestione."}
+{"id": 2721, "t": "Puoi riverniciare i tuoi veicoli in carrozzeria."}
+{"id": 2722, "t": "Può vedere tutti gli annunci disponibili sulla lavagna alla Sua sinistra."}
+{"id": 2723, "t": "Puoi impostare dei filtri sugli slot per indicare ai dipendenti quali oggetti possono o non possono andare in uno slot specifico."}
+{"id": 2724, "t": "Puoi usare un condizionatore per riscaldare o rinfrescare un'area."}
+{"id": 2725, "t": "Puoi farlo con la tua cartellina di gestione."}
+{"id": 2726, "t": "Puoi usare la cartellina di gestione su ogni vaso per assegnargli un seme."}
+{"id": 2727, "t": "Puoi usare la cartellina di gestione su ogni vaso per assegnargli una destinazione."}
+{"id": 2728, "t": "Puoi vedere tutti i potenziali clienti sulla <h1>mappa</h>. Prendi un po' d'erba e dagli un <h1>campione gratuito</h>. Con un po' di fortuna, accetteranno di diventare tuoi clienti."}
+{"id": 2729, "t": "Nel Diario puoi vedere tutte le missioni e i contratti in corso, e scegliere quali seguire."}
+{"id": 2730, "t": "Sei fuori, fra? No grazie"}
+{"id": 2731, "t": "Sei fuori?"}
+{"id": 2732, "t": "Sei fuori? No grazie"}
+{"id": 2733, "t": "Allora, finalmente ci sei?"}
+{"id": 2734, "t": "STRONZO!"}
+{"id": 2735, "t": "Hai <PRODUCT>? Ti do <PRICE>"}
+{"id": 2736, "t": "Hai qualche problema?"}
+{"id": 2737, "t": "Ce l'hai?"}
+{"id": 2738, "t": "Hai roba buona! Dovresti andare a parlare con <NAME>: credo che la tua roba gli piacerà"}
+{"id": 2739, "t": "Hai la roba?"}
+{"id": 2740, "t": "Non hai consegnato in tempo. Dimezziamo il tuo compenso. Hai {0} ore per portarci il prodotto, altrimenti il nostro accordo è finito."}
+{"id": 2741, "t": "Sei fuori di testa?"}
+{"id": 2742, "t": "Sei fuori di testa?! No grazie"}
+{"id": 2743, "t": "Sai tutto quello che ti serve per farti strada. Ti chiamerò più avanti, quando sarà il momento di produrre roba più pesante..."}
+{"id": 2744, "t": "Avrai notato che da Albert puoi comprare semi di diverse varietà d'erba, ma con una <h1>stazione di miscelazione</h> puoi creare prodotti ancora più unici."}
+{"id": 2745, "t": "Deve parcheggiare l'auto qui vicino per permettermi di perquisirla."}
+{"id": 2746, "t": "Devi dei soldi a gente poco raccomandabile, e hai solo pochi giorni prima che ti trovino. Buon per te, ho una certa esperienza nel campo."}
+{"id": 2747, "t": "Ci sei?"}
+{"id": 2748, "t": "Vedi, ogni mese ricevo i miei rifornimenti con una spedizione ai Docks. Ma ultimamente un bastardo schifoso continua a fregarmeli prima che arrivino a me."}
+{"id": 2749, "t": "Sei tu il nuovo in città?"}
+{"id": 2750, "t": "Mi prendi per il culo? L'affare salta."}
+{"id": 2751, "t": "Vuoi comprare qualcosa?"}
+{"id": 2752, "t": "Che ne dici di farti gli affari tuoi?"}
+{"id": 2753, "t": "Volevi vedermi?"}
+{"id": 2754, "t": "Se la polizia ti cerca e ti ha sotto gli occhi, non potrai entrare nelle tue proprietà."}
+{"id": 2755, "t": "Non potrai assumere uno spacciatore finché uno dei suoi amici non ti avrà raccomandato. Benji è amico di <h1>Peggy, Beth</h> e <h1>Ludwig</h>. Concentrati a vendere a loro finché uno di loro non ti raccomanda."}
+{"id": 2756, "t": "Dovrai anche entrare in quel tunnel. <h1>Sam</h>, il tizio della zona che si occupa di costruzioni e demolizioni, probabilmente può darti una mano per il giusto prezzo."}
+{"id": 2757, "t": "Dovrai parlare con un fornitore per mettere le mani su qualche seme. Ho passato il tuo numero ad <h1>Albert Hoover</h>, il fornitore di semi d'erba della zona."}
+{"id": 2758, "t": "Ci sei quasi, ma ti manca un ingrediente fondamentale: i <h1>semi d'erba</h>."}
+{"id": 2759, "t": "Lei viene con me!"}
+{"id": 2760, "t": "Ti ammazzo!"}
+{"id": 2761, "t": "Sei un cadavere..."}
+{"id": 2762, "t": "Per te è finita!"}
+{"id": 2763, "t": "Lei è nella stanza {0}, quella più vicina alla reception del motel."}
+{"id": 2764, "t": "Sei in ritardo. Le nostre scadenze non sono suggerimenti. Hai altre {0} ore per consegnare, e il tuo compenso è dimezzato. Non deluderci."}
+{"id": 2765, "t": "È in arresto!"}
+{"id": 2766, "t": "Hai già un po' di attrezzatura sistemata nel camper. Fai un salto in ferramenta e prendi il resto del necessario per la tua prima coltivazione."}
+{"id": 2767, "t": "Sei un cliente affidabile: se vuoi comprare quantità maggiori, d'ora in poi possiamo vederci di persona."}
+{"id": 2768, "t": "Hai concluso qualche affare e fatto un po' di soldi, ma se vuoi guadagnare sul serio dovrai espandere il giro: più <h1>prodotto</h> e più <h1>clienti</h>."}
+{"id": 2769, "t": "Affare fatto."}
+{"id": 2770, "t": "Hai una base operativa decente e una clientela in crescita. Ora inizierai a fare soldi veri, ma ti servirà aiuto per gestire tutti i tuoi clienti."}
+{"id": 2771, "t": "Ora hai tutto quello che ti serve per mandare avanti un'attività come si deve, quindi ti lascio lavorare. Buona fortuna, campione."}
+{"id": 2772, "t": "Hai colpito duro i Benzies, ma non è ancora finita. Continueranno a darti il tormento finché non saranno spazzati via."}
+{"id": 2773, "t": "Per procurarti gli attrezzi che ti servono, la cosa migliore è il <h1>magazzino.</h> È il posto dove fare affari con... gente che la pensa come te. Armi, attrezzature specializzate, manodopera a pagamento: tutta roba buona."}
+{"id": 2774, "t": "La tua consegna è pronta. Ritirala <LOCATION>"}
+{"id": 2775, "t": "I tuoi dipendenti (spacciatori esclusi) consumeranno qualsiasi prodotto in bustina che metti nel loro inventario."}
+{"id": 2776, "t": "I progressi vengono salvati automaticamente quando dormi. Puoi anche salvare manualmente dal pannello di salvataggio in una qualsiasi delle tue proprietà."}
+{"id": 2777, "t": "Prego, amico. Se ti servono attrezzature o rifornimenti speciali, Oscar ha quello che ti serve."}
+{"id": 2778, "t": "{0}-{1}g qualche volta a settimana. Quando sapremo che sei affidabile, la quantità aumenterà."}
+{"id": 2779, "t": "{0}K di guadagni: niente male! Presto avrai il capitale necessario per iniziare a produrre <h1>metanfetamina</h>. Ma prima dovrai comprare dell'attrezzatura."}
+{"id": 2780, "t": "' per la variabile"}
+{"id": 2781, "t": "Rapporto '<MIN_RELATION_TO_BUY_KEY>' richiesto"}
+{"id": 2782, "t": "La zona '<NAME>' deve essere sbloccata"}
+{"id": 2783, "t": "(in arrivo stanotte)"}
+{"id": 2784, "t": "(nessun posto assegnato)"}
+{"id": 2785, "t": "(pagata in contanti)"}
+{"id": 2786, "t": "+<LENGTH> altri"}
+{"id": 2787, "t": "+<MAX_ITEMS_SHOWN> altri..."}
+{"id": 2788, "t": ", forceDir:"}
+{"id": 2789, "t": ", forceMagnitude:"}
+{"id": 2790, "t": "- contanti insufficienti)"}
+{"id": 2791, "t": "<ACTION_NAME> (Nessun edificio impostato)"}
+{"id": 2792, "t": "<ACTION_NAME> (Nessuna destinazione impostata)"}
+{"id": 2793, "t": "<ACTION_NAME> (Nessun parcheggio)"}
+{"id": 2794, "t": "<AVERAGE_F_P_S> FPS"}
+{"id": 2795, "t": "<color=#16F01C><AMOUNT></color> riciclati"}
+{"id": 2796, "t": "<color=#c0c0c0ff> (Inizia tra <NUM2> min)</color>"}
+{"id": 2797, "t": "<color=#c0c0c0ff> (Inizia tra <NUM3> ore)</color>"}
+{"id": 2798, "t": "<color=#FF6455>Affare scaduto</color>"}
+{"id": 2799, "t": "<color=#FF6455>Missione scaduta</color>"}

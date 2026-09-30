@@ -1,0 +1,200 @@
+{"id": 2800, "t": "<color=#FFB43C>Negócio expirando em breve</color>"}
+{"id": 2801, "t": "<color=#FFB43C>Missão expirando em breve</color>"}
+{"id": 2802, "t": "<color=green> (Expira em <NUM> h)</color>"}
+{"id": 2803, "t": "<color=green> (Expira em <NUM> min)</color>"}
+{"id": 2804, "t": "<COUNT>x nomes variados"}
+{"id": 2805, "t": "<COUNT>x tipos variados"}
+{"id": 2806, "t": "<CURRENT_DAY>, dia <ELAPSED_DAYS>"}
+{"id": 2807, "t": "<CURRENT_MIX_TIME> min restantes"}
+{"id": 2808, "t": "<DAYS> dias, <HOURS> horas, <MINUTES> minutos"}
+{"id": 2809, "t": "<F>% de chance de o cliente aceitar"}
+{"id": 2810, "t": "<F>% de chance de sucesso"}
+{"id": 2811, "t": "<F>% de crescimento"}
+{"id": 2812, "t": "<FIRST_NAME> está fora, vendendo"}
+{"id": 2813, "t": "<FIRST_NAME> está pagando <color=#50E65A><PAYMENT></color> por:"}
+{"id": 2814, "t": "Maleta de <FIRST_NAME>"}
+{"id": 2815, "t": "Inventário de <FULL_NAME>"}
+{"id": 2816, "t": "Estoque de <FULL_NAME>"}
+{"id": 2817, "t": "<I> substâncias controladas confiscadas"}
+{"id": 2818, "t": "<I> drogas de alta gravidade confiscadas"}
+{"id": 2819, "t": "<I> drogas de baixa gravidade confiscadas"}
+{"id": 2820, "t": "<I> drogas de gravidade moderada confiscadas"}
+{"id": 2821, "t": "<Input_QuickMove><h1> + clique</h> em um item para movê-lo rapidamente"}
+{"id": 2822, "t": "<INPUT_WORD> e arraste para cortar o saco"}
+{"id": 2823, "t": "<INPUT_WORD> e segure sobre os cogumelos para colher (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2824, "t": "<INPUT_WORD> na tampa para remover"}
+{"id": 2825, "t": "<INPUT_WORD> nos cogumelos para colher (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2826, "t": "<INPUT_WORD> nos torrões de terra para enterrar a semente (<NUM>/<LENGTH>)"}
+{"id": 2827, "t": "<NAME> está sustentando outro item"}
+{"id": 2828, "t": "<NAME_ADDRESS> pediu uma entrega de <COMMA_SEPERATED_STRING> <DESCRIPTION> por <PAYMENT>."}
+{"id": 2829, "t": "<NUM2>h <NUM3>m até o próximo nível"}
+{"id": 2830, "t": "<NUM> dia até os agiotas chegarem"}
+{"id": 2831, "t": "<NUM> dias atrás"}
+{"id": 2832, "t": "<NUM> dias até os agiotas chegarem"}
+{"id": 2833, "t": "<ORGANISATION_NAME> (<SAVE_VERSION>, espaço de salvamento <SAVE_SLOT_NUMBER>)"}
+{"id": 2834, "t": "<PROPERTY_NAME> (próprio)"}
+{"id": 2835, "t": "<PROPERTY_NAME> (não adquirido)"}
+{"id": 2836, "t": "<PROPERTY_NAME> Contents Container"}
+{"id": 2837, "t": "<PROPERTY_NAME> Worldspace UI Container"}
+{"id": 2838, "t": "<TEXT2> [Patente <REQUIRED_RANK>]"}
+{"id": 2839, "t": "<TEXT> (<NUM6> pagos"}
+{"id": 2840, "t": "<TEXT> (qualidade <QUALITY>)"}
+{"id": 2841, "t": "<TEXT> III"}
+{"id": 2842, "t": "<TEXT> Sua dívida agora é de <NUM3>"}
+{"id": 2843, "t": "<TEXT> Sua dívida agora está quitada."}
+{"id": 2844, "t": "<VALUE><NUM> dia restante)"}
+{"id": 2845, "t": "<VALUE><NUM> dias restantes)"}
+{"id": 2846, "t": "[Agendar negócio]"}
+{"id": 2847, "t": "Ação"}
+{"id": 2848, "t": "Ativar"}
+{"id": 2849, "t": "Ativar irrigador"}
+{"id": 2850, "t": "Activating ragdoll for"}
+{"id": 2851, "t": "Adicionar quantidade"}
+{"id": 2852, "t": "Adicionar micélio"}
+{"id": 2853, "t": "Aiming"}
+{"id": 2854, "t": "Já designado para <FULL_NAME>"}
+{"id": 2855, "t": "JÁ ESTÁ NA CAPACIDADE MÁXIMA"}
+{"id": 2856, "t": "Já contém <NAME>"}
+{"id": 2857, "t": "Já contém semente"}
+{"id": 2858, "t": "Já contém cogumelos"}
+{"id": 2859, "t": "Já está cheio"}
+{"id": 2860, "t": "Já ofereceu hoje"}
+{"id": 2861, "t": "Já ofereceu recentemente"}
+{"id": 2862, "t": "Já está esperando uma entrega no esconderijo"}
+{"id": 2863, "t": "Beleza"}
+{"id": 2864, "t": "Alt"}
+{"id": 2865, "t": "Bravo"}
+{"id": 2866, "t": "Irritado"}
+{"id": 2867, "t": "Atender telefone"}
+{"id": 2868, "t": "Qualquer"}
+{"id": 2869, "t": "Aparência"}
+{"id": 2870, "t": "Aplicar <NAME>"}
+{"id": 2871, "t": "Preso"}
+{"id": 2872, "t": "Agressão"}
+{"id": 2873, "t": "Agressão com arma letal"}
+{"id": 2874, "t": "AssetPath or Label"}
+{"id": 2875, "t": "Assets/Data/Graffiti Drawings"}
+{"id": 2876, "t": "Clientes designados (<COUNT>/10)"}
+{"id": 2877, "t": "Designado para <FULL_NAME>"}
+{"id": 2878, "t": "Tentativa de venda de itens ilícitos"}
+{"id": 2879, "t": "Attribute Name"}
+{"id": 2880, "t": "Autenticando com o anfitrião..."}
+{"id": 2881, "t": "Falha na autenticação"}
+{"id": 2882, "t": "Disponível a partir de <REQUIRED_RANK>"}
+{"id": 2883, "t": "AvatarLookController.Eyes.LookAt"}
+{"id": 2884, "t": "AvatarLookController.LerpTargetTransform"}
+{"id": 2885, "t": "AvatarLookController.UpdateLook"}
+{"id": 2886, "t": "Behaviour"}
+{"id": 2887, "t": "atrás do X"}
+{"id": 2888, "t": "Sendo revistado..."}
+{"id": 2889, "t": "Influência dos Benzies em <REGION>"}
+{"id": 2890, "t": "big head"}
+{"id": 2891, "t": "Big Humanoid"}
+{"id": 2892, "t": "A lixeira está cheia"}
+{"id": 2893, "t": "Reatribuindo '<NAME>'."}
+{"id": 2894, "t": "Quantidade de pássaros: <CHILD_AMOUNT>"}
+{"id": 2895, "t": "Blackjack!"}
+{"id": 2896, "t": "Blackout"}
+{"id": 2897, "t": "Porte ostensivo de arma"}
+{"id": 2898, "t": "Quebre o micélio em pedaços pequenos"}
+{"id": 2899, "t": "Empresas"}
+{"id": 2900, "t": "Ocupado"}
+{"id": 2901, "t": "Romper o acordo com os Benzies é irreversível.\n\nEles se tornarão hostis imediatamente."}
+{"id": 2902, "t": "calórico"}
+{"id": 2903, "t": "Cam Target"}
+{"id": 2904, "t": "Não pode ser designado a um botânico"}
+{"id": 2905, "t": "Não é possível dormir antes das <F>"}
+{"id": 2906, "t": "Não é possível chegar ao destino!"}
+{"id": 2907, "t": "Não é possível chegar à origem!"}
+{"id": 2908, "t": "Caps"}
+{"id": 2909, "t": "Cartel"}
+{"id": 2910, "t": "Influência do cartel em <REGION>"}
+{"id": 2911, "t": "Atividades do cartel na região - <REGION>"}
+{"id": 2912, "t": "Depósito em dinheiro"}
+{"id": 2913, "t": "Saque em dinheiro"}
+{"id": 2914, "t": "Character creator fade in"}
+{"id": 2915, "t": "Personalização de personagem"}
+{"id": 2916, "t": "Check"}
+{"id": 2917, "t": "Alegre"}
+{"id": 2918, "t": "Químico"}
+{"id": 2919, "t": "Limpar grafite"}
+{"id": 2920, "t": "Faxineiro"}
+{"id": 2921, "t": "Clique"}
+{"id": 2922, "t": "Clique em <HARVEST_TARGET> para colher (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2923, "t": "Clique em uma entidade para defini-la como destino da rota"}
+{"id": 2924, "t": "Clique em uma entidade para defini-la como origem da rota"}
+{"id": 2925, "t": "Clique e segure sobre <HARVEST_TARGET> para colher (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2926, "t": "Clique e segure a torneira para encher (<F>%)"}
+{"id": 2927, "t": "Climbing"}
+{"id": 2928, "t": "Prancheta"}
+{"id": 2929, "t": "Feche a porta do forno"}
+{"id": 2930, "t": "Paus"}
+{"id": 2931, "t": "Coletar resultado"}
+{"id": 2932, "t": "Colete a entrega no esconderijo <DEAD_DROP_DESCRIPTION>"}
+{"id": 2933, "t": "Combine os ingredientes no béquer"}
+{"id": 2934, "t": "Combine os ingredientes na tigela"}
+{"id": 2935, "t": "Combine as folhas e a gasolina no caldeirão"}
+{"id": 2936, "t": "Conclua 3 negócios (<NUM>/3)"}
+{"id": 2937, "t": "Preocupado"}
+{"id": 2938, "t": "Configuração"}
+{"id": 2939, "t": "Confirmar (<REPAINT_COST>)"}
+{"id": 2940, "t": "Contém itens"}
+{"id": 2941, "t": "Contém cogumelos"}
+{"id": 2942, "t": "Contém planta"}
+{"id": 2943, "t": "Contém lixo"}
+{"id": 2944, "t": "Conteúdo"}
+{"id": 2945, "t": "Conversate"}
+{"id": 2946, "t": "ConversationEntry_<CONTACT_NAME>"}
+{"id": 2947, "t": "Preparo em andamento..."}
+{"id": 2948, "t": "Custo: $<PRICE>"}
+{"id": 2949, "t": "Cubra a terra com <NAME> (0%)"}
+{"id": 2950, "t": "Cubra a terra com <NAME> (<NUM>%)"}
+{"id": 2951, "t": "Crime"}
+{"id": 2952, "t": "Crouched"}
+{"id": 2953, "t": "Ctrl"}
+{"id": 2954, "t": "TOQUE DE RECOLHER ATIVO\n ATÉ {0}AM"}
+{"id": 2955, "t": "Bônus de toque de recolher"}
+{"id": 2956, "t": "TOQUE DE RECOLHER EM BREVE\n<NUM> MIN"}
+{"id": 2957, "t": "TOQUE DE RECOLHER EM BREVE\n{{0}} MIN"}
+{"id": 2958, "t": "Cozinhando no momento"}
+{"id": 2959, "t": "Em uso no momento"}
+{"id": 2960, "t": "Custom Full Screen Pass"}
+{"id": 2961, "t": "O cliente já tem uma oferta pendente"}
+{"id": 2962, "t": "Expectativas do cliente não atendidas"}
+{"id": 2963, "t": "O cliente fechou um negócio recentemente"}
+{"id": 2964, "t": "Personalizar"}
+{"id": 2965, "t": "Cutscene"}
+{"id": 2966, "t": "Cutscene (<NAME>)"}
+{"id": 2967, "t": "Daily summary close"}
+{"id": 2968, "t": "Daily summary {0}"}
+{"id": 2969, "t": "diária de"}
+{"id": 2970, "t": "Data"}
+{"id": 2971, "t": "Desativar"}
+{"id": 2972, "t": "Esconderijo\n(<DEAD_DROP_NAME>)"}
+{"id": 2973, "t": "Negócio com <FULL_NAME> concluído"}
+{"id": 2974, "t": "Negócio com <NAME_ADDRESS>"}
+{"id": 2975, "t": "Vez da banca..."}
+{"id": 2976, "t": "Diminuir aposta"}
+{"id": 2977, "t": "Entregue <REQUESTED_PRODUCT_QUANTITY>x <NAME> na Mansão Hyland"}
+{"id": 2978, "t": "Entrega já em andamento"}
+{"id": 2979, "t": "Entrega chegou"}
+{"id": 2980, "t": "Entrega de <SHOP_NAME>"}
+{"id": 2981, "t": "Delivery shop entry (<NAME>)"}
+{"id": 2982, "t": "DEPOSITAR <SELECTED_AMOUNT>"}
+{"id": 2983, "t": "DEPOSITAR TUDO"}
+{"id": 2984, "t": "O destino não pode ser igual à origem"}
+{"id": 2985, "t": "O destino não tem espaço para o item!"}
+{"id": 2986, "t": "Destruir"}
+{"id": 2987, "t": "Ouros"}
+{"id": 2988, "t": "Disparo de arma de fogo em local público"}
+{"id": 2989, "t": "Despejar terra"}
+{"id": 2990, "t": "Não corresponde ao tipo exigido"}
+{"id": 2991, "t": "Baixo"}
+{"id": 2992, "t": "Arraste {0}x produto para os espaços de entrada"}
+{"id": 2993, "t": "Drive to car park"}
+{"id": 2994, "t": "Coloque a semente no buraco"}
+{"id": 2995, "t": "Tráfico de drogas"}
+{"id": 2996, "t": "Ganhe <TEXT> (<LIFETIME_EARNINGS> / <TEXT2>)"}
+{"id": 2997, "t": "Editar mensagem da placa"}
+{"id": 2998, "t": "Emitters"}
+{"id": 2999, "t": "Um funcionário está prestes a colocar um item aqui"}

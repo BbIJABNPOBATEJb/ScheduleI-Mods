@@ -1,0 +1,200 @@
+{"id": 600, "t": "Aucune recette définie"}
+{"id": 601, "t": "Aucun"}
+{"id": 602, "t": "Noodle"}
+{"id": 603, "t": "Pas en vente"}
+{"id": 604, "t": "Déconseillé aux nouveaux joueurs"}
+{"id": 605, "t": "Note"}
+{"id": 606, "t": "Rien à faire pour l'instant..."}
+{"id": 607, "t": "DÉSORMAIS DISPONIBLE"}
+{"id": 608, "t": "Nom du PNJ"}
+{"id": 609, "t": "Désactivé"}
+{"id": 610, "t": "Offre"}
+{"id": 611, "t": "Skateboard tout-terrain\n${0}"}
+{"id": 612, "t": "Activé"}
+{"id": 613, "t": "Solde bancaire"}
+{"id": 614, "t": "Solde bancaire uniquement"}
+{"id": 615, "t": "Ouvrir la trappe"}
+{"id": 616, "t": "Ouvrir le téléphone"}
+{"id": 617, "t": "Option A"}
+{"id": 618, "t": "Description de l'option.  Description de l'option.  Description de l'option.  Description de l'option.  Description de l'option."}
+{"id": 619, "t": "Titre de l'option"}
+{"id": 620, "t": "OU"}
+{"id": 621, "t": "Limite de commande"}
+{"id": 622, "t": "Commande envoyée"}
+{"id": 623, "t": "Total de la commande"}
+{"id": 624, "t": "Organisation"}
+{"id": 625, "t": "Nom de l'organisation"}
+{"id": 626, "t": "Création de l'organisation"}
+{"id": 627, "t": "Autre"}
+{"id": 628, "t": "Résultat"}
+{"id": 629, "t": "Texte de remplacement"}
+{"id": 630, "t": "ACQUIS"}
+{"id": 631, "t": "Acquis"}
+{"id": 632, "t": "Véhicule possédé\n(Dinkler rouge terne)"}
+{"id": 633, "t": "EMBALLER"}
+{"id": 634, "t": "Emballage"}
+{"id": 635, "t": "Titre du panneau"}
+{"id": 636, "t": "Parking"}
+{"id": 637, "t": "Commandes passées"}
+{"id": 638, "t": "Coller le filtre"}
+{"id": 639, "t": "Pause en cas de perte de focus"}
+{"id": 640, "t": "PAUSE"}
+{"id": 641, "t": "En pointe"}
+{"id": 642, "t": "Refourgueur"}
+{"id": 643, "t": "Refourgueur I"}
+{"id": 644, "t": "Refourgueur II"}
+{"id": 645, "t": "Refourgueur III"}
+{"id": 646, "t": "Refourgueur IV"}
+{"id": 647, "t": "Refourgueur V"}
+{"id": 648, "t": "Pharmacie"}
+{"id": 649, "t": "PHARMACIE"}
+{"id": 650, "t": "Téléphone"}
+{"id": 651, "t": "Ramasser"}
+{"id": 652, "t": "Ramasser"}
+{"id": 653, "t": "Ramasser la batte de baseball"}
+{"id": 654, "t": "Décrocher le téléphone"}
+{"id": 655, "t": "Ramasser la clé des égouts"}
+{"id": 656, "t": "Ramasser le champi"}
+{"id": 657, "t": "Ramasser des objets"}
+{"id": 658, "t": "Faire les poches"}
+{"id": 659, "t": "Placer l'objet"}
+{"id": 660, "t": "Passer commande"}
+{"id": 661, "t": "Placez les produits attendus ici."}
+{"id": 662, "t": "Gains du joueur"}
+{"id": 663, "t": "Nom du joueur"}
+{"id": 664, "t": "PlayerName0233"}
+{"id": 665, "t": "Joueurs ({0}/{1})"}
+{"id": 666, "t": "Veuillez patienter pendant le traitement de la transaction"}
+{"id": 667, "t": "PoI"}
+{"id": 668, "t": "Sensibilité du pointeur"}
+{"id": 669, "t": "Couvre-feu en vigueur jusqu'à {0}AM"}
+{"id": 670, "t": "Améliorations de la police"}
+{"id": 671, "t": "Bureau \nde poste"}
+{"id": 672, "t": "Bureau de poste"}
+{"id": 673, "t": "Pot"}
+{"id": 674, "t": "Potato Run"}
+{"id": 675, "t": "Client potentiel\nChelsey"}
+{"id": 676, "t": "Client potentiel\nChloe Bowers"}
+{"id": 677, "t": "Client potentiel\nDonna Martin"}
+{"id": 678, "t": "Client potentiel\nGeraldine Poon"}
+{"id": 679, "t": "Client potentiel\nPeter File"}
+{"id": 680, "t": "Verser le terreau"}
+{"id": 681, "t": "Verser le substrat"}
+{"id": 682, "t": "Verser de l'eau"}
+{"id": 683, "t": "Moue"}
+{"id": 684, "t": "Feuille de route avant la sortie"}
+{"id": 685, "t": "Devinez la prochaine carte pour multiplier vos gains !"}
+{"id": 686, "t": "Appuyez sur une touche..."}
+{"id": 687, "t": "Appuyer pour démarrer"}
+{"id": 688, "t": "APERÇU"}
+{"id": 689, "t": "Précédent"}
+{"id": 690, "t": "Prix"}
+{"id": 691, "t": "Prix..."}
+{"id": 692, "t": "Problème"}
+{"id": 693, "t": "Traitement..."}
+{"id": 694, "t": "Produit"}
+{"id": 695, "t": "Gestion des produits"}
+{"id": 696, "t": "Nom du produit"}
+{"id": 697, "t": "Nom du produit ici​"}
+{"id": 698, "t": "Produits"}
+{"id": 699, "t": "Produits vendus"}
+{"id": 700, "t": "La progression n'est sauvegardée que lorsque vous dormez"}
+{"id": 701, "t": "Prologue"}
+{"id": 702, "t": "Propriétés à vendre"}
+{"id": 703, "t": "Effet"}
+{"id": 704, "t": "Dilatation des pupilles"}
+{"id": 705, "t": "Acheter"}
+{"id": 706, "t": "ÉGALITÉ"}
+{"id": 707, "t": "Qualité"}
+{"id": 708, "t": "Titre de la quête"}
+{"id": 709, "t": "Titre de la quête"}
+{"id": 710, "t": "Déplacement rapide"}
+{"id": 711, "t": "Déplacement rapide"}
+{"id": 712, "t": "Quitter"}
+{"id": 713, "t": "Randy's\nBait & Tackle"}
+{"id": 714, "t": "Chenapan"}
+{"id": 715, "t": "Rays Realty"}
+{"id": 716, "t": "Re"}
+{"id": 717, "t": "Atteignez le rang    \n\n\npour débloquer cette région"}
+{"id": 718, "t": "PRÊT"}
+{"id": 719, "t": "Recette"}
+{"id": 720, "t": "Nom de la recette"}
+{"id": 721, "t": "Recette(s)"}
+{"id": 722, "t": "Réduisez l'influence du cartel en débloquant des clients, en repoussant des embuscades, en interrompant les deals du cartel et en dessinant des graffitis dans cette région."}
+{"id": 723, "t": "Réduisez l'influence du cartel à Downtown à \n\n\npour débloquer cette région"}
+{"id": 724, "t": "Région indisponible"}
+{"id": 725, "t": "Regular Gas"}
+{"id": 726, "t": "Relation"}
+{"id": 727, "t": "Les commandes utiles s'affichent en bas à gauche."}
+{"id": 728, "t": "Recharger"}
+{"id": 729, "t": "Retirer"}
+{"id": 730, "t": "Supprimer le message"}
+{"id": 731, "t": "Renommer"}
+{"id": 732, "t": "Commander à nouveau"}
+{"id": 733, "t": "Repeindre le véhicule"}
+{"id": 734, "t": "Repeindre le véhicule"}
+{"id": 735, "t": "Type de rapport"}
+{"id": 736, "t": "Demander une cache"}
+{"id": 737, "t": "Requis"}
+{"id": 738, "t": "Le fichier requis « Game.json » est manquant. Impossible de charger la sauvegarde."}
+{"id": 739, "t": "Réinitialiser"}
+{"id": 740, "t": "Résolution"}
+{"id": 741, "t": "Réapparaître"}
+{"id": 742, "t": "RECOMMENCER"}
+{"id": 743, "t": "Rétablir par défaut"}
+{"id": 744, "t": "Reprendre"}
+{"id": 745, "t": "Récupérer la clé"}
+{"id": 746, "t": "Retour au menu"}
+{"id": 747, "t": "RETOUR AU MENU"}
+{"id": 748, "t": "Rétablir"}
+{"id": 749, "t": "Rétablissement dans {0} s"}
+{"id": 750, "t": "Ride the Bus"}
+{"id": 751, "t": "Droite"}
+{"id": 752, "t": "Bras droit"}
+{"id": 753, "t": "Clic stick droit"}
+{"id": 754, "t": "Tourner"}
+{"id": 755, "t": "Tourner le convoyeur"}
+{"id": 756, "t": "Tourner l'objet tenu"}
+{"id": 757, "t": "Tourner le pot"}
+{"id": 758, "t": "Camping-car"}
+{"id": 759, "t": "Camping-car (acquis)"}
+{"id": 760, "t": "S.M"}
+{"id": 761, "t": "S.W"}
+{"id": 762, "t": "Sam Thompson<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 763, "t": "Satisfaction"}
+{"id": 764, "t": "Saturation"}
+{"id": 765, "t": "Samedi"}
+{"id": 766, "t": "Sauerkraut\nSupreme"}
+{"id": 767, "t": "Commandes enregistrées"}
+{"id": 768, "t": "Schedule I n'a pas pu vérifier l'accès en écriture aux fichiers, ce qui peut provoquer des erreurs lors de la sauvegarde. C'est généralement dû à Windows qui bloque les permissions d'écriture.\n\nSi la sauvegarde semble fonctionner normalement, vous pouvez ignorer ce message."}
+{"id": 769, "t": "SCORE"}
+{"id": 770, "t": "Rechercher des objets..."}
+{"id": 771, "t": "Rechercher des produits..."}
+{"id": 772, "t": "Graine"}
+{"id": 773, "t": "Mélange ensemencé"}
+{"id": 774, "t": "Sélectionner"}
+{"id": 775, "t": "Sélectionner (non modifiable)"}
+{"id": 776, "t": "Sélectionnez un produit pour voir les détails"}
+{"id": 777, "t": "Sélectionnez un seul élément pour utiliser ceci"}
+{"id": 778, "t": "Choisissez votre mise, puis appuyez sur « prêt »"}
+{"id": 779, "t": "Choisissez le montant à déposer/retirer"}
+{"id": 780, "t": "Sélectionnez un objet ou un employé pour le gérer"}
+{"id": 781, "t": "Choisir l'heure du deal"}
+{"id": 782, "t": "Choisir un emplacement de sauvegarde"}
+{"id": 783, "t": "Choisir une graine"}
+{"id": 784, "t": "Sélectionner/Désélectionner"}
+{"id": 785, "t": "Envoyer"}
+{"id": 786, "t": "Envoyer un message"}
+{"id": 787, "t": "Paramètres"}
+{"id": 788, "t": "Bureau des égouts"}
+{"id": 789, "t": "Bureau des égouts (acquis)"}
+{"id": 790, "t": "Sexy Gas"}
+{"id": 791, "t": "Effets sonores"}
+{"id": 792, "t": "Maj"}
+{"id": 793, "t": "Chaussures"}
+{"id": 794, "t": "Boutiques"}
+{"id": 795, "t": "Caïd"}
+{"id": 796, "t": "Caïd I"}
+{"id": 797, "t": "Caïd II"}
+{"id": 798, "t": "Caïd III"}
+{"id": 799, "t": "Caïd IV"}

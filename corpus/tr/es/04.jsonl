@@ -1,0 +1,200 @@
+{"id": 800, "t": "Cabecilla V"}
+{"id": 801, "t": "Mostrar en el mapa"}
+{"id": 802, "t": "Mostrar en el mapa"}
+{"id": 803, "t": "Mostrar/Ocultar descripción"}
+{"id": 804, "t": "Shred \nShack"}
+{"id": 805, "t": "Suministros de hongos"}
+{"id": 806, "t": "Hongos"}
+{"id": 807, "t": "Bob con raya al lado"}
+{"id": 808, "t": "Skate\n${0}"}
+{"id": 809, "t": "Color de piel"}
+{"id": 810, "t": "Saltar prólogo"}
+{"id": 811, "t": "Saltando..."}
+{"id": 812, "t": "Dormir"}
+{"id": 813, "t": "Dormir           horas"}
+{"id": 814, "t": "Mensaje de sueño"}
+{"id": 815, "t": "Nombre del control deslizante"}
+{"id": 816, "t": "Sonrisa leve"}
+{"id": 817, "t": "Smoke Test"}
+{"id": 818, "t": "Engreído"}
+{"id": 819, "t": "Banda sonora de"}
+{"id": 820, "t": "Origen"}
+{"id": 821, "t": "ESPACIO"}
+{"id": 822, "t": "Espacio"}
+{"id": 823, "t": "Micelio"}
+{"id": 824, "t": "Grupos de clientes especiales (moteros, hippies, empresarios, etc.) que visitan la ciudad de vez en cuando y compran grandes cantidades de producto."}
+{"id": 825, "t": "Clientes especiales"}
+{"id": 826, "t": "Escribe un nombre para tu organización"}
+{"id": 827, "t": "Acelerar cacheo"}
+{"id": 828, "t": "De punta"}
+{"id": 829, "t": "Rociar"}
+{"id": 830, "t": "Correr"}
+{"id": 831, "t": "Modo de carrera"}
+{"id": 832, "t": "SSAO"}
+{"id": 833, "t": "Plantarse"}
+{"id": 834, "t": "Exigencia"}
+{"id": 835, "t": "INICIAR"}
+{"id": 836, "t": "Iniciar"}
+{"id": 837, "t": "Stash & Dash"}
+{"id": 838, "t": "Estación"}
+{"id": 839, "t": "DETENER"}
+{"id": 840, "t": "DETENER FLECHA"}
+{"id": 841, "t": "Detén la flecha en la zona verde para desbloquear el objeto"}
+{"id": 842, "t": "Almacenamiento"}
+{"id": 843, "t": "Entidad de almacenamiento"}
+{"id": 844, "t": "Rata callejera"}
+{"id": 845, "t": "RATA CALLEJERA I"}
+{"id": 846, "t": "Rata callejera I"}
+{"id": 847, "t": "Rata callejera II"}
+{"id": 848, "t": "Rata callejera III"}
+{"id": 849, "t": "Rata callejera IV"}
+{"id": 850, "t": "Rata callejera V"}
+{"id": 851, "t": "Barba de tres días"}
+{"id": 852, "t": "Enviar"}
+{"id": 853, "t": "Enviar comentarios"}
+{"id": 854, "t": "Enviado"}
+{"id": 855, "t": "Enviando comentarios..."}
+{"id": 856, "t": "Parque de Suburbia"}
+{"id": 857, "t": "¡Éxito!"}
+{"id": 858, "t": "Sugerido: ${0}"}
+{"id": 859, "t": "Sugerencia"}
+{"id": 860, "t": "Resumen"}
+{"id": 861, "t": "Domingo"}
+{"id": 862, "t": "PROVEEDOR"}
+{"id": 863, "t": "Proveedor"}
+{"id": 864, "t": "Suministros"}
+{"id": 865, "t": "Taller clandestino"}
+{"id": 866, "t": "Tab"}
+{"id": 867, "t": "Taco\nTicklers"}
+{"id": 868, "t": "Taco Ticklers"}
+{"id": 869, "t": "FPS objetivo"}
+{"id": 870, "t": "Calidad objetivo"}
+{"id": 871, "t": "Detalles de la tarea"}
+{"id": 872, "t": "Tareas"}
+{"id": 873, "t": "Estudio de tatuajes"}
+{"id": 874, "t": "PRUEBA"}
+{"id": 875, "t": "Descripción de prueba"}
+{"id": 876, "t": "Mensajes"}
+{"id": 877, "t": "¡Gracias por tus comentarios!"}
+{"id": 878, "t": "Gracias por las cosas gratis, \npayaso"}
+{"id": 879, "t": "¡Gracias por votar! Los clientes especiales ganaron esta votación con más de {0} votos. Esta actualización ya se puede probar en la rama beta."}
+{"id": 880, "t": "The Butter\nBox"}
+{"id": 881, "t": "THE BUTTER BOX"}
+{"id": 882, "t": "The Crimson \nCanary"}
+{"id": 883, "t": "El agente registrará tu inventario de <color=#62BDFF>izquierda a derecha</color>.\n\n<color=#62BDFF>Mantén presionado</color> un objeto para <color=#62BDFF>esconderlo</color>. Solo puedes esconder un objeto a la vez."}
+{"id": 884, "t": "El agente registrará tu inventario de <color=#62BDFF>izquierda a derecha</color>.\n\n<color=#62BDFF>Mantén presionado</color> un objeto para <color=#62BDFF>esconderlo</color>. Solo puedes esconder un objeto a la vez."}
+{"id": 885, "t": "No hay entregas activas"}
+{"id": 886, "t": "No hay entregas anteriores"}
+{"id": 887, "t": "Este cliente tiene exigencia Alta"}
+{"id": 888, "t": "Esta es una versión beta del juego: las partidas pueden dañarse. \nNo cargues ninguna partida importante para ti A MENOS QUE tengas una copia de seguridad.\n\nPuedes usar los botones de 'exportar' de arriba para crear una copia de seguridad de tu partida."}
+{"id": 889, "t": "Este es el último vehículo que condujiste.\nDebe estar a menos de {0} metros."}
+{"id": 890, "t": "¡Ya conoces esta mezcla!\nUsa la estación de mezcla para crearla."}
+{"id": 891, "t": "Thompson\nConstruction & Demo"}
+{"id": 892, "t": "Umbral"}
+{"id": 893, "t": "Thrifty \nThreads"}
+{"id": 894, "t": "Thrifty Threads"}
+{"id": 895, "t": "Jueves"}
+{"id": 896, "t": "Tiempo restante"}
+{"id": 897, "t": "Texto del título"}
+{"id": 898, "t": "Destino"}
+{"id": 899, "t": "Para mover una cantidad personalizada, arrastra un objeto con<color=#62BDFF> clic derecho</color> y usa la <color=#62BDFF>rueda del ratón</color> para cambiar la cantidad."}
+{"id": 900, "t": "Abrir/cerrar desplegable"}
+{"id": 901, "t": "Alternar calefacción/refrigeración"}
+{"id": 902, "t": "Alternar mapa de calor"}
+{"id": 903, "t": "Abrir/cerrar teléfono"}
+{"id": 904, "t": "Herramientas"}
+{"id": 905, "t": "Descripción emergente"}
+{"id": 906, "t": "Top\n Tattoo"}
+{"id": 907, "t": "Costo total: ${0}"}
+{"id": 908, "t": "Total gastado <color=#A0A0A0>(semanal)</color>"}
+{"id": 909, "t": "Total:"}
+{"id": 910, "t": "Total: <color=#5AB95A>${0}"}
+{"id": 911, "t": "Palacio\nmunicipal"}
+{"id": 912, "t": "PLAZA   CENTRAL"}
+{"id": 913, "t": "Misiones seguidas"}
+{"id": 914, "t": "En tregua"}
+{"id": 915, "t": "Martes"}
+{"id": 916, "t": "Martes, día {0}"}
+{"id": 917, "t": "Apagar"}
+{"id": 918, "t": "Encender"}
+{"id": 919, "t": "TVGS"}
+{"id": 920, "t": "TVGS no aprueba la fabricación, el comercio ni el consumo de drogas ilegales.\n\nLos procesos de producción que se muestran en este juego son pura ficción y no reflejan la realidad. No intentes seguir estos procesos: no conseguirás fabricar drogas, pero podrías hacerte mucho daño.\n\nPor favor, no consumas drogas."}
+{"id": 921, "t": "Tylah Cannell"}
+{"id": 922, "t": "Desembalar nuevo producto"}
+{"id": 923, "t": "DETENIDO"}
+{"id": 924, "t": "Señor del hampa"}
+{"id": 925, "t": "Señor del hampa I"}
+{"id": 926, "t": "Señor del hampa II"}
+{"id": 927, "t": "Señor del hampa III"}
+{"id": 928, "t": "Señor del hampa IV"}
+{"id": 929, "t": "Señor del hampa V"}
+{"id": 930, "t": "Deshacer"}
+{"id": 931, "t": "DESHACER"}
+{"id": 932, "t": "Poco amistoso"}
+{"id": 933, "t": "Unidades"}
+{"id": 934, "t": "DESCONOCIDO"}
+{"id": 935, "t": "Desbloquear siguiente región"}
+{"id": 936, "t": "Desbloquea a este cliente dándole una muestra gratis. Usa el mapa para ver su ubicación aproximada."}
+{"id": 937, "t": "Se desbloquea en Rata callejera II"}
+{"id": 938, "t": "DESEMPAQUETAR"}
+{"id": 939, "t": "Sin especificar"}
+{"id": 940, "t": "Posición del párpado superior en reposo"}
+{"id": 941, "t": "Usar"}
+{"id": 942, "t": "Usa las tijeras de podar para cosechar"}
+{"id": 943, "t": "Usar/Arrastrar/Atacar"}
+{"id": 944, "t": "Cuello en V"}
+{"id": 945, "t": "Sincronización vertical"}
+{"id": 946, "t": "v0.{0}f1"}
+{"id": 947, "t": "v0.{0}f13"}
+{"id": 948, "t": "v0.{0}f13 Alternate"}
+{"id": 949, "t": "v0.{0}f3"}
+{"id": 950, "t": "Vector2"}
+{"id": 951, "t": "Vector4"}
+{"id": 952, "t": "Vehículo"}
+{"id": 953, "t": "Versión"}
+{"id": 954, "t": "Ver avatar"}
+{"id": 955, "t": "Ver comandos"}
+{"id": 956, "t": "Ver cómo solucionarlo"}
+{"id": 957, "t": "Ver nota"}
+{"id": 958, "t": "Actores de voz"}
+{"id": 959, "t": "Esperando al anfitrión..."}
+{"id": 960, "t": "Esperando al jugador..."}
+{"id": 961, "t": "Despertarás a las"}
+{"id": 962, "t": "Despertarás a las {0} AM"}
+{"id": 963, "t": "BUSCADO"}
+{"id": 964, "t": "SE BUSCA VIVO O MUERTO"}
+{"id": 965, "t": "Almacén"}
+{"id": 966, "t": "Advertencia"}
+{"id": 967, "t": "Advertencia: se sobrescribirá la partida actual del espacio {0} (Nombre de la organización)"}
+{"id": 968, "t": "Clima"}
+{"id": 969, "t": "Miércoles"}
+{"id": 970, "t": "Semillas de hierba"}
+{"id": 971, "t": "Límite de depósito semanal"}
+{"id": 972, "t": "Peso"}
+{"id": 973, "t": "WESTVILLE"}
+{"id": 974, "t": "¿Qué quieres ver en la próxima actualización de Schedule I?"}
+{"id": 975, "t": "¿Cuál será la siguiente carta?"}
+{"id": 976, "t": "¿Qué quieres hacer?"}
+{"id": 977, "t": "Mientras trabajes con el cártel"}
+{"id": 978, "t": "Will Jackson"}
+{"id": 979, "t": "¡PREMIO!"}
+{"id": 980, "t": "Nombre de la ventana"}
+{"id": 981, "t": "RETIRAR"}
+{"id": 982, "t": "Arrugas"}
+{"id": 983, "t": "XP obtenida"}
+{"id": 984, "t": "Tú"}
+{"id": 985, "t": "Puedes completar el trato en cualquier momento dentro de la franja horaria"}
+{"id": 986, "t": "¿Tienes {0}x OG Kush? Te pago <color=#46CB4F>${1}</color>"}
+{"id": 987, "t": "Has depositado/retirado $X"}
+{"id": 988, "t": "Aún no has fabricado este producto"}
+{"id": 989, "t": "No has reclutado a ningún dealer"}
+{"id": 990, "t": "Necesitas al menos ${0} en efectivo para empezar a blanquear"}
+{"id": 991, "t": "Solo conoces una forma de ganar dinero. Hora de ponerse a trabajar."}
+{"id": 992, "t": "Recibes"}
+{"id": 993, "t": "¡VICTORIA!"}
+{"id": 994, "t": "Jugarás el prólogo en solitario\ny te unirás a tus amigos al terminarlo."}
+{"id": 995, "t": "Eres un traficante de poca monta del sur."}
+{"id": 996, "t": "¡Agradecemos mucho \ntu donación!"}
+{"id": 997, "t": "Tu mensaje aquí"}
+{"id": 998, "t": "Zac Williams"}
+{"id": 999, "t": "{0} AM"}

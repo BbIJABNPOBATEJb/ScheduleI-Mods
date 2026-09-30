@@ -1,0 +1,200 @@
+{"id": 2800, "t": "<color=#FFB43C>Trato a punto de vencer</color>"}
+{"id": 2801, "t": "<color=#FFB43C>Misión a punto de vencer</color>"}
+{"id": 2802, "t": "<color=green> (Vence en <NUM> h)</color>"}
+{"id": 2803, "t": "<color=green> (Vence en <NUM> min)</color>"}
+{"id": 2804, "t": "<COUNT>x nombres mixtos"}
+{"id": 2805, "t": "<COUNT>x tipos mixtos"}
+{"id": 2806, "t": "<CURRENT_DAY>, día <ELAPSED_DAYS>"}
+{"id": 2807, "t": "<CURRENT_MIX_TIME> min restantes"}
+{"id": 2808, "t": "<DAYS> días, <HOURS> horas, <MINUTES> minutos"}
+{"id": 2809, "t": "<F>% de probabilidad de que el cliente acepte"}
+{"id": 2810, "t": "<F>% de probabilidad de éxito"}
+{"id": 2811, "t": "<F>% de crecimiento"}
+{"id": 2812, "t": "<FIRST_NAME> salió a vender"}
+{"id": 2813, "t": "<FIRST_NAME> paga <color=#50E65A><PAYMENT></color> por:"}
+{"id": 2814, "t": "Maletín de <FIRST_NAME>"}
+{"id": 2815, "t": "Inventario de <FULL_NAME>"}
+{"id": 2816, "t": "Alijo de <FULL_NAME>"}
+{"id": 2817, "t": "<I> sustancias controladas confiscadas"}
+{"id": 2818, "t": "<I> drogas de gravedad alta confiscadas"}
+{"id": 2819, "t": "<I> drogas de gravedad baja confiscadas"}
+{"id": 2820, "t": "<I> drogas de gravedad moderada confiscadas"}
+{"id": 2821, "t": "<Input_QuickMove><h1> + clic</h> en un objeto para moverlo rápidamente"}
+{"id": 2822, "t": "<INPUT_WORD> y arrastra para cortar la bolsa"}
+{"id": 2823, "t": "<INPUT_WORD> y mantén sobre los hongos para cosecharlos (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2824, "t": "<INPUT_WORD> en la tapa para quitarla"}
+{"id": 2825, "t": "<INPUT_WORD> en los hongos para cosecharlos (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2826, "t": "<INPUT_WORD> en los trozos de tierra para enterrar la semilla (<NUM>/<LENGTH>)"}
+{"id": 2827, "t": "<NAME> está sosteniendo otro objeto"}
+{"id": 2828, "t": "<NAME_ADDRESS> solicitó una entrega de <COMMA_SEPERATED_STRING> <DESCRIPTION> por <PAYMENT>."}
+{"id": 2829, "t": "<NUM2>h <NUM3>m hasta el siguiente nivel"}
+{"id": 2830, "t": "<NUM> día hasta que lleguen los usureros"}
+{"id": 2831, "t": "Hace <NUM> días"}
+{"id": 2832, "t": "<NUM> días hasta que lleguen los usureros"}
+{"id": 2833, "t": "<ORGANISATION_NAME> (<SAVE_VERSION>, espacio de guardado <SAVE_SLOT_NUMBER>)"}
+{"id": 2834, "t": "<PROPERTY_NAME> (propia)"}
+{"id": 2835, "t": "<PROPERTY_NAME> (sin adquirir)"}
+{"id": 2836, "t": "<PROPERTY_NAME> Contents Container"}
+{"id": 2837, "t": "<PROPERTY_NAME> Worldspace UI Container"}
+{"id": 2838, "t": "<TEXT2> [Rango <REQUIRED_RANK>]"}
+{"id": 2839, "t": "<TEXT> (<NUM6> pagados"}
+{"id": 2840, "t": "<TEXT> (calidad <QUALITY>)"}
+{"id": 2841, "t": "<TEXT> III"}
+{"id": 2842, "t": "<TEXT> Tu deuda ahora es de <NUM3>"}
+{"id": 2843, "t": "<TEXT> Tu deuda ya está saldada."}
+{"id": 2844, "t": "<VALUE><NUM> día restante)"}
+{"id": 2845, "t": "<VALUE><NUM> días restantes)"}
+{"id": 2846, "t": "[Programar trato]"}
+{"id": 2847, "t": "Acción"}
+{"id": 2848, "t": "Activar"}
+{"id": 2849, "t": "Activar aspersor"}
+{"id": 2850, "t": "Activating ragdoll for"}
+{"id": 2851, "t": "Añadir cantidad"}
+{"id": 2852, "t": "Añadir micelio"}
+{"id": 2853, "t": "Apuntando"}
+{"id": 2854, "t": "Ya asignado a <FULL_NAME>"}
+{"id": 2855, "t": "YA ESTÁ AL MÁXIMO DE CAPACIDAD"}
+{"id": 2856, "t": "Ya contiene <NAME>"}
+{"id": 2857, "t": "Ya contiene una semilla"}
+{"id": 2858, "t": "Ya contiene hongos"}
+{"id": 2859, "t": "Ya está lleno"}
+{"id": 2860, "t": "Ya se ofreció hoy"}
+{"id": 2861, "t": "Ya se ofreció recientemente"}
+{"id": 2862, "t": "Ya hay una entrega pendiente en un buzón secreto"}
+{"id": 2863, "t": "Está bien"}
+{"id": 2864, "t": "Alt"}
+{"id": 2865, "t": "Enojado"}
+{"id": 2866, "t": "Molesto"}
+{"id": 2867, "t": "Responder al teléfono"}
+{"id": 2868, "t": "Cualquiera"}
+{"id": 2869, "t": "Apariencia"}
+{"id": 2870, "t": "Aplicar <NAME>"}
+{"id": 2871, "t": "Arrestado"}
+{"id": 2872, "t": "Agresión"}
+{"id": 2873, "t": "Agresión con arma mortal"}
+{"id": 2874, "t": "AssetPath or Label"}
+{"id": 2875, "t": "Assets/Data/Graffiti Drawings"}
+{"id": 2876, "t": "Clientes asignados (<COUNT>/10)"}
+{"id": 2877, "t": "Asignado a <FULL_NAME>"}
+{"id": 2878, "t": "Intento de venta de artículos ilícitos"}
+{"id": 2879, "t": "Attribute Name"}
+{"id": 2880, "t": "Autenticando con el anfitrión..."}
+{"id": 2881, "t": "Error de autenticación"}
+{"id": 2882, "t": "Disponible en <REQUIRED_RANK>"}
+{"id": 2883, "t": "AvatarLookController.Eyes.LookAt"}
+{"id": 2884, "t": "AvatarLookController.LerpTargetTransform"}
+{"id": 2885, "t": "AvatarLookController.UpdateLook"}
+{"id": 2886, "t": "Behaviour"}
+{"id": 2887, "t": "detrás de X"}
+{"id": 2888, "t": "Te están registrando..."}
+{"id": 2889, "t": "Influencia de los Benzies en <REGION>"}
+{"id": 2890, "t": "big head"}
+{"id": 2891, "t": "Big Humanoid"}
+{"id": 2892, "t": "La papelera está llena"}
+{"id": 2893, "t": "Asignando '<NAME>'."}
+{"id": 2894, "t": "Bird Amount: <CHILD_AMOUNT>"}
+{"id": 2895, "t": "¡Blackjack!"}
+{"id": 2896, "t": "Blackout"}
+{"id": 2897, "t": "Exhibición de un arma"}
+{"id": 2898, "t": "Rompe el micelio en trozos pequeños"}
+{"id": 2899, "t": "Negocios"}
+{"id": 2900, "t": "Ocupado"}
+{"id": 2901, "t": "Romper el acuerdo con los Benzies es irreversible.\n\nSe volverán hostiles de inmediato."}
+{"id": 2902, "t": "hipercalórico"}
+{"id": 2903, "t": "Cam Target"}
+{"id": 2904, "t": "No se puede asignar a un botánico"}
+{"id": 2905, "t": "No puedes dormir antes de las <F>"}
+{"id": 2906, "t": "¡No se puede llegar al destino!"}
+{"id": 2907, "t": "¡No se puede llegar al origen!"}
+{"id": 2908, "t": "Bloq Mayús"}
+{"id": 2909, "t": "Cártel"}
+{"id": 2910, "t": "Influencia del cártel en <REGION>"}
+{"id": 2911, "t": "Actividades del cártel en la región - <REGION>"}
+{"id": 2912, "t": "Depósito en efectivo"}
+{"id": 2913, "t": "Retiro de efectivo"}
+{"id": 2914, "t": "Character creator fade in"}
+{"id": 2915, "t": "Personalización del personaje"}
+{"id": 2916, "t": "Check"}
+{"id": 2917, "t": "Alegre"}
+{"id": 2918, "t": "Químico"}
+{"id": 2919, "t": "Limpiar grafiti"}
+{"id": 2920, "t": "Limpiador"}
+{"id": 2921, "t": "Haz clic"}
+{"id": 2922, "t": "Haz clic en <HARVEST_TARGET> para cosechar (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2923, "t": "Haz clic en una entidad para fijarla como destino de la ruta"}
+{"id": 2924, "t": "Haz clic en una entidad para fijarla como origen de la ruta"}
+{"id": 2925, "t": "Mantén presionado sobre <HARVEST_TARGET> para cosechar (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
+{"id": 2926, "t": "Mantén presionado el grifo para llenar (<F>%)"}
+{"id": 2927, "t": "Escalando"}
+{"id": 2928, "t": "Portapapeles"}
+{"id": 2929, "t": "Cierra la puerta del horno"}
+{"id": 2930, "t": "Tréboles"}
+{"id": 2931, "t": "Recoger resultado"}
+{"id": 2932, "t": "Recoge la entrega del buzón secreto <DEAD_DROP_DESCRIPTION>"}
+{"id": 2933, "t": "Combina los ingredientes en el vaso de precipitados"}
+{"id": 2934, "t": "Combina los ingredientes en el cuenco"}
+{"id": 2935, "t": "Combina las hojas y la gasolina en el caldero"}
+{"id": 2936, "t": "Completa 3 tratos (<NUM>/3)"}
+{"id": 2937, "t": "Preocupado"}
+{"id": 2938, "t": "Configuración"}
+{"id": 2939, "t": "Confirmar (<REPAINT_COST>)"}
+{"id": 2940, "t": "Contiene objetos"}
+{"id": 2941, "t": "Contiene hongos"}
+{"id": 2942, "t": "Contiene una planta"}
+{"id": 2943, "t": "Contiene basura"}
+{"id": 2944, "t": "Contenido"}
+{"id": 2945, "t": "Conversar"}
+{"id": 2946, "t": "ConversationEntry_<CONTACT_NAME>"}
+{"id": 2947, "t": "Cocinando..."}
+{"id": 2948, "t": "Precio: $<PRICE>"}
+{"id": 2949, "t": "Cubre la tierra con <NAME> (0%)"}
+{"id": 2950, "t": "Cubre la tierra con <NAME> (<NUM>%)"}
+{"id": 2951, "t": "Delito"}
+{"id": 2952, "t": "Agachado"}
+{"id": 2953, "t": "Ctrl"}
+{"id": 2954, "t": "TOQUE DE QUEDA ACTIVO\n HASTA LAS {0}AM"}
+{"id": 2955, "t": "Bonificación por toque de queda"}
+{"id": 2956, "t": "TOQUE DE QUEDA PRONTO\n<NUM> MIN"}
+{"id": 2957, "t": "TOQUE DE QUEDA PRONTO\n{{0}} MIN"}
+{"id": 2958, "t": "Cocinando ahora"}
+{"id": 2959, "t": "En uso"}
+{"id": 2960, "t": "Custom Full Screen Pass"}
+{"id": 2961, "t": "El cliente ya tiene una oferta pendiente"}
+{"id": 2962, "t": "No se cumplieron las expectativas del cliente"}
+{"id": 2963, "t": "El cliente completó un trato recientemente"}
+{"id": 2964, "t": "Personalizar"}
+{"id": 2965, "t": "Cutscene"}
+{"id": 2966, "t": "Cutscene (<NAME>)"}
+{"id": 2967, "t": "Daily summary close"}
+{"id": 2968, "t": "Daily summary {0}"}
+{"id": 2969, "t": "sueldo diario de"}
+{"id": 2970, "t": "Data"}
+{"id": 2971, "t": "Desactivar"}
+{"id": 2972, "t": "Buzón secreto\n(<DEAD_DROP_NAME>)"}
+{"id": 2973, "t": "Trato completado con <FULL_NAME>"}
+{"id": 2974, "t": "Trato para <NAME_ADDRESS>"}
+{"id": 2975, "t": "Turno de la banca..."}
+{"id": 2976, "t": "Bajar apuesta"}
+{"id": 2977, "t": "Entrega <REQUESTED_PRODUCT_QUANTITY>x <NAME> en Hyland Manor"}
+{"id": 2978, "t": "Ya hay una entrega en curso"}
+{"id": 2979, "t": "Entrega recibida"}
+{"id": 2980, "t": "Entrega de <SHOP_NAME>"}
+{"id": 2981, "t": "Delivery shop entry (<NAME>)"}
+{"id": 2982, "t": "DEPOSITAR <SELECTED_AMOUNT>"}
+{"id": 2983, "t": "DEPOSITAR TODO"}
+{"id": 2984, "t": "El destino no puede ser el mismo que el origen"}
+{"id": 2985, "t": "¡El destino no tiene espacio para el objeto!"}
+{"id": 2986, "t": "Destroy"}
+{"id": 2987, "t": "Diamantes"}
+{"id": 2988, "t": "Disparo de arma de fuego en un lugar público"}
+{"id": 2989, "t": "Dispensar tierra"}
+{"id": 2990, "t": "No cumple el requisito de tipo"}
+{"id": 2991, "t": "Abajo"}
+{"id": 2992, "t": "Arrastra {0}x producto a las ranuras de entrada"}
+{"id": 2993, "t": "Conducir al estacionamiento"}
+{"id": 2994, "t": "Deja caer la semilla en el hoyo"}
+{"id": 2995, "t": "Tráfico de drogas"}
+{"id": 2996, "t": "Gana <TEXT> (<LIFETIME_EARNINGS> / <TEXT2>)"}
+{"id": 2997, "t": "Editar mensaje del letrero"}
+{"id": 2998, "t": "Emitters"}
+{"id": 2999, "t": "Un empleado está a punto de colocar un objeto aquí"}

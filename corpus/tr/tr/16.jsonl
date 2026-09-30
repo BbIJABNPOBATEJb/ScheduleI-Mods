@@ -1,0 +1,200 @@
+{"id": 3200, "t": "Tamam patron, birazdan oraya geçerim."}
+{"id": 3201, "t": "Tamam..."}
+{"id": 3202, "t": "Yalnızca host kaydedebilir"}
+{"id": 3203, "t": "Yalnızca saat {0}PM'den sonra açık"}
+{"id": 3204, "t": "Yalnızca {0} numune ürün gerekli."}
+{"id": 3205, "t": "Dosya Aç"}
+{"id": 3206, "t": "Fırın kapağını aç"}
+{"id": 3207, "t": "Seçenek"}
+{"id": 3208, "t": "Sipariş teslimat aracı için çok büyük"}
+{"id": 3209, "t": "Sipariş çok büyük"}
+{"id": 3210, "t": "Sipariş envantere sığmıyor"}
+{"id": 3211, "t": "Stokta yok"}
+{"id": 3212, "t": "Çıktı dolu"}
+{"id": 3213, "t": "Çıktı yuvasında yeterli yer yok"}
+{"id": 3214, "t": "Çıktı yuvası dolu!"}
+{"id": 3215, "t": "Dışında"}
+{"id": 3216, "t": "Gecikti,"}
+{"id": 3217, "t": "Sahipli Araç\n(<OWNED_COLOR> <VEHICLE_NAME>)"}
+{"id": 3218, "t": "Pacific Standard Time"}
+{"id": 3219, "t": "Ürünü paketle"}
+{"id": 3220, "t": "Packaging Container"}
+{"id": 3221, "t": "Packaging station switch to package"}
+{"id": 3222, "t": "Packaging station switch to unpackage"}
+{"id": 3223, "t": "Peephole close"}
+{"id": 3224, "t": "Peephole open"}
+{"id": 3225, "t": "<NAME> al"}
+{"id": 3226, "t": "<VALUE> al"}
+{"id": 3227, "t": "<color=#4CB0FF>Paketlenmiş ürünü</color> buraya koy, satıcı onu atanan müşterilere satsın"}
+{"id": 3228, "t": "Pişirilebilir eşyayı malzeme yuvasına koy"}
+{"id": 3229, "t": "Eşyaları tepsiye koy"}
+{"id": 3230, "t": "Ambalajı hazneye koy"}
+{"id": 3231, "t": "Ürünü ambalaja koy"}
+{"id": 3232, "t": "Bahsini koy ve 'Hazır'a bas"}
+{"id": 3233, "t": "Bombayı yerleştir"}
+{"id": 3234, "t": "<GAME_NAME> Oyna"}
+{"id": 3235, "t": "{0}. Oyuncu Kazandı!"}
+{"id": 3236, "t": "Player-prev"}
+{"id": 3237, "t": "Player_<PLAYER_CODE>"}
+{"id": 3238, "t": "Player_<TEXT>"}
+{"id": 3239, "t": "Oyuncular"}
+{"id": 3240, "t": "Oyuncular (<CURRENT_PLAYER_COUNT>/<PLAYER_LIMIT>)"}
+{"id": 3241, "t": "Polis yakında!"}
+{"id": 3242, "t": "Polis sokağa çıkma yasağı yakında başlıyor"}
+{"id": 3243, "t": "Police icon discover"}
+{"id": 3244, "t": "Police icon end"}
+{"id": 3245, "t": "Police icon start"}
+{"id": 3246, "t": "Popup"}
+{"id": 3247, "t": "Kontrollü madde bulundurmak"}
+{"id": 3248, "t": "Ağır sınıf uyuşturucu bulundurmak"}
+{"id": 3249, "t": "Hafif sınıf uyuşturucu bulundurmak"}
+{"id": 3250, "t": "Orta sınıf uyuşturucu bulundurmak"}
+{"id": 3251, "t": "post combat"}
+{"id": 3252, "t": "potansiyel müşteri"}
+{"id": 3253, "t": "Potansiyel Müşteri\n<FULL_NAME>"}
+{"id": 3254, "t": "Potansiyel Satıcı\n<FULL_NAME>"}
+{"id": 3255, "t": "Potansiyel değer: <color=#FFD755><NUM2></color>"}
+{"id": 3256, "t": "Dök"}
+{"id": 3257, "t": "Saksıya dök (%<F>)"}
+{"id": 3258, "t": "Karışımı kaynatma balonuna dök"}
+{"id": 3259, "t": "Karışımı filtreden geçir"}
+{"id": 3260, "t": "Ürünü kalıba dök (<COUNT>/20)"}
+{"id": 3261, "t": "Ürünü kalıba dök ({0}/{1})"}
+{"id": 3262, "t": "Hedefin üzerine su dök"}
+{"id": 3263, "t": "Sıvı dökülüyor..."}
+{"id": 3264, "t": "Preset Name"}
+{"id": 3265, "t": "Bas"}
+{"id": 3266, "t": "Product <RANGE>"}
+{"id": 3267, "t": "Ürün paketlenmiş olmalı"}
+{"id": 3268, "t": "Mülkler"}
+{"id": 3269, "t": "Property Name"}
+{"id": 3270, "t": "Kolu çek"}
+{"id": 3271, "t": "Cuke Satın Al"}
+{"id": 3272, "t": "Satın al: <SHOP_NAME>"}
+{"id": 3273, "t": "Pistonu it (%<F>)"}
+{"id": 3274, "t": "Quad"}
+{"id": 3275, "t": "Quest complete"}
+{"id": 3276, "t": "Quest enter"}
+{"id": 3277, "t": "Quest entry complete"}
+{"id": 3278, "t": "Quest entry enter"}
+{"id": 3279, "t": "Quest entry exit"}
+{"id": 3280, "t": "Quest exit"}
+{"id": 3281, "t": "Quest name"}
+{"id": 3282, "t": "Görevler"}
+{"id": 3283, "t": "Hızlı Teslimat Bonusu"}
+{"id": 3284, "t": "Yağmur Bonusu"}
+{"id": 3285, "t": "Kaldır"}
+{"id": 3286, "t": "Kaynatma balonunu brülörün üstüne kaldır"}
+{"id": 3287, "t": "Rütbe"}
+{"id": 3288, "t": "Rank up close"}
+{"id": 3289, "t": "Rank up open"}
+{"id": 3290, "t": "10 müşteriye ulaş (<COUNT>/10)"}
+{"id": 3291, "t": "Bu alana girmek için <h1><UNLOCK_RANK></h> rütbesine ulaş."}
+{"id": 3292, "t": "Hazır"}
+{"id": 3293, "t": "Pişirmeye başlamaya hazır"}
+{"id": 3294, "t": "Ürün almaya hazır"}
+{"id": 3295, "t": "Bitirmeye hazır"}
+{"id": 3296, "t": "RealAppId="}
+{"id": 3297, "t": "RealAppId=<TEXT2>"}
+{"id": 3298, "t": "Recycler close"}
+{"id": 3299, "t": "Recycler open"}
+{"id": 3300, "t": "Bu bölgenin kilidini açmak için <E_MAP_REGION> bölgesindeki kartel nüfuzunu\n\n\nseviyesine indir"}
+{"id": 3301, "t": "Refresh"}
+{"id": 3302, "t": "Şırınga kapağını çıkar"}
+{"id": 3303, "t": "Render Grabbed Objects"}
+{"id": 3304, "t": "Zula İste"}
+{"id": 3305, "t": "Geri Çekil"}
+{"id": 3306, "t": "<TIME_UNTIL_REVERT> saniye içinde geri alınacak"}
+{"id": 3307, "t": "Road Nodes"}
+{"id": 3308, "t": "Roller door close"}
+{"id": 3309, "t": "Roller door open"}
+{"id": 3310, "t": "Ürünü preslemek için kolu hızla çevir"}
+{"id": 3311, "t": "{0}. Tur\nSonraki kartın bir öncekinden yüksek mi düşük mü olacağını tahmin et.\nPes edip kazancını da alabilirsin."}
+{"id": 3312, "t": "{0}. Tur\nSonraki kartın önceki iki kartın arasında mı dışında mı olacağını tahmin et (As {1} sayılır).\nPes edip kazancını da alabilirsin."}
+{"id": 3313, "t": "{0}. Tur\nSonraki kartın kırmızı mı siyah mı olacağını tahmin et.\nPes edip kazancını da alabilirsin."}
+{"id": 3314, "t": "{0}. Tur\nSonraki kartın türünü tahmin et.\nPes edip kazancını da alabilirsin."}
+{"id": 3315, "t": "Route is null!"}
+{"id": 3316, "t": "Save <TEXT>"}
+{"id": 3317, "t": "Oyunu kaydet"}
+{"id": 3318, "t": "SaveGame_"}
+{"id": 3319, "t": "Scare All"}
+{"id": 3320, "t": "Korkmuş"}
+{"id": 3321, "t": "Schizo music"}
+{"id": 3322, "t": "Ambalajı mühürle"}
+{"id": 3323, "t": "<ObjectType> Seç"}
+{"id": 3324, "t": "Bir hedef seç"}
+{"id": 3325, "t": "Bir yükleme rampası seç"}
+{"id": 3326, "t": "Yatırılacak tutarı seç"}
+{"id": 3327, "t": "Çekilecek tutarı seç"}
+{"id": 3328, "t": "<FIRST_NAME> kişisinden sipariş edilecek eşyaları seç"}
+{"id": 3329, "t": "Tarif Seç"}
+{"id": 3330, "t": "Kaynak seç"}
+{"id": 3331, "t": "Seçilen hedefin yükleme rampası yok"}
+{"id": 3332, "t": "2 yetiştirme çadırı daha kur (<NUM>/2)"}
+{"id": 3333, "t": "Kanalizasyon"}
+{"id": 3334, "t": "O"}
+{"id": 3335, "t": "Ateş et"}
+{"id": 3336, "t": "Dükkan"}
+{"id": 3337, "t": "Hastalıklı"}
+{"id": 3338, "t": "Signal"}
+{"id": 3339, "t": "Ya Yüz Ya Bat"}
+{"id": 3340, "t": "Beyefendi"}
+{"id": 3341, "t": "Sit"}
+{"id": 3342, "t": "Uyuyor"}
+{"id": 3343, "t": "Kesiyor"}
+{"id": 3344, "t": "Toprak türü uyuşmuyor"}
+{"id": 3345, "t": "Araçta biri var"}
+{"id": 3346, "t": "Kusura bakma patron, mesaim saat {0}AM'de bitiyor."}
+{"id": 3347, "t": "Kaynak, hedefle aynı olamaz"}
+{"id": 3348, "t": "Tohum ek"}
+{"id": 3349, "t": "Maça"}
+{"id": 3350, "t": "Oyuncu oluşturuluyor..."}
+{"id": 3351, "t": "Sprey şişesi boş"}
+{"id": 3352, "t": "Stand up from back"}
+{"id": 3353, "t": "Stand up from front"}
+{"id": 3354, "t": "Brülörü yak"}
+{"id": 3355, "t": "Karıştırma makinesini çalıştır"}
+{"id": 3356, "t": "Fırını çalıştır"}
+{"id": 3357, "t": "Stay in Building"}
+{"id": 3358, "t": "Karışımı karıştır"}
+{"id": 3359, "t": "Stop Arrow"}
+{"id": 3360, "t": "Strokes"}
+{"id": 3361, "t": "Gönderiliyor..."}
+{"id": 3362, "t": "Önerilen: <MARKET_VALUE>"}
+{"id": 3363, "t": "Tedarikçi Buluşması\n(<FULL_NAME>)"}
+{"id": 3364, "t": "Şaşkın"}
+{"id": 3365, "t": "Kapat"}
+{"id": 3366, "t": "Aç"}
+{"id": 3367, "t": "<CURRENT_REPLICATION_TASK> eşitleniyor..."}
+{"id": 3368, "t": "Eşitleniyor..."}
+{"id": 3369, "t": "Masa dolu"}
+{"id": 3370, "t": "<NAME_ADDRESS> ile konuş"}
+{"id": 3371, "t": "İş"}
+{"id": 3372, "t": "Sıcaklık <F> altında olmalı"}
+{"id": 3373, "t": "Test Org"}
+{"id": 3374, "t": "Sağ ol patron"}
+{"id": 3375, "t": "Sağ ol dostum"}
+{"id": 3376, "t": "Sağ ol, al RDX'in."}
+{"id": 3377, "t": "Teşekkürler. Şimdi aracınızı kontrol edeceğim."}
+{"id": 3378, "t": "İşletme zaten maksimum aklama kapasitesinde."}
+{"id": 3379, "t": "Tefeciler bu gece geliyor."}
+{"id": 3380, "t": "Hırsızlık"}
+{"id": 3381, "t": "Boş saksılar var ama dökecek toprağım yok."}
+{"id": 3382, "t": "Hasada hazır bir mantar kolonisi var ama hedefi yok ya da hedefi dolu."}
+{"id": 3383, "t": "Hasada hazır bir bitki var ama hedefi yok ya da hedefi dolu."}
+{"id": 3384, "t": "Ekime hazır bir saksı var ama ona uygun tohumum yok."}
+{"id": 3385, "t": "Şu an yapacak bir işim yok."}
+{"id": 3386, "t": "Bu satıcı işe alınmaya hazır. Yanına git ve işe almak için imza ücretini öde."}
+{"id": 3387, "t": "Bu teslimat ulaştı ve boşaltılmaya hazır."}
+{"id": 3388, "t": "Bu teslimat şu an yolda."}
+{"id": 3389, "t": "Bu teslimat <LOADING_DOCK_INDEX> numaralı yükleme rampasının boşalmasını bekliyor."}
+{"id": 3390, "t": "Aldıkları şunlar:\n<N>"}
+{"id": 3391, "t": "Bu ambalaj türü <color=#FFC73D><QUANTITY>x</color> ürün gerektirir"}
+{"id": 3392, "t": "Bu çöp kutusu temizlikçiler tarafından kullanılamaz."}
+{"id": 3393, "t": "Tile <X>, <Y>"}
+{"id": 3394, "t": "Zaman"}
+{"id": 3395, "t": "Bugün"}
+{"id": 3396, "t": "Top: <TOP_LID_OPEN>, Bottom: <BOTTOM_LID_OPEN>"}
+{"id": 3397, "t": "Toplam Maliyet: $<CURRENT_AMOUNT>"}
+{"id": 3398, "t": "Track"}
+{"id": 3399, "t": "RDX ile Takas Et"}

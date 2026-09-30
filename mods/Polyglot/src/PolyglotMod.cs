@@ -12,6 +12,7 @@ using S1Shared.Dev;
 
 [assembly: MelonInfo(typeof(Polyglot.PolyglotMod), Polyglot.ModInfo.Name, Polyglot.ModInfo.Version, Polyglot.ModInfo.Author)]
 [assembly: MelonGame("TVGS", "Schedule I")]
+[assembly: HarmonyDontPatchAll]
 
 namespace Polyglot;
 
@@ -25,6 +26,7 @@ public sealed class PolyglotMod : MelonMod
 
     public override void OnInitializeMelon()
     {
+        SafePatcher.Apply(HarmonyInstance, LoggerInstance);
         PolyglotConfig.Init();
         MissLog.Enabled = PolyglotConfig.LogUntranslated.Value;
         LanguageCatalog.Discover();

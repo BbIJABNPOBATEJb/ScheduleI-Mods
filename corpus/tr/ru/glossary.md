@@ -163,3 +163,113 @@ Consult this before translating a chunk; add new recurring terms as you go.
 | Face expressions (agree with "лицо", neuter) | "Agitated" → "Взвинченное" |
 | Basic / Advanced (enum) | Базовый / Продвинутый |
 | SPACEBAR | ПРОБЕЛ |
+
+## Phone apps (labels and mentions in dialogue: "в приложении «Контакты»")
+
+| English | Russian |
+|---|---|
+| Contacts (app) | Контакты |
+| Deliveries (app) | Доставки |
+| Dealers / Dealer Management (app) | Дилеры / Управление дилерами |
+| Journal | Журнал |
+| Map | Карта |
+| Messages | Сообщения |
+| Products / Product Manager (app) | Товары / Менеджер товаров |
+
+## Drugs, supplies, misc (added with chunks 11–19)
+
+| English | Russian |
+|---|---|
+| Weed / Meth / Cocaine / Shrooms | травка / мет / кокаин / грибы |
+| Pseudo / pseudoephedrine | псевдо / псевдоэфедрин |
+| RDX (item) | RDX (kept as is) |
+| Stash (supplier's) / stash box | схрон ("Схрон Albert Hoover") |
+| Debt | долг |
+| Online balance | баланс на счёте |
+| Laundering | отмывание |
+| Deal (customer transaction) | сделка |
+| Counteroffer | встречное предложение |
+| Sewer access key | ключ от канализации |
+| Checkpoint | блокпост |
+| Motel | мотель |
+| Warehouse | склад |
+| Pawn shop | ломбард |
+| Grow light | лампа для растений |
+| Suspension rack | подвесная рама |
+| Spray bottle | пульверизатор |
+| Mushroom spawn | грибница |
+| RV | трейлер |
+| Property (real estate) | недвижимость / объект |
+| "Trash for Cash" machine | автомат 'Trash for Cash' (name kept) |
+| Bro-slang address: dog/dawg, bro, homie, mulatto | кореш, бро, братишка, мулатик |
+| Quest / Contract | задание / контракт |
+| Management clipboard | планшет управления |
+| Fixer (Manny) | решала |
+| Body shop | автомастерская |
+| Locker (employee) | шкафчик |
+| Free sample | бесплатный образец |
+| Unlock (customer, region) | открыть ("открывать клиентов") |
+| Curfew | комендантский час |
+| Wanted (by police) | в розыске |
+| Dealership | автосалон |
+| Vehicle | транспорт / машина |
+
+## Property and business names (translated; vehicle names stay Latin: Shitbox, Veeper, Bruiser, Cheetah, Dinkler, Hotbox, Hounddog)
+
+| English | Russian |
+|---|---|
+| Barn | Амбар |
+| Bungalow | Бунгало |
+| Car Wash | Автомойка |
+| Laundromat | Прачечная |
+| Post Office | Почта |
+| Docks Warehouse | Склад в Docks |
+| Storage Unit | Складская ячейка |
+| Motel Room | Номер в мотеле |
+| Hyland Manor | Hyland Manor (kept) |
+
+## Added with chunks 01–10
+
+Style notes:
+- Quest objectives: formal imperative ("Купите…", "Поговорите с…", "Назначьте…"); quest titles are free/punny ("Мутные делишки", "Нужны бабки").
+- Interaction prompts (InteractableObject.message): infinitive ("Открыть шкафчик", "Осмотреть схрон"); lowercase keys stay lowercase.
+- Location descriptions (inserted into <LOCATION>): lowercase prepositional phrase ("за банком", "у синего дома", "в Docks"), so "Я буду <LOCATION>" reads naturally.
+- "{0}x item" in quest/instructions → "(… {0} шт.)" or "{0} шт."; in customer texts keep "{0}x".
+- Thomas Benzies, shopkeepers (Albert, Ray, Herbert, dealership, Donna) and police use "вы"; street NPCs use "ты". Avoid gendered past tense about the player/dealer where easy.
+- Oscar speaks about himself in 3rd person ("у Oscar есть всё, что нужно").
+
+| English | Russian |
+|---|---|
+| Quality: Trash / Poor / Standard / Premium / Heavenly | Мусор / Плохое / Стандартное / Премиальное / Божественное |
+| Customer standards (Low …) | требования (Low → Низкие) |
+| Effects: Addictive / Highly Addictive | Аддиктивный / Сильно аддиктивный |
+| Effects: Cerebral / Dissociative / Euphoric / Focused | Церебральный / Диссоциативный / Эйфорический / Фокусирующий |
+| Effects: Hallucinogenic / Mild / Overwhelming / Physical | Галлюциногенный / Мягкий / Сокрушительный / Физический |
+| Effects: Potent / Psychedelic / Refreshing / Sedating | Мощный / Психоделический / Освежающий / Седативный |
+| Effects: Stimulating / Uplifting | Стимулирующий / Воодушевляющий |
+| Marijuana / Methamphetamine / Magic Mushroom / Shroom | Марихуана / Метамфетамин / Волшебный гриб / Гриб |
+| Liquid meth, "X (Liquid)" | жидкий мет, "X (жидкий)" |
+| Cocaine Base | Кокаиновая основа |
+| Seed (single, item) | семя ("Семя OG Kush") |
+| Grow tent | гроубокс |
+| (Electric) Plant Trimmers | (Электрические) садовые ножницы |
+| Soil / Long-Life / Extra Long-Life Soil | Почва / Долговечная / Сверхдолговечная почва |
+| Mushroom substrate / Grain bag / Spore syringe | грибной субстрат / мешок зерна / шприц со спорами |
+| Watering can / Sprinkler / Soil Pourer | лейка / разбрызгиватель / дозатор почвы |
+| Storage rack / Storage closet | стеллаж / шкаф |
+| Baggie / Jar / Brick / Brick press | пакетик / банка / брикет / пресс для брикетов |
+| Packaging (category) | упаковка |
+| Mixing ingredients: Mega Bean, Banana, Donut, Chili, Energy Drink, Iodine, Gasoline, Motor Oil, Mouth Wash, Flu Medicine, Paracetamol, Horse Semen, Battery | Мега-боб, Банан, Пончик, Чили, Энергетик, Йод, Бензин, Моторное масло, Ополаскиватель для рта, Лекарство от гриппа, Парацетамол, Конская сперма, Батарейка |
+| Brand-like ingredients | Cuke, Addy, Viagor, PGR, Speed Grow (kept) |
+| AC unit | кондиционер |
+| Hardware store | хозяйственный магазин |
+| Spray paint | баллончик с краской |
+| Trash can / Trash bag / Trash grabber | мусорный бак / мусорный мешок / мусорный захват |
+| Dealer's cut / signing fee | доля / плата за вход |
+| Handler (quest/Fixer) | фасовщик |
+| Payphone | таксофон |
+| Gas grades on signs: Regular / Mega / Sexy / Garbage Gas | Обычный бензин / Мега-бензин / Секси-бензин / Бензин-помойка |
+| Artwork (X) | Картина (X): Beach Day → День на пляже, Lines → Линии, Menace → Угроза, Offer → Предложение, Rapscallion → Проказник, Millie (kept) |
+| Friendly Note #N | Дружеская записка №N |
+| Mini-game / app names (Egg Run, Noodle, Potato Run, Ride the Bus) | kept in Latin |
+| Internal ids (FadedText, ExpiringSoon, Selected, Deselected, Future, *DropItemCount, formal_address) | copied unchanged |

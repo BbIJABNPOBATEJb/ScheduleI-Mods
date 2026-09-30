@@ -1,0 +1,200 @@
+{"id": 3000, "t": "Limite de funcionários atingido (<COUNT>/<EMPLOYEE_CAPACITY>)"}
+{"id": 3001, "t": "Entrar no veículo"}
+{"id": 3002, "t": "Entities are null!"}
+{"id": 3003, "t": "Environmental Brightess"}
+{"id": 3004, "t": "Erro: <SUBMISSSION_FAILED_MESSSAGE>"}
+{"id": 3005, "t": "Fuga da polícia"}
+{"id": 3006, "t": "Event"}
+{"id": 3007, "t": "Bônus por qualidade superior"}
+{"id": 3008, "t": "Tela cheia exclusiva"}
+{"id": 3009, "t": "Execute"}
+{"id": 3010, "t": "Saiu do jogo"}
+{"id": 3011, "t": "Saindo para o menu"}
+{"id": 3012, "t": "Explosion"}
+{"id": 3013, "t": "Contagem regressiva da explosão"}
+{"id": 3014, "t": "Exportar jogo salvo"}
+{"id": 3015, "t": "Failed to deserialize value '"}
+{"id": 3016, "t": "Failed to find reachable point near:"}
+{"id": 3017, "t": "Falha ao gerar o ticket de sessão."}
+{"id": 3018, "t": "Falha ao entrar no jogo"}
+{"id": 3019, "t": "Desobediência a ordem policial"}
+{"id": 3020, "t": "Preço justo: <CUSTOMER_ITEMS_VALUE>"}
+{"id": 3021, "t": "Preço justo: <QUANTITY>"}
+{"id": 3022, "t": "FakeAppId="}
+{"id": 3023, "t": "FakeAppId=<TEXT>"}
+{"id": 3024, "t": "Encher regador"}
+{"id": 3025, "t": "Dar descarga"}
+{"id": 3026, "t": "Foot patrol route"}
+{"id": 3027, "t": "Desistir e coletar <MULTIPLIED_LOCAL_PLAYER_BET>"}
+{"id": 3028, "t": "Grátis"}
+{"id": 3029, "t": "deste"}
+{"id": 3030, "t": "desta maleta."}
+{"id": 3031, "t": "Janela em tela cheia"}
+{"id": 3032, "t": "Totalmente crescido"}
+{"id": 3033, "t": "Jogo salvo!"}
+{"id": 3034, "t": "General Vehicle Graph"}
+{"id": 3035, "t": "Generic"}
+{"id": 3036, "t": "Bônus de generosidade"}
+{"id": 3037, "t": "Dar amostra grátis"}
+{"id": 3038, "t": "Grab Screen Pass"}
+{"id": 3039, "t": "Embalador"}
+{"id": 3040, "t": "Feliz"}
+{"id": 3041, "t": "Colher planta"}
+{"id": 3042, "t": "Ele"}
+{"id": 3043, "t": "Health"}
+{"id": 3044, "t": "Copas"}
+{"id": 3045, "t": "Height"}
+{"id": 3046, "t": "Olá, <PLAYER_NAME>"}
+{"id": 3047, "t": "Ela"}
+{"id": 3048, "t": "E aí, chefe, fiquei sabendo que vai rolar um negócio dos Benzies em <REGION>, <LOCATION_DESCRIPTION>. Pode valer a pena dar uma olhada."}
+{"id": 3049, "t": "E aí, chefe, só avisando que tenho <CASH> prontos pra você coletar."}
+{"id": 3050, "t": "Fala, chefe, do que você precisa?"}
+{"id": 3051, "t": "Alto"}
+{"id": 3052, "t": "Maior"}
+{"id": 3053, "t": "Ele"}
+{"id": 3054, "t": "O anfitrião saiu do jogo"}
+{"id": 3055, "t": "Que tal <QUANTITY>x <NAME> por <PRICE>?"}
+{"id": 3056, "t": "Como eu designo clientes pra você?"}
+{"id": 3057, "t": "Como eu cultivo cogumelos?"}
+{"id": 3058, "t": "Humanoid"}
+{"id": 3059, "t": "Não tenho micélio pra misturar nos meus canteiros de cogumelos designados."}
+{"id": 3060, "t": "Não tenho armário designado"}
+{"id": 3061, "t": "Não fui designado a nenhuma estação"}
+{"id": 3062, "t": "Não fui designado a nenhuma lixeira"}
+{"id": 3063, "t": "Não fui designado a nada"}
+{"id": 3064, "t": "Não fui designado a nenhuma estação ou rota."}
+{"id": 3065, "t": "Ainda não recebi"}
+{"id": 3066, "t": "Preciso de uma entrega no esconderijo:"}
+{"id": 3067, "t": "Preciso que uma das minhas estações designadas tenha produto e embalagem suficientes pra eu começar a trabalhar."}
+{"id": 3068, "t": "Preciso coletar o faturamento <color=#54E717>(<CASH>)</color>"}
+{"id": 3069, "t": "Preciso encomendar uma entrega no esconderijo"}
+{"id": 3070, "t": "Preciso trocar alguns itens"}
+{"id": 3071, "t": "Preciso transferir você para outro imóvel"}
+{"id": 3072, "t": "Quero quitar a minha dívida"}
+{"id": 3073, "t": "Recebi <NUM> em dinheiro de você."}
+{"id": 3074, "t": "If you're reading this, it means Schedule I can write save files properly - Yay!"}
+{"id": 3075, "t": "Ignore Costs"}
+{"id": 3076, "t": "Imperial"}
+{"id": 3077, "t": "Importar jogo salvo"}
+{"id": 3078, "t": "No meio da noite, a porta é arrombada e você é arrastado para o porta-malas de um veículo..."}
+{"id": 3079, "t": "No meio da noite, tiros ecoam por perto, mas você não é o alvo. O resto da noite é tranquilo."}
+{"id": 3080, "t": "Em uso"}
+{"id": 3081, "t": "Em uso por <USER_NAME>"}
+{"id": 3082, "t": "Em uso por outro jogador"}
+{"id": 3083, "t": "Em uso pelos funcionários"}
+{"id": 3084, "t": "Aumentar aposta"}
+{"id": 3085, "t": "O ingrediente não pode ser cozido"}
+{"id": 3086, "t": "Inicializando..."}
+{"id": 3087, "t": "Inocular saco de grãos"}
+{"id": 3088, "t": "Insira <color=#FFC73D>{0}x</color> folhas de coca e <color=#FFC73D>{1}x</color> gasolina"}
+{"id": 3089, "t": "Coloque um produto aqui para <NAME_ADDRESS> experimentar"}
+{"id": 3090, "t": "Insira saco de grãos + seringa de esporos nos espaços"}
+{"id": 3091, "t": "Insira os ingredientes e selecione uma receita"}
+{"id": 3092, "t": "Coloque o produto embalado no espaço de resultado"}
+{"id": 3093, "t": "Insira produto + embalagem nos espaços"}
+{"id": 3094, "t": "Coloque o produto na embalagem"}
+{"id": 3095, "t": "Insira um produto para oferecer a <NAME_ADDRESS>"}
+{"id": 3096, "t": "Inserir terra"}
+{"id": 3097, "t": "Insira a seringa no saco de grãos"}
+{"id": 3098, "t": "Coloque aqui os produtos esperados"}
+{"id": 3099, "t": "Insira produto não embalado e um ingrediente de mistura"}
+{"id": 3100, "t": "Dentro"}
+{"id": 3101, "t": "Saldo insuficiente"}
+{"id": 3102, "t": "Dinheiro insuficiente"}
+{"id": 3103, "t": "Dinheiro insuficiente. Vá a um caixa eletrônico para sacar dinheiro."}
+{"id": 3104, "t": "Fundos insuficientes"}
+{"id": 3105, "t": "Saldo online insuficiente"}
+{"id": 3106, "t": "Saldo online insuficiente. Vá a um caixa eletrônico para depositar dinheiro."}
+{"id": 3107, "t": "Confiança insuficiente"}
+{"id": 3108, "t": "Aditivo inválido"}
+{"id": 3109, "t": "Tipo de terra inválido"}
+{"id": 3110, "t": "Inventário"}
+{"id": 3111, "t": "Inventário cheio"}
+{"id": 3112, "t": "Inventário cheio"}
+{"id": 3113, "t": "O inventário está vazio"}
+{"id": 3114, "t": "Não cabe tudo no inventário. Alguns itens serão colocados nos paletes."}
+{"id": 3115, "t": "SIMPLESMENTE NÃO DÁ"}
+{"id": 3116, "t": "Item is null or quantity is {0}!"}
+{"id": 3117, "t": "Land In Reach"}
+{"id": 3118, "t": "Land Instant"}
+{"id": 3119, "t": "Landing Spots: <CHILD_COUNT>"}
+{"id": 3120, "t": "O último salvamento foi"}
+{"id": 3121, "t": "O último salvamento foi há <SECONDS_SINCE_LAST_SAVE> segundos"}
+{"id": 3122, "t": "Law"}
+{"id": 3123, "t": "Lerp"}
+{"id": 3124, "t": "Light"}
+{"id": 3125, "t": "Light Exposure (<NAME>)"}
+{"id": 3126, "t": "Liquid"}
+{"id": 3127, "t": "Loading as client to tutorial"}
+{"id": 3128, "t": "Loading as client to: <STEAM_ID64>"}
+{"id": 3129, "t": "Doca de carga <LOADING_DOCK_INDEX>"}
+{"id": 3130, "t": "Carregando jogo: <ORGANISATION_NAME>"}
+{"id": 3131, "t": "Loading Screen"}
+{"id": 3132, "t": "Carregando mundo..."}
+{"id": 3133, "t": "Lobby (<PLAYER_COUNT>/4)"}
+{"id": 3134, "t": "Location-based action"}
+{"id": 3135, "t": "Location-based dialogue"}
+{"id": 3136, "t": "Logo.png"}
+{"id": 3137, "t": "LookAtTarget (<NAME>)"}
+{"id": 3138, "t": "Menor"}
+{"id": 3139, "t": "Abaixe o balão de ebulição"}
+{"id": 3140, "t": "Senhora"}
+{"id": 3141, "t": "Main"}
+{"id": 3142, "t": "Menu principal"}
+{"id": 3143, "t": "Ganhe pelo menos ${0} para pagar os agiotas"}
+{"id": 3144, "t": "Garanta que tenha micélio no meu estoque de suprimentos."}
+{"id": 3145, "t": "Garanta que tenha as sementes certas no meu estoque de suprimentos."}
+{"id": 3146, "t": "Garanta que tenha terra no meu estoque de suprimentos."}
+{"id": 3147, "t": "Gerenciar <COUNT>x <TYPE_NAME>"}
+{"id": 3148, "t": "Gerenciar <TYPE_NAME>"}
+{"id": 3149, "t": "Gerenciar empresa"}
+{"id": 3150, "t": "Valor de mercado: <color=#54E717><PRODUCT_MARKET_VALUE></color>"}
+{"id": 3151, "t": "Matrices"}
+{"id": 3152, "t": "Menu"}
+{"id": 3153, "t": "Metadata"}
+{"id": 3154, "t": "Métrico"}
+{"id": 3155, "t": "O Mick não quer fazer negócio com você agora."}
+{"id": 3156, "t": "Borrifar"}
+{"id": 3157, "t": "Borrife a área indicada"}
+{"id": 3158, "t": "Misture os pedaços na terra (<COUNT>/16)"}
+{"id": 3159, "t": "Mistura em andamento"}
+{"id": 3160, "t": "Mixing station end"}
+{"id": 3161, "t": "Mixing station start"}
+{"id": 3162, "t": "Moderado"}
+{"id": 3163, "t": "Money"}
+{"id": 3164, "t": "Lavagem de dinheiro (<PROPERTY_NAME>)"}
+{"id": 3165, "t": "Monitor <I>"}
+{"id": 3166, "t": "A maioria das lojas legais só aceita <h1>pagamento com cartão</h>, enquanto a maioria das lojas ilegais só aceita dinheiro vivo. Vá a um <h1>caixa eletrônico</h> para depositar e sacar dinheiro."}
+{"id": 3167, "t": "Mouse e teclado"}
+{"id": 3168, "t": "Mouse ScrollWheel"}
+{"id": 3169, "t": "Mouse X"}
+{"id": 3170, "t": "Mouse Y"}
+{"id": 3171, "t": "Mouse: <MOUSE_STATE>, Crosshair: <CROSSHAIR>, Equipping: <EQUIPPING>, Inventory: <INVENTORY>, HUD: <HUD>, Compass: <COMPASS>, Movement: <MOVEMENT>, Look: <CAMERA_LOOK>, Blur: <BLUR>"}
+{"id": 3172, "t": "Cogumelos só crescem em temperaturas frias. Use um <h1>ar-condicionado</h> para manter a área fresca."}
+{"id": 3173, "t": "Precisa estar com terra"}
+{"id": 3174, "t": "Precisa estar com substrato"}
+{"id": 3175, "t": "Precisa ser recomendado por um dos contatos de <FIRST_NAME>"}
+{"id": 3176, "t": "Relação mútua baixa demais"}
+{"id": 3177, "t": "Conheço alguém, <NAME>, que pode te arrumar <PRODUCT>. Passei o seu número pra essa pessoa."}
+{"id": 3178, "t": "Novos clientes desbloqueados!"}
+{"id": 3179, "t": "Novo desenho de grafite"}
+{"id": 3180, "t": "New Map"}
+{"id": 3181, "t": "New mix box open"}
+{"id": 3182, "t": "Sem cogumelos"}
+{"id": 3183, "t": "Sem planta"}
+{"id": 3184, "t": "Nenhuma planta neste vaso"}
+{"id": 3185, "t": "Nenhum RDX no inventário"}
+{"id": 3186, "t": "Não, desculpa"}
+{"id": 3187, "t": "Nod"}
+{"id": 3188, "t": "Não é da sua conta!"}
+{"id": 3189, "t": "Dinheiro insuficiente"}
+{"id": 3190, "t": "Sem espaço suficiente no resultado"}
+{"id": 3191, "t": "Não é amigo do anfitrião"}
+{"id": 3192, "t": "Nada selecionado"}
+{"id": 3193, "t": "Disponível agora!"}
+{"id": 3194, "t": "Npc inventory doesn't have capacity!"}
+{"id": 3195, "t": "Objetos"}
+{"id": 3196, "t": "Obstacle<NUM>"}
+{"id": 3197, "t": "of type"}
+{"id": 3198, "t": "Oferecer negócio"}
+{"id": 3199, "t": "Policial <LAST_NAME>"}

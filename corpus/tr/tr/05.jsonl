@@ -1,0 +1,200 @@
+{"id": 1000, "t": "Pazartesi {0} AM"}
+{"id": 1001, "t": "{0} Müşteri\n{1} Tedarikçi\n{2} Satıcı"}
+{"id": 1002, "t": "{0} FPS"}
+{"id": 1003, "t": "{0} saat"}
+{"id": 1004, "t": "{0} Sa"}
+{"id": 1005, "t": "{0} dk"}
+{"id": 1006, "t": "{0} dk kaldı"}
+{"id": 1007, "t": "{0}/{1}"}
+{"id": 1008, "t": "{0} PM"}
+{"id": 1009, "t": "Son kayıttan bu yana {0} saniye geçti"}
+{"id": 1010, "t": "%{0} başarı şansı"}
+{"id": 1011, "t": "%{0} büyüdü"}
+{"id": 1012, "t": "{0}/{1} XP"}
+{"id": 1013, "t": "{0}AM-{1}AM"}
+{"id": 1014, "t": "{0}AM-{1}PM"}
+{"id": 1015, "t": "{0}sa {1}"}
+{"id": 1016, "t": "{0}sa {1}dk"}
+{"id": 1017, "t": "{0}km/h"}
+{"id": 1018, "t": "{0}PM-{1}AM"}
+{"id": 1019, "t": "{0}PM-{1}PM"}
+{"id": 1020, "t": "{0}x Eşya"}
+{"id": 1021, "t": "{0}x Eşya Adı"}
+{"id": 1022, "t": "{0}x Eşya Adı için"}
+{"id": 1023, "t": "{0}x Eşya Adı için ürü"}
+{"id": 1024, "t": "{0}x Eşya Adı için ürün olan"}
+{"id": 1025, "t": "{0}x OG Kush \n{1}x Sour Diesel"}
+{"id": 1026, "t": "{0}x OG Kush Test Test"}
+{"id": 1027, "t": "{0}x Sprey Boya kullanılacak.\n\nGrafitini daha sonra düzenleyemeyeceksin."}
+{"id": 1028, "t": "варим гашиш"}
+{"id": 1029, "t": "ВЫЛАВИРОВАТЕЛЬ"}
+{"id": 1030, "t": "Русский (Rusça)"}
+{"id": 1031, "t": "•  Etki"}
+{"id": 1032, "t": "• Ürün paketleme\n\n• Eşyaları istasyonlar,\n  depo rafları,\n  yükleme rampaları vb.\n  arasında taşıma"}
+{"id": 1033, "t": "• Çöp toplama\n\n• Dolu çöp \n  kutularını torbalama\n\n• Dolu çöp \n  torbalarını atma"}
+{"id": 1034, "t": "• Tohum ekme\n\n• Bitki sulama\n\n• Katkı uygulama\n\n• Bitki hasadı\n\n• Kurutma rafı kullanma"}
+{"id": 1035, "t": "• Kimya \n  istasyonu kullanma\n\n• Laboratuvar fırını kullanma\n\n• Kazan kullanma\n\n• Karıştırma istasyonu kullanma"}
+{"id": 1036, "t": "日本語 (Japonca)"}
+{"id": 1037, "t": "Som altından bir külçe. Aşırı ağır ve değerli."}
+{"id": 1038, "t": "Mantarların içinde büyümeye bayıldığı, kokuşmuş şeylerle dolu büyük bir torba."}
+{"id": 1039, "t": "Etik yollarla elde edilmiş koca bir bidon at spermi."}
+{"id": 1040, "t": "Tüm şatafatlı eşyalarını saklaman için büyük, metal bir kasa."}
+{"id": 1041, "t": "Kolları kalıcı olarak kıvrılmış düğmeli gömlek."}
+{"id": 1042, "t": "Bir kutu sprey boya. Grafiti çizmek için kullanılabilir."}
+{"id": 1043, "t": "Üstünden biri arabayla geçmiş bir kasket."}
+{"id": 1044, "t": "Atık maddeleri boşaltmak için seramik bir klozet."}
+{"id": 1045, "t": "Çeşitli maddeleri saklamak için şeffaf cam kavanoz. Herhangi bir üründen {0}x birim alır."}
+{"id": 1046, "t": "Kimya istasyonunda kullanılan yaygın bir malzeme."}
+{"id": 1047, "t": "Mışıl mışıl uyumak için rahat, tek kişilik bir yatak."}
+{"id": 1048, "t": "Herkes için eğlenceli bir plaj günü."}
+{"id": 1049, "t": "Spor şırıngasıyla aşılanmış bir tahıl torbası. Mantar yatağında mantar substratıyla birleştirilmeye hazır."}
+{"id": 1050, "t": "Benzin dolu bir bidon."}
+{"id": 1051, "t": "Büyük boy, {0} katlı depo rafı."}
+{"id": 1052, "t": "Orta boy, {0} katlı depo rafı."}
+{"id": 1053, "t": "Duvarlara yerleştirilebilen minimalist bir lamba. Bitki yetiştirmek için kullanılamaz ama etrafı görmek için harika."}
+{"id": 1054, "t": "Kral olmaya niyetli biri için olmazsa olmaz."}
+{"id": 1055, "t": "Elektrikli bitki budama makası. Hasat etmek için tıklayıp sürükle, o kadar."}
+{"id": 1056, "t": "Bitki budama makası. Bitkileri hasat etmek için şart."}
+{"id": 1057, "t": "Yoğun uyutucu ve öforik etkileri olan güçlü bir klasik."}
+{"id": 1058, "t": "Seni odaklanmış bir kafayla bırakan, güçlü ve son derece enerji verici bir tür."}
+{"id": 1059, "t": "Seni enerji dolu hissettiren ferahlatıcı bir kutu Cuke. Kutuda cennet."}
+{"id": 1060, "t": "Basit bir LED yetiştirme lambası. Bitki büyümesini halojenden %{0} daha hızlı uyaran mor bir ışık yayar. Bir askı rafına yerleştirilmelidir."}
+{"id": 1061, "t": "Tek bir koka tohumu. Koka bitkisine dönüşür; o da koka yaprağı verir, o da koka ile başlayan başka bir şeye dönüştürülebilir."}
+{"id": 1062, "t": "Koka bitkisinden tek bir yaprak. Kokainin ana maddesi."}
+{"id": 1063, "t": "Tek bir {0} kalibre av tüfeği fişeği."}
+{"id": 1064, "t": "Dahili aydınlatması ve saksısı olan küçük bir yetiştirme çadırı. Bitkiler daha hızlı ama daha küçük büyür."}
+{"id": 1065, "t": "Etrafı aydınlatmak için küçük bir el feneri."}
+{"id": 1066, "t": "Küçük plastik bir poşet.  Herhangi bir üründen {0}x birim alır."}
+{"id": 1067, "t": "Küçük boy, {0} katlı depo rafı."}
+{"id": 1068, "t": "Nemi koruma özelliğine sahip özel metal saksı. Toprak nemini %{0} daha yavaş kaybeder."}
+{"id": 1069, "t": "Ayaklı lambader. Açılıp kapatılabilir."}
+{"id": 1070, "t": "Steril bir sıvıda yüzen mantar sporları içeren bir şırınga. Yetiştirmeye başlamak için bir misel torbasına enjekte edilmelidir."}
+{"id": 1071, "t": "Pek uslu bir kız."}
+{"id": 1072, "t": "Üzerine yazı yazabileceğin, duvara monte metal tabela."}
+{"id": 1073, "t": "Üzerine yazı yazabileceğin, duvara monte ahşap tabela."}
+{"id": 1074, "t": "Üzerine eşya koyabileceğin, duvara monte {0} katlı raf."}
+{"id": 1075, "t": "İğrenç bir ucube."}
+{"id": 1076, "t": "Gösteriş meraklıları için olmazsa olmaz."}
+{"id": 1077, "t": "Bütçesi kısıtlı gösteriş meraklıları için olmazsa olmaz."}
+{"id": 1078, "t": "Klima"}
+{"id": 1079, "t": "Asit"}
+{"id": 1080, "t": "Aktif"}
+{"id": 1081, "t": "Bağımlılık Yapıcı"}
+{"id": 1082, "t": "Addy"}
+{"id": 1083, "t": "En kaliteli, yıllanmış Tennessee viskisi."}
+{"id": 1084, "t": "Hava Saksısı"}
+{"id": 1085, "t": "Albert Hoover"}
+{"id": 1086, "t": "Bitkilerinin kalitesini artıracak, tamamen doğal gübre."}
+{"id": 1087, "t": "Duvarlara yerleştirilebilen antika bir lamba. Bitki yetiştirmek için kullanılamaz ama etrafı görmek için harika."}
+{"id": 1088, "t": "Hyland Point'in altındaki kanalizasyona girmek için kullanılan eski bir anahtar."}
+{"id": 1089, "t": "Organik bir patlayıcı bileşik. Askeri sınıf patlayıcıların yaygın bileşeni."}
+{"id": 1090, "t": "Kökeni gizemli, alışılmadık derecede büyük bir fasulye."}
+{"id": 1091, "t": "Otomatik malzeme ekleme ve daha kısa karıştırma süreleri sunan, karıştırma istasyonunun geliştirilmiş modeli."}
+{"id": 1092, "t": "Döner paketleme aparatlı, paketleme istasyonunun geliştirilmiş sürümü. Ürünleri çok daha hızlı paketlemeni sağlar."}
+{"id": 1093, "t": "Hafif zihinsel etkileri olan, moral verici ama bir o kadar da rahat bir tür."}
+{"id": 1094, "t": "Altın işlemeli, ceviz ağacından antika ayaklı saat."}
+{"id": 1095, "t": "Antika Duvar Lambası"}
+{"id": 1096, "t": "Nane ferahlığında nefes için antiseptik gargara."}
+{"id": 1097, "t": "Önlük"}
+{"id": 1098, "t": "Önlük."}
+{"id": 1099, "t": "Tablo (Plaj Günü)"}
+{"id": 1100, "t": "Tablo (Çizgiler)"}
+{"id": 1101, "t": "Tablo (Baş Belası)"}
+{"id": 1102, "t": "Tablo (Millie)"}
+{"id": 1103, "t": "Tablo (Teklif)"}
+{"id": 1104, "t": "Tablo (Yaramaz)"}
+{"id": 1105, "t": "Baby Blue (Sıvı)"}
+{"id": 1106, "t": "Enjeksiyon girişi olan, sterilize edilmiş tahıl torbası. Yetiştirme sürecini başlatmak için mantar sporu enjekte et."}
+{"id": 1107, "t": "Poşet"}
+{"id": 1108, "t": "Muz"}
+{"id": 1109, "t": "Beyzbol Sopası"}
+{"id": 1110, "t": "Bir şeyler yetiştirmek için basit saksı toprağı."}
+{"id": 1111, "t": "Pil"}
+{"id": 1112, "t": "Bere"}
+{"id": 1113, "t": "Yatak"}
+{"id": 1114, "t": "Kemer"}
+{"id": 1115, "t": "İçine eşya koyabileceğin büyük metal çöp konteyneri. Her uyuduğunda otomatik olarak boşalır."}
+{"id": 1116, "t": "Büyük metal dolap; çalışanlara atanabilir ya da genel depolama için kullanılabilir."}
+{"id": 1117, "t": "Koca, sağlam postallar."}
+{"id": 1118, "t": "Koca bir döküm tava. Yemek yapmak ve insanların ağzını burnunu dağıtmak için birebir (ama ikisi aynı anda değil)."}
+{"id": 1119, "t": "Büyük, keskin bir pala."}
+{"id": 1120, "t": "Büyük Fıskiye"}
+{"id": 1121, "t": "Biker Crank (Sıvı)"}
+{"id": 1122, "t": "Blazer Ceket"}
+{"id": 1123, "t": "Blazer/spor ceket/takım elbise - farkını kim bilir ki."}
+{"id": 1124, "t": "Bomba"}
+{"id": 1125, "t": "Alt"}
+{"id": 1126, "t": "Kalıp"}
+{"id": 1127, "t": "Kalıp Presi"}
+{"id": 1128, "t": "Kalıp. {0}x ürün alır. Muhtemelen bu açıklamayı okuyabiliyor olmaman gerekiyordu."}
+{"id": 1129, "t": "Brut du Gloop"}
+{"id": 1130, "t": "Balıkçı Şapka"}
+{"id": 1131, "t": "Düğmeli Gömlek"}
+{"id": 1132, "t": "Düğmeli Gömlek (Kıvrık Kol)"}
+{"id": 1133, "t": "Sakinleştirici"}
+{"id": 1134, "t": "Yüzeylerden grafiti temizlemek için kullanılabilir."}
+{"id": 1135, "t": "Çöp toplamak ya da bir çöp kutusunun içindekileri torbalamak için kullanılabilir."}
+{"id": 1136, "t": "Kep"}
+{"id": 1137, "t": "Kargo Pantolon"}
+{"id": 1138, "t": "Bol cepli kargo pantolon (cepler süs)."}
+{"id": 1139, "t": "Nakit"}
+{"id": 1140, "t": "Kazan"}
+{"id": 1141, "t": "Zihinsel"}
+{"id": 1142, "t": "Ucuz ve basit halojen yetiştirme lambası. Bir askı rafına yerleştirilmelidir."}
+{"id": 1143, "t": "Ucuz Kaykay"}
+{"id": 1144, "t": "Muhtemelen komünistlerin {1} dolaylarında yaptığı, {0} atışlık beş para etmez bir revolver. Her atıştan önce horozunun elle kurulması gerekir."}
+{"id": 1145, "t": "Aşçı Şapkası"}
+{"id": 1146, "t": "Sağlıklı beslenmede temel bir besin olan kimyasal element. Başka amaçları da var."}
+{"id": 1147, "t": "Kimya İstasyonu"}
+{"id": 1148, "t": "Acı Biber"}
+{"id": 1149, "t": "Château La Peepee"}
+{"id": 1150, "t": "Klasik ve zamansız kep."}
+{"id": 1151, "t": "Klasik, çift kalkık uçlu popsicle kaykay. Yürümekten daha hızlı dolaşmak için kullan."}
+{"id": 1152, "t": "Klasik metamfetamin. Yoğun fiziksel ve zihinsel bağımlılık yapan güçlü bir uyarıcı."}
+{"id": 1153, "t": "Ekipman ve çalışanları yönetmek için kullanılan kıskaçlı pano."}
+{"id": 1154, "t": "Koka Yaprağı"}
+{"id": 1155, "t": "Koka Tohumu"}
+{"id": 1156, "t": "Kokain"}
+{"id": 1157, "t": "Kokain Bazı"}
+{"id": 1158, "t": "Sehpa"}
+{"id": 1159, "t": "Katıksız nakit."}
+{"id": 1160, "t": "Yakalı Ceket"}
+{"id": 1161, "t": "Askeri Bot"}
+{"id": 1162, "t": "Toz hâlinde yaygın bir kimyasal madde. Kibritte ve meth'te kullanılır."}
+{"id": 1163, "t": "Revolver için {0} mermi içerir."}
+{"id": 1164, "t": "Kovboy Şapkası"}
+{"id": 1165, "t": "Cruiser"}
+{"id": 1166, "t": "Yüksek hızda düz gitmek için tasarlanmış cruiser kaykay. Pek çevik sayılmaz."}
+{"id": 1167, "t": "Cuke"}
+{"id": 1168, "t": "cuke etkileri"}
+{"id": 1169, "t": "Dan's Hardware"}
+{"id": 1170, "t": "Borç"}
+{"id": 1171, "t": "Seçili Değil"}
+{"id": 1172, "t": "Vitrin Dolabı"}
+{"id": 1173, "t": "Dissosiyatif"}
+{"id": 1174, "t": "Donut"}
+{"id": 1175, "t": "Klasik Ayakkabı"}
+{"id": 1176, "t": "Kurutma Rafı"}
+{"id": 1177, "t": "Çöp Konteyneri"}
+{"id": 1178, "t": "Elektrikli Budama Makası"}
+{"id": 1179, "t": "Potasyum açısından zengin, uzun, sarı meyve."}
+{"id": 1180, "t": "Enerji İçeceği"}
+{"id": 1181, "t": "enerji içeceği etkileri"}
+{"id": 1182, "t": "Öforik"}
+{"id": 1183, "t": "Altından olan her şey daha iyidir."}
+{"id": 1184, "t": "ExpiringSoon"}
+{"id": 1185, "t": "Tükenmeden önce {0} bitki yetiştirmek için kullanılabilen ekstra uzun ömürlü toprak."}
+{"id": 1186, "t": "Ekstra Uzun Ömürlü Toprak"}
+{"id": 1187, "t": "Son derece nadir Château La Peepee {0} Cabernet Sauvignon."}
+{"id": 1188, "t": "Gözler"}
+{"id": 1189, "t": "FadedText"}
+{"id": 1190, "t": "Altın kaplama şişede lüks Fransız şampanyası."}
+{"id": 1191, "t": "Kökleri havalandıran şık, el dokuması kumaş saksı. Bitki büyüme hızını %{0} artırır ama nem kaybını da %{1} artırır."}
+{"id": 1192, "t": "Şık, parlak klasik ayakkabılar."}
+{"id": 1193, "t": "Ayaklar"}
+{"id": 1194, "t": "Gübre"}
+{"id": 1195, "t": "Parmaksız Eldiven"}
+{"id": 1196, "t": "Parmaksız eldiven."}
+{"id": 1197, "t": "Flanel Gömlek"}
+{"id": 1198, "t": "El Feneri"}
+{"id": 1199, "t": "Kasket"}

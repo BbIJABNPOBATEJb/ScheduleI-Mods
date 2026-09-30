@@ -1,0 +1,200 @@
+{"id": 400, "t": "Calefacción"}
+{"id": 401, "t": "Hola, busco {0}x OG Kush. Puedo pagar <color=#46CB4F>${1}</color> por ello."}
+{"id": 402, "t": "Hola, jugador"}
+{"id": 403, "t": "Heroína"}
+{"id": 404, "t": "Oye, idiota, ¡a lo mejor no deberías dejar tus cosas tiradas por ahí!"}
+{"id": 405, "t": "Oye, necesito {0}x OG Kush. Pago <color=#46CB4F>${1}</color>. ¿Trato hecho?"}
+{"id": 406, "t": "Moño alto"}
+{"id": 407, "t": "RÉCORD"}
+{"id": 408, "t": "Conductores contratables"}
+{"id": 409, "t": "Pedir"}
+{"id": 410, "t": "Mantener"}
+{"id": 411, "t": "Casa"}
+{"id": 412, "t": "Maleante"}
+{"id": 413, "t": "MALEANTE I"}
+{"id": 414, "t": "Maleante I"}
+{"id": 415, "t": "Maleante II"}
+{"id": 416, "t": "Maleante III"}
+{"id": 417, "t": "Maleante IV"}
+{"id": 418, "t": "Maleante V"}
+{"id": 419, "t": "HOSTIL"}
+{"id": 420, "t": "Hostil"}
+{"id": 421, "t": "Pasa el cursor sobre una tarea para ver los detalles"}
+{"id": 422, "t": "Tono"}
+{"id": 423, "t": "Buscavidas"}
+{"id": 424, "t": "Buscavidas I"}
+{"id": 425, "t": "Buscavidas II"}
+{"id": 426, "t": "Buscavidas III"}
+{"id": 427, "t": "Buscavidas IV"}
+{"id": 428, "t": "Buscavidas V"}
+{"id": 429, "t": "HYDROBRO"}
+{"id": 430, "t": "HYLAND\nBANK"}
+{"id": 431, "t": "Hyland \nMedical"}
+{"id": 432, "t": "Hyland \nRange"}
+{"id": 433, "t": "Hyland \nTower {0}"}
+{"id": 434, "t": "Hyland Auto"}
+{"id": 435, "t": "Hyland Manor"}
+{"id": 436, "t": "Comisaría de Hyland"}
+{"id": 437, "t": "TERMINAR"}
+{"id": 438, "t": "Estoy atascado"}
+{"id": 439, "t": "Si está activado, el algoritmo de mezcla de productos \nse aleatorizará con la semilla de esta partida. \nNo afectará a tus mezclas existentes."}
+{"id": 440, "t": "Importar"}
+{"id": 441, "t": "Importar partida"}
+{"id": 442, "t": "En una ciudad nueva, sin efectivo, sin producto y sin contactos."}
+{"id": 443, "t": "¿Incluir archivo de partida?"}
+{"id": 444, "t": "¿Incluir captura de pantalla?"}
+{"id": 445, "t": "Llamada entrante"}
+{"id": 446, "t": "Versión del juego incompatible"}
+{"id": 447, "t": "Tipo de producto incorrecto"}
+{"id": 448, "t": "Aumentar"}
+{"id": 449, "t": "Subir volumen"}
+{"id": 450, "t": "Ingrediente"}
+{"id": 451, "t": "Ingredientes"}
+{"id": 452, "t": "Ingredientes y empaquetado"}
+{"id": 453, "t": "Entrada"}
+{"id": 454, "t": "Indicaciones de controles"}
+{"id": 455, "t": "Inserta \ningrediente"}
+{"id": 456, "t": "Inserta \nhierba"}
+{"id": 457, "t": "Coloca cogollos/hojas en la entrada y presiona 'secar'"}
+{"id": 458, "t": "Coloca objetos para tasarlos (solo objetos legales)"}
+{"id": 459, "t": "Inserta el producto"}
+{"id": 460, "t": "Inserta el producto y el ingrediente de mezcla"}
+{"id": 461, "t": "Inserta basura"}
+{"id": 462, "t": "Instrucciones"}
+{"id": 463, "t": "Interactuar"}
+{"id": 464, "t": "Interactuar / Arrastrar"}
+{"id": 465, "t": "Interfaz"}
+{"id": 466, "t": "Escala de la interfaz"}
+{"id": 467, "t": "Ingrediente \nno válido"}
+{"id": 468, "t": "Invertir eje Y"}
+{"id": 469, "t": "INVESTIGANDO"}
+{"id": 470, "t": "Invitar amigos"}
+{"id": 471, "t": "Son las {0}AM - ve a dormir para pasar al día siguiente"}
+{"id": 472, "t": "Descripción del objeto"}
+{"id": 473, "t": "Límite de objetos"}
+{"id": 474, "t": "Dividir objetos"}
+{"id": 475, "t": "Total de objetos"}
+{"id": 476, "t": "¡PREMIO MAYOR!"}
+{"id": 477, "t": "Jessi Waters<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 478, "t": "Jimbo paga <color=#50E65A>${0}</color> por:"}
+{"id": 479, "t": "Joe"}
+{"id": 480, "t": "Joe <color=#A0A0A0FF> (Downtown)</color>"}
+{"id": 481, "t": "Unirse en local como cliente"}
+{"id": 482, "t": "Diario"}
+{"id": 483, "t": "Atajo del diario"}
+{"id": 484, "t": "Saltar"}
+{"id": 485, "t": "KAESUL"}
+{"id": 486, "t": "Kathy Henderson<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 487, "t": "¿Conservar ajustes?"}
+{"id": 488, "t": "Capo"}
+{"id": 489, "t": "Capo I"}
+{"id": 490, "t": "Capo II"}
+{"id": 491, "t": "Capo III"}
+{"id": 492, "t": "Capo IV"}
+{"id": 493, "t": "Capo V"}
+{"id": 494, "t": "Llamar a la puerta"}
+{"id": 495, "t": "Koyama Chemical\nCompany"}
+{"id": 496, "t": "Kyle"}
+{"id": 497, "t": "Kyle Cooley"}
+{"id": 498, "t": "Kyle Cooley<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 499, "t": "Idioma"}
+{"id": 500, "t": "Jugada por última vez"}
+{"id": 501, "t": "Madrugada"}
+{"id": 502, "t": "Blanquear"}
+{"id": 503, "t": "Cronología de blanqueo"}
+{"id": 504, "t": "Lavandería"}
+{"id": 505, "t": "Salir"}
+{"id": 506, "t": "Izquierda"}
+{"id": 507, "t": "Brazo izquierdo"}
+{"id": 508, "t": "Presionar stick izquierdo"}
+{"id": 509, "t": "Les Ordures\nPuantes"}
+{"id": 510, "t": "¡SUBIDA DE NIVEL!"}
+{"id": 511, "t": "Iluminación"}
+{"id": 512, "t": "Luces"}
+{"id": 513, "t": "Skate ligero\n${0}"}
+{"id": 514, "t": "Líneas"}
+{"id": 515, "t": "Metanfetamina líquida"}
+{"id": 516, "t": "Tienda \nde licores"}
+{"id": 517, "t": "Poner a la venta"}
+{"id": 518, "t": "¿Poner a la venta?"}
+{"id": 519, "t": "A la venta"}
+{"id": 520, "t": "Cargar en el vehículo"}
+{"id": 521, "t": "Cargar última partida"}
+{"id": 522, "t": "Cargando datos..."}
+{"id": 523, "t": "Muelle de carga"}
+{"id": 524, "t": "Muelle de carga {0}"}
+{"id": 525, "t": "Cargando..."}
+{"id": 526, "t": "Sala ({0}/{1})"}
+{"id": 527, "t": "Largo rizado"}
+{"id": 528, "t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+{"id": 529, "t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare gravida felis, sit amet suscipit velit malesuada ut. Mauris scelerisque malesuada velit, rhoncus maximus lacus tempor molestie."}
+{"id": 530, "t": "Baja"}
+{"id": 531, "t": "Moño bajo"}
+{"id": 532, "t": "Posición del párpado inferior en reposo"}
+{"id": 533, "t": "Bajar volumen"}
+{"id": 534, "t": "Leal"}
+{"id": 535, "t": "Hombre"}
+{"id": 536, "t": "gestionar negocio"}
+{"id": 537, "t": "Mapa"}
+{"id": 538, "t": "Atajo del mapa"}
+{"id": 539, "t": "Valor de mercado: ${0}"}
+{"id": 540, "t": "¡PREMIO ENORME!"}
+{"id": 541, "t": "Volumen general"}
+{"id": 542, "t": "MDMA"}
+{"id": 543, "t": "Mega Beans"}
+{"id": 544, "t": "Megagasolina"}
+{"id": 545, "t": "Amenaza"}
+{"id": 546, "t": "Mensaje"}
+{"id": 547, "t": "MENSAJE"}
+{"id": 548, "t": "Texto del mensaje"}
+{"id": 549, "t": "Texto del mensaje"}
+{"id": 550, "t": "Mensajes"}
+{"id": 551, "t": "Atajo de mensajes"}
+{"id": 552, "t": "Bob despeinado"}
+{"id": 553, "t": "Mick Lubbin<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 554, "t": "Humor\nde Mick"}
+{"id": 555, "t": "Millie"}
+{"id": 556, "t": "Mezclar"}
+{"id": 557, "t": "Ese nombre de mezcla ya está en uso"}
+{"id": 558, "t": "Mixto"}
+{"id": 559, "t": "Ingrediente"}
+{"id": 560, "t": "Mezclando..."}
+{"id": 561, "t": "Modificar cantidad"}
+{"id": 562, "t": "Lunes"}
+{"id": 563, "t": "LUNES"}
+{"id": 564, "t": "Lunes {0}\nCooperativo y entregas\n\nLunes {1}\nCasino\n\nSábado {2}\nBoutique, decoraciones de pared, casa de empeño\n\nLunes {3} - ¡Lanzamiento!"}
+{"id": 565, "t": "Hace más de un año"}
+{"id": 566, "t": "Producto más comprado <color=#A0A0A0>(semanal)</color>"}
+{"id": 567, "t": "Motel"}
+{"id": 568, "t": "Oficina\ndel motel"}
+{"id": 569, "t": "Habitación de motel"}
+{"id": 570, "t": "Habitación de motel {0}"}
+{"id": 571, "t": "Ratón"}
+{"id": 572, "t": "Moverse"}
+{"id": 573, "t": "Mover / Seleccionar"}
+{"id": 574, "t": "Mover todo"}
+{"id": 575, "t": "Mover cámara"}
+{"id": 576, "t": "Mover cantidad personalizada"}
+{"id": 577, "t": "Mover la mitad"}
+{"id": 578, "t": "Mover uno"}
+{"id": 579, "t": "Muévete para empezar"}
+{"id": 580, "t": "Ir a detalles"}
+{"id": 581, "t": "Muévete para reiniciar"}
+{"id": 582, "t": "No admite edición múltiple"}
+{"id": 583, "t": "Agarrar varios"}
+{"id": 584, "t": "Multijugador"}
+{"id": 585, "t": "Estación \nde micelio"}
+{"id": 586, "t": "Música"}
+{"id": 587, "t": "NECESITA AGUA"}
+{"id": 588, "t": "Patrimonio"}
+{"id": 589, "t": "Neutral"}
+{"id": 590, "t": "¡Nuevo cliente desbloqueado!"}
+{"id": 591, "t": "Nueva partida"}
+{"id": 592, "t": "Nueva operación de blanqueo"}
+{"id": 593, "t": "Nuevo mensaje"}
+{"id": 594, "t": "¡Nueva mezcla descubierta!"}
+{"id": 595, "t": "¡NUEVA REGIÓN DESBLOQUEADA!"}
+{"id": 596, "t": "Siguiente"}
+{"id": 597, "t": "Noche"}
+{"id": 598, "t": "No hay operaciones de blanqueo activas"}
+{"id": 599, "t": "No hay objetos en el inventario"}

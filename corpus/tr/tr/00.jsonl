@@ -1,0 +1,200 @@
+{"id": 0, "t": "(Basılı Tut) Tüket"}
+{"id": 1, "t": "(Basılı Tut) İçindekileri Boşalt"}
+{"id": 2, "t": "(Basılı Tut) Zıpla"}
+{"id": 3, "t": "(Basılı Tut) Bin"}
+{"id": 4, "t": "(Basılı Tut) Yeniden Başlat"}
+{"id": 5, "t": "(Basılı Tut) Tüttür"}
+{"id": 6, "t": "(Basılı Tut) Burna Çek"}
+{"id": 7, "t": "+ Özellik {0}"}
+{"id": 8, "t": "+ Dahası      <color=#FFC73D>Sprey Boya</color> Gas-Mart'ta satışta"}
+{"id": 9, "t": "+ {0} Daha"}
+{"id": 10, "t": "+${0} Bonus"}
+{"id": 11, "t": "- Suçlama {0}"}
+{"id": 12, "t": "- Ceza"}
+{"id": 13, "t": "- Etki"}
+{"id": 14, "t": "- Etki\n- Etki\n- Etki"}
+{"id": 15, "t": "- Etki\n- Etki\n- Etki\n- Etki"}
+{"id": 16, "t": "<color=#A0A0A0FF>Son satın alım yok</color>"}
+{"id": 17, "t": "<color=#D0D0D0>Nötr</color>"}
+{"id": 18, "t": "<color=#FFD19BFF>•  Sakinleştirici</color>\n<color=#CA6D57FF>•  Acıktırıcı</color>\n<color=#7CBC31FF>•  Kokuşuk</color>"}
+{"id": 19, "t": "[BOŞLUK]"}
+{"id": 20, "t": "^ Etkinse, mevcut bir kayıt oyunun yeni bir sürümünde yüklendiğinde otomatik olarak yedeklenir."}
+{"id": 21, "t": "^ Malzemeler buradan alınacak"}
+{"id": 22, "t": "^Gerekli tüm malzemeler otomatik olarak buradan alınacak"}
+{"id": 23, "t": "^Hasat edilen ürün, atanan botanikçi tarafından otomatik olarak hedefe taşınacak"}
+{"id": 24, "t": "^Atanan botanikçinin kurutmaya başlaması için gereken minimum tomurcuk/yaprak miktarı"}
+{"id": 25, "t": "^Karıştırma başlamadan önce karıştırma istasyonunda en az bu kadar ürün/malzeme bulunmalı"}
+{"id": 26, "t": "^Çıktı, atanan botanikçi tarafından otomatik olarak hedefe taşınacak"}
+{"id": 27, "t": "^Çıktı, atanan kimyager tarafından otomatik olarak hedefe taşınacak"}
+{"id": 28, "t": "^Çıktı, atanan paketçi tarafından otomatik olarak hedefe taşınacak"}
+{"id": 29, "t": "^Atanan botanikçi, eşyalar bu kaliteye ulaştığında onları raftan alacak"}
+{"id": 30, "t": "büyük parlak ekipmanlarla dolu büyük açık bir alan"}
+{"id": 31, "t": "A.H"}
+{"id": 32, "t": "Gaz/Fren"}
+{"id": 33, "t": "KABUL ET"}
+{"id": 34, "t": "Teklifi kabul et ya da karşı teklif ver"}
+{"id": 35, "t": "Bu işlemi yalnızca host yapabilir"}
+{"id": 36, "t": "AKTİF"}
+{"id": 37, "t": "Aktif Ekran"}
+{"id": 38, "t": "Aktif Siparişler"}
+{"id": 39, "t": "Adam Walton"}
+{"id": 40, "t": "Ekle"}
+{"id": 41, "t": "Eşya ekle..."}
+{"id": 42, "t": "Yeni Ekle"}
+{"id": 43, "t": "Sepete Ekle"}
+{"id": 44, "t": "Bağımlılık"}
+{"id": 45, "t": "Bağımlılık Gücü"}
+{"id": 46, "t": "Katkı {0}"}
+{"id": 47, "t": "Gelişmiş"}
+{"id": 48, "t": "Afro"}
+{"id": 49, "t": "Gergin"}
+{"id": 50, "t": "Tarım"}
+{"id": 51, "t": "Nişan Al"}
+{"id": 52, "t": "Albert Hoover (Ot Tedarikçisi)"}
+{"id": 53, "t": "Tümü"}
+{"id": 54, "t": "TÜMÜ ()"}
+{"id": 55, "t": "Tüm Aktif Aklama Operasyonları"}
+{"id": 56, "t": "İzin Verilen Eşyalar"}
+{"id": 57, "t": "İzin Verilen Kalite"}
+{"id": 58, "t": "Ortam Sesleri"}
+{"id": 59, "t": "Tutar"}
+{"id": 60, "t": "Tutar..."}
+{"id": 61, "t": "Miktar:"}
+{"id": 62, "t": "Andy"}
+{"id": 63, "t": "Andy<color=#A0A0A0FF> (Downtown)</color>"}
+{"id": 64, "t": "Cevapla"}
+{"id": 65, "t": "Cevap {0}"}
+{"id": 66, "t": "Kenar Yumuşatma"}
+{"id": 67, "t": "Gerekli tüm malzemeler otomatik olarak buradan alınacak"}
+{"id": 68, "t": "Rengi Uygula"}
+{"id": 69, "t": "Gübre Uygula"}
+{"id": 70, "t": "PGR Uygula"}
+{"id": 71, "t": "Ayarları Uygula"}
+{"id": 72, "t": "SpeedGrow Uygula"}
+{"id": 73, "t": "Aynı gruptakilere uygula"}
+{"id": 74, "t": "Bu kaydın üzerine yazmak \nistediğinden emin misin?"}
+{"id": 75, "t": "Emin misin?"}
+{"id": 76, "t": "Silah Satıcısı"}
+{"id": 77, "t": "Ulaştı"}
+{"id": 78, "t": "İstenen Fiyat"}
+{"id": 79, "t": "Müşteri Ata"}
+{"id": 80, "t": "Atanan Müşteriler ({0}/{1})"}
+{"id": 81, "t": "Atanan Paketleme İstasyonları"}
+{"id": 82, "t": "Atanan İstasyonlar"}
+{"id": 83, "t": "ATM"}
+{"id": 84, "t": "Ses"}
+{"id": 85, "t": "Austin Steiner"}
+{"id": 86, "t": "Austin Steiner<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 87, "t": "Kayıtları Otomatik Yedekle"}
+{"id": 88, "t": "Tam sürümde \nmevcut"}
+{"id": 89, "t": "Geri"}
+{"id": 90, "t": "Geri / İptal (Değiştirilemez)"}
+{"id": 91, "t": "Yedekler bu klasörde saklanır:\n%USERPROFILE%\\AppData\\LocalLow\\TVGS\\Schedule I\\Saves\\<STEAM_ID>\\Backups"}
+{"id": 92, "t": "Geri"}
+{"id": 93, "t": "Çöpü Torbala"}
+{"id": 94, "t": "Tahsildar"}
+{"id": 95, "t": "Tahsildar I"}
+{"id": 96, "t": "Tahsildar II"}
+{"id": 97, "t": "Tahsildar III"}
+{"id": 98, "t": "Tahsildar IV"}
+{"id": 99, "t": "Tahsildar V"}
+{"id": 100, "t": "Baron"}
+{"id": 101, "t": "Baron I"}
+{"id": 102, "t": "Baron II"}
+{"id": 103, "t": "Baron III"}
+{"id": 104, "t": "Baron IV"}
+{"id": 105, "t": "Baron V"}
+{"id": 106, "t": "Temel"}
+{"id": 107, "t": "Raporunla birlikte temel sistem bilgileri de gönderilecek."}
+{"id": 108, "t": "Basketbol\nSahası"}
+{"id": 109, "t": "Plaj Günü"}
+{"id": 110, "t": "BAŞLA"}
+{"id": 111, "t": "Oyuna Başla"}
+{"id": 112, "t": "Benji Coleman"}
+{"id": 113, "t": "Benzies'in Northville'deki Nüfuzu"}
+{"id": 114, "t": "Bahis Miktarı"}
+{"id": 115, "t": "BAHİS ÇARPANI"}
+{"id": 116, "t": "BETA"}
+{"id": 117, "t": "BİR DAHAKİ SEFERE..."}
+{"id": 118, "t": "BÜYÜK KAZANÇ!"}
+{"id": 119, "t": "Tuş Atamaları"}
+{"id": 120, "t": "BitField"}
+{"id": 121, "t": "Blackjack"}
+{"id": 122, "t": "BLACKJACK!"}
+{"id": 123, "t": "Kara Liste"}
+{"id": 124, "t": "Bleuball\nBoutique"}
+{"id": 125, "t": "Bleuball's Boutique"}
+{"id": 126, "t": "Mahalle Babası"}
+{"id": 127, "t": "Mahalle Babası I"}
+{"id": 128, "t": "Mahalle Babası II"}
+{"id": 129, "t": "Mahalle Babası III"}
+{"id": 130, "t": "Mahalle Babası IV"}
+{"id": 131, "t": "Mahalle Babası V"}
+{"id": 132, "t": "Vücut"}
+{"id": 133, "t": "Kaporta\nAtölyesi"}
+{"id": 134, "t": "Üst Araması"}
+{"id": 135, "t": "ÜST ARAMASI"}
+{"id": 136, "t": "Botanikçi"}
+{"id": 137, "t": "Botanikçilerin atanabileceği yerler:\n- Saksılar\n- Kurutma rafları\n- Mantar yatakları\n- Mantar miseli istasyonları"}
+{"id": 138, "t": "Botanikçiler gereken tüm eşyaları (toprak, tohum, katkı vb.) bu nesneden alır."}
+{"id": 139, "t": "Kâse Kesim"}
+{"id": 140, "t": "Parçaları kır"}
+{"id": 141, "t": "Köprü"}
+{"id": 142, "t": "Parlaklık"}
+{"id": 143, "t": "Kahverengi\nApartman"}
+{"id": 144, "t": "Bud's\nBar"}
+{"id": 145, "t": "Hata"}
+{"id": 146, "t": "Hata Bildirimi/Geri Bildirim"}
+{"id": 147, "t": "Bungalov"}
+{"id": 148, "t": "İşletme"}
+{"id": 149, "t": "İşletme Yönetimi"}
+{"id": 150, "t": "Satılık işletmeler"}
+{"id": 151, "t": "PATLADIN!"}
+{"id": 152, "t": "ENSELENDİN"}
+{"id": 153, "t": "Düğme"}
+{"id": 154, "t": "Satın Al"}
+{"id": 155, "t": "SATIN AL"}
+{"id": 156, "t": "Asker Tıraşı"}
+{"id": 157, "t": "Diyafona bas"}
+{"id": 158, "t": "KAFE & FIRIN"}
+{"id": 159, "t": "Arayan Adı"}
+{"id": 160, "t": "Benzies ile anlaşmayı bozmanın geri dönüşü yok. \n\nAnında sana düşman olacaklar."}
+{"id": 161, "t": "Kamera Sallanması"}
+{"id": 162, "t": "Kamera Hassasiyeti"}
+{"id": 163, "t": "Kanal"}
+{"id": 164, "t": "İptal"}
+{"id": 165, "t": "İPTAL"}
+{"id": 166, "t": "Toplu düzenlenemez"}
+{"id": 167, "t": "Oto Yıkama"}
+{"id": 168, "t": "Sepet"}
+{"id": 169, "t": "Northtown'da kartel nüfuzu"}
+{"id": 170, "t": "Northtown'da Kartel Nüfuzu"}
+{"id": 171, "t": "Kumarhane"}
+{"id": 172, "t": "Kategori"}
+{"id": 173, "t": "Miktarı Değiştir"}
+{"id": 174, "t": "Adedi Değiştir"}
+{"id": 175, "t": "Karakter"}
+{"id": 176, "t": "Ucuz Kaykay\n${0}"}
+{"id": 177, "t": "Kimyagerlerin atanabileceği yerler:\n- Kimya istasyonları\n- Laboratuvar fırınları\n- Kazanlar\n- Karıştırma istasyonları"}
+{"id": 178, "t": "Göğüs"}
+{"id": 179, "t": "Çin \nLokantası"}
+{"id": 180, "t": "Seçenek Metni"}
+{"id": 181, "t": "Renk Seç"}
+{"id": 182, "t": "Kimi çağıracağını seç"}
+{"id": 183, "t": "Temizle"}
+{"id": 184, "t": "Filtreyi temizle"}
+{"id": 185, "t": "Listeye eklemek/listeden çıkarmak için bir ürüne tıkla. Müşteriler yalnızca listedeki ürünleri satın alır."}
+{"id": 186, "t": "Oy vermek için bir seçeneğe tıklayıp basılı tut"}
+{"id": 187, "t": "Saklamak için eşyalara tıklayıp basılı tut"}
+{"id": 188, "t": "Bir nesneyi almak için üzerindeyken<color=#62BDFF> sağ fare tuşunu</color> basılı tut."}
+{"id": 189, "t": "Kapat"}
+{"id": 190, "t": "KAPAT"}
+{"id": 191, "t": "KAPALI"}
+{"id": 192, "t": "Giyim"}
+{"id": 193, "t": "Koka Yaprakları"}
+{"id": 194, "t": "Koka Tohumları"}
+{"id": 195, "t": "Kur/Ateş Et"}
+{"id": 196, "t": "Cody To"}
+{"id": 197, "t": "Parayı al"}
+{"id": 198, "t": "Renk"}
+{"id": 199, "t": "{0} Ocak'ta geliyor"}

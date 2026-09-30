@@ -1,0 +1,200 @@
+{"id": 1000, "t": "{0} AM lundi"}
+{"id": 1001, "t": "{0} clients\n{1} fournisseurs\n{2} dealer"}
+{"id": 1002, "t": "{0} FPS"}
+{"id": 1003, "t": "{0} heures"}
+{"id": 1004, "t": "{0} h"}
+{"id": 1005, "t": "{0} min"}
+{"id": 1006, "t": "{0} min restantes"}
+{"id": 1007, "t": "{0} sur {1}"}
+{"id": 1008, "t": "{0} PM"}
+{"id": 1009, "t": "{0} secondes depuis la dernière sauvegarde"}
+{"id": 1010, "t": "{0} % de chances de réussite"}
+{"id": 1011, "t": "Croissance : {0} %"}
+{"id": 1012, "t": "{0}/{1} XP"}
+{"id": 1013, "t": "{0}AM-{1}AM"}
+{"id": 1014, "t": "{0}AM-{1}PM"}
+{"id": 1015, "t": "{0} h {1}"}
+{"id": 1016, "t": "{0} h {1} min"}
+{"id": 1017, "t": "{0} km/h"}
+{"id": 1018, "t": "{0}PM-{1}AM"}
+{"id": 1019, "t": "{0}PM-{1}PM"}
+{"id": 1020, "t": "{0}x objet"}
+{"id": 1021, "t": "{0}x nom de l'objet"}
+{"id": 1022, "t": "{0}x nom de l'objet pour le"}
+{"id": 1023, "t": "{0}x nom de l'objet pour le prodiut"}
+{"id": 1024, "t": "{0}x nom de l'objet pour le prodiut qui est"}
+{"id": 1025, "t": "{0}x OG Kush \n{1}x Sour Diesel"}
+{"id": 1026, "t": "{0}x OG Kush Test Test"}
+{"id": 1027, "t": "Utilisation de {0}x bombe de peinture.\n\nVous ne pourrez plus modifier votre graffiti ensuite."}
+{"id": 1028, "t": "варим гашиш"}
+{"id": 1029, "t": "ВЫЛАВИРОВАТЕЛЬ"}
+{"id": 1030, "t": "Русский (Russian)"}
+{"id": 1031, "t": "•  Effet"}
+{"id": 1032, "t": "• Emballer les produits\n\n• Transporter des objets\n  entre les stations,\n  les étagères,\n  les quais de chargement, etc."}
+{"id": 1033, "t": "• Ramasser les déchets\n\n• Ensacher les poubelles \n  pleines\n\n• Jeter les sacs \n  poubelle pleins"}
+{"id": 1034, "t": "• Semer des graines\n\n• Arroser les plantes\n\n• Appliquer des additifs\n\n• Récolter les plantes\n\n• Utiliser les séchoirs"}
+{"id": 1035, "t": "• Utiliser les stations \n  de chimie\n\n• Utiliser les fours de labo\n\n• Utiliser les chaudrons\n\n• Utiliser les stations de mélange"}
+{"id": 1036, "t": "日本語 (Japanese)"}
+{"id": 1037, "t": "Un lingot d'or massif. Extrêmement lourd et précieux."}
+{"id": 1038, "t": "Un gros sac de trucs qui puent, où les champignons adorent pousser."}
+{"id": 1039, "t": "Un gros bidon de sperme de cheval issu d'une filière éthique."}
+{"id": 1040, "t": "Un gros coffre-fort en métal pour ranger tous vos trucs de valeur."}
+{"id": 1041, "t": "Une chemise aux manches retroussées pour toujours."}
+{"id": 1042, "t": "Une bombe de peinture. Permet de dessiner des graffitis."}
+{"id": 1043, "t": "Une casquette sur laquelle quelqu'un a roulé."}
+{"id": 1044, "t": "Des toilettes en céramique pour évacuer les déchets organiques."}
+{"id": 1045, "t": "Un bocal en verre transparent pour conserver diverses substances. Contient {0}x unités de n'importe quel produit."}
+{"id": 1046, "t": "Un ingrédient courant utilisé dans une station de chimie."}
+{"id": 1047, "t": "Un lit simple douillet pour piquer un somme."}
+{"id": 1048, "t": "Une joyeuse journée à la plage pour tout le monde."}
+{"id": 1049, "t": "Un sac de grains inoculé avec une seringue de spores. Prêt à être combiné avec du substrat à champignons dans un bac à champignons."}
+{"id": 1050, "t": "Un jerrican plein d'essence."}
+{"id": 1051, "t": "Une grande étagère de rangement à {0} niveaux."}
+{"id": 1052, "t": "Une étagère de rangement moyenne à {0} niveaux."}
+{"id": 1053, "t": "Une lampe minimaliste à fixer au mur. Inutile pour faire pousser des plantes, mais parfaite pour y voir clair."}
+{"id": 1054, "t": "Un incontournable pour tout futur parrain."}
+{"id": 1055, "t": "Un sécateur électrique. Cliquez et faites glisser pour récolter."}
+{"id": 1056, "t": "Un sécateur. Indispensable pour récolter les plantes."}
+{"id": 1057, "t": "Un classique puissant aux effets sédatifs et euphorisants intenses."}
+{"id": 1058, "t": "Une variété puissante et très énergisante qui vous laisse un high bien concentré."}
+{"id": 1059, "t": "Une canette rafraîchissante de Cuke qui vous donne la pêche. Le paradis en canette."}
+{"id": 1060, "t": "Une lampe de culture LED simple. Émet une lumière violette qui stimule la croissance des plantes {0} % plus vite qu'une halogène. Doit être installée sur un rail de suspension."}
+{"id": 1061, "t": "Une graine de coca. Donne un plant de coca, qui fournit des feuilles de coca, qu'on peut transformer en autre chose qui commence par coca."}
+{"id": 1062, "t": "Une feuille de plant de coca. L'ingrédient principal de la cocaïne."}
+{"id": 1063, "t": "Une cartouche de fusil calibre {0}."}
+{"id": 1064, "t": "Une petite tente de culture avec éclairage et pot intégrés. Les plantes pousseront plus vite, mais seront plus petites."}
+{"id": 1065, "t": "Une petite lampe torche pour éclairer des trucs."}
+{"id": 1066, "t": "Un petit sachet en plastique.  Contient {0}x unité de n'importe quel produit."}
+{"id": 1067, "t": "Une petite étagère de rangement à {0} niveaux."}
+{"id": 1068, "t": "Un pot en métal spécial qui préserve l'humidité. Le terreau perdra son humidité {0} % plus lentement."}
+{"id": 1069, "t": "Un lampadaire. Peut être allumé et éteint."}
+{"id": 1070, "t": "Une seringue contenant des spores de champignon en suspension dans un liquide stérile. Doit être injectée dans un sac de mycélium pour lancer la culture."}
+{"id": 1071, "t": "Une très bonne fifille."}
+{"id": 1072, "t": "Un panneau mural en métal sur lequel vous pouvez écrire."}
+{"id": 1073, "t": "Un panneau mural en bois sur lequel vous pouvez écrire."}
+{"id": 1074, "t": "Une étagère murale à {0} niveaux sur laquelle vous pouvez poser des objets."}
+{"id": 1075, "t": "Abomination abjecte."}
+{"id": 1076, "t": "Indispensable pour tout flambeur."}
+{"id": 1077, "t": "Indispensable pour tout flambeur fauché."}
+{"id": 1078, "t": "Climatiseur"}
+{"id": 1079, "t": "Acide"}
+{"id": 1080, "t": "Actif"}
+{"id": 1081, "t": "Addictif"}
+{"id": 1082, "t": "Addy"}
+{"id": 1083, "t": "Whisky du Tennessee vieilli, de la plus haute qualité."}
+{"id": 1084, "t": "Pot aéré"}
+{"id": 1085, "t": "Albert Hoover"}
+{"id": 1086, "t": "Engrais 100 % naturel qui améliore la qualité de vos plantes."}
+{"id": 1087, "t": "Une lampe ancienne à fixer au mur. Inutile pour faire pousser des plantes, mais parfaite pour y voir clair."}
+{"id": 1088, "t": "Une vieille clé qui donne accès aux égouts sous Hyland Point."}
+{"id": 1089, "t": "Un composé explosif organique. Ingrédient courant des explosifs militaires."}
+{"id": 1090, "t": "Un haricot anormalement gros, d'origine mystérieuse."}
+{"id": 1091, "t": "Un modèle amélioré de la station de mélange, avec insertion automatique des ingrédients et des mélanges plus rapides."}
+{"id": 1092, "t": "Une version améliorée de la station d'emballage avec un outil d'emballage rotatif. Permet d'emballer les produits bien plus vite."}
+{"id": 1093, "t": "Une variété stimulante mais relax, aux légers effets cérébraux."}
+{"id": 1094, "t": "Horloge comtoise ancienne en noyer, ornée de dorures."}
+{"id": 1095, "t": "Applique ancienne"}
+{"id": 1096, "t": "Bain de bouche antiseptique pour une haleine fraîche mentholée."}
+{"id": 1097, "t": "Tablier"}
+{"id": 1098, "t": "Tablier."}
+{"id": 1099, "t": "Tableau (Journée à la plage)"}
+{"id": 1100, "t": "Tableau (Lignes)"}
+{"id": 1101, "t": "Tableau (Menace)"}
+{"id": 1102, "t": "Tableau (Millie)"}
+{"id": 1103, "t": "Tableau (Offre)"}
+{"id": 1104, "t": "Tableau (Chenapan)"}
+{"id": 1105, "t": "Baby Blue (liquide)"}
+{"id": 1106, "t": "Sac de grains stérilisés avec un port d'injection. Injectez-y des spores de champignon pour lancer la culture."}
+{"id": 1107, "t": "Sachet"}
+{"id": 1108, "t": "Banane"}
+{"id": 1109, "t": "Batte de baseball"}
+{"id": 1110, "t": "Terreau de base pour faire pousser des trucs."}
+{"id": 1111, "t": "Pile"}
+{"id": 1112, "t": "Bonnet"}
+{"id": 1113, "t": "Lit"}
+{"id": 1114, "t": "Ceinture"}
+{"id": 1115, "t": "Grande benne en métal où vous pouvez jeter des objets. Se vide automatiquement chaque fois que vous dormez."}
+{"id": 1116, "t": "Grand casier en métal, peut être assigné à des employés ou servir de rangement."}
+{"id": 1117, "t": "De bonnes grosses godasses bien solides."}
+{"id": 1118, "t": "Une bonne grosse poêle en fonte. Parfaite pour cuisiner et pour tabasser des gens (mais pas en même temps)."}
+{"id": 1119, "t": "Grosse machette bien aiguisée."}
+{"id": 1120, "t": "Grand arroseur"}
+{"id": 1121, "t": "Biker Crank (liquide)"}
+{"id": 1122, "t": "Blazer"}
+{"id": 1123, "t": "Blazer/veste de sport/costume - allez savoir la différence."}
+{"id": 1124, "t": "Bombe"}
+{"id": 1125, "t": "Bas"}
+{"id": 1126, "t": "Brique"}
+{"id": 1127, "t": "Presse à briques"}
+{"id": 1128, "t": "Brique. Contient {0}x produit. Vous ne devriez probablement pas pouvoir lire cette description."}
+{"id": 1129, "t": "Brut du Gloop"}
+{"id": 1130, "t": "Bob"}
+{"id": 1131, "t": "Chemise"}
+{"id": 1132, "t": "Chemise (manches retroussées)"}
+{"id": 1133, "t": "Calmant"}
+{"id": 1134, "t": "Permet de nettoyer les graffitis d'une surface."}
+{"id": 1135, "t": "Permet de ramasser des déchets ou d'ensacher le contenu d'une poubelle."}
+{"id": 1136, "t": "Casquette"}
+{"id": 1137, "t": "Pantalon cargo"}
+{"id": 1138, "t": "Pantalon cargo avec plein de poches (décoratives)."}
+{"id": 1139, "t": "Liquide"}
+{"id": 1140, "t": "Chaudron"}
+{"id": 1141, "t": "Mental"}
+{"id": 1142, "t": "Lampe de culture halogène simple et bon marché. Doit être installée sur un rail de suspension."}
+{"id": 1143, "t": "Skateboard pas cher"}
+{"id": 1144, "t": "Revolver à {0} coups bas de gamme, sans doute fabriqué par des communistes dans les années {1}. Doit être armé à la main avant chaque tir."}
+{"id": 1145, "t": "Toque de chef"}
+{"id": 1146, "t": "Élément chimique, nutriment essentiel d'une alimentation saine. Il a aussi d'autres usages."}
+{"id": 1147, "t": "Station de chimie"}
+{"id": 1148, "t": "Piment"}
+{"id": 1149, "t": "Château La Peepee"}
+{"id": 1150, "t": "Une casquette classique et intemporelle."}
+{"id": 1151, "t": "Skateboard popsicle double kick classique. Pour vous déplacer plus vite qu'à pied."}
+{"id": 1152, "t": "Méthamphétamine classique. Un puissant stimulant au potentiel addictif physique et mental intense."}
+{"id": 1153, "t": "Porte-bloc servant à gérer l'équipement et les employés."}
+{"id": 1154, "t": "Feuille de coca"}
+{"id": 1155, "t": "Graine de coca"}
+{"id": 1156, "t": "Cocaïne"}
+{"id": 1157, "t": "Base de cocaïne"}
+{"id": 1158, "t": "Table basse"}
+{"id": 1159, "t": "Du bon vieux liquide."}
+{"id": 1160, "t": "Veste à col"}
+{"id": 1161, "t": "Rangers"}
+{"id": 1162, "t": "Ingrédient chimique courant sous forme de poudre. Utilisé dans les allumettes et la méth."}
+{"id": 1163, "t": "Contient {0} balles pour le revolver."}
+{"id": 1164, "t": "Chapeau de cowboy"}
+{"id": 1165, "t": "Cruiser"}
+{"id": 1166, "t": "Skateboard cruiser conçu pour filer vite en ligne droite. Pas franchement maniable."}
+{"id": 1167, "t": "Cuke"}
+{"id": 1168, "t": "effets du Cuke"}
+{"id": 1169, "t": "Dan's Hardware"}
+{"id": 1170, "t": "Dette"}
+{"id": 1171, "t": "Désélectionné"}
+{"id": 1172, "t": "Vitrine"}
+{"id": 1173, "t": "Dissociatif"}
+{"id": 1174, "t": "Donut"}
+{"id": 1175, "t": "Chaussures de ville"}
+{"id": 1176, "t": "Séchoir"}
+{"id": 1177, "t": "Benne à ordures"}
+{"id": 1178, "t": "Sécateur électrique"}
+{"id": 1179, "t": "Fruit jaune allongé, riche en potassium."}
+{"id": 1180, "t": "Boisson énergisante"}
+{"id": 1181, "t": "effets de la boisson énergisante"}
+{"id": 1182, "t": "Euphorique"}
+{"id": 1183, "t": "Tout est mieux en or."}
+{"id": 1184, "t": "ExpiringSoon"}
+{"id": 1185, "t": "Terreau très longue durée qui permet de faire pousser {0} plantes avant d'être épuisé."}
+{"id": 1186, "t": "Terreau très longue durée"}
+{"id": 1187, "t": "Château La Peepee {0}, cabernet-sauvignon extrêmement rare."}
+{"id": 1188, "t": "Yeux"}
+{"id": 1189, "t": "FadedText"}
+{"id": 1190, "t": "Champagne français de luxe en bouteille plaquée or."}
+{"id": 1191, "t": "Pot chic en tissu tissé main qui garde les racines aérées. Augmente la vitesse de croissance des plantes de {0} %, mais aussi la perte d'humidité de {1} %."}
+{"id": 1192, "t": "Chaussures de ville chics et brillantes."}
+{"id": 1193, "t": "Pieds"}
+{"id": 1194, "t": "Engrais"}
+{"id": 1195, "t": "Mitaines"}
+{"id": 1196, "t": "Des mitaines."}
+{"id": 1197, "t": "Chemise en flanelle"}
+{"id": 1198, "t": "Lampe torche"}
+{"id": 1199, "t": "Casquette plate"}

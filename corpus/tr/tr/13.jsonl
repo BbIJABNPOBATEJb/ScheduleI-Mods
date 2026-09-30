@@ -1,0 +1,200 @@
+{"id": 2600, "t": "Dinkler (<PRICE>)"}
+{"id": 2601, "t": "Docks Deposu (<PRICE>)"}
+{"id": 2602, "t": "Zula hazır. <LOCATION> bulabilirsin"}
+{"id": 2603, "t": "Senin derdin ne lan?"}
+{"id": 2604, "t": "Ne oluyor lan?"}
+{"id": 2605, "t": "Ne bu be kanka?"}
+{"id": 2606, "t": "Senin derdin ne be?"}
+{"id": 2607, "t": "Bu da neydi lan?"}
+{"id": 2608, "t": "Ne oluyor?"}
+{"id": 2609, "t": "Ne oluyor ya?!"}
+{"id": 2610, "t": "Hotbox (<PRICE>)"}
+{"id": 2611, "t": "Hounddog (<PRICE>)"}
+{"id": 2612, "t": "İş tamam. Giriş noktası, evin kuzey tarafının tam altındaki uçurum yüzünde."}
+{"id": 2613, "t": "Çamaşırhane (<PRICE>)"}
+{"id": 2614, "t": "Postane (<PRICE>)"}
+{"id": 2615, "t": "Shitbox (<PRICE>)"}
+{"id": 2616, "t": "Stash & Dash'teki depo ünitesi (<PRICE>)"}
+{"id": 2617, "t": "Bu güneş amma parlak lan!"}
+{"id": 2618, "t": "Veeper (<PRICE>)"}
+{"id": 2619, "t": "Teorik olarak, birinin patlayıcıya ihtiyacı olsa, bu konuda yardım edebilir miydin?"}
+{"id": 2620, "t": "Hyland Point'in dört bir yanında, kolaylık olsun diye birçok ATM var."}
+{"id": 2621, "t": "Hasada hazır bitkiler var ama hedefleri yok. Hasat edilen ürünü nereye taşıyacağımı bilmem için her saksının seçili bir hedefi olmalı."}
+{"id": 2622, "t": "Motel odanın hemen kuzeyindeki Çin restoranının üstünde satılık ucuz bir oda var. <h1>${0}</h> biriktir, sonra gidip odayı satın almayı sor."}
+{"id": 2623, "t": "Şehirde güçlü bir kartel var, <h1>Benzies ailesi.</h> Eninde sonunda sorun olacaklarını tahmin etmiştim ama seni bu kadar çabuk bulacaklarını düşünmemiştim..."}
+{"id": 2624, "t": "Malikaneden aşağıdaki uçuruma inen eski bir <h1>kaçış tüneli</h> var. İçeriden kapatılmış ama ona erişebilirsen, onlar fark etmeden iyice yaklaşabilirsin..."}
+{"id": 2625, "t": "Şu lanet yağmur..."}
+{"id": 2626, "t": "Bu mal efsane. <NAME> ilgilenebilir. Git onunla konuş."}
+{"id": 2627, "t": "Bu kaçırmak isteyeceğiniz bir görüşme değil. Buraya gelmek için {0} saatiniz var."}
+{"id": 2628, "t": "Burası Benzies'in şehri!"}
+{"id": 2629, "t": "Bu doğru değil. Anlaşma iptal."}
+{"id": 2630, "t": "Bu benim istediğim şey değil! Anlaşma iptal."}
+{"id": 2631, "t": "Thomas ve son adamları Hyland Manor'a kapanmış durumda. Sağlam tahkim edilmiş eski bir yer, o yüzden onlara doğrudan saldırmak intihar olur. Neyse ki başka bir yol olabilir..."}
+{"id": 2632, "t": "O şerefsiz Benzies'ler az önce beni soymaya çalıştı - onları püskürttüm ama bazı şeyleri kaybettim, kusura bakma patron."}
+{"id": 2633, "t": "Çöpü çıkarma vakti. Yolun açık olsun, dostum."}
+{"id": 2634, "t": "Bir <h1>satıcı</h> işe almayı düşünme vakti. Bir adam var... hmm... adı <h1>Benji Coleman</h>'dı galiba. Birlikte çalışabileceğin ilk satıcı o olacak."}
+{"id": 2635, "t": "Başlamak için Dan's Hardware'den bir <h1>karıştırma istasyonu</h> satın al. Sonra da yerel Gas-Mart'tan otunla karıştıracak bir şeyler al."}
+{"id": 2636, "t": "Daha fazla müşteriye yetişmek için daha fazla ürün lazım. Motel odası daha fazla idare etmez - yükseltme vakti."}
+{"id": 2637, "t": "Fazla ISLAK, lanet olsun!"}
+{"id": 2638, "t": "ÇOK UZUN SÜRDÜ!! Boş ver"}
+{"id": 2639, "t": "Çok fazla yağmur..."}
+{"id": 2640, "t": "<PRODUCT> var mı??? <PRICE> veririm. ANLAŞTIK MI?"}
+{"id": 2641, "t": "Iıı... hayır"}
+{"id": 2642, "t": "Yukarıdaki ofiste yerel <h1>işbitirici</h> var - çalışan tutmak istiyorsan konuşman gereken adam o."}
+{"id": 2643, "t": "Aracın mı sıkıştı? Çektirmek için kaportacıya git."}
+{"id": 2644, "t": "Çok güzel"}
+{"id": 2645, "t": "Çok güzel kanka. <NAME> ilgilenebilir. Git onunla konuş."}
+{"id": 2646, "t": "Çok güzel!"}
+{"id": 2647, "t": "Çok güzel. <NAME> ilgilenebilir. Git onunla konuş."}
+{"id": 2648, "t": "Pekâlâ - görüşürüz..."}
+{"id": 2649, "t": "Mezarlığı ziyaret et ve ölümlülüğün üzerine düşün!"}
+{"id": 2650, "t": "Durun! Tutuklusunuz"}
+{"id": 2651, "t": "Bize <PRODUCT> lazım. Teslim etmek için <DUE_DAYS> gününüz var. Ödeme <PAYMENT>."}
+{"id": 2652, "t": "O adamlara borcu ödeyecek kadar para kazanırız, sonra da gerçek operasyonlar kurmaya odaklanabiliriz."}
+{"id": 2653, "t": "Bir süredir birlikte çalışıyoruz ve oldukça güvenilir olduğunu kanıtladın."}
+{"id": 2654, "t": "Gas-Mart'a hoş geldiniz"}
+{"id": 2655, "t": "Hyland Auto'ya hoş geldiniz. Sizin için ne yapabilirim?"}
+{"id": 2656, "t": "Depoya hoş geldin, suç kariyerinde ihtiyacın olan her şey burada."}
+{"id": 2657, "t": "Neyse, seni işinle baş başa bırakayım. Yarın görüşürüz, evlat."}
+{"id": 2658, "t": "Hay sıçayım... bu hiç iyi olmadı."}
+{"id": 2659, "t": "Eh, epey meşgul olmuşsun gibi! Hyland Point'in neredeyse her köşesinde nüfuzun var. Ben bile bundan iyisini yapamazdım, dostum. Aferin."}
+{"id": 2660, "t": "Neden bahsediyorsun?"}
+{"id": 2661, "t": "Sizin için ne yapabilirim?"}
+{"id": 2662, "t": "Satılık neler var?"}
+{"id": 2663, "t": "Ne satıyorsun?"}
+{"id": 2664, "t": "Ne istiyorsun?"}
+{"id": 2665, "t": "Bu ne? Anlaşma iptal!"}
+{"id": 2666, "t": "Ne tür şeyler satıyorsun?"}
+{"id": 2667, "t": "Ne oluyor be dostum?"}
+{"id": 2668, "t": "Bu da ne?"}
+{"id": 2669, "t": "Bundan benim çıkarım ne?"}
+{"id": 2670, "t": "Naber kanka, senin için ne yapabilirim?"}
+{"id": 2671, "t": "Senin sorunun ne?"}
+{"id": 2672, "t": "Derdin ne?"}
+{"id": 2673, "t": "Ne var?"}
+{"id": 2674, "t": "NE?"}
+{"id": 2675, "t": "Ne?!"}
+{"id": 2676, "t": "Ne?! Polisi arıyorum"}
+{"id": 2677, "t": "Naber kanka"}
+{"id": 2678, "t": "Naber kanka, <PRODUCT> peşindeyim. Karşılığında <PRICE> verebilirim."}
+{"id": 2679, "t": "Sokağa çıkma yasağı varken tüm vatandaşların yasal olarak {0}pm ile {1}am arasında evlerinde kalması zorunludur."}
+{"id": 2680, "t": "Hazır olduğunda lütfen <DEBT> tutarını saklama kutuma yatır - borcun hâlâ ödenmedi."}
+{"id": 2681, "t": "Odam nerede?"}
+{"id": 2682, "t": "Benzies ailesiyle ateşkesteyken yalnızca Northtown ya da Westville'deki müşterilere satış yapabilirsin."}
+{"id": 2683, "t": "Sen de kimsin lan?"}
+{"id": 2684, "t": "Sen de kimsin lan? Kaybol."}
+{"id": 2685, "t": "Neden olmasın"}
+{"id": 2686, "t": "Neden onunla kendin ilgilenmiyorsun?"}
+{"id": 2687, "t": "Efsane dostum, hangi kaykayı arıyorsun?"}
+{"id": 2688, "t": "Benji'nin yardımıyla epey ürün satabileceksin. Şimdi <h1>daha değerli</h> ürünler üretip satmaya başlama vakti."}
+{"id": 2689, "t": "Vay be dostum"}
+{"id": 2690, "t": "Vay dostum..."}
+{"id": 2691, "t": "Vay!"}
+{"id": 2692, "t": "Vay vay, bu ciddi iş ortak. Merak etme, ne için olduğunu sormayacağım. Bana bir saniye ver..."}
+{"id": 2693, "t": "Üzerinde çalışıyorum. Yaklaşık <TIME> içinde hazır olur"}
+{"id": 2694, "t": "Vay, bu gayet iyi, sana yazarım"}
+{"id": 2695, "t": "Tamam, peki. Sanırım bunu yapabilirim."}
+{"id": 2696, "t": "Evet, bunu yapabilirim."}
+{"id": 2697, "t": "Tamam, olur"}
+{"id": 2698, "t": "Hı hı, tamam sağ ol..."}
+{"id": 2699, "t": "Tamam, peki. Sıkı pazarlık ediyorsun dostum."}
+{"id": 2700, "t": "Yok, aradığım bu değil kanka"}
+{"id": 2701, "t": "Evet?"}
+{"id": 2702, "t": "Evet??"}
+{"id": 2703, "t": "Eveeet, aşağı yukarı. Çoğu muhtemelen tamamen yasa dışı olmayan şeyler değil… sen ne için soruyordun ki?"}
+{"id": 2704, "t": "Evet"}
+{"id": 2705, "t": "Evet!"}
+{"id": 2706, "t": "Evet"}
+{"id": 2707, "t": "Evet (<PRICE>)"}
+{"id": 2708, "t": "Evet, lütfen!"}
+{"id": 2709, "t": "Evet teşekkürler!!. Bak, arkadaşım <NAME> senin mallarla ilgilenebilir. Git onunla konuş."}
+{"id": 2710, "t": "Evet!"}
+{"id": 2711, "t": "Evet!!!"}
+{"id": 2712, "t": "Evet?"}
+{"id": 2713, "t": "Aman!"}
+{"id": 2714, "t": "Selam kanka, <PRODUCT> alabilir miyim? <PRICE> veririm"}
+{"id": 2715, "t": "Üstünüz aranıyor"}
+{"id": 2716, "t": "Arkanı kollasan iyi olur - bu şehir senin gibi pislikleri daha fazla çekmez..."}
+{"id": 2717, "t": "Telefonundaki satıcı yönetimi uygulamasıyla bana müşteri atayabilirsin."}
+{"id": 2718, "t": "Onu <h1>belediye binası çeşmesinin yanında, kanalda</h> ve <h1>süpermarketin arkasında</h> saklı bulabilirsin. Git al, karavana dön, oradan devam ederiz."}
+{"id": 2719, "t": "Dolabıma nakit koyabilirsin."}
+{"id": 2720, "t": "İstasyonları, saksıları, depo raflarını vb. yönetim panonla yeniden adlandırabilirsin."}
+{"id": 2721, "t": "Araçlarını kaportacıda yeniden boyatabilirsin."}
+{"id": 2722, "t": "Mevcut tüm ilanları solunuzdaki beyaz tahtada görebilirsiniz."}
+{"id": 2723, "t": "Çalışanlara hangi eşyaların belirli bir yuvaya girip giremeyeceğini söylemek için eşya yuvalarına filtre koyabilirsin."}
+{"id": 2724, "t": "Bir alanı ısıtmak ya da soğutmak için klima kullanabilirsin."}
+{"id": 2725, "t": "Bunun için yönetim panonu kullanabilirsin."}
+{"id": 2726, "t": "Her saksıya tohum atamak için yönetim panonu kullanabilirsin."}
+{"id": 2727, "t": "Her saksının hedefini atamak için yönetim panonu kullanabilirsin."}
+{"id": 2728, "t": "Tüm potansiyel müşterileri <h1>haritanda</h> görebilirsin. Biraz ot al ve onlara <h1>bedava numune</h> ver. Biraz şansla müşterin olmayı kabul ederler."}
+{"id": 2729, "t": "Tüm mevcut görevlerini ve sözleşmelerini Günlüğünde görebilir, takip edebilir ya da takibi bırakabilirsin."}
+{"id": 2730, "t": "Kafayı mı yedin kanka? Yok sağ ol"}
+{"id": 2731, "t": "Kafayı mı yedin?"}
+{"id": 2732, "t": "Deli misin? Yok, teşekkürler"}
+{"id": 2733, "t": "Sonunda hazır mısın?"}
+{"id": 2734, "t": "SENİ PİÇ!"}
+{"id": 2735, "t": "<PRODUCT> var mı? <PRICE> veririm"}
+{"id": 2736, "t": "Bir sorunun mu var?"}
+{"id": 2737, "t": "Getirdin mi?"}
+{"id": 2738, "t": "Malın iyiymiş! Git <NAME> ile konuş - bence senin malları sever"}
+{"id": 2739, "t": "Mal sende mi?"}
+{"id": 2740, "t": "Zamanında teslim edemediniz. Ödemenizi yarıya indiriyoruz. Ürünü bize ulaştırmak için {0} saatiniz var, yoksa anlaşmamız biter."}
+{"id": 2741, "t": "Aklını mı kaçırdın?"}
+{"id": 2742, "t": "Aklını mı kaçırdın?! Yok sağ ol"}
+{"id": 2743, "t": "Tutunmak için gereken her şeyi biliyorsun. Daha sert şeyler üretmeye hazır olduğunda seni ararım..."}
+{"id": 2744, "t": "Albert'ten farklı ot tohumu türleri alabildiğini fark etmişsindir, ama bir <h1>karıştırma istasyonuyla</h> çok daha benzersiz ürünler yaratabilirsin."}
+{"id": 2745, "t": "Aracınızı arayabilmem için yakına park etmeniz gerekiyor."}
+{"id": 2746, "t": "Birkaç kötü adama borcun var ve seni yakalamalarına sadece birkaç gün kaldı. Şansına, bu işte biraz tecrübem var."}
+{"id": 2747, "t": "Hazır mısın?"}
+{"id": 2748, "t": "Bak, malzemelerimi her ay Docks'a gelen bir sevkiyatla alırım. Ama son zamanlarda sıçan herifin teki bana ulaşmadan onları aşırıp duruyor."}
+{"id": 2749, "t": "Şehrin yeni adamı sen misin?"}
+{"id": 2750, "t": "Beni aptal mı sandın? Anlaşma iptal."}
+{"id": 2751, "t": "Bir şey almak ister misin?"}
+{"id": 2752, "t": "Kendi işine baksan mı acaba?"}
+{"id": 2753, "t": "Benimle görüşmek mi istediniz?"}
+{"id": 2754, "t": "Aranırken polisin görüş alanındaysan mülküne giremezsin."}
+{"id": 2755, "t": "Arkadaşlarından biri seni önerene kadar satıcı işe alamazsın. Benji'nin arkadaşları <h1>Peggy, Beth</h> ve <h1>Ludwig</h>. Biri seni önerene kadar onlara satış yapmaya odaklan."}
+{"id": 2756, "t": "Bir de o tünele girmen gerekecek. Yerel inşaat ve yıkım işlerine bakan <h1>Sam</h>, doğru fiyata muhtemelen yardım edebilir."}
+{"id": 2757, "t": "Tohum bulmak için bir tedarikçiyle konuşman lazım. Numaranı yerel ot tohumu tedarikçisi <h1>Albert Hoover</h>'a verdim."}
+{"id": 2758, "t": "Başlamaya neredeyse hazırsın ama önemli bir malzeme eksik - <h1>ot tohumları</h>."}
+{"id": 2759, "t": "Benimle geliyorsunuz!"}
+{"id": 2760, "t": "Öldün sen!"}
+{"id": 2761, "t": "Öldün sen..."}
+{"id": 2762, "t": "İşin bitti!"}
+{"id": 2763, "t": "{0} numaralı odadasınız. Motel ofisine en yakın olanı."}
+{"id": 2764, "t": "Geç kaldınız. Teslim tarihlerimiz öneri değildir. Teslim etmek için {0} saatiniz daha var ve ödemeniz yarıya indi. Bizi hayal kırıklığına uğratmayın."}
+{"id": 2765, "t": "Tutuklusunuz!"}
+{"id": 2766, "t": "Karavanda kurulu biraz ekipmanın zaten var. Nalbura git ve ilk yetiştirmen için kalan malzemeleri al."}
+{"id": 2767, "t": "İyi bir müşteri oldun - daha büyük miktarlar almak istersen artık seninle yüz yüze buluşmaya başlayacağım."}
+{"id": 2768, "t": "Birkaç anlaşma bitirdin ve fena olmayan bir para kazandın, ama gerçek para kazanmak istiyorsan operasyonlarını büyütmen lazım - daha fazla <h1>ürün</h> ve daha fazla <h1>müşteri</h>."}
+{"id": 2769, "t": "Anlaştık."}
+{"id": 2770, "t": "Fena olmayan bir operasyon üssün ve büyüyen bir müşteri kitlen var. Artık adam gibi para kazanacaksın ama tüm müşterilerini yönetmek için yardım lazım."}
+{"id": 2771, "t": "Artık düzgün bir iş yürütmek için gereken her şeye sahipsin, seni işinle baş başa bırakıyorum. Bol şans dostum."}
+{"id": 2772, "t": "Benzies'e epey ağır darbe vurdun ama işleri henüz bitmedi. Tamamen silinene kadar başının etini yemeye devam edecekler."}
+{"id": 2773, "t": "İhtiyacın olan aletleri bulmak için en iyi seçeneğin <h1>depo.</h> Burası... benzer düşünen insanlarla iş yapabileceğin yerel mekân. Silahlar, özel ekipman, kiralık işçiler - ne ararsan."}
+{"id": 2774, "t": "Zulan hazır. <LOCATION> seni bekliyor"}
+{"id": 2775, "t": "Çalışanların (satıcılar hariç) envanterlerine koyduğun poşetlenmiş ürünleri tüketir."}
+{"id": 2776, "t": "İlerlemen uyuduğunda otomatik olarak kaydedilir. Ayrıca mülklerinden herhangi birindeki kayıt panelinden elle de kaydedebilirsin."}
+{"id": 2777, "t": "Rica ederim dostum. Özel ekipman ya da malzeme lazımsa, Oscar'da aradığın var."}
+{"id": 2778, "t": "Haftada birkaç kez {0}-{1}g. Güvenilir olduğunuzu anladığımızda miktar artacak."}
+{"id": 2779, "t": "{0}K kazanç - hiç fena değil! Yakında <h1>meth</h> üretmeye başlamak için gereken sermayen olacak. Ama önce biraz ekipman satın alman gerekecek."}
+{"id": 2780, "t": "' for variable"}
+{"id": 2781, "t": "'<MIN_RELATION_TO_BUY_KEY>' ilişki seviyesi gerekli"}
+{"id": 2782, "t": "'<NAME>' bölgesinin kilidi açılmalı"}
+{"id": 2783, "t": "(bu gece geliyor)"}
+{"id": 2784, "t": "(koltuk atanmadı)"}
+{"id": 2785, "t": "(nakit ödendi)"}
+{"id": 2786, "t": "+<LENGTH> daha"}
+{"id": 2787, "t": "+<MAX_ITEMS_SHOWN> daha..."}
+{"id": 2788, "t": ", forceDir:"}
+{"id": 2789, "t": ", forceMagnitude:"}
+{"id": 2790, "t": "- yetersiz nakit)"}
+{"id": 2791, "t": "<ACTION_NAME> (Bina ayarlanmadı)"}
+{"id": 2792, "t": "<ACTION_NAME> (Hedef ayarlanmadı)"}
+{"id": 2793, "t": "<ACTION_NAME> (Otopark Yok)"}
+{"id": 2794, "t": "<AVERAGE_F_P_S> FPS"}
+{"id": 2795, "t": "<color=#16F01C><AMOUNT></color> Aklandı"}
+{"id": 2796, "t": "<color=#c0c0c0ff> (<NUM2> dk içinde başlıyor)</color>"}
+{"id": 2797, "t": "<color=#c0c0c0ff> (<NUM3> sa içinde başlıyor)</color>"}
+{"id": 2798, "t": "<color=#FF6455>Anlaşmanın Süresi Doldu</color>"}
+{"id": 2799, "t": "<color=#FF6455>Görevin Süresi Doldu</color>"}
