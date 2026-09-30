@@ -46,6 +46,19 @@ internal static class Translator
     /// <summary>Texts that must never be translated (e.g. language names in the language picker).</summary>
     public static void Protect(string text) => Protected.Add(text);
 
+    /// <summary>
+    /// Registers text that was already translated before it reached the screen (see SourceHooks),
+    /// so the render-time pass leaves it alone and doesn't report it as untranslated.
+    /// </summary>
+    public static void MarkTranslated(string text)
+    {
+        if (_table == null || string.IsNullOrEmpty(text))
+            return;
+        if (Cache.Count >= MaxCacheSize)
+            Cache.Clear();
+        Cache[text] = text;
+    }
+
     public static string Translate(string text)
     {
         if (_table == null || string.IsNullOrEmpty(text) || Protected.Contains(text))

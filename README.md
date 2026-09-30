@@ -1,61 +1,81 @@
-# S1StarterMod
+# Schedule I Mods
 
-Стартовый мод для **Schedule I** на [MelonLoader](https://github.com/LavaGang/MelonLoader).
-Собирается под обе ветки игры из одного кода:
+Моды для **Schedule I** на [MelonLoader](https://github.com/LavaGang/MelonLoader) 0.7.3+.
+Каждый мод собирается под обе ветки игры из одного кода:
 
 | Конфигурация | Ветка Steam | Рантайм | Файл |
 |---|---|---|---|
-| `Il2Cpp` | main (по умолчанию) | IL2CPP, `net6.0` | `S1StarterMod_Il2Cpp.dll` |
-| `Mono` | `alternate` | Mono, `netstandard2.1` | `S1StarterMod_Mono.dll` |
+| `Il2Cpp` | main (по умолчанию) | IL2CPP, `net6.0` | `<Mod>_Il2Cpp.dll` |
+| `Mono` | `alternate` | Mono, `netstandard2.1` | `<Mod>_Mono.dll` |
+| `Il2CppDev` / `MonoDev` | — | + встроенный тестовый стенд | не для публикации |
 
-## Что умеет
+## Моды
 
-- **F8** в игровом мире — уведомление с наличными и игровым временем.
-- `CashMultiplier` — пример Harmony-патча: множитель для всех положительных изменений наличных (по умолчанию `1` = ванилла).
+### Polyglot — много языков в одном моде
 
-Настройки: `<игра>/UserData/MelonPreferences.cfg`, секция `[S1StarterMod]` (появляется после первого запуска).
+- Перевод всей игры: интерфейс, предметы, квесты, диалоги, звонки, подсказки, уведомления.
+- Языки: English, Русский, Українська, Deutsch, Français, Español, Português (Brasil), Italiano,
+  Polski, Türkçe, 简体中文, 日本語, 한국어.
+- Переключение на лету, без перезапуска: **Настройки → Экран → Язык** (родной выпадающий список игры)
+  или клавиша **F9** (перебор языков).
+- Шрифты в стиле игры: кириллица, расширенная латиница и греческий рисуются тем же Open Sans,
+  что и оригинал; для CJK берутся системные шрифты Windows.
+- Перевод идёт в момент отрисовки: игра продолжает видеть свои английские строки, поэтому логика
+  не ломается, а смена языка мгновенная.
+- Свои переводы и правки: `<игра>/UserData/Polyglot/languages/<код>/*.txt` (перекрывают встроенные;
+  новая папка с новым кодом = новый язык). С `LogUntranslated = true` мод собирает непереведённые
+  строки в `UserData/Polyglot/untranslated_<код>.txt` — готовый файл для дозаполнения.
 
-## Настройка окружения
+Формат файла перевода:
 
-1. .NET SDK 6+ (собирается и на SDK 9).
-2. MelonLoader **0.7.3** в папке игры (0.7.1 не использовать — сломан для Schedule I).
-   Для IL2CPP игру нужно один раз запустить: MelonLoader сгенерирует `MelonLoader/Il2CppAssemblies`, против которых компилируется мод.
-3. Скопировать `local.build.props.example` → `local.build.props` и прописать пути к игре.
-   Файл в `.gitignore`, у каждого разработчика свой.
+```
+// комментарий
+@name=Русский
+Continue=Продолжить
+Day {0}=День {0}                       {0},{1}… — числа
+It'll cost <PRICE>.=Это будет стоить <PRICE>.   плейсхолдеры игры подставляются обратно
+r:"^Sold (.+) to (.+)$"=Продано: $1 → $2     регулярки; группы тоже переводятся
+```
 
-## Сборка
+## Разработка
+
+1. .NET SDK 6+, MelonLoader 0.7.3 в папке игры, игру один раз запустить (генерация Il2Cpp-сборок).
+2. `local.build.props.example` → `local.build.props`, прописать пути (Mono-ветка опциональна).
+3. Сборка: `dotnet build mods/Polyglot/Polyglot.csproj -c Il2Cpp` (с `AutomateLocalDeployment=true`
+   dll копируется в `<игра>/Mods`). В Rider — выбрать конфигурацию в тулбаре.
+
+### Автотесты в игре
 
 ```bash
-dotnet build -c Il2Cpp
-dotnet build -c Mono
+pwsh tools/run-smoke.ps1 -Mod Polyglot -Scenario inspect -Runtime Il2Cpp
 ```
 
-В Rider — выбрать конфигурацию `Il2Cpp` или `Mono` в тулбаре. При `AutomateLocalDeployment=true`
-dll после сборки копируется в `<игра>/Mods`. Перед сборкой закрой игру: загруженный мод держит файл.
+Собирает Dev-версию, запускает игру, грузит **одноразовый** мир из `StreamingAssets/DefaultSave`
+в папку `test-runs/…` (слоты сохранений игрока не трогаются), выполняет сценарий, делает
+скриншоты и выходит. Результат: `test-runs/<run>/result.txt`, `smoke.log`, `*.png`, `MelonLoader.log`.
 
-Лог мода: `<игра>/MelonLoader/Latest.log`.
-
-## Структура
+### Корпус и переводы
 
 ```
-src/
-  Core.cs                  точка входа (MelonMod), хоткей
-  ModInfo.cs               имя / версия / автор для MelonLoader
-  ModConfig.cs             MelonPreferences
-  GlobalUsings.cs          алиас S1 = Il2CppScheduleOne | ScheduleOne
-  Patches/                 Harmony-патчи (применяются автоматически)
+tools/corpus/extract_code.py       строки и шаблоны из декомпилированного кода игры
+Polyglot Dev-сценарии corpus,       дамп всех сериализованных строк (Mono-ветка, рефлексия)
+  corpus-tutorial
+tools/corpus/build_corpus.py       объединение, фильтрация, нормализация чисел → corpus/source.jsonl
+tools/corpus/make_chunks.py        разбиение на пачки для перевода
+tools/corpus/TRANSLATING.md        правила перевода (плейсхолдеры, теги, имена собственные, тон)
+tools/corpus/merge_translations.py валидация и сборка mods/Polyglot/languages/<код>.txt
 ```
 
-## Кросс-рантайм
+### Структура
 
-- Игровые типы пиши через алиас `S1.`: `S1.Money.MoneyManager`, `S1.UI.NotificationsManager`.
-- Различия рантаймов — через `#if IL2CPP` / `#else`.
-- На IL2CPP: коллекции игры — `Il2CppSystem.Collections.Generic.*`, приведение типов — `obj.TryCast<T>()`,
-  свои `MonoBehaviour` регистрируются через `ClassInjector.RegisterTypeInIl2Cpp<T>()`.
+```
+Directory.Build.props/.targets   общие настройки сборки, ссылки на игру, деплой
+shared/                          общий код (кросс-рантайм, поиск объектов, корутины)
+shared/Dev/                      тестовый стенд (только Dev-сборки)
+mods/Polyglot/                   мод языков: src/, languages/, fonts/ (Open Sans, Caveat — SIL OFL)
+tools/                           автотесты, корпус, сборка шрифтов
+```
 
-## Полезные инструменты
+## Лицензии
 
-- **dnSpyEx / ILSpy** — чтение кода игры. В IL2CPP-сборках нет тел методов, поэтому логику читают
-  по `Schedule I_Data/Managed/Assembly-CSharp.dll` из ветки `alternate`.
-- **UnityExplorer** — инспектор сцены и объектов прямо в игре.
-- **S1API** ([ifBars/S1API](https://github.com/ifBars/S1API)) — API для NPC, квестов, предметов, телефона и т.д.
+Шрифты Open Sans и Caveat — SIL Open Font License 1.1 (`mods/Polyglot/fonts/OFL*.txt`).

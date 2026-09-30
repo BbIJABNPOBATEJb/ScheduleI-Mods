@@ -16,3 +16,6 @@ corpus/raw/
 *.user
 *.suo
 *.DotSettings.user
+corpus/chunks/
+corpus/source.jsonl
+corpus/tr/*/_issues.jsonl

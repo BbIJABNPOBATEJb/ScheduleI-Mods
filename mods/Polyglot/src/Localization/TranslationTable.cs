@@ -22,10 +22,34 @@ internal sealed class TranslationTable
     public IReadOnlyList<PlaceholderTemplate> Templates => _templates;
     public IReadOnlyList<RegexRule> Regexes => _regexes;
 
+    // DialogueCanvas / WorldspaceDialogueRenderer recolor named colors before display.
+    private static readonly (string Name, string Shown)[] DisplayedColors =
+    {
+        ("<color=red>", "<color=#FF6666>"),
+        ("<color=green>", "<color=#93FF58>"),
+        ("<color=blue>", "<color=#76C9FF>"),
+    };
+
     public void Add(string key, string value)
     {
         if (key.Length == 0 || value.Length == 0)
             return;
+        AddOne(key, value);
+
+        // Also register the variant the player actually sees on screen.
+        var shownKey = key;
+        var shownValue = value;
+        foreach (var (name, shown) in DisplayedColors)
+        {
+            shownKey = shownKey.Replace(name, shown);
+            shownValue = shownValue.Replace(name, shown);
+        }
+        if (!ReferenceEquals(shownKey, key) && shownKey != key)
+            AddOne(shownKey, shownValue);
+    }
+
+    private void AddOne(string key, string value)
+    {
         _exact[key] = value;
         if (PlaceholderToken.IsMatch(key))
         {

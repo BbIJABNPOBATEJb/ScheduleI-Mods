@@ -17,12 +17,18 @@ internal static class PolyglotSmoke
 {
     public static IEnumerator Run()
     {
-        IEnumerator body = DevSmoke.Scenario switch
+        IEnumerator? body = DevSmoke.Scenario switch
         {
             "inspect" => Inspect(),
-            _ => throw new ArgumentException("Unknown scenario " + DevSmoke.Scenario),
+#if MONO
+            "corpus" => Corpus(),
+            "corpus-tutorial" => CorpusTutorial(),
+#endif
+            _ => null,
         };
-        return Guard(body);
+        if (body == null)
+            DevSmoke.Finish(false, "Unknown scenario " + DevSmoke.Scenario);
+        return Guard(body ?? Enumerable.Empty<object>().GetEnumerator());
     }
 
     private static IEnumerator Guard(IEnumerator body)
@@ -89,6 +95,35 @@ internal static class PolyglotSmoke
         MissLog.Flush();
         DevSmoke.Finish(true, $"inspect done, misses={MissLog.Count}");
     }
+
+#if MONO
+    private static IEnumerator Corpus()
+    {
+        yield return DevSmoke.WaitUntil(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Menu", 90f, "menu");
+        yield return 4f;
+        CorpusDump.Write(Path.Combine(DevSmoke.OutDir, "corpus_menu.jsonl"));
+
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 5f;
+        CorpusDump.Write(Path.Combine(DevSmoke.OutDir, "corpus_main.jsonl"));
+
+        var scriptables = Resources.LoadAll<ScriptableObject>("");
+        DevSmoke.Log($"Loaded {scriptables.Length} ScriptableObjects from Resources");
+        var prefabs = Resources.LoadAll<GameObject>("");
+        DevSmoke.Log($"Loaded {prefabs.Length} GameObjects from Resources");
+        yield return 2f;
+        CorpusDump.Write(Path.Combine(DevSmoke.OutDir, "corpus_resources.jsonl"));
+        DevSmoke.Finish(true, "corpus dumped");
+    }
+
+    private static IEnumerator CorpusTutorial()
+    {
+        yield return DevSmoke.LoadDisposableSave(tutorial: true);
+        yield return 5f;
+        CorpusDump.Write(Path.Combine(DevSmoke.OutDir, "corpus_tutorial.jsonl"));
+        DevSmoke.Finish(true, "tutorial corpus dumped");
+    }
+#endif
 
     private static string DumpTexts()
     {

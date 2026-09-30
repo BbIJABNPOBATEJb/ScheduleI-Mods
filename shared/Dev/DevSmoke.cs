@@ -100,32 +100,33 @@ internal static class DevSmoke
     }
 
     /// <summary>Starts a fresh game from the built-in default save, stored inside OutDir.</summary>
-    public static IEnumerator LoadDisposableSave()
+    public static IEnumerator LoadDisposableSave(bool tutorial = false)
     {
         yield return WaitUntil(() => SceneManager.GetActiveScene().name == "Menu" && S1.Persistence.LoadManager.Instance != null,
             60f, "main menu");
         yield return 2f;
 
         var loadManager = S1.Persistence.LoadManager.Instance;
-        var savePath = Path.Combine(OutDir, "SaveGame_Smoke");
-        CreateSaveFolder(savePath);
+        var savePath = Path.Combine(OutDir, tutorial ? "SaveGame_SmokeTutorial" : "SaveGame_Smoke");
+        CreateSaveFolder(savePath, tutorial);
         EnableLoadDebugMode(loadManager);
 
-        var metadata = new S1.Persistence.Datas.MetaData(null, null, Application.version, Application.version, false);
+        var metadata = new S1.Persistence.Datas.MetaData(null, null, Application.version, Application.version, tutorial);
         var info = new S1.Persistence.SaveInfo(savePath, -1, "Smoke Test", Now(), Now(), 0f, Application.version, metadata);
         Log("Starting disposable save: " + savePath);
         loadManager.StartGame(info, false, false);
 
-        yield return WaitUntil(() => SceneManager.GetActiveScene().name == "Main" && !loadManager.IsLoading && loadManager.IsGameLoaded,
+        var scene = tutorial ? "Tutorial" : "Main";
+        yield return WaitUntil(() => SceneManager.GetActiveScene().name == scene && !loadManager.IsLoading && loadManager.IsGameLoaded,
             120f, "game load");
         yield return WaitUntil(() => S1.PlayerScripts.Player.Local != null, 30f, "local player");
         yield return 3f;
         Log("Game loaded");
     }
 
-    private static void CreateSaveFolder(string savePath)
+    private static void CreateSaveFolder(string savePath, bool tutorial)
     {
-        var defaultSave = Path.Combine(Application.streamingAssetsPath, "DefaultSave");
+        var defaultSave = Path.Combine(Application.streamingAssetsPath, tutorial ? "DefaultTutorialSave" : "DefaultSave");
         if (Directory.Exists(savePath))
             Directory.Delete(savePath, true);
         CopyDirectory(defaultSave, savePath);
@@ -135,7 +136,7 @@ internal static class DevSmoke
         File.WriteAllText(Path.Combine(savePath, "Metadata.json"),
             "{\"DataType\":\"MetaData\",\"DataVersion\":0,\"GameVersion\":\"" + Application.version +
             "\",\"CreationDate\":null,\"LastPlayedDate\":null,\"CreationVersion\":\"" + Application.version +
-            "\",\"LastSaveVersion\":\"" + Application.version + "\",\"PlayTutorial\":false}");
+            "\",\"LastSaveVersion\":\"" + Application.version + "\",\"PlayTutorial\":" + (tutorial ? "true" : "false") + "}");
     }
 
     private static void EnableLoadDebugMode(S1.Persistence.LoadManager loadManager)

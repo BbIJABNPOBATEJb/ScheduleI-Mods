@@ -1,0 +1,106 @@
+// Strings the game builds from enums (ToString) - not visible as literals or serialized data.
+Street Rat
+Hoodlum
+Peddler
+Hustler
+Bagman
+Enforcer
+Shot Caller
+Block Boss
+Underlord
+Baron
+Kingpin
+Street Rat I
+Street Rat II
+Street Rat III
+Street Rat IV
+Street Rat V
+Hoodlum I
+Hoodlum II
+Hoodlum III
+Hoodlum IV
+Hoodlum V
+Peddler I
+Peddler II
+Peddler III
+Peddler IV
+Peddler V
+Hustler I
+Hustler II
+Hustler III
+Hustler IV
+Hustler V
+Bagman I
+Bagman II
+Bagman III
+Bagman IV
+Bagman V
+Enforcer I
+Enforcer II
+Enforcer III
+Enforcer IV
+Enforcer V
+Shot Caller I
+Shot Caller II
+Shot Caller III
+Shot Caller IV
+Shot Caller V
+Block Boss I
+Block Boss II
+Block Boss III
+Block Boss IV
+Block Boss V
+Underlord I
+Underlord II
+Underlord III
+Underlord IV
+Underlord V
+Baron I
+Baron II
+Baron III
+Baron IV
+Baron V
+Kingpin I
+Kingpin II
+Kingpin III
+Kingpin IV
+Kingpin V
+Trash
+Poor
+Standard
+Premium
+Heavenly
+Monday
+Tuesday
+Wednesday
+Thursday
+Friday
+Saturday
+Sunday
+Northtown
+Westville
+Downtown
+Docks
+Suburbia
+Uptown
+Marijuana
+Methamphetamine
+Cocaine
+MDMA
+Shrooms
+Heroin
+None
+Basic
+Advanced
+Botanist
+Handler
+Chemist
+Cleaner
+Unknown
+Truced
+Hostile
+Defeated
+Unfriendly
+Neutral
+Friendly
+Loyal
