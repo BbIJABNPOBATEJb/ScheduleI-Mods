@@ -1,0 +1,14 @@
+# Build output
+bin/
+obj/
+artifacts/
+
+# Local machine paths (copy local.build.props.example)
+local.build.props
+
+# IDE
+.idea/
+.vs/
+*.user
+*.suo
+*.DotSettings.user

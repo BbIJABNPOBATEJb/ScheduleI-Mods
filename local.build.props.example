@@ -1,0 +1,14 @@
+<!-- Copy this file to `local.build.props` and fill in paths for your machine. -->
+<!-- local.build.props is git-ignored. -->
+<Project>
+  <PropertyGroup>
+    <!-- Main Steam branch (IL2CPP). MelonLoader must be installed and the game launched once. -->
+    <Il2CppGamePath>C:\Program Files (x86)\Steam\steamapps\common\Schedule I</Il2CppGamePath>
+
+    <!-- "alternate" Steam branch (Mono). Leave empty if you don't build the Mono version. -->
+    <MonoGamePath></MonoGamePath>
+
+    <!-- Copy the built DLL into <game>\Mods after each build. -->
+    <AutomateLocalDeployment>true</AutomateLocalDeployment>
+  </PropertyGroup>
+</Project>
