@@ -20,6 +20,7 @@ internal static class PolyglotSmoke
         IEnumerator? body = DevSmoke.Scenario switch
         {
             "inspect" => Inspect(),
+            "tour" => Tour(),
 #if MONO
             "corpus" => Corpus(),
             "corpus-tutorial" => CorpusTutorial(),
@@ -124,6 +125,93 @@ internal static class PolyglotSmoke
         DevSmoke.Finish(true, "tutorial corpus dumped");
     }
 #endif
+
+    /// <summary>Walks through menus and phone apps in one language (DevSmoke.Arg, default ru), screenshotting each.</summary>
+    private static IEnumerator Tour()
+    {
+        var code = string.IsNullOrEmpty(DevSmoke.Arg) ? "ru" : DevSmoke.Arg;
+        yield return DevSmoke.WaitUntil(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Menu", 90f, "menu");
+        LanguageSwitcher.Apply(code, save: false);
+        yield return 3f;
+        yield return DevSmoke.Screenshot("01_menu");
+
+        yield return DevSmoke.LoadDisposableSave();
+        yield return DevSmoke.Screenshot("02_hud");
+
+        var menu = S1.UI.GameplayMenu.Instance;
+        menu.SetScreen(S1.UI.GameplayMenu.EGameplayScreen.Phone);
+        menu.Open();
+        yield return 2f;
+        S1.UI.Phone.ProductManagerApp.ProductManagerApp.Instance.SetOpen(true);
+        yield return 1.5f;
+        Write("layout.txt", DumpLayout());
+        S1.UI.Phone.ProductManagerApp.ProductManagerApp.Instance.SetOpen(false);
+        yield return 0.5f;
+        yield return DevSmoke.Screenshot("03_phone");
+
+        var shot = 4;
+        foreach (var (name, open) in new (string, Action<bool>)[]
+                 {
+                     ("journal", o => S1.UI.Phone.JournalApp.Instance.SetOpen(o)),
+                     ("messages", o => S1.UI.Phone.Messages.MessagesApp.Instance.SetOpen(o)),
+                     ("contacts", o => S1.UI.Phone.ContactsApp.ContactsApp.Instance.SetOpen(o)),
+                     ("map", o => S1.UI.Phone.Map.MapApp.Instance.SetOpen(o)),
+                     ("products", o => S1.UI.Phone.ProductManagerApp.ProductManagerApp.Instance.SetOpen(o)),
+                     ("deliveries", o => S1.UI.Phone.Delivery.DeliveryApp.Instance.SetOpen(o)),
+                     ("dealers", o => S1.UI.Phone.Messages.DealerManagementApp.Instance.SetOpen(o)),
+                 })
+        {
+            open(true);
+            yield return 1.5f;
+            yield return DevSmoke.Screenshot($"{shot++:00}_{name}");
+            open(false);
+            yield return 0.5f;
+        }
+        menu.Close();
+        yield return 1f;
+
+        var pause = S1.UI.PauseMenu.Instance;
+        pause.Pause();
+        yield return 1.5f;
+        yield return DevSmoke.Screenshot($"{shot++:00}_pause");
+        pause.Resume();
+        yield return 1f;
+
+        MissLog.Flush();
+        File.Copy(Path.Combine(LanguageCatalog.UserRoot, $"untranslated_{code}.txt"), Path.Combine(DevSmoke.OutDir, $"untranslated_{code}.txt"), true);
+        DevSmoke.Finish(true, $"tour {code} done, misses={MissLog.Count}, fitted={Polyglot.Text.TextFitter.FittedCount}");
+    }
+
+    /// <summary>Active texts whose translation is longer than the original, with their layout settings.</summary>
+    private static string DumpLayout()
+    {
+        var sb = new StringBuilder();
+        foreach (var t in UnityQuery.FindInScenes<TMP_Text>())
+        {
+            if (!t.isActiveAndEnabled || string.IsNullOrEmpty(t.text))
+                continue;
+            var tr = Translator.Translate(t.text);
+            var path = UnityQuery.PathOf(t.transform);
+            if (tr == t.text)
+                continue;
+            sb.Append($"maxVis={t.maxVisibleCharacters} maxWords={t.maxVisibleWords} maxLines={t.maxVisibleLines} ")
+              .Append($"parsed=\"{t.GetParsedText()}\" ");
+            var r = t.rectTransform.rect;
+            sb.Append(UnityQuery.PathOf(t.transform)).Append(" | \"").Append(tr.Replace("\n", "\\n")).Append("\" ")
+              .Append($"overflow={t.overflowMode} wrap={t.textWrappingMode} auto={t.enableAutoSizing} size={t.fontSize:0.#} ")
+              .Append($"rect={r.width:0}x{r.height:0} pref={t.preferredWidth:0}x{t.preferredHeight:0} ")
+              .Append($"trunc={t.isTextTruncated} overflowing={t.isTextOverflowing}\n");
+        }
+        foreach (var t in UnityQuery.FindInScenes<UnityEngine.UI.Text>())
+        {
+            if (!t.isActiveAndEnabled || string.IsNullOrEmpty(t.text) || Translator.Translate(t.text) == t.text)
+                continue;
+            var r = t.rectTransform.rect;
+            sb.Append("[legacy] ").Append(UnityQuery.PathOf(t.transform)).Append(" | \"").Append(Translator.Translate(t.text)).Append("\" ")
+              .Append($"h={t.horizontalOverflow} v={t.verticalOverflow} bestFit={t.resizeTextForBestFit} size={t.fontSize} rect={r.width:0}x{r.height:0}\n");
+        }
+        return sb.ToString();
+    }
 
     private static string DumpTexts()
     {

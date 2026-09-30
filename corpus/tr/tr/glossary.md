@@ -317,7 +317,7 @@ the same English term always gets the translation listed here.
 |---|---|
 | boss (employees/dealers → player) | patron |
 | bro / dawg / dog / homie (Bro customers) | kanka; man / dude / buddy → dostum; brody / mulatto → kardeşim / birader; partner (Stan, Mick, Dan) → ortak |
-| Thomas Benzies / cartel boss → player; realtor, car salesman, motel clerk, police | formal "siz" |
+| Thomas Benzies / cartel boss → player; realtor, car salesman, motel clerk, police, Albert Hoover | formal "siz" (generic SupplierModule lines shared by all suppliers stay "sen") |
 | Pseudo (meth precursor) | psödo ("Psödo") |
 | RDX | RDX |
 | Sewer / sewer key | kanalizasyon / kanalizasyon anahtarı |
@@ -336,3 +336,45 @@ the same English term always gets the translation listed here.
 | "meet you <LOCATION> between <WINDOW_START> and <WINDOW_END>" | "<WINDOW_START> ile <WINDOW_END> arasında <LOCATION> buluşalım" (LOCATION = locative phrase, e.g. "motel ofisinin arkasında") |
 | formal_address (runtime token, Herbert) | keep literally: formal_address |
 | Vehicle choice "The Bruiser (<PRICE>)" | drop "The": "Bruiser (<PRICE>)" |
+| Fixer (hires employees) | işbitirici |
+| Body shop (Marco) | kaportacı |
+| Management clipboard | yönetim panosu (short: pano) |
+| Loan sharks | tefeciler |
+| Warehouse (dark market) | depo |
+| Docks Warehouse / Laundromat / Post Office / Storage Unit / Car Wash (properties) | Docks Deposu / Çamaşırhane / Postane / depo ünitesi / Oto Yıkama |
+| <PROPERTY_NAME> (Owned) / (Unowned); Owned Vehicle | (Senin) / (Senin Değil); Senin Aracın (see "(Owned)" row below) |
+| "<NAME>'s Inventory / Stash / Briefcase" (unknown name, no suffix) | "<FULL_NAME> - Envanter" / "- Saklama Yeri" / "- Evrak Çantası" |
+| Supplies stash / supplies source (botanist) | malzeme saklama yeri / malzeme kaynağı |
+| Low / moderate / high-severity drug | hafif / orta / ağır sınıf uyuşturucu |
+| Lethal (effect) | Ölümcül |
+| Ride the Bus: Higher / Lower / Inside / Outside; forfeit | Daha Yüksek / Daha Düşük / Arasında / Dışında; pes et |
+| Card suits Hearts / Diamonds / Clubs / Spades; Blackjack dealer | Kupa / Karo / Sinek / Maça; krupiye |
+| AC unit / spray bottle / watering can / trimmer | klima / Sprey Şişe (item; in sentences "sprey şişesiyle") / sulama kabı / Budama Makası |
+| Ma'am / Sir | Hanımefendi / Beyefendi |
+| Payphone | ankesörlü telefon |
+| Consume verbs: Smoke / Snort / Consume | Tüttür / Burna Çek / Tüket |
+| Employee whiteboard bullets | 3rd person present: "• Tohum eker", "• Bitkileri sular" |
+| Split world-sign words (one word per sign object) | Town/Hall → Belediye/Binası; Community/Center → Toplum/Merkezi; Basketball/Court → Basketbol/Sahası; Liquor/Store → İçki/Dükkanı; Chinese/Restaurant → Çin/Restoranı; Post/Office → Posta/Ofisi; Medical → Tıp; BANK → BANKASI; Employee of/the month → Ayın/Elemanı; brand words kept |
+| Internal identifiers (CamelCase variables, asset paths, anim triggers, debug labels) | copy unchanged |
+
+## Items, places, locations (added in chunks 05–10)
+
+| English | Turkish |
+|---|---|
+| Drug properties: Addictive / Highly Addictive / Cerebral / Dissociative / Hallucinogenic / Mild / Overwhelming / Physical / Potent / Psychedelic / Stimulating / Uplifting | Bağımlılık Yapıcı / Yüksek Bağımlılık Yapıcı / Zihinsel / Dissosiyatif / Halüsinojen / Hafif / Ezici / Fiziksel / Güçlü / Psikedelik / Uyarıcı / Moral Verici |
+| Marijuana / Methamphetamine / Magic Mushroom | Marihuana / Metamfetamin / Sihirli Mantar |
+| Pseudo (Low-/High-Quality) / pseudoephedrine | Psödo (Düşük/Yüksek Kaliteli) / psödoefedrin |
+| Acid / Phosphorus / Cocaine Base | Asit / Fosfor / Kokain Bazı |
+| Grain bag / Spore syringe / Mushroom substrate | Tahıl Torbası / Spor Şırıngası / Mantar Substratı |
+| Plant trimmers / Watering can / Spray bottle | Budama Makası / Sulama Kabı / Sprey Şişe |
+| Suspension rack / Storage rack / Storage closet | Askı Rafı / Depo Rafı / Depolama Dolabı |
+| AC unit / Trash can / Trash bag / Dumpster | Klima / Çöp Kutusu / Çöp Torbası / Çöp Konteyneri |
+| Management clipboard | Yönetim Panosu |
+| Supplier's Stash ("Albert Hoover's Stash") | saklama yeri ("Albert Hoover'ın Saklama Yeri") |
+| Hardware store / Pawn shop / Dealership / Real estate agent / Fixer | nalbur / rehinci / galeri / emlakçı / işbitirici (Manny) |
+| Payphone | ankesörlü telefon |
+| Location NAME labels ("Behind bank") | noun phrase: "Banka arkası", "Motelin önü" |
+| Location DESCRIPTIONS (lowercase, inserted as <LOCATION>/<DEAD_DROP_DESCRIPTION>) | locative phrase: "bankanın arkasında", "mezarlıkta", "batı köprüsünün altında" |
+| "(Owned)" on map POIs | "(Senin)": "Karavan (Senin)" |
+| Quality tiers as ColorFont names (Trash/Poor/Standard/Premium/Heavenly) | Çöp / Kötü / Standart / Premium / Cennetlik |
+| Albert Hoover (supplier) → player | formal "siz", "efendim" |

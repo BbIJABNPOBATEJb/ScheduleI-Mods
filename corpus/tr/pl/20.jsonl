@@ -1,0 +1,46 @@
+{"id": 3979, "t": "Mnożniki świata"}
+{"id": 3980, "t": "Doświadczenie"}
+{"id": 3981, "t": "Dochód"}
+{"id": 3982, "t": "Presety"}
+{"id": 3983, "t": "Mnożniki świata ustala host"}
+{"id": 3984, "t": "Szybkie presety ustawiają wszystkie mnożniki doświadczenia i dochodu (mnożniki źródeł wracają do ×{0})."}
+{"id": 3985, "t": "Standard ×{0}"}
+{"id": 3986, "t": "Wszystkie mnożniki ×{0}"}
+{"id": 3987, "t": "Mnożniki są zapisywane osobno dla każdego świata i działają od razu."}
+{"id": 3988, "t": "Użyj tych mnożników dla nowych światów"}
+{"id": 3989, "t": "Zapisano jako domyślne dla nowych światów"}
+{"id": 3990, "t": "Całe doświadczenie"}
+{"id": 3991, "t": "Mnoży każde zdobyte XP (oprócz mnożników źródeł)."}
+{"id": 3992, "t": "Twoje transakcje"}
+{"id": 3993, "t": "Osobiste sfinalizowanie transakcji ({0} XP)."}
+{"id": 3994, "t": "Transakcje dilerów"}
+{"id": 3995, "t": "Wynajęty diler finalizuje transakcję ({0} XP)."}
+{"id": 3996, "t": "Darmowe próbki"}
+{"id": 3997, "t": "Klientowi podoba się twoja darmowa próbka ({0} XP)."}
+{"id": 3998, "t": "Kontroferty"}
+{"id": 3999, "t": "Klient przyjmuje twoją kontrofertę ({0} XP)."}
+{"id": 4000, "t": "Zbiory"}
+{"id": 4001, "t": "Pełny zbiór plonów z rośliny ({0} XP)."}
+{"id": 4002, "t": "Nowe mieszanki"}
+{"id": 4003, "t": "Odkrycie i nazwanie nowej mieszanki ({0} XP)."}
+{"id": 4004, "t": "Ukończenie zadania."}
+{"id": 4005, "t": "Ucieczka przed policją"}
+{"id": 4006, "t": "Zgubienie policji ({0}-{1} XP)."}
+{"id": 4007, "t": "Malowanie lub zmywanie graffiti ({0}-{1} XP)."}
+{"id": 4008, "t": "Kradzieże kieszonkowe"}
+{"id": 4009, "t": "Udana kradzież kieszonkowa ({0} XP)."}
+{"id": 4010, "t": "Każde inne źródło XP."}
+{"id": 4011, "t": "Cały dochód"}
+{"id": 4012, "t": "Mnoży każdy dochód poniżej (oprócz jego własnego mnożnika)."}
+{"id": 4013, "t": "Gotówka, którą klient płaci ci osobiście, łącznie z premiami."}
+{"id": 4014, "t": "Sprzedaż dilerów"}
+{"id": 4015, "t": "Gotówka, którą twoi dilerzy zbierają od klientów."}
+{"id": 4016, "t": "Pranie pieniędzy"}
+{"id": 4017, "t": "Pieniądze zwracane z prania przez firmy."}
+{"id": 4018, "t": "Sprzedaż przedmiotów w lombardzie."}
+{"id": 4019, "t": "Recykling"}
+{"id": 4020, "t": "Gotówka z automatu do recyklingu."}
+{"id": 4021, "t": "Postawione schowki"}
+{"id": 4022, "t": "Regały, półki, sejfy i inne stawiane schowki. Maks. slotów: {0}."}
+{"id": 4023, "t": "Bagażniki pojazdów"}
+{"id": 4024, "t": "Pojemność bagażników pojazdów. Maks. slotów: {0}."}

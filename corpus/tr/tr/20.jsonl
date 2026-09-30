@@ -1,0 +1,46 @@
+{"id": 3979, "t": "Dünya Oranları"}
+{"id": 3980, "t": "Deneyim"}
+{"id": 3981, "t": "Gelir"}
+{"id": 3982, "t": "Hazır Ayarlar"}
+{"id": 3983, "t": "Dünya oranlarını host belirler"}
+{"id": 3984, "t": "Hızlı hazır ayarlar tüm deneyim ve gelir oranlarını belirler (kaynak başına oranlar ×{0} değerine döner)."}
+{"id": 3985, "t": "Standart ×{0}"}
+{"id": 3986, "t": "Tüm oranlar ×{0}"}
+{"id": 3987, "t": "Oranlar her dünya için ayrı kaydedilir ve anında uygulanır."}
+{"id": 3988, "t": "Bu oranları yeni dünyalarda kullan"}
+{"id": 3989, "t": "Yeni dünyalar için varsayılan olarak kaydedildi"}
+{"id": 3990, "t": "Tüm deneyim"}
+{"id": 3991, "t": "Her XP kazancını çarpar (kaynak başına oranların üstüne)."}
+{"id": 3992, "t": "Senin anlaşmaların"}
+{"id": 3993, "t": "Bir anlaşmayı bizzat tamamlama ({0} XP)."}
+{"id": 3994, "t": "Satıcı anlaşmaları"}
+{"id": 3995, "t": "İşe aldığın bir satıcı anlaşma tamamlar ({0} XP)."}
+{"id": 3996, "t": "Bedava numuneler"}
+{"id": 3997, "t": "Bir müşteri bedava numuneni beğenir ({0} XP)."}
+{"id": 3998, "t": "Karşı teklifler"}
+{"id": 3999, "t": "Bir müşteri karşı teklifini kabul eder ({0} XP)."}
+{"id": 4000, "t": "Hasat"}
+{"id": 4001, "t": "Bir bitkiyi tamamen hasat etme ({0} XP)."}
+{"id": 4002, "t": "Yeni karışımlar"}
+{"id": 4003, "t": "Yeni bir karışım keşfedip adlandırma ({0} XP)."}
+{"id": 4004, "t": "Bir görevi tamamlama."}
+{"id": 4005, "t": "Polisten kaçış"}
+{"id": 4006, "t": "Polisi atlatma ({0}-{1} XP)."}
+{"id": 4007, "t": "Grafiti yapma veya temizleme ({0}-{1} XP)."}
+{"id": 4008, "t": "Yankesicilik"}
+{"id": 4009, "t": "Başarılı yankesicilik ({0} XP)."}
+{"id": 4010, "t": "Diğer tüm XP kaynakları."}
+{"id": 4011, "t": "Tüm gelir"}
+{"id": 4012, "t": "Aşağıdaki her geliri çarpar (kendi oranının üstüne)."}
+{"id": 4013, "t": "Bir müşterinin sana bizzat ödediği nakit, bonuslar dahil."}
+{"id": 4014, "t": "Satıcı satışları"}
+{"id": 4015, "t": "Satıcılarının müşterilerden topladığı nakit."}
+{"id": 4016, "t": "Aklama"}
+{"id": 4017, "t": "İşletmelerdeki aklamadan dönen para."}
+{"id": 4018, "t": "Rehinciye eşya satma."}
+{"id": 4019, "t": "Geri dönüşüm"}
+{"id": 4020, "t": "Geri dönüşüm makinesinden gelen nakit."}
+{"id": 4021, "t": "Yerleştirilen depolar"}
+{"id": 4022, "t": "Depolama rafları, duvar rafları, kasalar ve diğer yerleştirilebilir depolar. En fazla {0} yuva."}
+{"id": 4023, "t": "Araç bagajları"}
+{"id": 4024, "t": "Araçların bagaj kapasitesi. En fazla {0} yuva."}

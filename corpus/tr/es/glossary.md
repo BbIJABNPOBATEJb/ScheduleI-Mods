@@ -347,4 +347,87 @@ and follow it strictly; add new recurring terms as you go (never change an exist
 | Gasoline / Horse Semen / Iodine / Motor Oil / Mouth Wash / Paracetamol | Gasolina / Semen de caballo / Yodo / Aceite de motor / Enjuague bucal / Paracetamol |
 | Acid / Phosphorus | Ácido / Fósforo |
 | Product property categories: Addictive / Cerebral / Dissociative | Adictivo / Cerebral / Disociativo |
-| Internal color-font ids (Deselected, ExpiringSoon, FadedText) | unchanged |
+| Internal color-font ids / variables (Selected, Deselected, Future, ExpiringSoon, FadedText, *DropItemCount) | unchanged |
+| More property categories: Hallucinogenic / Highly Addictive / Mild / Overwhelming / Physical / Potent / Psychedelic / Stimulating / Uplifting | Alucinógeno / Muy adictivo / Suave / Abrumador / Físico / Potente / Psicodélico / Estimulante / Revitalizante |
+| Weapons: M1911 / Revolver / Pump Shotgun / Magazine / Shell / Baseball Bat / Machete / Frying Pan | M1911 (fem.) / Revólver / Escopeta de corredera / Cargador / Cartucho / Bate de béisbol / Machete / Sartén |
+
+## Quests (titles) and people
+
+| English | Spanish |
+|---|---|
+| Uncle Nelson | Uncle Nelson (name kept; generic "your Uncle" in text → "tu tío") |
+| Fixer (Manny) | intermediario |
+| Real estate agent / Dealership / Mechanic / Merchant | agente inmobiliario / concesionario / mecánico / comerciante |
+| Another Day in Paradise / Welcome to Hyland Point / Getting Started | Otro día en el paraíso / Bienvenido a Hyland Point / Primeros pasos |
+| Gearing Up / Packin' / On the Grind / Moving Up / Keeping it Fresh | Preparándose / Empaquetando / Al pie del cañón / Subiendo de categoría / Limpieza a fondo |
+| Mixing Mania / Money Management / Dodgy Dealing / Making the Rounds | Manía de mezclas / Gestión del dinero / Tratos turbios / De ronda |
+| Needin' the Green / Clean Cash / We Need To Cook / Vibin' on the 'Cybin | Hace falta billete / Dinero limpio / Tenemos que cocinar / Viajando con la psilocibina |
+| Wretched Hive of Scum and Villainy / Unfavourable Agreements / Deal for the Benzies Family | Nido de escoria y villanía / Acuerdos desfavorables / Tratos para la familia Benzies |
+| Finishing the Job / Wrapping Up / Botanists / Chemists / Cleaners / Handlers | Terminar el trabajo / Atando cabos / Botánicos / Químicos / Limpiadores / Empaquetadores |
+| Quest objectives | imperative tú: "Compra {0}x tierra", "Habla con...", "Espera a que..." |
+
+## Places and locations (additions)
+
+| English | Spanish |
+|---|---|
+| Location descriptions (lowercase, fill `<LOCATION>`) | prepositional phrase, lowercase: "detrás del banco", "en el canal central", "junto al juzgado", "frente al motel", "bajo el puente oeste" |
+| "the docks" / "the suburbs" in descriptions | los Docks / Suburbia |
+| Dead drop names / Stash | "Detrás de..." / "Alijo de <supplier>" |
+| Alleyway / Wharf / Overpass / Waterfront | callejón / muelle / paso elevado / orilla |
+| Auto shop / Pawn shop / Barbershop / Diner / Fire station / Town hall / Courthouse | taller mecánico / casa de empeño / barbería / restaurante / estación de bomberos / palacio municipal / juzgado |
+| Parking garage / Construction site / Skatepark / Arcade / Gazebo | estacionamiento / obra (en construcción) / skatepark / salón arcade / glorieta |
+| X's House / X House | Casa de X / Casa X ("Casa Holt") |
+| Storage Unit | Unidad de almacenamiento |
+| Trunk | maletero |
+
+## Dialogue conventions
+
+| English | Spanish |
+|---|---|
+| `<LOCATION> between <WINDOW_START> and <WINDOW_END>` | "Te veo <LOCATION> entre las <WINDOW_START> y las <WINDOW_END>" |
+| "I'll pay <PRICE> for it" | "Te pago <PRICE>" |
+| "My friend <NAME> ... check them out" | gender-neutral: "Conozco a alguien, <NAME>, ... Ve a hablarle" |
+| bro / dog / homie / dude (Bro customers) | bro / hermano / amigo (avoid tío, colega, carnal, wey) |
+| Cheers | Gracias |
+| Deal / Deal? | Trato hecho / ¿Trato hecho? |
+| Damn / Goddamn it / Fuck | Maldición / Maldita sea / Carajo, Mierda |
+| formal_address (runtime token) | keep verbatim |
+| Formal speakers (Albert Hoover, Herbert, police) | usted |
+| Employee greeting "boss" | jefe |
+
+## Additions from chunks 11–19 (dialogue, code, data)
+
+| English | Spanish |
+|---|---|
+| More usted speakers | Ray (realtor), Hyland Auto salesman, Donna (motel), Officer Sanchez / checkpoints. Thomas Benzies uses tú (cold, polite) |
+| Police lines (player gender unknown) | "¡No se mueva! ¡Está bajo arresto!", "No se mueva durante el registro", "Se le está registrando", "Siga su camino." |
+| Avoid gendering the player | "¿Se te fue la cabeza?", "¿Estás demente?", "Te doy la bienvenida a…", "¿Todo listo?" instead of loco/bienvenido/listo |
+| man / my man / dawg | hermano |
+| buddy / mate / bud / friend | amigo; partner → socio (Stan, pawn shop) / compañero (Dan) |
+| The deal is off. | Se cancela el trato. |
+| Nevermind / Nvm | Olvídalo |
+| I'll message / text you | Te escribo |
+| cops (dialogue) | la poli |
+| Loan sharks | usureros |
+| Warehouse (dark market) | almacén |
+| Management clipboard | portapapeles de gestión |
+| Supplies source / supplies stash (employee) | fuente de suministros / alijo de suministros |
+| Stash box (supplier) | alijo |
+| Drop (supplier delivery) / order a drop / request a dead drop | entrega / pedir una entrega / solicitar buzón secreto |
+| Tab (credit) | cuenta ("ponlos en mi cuenta", "saldar la cuenta") |
+| Checkpoint (police) | control / puesto de control |
+| Body shop / Liquor store | taller de carrocería / tienda de licores |
+| Sewer (access) key | llave (de acceso) de la alcantarilla |
+| Product manager / deliveries / contacts / dealer management app | app Gestor de productos / app de entregas / app de contactos / app de gestión de dealers |
+| Weekly deposit limit | límite semanal de depósitos |
+| Expires / Expiring soon / Expired (deal, quest) | Vence / a punto de vencer / vencido(a) |
+| Crimes: Assault / with a deadly weapon / Vehicular assault / Theft / Vandalism / Drug trafficking | Agresión / Agresión con arma mortal / Agresión con vehículo / Robo / Vandalismo / Tráfico de drogas |
+| Crimes: Evading arrest / Failure to comply / Brandishing a weapon / Violating curfew / Discharge of a firearm in a public place | Evasión de arresto / Desobediencia a la policía / Exhibición de un arma / Violación del toque de queda / Disparo de arma de fuego en un lugar público |
+| Possession of (low/moderate/high)-severity drug | Posesión de droga de gravedad baja/moderada/alta |
+| Bonuses: Curfew / Quick Delivery / Rainy / Generosity / Exceeded Quality | Bonificación por toque de queda / por entrega rápida / por lluvia / por generosidad / por superar la calidad |
+| NPC emotions: Angry, Annoyed, Cheery, Concerned, Happy, Scared, Surprised, Sleeping | Enojado, Molesto, Alegre, Preocupado, Feliz, Asustado, Sorprendido, Durmiendo |
+| Vehicle colors | masculine: Negro, Blanco, Rojo, Rojo apagado, Azul marino, Azul oscuro/claro, Verde oscuro/claro, Gris oscuro/claro, Cian, Morado, Rosa, Naranja, Amarillo |
+| Dealership / realtor choice lists ("The Shitbox (<PRICE>)", "The Barn (<PRICE>)") | article dropped: "Shitbox (<PRICE>)", "Granero (<PRICE>)", "Almacén de Docks (<PRICE>)" |
+| Ride the Bus: Higher/Lower, Inside/Outside, suits; blackjack dealer | Mayor/Menor, Dentro/Fuera, Corazones/Diamantes/Tréboles/Picas; la banca |
+| Chemistry tasks: beaker / boiling flask / burner / hopper / mould / plunger | vaso de precipitados / matraz de ebullición / quemador / tolva / molde / émbolo |
+| Code/data identifiers (CamelCase variables, asset paths, anim triggers, sound/cutscene ids, debug logs, behaviour ids with "(Inactive)") | copied unchanged; readable NPC behaviour names are translated ("Patrulla a pie", "Cacheo") |

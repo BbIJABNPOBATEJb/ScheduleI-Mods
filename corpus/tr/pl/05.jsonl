@@ -1,0 +1,200 @@
+{"id": 1000, "t": "{0} AM, poniedziałek"}
+{"id": 1001, "t": "Klienci: {0}\nDostawcy: {1}\nDilerzy: {2}"}
+{"id": 1002, "t": "{0} FPS"}
+{"id": 1003, "t": "{0} godz."}
+{"id": 1004, "t": "{0} godz."}
+{"id": 1005, "t": "{0} min"}
+{"id": 1006, "t": "Zostało {0} min"}
+{"id": 1007, "t": "{0} z {1}"}
+{"id": 1008, "t": "{0} PM"}
+{"id": 1009, "t": "Od ostatniego zapisu: {0} s"}
+{"id": 1010, "t": "Szansa powodzenia: {0}%"}
+{"id": 1011, "t": "Wzrost: {0}%"}
+{"id": 1012, "t": "{0}/{1} XP"}
+{"id": 1013, "t": "{0}AM-{1}AM"}
+{"id": 1014, "t": "{0}AM-{1}PM"}
+{"id": 1015, "t": "{0} godz. {1}"}
+{"id": 1016, "t": "{0} godz. {1} min"}
+{"id": 1017, "t": "{0}km/h"}
+{"id": 1018, "t": "{0}PM-{1}AM"}
+{"id": 1019, "t": "{0}PM-{1}PM"}
+{"id": 1020, "t": "{0}x przedmiot"}
+{"id": 1021, "t": "{0}x nazwa przedmiotu"}
+{"id": 1022, "t": "{0}x Item Name for the"}
+{"id": 1023, "t": "{0}x Item Name for the porud"}
+{"id": 1024, "t": "{0}x Item Name for the porudtc that is"}
+{"id": 1025, "t": "{0}x OG Kush \n{1}x Sour Diesel"}
+{"id": 1026, "t": "{0}x OG Kush Test Test"}
+{"id": 1027, "t": "Zostanie zużyta farba w sprayu: {0}x.\n\nPóźniej nie będzie można edytować graffiti."}
+{"id": 1028, "t": "варим гашиш"}
+{"id": 1029, "t": "ВЫЛАВИРОВАТЕЛЬ"}
+{"id": 1030, "t": "Русский (Russian)"}
+{"id": 1031, "t": "•  Efekt"}
+{"id": 1032, "t": "• Pakowanie towaru\n\n• Przenoszenie\n  przedmiotów między\n  stacjami, regałami,\n  rampami itp."}
+{"id": 1033, "t": "• Zbieranie śmieci\n\n• Opróżnianie pełnych \n  koszy\n\n• Wynoszenie pełnych \n  worków na śmieci"}
+{"id": 1034, "t": "• Sianie nasion\n\n• Podlewanie roślin\n\n• Stosowanie dodatków\n\n• Zbieranie plonów\n\n• Obsługa suszarek"}
+{"id": 1035, "t": "• Obsługa stacji \n  chemicznych\n\n• Obsługa pieców\n\n• Obsługa kotłów\n\n• Obsługa stacji mieszania"}
+{"id": 1036, "t": "日本語 (Japanese)"}
+{"id": 1037, "t": "Sztabka litego złota. Niezwykle ciężka i cenna."}
+{"id": 1038, "t": "Duży worek śmierdzącego czegoś, w czym grzyby uwielbiają rosnąć."}
+{"id": 1039, "t": "Duży dzban etycznie pozyskanego końskiego nasienia."}
+{"id": 1040, "t": "Duży metalowy sejf na wszystkie twoje cenne rzeczy."}
+{"id": 1041, "t": "Koszula zapinana na guziki, z na stałe podwiniętymi rękawami."}
+{"id": 1042, "t": "Puszka farby w sprayu. Można nią malować graffiti."}
+{"id": 1043, "t": "Czapka, po której ktoś przejechał."}
+{"id": 1044, "t": "Ceramiczna toaleta do pozbywania się odchodów."}
+{"id": 1045, "t": "Przezroczysty szklany słoik do przechowywania różnych substancji. Mieści {0}x jedn. dowolnego towaru."}
+{"id": 1046, "t": "Popularny składnik używany w stacji chemicznej."}
+{"id": 1047, "t": "Przytulne pojedyncze łóżko do spania."}
+{"id": 1048, "t": "Wesoły dzień na plaży dla każdego."}
+{"id": 1049, "t": "Worek z ziarnem zaszczepiony strzykawką z zarodnikami. Gotowy do połączenia z podłożem grzybowym w grządce grzybowej."}
+{"id": 1050, "t": "Kanister pełen benzyny."}
+{"id": 1051, "t": "Duży {0}-poziomowy regał magazynowy."}
+{"id": 1052, "t": "Średni {0}-poziomowy regał magazynowy."}
+{"id": 1053, "t": "Minimalistyczna lampa do powieszenia na ścianie. Nie nadaje się do uprawy roślin, ale świetnie się przy niej widzi."}
+{"id": 1054, "t": "Obowiązkowy element stroju aspirującego ojca chrzestnego."}
+{"id": 1055, "t": "Elektryczny sekator do roślin. Po prostu kliknij i przeciągnij, aby zebrać plony."}
+{"id": 1056, "t": "Sekator do roślin. Niezbędny do zbierania plonów."}
+{"id": 1057, "t": "Mocny klasyk o intensywnym działaniu usypiającym i euforycznym."}
+{"id": 1058, "t": "Mocna, silnie energetyzująca odmiana, po której zostaje skupiony haj."}
+{"id": 1059, "t": "Orzeźwiająca puszka Cuke, po której czujesz przypływ energii. Niebo w puszce."}
+{"id": 1060, "t": "Prosta lampa LED do uprawy. Emituje fioletowe światło, które pobudza wzrost roślin o {0}% szybciej niż halogen. Musi być zamontowana na stelażu."}
+{"id": 1061, "t": "Pojedyncze nasiono koki. Wyrasta z niego krzew koki, który daje liście koki, które można przerobić na coś innego, co zaczyna się na 'koka'."}
+{"id": 1062, "t": "Pojedynczy liść krzewu koki. Główny składnik kokainy."}
+{"id": 1063, "t": "Pojedynczy nabój do strzelby kalibru {0}."}
+{"id": 1064, "t": "Mały namiot do uprawy z wbudowanym oświetleniem i doniczką. Rośliny będą rosły szybciej, ale będą mniejsze."}
+{"id": 1065, "t": "Mała ręczna latarka do oświetlania różnych rzeczy."}
+{"id": 1066, "t": "Mały plastikowy woreczek.  Mieści {0}x jedn. dowolnego towaru."}
+{"id": 1067, "t": "Mały {0}-poziomowy regał magazynowy."}
+{"id": 1068, "t": "Specjalna metalowa doniczka zatrzymująca wilgoć. Ziemia będzie traciła wilgoć o {0}% wolniej."}
+{"id": 1069, "t": "Stojąca lampa podłogowa. Można ją włączać i wyłączać."}
+{"id": 1070, "t": "Strzykawka z zarodnikami grzybów zawieszonymi w sterylnym płynie. Aby rozpocząć uprawę, trzeba ją wstrzyknąć do worka na grzybnię."}
+{"id": 1071, "t": "Bardzo grzeczna dziewczynka."}
+{"id": 1072, "t": "Metalowa tabliczka ścienna, na której można pisać."}
+{"id": 1073, "t": "Drewniana tabliczka ścienna, na której można pisać."}
+{"id": 1074, "t": "{0}-poziomowa półka ścienna, na której można kłaść przedmioty."}
+{"id": 1075, "t": "Odrażająca ohyda."}
+{"id": 1076, "t": "Absolutny obowiązek dla gościa z hajsem."}
+{"id": 1077, "t": "Absolutny obowiązek dla gościa z hajsem, ale na budżecie."}
+{"id": 1078, "t": "Klimatyzator"}
+{"id": 1079, "t": "Kwas"}
+{"id": 1080, "t": "Aktywne"}
+{"id": 1081, "t": "Uzależniający"}
+{"id": 1082, "t": "Addy"}
+{"id": 1083, "t": "Leżakowana whisky z Tennessee najwyższej jakości."}
+{"id": 1084, "t": "Doniczka napowietrzająca"}
+{"id": 1085, "t": "Albert Hoover"}
+{"id": 1086, "t": "W pełni naturalny nawóz, który podniesie jakość twoich roślin."}
+{"id": 1087, "t": "Antyczna lampa do powieszenia na ścianie. Nie nadaje się do uprawy roślin, ale świetnie się przy niej widzi."}
+{"id": 1088, "t": "Stary klucz do kanałów pod Hyland Point."}
+{"id": 1089, "t": "Organiczny związek wybuchowy. Popularny składnik wojskowych materiałów wybuchowych."}
+{"id": 1090, "t": "Niezwykle duża fasola tajemniczego pochodzenia."}
+{"id": 1091, "t": "Ulepszony model stacji mieszania z automatycznym dodawaniem składników i krótszym czasem mieszania."}
+{"id": 1092, "t": "Ulepszona wersja stacji pakowania z obrotowym narzędziem pakującym. Pozwala pakować towar znacznie szybciej."}
+{"id": 1093, "t": "Podnosząca na duchu, a zarazem łagodna odmiana o lekkim działaniu na umysł."}
+{"id": 1094, "t": "Antyczny zegar stojący z drewna orzechowego ze złotymi zdobieniami."}
+{"id": 1095, "t": "Antyczna lampa ścienna"}
+{"id": 1096, "t": "Antyseptyczny płyn do płukania ust dla miętowo świeżego oddechu."}
+{"id": 1097, "t": "Fartuch"}
+{"id": 1098, "t": "Fartuch."}
+{"id": 1099, "t": "Obraz (Dzień na plaży)"}
+{"id": 1100, "t": "Obraz (Linie)"}
+{"id": 1101, "t": "Obraz (Postrach)"}
+{"id": 1102, "t": "Obraz (Millie)"}
+{"id": 1103, "t": "Obraz (Oferta)"}
+{"id": 1104, "t": "Obraz (Łobuziak)"}
+{"id": 1105, "t": "Baby Blue (w płynie)"}
+{"id": 1106, "t": "Worek sterylizowanego ziarna z portem do iniekcji. Wstrzyknij zarodniki grzybów, aby rozpocząć uprawę."}
+{"id": 1107, "t": "Woreczek"}
+{"id": 1108, "t": "Banan"}
+{"id": 1109, "t": "Kij bejsbolowy"}
+{"id": 1110, "t": "Zwykła ziemia doniczkowa do uprawy różnych rzeczy."}
+{"id": 1111, "t": "Bateria"}
+{"id": 1112, "t": "Czapka beanie"}
+{"id": 1113, "t": "Łóżko"}
+{"id": 1114, "t": "Pasek"}
+{"id": 1115, "t": "Duży metalowy kontener, do którego możesz wrzucać przedmioty. Opróżnia się automatycznie, gdy śpisz."}
+{"id": 1116, "t": "Duża metalowa szafka, którą można przypisać pracownikom albo używać jako zwykły schowek."}
+{"id": 1117, "t": "Wielkie, ciężkie buciory."}
+{"id": 1118, "t": "Wielka żeliwna patelnia. Świetna do gotowania i do obijania ludziom mord (ale nie jednocześnie)."}
+{"id": 1119, "t": "Duża, ostra maczeta."}
+{"id": 1120, "t": "Duży zraszacz"}
+{"id": 1121, "t": "Biker Crank (w płynie)"}
+{"id": 1122, "t": "Marynarka"}
+{"id": 1123, "t": "Marynarka/blezer/garnitur - kto by tam odróżnił."}
+{"id": 1124, "t": "Bomba"}
+{"id": 1125, "t": "Dół"}
+{"id": 1126, "t": "Cegła"}
+{"id": 1127, "t": "Prasa do cegieł"}
+{"id": 1128, "t": "Cegła. Mieści {0}x towaru. Ten opis raczej nie powinien być widoczny."}
+{"id": 1129, "t": "Brut du Gloop"}
+{"id": 1130, "t": "Kapelusz rybacki"}
+{"id": 1131, "t": "Koszula zapinana"}
+{"id": 1132, "t": "Koszula zapinana (podwinięta)"}
+{"id": 1133, "t": "Uspokajający"}
+{"id": 1134, "t": "Służy do usuwania graffiti z powierzchni."}
+{"id": 1135, "t": "Służy do zbierania śmieci albo do przesypywania zawartości kosza na śmieci do worka."}
+{"id": 1136, "t": "Czapka z daszkiem"}
+{"id": 1137, "t": "Bojówki"}
+{"id": 1138, "t": "Spodnie bojówki z mnóstwem kieszeni (ozdobnych)."}
+{"id": 1139, "t": "Gotówka"}
+{"id": 1140, "t": "Kocioł"}
+{"id": 1141, "t": "Cerebralny"}
+{"id": 1142, "t": "Tania i prosta halogenowa lampa do uprawy. Musi być zamontowana na stelażu."}
+{"id": 1143, "t": "Tania deskorolka"}
+{"id": 1144, "t": "Tandetny {0}-strzałowy rewolwer, pewnie zrobiony przez komunistów w latach {1}. Przed każdym strzałem trzeba ręcznie odciągnąć kurek."}
+{"id": 1145, "t": "Czapka kucharska"}
+{"id": 1146, "t": "Pierwiastek chemiczny, niezbędny składnik zdrowej diety. Ma też inne zastosowania."}
+{"id": 1147, "t": "Stacja chemiczna"}
+{"id": 1148, "t": "Chili"}
+{"id": 1149, "t": "Château La Peepee"}
+{"id": 1150, "t": "Klasyczna, ponadczasowa czapka z daszkiem."}
+{"id": 1151, "t": "Klasyczna deskorolka typu popsicle z podwójnym kickiem. Pozwala poruszać się szybciej niż pieszo."}
+{"id": 1152, "t": "Klasyczna metamfetamina. Silny stymulant, który mocno uzależnia fizycznie i psychicznie."}
+{"id": 1153, "t": "Podkładka do zarządzania sprzętem i pracownikami."}
+{"id": 1154, "t": "Liść koki"}
+{"id": 1155, "t": "Nasiona koki"}
+{"id": 1156, "t": "Kokaina"}
+{"id": 1157, "t": "Baza kokainowa"}
+{"id": 1158, "t": "Stolik kawowy"}
+{"id": 1159, "t": "Żywa gotówka."}
+{"id": 1160, "t": "Kurtka z kołnierzem"}
+{"id": 1161, "t": "Glany"}
+{"id": 1162, "t": "Popularny składnik chemiczny w proszku. Używany w zapałkach i mecie."}
+{"id": 1163, "t": "Naboje do rewolweru: {0}."}
+{"id": 1164, "t": "Kapelusz kowbojski"}
+{"id": 1165, "t": "Cruiser"}
+{"id": 1166, "t": "Deskorolka typu cruiser do szybkiej jazdy po prostej. Niezbyt zwrotna."}
+{"id": 1167, "t": "Cuke"}
+{"id": 1168, "t": "efekty Cuke"}
+{"id": 1169, "t": "Dan's Hardware"}
+{"id": 1170, "t": "Dług"}
+{"id": 1171, "t": "Deselected"}
+{"id": 1172, "t": "Witryna"}
+{"id": 1173, "t": "Dysocjacyjny"}
+{"id": 1174, "t": "Pączek"}
+{"id": 1175, "t": "Buty wizytowe"}
+{"id": 1176, "t": "Suszarka"}
+{"id": 1177, "t": "Kontener na śmieci"}
+{"id": 1178, "t": "Elektryczny sekator"}
+{"id": 1179, "t": "Podłużny żółty owoc bogaty w potas."}
+{"id": 1180, "t": "Energetyk"}
+{"id": 1181, "t": "efekty energetyka"}
+{"id": 1182, "t": "Euforyczny"}
+{"id": 1183, "t": "Wszystko jest lepsze w złocie."}
+{"id": 1184, "t": "ExpiringSoon"}
+{"id": 1185, "t": "Wyjątkowo trwała ziemia. Liczba upraw przed zużyciem: {0}."}
+{"id": 1186, "t": "Ziemia o bardzo długiej żywotności"}
+{"id": 1187, "t": "Niezwykle rzadkie Château La Peepee {0} Cabernet Sauvignon."}
+{"id": 1188, "t": "Oczy"}
+{"id": 1189, "t": "FadedText"}
+{"id": 1190, "t": "Wykwintny francuski szampan w pozłacanej butelce."}
+{"id": 1191, "t": "Elegancka, ręcznie tkana doniczka z materiału, która zapewnia wentylację korzeni. Przyspiesza wzrost roślin o {0}%, ale zwiększa też utratę wilgoci o {1}%."}
+{"id": 1192, "t": "Eleganckie, błyszczące buty wizytowe."}
+{"id": 1193, "t": "Stopy"}
+{"id": 1194, "t": "Nawóz"}
+{"id": 1195, "t": "Rękawiczki bez palców"}
+{"id": 1196, "t": "Rękawiczki bez palców."}
+{"id": 1197, "t": "Koszula flanelowa"}
+{"id": 1198, "t": "Latarka"}
+{"id": 1199, "t": "Kaszkiet"}

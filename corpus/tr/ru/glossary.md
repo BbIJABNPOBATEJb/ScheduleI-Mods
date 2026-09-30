@@ -273,3 +273,27 @@ Style notes:
 | Friendly Note #N | Дружеская записка №N |
 | Mini-game / app names (Egg Run, Noodle, Potato Run, Ride the Bus) | kept in Latin |
 | Internal ids (FadedText, ExpiringSoon, Selected, Deselected, Future, *DropItemCount, formal_address) | copied unchanged |
+
+## Added with chunks 11–19 (effects, cosmetics, misc)
+
+| English | Russian |
+|---|---|
+| Effects: Anti-gravity / Athletic / Balding / Bright-Eyed / Calorie-Dense | Антигравитационный / Атлетичный / Лысеющий / Ясноглазый / Калорийный |
+| Effects: Cyclopean / Disorienting / Electrifying / Energizing / Explosive | Циклопический / Дезориентирующий / Электризующий / Бодрящий / Взрывной |
+| Effects: Foggy / Gingeritis / Glowing / Jennerising / Laxative / Lethal | Туманный / Рыжеизм / Светящийся / Дженнеризирующий / Слабительный / Смертельный |
+| Effects: Long faced / Paranoia / Schizophrenic / Seizure-Inducing / Shrinking | Длиннолицый / Паранойя / Шизофренический / Вызывающий припадки / Уменьшающий |
+| Effects: Slippery / Sneaky / Spicy / Thought-Provoking / Toxic / Zombifying | Скользкий / Скрытный / Острый / Глубокомысленный / Токсичный / Зомбирующий |
+| Effect: Tropic Thunder | Tropic Thunder (kept) |
+| Effect descriptions: "the user" | человек / omitted ("Вызывает паранойю.") |
+| Emotions / face presets (neuter, agree with "лицо") | Angry → Злое, Annoyed → Раздражённое, Cheery → Весёлое, Concerned → Встревоженное, Happy → Счастливое, Scared → Испуганное, Surprised → Удивлённое, Sleeping → Спящее |
+| Consume / Smoke / Snort | Употребить / Затянуться / Нюхнуть |
+| Vehicle colors | Black Чёрный, White Белый, Red Красный, Dull Red Тускло-красный, Orange Оранжевый, Yellow Жёлтый, Pink Розовый, Purple Фиолетовый, Cyan Бирюзовый, Light Blue Голубой, Dark Blue Тёмно-синий, Navy Морской синий, Light/Dark Green Светло-/Тёмно-зелёный, Light/Dark Grey Светло-/Тёмно-серый |
+| Hair styles | Buzz cut Ёжик, Close buzz cut Короткий ёжик, Bowl cut Под горшок, Bun Пучок, High/Low bun Высокий/Низкий пучок, Mohawk Ирокез, Receding Залысины, Monk Тонзура, Shoulder length До плеч, Messy bob Растрёпанное каре |
+| Customer standards | Very Low / Low / Moderate / High / Very High → Очень низкие / Низкие / Средние / Высокие / Очень высокие |
+| Crimes | Assault Нападение, Theft Кража, Vandalism Вандализм, Drug trafficking Наркоторговля, Evading arrest Уклонение от ареста, Violating curfew Нарушение комендантского часа, Possession of … Хранение … |
+| Loan sharks | ростовщики |
+| Sink or Swim (quest title) | Пан или пропал |
+| Card suits (Ride the Bus) | Трефы / Бубны / Червы / Пики |
+| Output slot | ячейка результата |
+| Supplies source / supplies stash (botanist) | источник расходников |
+| Debug/internal ids (behaviour names, variables, asset paths, anim triggers, JSON blobs) | copied unchanged |

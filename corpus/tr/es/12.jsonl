@@ -2,7 +2,7 @@
 {"id": 2401, "t": "Nopi, bro, olvídalo"}
 {"id": 2402, "t": "Otra vez no..."}
 {"id": 2403, "t": "No está mal... Te escribo"}
-{"id": 2404, "t": "Ni de broma, bróder. Lo consigo en otro lado"}
+{"id": 2404, "t": "Ni de broma, bro. Lo consigo en otro lado"}
 {"id": 2405, "t": "¡¡Ni de broma!! Lo consigo en otro lado, idiota de mierda"}
 {"id": 2406, "t": "Ni de broma."}
 {"id": 2407, "t": "Ni de broma. Lo consigo en otro lado"}
@@ -11,7 +11,7 @@
 {"id": 2410, "t": "No me interesa, lo siento"}
 {"id": 2411, "t": "Esta lluvia no me encanta, bro"}
 {"id": 2412, "t": "Ahora no"}
-{"id": 2413, "t": "Ahora no, broski"}
+{"id": 2413, "t": "Ahora no, bros"}
 {"id": 2414, "t": "Nada mal, ya te escribiré"}
 {"id": 2415, "t": "No es lo que pedí. Se cancela el trato."}
 {"id": 2416, "t": "No es lo que me gusta"}
@@ -33,7 +33,7 @@
 {"id": 2432, "t": "Ah, de acuerdo. Aquí estaré si cambia de opinión."}
 {"id": 2433, "t": "Ah, bueno... Terminaré mi tarea actual y me iré después. ¿Seguro que quieres que deje de trabajar para ti?"}
 {"id": 2434, "t": "Ah, cierto, seguro que no conoces esta ciudad: te presento la encantadora Hyland Point. Puedes ver un mapa en tu <h1>teléfono</h>. Presiona <Input_TogglePhone> para verlo."}
-{"id": 2435, "t": "¡Mierda, esto está buenísimo, compa! Te escribo"}
+{"id": 2435, "t": "¡Mierda, esto está buenísimo, amigo! Te escribo"}
 {"id": 2436, "t": "¡Ay, mierda!"}
 {"id": 2437, "t": "Ay, perdona, compañero, no quería entrometerme. Te dejo seguir tu camino..."}
 {"id": 2438, "t": "Ay, gracias a Dios"}
@@ -53,7 +53,7 @@
 {"id": 2452, "t": "Ok, no hay problema"}
 {"id": 2453, "t": "Pues bueno"}
 {"id": 2454, "t": "Ok, lo que sea. ¿A qué hora?"}
-{"id": 2455, "t": "Ok, nos vemos <LOCATION> entre <WINDOW_START> y <WINDOW_END>."}
+{"id": 2455, "t": "Ok, nos vemos <LOCATION> entre las <WINDOW_START> y las <WINDOW_END>."}
 {"id": 2456, "t": "Ok. ¿A qué hora quieres que nos veamos?"}
 {"id": 2457, "t": "De acuerdo"}
 {"id": 2458, "t": "De acuerdo. ¿A qué propiedad me traslado?"}
@@ -75,7 +75,7 @@
 {"id": 2474, "t": "Oscar te venderá todo lo que necesitas para hacer meta, excepto <h1>pseudo</h>. Para eso, vas a tener que conseguirte un proveedor."}
 {"id": 2475, "t": "¡Ay!"}
 {"id": 2476, "t": "Excelente, la propiedad ya está a su nombre."}
-{"id": 2477, "t": "Junto a las estanterías de almacenaje está el <h1>comerciante</h> local: te venderá todo lo que necesitas para llevar un imperio del hampa como Dios manda."}
+{"id": 2477, "t": "Junto a las estanterías está el <h1>comerciante</h> local: te venderá todo lo que necesitas para llevar un imperio del hampa como Dios manda."}
 {"id": 2478, "t": "¡Au!"}
 {"id": 2479, "t": "Auuu..."}
 {"id": 2480, "t": "Lárgate"}
@@ -90,7 +90,7 @@
 {"id": 2489, "t": "¿¿Todo listo, bro??"}
 {"id": 2490, "t": "¿Nos ponemos en marcha?"}
 {"id": 2491, "t": "Cuando quieras"}
-{"id": 2492, "t": "Cuando quieras, compa"}
+{"id": 2492, "t": "Cuando quieras, amigo"}
 {"id": 2493, "t": "¿¿Ya está todo listo??"}
 {"id": 2494, "t": "¿Todo listo?"}
 {"id": 2495, "t": "¿¿Todo listo??"}
@@ -99,7 +99,7 @@
 {"id": 2498, "t": "Arriba, amigo. Parece que esas plantas van bien, aunque no estarán listas para cosechar hasta más tarde."}
 {"id": 2499, "t": "Mándale un <h1>mensaje</h> y pide una entrega en un <h1>buzón secreto</h>. Respondí por ti, así que no tendrás que pagar por adelantado. Tu pedido irá a tu cuenta, que podrás saldar más adelante."}
 {"id": 2500, "t": "Mándame un mensaje si quieres pedir una entrega."}
-{"id": 2501, "t": "Mándame un mensaje si quieres pedir algo. Nelson habló bien de ti, así que te abriré una cuenta que podrás saldar más adelante."}
+{"id": 2501, "t": "Envíeme un mensaje si quiere pedir algo. Nelson habló bien de usted, así que le abriré una cuenta que podrá saldar más adelante."}
 {"id": 2502, "t": "Mándame un mensaje cuando quieras que nos veamos."}
 {"id": 2503, "t": "Mierda"}
 {"id": 2504, "t": "Mierda, hermano..."}
@@ -109,7 +109,7 @@
 {"id": 2508, "t": "Mierdita"}
 {"id": 2509, "t": "Mierdita..."}
 {"id": 2510, "t": "Mándame un mensaje si quieres que nos veamos para comprar suministros. En persona puedes comprar cantidades más grandes."}
-{"id": 2511, "t": "De lujo, nos vemos <LOCATION> entre <WINDOW_START> y <WINDOW_END>."}
+{"id": 2511, "t": "De lujo, nos vemos <LOCATION> entre las <WINDOW_START> y las <WINDOW_END>."}
 {"id": 2512, "t": "Cuánta lluvia..."}
 {"id": 2513, "t": "¡Cómo llueve!"}
 {"id": 2514, "t": "¿Así que desea comprar <BUSINESS>? Los pagos se hacen desde su saldo en línea."}
@@ -124,9 +124,9 @@
 {"id": 2523, "t": "Lo siento, jefe, me faltan los objetos necesarios para hacer cualquier tarea en mis macetas asignadas. Si aún no lo hiciste, puedes asignar una fuente de suministros de donde tomaré automáticamente los objetos necesarios."}
 {"id": 2524, "t": "Lo siento, jefe, ninguna de mis macetas asignadas necesita trabajo ahora mismo."}
 {"id": 2525, "t": "Lo siento, jefe, unos matones de los Benzies me acaban de asaltar. Hice lo que pude, pero se llevaron todo..."}
-{"id": 2526, "t": "Lo siento, compa, no es de mi gusto"}
+{"id": 2526, "t": "Lo siento, amigo, no es de mi gusto"}
 {"id": 2527, "t": "Lo siento, no tiene suficiente dinero para ese modelo."}
-{"id": 2528, "t": "Me parece bien, compa"}
+{"id": 2528, "t": "Me parece bien, amigo"}
 {"id": 2529, "t": "¡Habla con la amable gente de Dan's Hardware para todas tus necesidades de 'mejoras para el hogar'!"}
 {"id": 2530, "t": "Esporas, bolsas de grano, sustrato: lo que necesites, solo avísame."}
 {"id": 2531, "t": "Pintar grafitis te da XP y reduce la influencia del cártel en esa región."}
@@ -142,7 +142,7 @@
 {"id": 2541, "t": "Sí que lo es"}
 {"id": 2542, "t": "Por supuesto"}
 {"id": 2543, "t": "¡Sorpresa!"}
-{"id": 2544, "t": "Genial, compa, nos vemos <LOCATION> entre <WINDOW_START> y <WINDOW_END>."}
+{"id": 2544, "t": "Genial, amigo, nos vemos <LOCATION> entre las <WINDOW_START> y las <WINDOW_END>."}
 {"id": 2545, "t": "Genial, hermano"}
 {"id": 2546, "t": "Taco Ticklers (<PRICE>)"}
 {"id": 2547, "t": "Gracias"}

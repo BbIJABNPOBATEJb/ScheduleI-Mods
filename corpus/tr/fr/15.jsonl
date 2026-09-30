@@ -4,10 +4,10 @@
 {"id": 3003, "t": "Environmental Brightess"}
 {"id": 3004, "t": "Erreur : <SUBMISSSION_FAILED_MESSSAGE>"}
 {"id": 3005, "t": "Fuite face à la police"}
-{"id": 3006, "t": "Event"}
+{"id": 3006, "t": "Événement"}
 {"id": 3007, "t": "Bonus qualité supérieure"}
 {"id": 3008, "t": "Plein écran exclusif"}
-{"id": 3009, "t": "Execute"}
+{"id": 3009, "t": "Exécuter"}
 {"id": 3010, "t": "Partie quittée"}
 {"id": 3011, "t": "Retour au menu"}
 {"id": 3012, "t": "Explosion"}
@@ -27,13 +27,13 @@
 {"id": 3026, "t": "Foot patrol route"}
 {"id": 3027, "t": "Abandonner et encaisser <MULTIPLIED_LOCAL_PLAYER_BET>"}
 {"id": 3028, "t": "Gratuit"}
-{"id": 3029, "t": "de ce"}
-{"id": 3030, "t": "de cette mallette."}
+{"id": 3029, "t": "dans ce"}
+{"id": 3030, "t": "dans cette mallette."}
 {"id": 3031, "t": "Plein écran fenêtré"}
 {"id": 3032, "t": "Pousse terminée"}
 {"id": 3033, "t": "Partie sauvegardée !"}
 {"id": 3034, "t": "General Vehicle Graph"}
-{"id": 3035, "t": "Generic"}
+{"id": 3035, "t": "Générique"}
 {"id": 3036, "t": "Bonus générosité"}
 {"id": 3037, "t": "Donner un échantillon gratuit"}
 {"id": 3038, "t": "Grab Screen Pass"}
@@ -41,9 +41,9 @@
 {"id": 3040, "t": "Heureux"}
 {"id": 3041, "t": "Récolter la plante"}
 {"id": 3042, "t": "Il"}
-{"id": 3043, "t": "Health"}
+{"id": 3043, "t": "Santé"}
 {"id": 3044, "t": "Cœurs"}
-{"id": 3045, "t": "Height"}
+{"id": 3045, "t": "Hauteur"}
 {"id": 3046, "t": "Bonjour, <PLAYER_NAME>"}
 {"id": 3047, "t": "Elle"}
 {"id": 3048, "t": "Hé boss, j'ai entendu dire qu'un deal des Benzies se prépare à <REGION>, <LOCATION_DESCRIPTION>. Ça vaut peut-être le coup d'aller voir."}
@@ -108,7 +108,7 @@
 {"id": 3107, "t": "Confiance insuffisante"}
 {"id": 3108, "t": "Additif invalide"}
 {"id": 3109, "t": "Type de terreau invalide"}
-{"id": 3110, "t": "Inventory"}
+{"id": 3110, "t": "Inventaire"}
 {"id": 3111, "t": "Inventaire plein"}
 {"id": 3112, "t": "Inventaire plein"}
 {"id": 3113, "t": "L'inventaire est vide"}
@@ -120,11 +120,11 @@
 {"id": 3119, "t": "Landing Spots: <CHILD_COUNT>"}
 {"id": 3120, "t": "Dernière sauvegarde"}
 {"id": 3121, "t": "Dernière sauvegarde il y a <SECONDS_SINCE_LAST_SAVE> secondes"}
-{"id": 3122, "t": "Law"}
+{"id": 3122, "t": "Loi"}
 {"id": 3123, "t": "Lerp"}
-{"id": 3124, "t": "Light"}
+{"id": 3124, "t": "Lumière"}
 {"id": 3125, "t": "Light Exposure (<NAME>)"}
-{"id": 3126, "t": "Liquid"}
+{"id": 3126, "t": "Liquide"}
 {"id": 3127, "t": "Loading as client to tutorial"}
 {"id": 3128, "t": "Loading as client to: <STEAM_ID64>"}
 {"id": 3129, "t": "Quai de chargement <LOADING_DOCK_INDEX>"}
@@ -161,7 +161,7 @@
 {"id": 3160, "t": "Mixing station end"}
 {"id": 3161, "t": "Mixing station start"}
 {"id": 3162, "t": "Modérées"}
-{"id": 3163, "t": "Money"}
+{"id": 3163, "t": "Argent"}
 {"id": 3164, "t": "Blanchiment d'argent (<PROPERTY_NAME>)"}
 {"id": 3165, "t": "Écran <I>"}
 {"id": 3166, "t": "La plupart des magasins légaux n'acceptent que les <h1>paiements par carte</h>, tandis que la plupart des magasins illégaux ne prennent que du liquide. Allez à un <h1>distributeur</h> pour déposer et retirer du liquide."}
@@ -185,7 +185,7 @@
 {"id": 3184, "t": "Aucune plante dans ce pot"}
 {"id": 3185, "t": "Pas de RDX dans l'inventaire"}
 {"id": 3186, "t": "Non, désolé"}
-{"id": 3187, "t": "Nod"}
+{"id": 3187, "t": "Hocher la tête"}
 {"id": 3188, "t": "C'est pas tes affaires !"}
 {"id": 3189, "t": "Pas assez de liquide"}
 {"id": 3190, "t": "Pas assez de place dans l'emplacement de sortie"}

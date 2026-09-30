@@ -88,7 +88,7 @@
 {"id": 3487, "t": "Puedes usar tus portapapeles de gestión para asignarme macetas, estantes de cultivo, etc."}
 {"id": 3488, "t": "Puedes usar tus portapapeles de gestión para asignarme estaciones o rutas."}
 {"id": 3489, "t": "Puedes usar tus portapapeles de gestión para asignarme estaciones."}
-{"id": 3490, "t": "Puedes usar tus portapapeles de gestión para asignarme contenedores de basura."}
+{"id": 3490, "t": "Puedes usar tus portapapeles de gestión para asignarme papeleras."}
 {"id": 3491, "t": "¿Saliste bien? Mejor no hablar por tu teléfono. Busca un teléfono público.\n- U.N."}
 {"id": 3492, "t": "Depositaste <AMOUNT>"}
 {"id": 3493, "t": "No tienes ningún vehículo que recuperar"}
@@ -109,23 +109,23 @@
 {"id": 3508, "t": "Bait & Tackle"}
 {"id": 3509, "t": "BANK"}
 {"id": 3510, "t": "Bar"}
-{"id": 3511, "t": "Baloncesto"}
+{"id": 3511, "t": "Cancha de"}
 {"id": 3512, "t": "entre estaciones,"}
 {"id": 3513, "t": "Bleuball"}
-{"id": 3514, "t": "Bloque"}
+{"id": 3514, "t": "apartamentos marrón"}
 {"id": 3515, "t": "Boutique"}
 {"id": 3516, "t": "Caja"}
-{"id": 3517, "t": "Apartamentos marrones"}
+{"id": 3517, "t": "Edificio de"}
 {"id": 3518, "t": "Bud's"}
 {"id": 3519, "t": "Canario"}
-{"id": 3520, "t": "Centro"}
+{"id": 3520, "t": "comunitario"}
 {"id": 3521, "t": "Skate barato\n${{0}}"}
 {"id": 3522, "t": "Chino"}
-{"id": 3523, "t": "Comunitario"}
+{"id": 3523, "t": "Centro"}
 {"id": 3524, "t": "Company"}
 {"id": 3525, "t": "Confirmar (${{0}})"}
 {"id": 3526, "t": "Construcción y demoliciones"}
-{"id": 3527, "t": "Cancha"}
+{"id": 3527, "t": "baloncesto"}
 {"id": 3528, "t": "Cruiser\n${{0}}"}
 {"id": 3529, "t": "TOQUE DE QUEDA ESTA NOCHE"}
 {"id": 3530, "t": "TOQUE DE QUEDA ESTA NOCHE\n{{0}}PM - {{1}}AM"}
@@ -134,7 +134,7 @@
 {"id": 3533, "t": "DESDE  {{0}}"}
 {"id": 3534, "t": "Elegante maceta de tela tejida a mano que mantiene las raíces ventiladas. Aumenta la velocidad de crecimiento de la planta un {{0}}%, pero también aumenta la pérdida de humedad un {{1}}%"}
 {"id": 3535, "t": "Skate dorado\n${{0}}"}
-{"id": 3536, "t": "Ayuntamiento"}
+{"id": 3536, "t": "municipal"}
 {"id": 3537, "t": "HAM"}
 {"id": 3538, "t": "Handy Hank's"}
 {"id": 3539, "t": "Hardware"}
@@ -163,7 +163,7 @@
 {"id": 3562, "t": "Sauerkraut"}
 {"id": 3563, "t": "Shred"}
 {"id": 3564, "t": "Skate\n${{0}}"}
-{"id": 3565, "t": "estanterías de almacenaje,"}
+{"id": 3565, "t": "estanterías,"}
 {"id": 3566, "t": "Tienda"}
 {"id": 3567, "t": "Supreme"}
 {"id": 3568, "t": "Taco"}
@@ -178,7 +178,7 @@
 {"id": 3577, "t": "para desbloquear esta región"}
 {"id": 3578, "t": "Total gastado"}
 {"id": 3579, "t": "Tower {{0}}"}
-{"id": 3580, "t": "Ciudad"}
+{"id": 3580, "t": "Palacio"}
 {"id": 3581, "t": "bolsas de basura"}
 {"id": 3582, "t": "v0.{{0}}f13"}
 {"id": 3583, "t": "{{0}} AM"}

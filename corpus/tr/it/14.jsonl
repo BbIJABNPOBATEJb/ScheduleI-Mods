@@ -14,7 +14,7 @@
 {"id": 2813, "t": "<FIRST_NAME> paga <color=#50E65A><PAYMENT></color> per:"}
 {"id": 2814, "t": "Valigetta di <FIRST_NAME>"}
 {"id": 2815, "t": "Inventario di <FULL_NAME>"}
-{"id": 2816, "t": "Cassetta segreta di <FULL_NAME>"}
+{"id": 2816, "t": "Scorta di <FULL_NAME>"}
 {"id": 2817, "t": "<I> sostanze controllate confiscate"}
 {"id": 2818, "t": "<I> droghe ad alta gravità confiscate"}
 {"id": 2819, "t": "<I> droghe a bassa gravità confiscate"}
@@ -130,7 +130,7 @@
 {"id": 2929, "t": "Chiudi lo sportello del forno"}
 {"id": 2930, "t": "Fiori"}
 {"id": 2931, "t": "Ritira il prodotto"}
-{"id": 2932, "t": "Svuota il nascondiglio <DEAD_DROP_DESCRIPTION>"}
+{"id": 2932, "t": "Ritira dal nascondiglio <DEAD_DROP_DESCRIPTION>"}
 {"id": 2933, "t": "Unisci gli ingredienti nel becher"}
 {"id": 2934, "t": "Unisci gli ingredienti nella ciotola"}
 {"id": 2935, "t": "Unisci le foglie e la benzina nel calderone"}
@@ -167,7 +167,7 @@
 {"id": 2966, "t": "Cutscene (<NAME>)"}
 {"id": 2967, "t": "Daily summary close"}
 {"id": 2968, "t": "Daily summary {0}"}
-{"id": 2969, "t": "paga giornaliera di"}
+{"id": 2969, "t": "la paga giornaliera di"}
 {"id": 2970, "t": "Data"}
 {"id": 2971, "t": "Disattiva"}
 {"id": 2972, "t": "Nascondiglio\n(<DEAD_DROP_NAME>)"}

@@ -251,7 +251,8 @@ use exactly these words everywhere.
 | Checkpoint | posto di blocco |
 | Sewer (access) key | chiave delle fogne / chiave d'accesso alle fogne |
 | Locker | armadietto |
-| Stash box (supplier) | cassetta segreta |
+| Stash box (supplier, in dialogue) / stash entity "<NAME>'s Stash" | cassetta segreta / "Scorta di <NAME>" |
+| Supplies source / supplies stash (botanist) | fonte di rifornimenti |
 | Pseudo (pseudoephedrine) | pseudo (fem.: "la pseudo") |
 | Suspension rack | rastrelliera sospesa |
 | Grow light | lampada di coltivazione |
@@ -279,6 +280,16 @@ use exactly these words everywhere.
 | Body shop | carrozzeria |
 | Warehouse (the dark market) | magazzino |
 | Dealer management app | app Gestione spacciatori |
+| Loan sharks | strozzini |
+| Sink or Swim (quest) | O la va o la spacca |
+| Crimes: Assault / Assault with a deadly weapon / Theft / Vandalism / Drug trafficking | Aggressione / Aggressione con arma letale / Furto / Vandalismo / Traffico di droga |
+| Crimes: Evading arrest / Failure to comply / Violating curfew / Brandishing a weapon | Fuga dalla polizia / Mancata obbedienza agli ordini della polizia / Violazione del coprifuoco / Esibizione di un'arma |
+| Possession of low/moderate/high-severity drug | Possesso di droga a bassa/media/alta gravità |
+| Card suits Clubs / Diamonds / Hearts / Spades; Higher / Lower; Inside / Outside | Fiori / Quadri / Cuori / Picche; Più alto / Più basso; Dentro / Fuori |
+| Emotions (masc.): Angry / Annoyed / Cheery / Concerned / Happy / Scared / Surprised / Sleeping | Arrabbiato / Infastidito / Allegro / Preoccupato / Felice / Spaventato / Sorpreso / Addormentato |
+| Vehicle colours | Nero, Bianco, Rosso, Rosso opaco, Blu scuro, Blu navy, Azzurro, Ciano, Verde scuro/chiaro, Grigio scuro/chiaro, Arancione, Rosa, Viola, Giallo |
+| Hairstyles | Taglio militare, Rasato corto, Taglio a scodella, Chignon (alto/basso), Doppio chignon alto, Cresta (Mohawk), Tonsura (Monk), Stempiato (Receding), Caschetto spettinato, Frangia media, Alle spalle, Alla Franklin, Alla Tony |
+| Internal identifiers (variable/behaviour/animation names, asset paths, debug logs) | copied unchanged |
 
 ## UI / world terms (added with chunks 01–10)
 
@@ -343,6 +354,12 @@ use exactly these words everywhere.
 | Stimulating | Stimolante |
 | Uplifting | Esaltante |
 | Energizing | Energizzante |
+| Anti-gravity / Athletic / Balding / Bright-Eyed / Calorie-Dense | Antigravità / Atletico / Calvizie / Occhi luminosi / Ipercalorico |
+| Cyclopean / Disorienting / Electrifying / Explosive / Foggy | Ciclopico / Disorientante / Elettrizzante / Esplosivo / Nebbioso |
+| Gingeritis / Glowing / Jennerising / Laxative / Lethal / Long faced | Carotite / Luminescente / Jennerizzante / Lassativo / Letale / Faccia lunga |
+| Munchies / Paranoia / Schizophrenic / Seizure-Inducing / Shrinking | Fame chimica / Paranoia / Schizofrenico / Convulsivo / Rimpicciolente |
+| Slippery / Smelly / Sneaky / Spicy / Thought-Provoking / Toxic / Tropic Thunder / Zombifying | Scivoloso / Puzzolente / Furtivo / Piccante / Cervellotico / Tossico / Tropic Thunder / Zombificante |
+| Effect descriptions "the user" | "chi lo assume" ("Fa esplodere chi lo assume...") |
 
 ## Quality tiers (feminine, "la qualità") and item names
 
@@ -392,3 +409,12 @@ use exactly these words everywhere.
 | Delivery bay | zona di consegna |
 | Payphone | telefono pubblico |
 | Uncle Nelson | Uncle Nelson (kept) |
+
+## NPC register (who says "Lei")
+
+| NPC | Register |
+|---|---|
+| Ray / estate agent, car dealership (Jeremy, salesman), Herbert (boutique, "formal_address" token kept), Donna (motel), police | "Lei" ("Quale attività Le interessa?", "a Suo nome") |
+| Albert Hoover, Shirley, Salvador, Phil, Oscar, Stan, Dan, Manny (fixer), Benzies, customers, dealers | "tu" |
+| Customer quoting deal time | "Ci vediamo <LOCATION> tra le <WINDOW_START> e le <WINDOW_END>." |
+| Player gender unknown → avoid gendered adjectives ("Ma ci vedi??", "per te è finita", "Spaccio droga") | |

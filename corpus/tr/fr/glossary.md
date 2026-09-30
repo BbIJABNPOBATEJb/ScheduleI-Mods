@@ -129,10 +129,10 @@ Consult this before translating a chunk and follow it strictly. Add new recurrin
 
 | English | French | English | French |
 |---|---|---|---|
-| Anti-Gravity | Antigravité | Glowing | Luminescent |
+| Anti-gravity (key spelling) | Antigravité | Glowing | Luminescent |
 | Athletic | Athlétique | Jennerising | Jennerisant |
 | Balding | Calvitie | Laxative | Laxatif |
-| Bright-Eyed | Yeux brillants | Long Faced | Visage allongé |
+| Bright-Eyed | Yeux brillants | Long faced (key spelling) | Visage allongé |
 | Calming | Calmant | Munchies | Fringale |
 | Calorie-Dense | Hypercalorique | Paranoia | Paranoïa |
 | Cyclopean | Cyclopéen | Refreshing | Rafraîchissant |
@@ -333,3 +333,86 @@ Motor Oil → Huile moteur, Mouth Wash → Bain de bouche, Paracetamol → Parac
 | AC unit | climatiseur (dialogue: clim) |
 | Drop (supplier dead drop) | cache ("Ta cache est prête") |
 | Times "{0}PM" / "{0}pm to {1}am" | "{0}h du soir" / "de {0}h du soir à {1}h du matin" |
+
+## Additions from chunks 01–10
+
+Conventions:
+- **Percent:** space before % — "{0} %", "100 % naturel".
+- **Times in UI:** sentences use "{0}h du matin / du soir" ("Réveil à {0}h du matin", curfew boards
+  "{0}H DU SOIR - {1}H DU MATIN"); compact clock/range widgets keep the key's AM/PM ("{0} AM", "{0}AM-{1}PM").
+  Durations: "{0} h {1} min", "{0} min", "{0} s".
+- **Numbering:** "#2" → "n°2" ("Chambre de motel n°2", "Mot amical n°1").
+- **Tokens that are NOT placeholders stay untouched:** `<Employee>` (the validator counts it as a tag),
+  `formal_address`, internal ids (`ExpiringSoon`, `FadedText`, `CentralCanalDropItemCount`, `FF7A7A`).
+- **Location descriptions** (lowercase keys, inserted via `<LOCATION>`): lowercase prepositional phrases —
+  "derrière la banque", "au skatepark", "sous le pont ouest", "devant le motel"
+  ("Je serai <LOCATION>", "on se retrouve <LOCATION> entre <WINDOW_START> et <WINDOW_END>").
+  Capitalized location names: "Derrière la banque", "À côté du tribunal".
+- **<PRODUCT> carries its own quantity** ("2x OG Kush"): no article before it — "T'as <PRODUCT> ?",
+  "Je peux avoir <PRODUCT> ?", "Je te le paie <PRICE>".
+- **Acronym keys stay acronyms:** FOV, SFX, TV, SSAO, PGR, RDX (RV → Camping-car, see above).
+- Albert Hoover tutoie but says "chef" for "sir".
+
+| English | French |
+|---|---|
+| On / Off (toggles) | Activé / Désactivé |
+| Owned | Acquis ("Camping-car (acquis)") |
+| Tooltip | Info-bulle |
+| LEVEL UP! | PROMOTION ! |
+| Product Manager (app title) / Products (icon) | Gestion des produits / Produits ("l'appli Produits") |
+| Morning / Afternoon / Night / Late Night (deal windows) | Matin / Après-midi / Soir / Nuit |
+| Deal window | créneau |
+| Standards (customer) | Exigences |
+| Very Low / Low / Moderate / High / Very High (standards) | Très faibles / Faibles / Modérées / Élevées / Très élevées |
+| Town hall | hôtel de ville (dialogue: mairie OK) |
+| Stash (supplier) | Planque de X ("Planque de Fungal Phil") |
+| Hardware store / Pawn shop / Motel office | quincaillerie / prêteur sur gages / accueil du motel |
+| Alleyway / Wharf / Overpass | ruelle / quai / viaduc |
+| X's House / X House | Maison de X / Maison X |
+| Quest objective / quest description | infinitive ("Parler à Stan") / vous-imperative ("Apprenez à gérer...") |
+
+Drug types and property categories (PropertyDatas):
+
+| English | French |
+|---|---|
+| Marijuana / Methamphetamine / Cocaine / Magic Mushroom / Heroin / MDMA | Marijuana / Méthamphétamine / Cocaïne / Champignon magique / Héroïne / MDMA |
+| Meth (Liquid), Baby Blue (Liquid) | Méth (liquide), Baby Blue (liquide) |
+| Shroom / Shrooms / Shroom Spawn | Champi / Champis / Mycélium de champi |
+| Addictive / Highly Addictive | Addictif / Très addictif |
+| Cerebral (category, ≠ Thought-Provoking) | Mental |
+| Dissociative / Hallucinogenic / Psychedelic | Dissociatif / Hallucinogène / Psychédélique |
+| Mild / Potent / Overwhelming | Doux / Puissant / Écrasant |
+| Physical / Stimulating / Uplifting | Physique / Stimulant / Exaltant |
+| Active / Future (contract state) | Actif / À venir |
+
+Items, equipment, clothing:
+
+| English | French |
+|---|---|
+| Plant Trimmers / Electric Plant Trimmers | Sécateur / Sécateur électrique |
+| Watering Can / Spray Bottle | Arrosoir / Pulvérisateur |
+| Pot Sprinkler / Big Sprinkler / Soil Pourer | Arroseur de pot / Grand arroseur / Verseur de terreau |
+| Plastic Pot / Air Pot / Moisture-Preserving Pot | Pot en plastique / Pot aéré / Pot à rétention d'humidité |
+| Halogen / LED / Full Spectrum Grow Light | Lampe de culture halogène / LED / à spectre complet |
+| Suspension Rack | Rail de suspension |
+| Grain Bag / Spore Syringe | Sac de grains / Seringue de spores |
+| Speed Grow (key spelled with a space) | Speed Grow |
+| Small / Medium / Large Storage Rack | Petite étagère de rangement / Étagère de rangement moyenne / Grande étagère de rangement |
+| Small / Medium / Large / Huge Storage Closet | Petit / moyen / Grand / Immense placard de rangement |
+| Wall-Mounted Shelf | Étagère murale |
+| Briefcase / Safe / Dumpster | Mallette / Coffre-fort / Benne à ordures |
+| Trash Grabber / Trash Can / Small Trash Can | Pince à déchets / Poubelle / Petite poubelle |
+| Laundering Station | Station de blanchiment |
+| Artwork (X) | Tableau (X): Beach Day → Journée à la plage, Lines → Lignes, Offer → Offre, Rapscallion → Chenapan; Menace, Millie unchanged |
+| Metal / Wooden Sign | Panneau en métal / en bois |
+| Gold Bar | Lingot d'or |
+| Revolver / Revolver Cylinder / M1911 Magazine / Golden M1911 | Revolver / Barillet de revolver / Chargeur de M1911 / M1911 doré |
+| Pump Shotgun / Shotgun Shell | Fusil à pompe / Cartouche de fusil |
+| Baseball Bat / Frying Pan / Machete / Bomb | Batte de baseball / Poêle / Machette / Bombe |
+| Skateboard: Cheap / Lightweight / Offroad / Golden / Cruiser | Skateboard pas cher / léger / tout-terrain / doré / Cruiser |
+| Clothing slots Head / Eyes / Neck / Top / Outerwear / Hands / Wrist / Waist / Bottom / Feet | Tête / Yeux / Cou / Haut / Vestes / Mains / Poignet / Taille / Bas / Pieds |
+| Cap / Flat Cap / Beanie / Bucket Hat / Cowboy Hat / Porkpie Hat / Chef Hat | Casquette / Casquette plate / Bonnet / Bob / Chapeau de cowboy / Chapeau porkpie / Toque de chef |
+| Button-Up Shirt / T-Shirt / V-Neck Shirt / Flannel Shirt / Vest / Tactical Vest | Chemise / T-shirt / Haut col en V / Chemise en flanelle / Gilet / Gilet tactique |
+| Jeans / Jorts / Cargo Pants / Overalls / Skirt / Long Skirt | Jean / Short en jean / Pantalon cargo / Salopette / Jupe / Jupe longue |
+| Sneakers / Dress Shoes / Combat Boots / Flats / Sandals | Baskets / Chaussures de ville / Rangers / Ballerines / Sandales |
+| Gold / Silver Chain, Gold / Silver Watch | Chaîne en or / en argent, Montre en or / en argent |

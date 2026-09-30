@@ -1,0 +1,200 @@
+{"id": 600, "t": "Nie wybrano przepisu"}
+{"id": 601, "t": "Brak"}
+{"id": 602, "t": "Noodle"}
+{"id": 603, "t": "Nie wystawiono na sprzedaż"}
+{"id": 604, "t": "Niezalecane dla nowych graczy"}
+{"id": 605, "t": "Uwaga"}
+{"id": 606, "t": "Na razie nic do zrobienia..."}
+{"id": 607, "t": "JUŻ DOSTĘPNE"}
+{"id": 608, "t": "Imię NPC"}
+{"id": 609, "t": "Wył."}
+{"id": 610, "t": "Oferta"}
+{"id": 611, "t": "Deskorolka terenowa\n${0}"}
+{"id": 612, "t": "Wł."}
+{"id": 613, "t": "Saldo online"}
+{"id": 614, "t": "Tylko saldo online"}
+{"id": 615, "t": "Otwórz klapę"}
+{"id": 616, "t": "Otwórz telefon"}
+{"id": 617, "t": "Opcja A"}
+{"id": 618, "t": "Opis opcji.  Opis opcji.  Opis opcji.  Opis opcji.  Opis opcji."}
+{"id": 619, "t": "Tytuł opcji"}
+{"id": 620, "t": "LUB"}
+{"id": 621, "t": "Limit zamówienia"}
+{"id": 622, "t": "Zamówienie złożone"}
+{"id": 623, "t": "Suma zamówienia"}
+{"id": 624, "t": "Organizacja"}
+{"id": 625, "t": "Nazwa organizacji"}
+{"id": 626, "t": "Tworzenie organizacji"}
+{"id": 627, "t": "Inne"}
+{"id": 628, "t": "Wynik"}
+{"id": 629, "t": "Tekst zastępczy"}
+{"id": 630, "t": "POSIADANE"}
+{"id": 631, "t": "Posiadane"}
+{"id": 632, "t": "Twój pojazd\n(Dinkler - matowa czerwień)"}
+{"id": 633, "t": "ZAPAKUJ"}
+{"id": 634, "t": "Opakowania"}
+{"id": 635, "t": "Tytuł panelu"}
+{"id": 636, "t": "Parking wielopoziomowy"}
+{"id": 637, "t": "Poprzednie zamówienia"}
+{"id": 638, "t": "Wklej filtr"}
+{"id": 639, "t": "Pauza po utracie aktywności okna"}
+{"id": 640, "t": "PAUZA"}
+{"id": 641, "t": "Szpic"}
+{"id": 642, "t": "Handlarz"}
+{"id": 643, "t": "Handlarz I"}
+{"id": 644, "t": "Handlarz II"}
+{"id": 645, "t": "Handlarz III"}
+{"id": 646, "t": "Handlarz IV"}
+{"id": 647, "t": "Handlarz V"}
+{"id": 648, "t": "Apteka"}
+{"id": 649, "t": "APTEKA"}
+{"id": 650, "t": "Telefon"}
+{"id": 651, "t": "Podnieś"}
+{"id": 652, "t": "Podnieś"}
+{"id": 653, "t": "Podnieś kij bejsbolowy"}
+{"id": 654, "t": "Odbierz telefon"}
+{"id": 655, "t": "Podnieś klucz do kanałów"}
+{"id": 656, "t": "Podnieś grzybka"}
+{"id": 657, "t": "Podnoszenie przedmiotów"}
+{"id": 658, "t": "Okradnij"}
+{"id": 659, "t": "Połóż przedmiot"}
+{"id": 660, "t": "Złóż zamówienie"}
+{"id": 661, "t": "Umieść tutaj oczekiwany towar."}
+{"id": 662, "t": "Zarobki gracza"}
+{"id": 663, "t": "Nazwa gracza"}
+{"id": 664, "t": "PlayerName0233"}
+{"id": 665, "t": "Gracze ({0}/{1})"}
+{"id": 666, "t": "Proszę czekać, trwa przetwarzanie transakcji"}
+{"id": 667, "t": "PoI"}
+{"id": 668, "t": "Czułość kursora"}
+{"id": 669, "t": "Godzina policyjna obowiązuje do {0}AM"}
+{"id": 670, "t": "Ulepszenia policji"}
+{"id": 671, "t": "Urząd \npocztowy"}
+{"id": 672, "t": "Poczta"}
+{"id": 673, "t": "Doniczka"}
+{"id": 674, "t": "Potato Run"}
+{"id": 675, "t": "Potencjalny klient\nChelsey"}
+{"id": 676, "t": "Potencjalny klient\nChloe Bowers"}
+{"id": 677, "t": "Potencjalny klient\nDonna Martin"}
+{"id": 678, "t": "Potencjalny klient\nGeraldine Poon"}
+{"id": 679, "t": "Potencjalny klient\nPeter File"}
+{"id": 680, "t": "Wsyp ziemię"}
+{"id": 681, "t": "Wsyp podłoże"}
+{"id": 682, "t": "Wlej wodę"}
+{"id": 683, "t": "Nadąsany"}
+{"id": 684, "t": "Plan przed premierą"}
+{"id": 685, "t": "Odgadnij następną kartę, aby pomnożyć wygraną!"}
+{"id": 686, "t": "Naciśnij klawisz..."}
+{"id": 687, "t": "Naciśnij, aby uruchomić"}
+{"id": 688, "t": "PODGLĄD"}
+{"id": 689, "t": "Wstecz"}
+{"id": 690, "t": "Cena"}
+{"id": 691, "t": "Cena..."}
+{"id": 692, "t": "Problem"}
+{"id": 693, "t": "Przetwarzanie..."}
+{"id": 694, "t": "Towar"}
+{"id": 695, "t": "Menedżer towaru"}
+{"id": 696, "t": "Nazwa towaru"}
+{"id": 697, "t": "Nazwa towaru​"}
+{"id": 698, "t": "Towar"}
+{"id": 699, "t": "Sprzedany towar"}
+{"id": 700, "t": "Postęp zapisuje się tylko podczas snu"}
+{"id": 701, "t": "Prolog"}
+{"id": 702, "t": "Nieruchomości na sprzedaż"}
+{"id": 703, "t": "Efekt"}
+{"id": 704, "t": "Rozszerzenie źrenic"}
+{"id": 705, "t": "Kup"}
+{"id": 706, "t": "REMIS"}
+{"id": 707, "t": "Jakość"}
+{"id": 708, "t": "Tytuł zadania"}
+{"id": 709, "t": "Tytuł zadania"}
+{"id": 710, "t": "Szybko przenieś"}
+{"id": 711, "t": "Szybko przenieś"}
+{"id": 712, "t": "Wyjdź"}
+{"id": 713, "t": "Randy's\nBait & Tackle"}
+{"id": 714, "t": "Łobuziak"}
+{"id": 715, "t": "Rays Realty"}
+{"id": 716, "t": "Re"}
+{"id": 717, "t": "Osiągnij rangę    \n\n\naby odblokować tę dzielnicę"}
+{"id": 718, "t": "GOTOWE"}
+{"id": 719, "t": "Przepis"}
+{"id": 720, "t": "Nazwa przepisu"}
+{"id": 721, "t": "Przepisy"}
+{"id": 722, "t": "Zmniejszaj wpływy kartelu, odblokowując klientów, pokonując zasadzki, przerywając transakcje kartelu i malując graffiti w tej dzielnicy."}
+{"id": 723, "t": "Zmniejsz wpływy kartelu w Downtown do \n\n\naby odblokować tę dzielnicę"}
+{"id": 724, "t": "Dzielnica niedostępna"}
+{"id": 725, "t": "Regular Gas"}
+{"id": 726, "t": "Relacje"}
+{"id": 727, "t": "Dostępne sterowanie jest wyświetlane w lewym dolnym rogu."}
+{"id": 728, "t": "Przeładuj"}
+{"id": 729, "t": "Usuń"}
+{"id": 730, "t": "Usuń wiadomość"}
+{"id": 731, "t": "Zmień nazwę"}
+{"id": 732, "t": "Zamów ponownie"}
+{"id": 733, "t": "Przemaluj pojazd"}
+{"id": 734, "t": "Przemaluj pojazd"}
+{"id": 735, "t": "Typ zgłoszenia"}
+{"id": 736, "t": "Zamów do skrytki"}
+{"id": 737, "t": "Wymagane"}
+{"id": 738, "t": "Brak wymaganego pliku 'Game.json'. Nie można wczytać zapisu."}
+{"id": 739, "t": "Resetuj"}
+{"id": 740, "t": "Rozdzielczość"}
+{"id": 741, "t": "Odrodź się"}
+{"id": 742, "t": "ZACZNIJ OD NOWA"}
+{"id": 743, "t": "Przywróć domyślne"}
+{"id": 744, "t": "Wznów"}
+{"id": 745, "t": "Wyjmij klucz"}
+{"id": 746, "t": "Wróć do menu"}
+{"id": 747, "t": "WRÓĆ DO MENU"}
+{"id": 748, "t": "Przywróć"}
+{"id": 749, "t": "Przywracanie za {0} s"}
+{"id": 750, "t": "Ride the Bus"}
+{"id": 751, "t": "W prawo"}
+{"id": 752, "t": "Prawe ramię"}
+{"id": 753, "t": "Wciśnięcie prawej gałki"}
+{"id": 754, "t": "Obróć"}
+{"id": 755, "t": "Obróć przenośnik"}
+{"id": 756, "t": "Obróć trzymany przedmiot"}
+{"id": 757, "t": "Obróć doniczkę"}
+{"id": 758, "t": "Kamper"}
+{"id": 759, "t": "Kamper (własność)"}
+{"id": 760, "t": "S.M"}
+{"id": 761, "t": "S.W"}
+{"id": 762, "t": "Sam Thompson<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 763, "t": "Zadowolenie"}
+{"id": 764, "t": "Nasycenie"}
+{"id": 765, "t": "Sobota"}
+{"id": 766, "t": "Sauerkraut\nSupreme"}
+{"id": 767, "t": "Zapisane zamówienia"}
+{"id": 768, "t": "Schedule I nie może zweryfikować prawa zapisu plików; może to powodować błędy podczas zapisywania. Zwykle wynika to z blokowania uprawnień zapisu przez system Windows.\n\nJeśli zapisywanie nadal działa poprawnie, możesz to zignorować."}
+{"id": 769, "t": "WYNIK"}
+{"id": 770, "t": "Szukaj przedmiotów..."}
+{"id": 771, "t": "Szukaj towaru..."}
+{"id": 772, "t": "Nasiona"}
+{"id": 773, "t": "Mieszanie wg ziarna"}
+{"id": 774, "t": "Wybierz"}
+{"id": 775, "t": "Wybierz (nie można zmienić)"}
+{"id": 776, "t": "Wybierz towar, aby zobaczyć szczegóły"}
+{"id": 777, "t": "Wybierz pojedynczy obiekt, aby tego użyć"}
+{"id": 778, "t": "Wybierz stawkę, a potem naciśnij 'gotowe'"}
+{"id": 779, "t": "Wybierz kwotę do wpłaty/wypłaty"}
+{"id": 780, "t": "Wybierz obiekt lub pracownika, aby nim zarządzać"}
+{"id": 781, "t": "Wybierz porę transakcji"}
+{"id": 782, "t": "Wybierz slot zapisu"}
+{"id": 783, "t": "Wybierz nasiona"}
+{"id": 784, "t": "Zaznacz/Odznacz"}
+{"id": 785, "t": "Wyślij"}
+{"id": 786, "t": "Wyślij wiadomość"}
+{"id": 787, "t": "Ustawienia"}
+{"id": 788, "t": "Biuro w kanałach"}
+{"id": 789, "t": "Biuro w kanałach (własność)"}
+{"id": 790, "t": "Sexy Gas"}
+{"id": 791, "t": "Efekty dźwiękowe"}
+{"id": 792, "t": "Shift"}
+{"id": 793, "t": "Buty"}
+{"id": 794, "t": "Sklepy"}
+{"id": 795, "t": "Szycha"}
+{"id": 796, "t": "Szycha I"}
+{"id": 797, "t": "Szycha II"}
+{"id": 798, "t": "Szycha III"}
+{"id": 799, "t": "Szycha IV"}

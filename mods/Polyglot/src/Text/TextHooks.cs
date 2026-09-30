@@ -86,6 +86,7 @@ internal static class TextHooks
         if (text == null || text.textPreprocessor != null || Excluded.Contains(text.GetInstanceID()) || IsInputText(text))
             return;
         text.textPreprocessor = _preprocessor;
+        TextFitter.Track(text);
     }
 
     /// <summary>Keeps a text out of automatic translation (the mod sets it itself).</summary>
@@ -184,6 +185,14 @@ internal static class TextHooks
                 return;
             __state = original;
             LegacyText.Set(__instance, translated);
+            // Best fit only shrinks when the text doesn't fit, never below 60% of the designed size.
+            if (!__instance.resizeTextForBestFit)
+            {
+                var size = __instance.fontSize;
+                __instance.resizeTextMaxSize = size;
+                __instance.resizeTextMinSize = Math.Max(6, (int)(size * 0.6f));
+                __instance.resizeTextForBestFit = true;
+            }
         }
 
         private static void Postfix(UnityEngine.UI.Text __instance, string? __state)
@@ -193,9 +202,46 @@ internal static class TextHooks
         }
     }
 
+    /// <summary>Layout (ContentSizeFitter etc.) must measure the translated text, not the English one.</summary>
+    [HarmonyPatch(typeof(UnityEngine.UI.Text), nameof(UnityEngine.UI.Text.preferredWidth), MethodType.Getter)]
+    private static class LegacyPreferredWidthPatch
+    {
+        private static void Prefix(UnityEngine.UI.Text __instance, out string? __state) => __state = LegacyText.SwapIn(__instance);
+        private static void Postfix(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
+    }
+
+    [HarmonyPatch(typeof(UnityEngine.UI.Text), nameof(UnityEngine.UI.Text.preferredHeight), MethodType.Getter)]
+    private static class LegacyPreferredHeightPatch
+    {
+        private static void Prefix(UnityEngine.UI.Text __instance, out string? __state) => __state = LegacyText.SwapIn(__instance);
+        private static void Postfix(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
+    }
+
     private static class LegacyText
     {
         private static readonly Dictionary<int, bool> InputCache = new();
+
+        /// <summary>Puts the translation into m_Text; returns the original to restore, or null.</summary>
+        public static string? SwapIn(UnityEngine.UI.Text text)
+        {
+            if (!Translator.Active)
+                return null;
+            var original = Get(text);
+            if (string.IsNullOrEmpty(original) || IsInputText(text))
+                return null;
+            var translated = Translator.Translate(original);
+            if (translated == original)
+                return null;
+            Set(text, translated);
+            return original;
+        }
+
+        public static void SwapOut(UnityEngine.UI.Text text, string? original)
+        {
+            if (original != null)
+                Set(text, original);
+        }
+
 #if !IL2CPP
         private static readonly AccessTools.FieldRef<UnityEngine.UI.Text, string> Field =
             AccessTools.FieldRefAccess<UnityEngine.UI.Text, string>("m_Text");

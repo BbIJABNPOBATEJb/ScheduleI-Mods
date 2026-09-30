@@ -336,3 +336,21 @@ Note: actual corpus keys for three effects differ from the table above: "Anti-gr
 | Body shop | 정비소 |
 | Storage rack / AC unit / Journal / Warehouse | 보관 선반 / 에어컨 / 일지 / 창고 |
 | Drop (supplier dead drop) | 드롭 |
+
+## More conventions from chunks 01–10
+
+| English | Korean |
+|---|---|
+| Product quality tiers: Trash / Poor / Standard / Premium / Heavenly | 쓰레기 / 저급 / 보통 / 프리미엄 / 천상급 |
+| Storage Closet (Small/Medium/Large/Huge) | 수납장 (소형/중형/대형/초대형) |
+| Pseudo: Low-Quality / High-Quality | 저품질 슈도 / 고품질 슈도 |
+| Grow lights: Halogen / LED / Full Spectrum | 할로겐 재배등 / LED 재배등 / 풀 스펙트럼 재배등 |
+| Delivery Bay / Loading Dock | 배송 구역 / 하역장 |
+| "Access X" / "View X" (storage interactions) | "X 열기" / "X 보기" |
+| "<Surname> House" (NPC buildings) | "<Surname> 가의 집"; "Carl's House" → "Carl의 집" |
+| Quest titles | short noun phrases ("Gearing Up" → 장비 갖추기, "Clean Cash" → 깨끗한 현금) |
+| Quest objectives / descriptions | 하세요체 ("모텔 객실을 둘러보세요"); "Earn ${0} (...)" → "${0} 벌기 (...)" |
+| Loading-screen tips | 합니다체 / 하세요체 |
+| `formal_address` (runtime token in Herbert's lines) | keep unchanged |
+| Player reply "Deal" / "Deal (<SIGNING_FEE>)" | 콜 / 콜 (<SIGNING_FEE>) |
+| Blackjack/AC shared key "Cool" | 쿨 (also AC mode); "Heat" → 난방 |

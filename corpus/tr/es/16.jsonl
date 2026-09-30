@@ -190,7 +190,7 @@
 {"id": 3389, "t": "Esta entrega está esperando a que se vacíe el muelle de carga <LOADING_DOCK_INDEX>."}
 {"id": 3390, "t": "Esto es lo que se llevaron:\n<N>"}
 {"id": 3391, "t": "Este tipo de empaquetado requiere <color=#FFC73D><QUANTITY>x</color> producto"}
-{"id": 3392, "t": "Los limpiadores no pueden usar este contenedor de basura."}
+{"id": 3392, "t": "Los limpiadores no pueden usar esta papelera."}
 {"id": 3393, "t": "Tile <X>, <Y>"}
 {"id": 3394, "t": "Time"}
 {"id": 3395, "t": "Hoy"}

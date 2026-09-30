@@ -1,0 +1,46 @@
+{"id": 3979, "t": "Tassi del mondo"}
+{"id": 3980, "t": "Esperienza"}
+{"id": 3981, "t": "Entrate"}
+{"id": 3982, "t": "Preset"}
+{"id": 3983, "t": "I tassi del mondo sono impostati dall'host"}
+{"id": 3984, "t": "I preset rapidi impostano tutti i tassi di esperienza ed entrate (tassi per fonte riportati a ×{0})."}
+{"id": 3985, "t": "Standard ×{0}"}
+{"id": 3986, "t": "Tutti i tassi ×{0}"}
+{"id": 3987, "t": "I tassi vengono salvati per mondo e si applicano subito."}
+{"id": 3988, "t": "Usa questi tassi per i nuovi mondi"}
+{"id": 3989, "t": "Salvati come predefiniti per i nuovi mondi"}
+{"id": 3990, "t": "Esperienza globale"}
+{"id": 3991, "t": "Moltiplica ogni guadagno di XP (oltre ai tassi per fonte)."}
+{"id": 3992, "t": "I tuoi affari"}
+{"id": 3993, "t": "Concludere un affare di persona ({0} XP)."}
+{"id": 3994, "t": "Affari degli spacciatori"}
+{"id": 3995, "t": "Uno spacciatore assunto conclude un affare ({0} XP)."}
+{"id": 3996, "t": "Campioni gratuiti"}
+{"id": 3997, "t": "Un cliente apprezza il tuo campione gratuito ({0} XP)."}
+{"id": 3998, "t": "Controfferte"}
+{"id": 3999, "t": "Un cliente accetta la tua controfferta ({0} XP)."}
+{"id": 4000, "t": "Raccolto"}
+{"id": 4001, "t": "Raccogliere completamente una pianta ({0} XP)."}
+{"id": 4002, "t": "Nuovi mix"}
+{"id": 4003, "t": "Scoprire e dare un nome a un nuovo mix ({0} XP)."}
+{"id": 4004, "t": "Completare una missione."}
+{"id": 4005, "t": "Fuga dalla polizia"}
+{"id": 4006, "t": "Seminare la polizia ({0}-{1} XP)."}
+{"id": 4007, "t": "Fare o pulire graffiti ({0}-{1} XP)."}
+{"id": 4008, "t": "Borseggio"}
+{"id": 4009, "t": "Borseggio riuscito ({0} XP)."}
+{"id": 4010, "t": "Qualsiasi altra fonte di XP."}
+{"id": 4011, "t": "Entrate globali"}
+{"id": 4012, "t": "Moltiplica tutte le entrate qui sotto (oltre al loro tasso)."}
+{"id": 4013, "t": "Contanti che un cliente ti paga di persona, bonus inclusi."}
+{"id": 4014, "t": "Vendite degli spacciatori"}
+{"id": 4015, "t": "Contanti che i tuoi spacciatori incassano dai clienti."}
+{"id": 4016, "t": "Riciclaggio"}
+{"id": 4017, "t": "Denaro restituito dal riciclaggio tramite le attività."}
+{"id": 4018, "t": "Vendere oggetti al banco dei pegni."}
+{"id": 4019, "t": "Riciclo rifiuti"}
+{"id": 4020, "t": "Contanti dalla macchina del riciclo."}
+{"id": 4021, "t": "Depositi piazzati"}
+{"id": 4022, "t": "Scaffali, mensole, casseforti e altri depositi piazzabili. Max {0} slot."}
+{"id": 4023, "t": "Bagagliai"}
+{"id": 4024, "t": "Capienza del bagagliaio dei veicoli. Max {0} slot."}

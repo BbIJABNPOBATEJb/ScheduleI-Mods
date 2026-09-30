@@ -38,10 +38,7 @@ internal static class LanguageSettingsRow
     {
         var units = UnityQuery.GetComponentsInChildren<S1.UI.Settings.UnitsModeDropdown>(screen, includeInactive: true).FirstOrDefault();
         if (units == null)
-        {
-            MelonLogger.Warning("Settings: Units row not found, language picker not added");
-            return;
-        }
+            return; // not the game's settings screen (e.g. another mod's clone of it)
         var template = units.transform.parent;
         if (template.parent.Find(RowName) != null)
             return;

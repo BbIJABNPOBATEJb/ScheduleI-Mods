@@ -349,3 +349,99 @@ existing entries: other chunks already use them.
 | Messages / Contacts / Map | メッセージ / 連絡先 / マップ |
 | Quest / Objective | クエスト / 目標 |
 | Day names | 月曜日, 火曜日… (short form: 月, 火…) |
+
+## Added from chunks 11–19
+
+| English | Japanese |
+|---|---|
+| Pseudo / pseudoephedrine | プソイド / プソイドエフェドリン |
+| Product Manager (app) | 商品管理 ("product manager app" → 商品管理アプリ) |
+| Deliveries app | 配達アプリ |
+| Suspension rack | 吊り下げラック |
+| Sewer key / sewer | 下水道の鍵 / 下水道 |
+| Stash box (supplier's) | 隠し場所 |
+| Checkpoint (police) | 検問所 |
+| Tab (credit, "put it on my tab") | ツケ |
+| Pawn / pawn shop | 質入れ / 質屋 |
+| Motel | モーテル |
+| RDX | RDX |
+| Speech tics: bro customers | ブロ / 兄弟 / マイメン ("mulatto"); unhinged customers ？？ and ！！ kept |
+| RV | キャンピングカー (as in chunk 00/01) |
+| Barn / Bungalow / Car Wash (properties) | 納屋 / バンガロー / 洗車場 ("The Barn (<PRICE>)" → "納屋（<PRICE>）"); vehicle names stay Latin, drop "The": "Bruiser (<PRICE>)" |
+| Location descriptions (fill <LOCATION>: "behind the bank", "at the skate park") | noun phrase, NO trailing particle: "銀行の裏", "スケートパーク"; sentences add it: "<LOCATION>で会おう", "<LOCATION>にいる" |
+| Grain bag / Spore syringe / Mushroom substrate | 穀物袋 / 胞子シリンジ / キノコ培地 (substrate → 培地) |
+| Spray bottle / AC unit / Locker | 霧吹き / エアコン / ロッカー |
+| Graffiti / spray graffiti | グラフィティ / グラフィティをスプレーする |
+| Ambush (cartel) | 待ち伏せ |
+| Signing fee | 契約金 |
+| formal_address (runtime token) | keep unchanged |
+| Fixer (NPC who hires out employees) | フィクサー |
+| Management clipboard | 管理用クリップボード |
+| Hardware store / Body shop | ホームセンター / 修理工場 |
+| Storage unit (property) | トランクルーム ("Storage Unit #2" → "トランクルーム #2") |
+| Docks Warehouse / Warehouse (dark market) | Docks倉庫 / 倉庫 |
+| Journal | ジャーナル |
+| Drop (supplier's dead drop, "your drop is ready") | デッドドロップ |
+| Debug-only code strings (", forceDir:", "' for variable", "<ACTION_NAME> (No building set)") | copy unchanged |
+
+## Added from chunks 01–10
+
+Note: the real corpus keys for two effects are lowercase: "Anti-gravity" (反重力) and "Long faced" (面長).
+
+### Style by text type
+- **Item descriptions** (cat item): plain form, no です/ます: "植物の品質を高める完全天然の肥料。", "〜に設置する必要がある。".
+- **Quest objectives**: dictionary form, no 。: "ホームセンターに行く", "栽培師にロッカーを割り当てる". **Quest descriptions**: plain form with 。.
+- **Loading-screen tips**: です/ます: "〜すると、Benziesの影響力を減らせます。".
+- **Deal windows in dialogue**: "<WINDOW_START>から<WINDOW_END>の間に<LOCATION>で会おう".
+- **Dialogue choices in brackets**: keep ASCII brackets: "[取引を完了する]", "[RDXを渡す]".
+- **Quantity labels** "{0}x Item" → "アイテム ×{0}"; in sentences use a counter: "小袋を{0}個買う".
+- **Times**: "{0} AM" → "午前{0}時", "{0}AM-{1}PM" → "午前{0}時-午後{1}時".
+- `<Employee>` (matches the tag pattern) stays verbatim.
+- **Speakers**: Bro customers 兄弟 / 相棒 / 〜ぜ; Kind customers friendly 〜よ / 〜ね; Aloof customers curt ("まあ、いいけど"); Unhinged customers rough and jittery ("早くしろ！！"). Thomas Benzies: 私 / 君 / 〜たまえ. Uncle Nelson: 俺 / お前. Dealers call the player ボス.
+
+### Terms
+| English | Japanese |
+|---|---|
+| Cook (drugs) / Cooking in progress... | 調理 / 調理中... ("COOK" → "調理", "We Need To Cook" → "調理の時間だ") |
+| Liquid Meth / X (Liquid) | 液体覚醒剤 / X（液体） |
+| Methamphetamine / Magic Mushroom / Heroin | メタンフェタミン / マジックマッシュルーム / ヘロイン |
+| Cocaine Base | コカインベース |
+| High-Quality / Low-Quality Pseudo | 高品質プソイド / 低品質プソイド |
+| Clean Cash | クリーンな現金 |
+| Debt | 借金 |
+| Fair price / Suggested | 適正価格 / 推奨 |
+| Standards (customer) | 要求水準 |
+| Favourite / Favourite Drug / Effects / Product | お気に入り / 好きなドラッグ / 好きな効果 / 好きな商品 |
+| Potential customer | 見込み顧客 |
+| Region (map area) | エリア ("NEW REGION UNLOCKED!" → "新エリア解放！") |
+| Owned | 所持済み (items, clothes) / （所有） (property labels: "キャンピングカー（所有）") |
+| Deal (player accepts an offer) | 乗った |
+| Long-Life Soil / Extra Long-Life Soil | 長持ちの土 / 超長持ちの土 |
+| Pour soil / Pour substrate / Pour water | 土を入れる / 培地を入れる / 水をやる |
+| Shroom spawn / inoculate | 種菌 / 接種 |
+| Halogen / LED / Full Spectrum Grow Light | ハロゲン栽培ライト / LED栽培ライト / フルスペクトル栽培ライト |
+| Storage Rack (Small / Medium / Large) | 小型 / 中型 / 大型収納ラック |
+| Storage Closet (Small / Medium / Large / Huge) | 小型 / 中型 / 大型 / 特大収納クローゼット |
+| Plant Trimmers / Electric Plant Trimmers | 剪定ばさみ / 電動剪定ばさみ |
+| Spray Paint | スプレー塗料 |
+| Speed Grow (with a space) | Speed Grow (keep in Latin, like SpeedGrow) |
+| Laundering Station | 資金洗浄ステーション |
+| Source / From (route) · To | 搬出元 · 搬送先 |
+| Loading Dock / Delivery Bay | 搬入口 / 荷受け場 |
+| Access X / View X (storage) | Xを開く / Xを見る |
+| Barbershop / Dealership | 理髪店 / カーディーラー |
+| Real estate agent / Mechanic / Merchant | 不動産業者 / 整備士 / 商人 |
+| Payphone | 公衆電話 |
+| Laundromat / Sweatshop | コインランドリー / 搾取工場 |
+| Town hall / Supermarket / Arcade | 市庁舎 / スーパー / ゲームセンター |
+| X House (family name) | X家 ("Holt House" → "Holt家") |
+| Regular / Mega / Sexy / Garbage Gas (fuel signs) | レギュラーガス / メガガス / セクシーガス / ゴミガス |
+| Property types: Addictive / Highly Addictive | 依存性 / 強い依存性 |
+| Cerebral / Dissociative / Hallucinogenic / Psychedelic | 精神作用 / 解離作用 / 幻覚作用 / サイケデリック |
+| Mild / Potent / Overwhelming / Physical / Stimulating / Uplifting | 穏やか / 強力 / 圧倒的 / 身体作用 / 刺激性 / 高揚 |
+| Interact | インタラクト |
+| Sprint / Crouch | ダッシュ / しゃがむ |
+| D-Pad Up / Left Stick Press | 十字キー上 / 左スティック押し込み |
+| Control (key) | Ctrl |
+| Feds / federal agents | 連邦捜査官 |
+| Uncle (common noun in dialogue) | 叔父さん |

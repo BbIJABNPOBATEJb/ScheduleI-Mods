@@ -168,7 +168,7 @@ Consult this before translating a chunk and follow it strictly; add new recurrin
 
 | English | German |
 |---|---|
-| Anti-Gravity | Anti-Schwerkraft |
+| Anti-Gravity (corpus key: "Anti-gravity") | Anti-Schwerkraft |
 | Athletic | Athletisch |
 | Balding | Haarausfall |
 | Bright-Eyed | Hellwach |
@@ -186,7 +186,8 @@ Consult this before translating a chunk and follow it strictly; add new recurrin
 | Glowing | Leuchtend |
 | Jennerising | Jennerising |
 | Laxative | Abführend |
-| Long Faced | Langgesicht |
+| Lethal | Tödlich |
+| Long Faced (corpus key: "Long faced") | Langgesicht |
 | Munchies | Fressflash |
 | Paranoia | Paranoia |
 | Refreshing | Erfrischend |
@@ -202,6 +203,12 @@ Consult this before translating a chunk and follow it strictly; add new recurrin
 | Toxic | Giftig |
 | Tropic Thunder | Tropic Thunder |
 | Zombifying | Zombifizierend |
+
+Drug-type "strength/character" properties (PropertyUtility, also capitalized adjectives):
+Addictive → Suchterzeugend, Highly Addictive → Stark suchterzeugend, Cerebral → Zerebral,
+Dissociative → Dissoziativ, Hallucinogenic → Halluzinogen, Mild → Mild, Overwhelming → Überwältigend,
+Physical → Körperlich, Potent → Stark, Psychedelic → Psychedelisch, Stimulating → Stimulierend,
+Uplifting → Anregend. Magic Mushroom → Zauberpilz; Shroom (item) → Pilz.
 
 ## Mixer ingredients (brand names stay)
 
@@ -326,3 +333,96 @@ Consult this before translating a chunk and follow it strictly; add new recurrin
 | Dark market / Warehouse | Schwarzmarkt / Lagerhaus |
 | Customer "Bro" address terms | Bro, Digga, Alter, Homie, Brudi, Kollege |
 | Cops (slang) | Bullen |
+| Fixer (Manny) | Vermittler |
+| Grain bag | Getreidebeutel |
+| Spore syringe / Mushroom substrate | Sporenspritze / Pilzsubstrat |
+| Grow tent | Growzelt |
+| Plant trimmers / Electric plant trimmers | Pflanzenschere / Elektrische Pflanzenschere |
+| Watering can | Gießkanne |
+| Management clipboard | Verwaltungs-Klemmbrett (short: Klemmbrett) |
+| Storage rack / closet (small/medium/large/huge) | Lagerregal / Lagerschrank (Kleines/Mittleres/Großes/Riesiger ...) |
+| "{0}-tier" (shelf/rack) | "mit {0} Ebenen" |
+| Slot (storage) | Slot (pl. Slots) |
+| Laundering station | Geldwäschestation |
+| Lab oven / "drying oven" | Laborofen / Trockenofen (descriptions only) |
+| Trash bag / trash can / dumpster / trash grabber | Müllsack / Mülleimer / Müllcontainer / Müllgreifer |
+| Delivery bay (shop pallet stand) | Lieferzone |
+| Loading dock | Laderampe |
+| Payphone | Münztelefon |
+| Hardware store | Baumarkt |
+| Gas station | Tankstelle |
+| Liquid meth / "X (Liquid)" | Flüssiges Meth / "X (flüssig)" |
+| Speed Grow (item name as spelled in key) | Speed Grow / SpeedGrow (keep key spelling) |
+| Uncle Nelson | Uncle Nelson (name kept; generic "your uncle" → "dein Onkel") |
+| Distributor (dealer offer) | Verteiler |
+
+## Quest titles (chunks 07–08)
+
+| English | German |
+|---|---|
+| Another Day in Paradise | Ein weiterer Tag im Paradies |
+| Welcome to Hyland Point | Willkommen in Hyland Point |
+| Getting Started | Erste Schritte |
+| Gearing Up | Aufrüsten |
+| Packin' | Eintüten |
+| On the Grind | Am Ackern |
+| Moving Up | Es geht aufwärts |
+| Keeping it Fresh | Alles schön sauber |
+| Mixing Mania | Mischwahn |
+| Dodgy Dealing | Krumme Deals |
+| Money Management | Geldverwaltung |
+| Making the Rounds | Die Runde machen |
+| Needin' the Green | Kohle muss her |
+| Clean Cash | Sauberes Geld |
+| We Need To Cook | Wir müssen kochen |
+| Vibin' on the 'Cybin | Psilo-Vibes |
+| Wretched Hive of Scum and Villainy | Abschaum und Verkommenheit |
+| Unfavourable Agreements | Ungünstige Abmachungen |
+| Deal for the Benzies Family | Deals für die Benzies-Familie |
+| Finishing the Job | Die Sache zu Ende bringen |
+| Wrapping Up | Zum Abschluss |
+| Botanists / Chemists / Cleaners / Handlers (quests) | Botaniker / Chemiker / Putzkräfte / Verpacker |
+| Collect Dead Drop | Toten Briefkasten leeren |
+
+Quest objectives use the du-imperative ("Kaufe {0}x Erde im Baumarkt", "Sprich mit dem Mechaniker",
+"Weise dem Botaniker einen Spind zu").
+
+## Locations (deal / dead-drop places)
+
+- `LocationName` (capitalized, standalone label) → capitalized German: "Behind the casino" → "Hinter dem Casino".
+- `LocationDescription` / `DeadDropDescription` (lowercase) are inserted mid-sentence via `<LOCATION>`
+  ("I'll meet you <LOCATION> between ...") → lowercase German prepositional phrase that fits after a verb:
+  "behind the bank" → "hinter der Bank", "at the skate park" → "am Skatepark", "in the graveyard" → "auf dem Friedhof".
+  Build dialogue around it: "Wir treffen uns <LOCATION> zwischen <WINDOW_START> und <WINDOW_END>.",
+  "Ich bin die nächsten 6 Stunden <LOCATION>.", "Hey, die Lieferung liegt <LOCATION> bereit".
+- Docks → "an den Docks"; suburbs (generic) → "Vorstadt"; wharf → "Kai"; overpass → "Überführung";
+  alleyway → "Gasse"; auto shop → "Autowerkstatt"; dealership → "Autohaus"; medical practice → "Arztpraxis".
+- Houses named after families: "Kennedy House" → "Kennedy-Haus"; "Carl's House" → "Carls Haus".
+- Internal identifiers (e.g. "CentralCanalDropItemCount", "ExpiringSoon", "FadedText", "Selected",
+  "Deselected", "Future", "FF7A7A") and runtime tokens ("formal_address", "<Employee>") are copied unchanged.
+
+## Dialogue, code and data strings (chunks 11–19)
+
+| English | German |
+|---|---|
+| Supplies source / supplies stash (employee config) | Vorratsquelle ("Vorratsquelle wählen") |
+| Loan sharks | Kredithaie |
+| Body shop (Marco) | Werkstatt |
+| Police station | Polizeiwache |
+| Sink or Swim (quest) | Friss oder stirb |
+| Barn / Storage unit (property) | Scheune / Lagerraum ("Die Scheune (<PRICE>)") |
+| Vehicle models in dealership choices | name only, no article: "Shitbox (<PRICE>)", "das Modell <VEHICLE>" |
+| Sir / Ma'am (formal_address values) | mein Herr / meine Dame |
+| Officer <LAST_NAME> | Officer <LAST_NAME> |
+| "the user" in effect descriptions | der Konsument ("Lässt den Konsumenten schrumpfen.") |
+| Blackjack dealer ("Dealer's turn") | die Bank ("Die Bank ist dran...") |
+| Card suits: Hearts / Diamonds / Clubs / Spades | Herz / Karo / Kreuz / Pik |
+| RTB: Higher / Lower / Inside / Outside | Höher / Tiefer / Innerhalb / Außerhalb |
+| Crimes: Assault / Theft / Vandalism / Drug trafficking | Körperverletzung / Diebstahl / Vandalismus / Drogenhandel |
+| Possession of low/moderate/high-severity drug | Besitz leichter / mittelschwerer / schwerer Drogen |
+| Vehicle colors | Schwarz, Weiß, Rot, Mattrot, Gelb, Orange, Pink, Lila, Cyan, Marineblau, Dunkel-/Hellblau, Dunkel-/Hellgrün, Dunkel-/Hellgrau |
+| Hair: Mohawk / Bun / Buzz cut / Receding / Monk | Irokese / Dutt / Stoppelschnitt / Geheimratsecken / Tonsur |
+| Task-word placeholder `<INPUT_WORD>` ("Click"/"Press") | "Klicke" / "Drücke"; build the sentence after it ("<INPUT_WORD> auf die Kappe, um sie abzunehmen") |
+| Time ranges in compact labels | keep AM/PM ("{0}PM - {1}AM"); in sentences "{0} Uhr abends" / "{0} Uhr morgens" |
+| Customer "they" ("go talk to <NAME> - they'll like it") | avoid gendered pronouns: "Sprich mal mit <NAME> - dein Zeug kommt da gut an" |
+| Split sign / list fragments (runtime) | mirror the line split of the full translated label ("Town"/"Hall" → "Rat-"/"haus") |

@@ -1,0 +1,46 @@
+{"id": 3979, "t": "Tasas del mundo"}
+{"id": 3980, "t": "Experiencia"}
+{"id": 3981, "t": "Ingresos"}
+{"id": 3982, "t": "Preajustes"}
+{"id": 3983, "t": "El anfitrión define las tasas del mundo"}
+{"id": 3984, "t": "Los preajustes rápidos fijan todas las tasas de experiencia e ingresos (las tasas por fuente vuelven a ×{0})."}
+{"id": 3985, "t": "Estándar ×{0}"}
+{"id": 3986, "t": "Todas las tasas ×{0}"}
+{"id": 3987, "t": "Las tasas se guardan por mundo y se aplican al instante."}
+{"id": 3988, "t": "Usar estas tasas en mundos nuevos"}
+{"id": 3989, "t": "Guardado como predeterminado para mundos nuevos"}
+{"id": 3990, "t": "Experiencia global"}
+{"id": 3991, "t": "Multiplica toda la XP obtenida (además de las tasas por fuente)."}
+{"id": 3992, "t": "Tus tratos"}
+{"id": 3993, "t": "Cerrar un trato en persona ({0} XP)."}
+{"id": 3994, "t": "Tratos de dealers"}
+{"id": 3995, "t": "Un dealer contratado cierra un trato ({0} XP)."}
+{"id": 3996, "t": "Muestras gratis"}
+{"id": 3997, "t": "A un cliente le gusta tu muestra gratis ({0} XP)."}
+{"id": 3998, "t": "Contraofertas"}
+{"id": 3999, "t": "Un cliente acepta tu contraoferta ({0} XP)."}
+{"id": 4000, "t": "Cosecha"}
+{"id": 4001, "t": "Cosechar una planta por completo ({0} XP)."}
+{"id": 4002, "t": "Nuevas mezclas"}
+{"id": 4003, "t": "Descubrir y nombrar una nueva mezcla ({0} XP)."}
+{"id": 4004, "t": "Completar una misión."}
+{"id": 4005, "t": "Huir de la policía"}
+{"id": 4006, "t": "Perder a la policía ({0}-{1} XP)."}
+{"id": 4007, "t": "Pintar o limpiar grafitis ({0}-{1} XP)."}
+{"id": 4008, "t": "Carterismo"}
+{"id": 4009, "t": "Robo de cartera exitoso ({0} XP)."}
+{"id": 4010, "t": "Cualquier otra fuente de XP."}
+{"id": 4011, "t": "Ingresos globales"}
+{"id": 4012, "t": "Multiplica todos los ingresos de abajo (además de su propia tasa)."}
+{"id": 4013, "t": "Efectivo que un cliente te paga en persona, bonificaciones incluidas."}
+{"id": 4014, "t": "Ventas de dealers"}
+{"id": 4015, "t": "Efectivo que tus dealers cobran a los clientes."}
+{"id": 4016, "t": "Blanqueo"}
+{"id": 4017, "t": "Dinero devuelto por el blanqueo en tus negocios."}
+{"id": 4018, "t": "Vender objetos en la casa de empeño."}
+{"id": 4019, "t": "Reciclaje"}
+{"id": 4020, "t": "Efectivo de la máquina de reciclaje."}
+{"id": 4021, "t": "Almacenamiento colocado"}
+{"id": 4022, "t": "Estanterías, repisas, cajas fuertes y otro almacenamiento colocable. Máx. {0} espacios."}
+{"id": 4023, "t": "Maleteros de vehículos"}
+{"id": 4024, "t": "Capacidad del maletero de los vehículos. Máx. {0} espacios."}

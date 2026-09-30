@@ -353,6 +353,18 @@ and keep using it.
 | Supplies stash (employee) | estoque de suprimentos |
 | Fair price | Preço justo |
 | Internal identifiers in code strings (AvatarLookController.*, "Data", "Cutscene", paths, debug logs) | copy unchanged |
+| Supplier's stash ("<NAME>'s Stash", "View X's stash") | caixa secreta ("Caixa secreta de X") |
+| Quest "Sink or Swim" | Vai ou racha |
+| Supplier Meeting | Encontro com fornecedor |
+| Casino "forfeit and cash out" | desistir e levar o prêmio |
+| Vehicle colors Black/White/Red/Orange/Yellow/Pink/Purple/Navy/Cyan | Preto/Branco/Vermelho/Laranja/Amarelo/Rosa/Roxo/Azul-marinho/Ciano |
+| Dark/Light Blue/Green/Grey; Dull Red | Azul/Verde/Cinza-escuro, Azul/Verde/Cinza-claro; Vermelho fosco |
+| Standards Very Low / Very High / Moderate | Muito baixo / Muito alto / Moderado |
+| Liquid recipes "Liquid Baby Blue" | "Baby Blue (líquida)" |
+| Effect descriptions | "o usuário" ("Encolhe o usuário.") |
+| Crimes: Assault / Deadly assault / Vehicular assault / Theft / Vandalism / Evading arrest / Failure to comply | Agressão / Agressão com arma letal / Agressão com veículo / Furto / Vandalismo / Fuga da polícia / Desobediência a ordem policial |
+| Possession of controlled substances / Drug trafficking / Brandishing a weapon / Violating curfew | Posse de substâncias controladas / Tráfico de drogas / Porte ostensivo de arma / Violação do toque de recolher |
+| Split sign words in world (Bar, Hall, Liquor, Ticklers, Tower…) | keep unchanged (brands/sign fragments) |
 
 ## Added while translating chunks 01–10 (UI, items, places)
 
@@ -437,3 +449,20 @@ and keep using it.
 | Town Hall / Police Station / Fire Station / Post Office | Paço Municipal / Delegacia / Corpo de Bombeiros / Correios |
 | Sweatshop (property) | Fábrica clandestina |
 | Sewer Office | Escritório do esgoto |
+| Supplier stash ("Albert Hoover's Stash") | Caixa secreta do Albert Hoover |
+| Location descriptions inserted as <LOCATION> ("behind the casino", "in the alleyway...") | lowercase prepositional phrase: "atrás do cassino", "no beco atrás do mercado" |
+| Docks (region) in phrases | "nas Docks", "das Docks" |
+| Uncle Nelson | name kept: "o Uncle Nelson"; "your Uncle" → "seu tio" |
+| AC mode Cool | Resfriar |
+
+### Quest titles
+
+| English | pt-BR |
+|---|---|
+| Welcome to Hyland Point / Getting Started / Another Day in Paradise | Bem-vindo a Hyland Point / Primeiros passos / Mais um dia no paraíso |
+| Gearing Up / Packin' / On the Grind / Moving Up / Keeping it Fresh | Se equipando / Embalando / Na correria / Subindo na vida / Mantendo tudo limpo |
+| Mixing Mania / Money Management / Dodgy Dealing / Making the Rounds | Mania de mistura / Gestão financeira / Negócios suspeitos / Fazendo a ronda |
+| We Need To Cook / Clean Cash / Needin' the Green / Vibin' on the 'Cybin | Temos que cozinhar / Dinheiro limpo / Precisando de grana / Viajando na 'Cibina |
+| Wretched Hive of Scum and Villainy / Unfavourable Agreements | Antro miserável de escória e vilania / Acordos desfavoráveis |
+| Deal for the Benzies Family / Finishing the Job / Wrapping Up | Negócios para a família Benzies / Terminando o serviço / Finalizando |
+| Botanists / Chemists / Cleaners / Handlers (quests) | Botânicos / Químicos / Faxineiros / Embaladores |

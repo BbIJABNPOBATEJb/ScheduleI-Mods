@@ -1,0 +1,200 @@
+{"id": 3400, "t": "Transporte de itens ilícitos"}
+{"id": 3401, "t": "Trigger"}
+{"id": 3402, "t": "Trimmer"}
+{"id": 3403, "t": "Tutorial"}
+{"id": 3404, "t": "Itens não permitidos"}
+{"id": 3405, "t": "Desconhecido"}
+{"id": 3406, "t": "Etapa desconhecida"}
+{"id": 3407, "t": "Desbloqueie 10 clientes (<COUNT>/10)"}
+{"id": 3408, "t": "Desbloqueie um dos contatos de <FIRST_NAME>"}
+{"id": 3409, "t": "Desbloqueie primeiro um dos contatos de <FIRST_NAME>"}
+{"id": 3410, "t": "Desbloqueie este traficante chegando a 'Amigável' com um dos contatos dele."}
+{"id": 3411, "t": "Desbloqueie este fornecedor chegando a 'Amigável' com um dos contatos dele."}
+{"id": 3412, "t": "Desbloqueia em <color=#2DB92D><REQUIRED_RANK></color>"}
+{"id": 3413, "t": "Os itens desembalados não vão caber!"}
+{"id": 3414, "t": "Cima"}
+{"id": 3415, "t": "Use <Input_SecondaryClick> para alternar entre <h2>aquecimento</h> e <h1>resfriamento</h> ao posicionar um ar-condicionado."}
+{"id": 3416, "t": "Usar <NAME>"}
+{"id": 3417, "t": "Usar caixa eletrônico"}
+{"id": 3418, "t": "Usar prensa de tijolos"}
+{"id": 3419, "t": "Use o martelo para quebrar o produto"}
+{"id": 3420, "t": "Usar jukebox"}
+{"id": 3421, "t": "Use o borrifador no canteiro de cogumelos"}
+{"id": 3422, "t": "Usar lata de spray"}
+{"id": 3423, "t": "Usar torneira"}
+{"id": 3424, "t": "Usar TV"}
+{"id": 3425, "t": "Use Vending Machine"}
+{"id": 3426, "t": "Use a sua prancheta de gestão pra definir um destino pra cada um dos meus canteiros de cogumelos, e garanta que o destino não esteja cheio."}
+{"id": 3427, "t": "Use a sua prancheta de gestão pra definir um destino pra cada um dos meus vasos, e garanta que o destino não esteja cheio."}
+{"id": 3428, "t": "Use a sua prancheta de gestão pra me designar um estoque de suprimentos, e depois garanta que tenha terra nele."}
+{"id": 3429, "t": "Use as suas pranchetas de gestão pra me designar um estoque de suprimentos, e garanta que tenha micélio nele."}
+{"id": 3430, "t": "Use as suas pranchetas de gestão pra me designar um estoque de suprimentos, e garanta que tenha as sementes certas nele."}
+{"id": 3431, "t": "Vandalismo"}
+{"id": 3432, "t": "Variable Name"}
+{"id": 3433, "t": "Variables"}
+{"id": 3434, "t": "Veículo cheio"}
+{"id": 3435, "t": "O veículo precisa estar estacionado dentro da oficina"}
+{"id": 3436, "t": "Vehicle patrol route"}
+{"id": 3437, "t": "Repintura de veículo"}
+{"id": 3438, "t": "Não cabe tudo no veículo. Alguns itens serão colocados nos paletes."}
+{"id": 3439, "t": "Agressão com veículo"}
+{"id": 3440, "t": "Muito alto"}
+{"id": 3441, "t": "Muito baixo"}
+{"id": 3442, "t": "Ver caixa secreta de <FULL_NAME>"}
+{"id": 3443, "t": "Ver avatar"}
+{"id": 3444, "t": "Ver inventário"}
+{"id": 3445, "t": "Violação do toque de recolher"}
+{"id": 3446, "t": "Visible"}
+{"id": 3447, "t": "Aguarde <SECONDS_SINCE_LAST_SAVE>s"}
+{"id": 3448, "t": "Aguarde a entrega no esconderijo (<NUM> min)"}
+{"id": 3449, "t": "Aguarde a mistura terminar de cozinhar"}
+{"id": 3450, "t": "Aguardando"}
+{"id": 3451, "t": "Aguardando <FULL_NAME>"}
+{"id": 3452, "t": "Aguardando <PLAYER_NAME>..."}
+{"id": 3453, "t": "Aguardando um traficante rival."}
+{"id": 3454, "t": "Aguardando o anfitrião terminar de carregar..."}
+{"id": 3455, "t": "Aguardando outros jogadores..."}
+{"id": 3456, "t": "Aguardando os outros..."}
+{"id": 3457, "t": "Aguardando jogadores... ("}
+{"id": 3458, "t": "Acordando às <NUM>"}
+{"id": 3459, "t": "Walk to location"}
+{"id": 3460, "t": "Procurado"}
+{"id": 3461, "t": "Aviso: isto vai sobrescrever o jogo salvo atual no espaço <SLOT_TO_OVERWRITE> (<ORGANISATION_NAME>)."}
+{"id": 3462, "t": "Regador vazio"}
+{"id": 3463, "t": "Precisamos nos encontrar"}
+{"id": 3464, "t": "Não trabalhamos mais juntos - o nosso acordo está desfeito."}
+{"id": 3465, "t": "Qual será o naipe da próxima carta?"}
+{"id": 3466, "t": "Ao segurar um item, mova <Input_LeftStickX> para girá-lo."}
+{"id": 3467, "t": "Ao segurar um item, pressione <Input_Left> ou <Input_Right> para girá-lo."}
+{"id": 3468, "t": "Ao realizar tarefas nas estações, clique e arraste os itens para movê-los."}
+{"id": 3469, "t": "Por que você não está trabalhando?"}
+{"id": 3470, "t": "Width"}
+{"id": 3471, "t": "vai retirar"}
+{"id": 3472, "t": "A próxima carta será maior ou menor?"}
+{"id": 3473, "t": "A próxima carta ficará dentro ou fora?"}
+{"id": 3474, "t": "Vitória!"}
+{"id": 3475, "t": "with forcePoint:"}
+{"id": 3476, "t": "SACAR <SELECTED_AMOUNT>"}
+{"id": 3477, "t": "Não cabe no inventário"}
+{"id": 3478, "t": "Imóvel errado"}
+{"id": 3479, "t": "Ontem"}
+{"id": 3480, "t": "Você está entregando mais itens do que o necessário."}
+{"id": 3481, "t": "Você está entregando mais produto do que o necessário."}
+{"id": 3482, "t": "Você pode concluir negócios a qualquer hora dentro do período escolhido. Por enquanto, escolha o período da manhã."}
+{"id": 3483, "t": "Agora você pode contratar <h1><FULL_NAME></h> como traficante."}
+{"id": 3484, "t": "Agora você pode encomendar <PRODUCT> com <NAME>. <PRODUCT> pode ser usado para <PURPOSE>."}
+{"id": 3485, "t": "Você pode quitar a sua dívida colocando dinheiro na minha caixa secreta. Ela fica <LOCATION_DESCRIPTION>."}
+{"id": 3486, "t": "Você pode usar a sua prancheta de gestão pra me designar um armário."}
+{"id": 3487, "t": "Você pode usar as suas pranchetas de gestão pra me designar vasos, prateleiras de cultivo etc."}
+{"id": 3488, "t": "Você pode usar as suas pranchetas de gestão pra me designar estações ou rotas."}
+{"id": 3489, "t": "Você pode usar as suas pranchetas de gestão pra me designar estações."}
+{"id": 3490, "t": "Você pode usar as suas pranchetas de gestão pra me designar lixeiras."}
+{"id": 3491, "t": "Você saiu inteiro? Melhor não falar pelo celular. Procura um orelhão.\n- U.N."}
+{"id": 3492, "t": "Você depositou <AMOUNT>"}
+{"id": 3493, "t": "Você não tem veículo para recuperar"}
+{"id": 3494, "t": "Você sacou <AMOUNT>"}
+{"id": 3495, "t": "Você precisa de pelo menos <F> em dinheiro para lavar."}
+{"id": 3496, "t": "Você deve <color=#54E717><DEBT></color> a <FULL_NAME>. Coloque dinheiro e saia da caixa secreta para quitar a sua dívida"}
+{"id": 3497, "t": "O seu <h1>saldo online</h> aparece no canto superior direito."}
+{"id": 3498, "t": "Seus serviços não são mais necessários."}
+{"id": 3499, "t": "Sua vez!"}
+{"id": 3500, "t": "Seu voto foi registrado.\n Obrigado!"}
+{"id": 3501, "t": "Arquivos Zip"}
+{"id": 3502, "t": "Zumbi"}
+{"id": 3503, "t": "Zumbificado"}
+{"id": 3504, "t": "{0}x MSAA"}
+{"id": 3505, "t": "(Semanal)"}
+{"id": 3506, "t": "+${{0}} de bônus"}
+{"id": 3507, "t": "Clientes designados ({{0}}/{{1}})"}
+{"id": 3508, "t": "Bait & Tackle"}
+{"id": 3509, "t": "BANCO"}
+{"id": 3510, "t": "Bar"}
+{"id": 3511, "t": "Basketball"}
+{"id": 3512, "t": "entre estações,"}
+{"id": 3513, "t": "Bleuball"}
+{"id": 3514, "t": "Block"}
+{"id": 3515, "t": "Boutique"}
+{"id": 3516, "t": "Box"}
+{"id": 3517, "t": "Brown Apartment"}
+{"id": 3518, "t": "Bud's"}
+{"id": 3519, "t": "Canary"}
+{"id": 3520, "t": "Center"}
+{"id": 3521, "t": "Skate barato\n${{0}}"}
+{"id": 3522, "t": "Chinese"}
+{"id": 3523, "t": "Community"}
+{"id": 3524, "t": "Company"}
+{"id": 3525, "t": "Confirmar (${{0}})"}
+{"id": 3526, "t": "Construction & Demo"}
+{"id": 3527, "t": "Court"}
+{"id": 3528, "t": "Cruiser\n${{0}}"}
+{"id": 3529, "t": "TOQUE DE RECOLHER HOJE"}
+{"id": 3530, "t": "TOQUE DE RECOLHER HOJE\n{{0}}PM - {{1}}AM"}
+{"id": 3531, "t": "Dan's"}
+{"id": 3532, "t": "Funcionário do"}
+{"id": 3533, "t": "EST.  {{0}}"}
+{"id": 3534, "t": "Vaso sofisticado de tecido trançado à mão que mantém as raízes ventiladas. Aumenta a velocidade de crescimento das plantas em {{0}}%, mas também aumenta a perda de umidade em {{1}}%"}
+{"id": 3535, "t": "Skate dourado\n${{0}}"}
+{"id": 3536, "t": "Hall"}
+{"id": 3537, "t": "HAM"}
+{"id": 3538, "t": "Handy Hank's"}
+{"id": 3539, "t": "Hardware"}
+{"id": 3540, "t": "HYLAND"}
+{"id": 3541, "t": "Hyland"}
+{"id": 3542, "t": "Hyland \nTower {{0}}"}
+{"id": 3543, "t": "Koyama Chemical"}
+{"id": 3544, "t": "Legal"}
+{"id": 3545, "t": "Les Ordures"}
+{"id": 3546, "t": "Skate leve"}
+{"id": 3547, "t": "Skate leve\n${{0}}"}
+{"id": 3548, "t": "Liquor"}
+{"id": 3549, "t": "docas de carga etc."}
+{"id": 3550, "t": "Lobby ({{0}}/{{1}})"}
+{"id": 3551, "t": "Medical"}
+{"id": 3552, "t": "Produto mais comprado"}
+{"id": 3553, "t": "Office"}
+{"id": 3554, "t": "Skate off-road\n${{0}}"}
+{"id": 3555, "t": "Post"}
+{"id": 3556, "t": "Puantes"}
+{"id": 3557, "t": "Comprar (${{0}})"}
+{"id": 3558, "t": "Randy's"}
+{"id": 3559, "t": "Range"}
+{"id": 3560, "t": "Reduza a influência do cartel em Downtown até"}
+{"id": 3561, "t": "Restaurant"}
+{"id": 3562, "t": "Sauerkraut"}
+{"id": 3563, "t": "Shred"}
+{"id": 3564, "t": "Skate\n${{0}}"}
+{"id": 3565, "t": "prateleiras,"}
+{"id": 3566, "t": "Store"}
+{"id": 3567, "t": "Supreme"}
+{"id": 3568, "t": "Taco"}
+{"id": 3569, "t": "Tattoo"}
+{"id": 3570, "t": "The Butter"}
+{"id": 3571, "t": "The Crimson"}
+{"id": 3572, "t": "mês"}
+{"id": 3573, "t": "Thompson"}
+{"id": 3574, "t": "Threads"}
+{"id": 3575, "t": "Thrifty"}
+{"id": 3576, "t": "Ticklers"}
+{"id": 3577, "t": "para desbloquear esta região"}
+{"id": 3578, "t": "Total gasto"}
+{"id": 3579, "t": "Tower {{0}}"}
+{"id": 3580, "t": "Town"}
+{"id": 3581, "t": "de lixo cheios"}
+{"id": 3582, "t": "v0.{{0}}f13"}
+{"id": 3583, "t": "{{0}} AM"}
+{"id": 3584, "t": "Segunda-feira, {{0}} AM"}
+{"id": 3585, "t": "{{0}} PM"}
+{"id": 3586, "t": "{{0}}AM-{{1}}PM"}
+{"id": 3587, "t": "{{0}}h {{1}}m"}
+{"id": 3588, "t": "{{0}}PM - {{1}}AM"}
+{"id": 3589, "t": "{{0}}PM-{{1}}AM"}
+{"id": 3590, "t": "{{0}}x Item Name for the"}
+{"id": 3591, "t": "{{0}}x Item Name for the porud"}
+{"id": 3592, "t": "{{0}}x Item Name for the porudtc that is"}
+{"id": 3593, "t": "{{0}}x OG Kush"}
+{"id": 3594, "t": "{{0}}x OG Kush \n{{1}}x Sour Diesel"}
+{"id": 3595, "t": "{{0}}x Sour Diesel"}
+{"id": 3596, "t": "• Aplicar aditivos"}
+{"id": 3597, "t": "• Ensacar o lixo"}
+{"id": 3598, "t": "• Descartar os sacos"}
+{"id": 3599, "t": "• Colher plantas"}

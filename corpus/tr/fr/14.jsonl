@@ -7,9 +7,9 @@
 {"id": 2806, "t": "<CURRENT_DAY>, jour <ELAPSED_DAYS>"}
 {"id": 2807, "t": "<CURRENT_MIX_TIME> min restantes"}
 {"id": 2808, "t": "<DAYS> jours, <HOURS> heures, <MINUTES> minutes"}
-{"id": 2809, "t": "<F>% de chances que le client accepte"}
-{"id": 2810, "t": "<F>% de chances de réussite"}
-{"id": 2811, "t": "<F>% de croissance"}
+{"id": 2809, "t": "<F> % de chances que le client accepte"}
+{"id": 2810, "t": "<F> % de chances de réussite"}
+{"id": 2811, "t": "<F> % de croissance"}
 {"id": 2812, "t": "<FIRST_NAME> est en tournée de deals"}
 {"id": 2813, "t": "<FIRST_NAME> paie <color=#50E65A><PAYMENT></color> pour :"}
 {"id": 2814, "t": "Mallette de <FIRST_NAME>"}
@@ -27,13 +27,13 @@
 {"id": 2826, "t": "<INPUT_WORD> sur les mottes de terre pour enterrer la graine (<NUM>/<LENGTH>)"}
 {"id": 2827, "t": "<NAME> supporte un autre objet"}
 {"id": 2828, "t": "<NAME_ADDRESS> a demandé une livraison de <COMMA_SEPERATED_STRING> <DESCRIPTION> pour <PAYMENT>."}
-{"id": 2829, "t": "<NUM2>h <NUM3>m avant le palier suivant"}
+{"id": 2829, "t": "<NUM2> h <NUM3> min avant le palier suivant"}
 {"id": 2830, "t": "<NUM> jour avant l'arrivée des usuriers"}
 {"id": 2831, "t": "Il y a <NUM> jours"}
 {"id": 2832, "t": "<NUM> jours avant l'arrivée des usuriers"}
 {"id": 2833, "t": "<ORGANISATION_NAME> (<SAVE_VERSION>, emplacement de sauvegarde <SAVE_SLOT_NUMBER>)"}
-{"id": 2834, "t": "<PROPERTY_NAME> (à vous)"}
-{"id": 2835, "t": "<PROPERTY_NAME> (à vendre)"}
+{"id": 2834, "t": "<PROPERTY_NAME> (acquis)"}
+{"id": 2835, "t": "<PROPERTY_NAME> (non acquis)"}
 {"id": 2836, "t": "<PROPERTY_NAME> Contents Container"}
 {"id": 2837, "t": "<PROPERTY_NAME> Worldspace UI Container"}
 {"id": 2838, "t": "<TEXT2> [Rang <REQUIRED_RANK>]"}
@@ -67,7 +67,7 @@
 {"id": 2866, "t": "Agacé"}
 {"id": 2867, "t": "Répondre au téléphone"}
 {"id": 2868, "t": "Tous"}
-{"id": 2869, "t": "Appearance"}
+{"id": 2869, "t": "Apparence"}
 {"id": 2870, "t": "Appliquer <NAME>"}
 {"id": 2871, "t": "Arrêté"}
 {"id": 2872, "t": "Agression"}
@@ -84,7 +84,7 @@
 {"id": 2883, "t": "AvatarLookController.Eyes.LookAt"}
 {"id": 2884, "t": "AvatarLookController.LerpTargetTransform"}
 {"id": 2885, "t": "AvatarLookController.UpdateLook"}
-{"id": 2886, "t": "Behaviour"}
+{"id": 2886, "t": "Comportement"}
 {"id": 2887, "t": "derrière le X"}
 {"id": 2888, "t": "Fouille en cours..."}
 {"id": 2889, "t": "Influence des Benzies à <REGION>"}
@@ -97,7 +97,7 @@
 {"id": 2896, "t": "Blackout"}
 {"id": 2897, "t": "Exhibition d'une arme"}
 {"id": 2898, "t": "Émietter le mycélium en petits morceaux"}
-{"id": 2899, "t": "Businesses"}
+{"id": 2899, "t": "Commerces"}
 {"id": 2900, "t": "Occupé"}
 {"id": 2901, "t": "Rompre l'accord avec les Benzies est irréversible.\n\nIls deviendront immédiatement hostiles."}
 {"id": 2902, "t": "hypercalorique"}
@@ -114,7 +114,7 @@
 {"id": 2913, "t": "Retrait de liquide"}
 {"id": 2914, "t": "Character creator fade in"}
 {"id": 2915, "t": "Personnalisation du personnage"}
-{"id": 2916, "t": "Check"}
+{"id": 2916, "t": "Vérifier"}
 {"id": 2917, "t": "Joyeux"}
 {"id": 2918, "t": "Chimiste"}
 {"id": 2919, "t": "Nettoyer le graffiti"}
@@ -124,7 +124,7 @@
 {"id": 2923, "t": "Cliquez sur un élément pour le définir comme destination de l'itinéraire"}
 {"id": 2924, "t": "Cliquez sur un élément pour le définir comme source de l'itinéraire"}
 {"id": 2925, "t": "Maintenez le clic sur <HARVEST_TARGET> pour récolter (<HARVEST_COUNT>/<HARVEST_TOTAL>)"}
-{"id": 2926, "t": "Maintenez le clic sur le robinet pour remplir (<F>%)"}
+{"id": 2926, "t": "Maintenez le clic sur le robinet pour remplir (<F> %)"}
 {"id": 2927, "t": "Escalade"}
 {"id": 2928, "t": "Porte-bloc"}
 {"id": 2929, "t": "Fermer la porte du four"}
@@ -147,12 +147,12 @@
 {"id": 2946, "t": "ConversationEntry_<CONTACT_NAME>"}
 {"id": 2947, "t": "Cuisson en cours..."}
 {"id": 2948, "t": "Coût : $<PRICE>"}
-{"id": 2949, "t": "Recouvrir le terreau de <NAME> (0%)"}
-{"id": 2950, "t": "Recouvrir le terreau de <NAME> (<NUM>%)"}
+{"id": 2949, "t": "Recouvrir le terreau de <NAME> (0 %)"}
+{"id": 2950, "t": "Recouvrir le terreau de <NAME> (<NUM> %)"}
 {"id": 2951, "t": "Crime"}
 {"id": 2952, "t": "Accroupi"}
 {"id": 2953, "t": "Ctrl"}
-{"id": 2954, "t": "COUVRE-FEU EN VIGUEUR\n JUSQU'À {0}H"}
+{"id": 2954, "t": "COUVRE-FEU EN VIGUEUR\n JUSQU'À {0}H DU MATIN"}
 {"id": 2955, "t": "Bonus couvre-feu"}
 {"id": 2956, "t": "COUVRE-FEU IMMINENT\n<NUM> MIN"}
 {"id": 2957, "t": "COUVRE-FEU IMMINENT\n{{0}} MIN"}
@@ -163,12 +163,12 @@
 {"id": 2962, "t": "Attentes du client non satisfaites"}
 {"id": 2963, "t": "Le client a récemment conclu un deal"}
 {"id": 2964, "t": "Personnaliser"}
-{"id": 2965, "t": "Cutscene"}
-{"id": 2966, "t": "Cutscene (<NAME>)"}
+{"id": 2965, "t": "Cinématique"}
+{"id": 2966, "t": "Cinématique (<NAME>)"}
 {"id": 2967, "t": "Daily summary close"}
 {"id": 2968, "t": "Daily summary {0}"}
-{"id": 2969, "t": "salaire journalier de"}
-{"id": 2970, "t": "Data"}
+{"id": 2969, "t": "son salaire journalier de"}
+{"id": 2970, "t": "Données"}
 {"id": 2971, "t": "Désactiver"}
 {"id": 2972, "t": "Cache\n(<DEAD_DROP_NAME>)"}
 {"id": 2973, "t": "Deal conclu avec <FULL_NAME>"}

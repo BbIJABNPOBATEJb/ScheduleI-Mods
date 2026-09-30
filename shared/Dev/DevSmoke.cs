@@ -20,6 +20,8 @@ internal static class DevSmoke
     public static bool Active { get; private set; }
     public static string Scenario { get; private set; } = "";
     public static string OutDir { get; private set; } = "";
+    /// <summary>Free-form scenario parameter (--s1dev-arg), e.g. a language code.</summary>
+    public static string Arg { get; private set; } = "";
 
     private static float _deadline;
     private static bool _finished;
@@ -38,6 +40,7 @@ internal static class DevSmoke
                 case "--s1dev-scenario": scenario = args[++i]; break;
                 case "--s1dev-out": outDir = args[++i]; break;
                 case "--s1dev-timeout": timeout = float.Parse(args[++i]); break;
+                case "--s1dev-arg": Arg = args[++i]; break;
             }
         }
         if (!string.Equals(mod, modName, StringComparison.OrdinalIgnoreCase) || scenario == null || outDir == null)

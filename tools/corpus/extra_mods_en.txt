@@ -1,0 +1,54 @@
+// UI strings of our own mods (WorldRates, Polyglot). Keep in sync with RateCatalog / RatesWindow.
+Language
+World Rates
+Experience
+Income
+Storage
+Presets
+World rates are set by the host
+Quick presets set every experience and income rate (per-source rates back to ×1).
+Vanilla ×1
+All rates ×2
+Rates are saved per world and apply instantly.
+Use these rates for new worlds
+Saved as default for new worlds
+Off
+All experience
+Multiplies every XP gain (on top of the per-source rates).
+Your deals
+Completing a deal in person (20 XP).
+Dealer deals
+A hired dealer completes a deal (10 XP).
+Free samples
+A customer likes your free sample (50 XP).
+Counter-offers
+A customer accepts your counter-offer (5 XP).
+Harvesting
+Fully harvesting a plant (5 XP).
+New mixes
+Discovering and naming a new mix (80 XP).
+Quests
+Completing a quest.
+Escaping police
+Losing the police (20-60 XP).
+Graffiti
+Spraying or cleaning graffiti (25-50 XP).
+Pickpocketing
+Successful pickpocket (2 XP).
+Other
+Any other XP source.
+All income
+Multiplies every income below (on top of its own rate).
+Cash a customer pays you in person, bonuses included.
+Dealer sales
+Cash your dealers collect from customers.
+Laundering
+Money returned by business laundering.
+Pawn shop
+Selling items at the pawn shop.
+Recycling
+Cash from the recycler.
+Placed storage
+Racks, shelves, safes and other placeable storage. Max 20 slots.
+Vehicle trunks
+Trunk capacity of vehicles. Max 20 slots.

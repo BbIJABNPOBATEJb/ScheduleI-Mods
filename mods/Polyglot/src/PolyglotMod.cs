@@ -55,6 +55,7 @@ public sealed class PolyglotMod : MelonMod
     public override void OnUpdate()
     {
         _runner.Tick();
+        TextFitter.Tick();
 #if DEV
         DevSmoke.CheckTimeout();
 #endif

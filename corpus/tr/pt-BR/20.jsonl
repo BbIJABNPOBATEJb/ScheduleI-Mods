@@ -1,0 +1,46 @@
+{"id": 3979, "t": "Taxas do mundo"}
+{"id": 3980, "t": "Experiência"}
+{"id": 3981, "t": "Renda"}
+{"id": 3982, "t": "Predefinições"}
+{"id": 3983, "t": "As taxas do mundo são definidas pelo anfitrião"}
+{"id": 3984, "t": "As predefinições rápidas ajustam todas as taxas de experiência e renda (as taxas por fonte voltam a ×{0})."}
+{"id": 3985, "t": "Padrão ×{0}"}
+{"id": 3986, "t": "Todas as taxas ×{0}"}
+{"id": 3987, "t": "As taxas são salvas por mundo e aplicadas na hora."}
+{"id": 3988, "t": "Usar estas taxas em novos mundos"}
+{"id": 3989, "t": "Salvo como padrão para novos mundos"}
+{"id": 3990, "t": "Experiência geral"}
+{"id": 3991, "t": "Multiplica todo ganho de XP (além das taxas por fonte)."}
+{"id": 3992, "t": "Seus negócios"}
+{"id": 3993, "t": "Fechar um negócio pessoalmente ({0} XP)."}
+{"id": 3994, "t": "Negócios de traficantes"}
+{"id": 3995, "t": "Um traficante contratado fecha um negócio ({0} XP)."}
+{"id": 3996, "t": "Amostras grátis"}
+{"id": 3997, "t": "Um cliente gosta da sua amostra grátis ({0} XP)."}
+{"id": 3998, "t": "Contrapropostas"}
+{"id": 3999, "t": "Um cliente aceita sua contraproposta ({0} XP)."}
+{"id": 4000, "t": "Colheita"}
+{"id": 4001, "t": "Colher uma planta por completo ({0} XP)."}
+{"id": 4002, "t": "Novas misturas"}
+{"id": 4003, "t": "Descobrir e nomear uma nova mistura ({0} XP)."}
+{"id": 4004, "t": "Concluir uma missão."}
+{"id": 4005, "t": "Fugir da polícia"}
+{"id": 4006, "t": "Despistar a polícia ({0}-{1} XP)."}
+{"id": 4007, "t": "Grafitar ou limpar grafite ({0}-{1} XP)."}
+{"id": 4008, "t": "Bater carteira"}
+{"id": 4009, "t": "Bater carteira com sucesso ({0} XP)."}
+{"id": 4010, "t": "Qualquer outra fonte de XP."}
+{"id": 4011, "t": "Renda geral"}
+{"id": 4012, "t": "Multiplica toda a renda abaixo (além da própria taxa)."}
+{"id": 4013, "t": "Dinheiro que um cliente paga a você pessoalmente, bônus incluídos."}
+{"id": 4014, "t": "Vendas de traficantes"}
+{"id": 4015, "t": "Dinheiro que seus traficantes coletam dos clientes."}
+{"id": 4016, "t": "Lavagem"}
+{"id": 4017, "t": "Dinheiro retornado pela lavagem nas empresas."}
+{"id": 4018, "t": "Vender itens na loja de penhores."}
+{"id": 4019, "t": "Reciclagem"}
+{"id": 4020, "t": "Dinheiro da máquina de reciclagem."}
+{"id": 4021, "t": "Armazenamento posicionado"}
+{"id": 4022, "t": "Prateleiras, estantes, cofres e outros armazenamentos posicionáveis. Máx. {0} espaços."}
+{"id": 4023, "t": "Porta-malas"}
+{"id": 4024, "t": "Capacidade do porta-malas dos veículos. Máx. {0} espaços."}

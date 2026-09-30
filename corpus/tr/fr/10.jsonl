@@ -1,0 +1,200 @@
+{"id": 2000, "t": "Merci. Mon ami <NAME> pourrait aimer ton matos. Va le voir"}
+{"id": 2001, "t": "Chimiste (station de chimie, four de labo, chaudron, station de mélange)"}
+{"id": 2002, "t": "Nettoyez les graffitis du cartel pour réduire l'influence des Benzies."}
+{"id": 2003, "t": "Nettoyeur (ramassage des déchets, vidage des poubelles)"}
+{"id": 2004, "t": "Reviens quand tu seras sérieux !"}
+{"id": 2005, "t": "Passez à l'agence si vous voulez en discuter."}
+{"id": 2006, "t": "Approchez, vous allez être fouillé"}
+{"id": 2007, "t": "Allez frérot..."}
+{"id": 2008, "t": "Allez allez !"}
+{"id": 2009, "t": "Sérieux mon pote, c'est quoi ce bordel ?"}
+{"id": 2010, "t": "Allez mec !"}
+{"id": 2011, "t": "Allez, on y va"}
+{"id": 2012, "t": "Allez mec !"}
+{"id": 2013, "t": "Allez mec, j'ai vraiment besoin d'un truc"}
+{"id": 2014, "t": "Allez mec..."}
+{"id": 2015, "t": "Allez !!"}
+{"id": 2016, "t": "Allez, il me le faut maintenant !"}
+{"id": 2017, "t": "Allez, j'ai vraiment besoin d'un truc"}
+{"id": 2018, "t": "Allez, on y va"}
+{"id": 2019, "t": "Allez..."}
+{"id": 2020, "t": "Félicitations ! Le commerce est désormais à votre nom."}
+{"id": 2021, "t": "Cool"}
+{"id": 2022, "t": "Reçu. Je t'envoie un message quand c'est prêt, dans environ <TIME>."}
+{"id": 2023, "t": "Merde !"}
+{"id": 2024, "t": "Limpide. Maintenant, dégagez."}
+{"id": 2025, "t": "Merde"}
+{"id": 2026, "t": "Putain frérot"}
+{"id": 2027, "t": "Putain frérot..."}
+{"id": 2028, "t": "Putain mon pote, c'est pas mal du tout, je t'envoie un message"}
+{"id": 2029, "t": "Fait chier frérot"}
+{"id": 2030, "t": "Fait chier, bon. À quelle heure ?"}
+{"id": 2031, "t": "Bon sang !"}
+{"id": 2032, "t": "Saleté de pluie !"}
+{"id": 2033, "t": "Mince !"}
+{"id": 2034, "t": "Wow, c'est plutôt bon. Tu auras bientôt de mes nouvelles"}
+{"id": 2035, "t": "Putain, c'est de la bonne came. Tu auras bientôt de mes nouvelles"}
+{"id": 2036, "t": "Marché conclu"}
+{"id": 2037, "t": "Marché conclu (<SIGNING_FEE>)"}
+{"id": 2038, "t": "Marché conclu <PRICE>"}
+{"id": 2039, "t": "Marché conclu, un plaisir de faire affaire."}
+{"id": 2040, "t": "Marché conclu. À la prochaine, mon pote."}
+{"id": 2041, "t": "Vos dealers se font sans arrêt dépouiller ? Donnez-leur une arme pour se défendre."}
+{"id": 2042, "t": "Les dealers divisent automatiquement les briques/bocaux si nécessaire."}
+{"id": 2043, "t": "Les dealers vendent tout ce qu'il y a dans leur inventaire, que ce soit en vente ou non."}
+{"id": 2044, "t": "Ça dépend du genre de talent qu'il te faut. Les nettoyeurs et les manutentionnaires sont pas chers, les botanistes un peu plus, et les chimistes sont les plus chers."}
+{"id": 2045, "t": "On se connaît ?"}
+{"id": 2046, "t": "T'as une clé des égouts ?"}
+{"id": 2047, "t": "Tu sais où je peux trouver une clé des égouts ?"}
+{"id": 2048, "t": "Tu veux bosser pour moi comme distributeur ?"}
+{"id": 2049, "t": "Ne laissez pas d'objets trop longtemps dans les caches, sinon ils risquent d'être volés..."}
+{"id": 2050, "t": "J'aime pas cette pluie"}
+{"id": 2051, "t": "T'inquiète"}
+{"id": 2052, "t": "Terminé"}
+{"id": 2053, "t": "À déposer à Hyland Manor. Ne soyez pas en retard."}
+{"id": 2054, "t": "Dealer de drogue"}
+{"id": 2055, "t": "Mec !"}
+{"id": 2056, "t": "Mec... c'est pas ce que j'ai demandé"}
+{"id": 2057, "t": "Chaque propriété a un nombre maximal d'employés pouvant y travailler."}
+{"id": 2058, "t": "À chaque promotion, vous pouvez acheter une bombe de peinture supplémentaire dans une station-service."}
+{"id": 2059, "t": "Euh, je crois pas, loco"}
+{"id": 2060, "t": "Euh... c'est pas ce que je cherche"}
+{"id": 2061, "t": "Vos employés se la coulent douce ? Essayez de les frapper !"}
+{"id": 2062, "t": "J'en ai assez de toi !"}
+{"id": 2063, "t": "Assez de pluie !"}
+{"id": 2064, "t": "Ça suffit !"}
+{"id": 2065, "t": "Ça suffit !!"}
+{"id": 2066, "t": "'Soir frérot"}
+{"id": 2067, "t": "'Soir l'ami, qu'est-ce que je peux faire pour toi ?"}
+{"id": 2068, "t": "Bonsoir, qu'est-ce que je peux faire pour toi ?"}
+{"id": 2069, "t": "Bonsoir, comment ça s'est passé en ville ?"}
+{"id": 2070, "t": "Bonsoir"}
+{"id": 2071, "t": "Bonsoir !"}
+{"id": 2072, "t": "Bonsoir. Qu'est-ce qu'il te faut ?"}
+{"id": 2073, "t": "Beurk, non."}
+{"id": 2074, "t": "Beurk. Dégage !"}
+{"id": 2075, "t": "Excellent choix, formal_address"}
+{"id": 2076, "t": "Vous avez un goût exquis, formal_address"}
+{"id": 2077, "t": "Fantastique ! Quel modèle vous intéresse ?"}
+{"id": 2078, "t": "Envie de gratter un peu ? Les clients ne remarquent parfois pas si vous leur donnez un peu moins de produit que demandé."}
+{"id": 2079, "t": "Enfin"}
+{"id": 2080, "t": "Enfin du bon matos ! Va peut-être parler à <NAME>. Je pense que ton produit lui plairait"}
+{"id": 2081, "t": "Enfin..."}
+{"id": 2082, "t": "D'accord, mais tu m'arnaques, là."}
+{"id": 2083, "t": "Très bien, comme vous voudrez. Cette ville appartient aux Benzies, et vous n'y êtes plus le bienvenu."}
+{"id": 2084, "t": "Bon, vous êtes clean. Coup de chance cette fois, j'imagine. Mais je sais que vous et votre oncle mijotez quelque chose dans ce ranch."}
+{"id": 2085, "t": "D'accord, marché conclu."}
+{"id": 2086, "t": "Commençons par le commencement : il va te falloir un commerce. Va jeter un œil chez <h1>Rays Realty</h>. Tu vas sans doute pas racheter le casino de sitôt, mais il devrait y avoir un commerce pas cher à vendre."}
+{"id": 2087, "t": "D'abord, procure-toi un sac de grains et une seringue de spores. Apporte-les à une station de mycélium, où tu pourras injecter la seringue de spores dans le sac de grains. Ça te donnera du mycélium de champi."}
+{"id": 2088, "t": "Suis-moi, il faut d'abord que j'aille le chercher"}
+{"id": 2089, "t": "Pour l'instant, prends juste une <h1>graine d'OG Kush</h>. Va voir le marchand et achète-la."}
+{"id": 2090, "t": "Laisse tomber !"}
+{"id": 2091, "t": "Putain !"}
+{"id": 2092, "t": "Putain..."}
+{"id": 2093, "t": "Dialogue générique"}
+{"id": 2094, "t": "Dégage mec !"}
+{"id": 2095, "t": "Éloigne-toi de moi !"}
+{"id": 2096, "t": "Va-t'en !"}
+{"id": 2097, "t": "Lâche-moi !"}
+{"id": 2098, "t": "Dégage"}
+{"id": 2099, "t": "Dégage."}
+{"id": 2100, "t": "Dégage..."}
+{"id": 2101, "t": "Viens par là, espèce de radin !"}
+{"id": 2102, "t": "Viens par là, petit con"}
+{"id": 2103, "t": "Attends une seconde..."}
+{"id": 2104, "t": "Je vous écoute"}
+{"id": 2105, "t": "Va-t'en"}
+{"id": 2106, "t": "Bordel de merde"}
+{"id": 2107, "t": "Bordel, non. Je vais voir ailleurs"}
+{"id": 2108, "t": "Bordel !!"}
+{"id": 2109, "t": "Nom de Dieu !"}
+{"id": 2110, "t": "Nom d'un chien !"}
+{"id": 2111, "t": "Nom de Dieu, ça fait plaisir d'entendre ta voix, fiston ! On dirait que la chance a fini par tourner - les fédéraux m'ont mis au trou en attendant mon procès. Content d'apprendre que t'as réussi à filer, en tout cas."}
+{"id": 2112, "t": "Nom de Dieu, c'est bon ça !! Je t'envoie un message plus tard"}
+{"id": 2113, "t": "Tu vas me le payer..."}
+{"id": 2114, "t": "Je vais te défoncer..."}
+{"id": 2115, "t": "Bon après-midi"}
+{"id": 2116, "t": "Bon choix. Continuez à nous fournir, restez hors de notre territoire, et on s'entendra très bien. Vous aurez bientôt de nos nouvelles."}
+{"id": 2117, "t": "Bonjour, que puis-je faire pour vous ?"}
+{"id": 2118, "t": "Un plaisir de faire affaire"}
+{"id": 2119, "t": "Un plaisir de faire affaire avec toi"}
+{"id": 2120, "t": "Un plaisir de faire affaire avec vous ! Votre nouvelle caisse vous attend dehors."}
+{"id": 2121, "t": "Un plaisir de faire affaire avec toi, chef."}
+{"id": 2122, "t": "Ça ira, j'imagine. Tu auras de mes nouvelles"}
+{"id": 2123, "t": "Bonsoir"}
+{"id": 2124, "t": "Seigneur !"}
+{"id": 2125, "t": "Bonjour"}
+{"id": 2126, "t": "Parfait !! On se voit <LOCATION> entre <WINDOW_START> et <WINDOW_END>."}
+{"id": 2127, "t": "Bien. Moi c'est Manny. Je suis l'intermédiaire du coin. Si tu cherches à embaucher, c'est à moi que tu parles."}
+{"id": 2128, "t": "Compris. Je serai <LOCATION> pendant les 6 prochaines heures."}
+{"id": 2129, "t": "Compris. Je te préviens quand c'est prêt. Ça devrait prendre environ <TIME>"}
+{"id": 2130, "t": "Compris. Je te l'envoie où ?"}
+{"id": 2131, "t": "Faut que je me mette à l'abri de cette pluie..."}
+{"id": 2132, "t": "Excellent choix !"}
+{"id": 2133, "t": "Excellente idée ! Quel commerce vous intéresse ?"}
+{"id": 2134, "t": "Super, on se retrouve <LOCATION> entre <WINDOW_START> et <WINDOW_END>."}
+{"id": 2135, "t": "Parfait. Ce sera <PRICE> pour la semaine, d'accord ?"}
+{"id": 2136, "t": "Salutations, l'ami, bienvenue chez Hyland Auto. Venez me voir si vous souhaitez acquérir l'une de mes superbes automobiles."}
+{"id": 2137, "t": "Salutations. Tu peux désormais te faire livrer tes fournitures directement dans tes propriétés. Utilise l'appli Livraisons de ton téléphone pour passer commande."}
+{"id": 2138, "t": "Dégueu !"}
+{"id": 2139, "t": "Haha, elle est bonne, l'ami. Tenez, prenez un peu de SpeedGrow, c'est la maison qui offre - vos plants de « marijuana » vont adorer."}
+{"id": 2140, "t": "Haha, très mignon. Moi c'est Manny. Je suis l'intermédiaire du coin. Si tu cherches à embaucher, c'est à moi que tu parles."}
+{"id": 2141, "t": "Manutentionnaire (emballage, déplacement d'objets)"}
+{"id": 2142, "t": "Va à la quincaillerie chercher ces fournitures. Ce serait aussi une bonne idée de prendre du <h1>Speed Grow</h> pendant que t'y es."}
+{"id": 2143, "t": "Rendez-vous chez Ray's Realty pour acheter des propriétés et des commerces."}
+{"id": 2144, "t": "Héhé, rien... c'est juste Oscar qui est amical. Si t'as besoin d'équipement ou de fournitures spéciales, Oscar a ce qu'il te faut."}
+{"id": 2145, "t": "Héhé, Oscar plaisantait. Si t'as besoin d'équipement ou de fournitures spéciales, Oscar a ce qu'il te faut."}
+{"id": 2146, "t": "Carrément, frérot"}
+{"id": 2147, "t": "Carrément, mon ami, on se retrouve <LOCATION> entre <WINDOW_START> et <WINDOW_END>."}
+{"id": 2148, "t": "Salut"}
+{"id": 2149, "t": "Bonjour, chef. Prêt à parcourir les fournitures ?"}
+{"id": 2150, "t": "Bonjour ! Que puis-je faire pour vous ?"}
+{"id": 2151, "t": "Salut toi, tu sens bon..."}
+{"id": 2152, "t": "Bonjour !"}
+{"id": 2153, "t": "Salut, j'ai bien aimé l'échantillon que tu m'as donné. Je peux avoir <PRODUCT> ? Je peux payer <PRICE>"}
+{"id": 2154, "t": "Bonjour, je cherche <PRODUCT>. Je peux payer <PRICE> pour ça."}
+{"id": 2155, "t": "Bonjour, notre ami commun m'a demandé de t'aider à te procurer des graines de marijuana."}
+{"id": 2156, "t": "Allô ?? Laisse tomber alors"}
+{"id": 2157, "t": "Et voilà - elle ouvre toutes les portes d'accès et les bouches d'égout. Amuse-toi bien là-dessous, j'imagine..."}
+{"id": 2158, "t": "Salut"}
+{"id": 2159, "t": "Salut - prêt à jeter un œil ?"}
+{"id": 2160, "t": "Salut - prêt à jeter un œil aux fournitures ?"}
+{"id": 2161, "t": "Hé boss, je suis à court de produit."}
+{"id": 2162, "t": "Hé boss, les Benzies ont essayé de me tomber dessus, mais j'ai fait reculer ces guignols - ils m'ont rien pris."}
+{"id": 2163, "t": "Hé frérot ! J'ai grave besoin de ton matos, là... t'as quelque chose ?"}
+{"id": 2164, "t": "Hé mon pote, il me faut <PRODUCT>. Je paie <PRICE>. Marché conclu ?"}
+{"id": 2165, "t": "Bonjour l'ami, vous êtes nouveau, non ? Ça fait plaisir de voir une nouvelle tête en ville."}
+{"id": 2166, "t": "Hé mec ! Je suis vraiment en manque, là. Dis-moi que t'as quelque chose à me vendre..?"}
+{"id": 2167, "t": "Salut toi"}
+{"id": 2168, "t": "Bonjour - que puis-je faire pour vous ?"}
+{"id": 2169, "t": "Salut fiston, c'est ton oncle taulard préféré ! J'ai demandé à un gars de me faire passer un téléphone planqué dans son cul, comme ça je peux te donner des conseils."}
+{"id": 2170, "t": "Bonjour, je suis Ray - le meilleur agent immobilier de Hyland Point. Venez me voir si vous cherchez à acheter quelque chose."}
+{"id": 2171, "t": "Bonjour, que puis-je faire pour vous ?"}
+{"id": 2172, "t": "Hé, QUOI ?"}
+{"id": 2173, "t": "Hé !"}
+{"id": 2174, "t": "HÉ !"}
+{"id": 2175, "t": "Hé ! J'ai vraiment besoin de ton matos, là... t'as quelque chose ?"}
+{"id": 2176, "t": "HÉ ! J'ai vraiment besoin de ton matos, là... t'as quelque chose ?!"}
+{"id": 2177, "t": "Hé ! Je suis vraiment en manque, là. Dis-moi que t'as quelque chose à me vendre..?"}
+{"id": 2178, "t": "HÉ ! Je suis vraiment en manque, là. Dis-moi que t'as quelque chose à me vendre..?"}
+{"id": 2179, "t": "HÉ !!"}
+{"id": 2180, "t": "Bonjour, l'ami - j'ai une opportunité passionnante pour vous. Le magnifique Hyland Manor est à vendre !"}
+{"id": 2181, "t": "Salut, je peux avoir <PRODUCT> ? Je paie <PRICE>"}
+{"id": 2182, "t": "Salut, t'as <PRODUCT> ? Je te le paie <PRICE>"}
+{"id": 2183, "t": "Hé, je me suis défendu contre des sbires des Benzies. Pas de produit ni de liquide perdu."}
+{"id": 2184, "t": "Salut, il me faut <PRODUCT>. Je paie <PRICE>. Marché conclu ?"}
+{"id": 2185, "t": "Salut, moi c'est Sal. T'as besoin de graines de coca ? C'est à moi que tu parles."}
+{"id": 2186, "t": "Salut, si t'as <PRODUCT>, je te le paie <PRICE>. Marché conclu ?"}
+{"id": 2187, "t": "Salut, c'est un ami qui m'a parlé de toi. Je peux avoir <PRODUCT> ? Je paie <PRICE>."}
+{"id": 2188, "t": "Salut, un ami m'a dit que tu vendais du bon matos. Je pourrais avoir <PRODUCT> ? Je te le paie <PRICE>."}
+{"id": 2189, "t": "Salut, la cache est prête <LOCATION>"}
+{"id": 2190, "t": "Salut, ton échantillon, c'était de la bonne came. Je pourrais avoir <PRODUCT> ? Je te le paie <PRICE>."}
+{"id": 2191, "t": "Hé, les Benzies viennent de me dépouiller - ils sont sortis de nulle part et j'ai pas pu me défendre. Ils ont tout pris, désolé boss..."}
+{"id": 2192, "t": "Salut, tu m'as donné un échantillon tout à l'heure. Vraiment du bon matos. Je peux avoir <PRODUCT> ? Je paie <PRICE>."}
+{"id": 2193, "t": "Salut, c'est top de bosser avec toi, alors je suis prête à te rencontrer en personne. Lors d'un rendez-vous, tu achètes autant de pseudo que tu peux en porter - fini les limites de commande."}
+{"id": 2194, "t": "Yo"}
+{"id": 2195, "t": "Yo - si tu veux te simplifier la vie, je fais maintenant des livraisons. Passe commande avec ton appli Livraisons et je te l'apporte au plus vite."}
+{"id": 2196, "t": "Yo mon pote"}
+{"id": 2197, "t": "Yo, moi c'est Shirley. Je bosse dans l'industrie pharmaceutique, et il paraît que t'as une vilaine toux..."}
+{"id": 2198, "t": "Salut"}
+{"id": 2199, "t": "Salut boss"}

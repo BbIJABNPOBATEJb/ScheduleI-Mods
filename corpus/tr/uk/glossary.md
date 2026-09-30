@@ -269,12 +269,27 @@ Consult this before translating a chunk and follow it strictly. Add new recurrin
 | Apps in dialogue | descriptive: "застосунок доставки", "застосунок контактів", "застосунок керування товарами" |
 | "formal_address" token (Herbert) | keep verbatim: "Дякую, formal_address" |
 | Named properties in choices: The Barn / The Bungalow / The Car Wash | Сарай / Бунгало / Автомийка; vehicles "The Bruiser" → "Bruiser" |
+| Quest "Sink or Swim" | Пан або пропав |
+| Loan sharks | лихварі |
+| Signing fee | плата за підписання контракту |
+| Effect names (m., agree with "ефект") | Anti-gravity → Антигравітаційний, Athletic → Атлетичний, Balding → Облисіння, Bright-Eyed → Ясноокий, Calorie-Dense → Калорійний, Cyclopean → Циклопічний, Disorienting → Дезорієнтувальний, Electrifying → Електризувальний, Energizing → Енергійний, Explosive → Вибуховий, Foggy → Туманний, Gingeritis → Рудит, Glowing → Сяйливий, Jennerising → Дженнеризація, Laxative → Проносний, Lethal → Смертельний, Long faced → Довголиций, Paranoia → Параноя, Schizophrenic → Шизофренічний, Seizure-Inducing → Судомний, Shrinking → Зменшувальний, Slippery → Слизький, Sneaky → Непомітний, Spicy → Гострий, Thought-Provoking → Глибокодумний, Toxic → Токсичний, Zombifying → Зомбувальний; Tropic Thunder kept Latin |
+| Effect descriptions ("the user") | споживач ("Викликає в споживача параною.") |
+| Vehicle colors (m., agree with "колір") | Black → Чорний, White → Білий, Red → Червоний, Cyan → Бірюзовий, Navy → Нейві, Dark Blue / Green / Grey → Темно-синій / -зелений / -сірий, Light Blue → Блакитний, Light Green / Grey → Світло-зелений / -сірий, Dull Red → Тьмяно-червоний, Orange → Помаранчевий, Pink → Рожевий, Purple → Фіолетовий, Yellow → Жовтий |
+| Hairstyles (agree with "волосся", n.) | Messy bob → Скуйовджений боб, Mohawk → Ірокез, Monk → Тонзура, Receding → Залисини, Shoulder length → До плечей, Long slicked → Довге зализане, Close buzz cut → Коротко під машинку, The Franklin / The Tony → Franklin / Tony |
+| Tattoos | Alien → Прибулець, Bird → Птах, Dead face → Мертве обличчя, Egg → Яйце, Forehead cross → Хрест на лобі, Heart → Серце, Peace → Пацифік, Sword → Меч, Teardrop → Сльоза, Tribal → Трайбл, Web → Павутина, Weed → Травка |
+| Sewer-key NPC descriptions (inserted after "є в") | genitive: "того злого чувака з ірокезом", "тієї пані з фіолетовим волоссям" |
+| Crimes (charges) | Possession of … → Зберігання …; high/moderate/low-severity drug → наркотиків високої / середньої / низької небезпеки; Assault → Напад; Theft → Крадіжка; Vandalism → Вандалізм; Evading arrest → Ухилення від арешту; Drug trafficking → Наркоторгівля |
+| Card suits (Ride the Bus) | Hearts / Diamonds / Clubs / Spades → Чирви / Бубни / Трефи / Піки; Higher / Lower → Вище / Нижче; Inside / Outside → Всередині / Зовні |
+| Dev identifiers (CamelCase variables, asset paths, anim triggers, sound/cutscene names) | copied unchanged |
 
 - Dialogue style: NPCs of unknown gender (customers, dealers, employees) — avoid gendered past-tense forms where
   easy ("мені вдалося відбитися", not "я відбився"); same for lines addressed to the player.
 - Dash in sentences: " — " (em dash). Quotes: «...».
 - Customers' `<NAME>` recommendations: "Тобі варто поговорити з <NAME> — думаю, там твій товар оцінять".
-- Time windows: "з <WINDOW_START> до <WINDOW_END>".
+- Time windows: "з <WINDOW_START> до <WINDOW_END>". In full sentences "{0}PM" may become "{0}-ї вечора"; compact HUD
+  strings keep AM/PM ("ДІЄ КОМЕНДАНТСЬКА ГОДИНА\n ДО {0}AM").
+- Thomas Benzies and other formal NPCs (realtor Ray, dealership, Donna, Ming, Dan, Herbert) use "ви"; casual
+  shopkeepers who say "buddy/partner" (Mick, Stan, Marco, Jeff) use "ти".
 
 ## UI, items, effects (added with chunks 01–10)
 
@@ -313,3 +328,46 @@ Consult this before translating a chunk and follow it strictly. Add new recurrin
 | Mixers translated | Banana → Банан, Battery → Батарейка, Chili → Чилі, Donut → Пончик, Energy Drink → Енергетик, Flu Medicine → Ліки від грипу, Gasoline → Бензин, Horse Semen → Кінська сперма, Iodine → Йод, Mega Bean → Мега-біб, Motor Oil → Моторна олива, Mouth Wash → Ополіскувач для рота, Paracetamol → Парацетамол |
 | Effects (m., agree with "ефект") | Addictive → Адиктивний, Cerebral → Церебральний, Dissociative → Дисоціативний, Euphoric → Ейфорійний |
 | Units | keep as in key: "{0}km/h", "{0} FPS", AM/PM; words may be localized: "{0} год.", "{0} хв", "{0} с" |
+| AC modes: Heat / Cool / Off | Обігрів / Охолодження / Вимк. ("Cool" key is shared with a customer line — AC wins) |
+| Coffee Table | Кавовий столик (keeps the "place coffee on it" joke) |
+| Storage Closet (Small/Medium/Large/Huge) | шафа (Мала / Середня / Велика / Величезна шафа); "{0} slots" → "Слотів: {0}." |
+| Trash Can / Trash Bag / Trash Grabber | Смітник / Мішок для сміття / Хапалка для сміття |
+| Spray Bottle / Watering Can / Soil Pourer | Пульверизатор / Лійка / Дозатор ґрунту |
+| Grain Bag / Spore Syringe / Shroom Spawn / Mushroom Substrate | Мішок із зерном / Шприц зі спорами / Грибниця / Грибний субстрат |
+| High-/Low-Quality Pseudo | Високоякісне / Низькоякісне псевдо |
+| Management Clipboard | Планшет керування |
+| Jukebox / Garbage Throne / Trash Crown | Музичний автомат / Сміттєвий трон / Сміттєва корона |
+
+## Quests, places (added with chunks 07–10)
+
+- **Quest objectives** (HUD entries) use the formal imperative: "Купіть…", "Поговоріть з…", "Дочекайтеся…". Counts with
+  "{0}x" go in parentheses after the noun: "Купіть пакетики ({0}x)". Quest descriptions address the player with "ви".
+- **Quest titles** are translated freely: Another Day in Paradise → Ще один день у раю, Getting Started → Перші кроки,
+  Gearing Up → Підготовка, Packin' → Фасуємо, On the Grind → Робота кипить, Moving Up → Піднімаємося вище, Dodgy Dealing →
+  Мутні справи, Mixing Mania → Міксоманія, Keeping it Fresh → Чистота й порядок, Money Management → Керування грошима,
+  Making the Rounds → Обхід району, Clean Cash → Чисті гроші, We Need To Cook → Нам треба варити, Needin' the Green →
+  Треба зелені, Vibin' on the 'Cybin → Псилоцибіновий вайб, Welcome to Hyland Point → Ласкаво просимо в Hyland Point,
+  Wrapping Up → Завершальні штрихи, Wretched Hive of Scum and Villainy → Жалюгідне кубло покидьків і негідників,
+  Unfavourable Agreements → Невигідні домовленості, Deal for the Benzies Family → Угоди для родини Benzies,
+  Finishing the Job → Довести справу до кінця; Botanists / Chemists / Cleaners / Handlers → Ботаніки / Хіміки / Прибиральники / Пакувальники.
+- **Deal/drop locations**: capitalized LocationName = standalone label ("Behind the casino" → "За казино", "Next to X" → "Біля X");
+  lowercase LocationDescription is inserted after "зустрінемося"/"Знайдеш її" and keeps its preposition in lowercase
+  ("behind the casino" → "за казино", "at the skate park" → "у скейт-парку", "under the west bridge" → "під західним мостом").
+- "Docks"/"Suburbia" in location text stay Latin: "у Docks", "у Suburbia".
+
+| English | Ukrainian |
+|---|---|
+| Stash (supplier's pay box) / "View X's stash" | тайник / "Переглянути тайник X" |
+| Stash (hidden goods, quests) | заначка |
+| Access X (storage prompt) | Відкрити X |
+| Delivery Bay | зона доставки |
+| Payphone | таксофон |
+| Fixer (Manny) | рішала |
+| Dealership / dealership manager | автосалон / менеджер автосалону |
+| Real estate agent | рієлтор |
+| Wharf / Waterfront / Overpass | причал / набережна / естакада |
+| Medical practice / Medical center | медпункт / медичний центр |
+| Diner / Grocery store / Supermarket | закусочна / продуктовий магазин / супермаркет |
+| Town hall / Courthouse / Graveyard | міська рада / суд / цвинтар |
+| X's House / X's Room | Будинок X / Кімната X |
+| Brands kept Latin | Slop Shop, Pillville, The Piss Hut, Hyland Bank, Hyland Auto, Hyland Range, HAM Legal, Top Tattoo, Shred Shack |

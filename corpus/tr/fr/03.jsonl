@@ -67,7 +67,7 @@
 {"id": 666, "t": "Veuillez patienter pendant le traitement de la transaction"}
 {"id": 667, "t": "PoI"}
 {"id": 668, "t": "Sensibilité du pointeur"}
-{"id": 669, "t": "Couvre-feu en vigueur jusqu'à {0}AM"}
+{"id": 669, "t": "Couvre-feu en vigueur jusqu'à {0}h du matin"}
 {"id": 670, "t": "Améliorations de la police"}
 {"id": 671, "t": "Bureau \nde poste"}
 {"id": 672, "t": "Bureau de poste"}
@@ -189,7 +189,7 @@
 {"id": 788, "t": "Bureau des égouts"}
 {"id": 789, "t": "Bureau des égouts (acquis)"}
 {"id": 790, "t": "Sexy Gas"}
-{"id": 791, "t": "Effets sonores"}
+{"id": 791, "t": "SFX"}
 {"id": 792, "t": "Maj"}
 {"id": 793, "t": "Chaussures"}
 {"id": 794, "t": "Boutiques"}

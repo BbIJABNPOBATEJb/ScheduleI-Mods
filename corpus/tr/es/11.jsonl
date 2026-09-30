@@ -55,10 +55,10 @@
 {"id": 2254, "t": "Hace demasiado que no me meto nada, necesito algo ya mismo, bro. ¿Tienes algo que pueda comprar??"}
 {"id": 2255, "t": "Hace demasiado que no me meto nada, necesito algo ya mismo. ¿Tienes algo que pueda comprar??"}
 {"id": 2256, "t": "A mí la lluvia me gusta un poco..."}
-{"id": 2257, "t": "NECESITO <PRODUCT>. TENGO <PRICE>. ¿TRATO?"}
+{"id": 2257, "t": "NECESITO <PRODUCT>. TENGO <PRICE>. ¿TRATO HECHO?"}
 {"id": 2258, "t": "Necesito acceso al túnel bajo Hyland Manor"}
 {"id": 2259, "t": "Yo digo que les des a estos payasos una dosis de su propia medicina. Si pudieras plantar una <h1>bomba</h> en ese túnel... bueno, digamos que ya no serán ningún problema."}
-{"id": 2260, "t": "Lo veo merodeando por los muelles de noche de vez en cuando. Tiene que desaparecer. Hazme ese favor y te armo lo que necesites."}
+{"id": 2260, "t": "Lo veo merodeando por los Docks de noche de vez en cuando. Tiene que desaparecer. Hazme ese favor y te armo lo que necesites."}
 {"id": 2261, "t": "Quiero ayudarte, pero me quedo sin trabajo si el alcalde se entera. Necesitaré <PRICE> para que valga la pena el riesgo."}
 {"id": 2262, "t": "Quiero comprar una llave de acceso a la alcantarilla"}
 {"id": 2263, "t": "Quiero contratar a un empleado"}
@@ -79,7 +79,7 @@
 {"id": 2278, "t": "Termino enseguida"}
 {"id": 2279, "t": "Lo pensaré"}
 {"id": 2280, "t": "Soy un hombre de Dios, amigo. \"No matarás\" - Éxodo {0}"}
-{"id": 2281, "t": "Busco <PRODUCT>. Te pago <PRICE> por eso. ¿¿Trato??"}
+{"id": 2281, "t": "Busco <PRODUCT>. Te pago <PRICE>. ¿¿Trato hecho??"}
 {"id": 2282, "t": "Soy Dan, llevo esta ferretería. ¿A qué te dedicas?"}
 {"id": 2283, "t": "Ya me cansé de ti. No hay trato."}
 {"id": 2284, "t": "¡Me muero por algo! ¿Tienes algo que pueda comprar??"}
@@ -102,7 +102,7 @@
 {"id": 2301, "t": "Si necesitas pseudo, soy la indicada. Mándame un mensaje y lo resolvemos"}
 {"id": 2302, "t": "Si quieres comprar suministros para ti, ponlos en mi cuenta."}
 {"id": 2303, "t": "Si vas en serio de verdad, puedo enviarte semillas directamente a cualquiera de tus propiedades. Usa tu app de entregas para hacer un pedido y te llegará en nada."}
-{"id": 2304, "t": "Si necesitas pedir cantidades más grandes de suministros, ahora puedes organizar una reunión en persona conmigo. Mándame un mensaje."}
+{"id": 2304, "t": "Si necesita pedir cantidades más grandes de suministros, ahora puede organizar una reunión en persona conmigo. Envíeme un mensaje."}
 {"id": 2305, "t": "Si no trabajas con nosotros, estás contra nosotros. Te vas a arrepentir de haber venido a esta ciudad..."}
 {"id": 2306, "t": "Si quieres iniciarte en el arte de cultivar hongos mágicos, ¡estás de suerte!"}
 {"id": 2307, "t": "Si te registraron hace poco en un control, puedes pasar por ese mismo control varias veces sin otro registro."}
@@ -149,7 +149,7 @@
 {"id": 2348, "t": "¡Buenos días!"}
 {"id": 2349, "t": "La mayoría de las plantas crecen más rápido a temperaturas cálidas."}
 {"id": 2350, "t": "Te lo agradezco mucho"}
-{"id": 2351, "t": "Te lo agradezco, compa"}
+{"id": 2351, "t": "Te lo agradezco, amigo"}
 {"id": 2352, "t": "Te lo agradezco, mulato. A lo mejor deberías hablar con <NAME>. Creo que le gustaría tu producto"}
 {"id": 2353, "t": "Se agradece."}
 {"id": 2354, "t": "Te lo agradezco. A lo mejor deberías hablar con <NAME>. Creo que le gustaría tu producto"}
@@ -174,11 +174,11 @@
 {"id": 2373, "t": "Ni hablar, amigo."}
 {"id": 2374, "t": "Todo en orden."}
 {"id": 2375, "t": "Pues no. De hecho, el viejo Nellie ya nos debe una buena suma..."}
-{"id": 2376, "t": "No hay problema, compa, nos vemos."}
+{"id": 2376, "t": "No hay problema, amigo, nos vemos."}
 {"id": 2377, "t": "No, gracias"}
 {"id": 2378, "t": "No, gracias"}
 {"id": 2379, "t": "No, gracias, bro"}
-{"id": 2380, "t": "No, gracias, bróder"}
+{"id": 2380, "t": "No, gracias, bro"}
 {"id": 2381, "t": "No, gracias, bro. Buscaré en otro lado"}
 {"id": 2382, "t": "No, gracias, mulato"}
 {"id": 2383, "t": "No, gracias. Buscaré en otro lado"}

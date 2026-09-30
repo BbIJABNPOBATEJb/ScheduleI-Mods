@@ -211,7 +211,7 @@ Roman numeral tiers I–V are kept with a space before them: "收账人 III".
 
 | English | Chinese |
 |---|---|
-| Anti-Gravity | 反重力 |
+| Anti-gravity | 反重力 |
 | Athletic | 健步如飞 |
 | Balding | 秃顶 |
 | Bright-Eyed | 目光炯炯 |
@@ -229,7 +229,7 @@ Roman numeral tiers I–V are kept with a space before them: "收账人 III".
 | Glowing | 发光 |
 | Jennerising | 变性 |
 | Laxative | 腹泻 |
-| Long Faced | 长脸 |
+| Long faced | 长脸 |
 | Munchies | 嘴馋 |
 | Paranoia | 偏执 |
 | Refreshing | 清爽 |
@@ -431,3 +431,77 @@ Placeholder spacing in dialogue:
 - Input tokens (`<Input_TogglePhone>` etc.) become key names → one space on each side: "按 <Input_TogglePhone> 打开".
 - "they" for a single unknown customer → "这人" ("我觉得这人会喜欢你的货").
 - Price choices "Name (<PRICE>)": Latin names keep ASCII "The Shitbox (<PRICE>)"; translated names use full-width "谷仓（<PRICE>）".
+
+## Items, quests, places (added with chunks 01–10)
+
+| English | Chinese |
+|---|---|
+| Storage closet (Small/Medium/Large/Huge) | 储藏柜（小型/中型/大型/超大储藏柜）— 储物柜 is reserved for Locker |
+| Storage rack (Small/Medium/Large) | 小型/中型/大型储物架 |
+| Storage unit (property) | 储物间 ("储物间 #2") |
+| Grow light (Halogen/LED/Full Spectrum) | 卤素种植灯 / LED 种植灯 / 全光谱种植灯 |
+| Grain bag / Spore syringe / Shroom spawn | 谷物袋 / 孢子注射器 / 蘑菇菌种 |
+| Mushroom substrate | 蘑菇基质 |
+| Plant trimmers / Electric plant trimmers | 修枝剪 / 电动修枝剪 |
+| Soil / Long-Life Soil / Extra Long-Life Soil | 土壤 / 长效土壤 / 超长效土壤 |
+| Laundering station | 洗钱台 |
+| Low-/High-Quality Pseudo | 低品质伪麻黄碱 / 高品质伪麻黄碱 |
+| Liquid meth / "Glass (Liquid)" | 液态冰毒 / Glass（液态） |
+| Marijuana / Methamphetamine / Magic Mushroom / Heroin / MDMA | 大麻 / 冰毒 / 迷幻蘑菇 / 海洛因 / MDMA |
+| Skateboard (Cheap/Lightweight/Cruiser/Offroad/Golden) | 滑板（廉价滑板/轻量滑板/巡航滑板/越野滑板/黄金滑板） |
+| Artwork (X) | 艺术画（X）: Beach Day 海滩时光, Lines 线条, Menace 祸害, Offer 报价, Rapscallion 捣蛋鬼, Millie unchanged |
+| Gas grades on station signs: Regular/Garbage/Mega/Sexy Gas | 普通汽油 / 垃圾汽油 / 超级汽油 / 性感汽油 |
+| Deal window: Afternoon / Night / Late Night | 下午 / 夜晚 / 深夜 |
+| Monday … Sunday | 星期一 … 星期日 |
+| Dealership / Real estate agent / Mechanic / Merchant | 车行 / 房产经纪人 / 修车师傅 / 商人 |
+| Payphone | 公用电话亭 |
+| Supplier stash ("Albert Hoover's Stash") | Albert Hoover 的藏货箱 |
+| Stash (quest pickup, "Collect the stash") | 藏货 |
+
+Drug-type property categories (PropertyDatas, shown as product traits):
+Addictive 成瘾, Highly Addictive 高度成瘾, Cerebral 醒脑, Dissociative 解离, Hallucinogenic 致幻, Mild 温和, Overwhelming 猛烈,
+Physical 身体, Potent 强效, Psychedelic 迷幻, Stimulating 兴奋, Uplifting 振奋.
+
+Quest titles: Another Day in Paradise 天堂里的又一天, Getting Started 万事开头难, Gearing Up 整装待发, Packin' 打包上阵,
+On the Grind 埋头苦干, Moving Up 步步高升, Dodgy Dealing 灰色交易, Keeping it Fresh 保持清爽, Mixing Mania 混合狂热,
+Money Management 理财之道, Making the Rounds 四处走访, Clean Cash 洗白现金, We Need To Cook 我们得开炉了,
+Vibin' on the 'Cybin 蘑菇嗨起来, Needin' the Green 急需票子, Unfavourable Agreements 不平等协议, Deal for the Benzies Family
+为 Benzies 家族贩货, Finishing the Job 了结此事, Welcome to Hyland Point 欢迎来到 Hyland Point, Wrapping Up 收尾,
+Wretched Hive of Scum and Villainy 人渣恶棍的贼窝; Botanists/Chemists/Cleaners/Handlers use the role names.
+
+Location names and `<LOCATION>` descriptions (chunks 08–09) are bare noun phrases without 在: "Behind X"/"behind X" → "X后面"
+("银行后面", "Taco Ticklers 后面"), "Next to X" → "X旁边", "Alleyway behind X" → "X后面的小巷", "at the skatepark" → "滑板公园".
+"the docks" (area) → "Docks".
+
+Kept unchanged (internal names or titles): ColorFont keys (Deselected, Selected, ExpiringSoon, FadedText, Future), `*DropItemCount`
+variables, TV game titles (Egg Run, Noodle, Potato Run), key names Ctrl/Shift/Tab/Esc/Enter (but SPACE → 空格键, D-Pad Up → 十字键上,
+Left Stick Press → 按下左摇杆), `formal_address` token in Herbert's lines.
+
+## Code, runtime and data strings (added with chunks 13–19)
+
+Internal identifiers stay unchanged: variable names (`MotelOwned`, `*TutorialDone`…), NPC behaviour names ("Attend deal",
+"Harvest pot", "Sentry"…), animation/audio triggers ("Quest enter", "Peephole open", "Fire1"…), asset paths, debug/log lines,
+tutorial time notes, and the poll/bindings JSON blobs. Short generic words that could show up on screen are translated
+("Pursuit" 追捕, "Graffiti" 涂鸦, "Summon" 叫来, "Volume" 音量, "Default" 默认).
+
+| English | Chinese |
+|---|---|
+| Loan sharks | 放高利贷的 |
+| Possession of low/moderate/high-severity drug | 持有低危/中危/高危毒品 |
+| Controlled substances | 管制药品 |
+| Supplies stash (botanist's) | 物资来源 |
+| Loading dock <N> | <N>号装卸区 |
+| Output slot | 产出栏 |
+| Fair price / Suggested / Market value | 公道价 / 建议价 / 市场价值 |
+| Bonuses: Curfew / Quick Delivery / Rainy / Generosity / Exceeded Quality | 宵禁奖金 / 快速交货奖金 / 雨天奖金 / 慷慨奖金 / 超出品质奖金 |
+| Ride the Bus: Higher / Lower / Inside / Outside | 更大 / 更小 / 内侧 / 外侧 |
+| Card suits: Hearts / Diamonds / Clubs / Spades | 红桃 / 方块 / 梅花 / 黑桃 |
+| Blackjack dealer ("Dealer's turn") | 庄家 |
+| Vehicle colors: Black/White/Red/Orange/Yellow/Pink/Purple/Cyan/Navy | 黑色/白色/红色/橙色/黄色/粉色/紫色/青色/藏青色 |
+| Dark / Light / Dull + color | 深… / 浅… / 暗… ("深蓝色", "浅灰色", "暗红色") |
+| Effect "Lethal" | 致命 |
+| Consume / Smoke / Snort (consume description) | 服用 / 抽一口 / 鼻吸 |
+| Liquid Baby Blue (recipe title) | 液态 Baby Blue |
+| Times: "{0}PM" (integer hour) / "{0} AM" (normalized "7:00") | 下午{0}点 / 上午{0} |
+| Curfew "{0}PM - {1}AM" | 晚上{0}点 - 凌晨{1}点 |
+| Sewer key holder descriptions ("the guy with …") | 那个……的家伙 |

@@ -32,8 +32,8 @@
 {"id": 2831, "t": "<NUM> gün önce"}
 {"id": 2832, "t": "Tefecilerin gelmesine <NUM> gün"}
 {"id": 2833, "t": "<ORGANISATION_NAME> (<SAVE_VERSION>, kayıt yuvası <SAVE_SLOT_NUMBER>)"}
-{"id": 2834, "t": "<PROPERTY_NAME> (Sahipli)"}
-{"id": 2835, "t": "<PROPERTY_NAME> (Sahipsiz)"}
+{"id": 2834, "t": "<PROPERTY_NAME> (Senin)"}
+{"id": 2835, "t": "<PROPERTY_NAME> (Senin Değil)"}
 {"id": 2836, "t": "<PROPERTY_NAME> Contents Container"}
 {"id": 2837, "t": "<PROPERTY_NAME> Worldspace UI Container"}
 {"id": 2838, "t": "<TEXT2> [Rütbe <REQUIRED_RANK>]"}

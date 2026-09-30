@@ -306,3 +306,37 @@ Bardzo niskie / Niskie / Umiarkowane / Wysokie / Bardzo wysokie.
 | Phone / Messages / Map | telefon / Wiadomości / Mapa |
 | SPACEBAR | SPACJA |
 | Left/right mouse button | lewy/prawy przycisk myszy |
+
+## Added while translating chunks 11–19
+
+| English | Polish |
+|---|---|
+| RV (the player's starting trailer) | kamper ("w kamperze") |
+| Motel / Motel Room | motel / pokój w motelu |
+| Product Manager (app) | Menedżer towaru ("w aplikacji Menedżer towaru") |
+| Deliveries (app) | Dostawy ("w aplikacji Dostawy") |
+| Deal window: Morning / Afternoon / Night / Late Night | Poranek / Popołudnie / Noc / Późna noc |
+| Suspension Rack | stelaż |
+| Grow Light | lampa do uprawy |
+| AC Unit | klimatyzator |
+| Spray Bottle | spryskiwacz |
+| Checkpoint (police) | punkt kontrolny |
+| Sewer / sewer (access) key | kanały / klucz do kanałów |
+| Stash box (supplier's payment box) | schowek |
+| Tab (debt, "put it on my tab") | rachunek |
+| Trash for Cash (machine) | Trash for Cash (unchanged) |
+| Singleplayer / Multiplayer | tryb jednoosobowy / tryb wieloosobowy |
+| Dialogue slang for bro/dawg/homie/mulatto | stary / ziom / ziomek / mordeczko (no literal "mulat") |
+| Properties / businesses | Bungalow, Hyland Manor (unchanged); Barn → Stodoła; Car Wash → Myjnia; Laundromat → Pralnia; Post Office → Poczta; Sweatshop → Szwalnia; Storage Unit → Boks magazynowy; Docks Warehouse → Magazyn w Docks ("The Barn (<PRICE>)" → "Stodoła (<PRICE>)") |
+| Vehicle models | unchanged, drop "The": Bruiser, Cheetah, Hotbox, Hounddog, Shitbox, Veeper |
+| Merchant (warehouse / dark market NPC) | kupiec (NOT "handlarz" — that is the Peddler rank) |
+| Mushroom substrate / Grain bag / Spores | podłoże (grzybowe) / worek z ziarnem / zarodniki |
+| `formal_address` (runtime token in Herbert's lines) | keep unchanged: "Dziękuję, formal_address" |
+| `<LOCATION>` in customer lines ("I'll meet you <LOCATION>") | location descriptions are prepositional phrases ("za Handy Hank's"), so "spotkajmy się <LOCATION> między <WINDOW_START> a <WINDOW_END>" |
+| `<BUSINESS>`/`<PROPERTY>`/`<VEHICLE>` names | keep nominative via constructions like "Czyli interesuje cię <PROPERTY>?" |
+| Crimes (charges) | Assault → Napaść; Assault with a deadly weapon → Napaść z bronią w ręku; Drug trafficking → Handel narkotykami; Brandishing a weapon → Wymachiwanie bronią; Discharge of a firearm in a public place → Oddanie strzału w miejscu publicznym; Attempting to sell illicit items → Próba sprzedaży nielegalnych przedmiotów |
+| Blackjack dealer (casino) | krupier ("Ruch krupiera...") — NOT "diler" |
+| Card suits | Clubs / Diamonds / Hearts / Spades → Trefl / Karo / Kier / Pik |
+| Loan sharks | lichwiarze |
+| Time abbreviations with numbers | "{0} godz.", "{0} min", "<NUM> dni" (avoid numeral agreement) |
+| Body shop | warsztat |

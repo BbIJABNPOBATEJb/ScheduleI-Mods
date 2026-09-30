@@ -1,0 +1,200 @@
+{"id": 400, "t": "Grzanie"}
+{"id": 401, "t": "Cześć, szukam {0}x OG Kush. Mogę za to zapłacić <color=#46CB4F>${1}</color>."}
+{"id": 402, "t": "Witaj, graczu"}
+{"id": 403, "t": "Heroina"}
+{"id": 404, "t": "Hej, debilu, może nie zostawiaj swoich rzeczy byle gdzie!"}
+{"id": 405, "t": "Hej, potrzebuję {0}x OG Kush. Zapłacę <color=#46CB4F>${1}</color>. Stoi?"}
+{"id": 406, "t": "Wysoki kok"}
+{"id": 407, "t": "REKORD"}
+{"id": 408, "t": "Kierowcy do wynajęcia"}
+{"id": 409, "t": "Dobierz"}
+{"id": 410, "t": "Przytrzymaj"}
+{"id": 411, "t": "Dom"}
+{"id": 412, "t": "Dresiarz"}
+{"id": 413, "t": "DRESIARZ I"}
+{"id": 414, "t": "Dresiarz I"}
+{"id": 415, "t": "Dresiarz II"}
+{"id": 416, "t": "Dresiarz III"}
+{"id": 417, "t": "Dresiarz IV"}
+{"id": 418, "t": "Dresiarz V"}
+{"id": 419, "t": "WROGOŚĆ"}
+{"id": 420, "t": "Wrogość"}
+{"id": 421, "t": "Najedź na zadanie, aby zobaczyć szczegóły"}
+{"id": 422, "t": "Odcień"}
+{"id": 423, "t": "Kombinator"}
+{"id": 424, "t": "Kombinator I"}
+{"id": 425, "t": "Kombinator II"}
+{"id": 426, "t": "Kombinator III"}
+{"id": 427, "t": "Kombinator IV"}
+{"id": 428, "t": "Kombinator V"}
+{"id": 429, "t": "HYDROBRO"}
+{"id": 430, "t": "HYLAND\nBANK"}
+{"id": 431, "t": "Hyland \nMedical"}
+{"id": 432, "t": "Hyland \nRange"}
+{"id": 433, "t": "Hyland \nTower {0}"}
+{"id": 434, "t": "Hyland Auto"}
+{"id": 435, "t": "Hyland Manor"}
+{"id": 436, "t": "Komisariat policji Hyland"}
+{"id": 437, "t": "ZAKOŃCZ"}
+{"id": 438, "t": "Nie mogę się ruszyć"}
+{"id": 439, "t": "Jeśli włączone, algorytm mieszania towaru \nzostanie zrandomizowany przy użyciu ziarna tego zapisu. \nNie wpłynie to na twoje istniejące mieszanki."}
+{"id": 440, "t": "Importuj"}
+{"id": 441, "t": "Importuj zapis"}
+{"id": 442, "t": "W nowym mieście, bez gotówki, bez towaru i bez kontaktów."}
+{"id": 443, "t": "Dołączyć plik zapisu?"}
+{"id": 444, "t": "Dołączyć zrzut ekranu?"}
+{"id": 445, "t": "Połączenie przychodzące"}
+{"id": 446, "t": "Niezgodna wersja gry"}
+{"id": 447, "t": "Niewłaściwy rodzaj towaru"}
+{"id": 448, "t": "Zwiększ"}
+{"id": 449, "t": "Zwiększ głośność"}
+{"id": 450, "t": "Składnik"}
+{"id": 451, "t": "Składniki"}
+{"id": 452, "t": "Składniki i opakowania"}
+{"id": 453, "t": "Wejście"}
+{"id": 454, "t": "Wskazówki sterowania"}
+{"id": 455, "t": "Włóż \nskładnik"}
+{"id": 456, "t": "Włóż \ntrawkę"}
+{"id": 457, "t": "Włóż szczyt/liść do wejścia i naciśnij 'susz'"}
+{"id": 458, "t": "Włóż przedmioty do wyceny (tylko legalne)"}
+{"id": 459, "t": "Włóż towar"}
+{"id": 460, "t": "Włóż towar i składnik do mieszania"}
+{"id": 461, "t": "Wrzuć śmieci"}
+{"id": 462, "t": "Instrukcje"}
+{"id": 463, "t": "Użyj"}
+{"id": 464, "t": "Użyj / Przeciągnij"}
+{"id": 465, "t": "Interfejs"}
+{"id": 466, "t": "Skala interfejsu"}
+{"id": 467, "t": "Nieprawidłowy \nskładnik"}
+{"id": 468, "t": "Odwróć oś Y"}
+{"id": 469, "t": "POSZUKIWANIA"}
+{"id": 470, "t": "Zaproś znajomych"}
+{"id": 471, "t": "Jest {0}AM - idź spać, aby przejść do następnego dnia"}
+{"id": 472, "t": "Opis przedmiotu"}
+{"id": 473, "t": "Limit przedmiotów"}
+{"id": 474, "t": "Dzielenie przedmiotów"}
+{"id": 475, "t": "Suma za przedmioty"}
+{"id": 476, "t": "JACKPOT!"}
+{"id": 477, "t": "Jessi Waters<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 478, "t": "Jimbo płaci <color=#50E65A>${0}</color> za:"}
+{"id": 479, "t": "Joe"}
+{"id": 480, "t": "Joe <color=#A0A0A0FF> (Downtown)</color>"}
+{"id": 481, "t": "Dołącz lokalnie jako klient"}
+{"id": 482, "t": "Dziennik"}
+{"id": 483, "t": "Skrót do dziennika"}
+{"id": 484, "t": "Skocz"}
+{"id": 485, "t": "KAESUL"}
+{"id": 486, "t": "Kathy Henderson<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 487, "t": "Zachować ustawienia?"}
+{"id": 488, "t": "Ojciec chrzestny"}
+{"id": 489, "t": "Ojciec chrzestny I"}
+{"id": 490, "t": "Ojciec chrzestny II"}
+{"id": 491, "t": "Ojciec chrzestny III"}
+{"id": 492, "t": "Ojciec chrzestny IV"}
+{"id": 493, "t": "Ojciec chrzestny V"}
+{"id": 494, "t": "Zapukaj"}
+{"id": 495, "t": "Koyama Chemical\nCompany"}
+{"id": 496, "t": "Kyle"}
+{"id": 497, "t": "Kyle Cooley"}
+{"id": 498, "t": "Kyle Cooley<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 499, "t": "Język"}
+{"id": 500, "t": "Ostatnia gra"}
+{"id": 501, "t": "Późna noc"}
+{"id": 502, "t": "Wypierz"}
+{"id": 503, "t": "Harmonogram prania"}
+{"id": 504, "t": "Pralnia"}
+{"id": 505, "t": "Opuść"}
+{"id": 506, "t": "W lewo"}
+{"id": 507, "t": "Lewe ramię"}
+{"id": 508, "t": "Wciśnięcie lewej gałki"}
+{"id": 509, "t": "Les Ordures\nPuantes"}
+{"id": 510, "t": "AWANS!"}
+{"id": 511, "t": "Oświetlenie"}
+{"id": 512, "t": "Lampy"}
+{"id": 513, "t": "Lekka deska\n${0}"}
+{"id": 514, "t": "Linie"}
+{"id": 515, "t": "Płynna meta"}
+{"id": 516, "t": "Sklep \nmonopolowy"}
+{"id": 517, "t": "Wystaw na sprzedaż"}
+{"id": 518, "t": "Wystawić na sprzedaż?"}
+{"id": 519, "t": "Wystawiono na sprzedaż"}
+{"id": 520, "t": "Załaduj do pojazdu"}
+{"id": 521, "t": "Wczytaj ostatni zapis"}
+{"id": 522, "t": "Wczytywanie danych..."}
+{"id": 523, "t": "Rampa załadunkowa"}
+{"id": 524, "t": "Rampa załadunkowa {0}"}
+{"id": 525, "t": "Wczytywanie..."}
+{"id": 526, "t": "Lobby ({0}/{1})"}
+{"id": 527, "t": "Długie kręcone"}
+{"id": 528, "t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+{"id": 529, "t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare gravida felis, sit amet suscipit velit malesuada ut. Mauris scelerisque malesuada velit, rhoncus maximus lacus tempor molestie."}
+{"id": 530, "t": "Niskie"}
+{"id": 531, "t": "Niski kok"}
+{"id": 532, "t": "Pozycja dolnej powieki w spoczynku"}
+{"id": 533, "t": "Zmniejsz głośność"}
+{"id": 534, "t": "Lojalność"}
+{"id": 535, "t": "Mężczyzna"}
+{"id": 536, "t": "zarządzaj firmą"}
+{"id": 537, "t": "Mapa"}
+{"id": 538, "t": "Skrót do mapy"}
+{"id": 539, "t": "Wartość rynkowa: ${0}"}
+{"id": 540, "t": "OGROMNA WYGRANA!"}
+{"id": 541, "t": "Głośność główna"}
+{"id": 542, "t": "MDMA"}
+{"id": 543, "t": "Mega Beans"}
+{"id": 544, "t": "Mega Gas"}
+{"id": 545, "t": "Postrach"}
+{"id": 546, "t": "Wiadomość"}
+{"id": 547, "t": "WIADOMOŚĆ"}
+{"id": 548, "t": "Treść wiadomości"}
+{"id": 549, "t": "Treść wiadomości"}
+{"id": 550, "t": "Wiadomości"}
+{"id": 551, "t": "Skrót do wiadomości"}
+{"id": 552, "t": "Rozczochrany bob"}
+{"id": 553, "t": "Mick Lubbin<color=#A0A0A0FF> (Northtown)</color>"}
+{"id": 554, "t": "Nerwy\nMicka"}
+{"id": 555, "t": "Millie"}
+{"id": 556, "t": "Zmieszaj"}
+{"id": 557, "t": "Nazwa mieszanki jest już zajęta"}
+{"id": 558, "t": "Mieszane"}
+{"id": 559, "t": "Składnik"}
+{"id": 560, "t": "Trwa mieszanie..."}
+{"id": 561, "t": "Zmień ilość"}
+{"id": 562, "t": "Poniedziałek"}
+{"id": 563, "t": "PONIEDZIAŁEK"}
+{"id": 564, "t": "Poniedziałek, {0}.\nCo-op i dostawy\n\nPoniedziałek, {1}.\nKasyno\n\nSobota, {2}.\nButik, dekoracje ścienne, lombard\n\nPoniedziałek, {3}. - Premiera!"}
+{"id": 565, "t": "Ponad rok temu"}
+{"id": 566, "t": "Najczęściej kupowany towar <color=#A0A0A0>(tygodniowo)</color>"}
+{"id": 567, "t": "Motel"}
+{"id": 568, "t": "Recepcja\nmotelu"}
+{"id": 569, "t": "Pokój w motelu"}
+{"id": 570, "t": "Pokój w motelu {0}"}
+{"id": 571, "t": "Mysz"}
+{"id": 572, "t": "Poruszaj się"}
+{"id": 573, "t": "Poruszaj / Wybierz"}
+{"id": 574, "t": "Przenieś wszystko"}
+{"id": 575, "t": "Poruszaj kamerą"}
+{"id": 576, "t": "Przenieś wybraną ilość"}
+{"id": 577, "t": "Przenieś połowę"}
+{"id": 578, "t": "Przenieś jedną sztukę"}
+{"id": 579, "t": "Rusz się, aby zacząć"}
+{"id": 580, "t": "Przejdź do szczegółów"}
+{"id": 581, "t": "Rusz się, aby zacząć od nowa"}
+{"id": 582, "t": "Edycja zbiorcza nieobsługiwana"}
+{"id": 583, "t": "Chwyć wiele"}
+{"id": 584, "t": "Tryb wieloosobowy"}
+{"id": 585, "t": "Stacja \ngrzybni"}
+{"id": 586, "t": "Muzyka"}
+{"id": 587, "t": "WYMAGA PODLANIA"}
+{"id": 588, "t": "Majątek"}
+{"id": 589, "t": "Neutralny"}
+{"id": 590, "t": "Odblokowano nowego klienta!"}
+{"id": 591, "t": "Nowa gra"}
+{"id": 592, "t": "Nowa operacja prania"}
+{"id": 593, "t": "Nowa wiadomość"}
+{"id": 594, "t": "Odkryto nową mieszankę!"}
+{"id": 595, "t": "ODBLOKOWANO NOWĄ DZIELNICĘ!"}
+{"id": 596, "t": "Dalej"}
+{"id": 597, "t": "Noc"}
+{"id": 598, "t": "Brak aktywnych operacji prania"}
+{"id": 599, "t": "Brak przedmiotów w ekwipunku"}

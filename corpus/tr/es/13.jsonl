@@ -38,7 +38,7 @@
 {"id": 2637, "t": "¡Demasiado MOJADO, carajo!"}
 {"id": 2638, "t": "¡¡DEMASIADO TIEMPO!! Olvídalo"}
 {"id": 2639, "t": "Demasiada lluvia..."}
-{"id": 2640, "t": "¿¿¿Tienes <PRODUCT>??? Te pago <PRICE> por eso. ¿TRATO?"}
+{"id": 2640, "t": "¿¿¿Tienes <PRODUCT>??? Te pago <PRICE>. ¿TRATO HECHO?"}
 {"id": 2641, "t": "Eh... no"}
 {"id": 2642, "t": "Subiendo las escaleras, en la oficina, está el <h1>intermediario</h> local: es el tipo con quien hablar si quieres contratar empleados."}
 {"id": 2643, "t": "¿Vehículo atascado? Ve al taller de carrocería para que lo remolquen."}
@@ -51,7 +51,7 @@
 {"id": 2650, "t": "¡Alto! Está bajo arresto"}
 {"id": 2651, "t": "Necesitamos <PRODUCT>. Tienes <DUE_DAYS> días para traérnoslo. El pago es de <PAYMENT>."}
 {"id": 2652, "t": "Ganaremos suficiente dinero para pagarles a esos tipos, y luego podremos centrarnos en montar operaciones de verdad."}
-{"id": 2653, "t": "Llevamos un tiempo trabajando juntos y has demostrado ser bastante fiable."}
+{"id": 2653, "t": "Llevamos un tiempo trabajando juntos y ha demostrado ser bastante fiable."}
 {"id": 2654, "t": "Bienvenidos a Gas-Mart"}
 {"id": 2655, "t": "Bienvenidos a Hyland Auto. ¿En qué puedo ayudarle?"}
 {"id": 2656, "t": "Te doy la bienvenida al almacén: aquí encontrarás todo lo que necesitas para tu carrera criminal."}
@@ -68,7 +68,7 @@
 {"id": 2667, "t": "¿Qué demonios, hermano?"}
 {"id": 2668, "t": "¿Qué demonios?"}
 {"id": 2669, "t": "¿Y yo qué gano?"}
-{"id": 2670, "t": "¿Qué pasa, compa? ¿Qué puedo hacer por ti?"}
+{"id": 2670, "t": "¿Qué pasa, amigo? ¿Qué puedo hacer por ti?"}
 {"id": 2671, "t": "¿Qué te pasa?"}
 {"id": 2672, "t": "¿Cuál es tu problema?"}
 {"id": 2673, "t": "¿Qué?"}
@@ -76,7 +76,7 @@
 {"id": 2675, "t": "¡¿Qué?!"}
 {"id": 2676, "t": "¡¿Qué?! Voy a llamar a la poli"}
 {"id": 2677, "t": "Qué pasa, bro"}
-{"id": 2678, "t": "Qué pasa, bro, busco <PRODUCT>. Puedo pagar <PRICE> por eso."}
+{"id": 2678, "t": "Qué pasa, bro, busco <PRODUCT>. Puedo pagar <PRICE>."}
 {"id": 2679, "t": "Cuando el toque de queda está activo, todos los ciudadanos están obligados por ley a permanecer en sus residencias desde las {0}pm hasta las {1}am."}
 {"id": 2680, "t": "Cuando puedas, deposita <DEBT> en mi alijo: tu deuda sigue sin pagar."}
 {"id": 2681, "t": "¿Dónde está mi habitación?"}
@@ -98,7 +98,7 @@
 {"id": 2697, "t": "Sí, ok"}
 {"id": 2698, "t": "Sí, ok, gracias..."}
 {"id": 2699, "t": "Sí, está bien. Negocias duro, amigo."}
-{"id": 2700, "t": "Sí, no es lo que busco, compa"}
+{"id": 2700, "t": "Sí, no es lo que busco, amigo"}
 {"id": 2701, "t": "¿Sí?"}
 {"id": 2702, "t": "¿¿Sí??"}
 {"id": 2703, "t": "Sííí, más o menos. La mayoría probablemente no son del todo no ilegales... ¿y por qué preguntas, de todos modos?"}
@@ -112,13 +112,13 @@
 {"id": 2711, "t": "¡¡¡Sí!!!"}
 {"id": 2712, "t": "¿Sí?"}
 {"id": 2713, "t": "¡Ay, caray!"}
-{"id": 2714, "t": "Oye, compa, ¿me consigues <PRODUCT>? Pago <PRICE>"}
+{"id": 2714, "t": "Oye, amigo, ¿me consigues <PRODUCT>? Pago <PRICE>"}
 {"id": 2715, "t": "Se le está registrando"}
 {"id": 2716, "t": "Más le vale cuidarse las espaldas: esta ciudad no va a tolerar por mucho tiempo a escoria como usted..."}
 {"id": 2717, "t": "Puedes asignarme clientes con la app de gestión de dealers de tu teléfono."}
-{"id": 2718, "t": "Lo encontrarás escondido cerca de la <h1>fuente del ayuntamiento, en el canal</h> y <h1>detrás del supermercado</h>. Ve a buscarlo, vuelve a la autocaravana y seguimos desde ahí."}
+{"id": 2718, "t": "Lo encontrarás escondido cerca de la <h1>fuente del palacio municipal, en el canal</h> y <h1>detrás del supermercado</h>. Ve a buscarlo, vuelve a la autocaravana y seguimos desde ahí."}
 {"id": 2719, "t": "Puedes dejar efectivo en mi casillero."}
-{"id": 2720, "t": "Puedes renombrar estaciones, macetas, estanterías de almacenaje, etc. con tu portapapeles de gestión."}
+{"id": 2720, "t": "Puedes renombrar estaciones, macetas, estanterías, etc. con tu portapapeles de gestión."}
 {"id": 2721, "t": "Puedes repintar tus vehículos en el taller de carrocería."}
 {"id": 2722, "t": "Puede ver todas las ofertas disponibles en la pizarra a su izquierda."}
 {"id": 2723, "t": "Puedes poner filtros en las ranuras de objetos para indicar a los empleados qué objetos pueden ir o no en una ranura concreta."}
@@ -133,7 +133,7 @@
 {"id": 2732, "t": "¿Se te fue la cabeza? No, gracias"}
 {"id": 2733, "t": "¿Por fin está todo listo?"}
 {"id": 2734, "t": "¡HIJO DE PUTA!"}
-{"id": 2735, "t": "¿Tienes <PRODUCT>? Te pago <PRICE> por eso"}
+{"id": 2735, "t": "¿Tienes <PRODUCT>? Te pago <PRICE>"}
 {"id": 2736, "t": "¿Tienes algún problema?"}
 {"id": 2737, "t": "¿Lo tienes?"}
 {"id": 2738, "t": "¡Tienes cosas buenas! Deberías ir a hablar con <NAME>. Creo que le gustará tu mercancía"}
@@ -146,7 +146,7 @@
 {"id": 2745, "t": "Tiene que estacionar su auto cerca para que pueda registrarlo."}
 {"id": 2746, "t": "Le debes dinero a unos tipos bastante malos y solo tienes unos días antes de que te alcancen. Por suerte para ti, tengo algo de experiencia en este campo."}
 {"id": 2747, "t": "¿Todo listo?"}
-{"id": 2748, "t": "Verás, cada mes me llegan mis suministros en un envío a los muelles. Pero últimamente, una maldita rata me los sigue robando antes de que lleguen a mí."}
+{"id": 2748, "t": "Verás, cada mes me llegan mis suministros en un envío a los Docks. Pero últimamente, una maldita rata me los sigue robando antes de que lleguen a mí."}
 {"id": 2749, "t": "¿Acabas de llegar a la ciudad?"}
 {"id": 2750, "t": "¿Crees que soy idiota? Se cancela el trato."}
 {"id": 2751, "t": "¿Quieres comprar algo?"}

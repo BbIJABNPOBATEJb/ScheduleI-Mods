@@ -12,6 +12,8 @@ param(
     [Parameter(Mandatory)] [string] $Scenario,
     [ValidateSet("Il2Cpp", "Mono")] [string] $Runtime = "Il2Cpp",
     [int] $TimeoutSeconds = 300,
+    # Passed to the scenario as DevSmoke.Arg (e.g. a language code).
+    [string] $Arg = "",
     # Leave the Dev build in the game's Mods folder instead of redeploying the release build.
     [switch] $KeepDevBuild
 )
@@ -27,11 +29,12 @@ $project = Join-Path $root "mods/$Mod/$Mod.csproj"
 dotnet build $project -c "${Runtime}Dev" -nologo -v q -p:AutomateLocalDeployment=true | Out-Host
 if ($LASTEXITCODE -ne 0) { throw "Build failed" }
 
-$runId = "{0}-{1}-{2}-{3}" -f $Mod, $Scenario, $Runtime.ToLower(), (Get-Date -Format "yyyyMMdd-HHmmss")
+$runId = "{0}-{1}{2}-{3}-{4}" -f $Mod, $Scenario, $(if ($Arg) { "-$Arg" } else { "" }), $Runtime.ToLower(), (Get-Date -Format "yyyyMMdd-HHmmss")
 $out = Join-Path $root "test-runs/$runId"
 New-Item -ItemType Directory -Force $out | Out-Null
 
 $gameArgs = @("--s1dev-mod", $Mod, "--s1dev-scenario", $Scenario, "--s1dev-out", "`"$out`"", "--s1dev-timeout", $TimeoutSeconds)
+if ($Arg) { $gameArgs += @("--s1dev-arg", $Arg) }
 Write-Host "Launching $Runtime game: $runId"
 $process = Start-Process -FilePath (Join-Path $gamePath "Schedule I.exe") -WorkingDirectory $gamePath -ArgumentList $gameArgs -PassThru
 

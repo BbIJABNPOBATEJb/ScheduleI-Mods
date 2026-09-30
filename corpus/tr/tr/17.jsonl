@@ -1,0 +1,200 @@
+{"id": 3400, "t": "Yasa dışı eşya taşımak"}
+{"id": 3401, "t": "Trigger"}
+{"id": 3402, "t": "Budama Makası"}
+{"id": 3403, "t": "Eğitim"}
+{"id": 3404, "t": "İzin Verilmeyen Eşyalar"}
+{"id": 3405, "t": "Bilinmiyor"}
+{"id": 3406, "t": "Bilinmeyen adım"}
+{"id": 3407, "t": "10 müşterinin kilidini aç (<COUNT>/10)"}
+{"id": 3408, "t": "<FIRST_NAME> kişisinin tanıdıklarından birinin kilidini aç"}
+{"id": 3409, "t": "Önce <FIRST_NAME> kişisinin tanıdıklarından birinin kilidini aç"}
+{"id": 3410, "t": "Bu satıcının kilidini açmak için tanıdıklarından biriyle 'Dost' seviyesine ulaş."}
+{"id": 3411, "t": "Bu tedarikçinin kilidini açmak için tanıdıklarından biriyle 'Dost' seviyesine ulaş."}
+{"id": 3412, "t": "<color=#2DB92D><REQUIRED_RANK></color> rütbesinde açılır"}
+{"id": 3413, "t": "Paketlenmemiş eşyalar sığmıyor!"}
+{"id": 3414, "t": "Yukarı"}
+{"id": 3415, "t": "Klima yerleştirirken <h2>ısıtma</h> ve <h1>soğutma</h> arasında geçiş yapmak için <Input_SecondaryClick> kullan."}
+{"id": 3416, "t": "<NAME> Kullan"}
+{"id": 3417, "t": "ATM Kullan"}
+{"id": 3418, "t": "Kalıp presini kullan"}
+{"id": 3419, "t": "Ürünü parçalamak için çekiç kullan"}
+{"id": 3420, "t": "Müzik kutusunu kullan"}
+{"id": 3421, "t": "Mantar yatağı için sprey şişesi kullan"}
+{"id": 3422, "t": "Sprey boyayı kullan"}
+{"id": 3423, "t": "Musluğu kullan"}
+{"id": 3424, "t": "TV'yi kullan"}
+{"id": 3425, "t": "Otomatı Kullan"}
+{"id": 3426, "t": "Yönetim panonu kullanarak mantar yataklarımın her biri için bir hedef ata ve hedefin dolu olmadığından emin ol."}
+{"id": 3427, "t": "Yönetim panonu kullanarak saksılarımın her biri için bir hedef ata ve hedefin dolu olmadığından emin ol."}
+{"id": 3428, "t": "Yönetim panonu kullanarak bana bir malzeme saklama yeri ata, sonra içinde toprak olduğundan emin ol."}
+{"id": 3429, "t": "Yönetim panolarını kullanarak bana bir malzeme saklama yeri ata ve içinde mantar miseli olduğundan emin ol."}
+{"id": 3430, "t": "Yönetim panolarını kullanarak bana bir malzeme saklama yeri ata ve içinde doğru tohumların olduğundan emin ol."}
+{"id": 3431, "t": "Vandalizm"}
+{"id": 3432, "t": "Variable Name"}
+{"id": 3433, "t": "Variables"}
+{"id": 3434, "t": "Araç dolu"}
+{"id": 3435, "t": "Aracın dükkanın içine park edilmiş olması lazım"}
+{"id": 3436, "t": "Vehicle patrol route"}
+{"id": 3437, "t": "Araç boyama"}
+{"id": 3438, "t": "Araca her şey sığmıyor. Bazı eşyalar paletlere konacak."}
+{"id": 3439, "t": "Araçla saldırı"}
+{"id": 3440, "t": "Çok Yüksek"}
+{"id": 3441, "t": "Çok Düşük"}
+{"id": 3442, "t": "Saklama yerini gör (<FULL_NAME>)"}
+{"id": 3443, "t": "Avatarı gör"}
+{"id": 3444, "t": "Envanteri gör"}
+{"id": 3445, "t": "Sokağa çıkma yasağını ihlal"}
+{"id": 3446, "t": "Görünür"}
+{"id": 3447, "t": "<SECONDS_SINCE_LAST_SAVE> sn bekle"}
+{"id": 3448, "t": "Zulayı bekle (<NUM> dk)"}
+{"id": 3449, "t": "Karışımın pişmesinin bitmesini bekle"}
+{"id": 3450, "t": "Bekliyor"}
+{"id": 3451, "t": "<FULL_NAME> bekleniyor"}
+{"id": 3452, "t": "<PLAYER_NAME> bekleniyor..."}
+{"id": 3453, "t": "Rakip bir satıcı bekleniyor."}
+{"id": 3454, "t": "Host'un yüklemeyi bitirmesi bekleniyor..."}
+{"id": 3455, "t": "Diğer oyuncular bekleniyor..."}
+{"id": 3456, "t": "Diğerleri bekleniyor..."}
+{"id": 3457, "t": "Oyuncular bekleniyor... ("}
+{"id": 3458, "t": "Uyanma saati: <NUM>"}
+{"id": 3459, "t": "Walk to location"}
+{"id": 3460, "t": "Aranıyor"}
+{"id": 3461, "t": "Uyarı: Bu işlem <SLOT_TO_OVERWRITE> numaralı yuvadaki mevcut kaydın (<ORGANISATION_NAME>) üzerine yazacak."}
+{"id": 3462, "t": "Sulama kabı boş"}
+{"id": 3463, "t": "Buluşmamız lazım"}
+{"id": 3464, "t": "Artık birlikte çalışmıyoruz - anlaşmamız bozuldu."}
+{"id": 3465, "t": "Sonraki kartın türü ne olacak?"}
+{"id": 3466, "t": "Bir eşyayı tutarken döndürmek için <Input_LeftStickX> hareket ettir."}
+{"id": 3467, "t": "Bir eşyayı tutarken döndürmek için <Input_Left> ya da <Input_Right> tuşuna bas."}
+{"id": 3468, "t": "İstasyonlarda iş yaparken eşyaları taşımak için tıklayıp sürükle."}
+{"id": 3469, "t": "Neden çalışmıyorsun?"}
+{"id": 3470, "t": "Width"}
+{"id": 3471, "t": "alacak"}
+{"id": 3472, "t": "Sonraki kart daha yüksek mi, daha düşük mü?"}
+{"id": 3473, "t": "Sonraki kart arasında mı, dışında mı?"}
+{"id": 3474, "t": "Kazandın!"}
+{"id": 3475, "t": "with forcePoint:"}
+{"id": 3476, "t": "<SELECTED_AMOUNT> ÇEK"}
+{"id": 3477, "t": "Envantere sığmaz"}
+{"id": 3478, "t": "Yanlış mülk"}
+{"id": 3479, "t": "Dün"}
+{"id": 3480, "t": "Gerekenden fazla eşya veriyorsun."}
+{"id": 3481, "t": "Gerekenden fazla ürün veriyorsun."}
+{"id": 3482, "t": "Anlaşmaları seçtiğin zaman aralığında istediğin an tamamlayabilirsin. Şimdilik sabah aralığını seç."}
+{"id": 3483, "t": "Artık <h1><FULL_NAME></h> kişisini satıcı olarak işe alabilirsin."}
+{"id": 3484, "t": "Artık <NAME> kişisinden <PRODUCT> sipariş edebilirsin. <PRODUCT>, <PURPOSE> için kullanılabilir."}
+{"id": 3485, "t": "Borcunu saklama yerime nakit bırakarak ödeyebilirsin. Saklama yerim <LOCATION_DESCRIPTION>."}
+{"id": 3486, "t": "Yönetim panonu kullanarak bana bir dolap atayabilirsin."}
+{"id": 3487, "t": "Yönetim panolarını kullanarak bana saksı, yetiştirme rafı vb. atayabilirsin."}
+{"id": 3488, "t": "Yönetim panolarını kullanarak bana istasyon ya da rota atayabilirsin."}
+{"id": 3489, "t": "Yönetim panolarını kullanarak bana istasyon atayabilirsin."}
+{"id": 3490, "t": "Yönetim panolarını kullanarak bana çöp kutusu atayabilirsin."}
+{"id": 3491, "t": "Sağ salim çıkabildin mi? Cep telefonundan konuşmasak iyi olur. Git bir ankesörlü telefon bul.\n- U.N."}
+{"id": 3492, "t": "<AMOUNT> yatırdın"}
+{"id": 3493, "t": "Kurtarılacak aracın yok"}
+{"id": 3494, "t": "<AMOUNT> çektin"}
+{"id": 3495, "t": "Aklamak için en az <F> nakit lazım."}
+{"id": 3496, "t": "<FULL_NAME> kişisine <color=#54E717><DEBT></color> borcun var. Borcunu ödemek için nakit koy ve saklama yerinden çık"}
+{"id": 3497, "t": "<h1>Online bakiyen</h> sağ üst köşede gösterilir."}
+{"id": 3498, "t": "Artık hizmetlerine ihtiyaç yok."}
+{"id": 3499, "t": "Sıra sende!"}
+{"id": 3500, "t": "Verdiğin oy kaydedildi.\n Teşekkürler!"}
+{"id": 3501, "t": "Zip Dosyaları"}
+{"id": 3502, "t": "Zombi"}
+{"id": 3503, "t": "Zombileşmiş"}
+{"id": 3504, "t": "{0}x MSAA"}
+{"id": 3505, "t": "(Haftalık)"}
+{"id": 3506, "t": "+${{0}} Bonus"}
+{"id": 3507, "t": "Atanan Müşteriler ({{0}}/{{1}})"}
+{"id": 3508, "t": "Bait & Tackle"}
+{"id": 3509, "t": "BANKASI"}
+{"id": 3510, "t": "Bar"}
+{"id": 3511, "t": "Basketbol"}
+{"id": 3512, "t": "istasyonlar,"}
+{"id": 3513, "t": "Bleuball"}
+{"id": 3514, "t": "Bloğu"}
+{"id": 3515, "t": "Boutique"}
+{"id": 3516, "t": "Box"}
+{"id": 3517, "t": "Kahverengi Apartman"}
+{"id": 3518, "t": "Bud's"}
+{"id": 3519, "t": "Canary"}
+{"id": 3520, "t": "Merkezi"}
+{"id": 3521, "t": "Ucuz Kaykay\n${{0}}"}
+{"id": 3522, "t": "Çin"}
+{"id": 3523, "t": "Toplum"}
+{"id": 3524, "t": "Company"}
+{"id": 3525, "t": "Onayla (${{0}})"}
+{"id": 3526, "t": "Construction & Demo"}
+{"id": 3527, "t": "Sahası"}
+{"id": 3528, "t": "Cruiser\n${{0}}"}
+{"id": 3529, "t": "BU GECE SOKAĞA ÇIKMA YASAĞI"}
+{"id": 3530, "t": "BU GECE SOKAĞA ÇIKMA YASAĞI\n{{0}}PM - {{1}}AM"}
+{"id": 3531, "t": "Dan's"}
+{"id": 3532, "t": "Ayın"}
+{"id": 3533, "t": "KURULUŞ  {{0}}"}
+{"id": 3534, "t": "Köklerin havalanmasını sağlayan şık, el dokuması kumaş saksı. Bitki büyüme hızını %{{0}} artırır ama nem kaybını da %{{1}} artırır"}
+{"id": 3535, "t": "Altın Kaykay\n${{0}}"}
+{"id": 3536, "t": "Binası"}
+{"id": 3537, "t": "HAM"}
+{"id": 3538, "t": "Handy Hank's"}
+{"id": 3539, "t": "Hardware"}
+{"id": 3540, "t": "HYLAND"}
+{"id": 3541, "t": "Hyland"}
+{"id": 3542, "t": "Hyland \nTower {{0}}"}
+{"id": 3543, "t": "Koyama Chemical"}
+{"id": 3544, "t": "Legal"}
+{"id": 3545, "t": "Les Ordures"}
+{"id": 3546, "t": "Hafif Kaykay"}
+{"id": 3547, "t": "Hafif Kaykay\n${{0}}"}
+{"id": 3548, "t": "İçki"}
+{"id": 3549, "t": "yükleme rampaları vb. arasında"}
+{"id": 3550, "t": "Lobi ({{0}}/{{1}})"}
+{"id": 3551, "t": "Tıp"}
+{"id": 3552, "t": "En Çok Satın Alınan Ürün"}
+{"id": 3553, "t": "Ofisi"}
+{"id": 3554, "t": "Arazi Kaykayı\n${{0}}"}
+{"id": 3555, "t": "Posta"}
+{"id": 3556, "t": "Puantes"}
+{"id": 3557, "t": "Satın Al (${{0}})"}
+{"id": 3558, "t": "Randy's"}
+{"id": 3559, "t": "Range"}
+{"id": 3560, "t": "Bu bölgenin kilidini açmak için Downtown'daki kartel nüfuzunu"}
+{"id": 3561, "t": "Restoranı"}
+{"id": 3562, "t": "Sauerkraut"}
+{"id": 3563, "t": "Shred"}
+{"id": 3564, "t": "Kaykay\n${{0}}"}
+{"id": 3565, "t": "depo rafları,"}
+{"id": 3566, "t": "Dükkanı"}
+{"id": 3567, "t": "Supreme"}
+{"id": 3568, "t": "Taco"}
+{"id": 3569, "t": "Tattoo"}
+{"id": 3570, "t": "The Butter"}
+{"id": 3571, "t": "The Crimson"}
+{"id": 3572, "t": "Elemanı"}
+{"id": 3573, "t": "Thompson"}
+{"id": 3574, "t": "Threads"}
+{"id": 3575, "t": "Thrifty"}
+{"id": 3576, "t": "Ticklers"}
+{"id": 3577, "t": "seviyesine indir"}
+{"id": 3578, "t": "Toplam Harcama"}
+{"id": 3579, "t": "Tower {{0}}"}
+{"id": 3580, "t": "Belediye"}
+{"id": 3581, "t": "torbalarını atar"}
+{"id": 3582, "t": "v0.{{0}}f13"}
+{"id": 3583, "t": "{{0}} AM"}
+{"id": 3584, "t": "Pazartesi {{0}} AM"}
+{"id": 3585, "t": "{{0}} PM"}
+{"id": 3586, "t": "{{0}}AM-{{1}}PM"}
+{"id": 3587, "t": "{{0}}sa {{1}}dk"}
+{"id": 3588, "t": "{{0}}PM - {{1}}AM"}
+{"id": 3589, "t": "{{0}}PM-{{1}}AM"}
+{"id": 3590, "t": "{{0}}x Item Name for the"}
+{"id": 3591, "t": "{{0}}x Item Name for the porud"}
+{"id": 3592, "t": "{{0}}x Item Name for the porudtc that is"}
+{"id": 3593, "t": "{{0}}x OG Kush"}
+{"id": 3594, "t": "{{0}}x OG Kush \n{{1}}x Sour Diesel"}
+{"id": 3595, "t": "{{0}}x Sour Diesel"}
+{"id": 3596, "t": "• Katkı uygular"}
+{"id": 3597, "t": "• Dolu çöpleri torbalar"}
+{"id": 3598, "t": "• Dolu çöp"}
+{"id": 3599, "t": "• Bitkileri hasat eder"}
