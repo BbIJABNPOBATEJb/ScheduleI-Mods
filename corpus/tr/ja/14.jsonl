@@ -2,8 +2,8 @@
 {"id": 2801, "t": "<color=#FFB43C>クエスト期限間近</color>"}
 {"id": 2802, "t": "<color=green>（<NUM>時間後に期限切れ）</color>"}
 {"id": 2803, "t": "<color=green>（<NUM>分後に期限切れ）</color>"}
-{"id": 2804, "t": "<COUNT>個（名前混在）"}
-{"id": 2805, "t": "<COUNT>個（種類混在）"}
+{"id": 2804, "t": "名前混在 ×<COUNT>"}
+{"id": 2805, "t": "種類混在 ×<COUNT>"}
 {"id": 2806, "t": "<CURRENT_DAY>、<ELAPSED_DAYS>日目"}
 {"id": 2807, "t": "残り<CURRENT_MIX_TIME>分"}
 {"id": 2808, "t": "<DAYS>日<HOURS>時間<MINUTES>分"}

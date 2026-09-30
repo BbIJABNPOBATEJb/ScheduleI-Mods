@@ -73,7 +73,7 @@ public sealed class WorldRatesMod : MelonMod
         }
     }
 
-    public override void OnApplicationQuit() => RatesState.Save();
+    public override void OnApplicationQuit() => RatesState.SaveIfChanged();
 
     private bool HotkeyPressed()
     {

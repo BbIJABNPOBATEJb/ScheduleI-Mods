@@ -1,0 +1,6 @@
+// Strings found untranslated by the in-game tour (tools/run-smoke.ps1 -Mod Polyglot -Scenario tour).
+N
+E
+S
+W
+Purchase ($0)

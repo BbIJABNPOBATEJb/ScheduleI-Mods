@@ -22,6 +22,7 @@ internal static class RatesSmoke
         {
             "inspect" => Inspect(),
             "ui" => Ui(),
+            "income" => Income(),
             _ => null,
         };
         if (body == null)
@@ -130,6 +131,36 @@ internal static class RatesSmoke
         yield return 1.5f;
         yield return DevSmoke.Screenshot("pause_with_button");
         DevSmoke.Finish(true, "ui done");
+    }
+
+    /// <summary>Laundering through the game's own CompleteOperation with income multipliers applied.</summary>
+    private static IEnumerator Income()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        var money = S1.Money.MoneyManager.Instance;
+        var business = UnityQuery.FindInScenes<S1.Property.Business>().First();
+        var complete = HarmonyLib.AccessTools.Method(typeof(S1.Property.Business), "CompleteOperation");
+
+        RatesState.Current.Set(RateCatalog.IncomeLaundering, 2f);
+        RatesState.Current.Set(RateCatalog.IncomeAll, 1.5f);
+        var before = money.onlineBalance;
+        complete.Invoke(business, new object[] { new S1.Property.LaunderingOperation(business, 100f, 0) });
+        yield return 2f;
+        var gained = money.onlineBalance - before;
+        DevSmoke.Log($"Laundering $100 at x2 (all x1.5) -> online balance +{gained}");
+        if (Math.Abs(gained - 300f) > 0.01f)
+            throw new InvalidOperationException($"Expected +300 online balance, got +{gained}");
+        yield return DevSmoke.Screenshot("laundering_notification");
+
+        RatesState.Current.Reset();
+        before = money.onlineBalance;
+        complete.Invoke(business, new object[] { new S1.Property.LaunderingOperation(business, 100f, 0) });
+        yield return 2f;
+        gained = money.onlineBalance - before;
+        DevSmoke.Log($"Laundering $100 vanilla -> +{gained}");
+        if (Math.Abs(gained - 100f) > 0.01f)
+            throw new InvalidOperationException($"Expected +100 at vanilla, got +{gained}");
+        DevSmoke.Finish(true, "income done");
     }
 
     private static void Write(string name, string content)

@@ -1,0 +1,200 @@
+{"id": 3200, "t": "Dobra, szefie, zaraz tam pójdę."}
+{"id": 3201, "t": "No dobra..."}
+{"id": 3202, "t": "Tylko host może zapisać grę"}
+{"id": 3203, "t": "Otwarte dopiero po {0}PM"}
+{"id": 3204, "t": "Potrzebna jest tylko {0} próbka towaru."}
+{"id": 3205, "t": "Otwórz plik"}
+{"id": 3206, "t": "Otwórz drzwiczki pieca"}
+{"id": 3207, "t": "Option"}
+{"id": 3208, "t": "Zamówienie jest za duże dla pojazdu dostawczego"}
+{"id": 3209, "t": "Za duże zamówienie"}
+{"id": 3210, "t": "Zamówienie nie zmieści się w ekwipunku"}
+{"id": 3211, "t": "Wyprzedane"}
+{"id": 3212, "t": "Slot wyjściowy jest pełny"}
+{"id": 3213, "t": "W slocie wyjściowym brak miejsca"}
+{"id": 3214, "t": "Slot wyjściowy jest pełny!"}
+{"id": 3215, "t": "Poza"}
+{"id": 3216, "t": "Po terminie,"}
+{"id": 3217, "t": "Twój pojazd\n(<VEHICLE_NAME> - <OWNED_COLOR>)"}
+{"id": 3218, "t": "Pacific Standard Time"}
+{"id": 3219, "t": "Zapakuj towar"}
+{"id": 3220, "t": "Packaging Container"}
+{"id": 3221, "t": "Packaging station switch to package"}
+{"id": 3222, "t": "Packaging station switch to unpackage"}
+{"id": 3223, "t": "Peephole close"}
+{"id": 3224, "t": "Peephole open"}
+{"id": 3225, "t": "Podnieś: <NAME>"}
+{"id": 3226, "t": "Podnieś: <VALUE>"}
+{"id": 3227, "t": "Umieść tu <color=#4CB0FF>zapakowany towar</color>, a diler sprzeda go przypisanym klientom"}
+{"id": 3228, "t": "Umieść przedmiot do gotowania w slocie składnika"}
+{"id": 3229, "t": "Połóż przedmioty na tacy"}
+{"id": 3230, "t": "Włóż opakowanie do podajnika"}
+{"id": 3231, "t": "Włóż towar do opakowania"}
+{"id": 3232, "t": "Postaw zakład i naciśnij 'gotowe'"}
+{"id": 3233, "t": "Podłóż bombę"}
+{"id": 3234, "t": "Zagraj: <GAME_NAME>"}
+{"id": 3235, "t": "Wygrywa gracz {0}!"}
+{"id": 3236, "t": "Player-prev"}
+{"id": 3237, "t": "Player_<PLAYER_CODE>"}
+{"id": 3238, "t": "Player_<TEXT>"}
+{"id": 3239, "t": "Players"}
+{"id": 3240, "t": "Gracze (<CURRENT_PLAYER_COUNT>/<PLAYER_LIMIT>)"}
+{"id": 3241, "t": "Policja jest w pobliżu!"}
+{"id": 3242, "t": "Wkrótce godzina policyjna"}
+{"id": 3243, "t": "Police icon discover"}
+{"id": 3244, "t": "Police icon end"}
+{"id": 3245, "t": "Police icon start"}
+{"id": 3246, "t": "Popup"}
+{"id": 3247, "t": "Posiadanie substancji kontrolowanych"}
+{"id": 3248, "t": "Posiadanie narkotyku (wysoka szkodliwość)"}
+{"id": 3249, "t": "Posiadanie narkotyku (niska szkodliwość)"}
+{"id": 3250, "t": "Posiadanie narkotyku (średnia szkodliwość)"}
+{"id": 3251, "t": "post combat"}
+{"id": 3252, "t": "potencjalny klient"}
+{"id": 3253, "t": "Potencjalny klient\n<FULL_NAME>"}
+{"id": 3254, "t": "Potencjalny diler\n<FULL_NAME>"}
+{"id": 3255, "t": "Potencjalna wartość: <color=#FFD755><NUM2></color>"}
+{"id": 3256, "t": "Wlej"}
+{"id": 3257, "t": "Wsyp do doniczki (<F>%)"}
+{"id": 3258, "t": "Wlej mieszaninę do kolby"}
+{"id": 3259, "t": "Przelej mieszaninę przez filtr"}
+{"id": 3260, "t": "Wsyp towar do formy (<COUNT>/20)"}
+{"id": 3261, "t": "Wsyp towar do formy ({0}/{1})"}
+{"id": 3262, "t": "Polej wodą wskazane miejsce"}
+{"id": 3263, "t": "Wlewanie płynu..."}
+{"id": 3264, "t": "Preset Name"}
+{"id": 3265, "t": "Naciśnij"}
+{"id": 3266, "t": "Product <RANGE>"}
+{"id": 3267, "t": "Towar musi być zapakowany"}
+{"id": 3268, "t": "Properties"}
+{"id": 3269, "t": "Property Name"}
+{"id": 3270, "t": "Pociągnij dźwignię"}
+{"id": 3271, "t": "Kup Cuke"}
+{"id": 3272, "t": "Zakup w: <SHOP_NAME>"}
+{"id": 3273, "t": "Wciśnij tłok (<F>%)"}
+{"id": 3274, "t": "Quad"}
+{"id": 3275, "t": "Quest complete"}
+{"id": 3276, "t": "Quest enter"}
+{"id": 3277, "t": "Quest entry complete"}
+{"id": 3278, "t": "Quest entry enter"}
+{"id": 3279, "t": "Quest entry exit"}
+{"id": 3280, "t": "Quest exit"}
+{"id": 3281, "t": "Quest name"}
+{"id": 3282, "t": "Quests"}
+{"id": 3283, "t": "Premia za szybką dostawę"}
+{"id": 3284, "t": "Premia za deszcz"}
+{"id": 3285, "t": "Raise"}
+{"id": 3286, "t": "Podnieś kolbę nad palnik"}
+{"id": 3287, "t": "Rank"}
+{"id": 3288, "t": "Rank up close"}
+{"id": 3289, "t": "Rank up open"}
+{"id": 3290, "t": "Zdobądź 10 klientów (<COUNT>/10)"}
+{"id": 3291, "t": "Osiągnij rangę <h1><UNLOCK_RANK></h>, aby wejść do tego obszaru."}
+{"id": 3292, "t": "Ready"}
+{"id": 3293, "t": "Gotowe do rozpoczęcia gotowania"}
+{"id": 3294, "t": "Towar gotowy do odbioru"}
+{"id": 3295, "t": "Gotowe do zakończenia"}
+{"id": 3296, "t": "RealAppId="}
+{"id": 3297, "t": "RealAppId=<TEXT2>"}
+{"id": 3298, "t": "Recycler close"}
+{"id": 3299, "t": "Recycler open"}
+{"id": 3300, "t": "Zmniejsz wpływy kartelu w <E_MAP_REGION> do\n\n\naby odblokować tę dzielnicę"}
+{"id": 3301, "t": "Refresh"}
+{"id": 3302, "t": "Zdejmij nasadkę strzykawki"}
+{"id": 3303, "t": "Render Grabbed Objects"}
+{"id": 3304, "t": "Zamów dostawę do skrytki"}
+{"id": 3305, "t": "Retreat"}
+{"id": 3306, "t": "Przywracanie za <TIME_UNTIL_REVERT> s"}
+{"id": 3307, "t": "Road Nodes"}
+{"id": 3308, "t": "Roller door close"}
+{"id": 3309, "t": "Roller door open"}
+{"id": 3310, "t": "Szybko kręć korbą, aby sprasować towar"}
+{"id": 3311, "t": "Runda {0}\nZgadnij, czy następna karta będzie wyższa, czy niższa od poprzedniej.\nMożesz też zrezygnować i wypłacić wygraną."}
+{"id": 3312, "t": "Runda {0}\nZgadnij, czy następna karta będzie pomiędzy dwiema poprzednimi, czy poza nimi (as liczy się jako {1}).\nMożesz też zrezygnować i wypłacić wygraną."}
+{"id": 3313, "t": "Runda {0}\nZgadnij, czy następna karta będzie czerwona, czy czarna.\nMożesz też zrezygnować i wypłacić wygraną."}
+{"id": 3314, "t": "Runda {0}\nZgadnij kolor następnej karty.\nMożesz też zrezygnować i wypłacić wygraną."}
+{"id": 3315, "t": "Route is null!"}
+{"id": 3316, "t": "Zapisz <TEXT>"}
+{"id": 3317, "t": "Zapisz grę"}
+{"id": 3318, "t": "SaveGame_"}
+{"id": 3319, "t": "Scare All"}
+{"id": 3320, "t": "Przestraszony"}
+{"id": 3321, "t": "Schizo music"}
+{"id": 3322, "t": "Zamknij opakowanie"}
+{"id": 3323, "t": "Wybierz <ObjectType>"}
+{"id": 3324, "t": "Wybierz miejsce docelowe"}
+{"id": 3325, "t": "Wybierz rampę załadunkową"}
+{"id": 3326, "t": "Wybierz kwotę do wpłaty"}
+{"id": 3327, "t": "Wybierz kwotę do wypłaty"}
+{"id": 3328, "t": "Wybierz przedmioty do zamówienia u: <FIRST_NAME>"}
+{"id": 3329, "t": "Wybierz przepis"}
+{"id": 3330, "t": "Wybierz źródło"}
+{"id": 3331, "t": "Wybrane miejsce docelowe nie ma ramp załadunkowych"}
+{"id": 3332, "t": "Rozstaw 2 kolejne namioty do uprawy (<NUM>/2)"}
+{"id": 3333, "t": "Sewer"}
+{"id": 3334, "t": "Ona"}
+{"id": 3335, "t": "Shoot"}
+{"id": 3336, "t": "Sklep"}
+{"id": 3337, "t": "Sickly"}
+{"id": 3338, "t": "Signal"}
+{"id": 3339, "t": "Wypłyń albo utoń"}
+{"id": 3340, "t": "proszę pana"}
+{"id": 3341, "t": "Sit"}
+{"id": 3342, "t": "Śpiący"}
+{"id": 3343, "t": "Snipping"}
+{"id": 3344, "t": "Niezgodny rodzaj ziemi"}
+{"id": 3345, "t": "Ktoś jest w pojeździe"}
+{"id": 3346, "t": "Wybacz, szefie, moja zmiana kończy się o {0}AM."}
+{"id": 3347, "t": "Źródło nie może być takie samo jak miejsce docelowe"}
+{"id": 3348, "t": "Zasiej nasiona"}
+{"id": 3349, "t": "Pik"}
+{"id": 3350, "t": "Tworzenie gracza..."}
+{"id": 3351, "t": "Spryskiwacz jest pusty"}
+{"id": 3352, "t": "Stand up from back"}
+{"id": 3353, "t": "Stand up from front"}
+{"id": 3354, "t": "Włącz palnik"}
+{"id": 3355, "t": "Uruchom mieszalnik"}
+{"id": 3356, "t": "Włącz piec"}
+{"id": 3357, "t": "Stay in Building"}
+{"id": 3358, "t": "Zamieszaj mieszaninę"}
+{"id": 3359, "t": "Zatrzymaj strzałkę"}
+{"id": 3360, "t": "Strokes"}
+{"id": 3361, "t": "Wysyłanie..."}
+{"id": 3362, "t": "Sugerowana cena: <MARKET_VALUE>"}
+{"id": 3363, "t": "Spotkanie z dostawcą\n(<FULL_NAME>)"}
+{"id": 3364, "t": "Zaskoczony"}
+{"id": 3365, "t": "Wyłącz"}
+{"id": 3366, "t": "Włącz"}
+{"id": 3367, "t": "Synchronizacja: <CURRENT_REPLICATION_TASK>..."}
+{"id": 3368, "t": "Synchronizacja..."}
+{"id": 3369, "t": "Stół jest pełny"}
+{"id": 3370, "t": "Porozmawiaj z <NAME_ADDRESS>"}
+{"id": 3371, "t": "Task"}
+{"id": 3372, "t": "Temperatura musi być niższa niż <F>"}
+{"id": 3373, "t": "Test Org"}
+{"id": 3374, "t": "Dzięki, szefie"}
+{"id": 3375, "t": "Dzięki, kolego"}
+{"id": 3376, "t": "Dzięki, masz tu swoje RDX."}
+{"id": 3377, "t": "Dziękuję. Teraz sprawdzę pojazd."}
+{"id": 3378, "t": "Firma osiągnęła już maksymalną wydajność prania pieniędzy."}
+{"id": 3379, "t": "Lichwiarze przyjeżdżają dziś w nocy."}
+{"id": 3380, "t": "Kradzież"}
+{"id": 3381, "t": "Są puste doniczki, ale nie mam ziemi do wsypania."}
+{"id": 3382, "t": "Kolonia grzybów jest gotowa do zbioru, ale nie ma miejsca docelowego albo jest ono pełne."}
+{"id": 3383, "t": "Roślina jest gotowa do zbioru, ale nie ma miejsca docelowego albo jest ono pełne."}
+{"id": 3384, "t": "Doniczka jest gotowa do siewu, ale nie mam do niej nasion."}
+{"id": 3385, "t": "Nie mam teraz nic do roboty."}
+{"id": 3386, "t": "Można już zatrudnić tego dilera. Spotkaj się z nim i zapłać opłatę na start."}
+{"id": 3387, "t": "Ta dostawa dotarła i czeka na rozładunek."}
+{"id": 3388, "t": "Ta dostawa jest w drodze."}
+{"id": 3389, "t": "Ta dostawa czeka, aż zwolni się rampa załadunkowa <LOADING_DOCK_INDEX>."}
+{"id": 3390, "t": "Oto co zabrali:\n<N>"}
+{"id": 3391, "t": "Ten rodzaj opakowania wymaga <color=#FFC73D><QUANTITY>x</color> towaru"}
+{"id": 3392, "t": "Sprzątacze nie mogą korzystać z tego kosza na śmieci."}
+{"id": 3393, "t": "Tile <X>, <Y>"}
+{"id": 3394, "t": "Time"}
+{"id": 3395, "t": "Dzisiaj"}
+{"id": 3396, "t": "Top: <TOP_LID_OPEN>, Bottom: <BOTTOM_LID_OPEN>"}
+{"id": 3397, "t": "Łączny koszt: $<CURRENT_AMOUNT>"}
+{"id": 3398, "t": "Track"}
+{"id": 3399, "t": "Wymiana na RDX"}

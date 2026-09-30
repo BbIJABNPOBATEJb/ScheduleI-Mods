@@ -111,7 +111,8 @@ def load_rows():
 def main() -> None:
     entries = collections.OrderedDict()
     for text, src, obj in load_rows():
-        key = normalize(text)
+        # Miss logs are already normalized by Polyglot; normalizing again would turn {0} into {{0}}.
+        key = text if src.startswith("miss") else normalize(text)
         if not useful(key):
             continue
         e = entries.setdefault(key, {"key": key, "cat": category(src), "ctx": []})

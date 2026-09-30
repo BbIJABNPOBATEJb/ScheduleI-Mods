@@ -98,7 +98,7 @@
 {"id": 3297, "t": "RealAppId=<TEXT2>"}
 {"id": 3298, "t": "Recycler close"}
 {"id": 3299, "t": "Recycler open"}
-{"id": 3300, "t": "<E_MAP_REGION>におけるカルテルの影響力を\n\n\nまで下げると、この地域が解放されます"}
+{"id": 3300, "t": "このエリアを解放するには、<E_MAP_REGION>のカルテルの影響力を\n\n\nまで下げてください"}
 {"id": 3301, "t": "Refresh"}
 {"id": 3302, "t": "シリンジのキャップを外す"}
 {"id": 3303, "t": "Render Grabbed Objects"}

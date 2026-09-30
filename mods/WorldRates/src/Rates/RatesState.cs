@@ -76,6 +76,12 @@ internal static class RatesState
             Current.SaveTo(_settingsFile);
     }
 
+    public static void SaveIfChanged()
+    {
+        if (_dirty)
+            Save();
+    }
+
     public static void SaveAsDefaults() => Current.SaveTo(DefaultsPath);
 
     private static void SwitchWorld(string? path)

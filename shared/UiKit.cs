@@ -36,6 +36,16 @@ internal static class UiKit
 #endif
     }
 
+    /// <summary>Adds a handler, keeping the existing ones.</summary>
+    public static void AddListener(Toggle toggle, Action<bool> action)
+    {
+#if IL2CPP
+        toggle.onValueChanged.AddListener(DelegateSupport.ConvertDelegate<UnityAction<bool>>(action));
+#else
+        toggle.onValueChanged.AddListener(new UnityAction<bool>(action));
+#endif
+    }
+
     public static T? Get<T>(Component c) where T : Component
     {
 #if IL2CPP

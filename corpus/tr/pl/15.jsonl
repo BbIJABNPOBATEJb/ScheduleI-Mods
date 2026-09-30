@@ -1,0 +1,200 @@
+{"id": 3000, "t": "Osiągnięto limit pracowników (<COUNT>/<EMPLOYEE_CAPACITY>)"}
+{"id": 3001, "t": "Wsiądź do pojazdu"}
+{"id": 3002, "t": "Entities are null!"}
+{"id": 3003, "t": "Environmental Brightess"}
+{"id": 3004, "t": "Błąd: <SUBMISSSION_FAILED_MESSSAGE>"}
+{"id": 3005, "t": "Unikanie aresztowania"}
+{"id": 3006, "t": "Event"}
+{"id": 3007, "t": "Premia za przekroczenie jakości"}
+{"id": 3008, "t": "Pełny ekran (wyłączny)"}
+{"id": 3009, "t": "Execute"}
+{"id": 3010, "t": "Opuszczono grę"}
+{"id": 3011, "t": "Exiting to menu"}
+{"id": 3012, "t": "Explosion"}
+{"id": 3013, "t": "Explosion countdown"}
+{"id": 3014, "t": "Eksportuj plik zapisu"}
+{"id": 3015, "t": "Failed to deserialize value '"}
+{"id": 3016, "t": "Failed to find reachable point near:"}
+{"id": 3017, "t": "Nie udało się wygenerować biletu sesji."}
+{"id": 3018, "t": "Nie udało się dołączyć do gry"}
+{"id": 3019, "t": "Niezastosowanie się do poleceń policji"}
+{"id": 3020, "t": "Uczciwa cena: <CUSTOMER_ITEMS_VALUE>"}
+{"id": 3021, "t": "Uczciwa cena: <QUANTITY>"}
+{"id": 3022, "t": "FakeAppId="}
+{"id": 3023, "t": "FakeAppId=<TEXT>"}
+{"id": 3024, "t": "Napełnij konewkę"}
+{"id": 3025, "t": "Spuść wodę"}
+{"id": 3026, "t": "Foot patrol route"}
+{"id": 3027, "t": "Zrezygnuj i odbierz <MULTIPLIED_LOCAL_PLAYER_BET>"}
+{"id": 3028, "t": "Za darmo"}
+{"id": 3029, "t": "z tego"}
+{"id": 3030, "t": "z tej teczki."}
+{"id": 3031, "t": "Pełny ekran w oknie"}
+{"id": 3032, "t": "W pełni wyrośnięte"}
+{"id": 3033, "t": "Gra zapisana!"}
+{"id": 3034, "t": "General Vehicle Graph"}
+{"id": 3035, "t": "Generic"}
+{"id": 3036, "t": "Premia za hojność"}
+{"id": 3037, "t": "Daj darmową próbkę"}
+{"id": 3038, "t": "Grab Screen Pass"}
+{"id": 3039, "t": "Pakowacz"}
+{"id": 3040, "t": "Szczęśliwy"}
+{"id": 3041, "t": "Zbierz roślinę"}
+{"id": 3042, "t": "On"}
+{"id": 3043, "t": "Health"}
+{"id": 3044, "t": "Kier"}
+{"id": 3045, "t": "Height"}
+{"id": 3046, "t": "Witaj, <PLAYER_NAME>"}
+{"id": 3047, "t": "Jej"}
+{"id": 3048, "t": "Hej szefie, podobno Benzies robią interes w <REGION>, <LOCATION_DESCRIPTION>. Może warto to sprawdzić."}
+{"id": 3049, "t": "Hej szefie, daję znać, że mam dla ciebie <CASH> do odebrania."}
+{"id": 3050, "t": "Cześć szefie, czego potrzebujesz?"}
+{"id": 3051, "t": "Wysokie"}
+{"id": 3052, "t": "Wyżej"}
+{"id": 3053, "t": "Jego"}
+{"id": 3054, "t": "Host opuścił grę"}
+{"id": 3055, "t": "Może <QUANTITY>x <NAME> za <PRICE>?"}
+{"id": 3056, "t": "Jak przypisać ci klientów?"}
+{"id": 3057, "t": "Jak hodować grzybki?"}
+{"id": 3058, "t": "Humanoid"}
+{"id": 3059, "t": "Brakuje mi grzybni do wmieszania w przypisane grządki grzybowe."}
+{"id": 3060, "t": "Nie przypisano mi szafki"}
+{"id": 3061, "t": "Nie przypisano mi żadnych stacji"}
+{"id": 3062, "t": "Nie przypisano mi żadnych koszy na śmieci"}
+{"id": 3063, "t": "Nic mi nie przypisano"}
+{"id": 3064, "t": "Nie przypisano mi żadnych stacji ani tras."}
+{"id": 3065, "t": "Jeszcze mi nie zapłacono"}
+{"id": 3066, "t": "Potrzebuję dostawy do skrytki:"}
+{"id": 3067, "t": "Żeby zacząć pracę, któraś z przypisanych mi stacji musi mieć dość towaru i opakowań."}
+{"id": 3068, "t": "Muszę odebrać zarobki <color=#54E717>(<CASH>)</color>"}
+{"id": 3069, "t": "Chcę zamówić dostawę do skrytki"}
+{"id": 3070, "t": "Muszę wymienić się przedmiotami"}
+{"id": 3071, "t": "Muszę cię przenieść do innej nieruchomości"}
+{"id": 3072, "t": "Chcę spłacić dług"}
+{"id": 3073, "t": "Wpłynęło od ciebie <NUM> gotówki."}
+{"id": 3074, "t": "If you're reading this, it means Schedule I can write save files properly - Yay!"}
+{"id": 3075, "t": "Ignore Costs"}
+{"id": 3076, "t": "Imperialne"}
+{"id": 3077, "t": "Importuj plik zapisu"}
+{"id": 3078, "t": "W środku nocy ktoś wyważa drzwi, a ciebie wciągają do bagażnika samochodu..."}
+{"id": 3079, "t": "W środku nocy w pobliżu rozlegają się strzały, ale to nie ty jesteś celem. Reszta nocy mija spokojnie."}
+{"id": 3080, "t": "W użyciu"}
+{"id": 3081, "t": "W użyciu: <USER_NAME>"}
+{"id": 3082, "t": "Używane przez innego gracza"}
+{"id": 3083, "t": "Używane przez pracowników"}
+{"id": 3084, "t": "Zwiększ stawkę"}
+{"id": 3085, "t": "Tego składnika nie można gotować"}
+{"id": 3086, "t": "Inicjalizacja..."}
+{"id": 3087, "t": "Zaszczep worek z ziarnem"}
+{"id": 3088, "t": "Włóż <color=#FFC73D>{0}x</color> liście koki i <color=#FFC73D>{1}x</color> benzynę"}
+{"id": 3089, "t": "Włóż tu towar do spróbowania dla: <NAME_ADDRESS>"}
+{"id": 3090, "t": "Włóż worek z ziarnem + strzykawkę z zarodnikami do slotów"}
+{"id": 3091, "t": "Włóż składniki i wybierz przepis"}
+{"id": 3092, "t": "Włóż zapakowany towar do slotu wyjściowego"}
+{"id": 3093, "t": "Włóż towar + opakowanie do slotów"}
+{"id": 3094, "t": "Włóż towar do opakowania"}
+{"id": 3095, "t": "Włóż towar, aby złożyć ofertę: <NAME_ADDRESS>"}
+{"id": 3096, "t": "Wsyp ziemię"}
+{"id": 3097, "t": "Wbij strzykawkę w worek z ziarnem"}
+{"id": 3098, "t": "Włóż tu oczekiwany towar"}
+{"id": 3099, "t": "Włóż niezapakowany towar i składnik do mieszania"}
+{"id": 3100, "t": "Pomiędzy"}
+{"id": 3101, "t": "Za mało środków"}
+{"id": 3102, "t": "Za mało gotówki"}
+{"id": 3103, "t": "Za mało gotówki. Wypłać pieniądze z bankomatu."}
+{"id": 3104, "t": "Brak środków"}
+{"id": 3105, "t": "Za niskie saldo online"}
+{"id": 3106, "t": "Za niskie saldo online. Wpłać gotówkę w bankomacie."}
+{"id": 3107, "t": "Za mało zaufania"}
+{"id": 3108, "t": "Nieprawidłowy dodatek"}
+{"id": 3109, "t": "Nieprawidłowy rodzaj ziemi"}
+{"id": 3110, "t": "Inventory"}
+{"id": 3111, "t": "Pełny ekwipunek"}
+{"id": 3112, "t": "Pełny ekwipunek"}
+{"id": 3113, "t": "Ekwipunek jest pusty"}
+{"id": 3114, "t": "Nie wszystko zmieści się w ekwipunku. Część przedmiotów trafi na palety."}
+{"id": 3115, "t": "TO SIĘ PO PROSTU NIE UDA"}
+{"id": 3116, "t": "Item is null or quantity is {0}!"}
+{"id": 3117, "t": "Land In Reach"}
+{"id": 3118, "t": "Land Instant"}
+{"id": 3119, "t": "Landing Spots: <CHILD_COUNT>"}
+{"id": 3120, "t": "Ostatni zapis"}
+{"id": 3121, "t": "Ostatni zapis: <SECONDS_SINCE_LAST_SAVE> s temu"}
+{"id": 3122, "t": "Law"}
+{"id": 3123, "t": "Lerp"}
+{"id": 3124, "t": "Light"}
+{"id": 3125, "t": "Light Exposure (<NAME>)"}
+{"id": 3126, "t": "Liquid"}
+{"id": 3127, "t": "Loading as client to tutorial"}
+{"id": 3128, "t": "Loading as client to: <STEAM_ID64>"}
+{"id": 3129, "t": "Rampa załadunkowa <LOADING_DOCK_INDEX>"}
+{"id": 3130, "t": "Loading game: <ORGANISATION_NAME>"}
+{"id": 3131, "t": "Loading Screen"}
+{"id": 3132, "t": "Wczytywanie świata..."}
+{"id": 3133, "t": "Lobby (<PLAYER_COUNT>/4)"}
+{"id": 3134, "t": "Location-based action"}
+{"id": 3135, "t": "Location-based dialogue"}
+{"id": 3136, "t": "Logo.png"}
+{"id": 3137, "t": "LookAtTarget (<NAME>)"}
+{"id": 3138, "t": "Niżej"}
+{"id": 3139, "t": "Opuść kolbę"}
+{"id": 3140, "t": "proszę pani"}
+{"id": 3141, "t": "Main"}
+{"id": 3142, "t": "Main Menu"}
+{"id": 3143, "t": "Zarób co najmniej ${0}, by spłacić lichwiarzy"}
+{"id": 3144, "t": "Upewnij się, że w moim schowku z zapasami jest grzybnia."}
+{"id": 3145, "t": "Upewnij się, że w moim schowku z zapasami są odpowiednie nasiona."}
+{"id": 3146, "t": "Upewnij się, że w moim schowku z zapasami jest ziemia."}
+{"id": 3147, "t": "Zarządzaj: <COUNT>x <TYPE_NAME>"}
+{"id": 3148, "t": "Zarządzaj: <TYPE_NAME>"}
+{"id": 3149, "t": "Zarządzaj firmą"}
+{"id": 3150, "t": "Wartość rynkowa: <color=#54E717><PRODUCT_MARKET_VALUE></color>"}
+{"id": 3151, "t": "Matrices"}
+{"id": 3152, "t": "Menu"}
+{"id": 3153, "t": "Metadata"}
+{"id": 3154, "t": "Metryczne"}
+{"id": 3155, "t": "Mick nie chce teraz robić z tobą interesów."}
+{"id": 3156, "t": "Spryskaj"}
+{"id": 3157, "t": "Spryskaj wskazany obszar"}
+{"id": 3158, "t": "Wmieszaj kawałki w ziemię (<COUNT>/16)"}
+{"id": 3159, "t": "Trwa mieszanie"}
+{"id": 3160, "t": "Mixing station end"}
+{"id": 3161, "t": "Mixing station start"}
+{"id": 3162, "t": "Umiarkowane"}
+{"id": 3163, "t": "Money"}
+{"id": 3164, "t": "Pranie pieniędzy (<PROPERTY_NAME>)"}
+{"id": 3165, "t": "Monitor <I>"}
+{"id": 3166, "t": "Większość legalnych sklepów przyjmuje tylko <h1>płatności kartą</h>, a większość nielegalnych - tylko gotówkę. Gotówkę wpłacisz i wypłacisz w <h1>bankomacie</h>."}
+{"id": 3167, "t": "Mysz i klawiatura"}
+{"id": 3168, "t": "Mouse ScrollWheel"}
+{"id": 3169, "t": "Mouse X"}
+{"id": 3170, "t": "Mouse Y"}
+{"id": 3171, "t": "Mouse: <MOUSE_STATE>, Crosshair: <CROSSHAIR>, Equipping: <EQUIPPING>, Inventory: <INVENTORY>, HUD: <HUD>, Compass: <COMPASS>, Movement: <MOVEMENT>, Look: <CAMERA_LOOK>, Blur: <BLUR>"}
+{"id": 3172, "t": "Grzyby rosną tylko w chłodzie. Użyj <h1>klimatyzatora</h>, żeby utrzymać niską temperaturę."}
+{"id": 3173, "t": "Musi być wypełnione ziemią"}
+{"id": 3174, "t": "Musi być wypełnione podłożem"}
+{"id": 3175, "t": "Musi cię polecić ktoś ze znajomych (<FIRST_NAME>)"}
+{"id": 3176, "t": "Za słabe relacje ze wspólnymi znajomymi"}
+{"id": 3177, "t": "Mój człowiek, <NAME>, może ci załatwić <PRODUCT>. Dałem już twój numer."}
+{"id": 3178, "t": "Odblokowano nowych klientów!"}
+{"id": 3179, "t": "Nowy rysunek graffiti"}
+{"id": 3180, "t": "New Map"}
+{"id": 3181, "t": "New mix box open"}
+{"id": 3182, "t": "Brak grzybów"}
+{"id": 3183, "t": "Brak rośliny"}
+{"id": 3184, "t": "W tej doniczce nie ma rośliny"}
+{"id": 3185, "t": "Brak RDX w ekwipunku"}
+{"id": 3186, "t": "Nie, przepraszam"}
+{"id": 3187, "t": "Nod"}
+{"id": 3188, "t": "Nie twoja sprawa!"}
+{"id": 3189, "t": "Za mało gotówki"}
+{"id": 3190, "t": "Brak miejsca w slocie wyjściowym"}
+{"id": 3191, "t": "Nie jesteś znajomym hosta"}
+{"id": 3192, "t": "Nic nie wybrano"}
+{"id": 3193, "t": "Już dostępne!"}
+{"id": 3194, "t": "Npc inventory doesn't have capacity!"}
+{"id": 3195, "t": "Obiekty"}
+{"id": 3196, "t": "Obstacle<NUM>"}
+{"id": 3197, "t": "of type"}
+{"id": 3198, "t": "Zaproponuj transakcję"}
+{"id": 3199, "t": "Funkcjonariusz <LAST_NAME>"}

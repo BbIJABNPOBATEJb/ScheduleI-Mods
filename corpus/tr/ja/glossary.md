@@ -383,6 +383,17 @@ existing entries: other chunks already use them.
 | Journal | ジャーナル |
 | Drop (supplier's dead drop, "your drop is ready") | デッドドロップ |
 | Debug-only code strings (", forceDir:", "' for variable", "<ACTION_NAME> (No building set)") | copy unchanged |
+| Lethal (effect) | 致死 |
+| Crimes: Assault / Deadly assault / Vehicular assault / Theft / Vandalism | 暴行 / 凶器を用いた暴行 / 車両による暴行 / 窃盗 / 器物損壊 |
+| Crimes: Drug trafficking / Evading arrest / Violating curfew / Brandishing a weapon | 麻薬密売 / 逮捕からの逃走 / 夜間外出禁止令違反 / 武器の誇示 |
+| Possession of low/moderate/high-severity drug | 低/中/高危険度の薬物の所持 |
+| Officer <LAST_NAME> | <LAST_NAME>巡査 |
+| Ma'am / Sir (formal address) | 奥様 / 旦那様 |
+| Ride the Bus: Higher / Lower / Inside / Outside / Red / Black | ハイ / ロー / 内側 / 外側 / 赤 / 黒 |
+| Card suits: Clubs / Diamonds / Hearts / Spades | クラブ / ダイヤ / ハート / スペード |
+| Vehicle colors | 黒 / 白 / 赤 / 黄 / 紫 / ピンク / オレンジ / ネイビー / シアン / 濃い青 / 濃い緑 / ダークグレー / くすんだ赤 / 水色 / 明るい緑 / ライトグレー |
+| Customer standards: Very Low / Low / Moderate / High / Very High | 超低 / 低 / 中 / 高 / 超高 |
+| Effect descriptions (data) | plain form with 。, subject 使用者: "使用者の頭が大きくなる。" |
 
 ## Added from chunks 01–10
 

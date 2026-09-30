@@ -25,6 +25,8 @@ internal static class RatesWindow
         public RateDef Def = null!;
         public Slider Slider = null!;
         public TMP_Text Value = null!;
+        public TMP_Text Label = null!;
+        public RectTransform? Hint;
     }
 
     private static S1.UI.MainMenu.SettingsScreen? _screen;
@@ -34,6 +36,7 @@ internal static class RatesWindow
     private static bool _openWhenPaused;
     private static bool _buildFailed;
     private static bool _syncing;
+    private static int _placeHintsIn;
 
     public static bool IsOpen => _screen != null && _screen.IsOpen;
 
@@ -63,6 +66,8 @@ internal static class RatesWindow
             _openWhenPaused = false;
             Open();
         }
+        if (_placeHintsIn > 0 && --_placeHintsIn == 0)
+            PlaceHints();
     }
 
     public static void Toggle()
@@ -92,6 +97,8 @@ internal static class RatesWindow
         Sync();
         foreach (var scroll in UnityQuery.GetComponentsInChildren<ScrollRect>(_screen, true))
             scroll.verticalNormalizedPosition = 1f;
+        // Labels may be shown translated (e.g. by a translation mod): re-place hints once rendered.
+        _placeHintsIn = 2;
         _screen.Open();
     }
 
@@ -164,6 +171,11 @@ internal static class RatesWindow
             var label = UiKit.InChildren<TMP_Text>(toggle);
             if (label != null)
                 label.text = tabTitles[i];
+            UiKit.AddListener(toggle, on =>
+            {
+                if (on)
+                    _placeHintsIn = 2;
+            });
 
             var layout = UiKit.Find(categories[i].Panel.transform, "Vertical Layout")!;
             if (i < groups.Length)
@@ -224,8 +236,9 @@ internal static class RatesWindow
         label.text = def.Label;
         if (def.IsGroupTotal)
             label.fontStyle |= FontStyles.Bold;
-
         var slider = UiKit.InChildren<Slider>(row.transform)!;
+        FitLabelColumn(row.transform, label, slider);
+
         var value = UiKit.Get<TMP_Text>(slider.transform.Find("Value"))!;
         slider.wholeNumbers = true;
         slider.minValue = Mathf.Round(def.Min / def.Step);
@@ -237,6 +250,7 @@ internal static class RatesWindow
             RatesState.Current.Set(def.Id, v * def.Step);
         });
 
+        RectTransform? hintRect = null;
         if (hintTemplate != null)
         {
             var hint = UnityEngine.Object.Instantiate(hintTemplate.gameObject, label.transform, false);
@@ -248,8 +262,47 @@ internal static class RatesWindow
             rect.anchorMin = rect.anchorMax = new Vector2(0f, 0.5f);
             rect.pivot = new Vector2(0f, 0.5f);
             rect.anchoredPosition = new Vector2(label.preferredWidth + 8f, 0f);
+            hintRect = rect;
         }
-        Rows.Add(new Row { Def = def, Slider = slider, Value = value });
+        Rows.Add(new Row { Def = def, Slider = slider, Value = value, Label = label, Hint = hintRect });
+    }
+
+    /// <summary>
+    /// Limits the label to the space left of the slider (minus room for the hint icon) and lets it
+    /// shrink there, so long translated labels never run into the slider.
+    /// </summary>
+    private static void FitLabelColumn(Transform row, TMP_Text label, Slider slider)
+    {
+        var rowRect = UiKit.Get<RectTransform>(row)!;
+        var labelRect = label.rectTransform;
+        var sliderRect = UiKit.Get<RectTransform>(slider.transform)!;
+        var left = labelRect.localPosition.x + labelRect.rect.xMin;
+        var right = sliderRect.localPosition.x + sliderRect.rect.xMin - HintSpace;
+        var height = labelRect.rect.height;
+        var y = labelRect.localPosition.y + labelRect.rect.center.y;
+        labelRect.anchorMin = labelRect.anchorMax = new Vector2(0f, 0.5f);
+        labelRect.pivot = new Vector2(0f, 0.5f);
+        labelRect.sizeDelta = new Vector2(Mathf.Max(60f, right - left), height);
+        labelRect.anchoredPosition = new Vector2(left - rowRect.rect.xMin, y - rowRect.rect.center.y);
+        label.textWrappingMode = TextWrappingModes.NoWrap;
+        label.fontSizeMax = label.fontSize;
+        label.fontSizeMin = label.fontSize * 0.6f;
+        label.enableAutoSizing = true;
+    }
+
+    private const float HintSpace = 30f;
+
+    /// <summary>Places each hint icon right after its label's rendered text (needs an active, rendered screen).</summary>
+    private static void PlaceHints()
+    {
+        foreach (var row in Rows)
+        {
+            if (row.Hint == null || row.Label == null || !row.Label.isActiveAndEnabled)
+                continue;
+            row.Label.ForceMeshUpdate();
+            var width = Mathf.Min(row.Label.textBounds.size.x, row.Label.rectTransform.rect.width);
+            row.Hint.anchoredPosition = new Vector2(width + 8f, 0f);
+        }
     }
 
     private static void AddBlocker(Transform layout, Transform template)

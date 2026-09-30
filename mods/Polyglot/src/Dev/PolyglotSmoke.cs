@@ -130,6 +130,7 @@ internal static class PolyglotSmoke
     private static IEnumerator Tour()
     {
         var code = string.IsNullOrEmpty(DevSmoke.Arg) ? "ru" : DevSmoke.Arg;
+        File.Delete(Path.Combine(LanguageCatalog.UserRoot, $"untranslated_{code}.txt")); // count only this run's misses
         yield return DevSmoke.WaitUntil(() => UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Menu", 90f, "menu");
         LanguageSwitcher.Apply(code, save: false);
         yield return 3f;
@@ -174,6 +175,19 @@ internal static class PolyglotSmoke
         pause.Pause();
         yield return 1.5f;
         yield return DevSmoke.Screenshot($"{shot++:00}_pause");
+
+        // The WorldRates window, when that mod is installed too.
+        var ratesWindow = AppDomain.CurrentDomain.GetAssemblies()
+            .Select(a => a.GetType("WorldRates.UI.RatesWindow"))
+            .FirstOrDefault(t => t != null);
+        if (ratesWindow != null)
+        {
+            ratesWindow.GetMethod("Open")?.Invoke(null, null);
+            yield return 1.5f;
+            yield return DevSmoke.Screenshot($"{shot++:00}_worldrates");
+            ratesWindow.GetMethod("Toggle")?.Invoke(null, null);
+            yield return 1f;
+        }
         pause.Resume();
         yield return 1f;
 

@@ -1,0 +1,200 @@
+{"id": 3600, "t": "• 商品を梱包"}
+{"id": 3601, "t": "• ゴミを拾う"}
+{"id": 3602, "t": "• 種をまく"}
+{"id": 3603, "t": "• アイテムを運搬"}
+{"id": 3604, "t": "• 大釜を使う"}
+{"id": 3605, "t": "• 化学ステーション"}
+{"id": 3606, "t": "• 乾燥ラックを使う"}
+{"id": 3607, "t": "• ラボオーブンを使う"}
+{"id": 3608, "t": "• 調合ステーションを使う"}
+{"id": 3609, "t": "• 植物に水やり"}
+{"id": 3610, "t": "_GrabPassTransparent"}
+{"id": 3611, "t": "_Worn_Level"}
+{"id": 3612, "t": "ACToggleHintShown"}
+{"id": 3613, "t": "Add soil to grow container"}
+{"id": 3614, "t": "摂取すると、走ることしかできなくなる。"}
+{"id": 3615, "t": "摂取すると、赤毛になる。"}
+{"id": 3616, "t": "エイリアン"}
+{"id": 3617, "t": "All deals completed"}
+{"id": 3618, "t": "反重力"}
+{"id": 3619, "t": "AppliedShroomSpawnCount"}
+{"id": 3620, "t": "Apply additive to grow container"}
+{"id": 3621, "t": "Apply spawn to mushroom bed"}
+{"id": 3622, "t": "栽培師のロッカーを割り当て"}
+{"id": 3623, "t": "化学者のロッカーを割り当て"}
+{"id": 3624, "t": "梱包係のロッカーを割り当て"}
+{"id": 3625, "t": "ロッカーを割り当て"}
+{"id": 3626, "t": "栽培師に割り当て"}
+{"id": 3627, "t": "化学者に割り当て"}
+{"id": 3628, "t": "梱包係に割り当て"}
+{"id": 3629, "t": "ゴミ箱を割り当て"}
+{"id": 3630, "t": "担当"}
+{"id": 3631, "t": "担当のゴミ箱"}
+{"id": 3632, "t": "アスリート"}
+{"id": 3633, "t": "Attend deal"}
+{"id": 3634, "t": "Avatar/Accessories/Feet/Sandals/Sandals"}
+{"id": 3635, "t": "Avatar/Accessories/Feet/Sneakers/Sneakers"}
+{"id": 3636, "t": "Avatar/Equippables/TrashBag"}
+{"id": 3637, "t": "Avatar/Hair/Mohawk/Mohawk"}
+{"id": 3638, "t": "Avatar/Hair/Spiky/Spiky"}
+{"id": 3639, "t": "Avatar/Layers/Bottom/Jeans"}
+{"id": 3640, "t": "Avatar/Layers/Bottom/Jorts"}
+{"id": 3641, "t": "Avatar/Layers/Face/Face_Neutral"}
+{"id": 3642, "t": "Avatar/Layers/Face/Face_SlightSmile"}
+{"id": 3643, "t": "Avatar/Layers/Face/FacialHair_Stubble"}
+{"id": 3644, "t": "Avatar/Layers/Face/OldPersonWrinkles"}
+{"id": 3645, "t": "Avatar/Layers/Top/T-Shirt"}
+{"id": 3646, "t": "Background"}
+{"id": 3647, "t": "Bag trash can"}
+{"id": 3648, "t": "抜け毛"}
+{"id": 3649, "t": "BaseballBatPickedUp"}
+{"id": 3650, "t": "Dan's Hardwareの裏"}
+{"id": 3651, "t": "教会の裏"}
+{"id": 3652, "t": "DowntownのGas-Martの裏"}
+{"id": 3653, "t": "鳥"}
+{"id": 3654, "t": "黒"}
+{"id": 3655, "t": "Body search"}
+{"id": 3656, "t": "BodySearchTutorialDone"}
+{"id": 3657, "t": "BodysearchTutorialDone"}
+{"id": 3658, "t": "マッシュルームカット"}
+{"id": 3659, "t": "輝く瞳"}
+{"id": 3660, "t": "Bruiser"}
+{"id": 3661, "t": "お団子"}
+{"id": 3662, "t": "丸刈り"}
+{"id": 3663, "t": "Call Police"}
+{"id": 3664, "t": "高カロリー"}
+{"id": 3665, "t": "カルテルからのメモ"}
+{"id": 3666, "t": "使用者の周りに霧が立ち込める。"}
+{"id": 3667, "t": "使用者の髪が抜け落ちる。"}
+{"id": 3668, "t": "摂取後まもなく、使用者が爆発する。"}
+{"id": 3669, "t": "使用者が屁とクソを垂れ流しにする。"}
+{"id": 3670, "t": "使用者の目から光が放たれる。"}
+{"id": 3671, "t": "摂取後まもなく、全臓器不全を引き起こす。"}
+{"id": 3672, "t": "使用者の動きが予測不能になり、視界がわずかに乱れる。"}
+{"id": 3673, "t": "Cheetah"}
+{"id": 3674, "t": "小袋をクリックして封をする"}
+{"id": 3675, "t": "ClipboardAcquired"}
+{"id": 3676, "t": "短い丸刈り"}
+{"id": 3677, "t": "カーテンを閉める"}
+{"id": 3678, "t": "シャッターを閉める"}
+{"id": 3679, "t": "CloudController"}
+{"id": 3680, "t": "Cock"}
+{"id": 3681, "t": "Combat"}
+{"id": 3682, "t": "ConfirmationMenu"}
+{"id": 3683, "t": "使用者の頭と首がかなり大きくなる。"}
+{"id": 3684, "t": "摂取"}
+{"id": 3685, "t": "Consume Product"}
+{"id": 3686, "t": "摂取すると即座に発作が起きる。"}
+{"id": 3687, "t": "摂取すると、使用者の目が青くなる。"}
+{"id": 3688, "t": "ContainedTrashItems"}
+{"id": 3689, "t": "ContextMenu"}
+{"id": 3690, "t": "Cowering"}
+{"id": 3691, "t": "Cross"}
+{"id": 3692, "t": "Customer attend deal"}
+{"id": 3693, "t": "シアン"}
+{"id": 3694, "t": "一つ目"}
+{"id": 3695, "t": "使用者の肝臓を傷め、嘔吐を引き起こす。"}
+{"id": 3696, "t": "濃い青"}
+{"id": 3697, "t": "濃い緑"}
+{"id": 3698, "t": "ダークグレー"}
+{"id": 3699, "t": "Dead"}
+{"id": 3700, "t": "死に顔"}
+{"id": 3701, "t": "Default"}
+{"id": 3702, "t": "Dinkler"}
+{"id": 3703, "t": "混乱"}
+{"id": 3704, "t": "Dispose trash bag"}
+{"id": 3705, "t": "ダブルお団子"}
+{"id": 3706, "t": "くすんだ赤"}
+{"id": 3707, "t": "卵"}
+{"id": 3708, "t": "使用者が帯電し、放電のアークで周囲の人間を感電させる。"}
+{"id": 3709, "t": "帯電"}
+{"id": 3710, "t": "Empty trash grabber"}
+{"id": 3711, "t": "活力"}
+{"id": 3712, "t": "テキストを入力"}
+{"id": 3713, "t": "Equip"}
+{"id": 3714, "t": "爆発性"}
+{"id": 3715, "t": "Face target behaviour"}
+{"id": 3716, "t": "Finish lab oven"}
+{"id": 3717, "t": "Fire1"}
+{"id": 3718, "t": "Fire2"}
+{"id": 3719, "t": "Fire3"}
+{"id": 3720, "t": "FixerGreeted"}
+{"id": 3721, "t": "フラットベッドトラック"}
+{"id": 3722, "t": "Flee"}
+{"id": 3723, "t": "FluffyUnderware.Curvy.CurvySplineSegment, Assembly-CSharp-firstpass, Version={0}, Culture=neutral, PublicKeyToken=null"}
+{"id": 3724, "t": "FluffyUnderware.Curvy.Generator.CGMeshResource, Assembly-CSharp-firstpass, Version={0}, Culture=neutral, PublicKeyToken=null"}
+{"id": 3725, "t": "使用者の精神を集中させる。"}
+{"id": 3726, "t": "霧"}
+{"id": 3727, "t": "Follow Schedule"}
+{"id": 3728, "t": "Foot patrol"}
+{"id": 3729, "t": "額の十字架"}
+{"id": 3730, "t": "前髪ありポニーテール"}
+{"id": 3731, "t": "FungalPhilUnlocked"}
+{"id": 3732, "t": "赤毛病"}
+{"id": 3733, "t": "発光"}
+{"id": 3734, "t": "グラフィティ"}
+{"id": 3735, "t": "銃と弾薬"}
+{"id": 3736, "t": "Harvest mushroom bed"}
+{"id": 3737, "t": "Harvest pot"}
+{"id": 3738, "t": "HarvestedPlantCount"}
+{"id": 3739, "t": "HasExitedRV"}
+{"id": 3740, "t": "ハート"}
+{"id": 3741, "t": "Heavy flinch"}
+{"id": 3742, "t": "HeavyRain"}
+{"id": 3743, "t": "どうも、Rayです。町で物件や事業の購入をお考えなら、ぜひ私にお任せください。Ray's Realty（市庁舎のすぐ南）にお越しいただければ、販売中の物件をご覧いただけます。"}
+{"id": 3744, "t": "高めのお団子"}
+{"id": 3745, "t": "HighestValueProduct"}
+{"id": 3746, "t": "Hotbox"}
+{"id": 3747, "t": "Hounddog"}
+{"id": 3748, "t": "Hyland Medical"}
+{"id": 3749, "t": "使用者に生物発光を与える。"}
+{"id": 3750, "t": "西の工事現場"}
+{"id": 3751, "t": "使用者の頭が大きくなる。"}
+{"id": 3752, "t": "使用者の活力を高める。"}
+{"id": 3753, "t": "IncrementalReloadEnd"}
+{"id": 3754, "t": "IncrementalReloadInsert"}
+{"id": 3755, "t": "IncrementalReloadStart"}
+{"id": 3756, "t": "使用者をわずかに落ち着かせる。"}
+{"id": 3757, "t": "使用者に幻覚と予測不能な行動を引き起こす。"}
+{"id": 3758, "t": "使用者に強い眠気を引き起こす。"}
+{"id": 3759, "t": "使用者に軽い多幸感をもたらす。"}
+{"id": 3760, "t": "使用者にパラノイアを引き起こす。"}
+{"id": 3761, "t": "InMotelRoom"}
+{"id": 3762, "t": "InocculatedGrainBagCount"}
+{"id": 3763, "t": "Input hint tutorial"}
+{"id": 3764, "t": "InputHintsTutorialDone"}
+{"id": 3765, "t": "InsideBungalow"}
+{"id": 3766, "t": "Intro"}
+{"id": 3767, "t": "InventorySoil"}
+{"id": 3768, "t": "InventorySpeedGrow"}
+{"id": 3769, "t": "使用者の性別が反転する。"}
+{"id": 3770, "t": "使用者の肌の色が反転する。"}
+{"id": 3771, "t": "InWarehouse"}
+{"id": 3772, "t": "IsDemo"}
+{"id": 3773, "t": "IsServer"}
+{"id": 3774, "t": "ItemAmountSelectionTutorialDone"}
+{"id": 3775, "t": "厄介なことになってるらしいな。携帯で話すのはやめておいた方がいい。公衆電話を探せ。\n- U.N."}
+{"id": 3776, "t": "ジェンナー化"}
+{"id": 3777, "t": "JeremyGreeted"}
+{"id": 3778, "t": "LaunderingOperationsCompleted"}
+{"id": 3779, "t": "LaunderingOperationsStarted"}
+{"id": 3780, "t": "下剤"}
+{"id": 3781, "t": "致死"}
+{"id": 3782, "t": "LifetimeEarnings"}
+{"id": 3783, "t": "LifetimeEmployeesRecruited"}
+{"id": 3784, "t": "水色"}
+{"id": 3785, "t": "明るい緑"}
+{"id": 3786, "t": "ライトグレー"}
+{"id": 3787, "t": "液体Baby Blue"}
+{"id": 3788, "t": "液体Biker Crank"}
+{"id": 3789, "t": "液体Glass"}
+{"id": 3790, "t": "ListedProductsCount"}
+{"id": 3791, "t": "ロングカール"}
+{"id": 3792, "t": "面長"}
+{"id": 3793, "t": "ロングオールバック"}
+{"id": 3794, "t": "低めのお団子"}
+{"id": 3795, "t": "MagazineReload"}
+{"id": 3796, "t": "MainCamera"}
+{"id": 3797, "t": "使用者を空腹にする。"}
+{"id": 3798, "t": "使用者が耐えがたいほど臭くなる。"}
+{"id": 3799, "t": "Man Checkpoint"}

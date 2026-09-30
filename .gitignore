@@ -19,3 +19,4 @@ corpus/raw/
 corpus/chunks/
 corpus/source.jsonl
 corpus/tr/*/_issues.jsonl
+dist/

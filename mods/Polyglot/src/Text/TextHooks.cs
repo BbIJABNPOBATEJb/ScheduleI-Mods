@@ -174,17 +174,9 @@ internal static class TextHooks
     {
         private static void Prefix(UnityEngine.UI.Text __instance, out string? __state)
         {
-            __state = null;
-            if (!Translator.Active)
+            __state = LegacyText.SwapIn(__instance);
+            if (__state == null)
                 return;
-            var original = LegacyText.Get(__instance);
-            if (string.IsNullOrEmpty(original) || LegacyText.IsInputText(__instance))
-                return;
-            var translated = Translator.Translate(original);
-            if (translated == original)
-                return;
-            __state = original;
-            LegacyText.Set(__instance, translated);
             // Best fit only shrinks when the text doesn't fit, never below 60% of the designed size.
             if (!__instance.resizeTextForBestFit)
             {
@@ -195,11 +187,7 @@ internal static class TextHooks
             }
         }
 
-        private static void Postfix(UnityEngine.UI.Text __instance, string? __state)
-        {
-            if (__state != null)
-                LegacyText.Set(__instance, __state);
-        }
+        private static void Finalizer(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
     }
 
     /// <summary>Layout (ContentSizeFitter etc.) must measure the translated text, not the English one.</summary>
@@ -207,24 +195,29 @@ internal static class TextHooks
     private static class LegacyPreferredWidthPatch
     {
         private static void Prefix(UnityEngine.UI.Text __instance, out string? __state) => __state = LegacyText.SwapIn(__instance);
-        private static void Postfix(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
+        private static void Finalizer(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
     }
 
     [HarmonyPatch(typeof(UnityEngine.UI.Text), nameof(UnityEngine.UI.Text.preferredHeight), MethodType.Getter)]
     private static class LegacyPreferredHeightPatch
     {
         private static void Prefix(UnityEngine.UI.Text __instance, out string? __state) => __state = LegacyText.SwapIn(__instance);
-        private static void Postfix(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
+        private static void Finalizer(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
     }
 
     private static class LegacyText
     {
         private static readonly Dictionary<int, bool> InputCache = new();
+        // Texts currently holding their translation (nested layout calls must not translate it again).
+        private static readonly HashSet<int> Swapped = new();
 
         /// <summary>Puts the translation into m_Text; returns the original to restore, or null.</summary>
         public static string? SwapIn(UnityEngine.UI.Text text)
         {
             if (!Translator.Active)
+                return null;
+            var id = text.GetInstanceID();
+            if (Swapped.Contains(id))
                 return null;
             var original = Get(text);
             if (string.IsNullOrEmpty(original) || IsInputText(text))
@@ -232,14 +225,17 @@ internal static class TextHooks
             var translated = Translator.Translate(original);
             if (translated == original)
                 return null;
+            Swapped.Add(id);
             Set(text, translated);
             return original;
         }
 
         public static void SwapOut(UnityEngine.UI.Text text, string? original)
         {
-            if (original != null)
-                Set(text, original);
+            if (original == null)
+                return;
+            Set(text, original);
+            Swapped.Remove(text.GetInstanceID());
         }
 
 #if !IL2CPP

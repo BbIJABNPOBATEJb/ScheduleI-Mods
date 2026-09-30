@@ -340,3 +340,38 @@ Bardzo niskie / Niskie / Umiarkowane / Wysokie / Bardzo wysokie.
 | Loan sharks | lichwiarze |
 | Time abbreviations with numbers | "{0} godz.", "{0} min", "<NUM> dni" (avoid numeral agreement) |
 | Body shop | warsztat |
+| Vehicle colors (nouns, capitalized) | Black → Czerń; White → Biel; Red → Czerwień; Dull Red → Matowa czerwień; Yellow → Żółć; Orange → Pomarańcz; Pink → Róż; Purple → Fiolet; Navy → Granat; Cyan → Cyjan; Dark/Light Blue → Ciemny/Jasny błękit; Dark/Light Green → Ciemna/Jasna zieleń; Dark/Light Grey → Ciemna/Jasna szarość |
+| "Owned Vehicle\n(<OWNED_COLOR> <VEHICLE_NAME>)" | "Twój pojazd\n(<VEHICLE_NAME> - <OWNED_COLOR>)" |
+| Face expressions / emotions (masc. adjectives) | Angry → Zły; Annoyed → Zirytowany; Cheery → Radosny; Concerned → Zaniepokojony; Happy → Szczęśliwy; Scared → Przestraszony; Surprised → Zaskoczony; Sleeping → Śpiący |
+| Sir / Ma'am (Herbert's formal_address substitution) | proszę pana / proszę pani (lowercase, vocative after a comma) |
+| RTB (Ride the Bus) answers | Higher/Lower → Wyżej/Niżej; Inside/Outside → Pomiędzy/Poza; Red/Black → Czerwień/Czerń |
+| Consume descriptions | Consume → Spożyj; Smoke → Zaciągnij się; Snort → Wciągnij |
+| Uncle Nelson note signature "- U.N." | "- W.N." |
+| Code-only internal names (behaviour names, variables, anim triggers, save folder names, music tracks, asset paths, JSON) | copy unchanged — verified against decompiled code |
+
+## Added while translating chunks 01–10
+
+| English | Polish |
+|---|---|
+| Uncle Nelson / "your Uncle" | wujek Nelson (inflected: "do wujka Nelsona", "z wujkiem Nelsonem"); "twój wujek" |
+| More product properties (effects) | Addictive → Uzależniający; Cerebral → Cerebralny; Dissociative → Dysocjacyjny; Hallucinogenic → Halucynogenny; Highly Addictive → Silnie uzależniający; Mild → Łagodny; Overwhelming → Przytłaczający; Physical → Fizyczny; Potent → Mocny; Psychedelic → Psychodeliczny; Stimulating → Stymulujący; Uplifting → Podnoszący na duchu |
+| Hardware store | sklep budowlany ("w sklepie budowlanym") |
+| Real estate agent / Dealership (cars) | agent nieruchomości / salon samochodowy |
+| Payphone | automat telefoniczny |
+| Management clipboard | podkładka (do zarządzania) |
+| Storage rack / Storage closet / Wall shelf | regał (magazynowy) / szafa magazynowa / półka ścienna; "{0}-tier" → "{0}-poziomowy" |
+| Trash can / Dumpster / Trash grabber | kosz na śmieci / kontener na śmieci / chwytak do śmieci |
+| Liquid meth, "X (Liquid)" | płynna meta; "Baby Blue (w płynie)", "Meta (w płynie)" |
+| Pseudo quality variants | Pseudo niskiej jakości / Pseudo wysokiej jakości |
+| Dealer's cut / signing fee | działka / opłata na start ("<CUT> działki") |
+| Blackjack buttons | Hit → Dobierz; Stand → Pas; PUSH → REMIS |
+| "(Owned)" after a property | "(własność)" — "Kamper (własność)" |
+| Loading dock / Delivery bay | rampa załadunkowa / strefa dostaw |
+| Skateboard / Cruiser | deskorolka / Cruiser (model name) |
+| "the docks" (generic, lowercase) vs Docks (region) | "w dokach" in descriptions; region name "Docks" unchanged ("Magazyn w Docks") |
+| Dead-drop / deal location descriptions | lowercase prepositional phrases: "za bankiem", "w zaułku za pralnią", "na boisku do koszykówki"; capitalized LocationName: "Za bankiem" |
+| Quest steps "Buy {0}x item" | "Kup {0}x woreczek", "Kup {0}x ziemię" (accusative noun after "{0}x") |
+| Customer "Deal?" / "Deal" (choice) | "Stoi?" / "Umowa stoi" |
+| `<NAME>` (friend of a customer) | keep uninflected, gender-neutral constructions: "Znam kogoś, komu twój towar może się spodobać: <NAME>." |
+| `<Employee>` (literal tag in locker subtitle) | keep exactly: "<Employee> będzie pobierać dniówkę z tej teczki." |
+| Internal/debug names (ColorFont keys, variables) | copy unchanged: Deselected, Selected, Future, ExpiringSoon, FadedText, *DropItemCount, Generic Dialogue |

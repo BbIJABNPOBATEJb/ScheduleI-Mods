@@ -30,10 +30,23 @@ internal sealed class TranslationTable
         ("<color=blue>", "<color=#76C9FF>"),
     };
 
+    // Customer.RecommendCustomer swaps "they"/"them" for the friend's pronouns before display.
+    private static readonly (string They, string Them)[] Pronouns = { ("he", "him"), ("she", "her") };
+
     public void Add(string key, string value)
     {
         if (key.Length == 0 || value.Length == 0)
             return;
+        AddWithColorVariant(key, value);
+        if (key.Contains("they") || key.Contains("them"))
+        {
+            foreach (var (they, them) in Pronouns)
+                AddWithColorVariant(key.Replace("they", they).Replace("them", them), value);
+        }
+    }
+
+    private void AddWithColorVariant(string key, string value)
+    {
         AddOne(key, value);
 
         // Also register the variant the player actually sees on screen.
@@ -44,7 +57,7 @@ internal sealed class TranslationTable
             shownKey = shownKey.Replace(name, shown);
             shownValue = shownValue.Replace(name, shown);
         }
-        if (!ReferenceEquals(shownKey, key) && shownKey != key)
+        if (shownKey != key)
             AddOne(shownKey, shownValue);
     }
 

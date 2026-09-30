@@ -10,7 +10,7 @@ import pathlib
 import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
-from build_corpus import normalize, useful  # noqa: E402
+from build_corpus import normalize  # noqa: E402
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 
@@ -28,7 +28,7 @@ def main() -> None:
         if not line or line.startswith("//"):
             continue
         key = normalize(line)
-        if useful(key) and key not in known:
+        if key and key not in known:  # hand-written lists: no heuristic filtering
             known.add(key)
             new.append(key)
     if not new:
