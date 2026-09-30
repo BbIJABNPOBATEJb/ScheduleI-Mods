@@ -9,7 +9,7 @@ using WorldRates.UI;
 using S1Shared.Dev;
 #endif
 
-[assembly: MelonInfo(typeof(WorldRates.WorldRatesMod), WorldRates.ModInfo.Name, WorldRates.ModInfo.Version, WorldRates.ModInfo.Author)]
+[assembly: MelonInfo(typeof(WorldRates.WorldRatesMod), WorldRates.ModInfo.Name, WorldRates.ModInfo.Version, WorldRates.ModInfo.Author, WorldRates.ModInfo.DownloadLink)]
 [assembly: MelonGame("TVGS", "Schedule I")]
 [assembly: HarmonyDontPatchAll]
 

@@ -1,0 +1,7 @@
+{
+    "name": "WorldRates",
+    "description": "Server-style rates like Rust: XP, income and storage multipliers per source and per world, set live in a native in-game window (pause menu or F10). Presets x1-x10. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}

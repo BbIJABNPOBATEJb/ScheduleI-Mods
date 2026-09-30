@@ -10,7 +10,7 @@ using UnityEngine;
 using S1Shared.Dev;
 #endif
 
-[assembly: MelonInfo(typeof(Polyglot.PolyglotMod), Polyglot.ModInfo.Name, Polyglot.ModInfo.Version, Polyglot.ModInfo.Author)]
+[assembly: MelonInfo(typeof(Polyglot.PolyglotMod), Polyglot.ModInfo.Name, Polyglot.ModInfo.Version, Polyglot.ModInfo.Author, Polyglot.ModInfo.DownloadLink)]
 [assembly: MelonGame("TVGS", "Schedule I")]
 [assembly: HarmonyDontPatchAll]
 

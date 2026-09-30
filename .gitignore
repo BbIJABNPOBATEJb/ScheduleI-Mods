@@ -20,3 +20,6 @@ corpus/chunks/
 corpus/source.jsonl
 corpus/tr/*/_issues.jsonl
 dist/
+
+# Translation work files (ids -> text); the built language files in mods/Polyglot/languages are the source of truth
+corpus/tr/*/[0-9]*.jsonl

@@ -1,104 +1,82 @@
 # Schedule I Mods
 
-Моды для **Schedule I** на [MelonLoader](https://github.com/LavaGang/MelonLoader) 0.7.3+.
-Каждый мод собирается под обе ветки игры из одного кода:
+[MelonLoader](https://github.com/LavaGang/MelonLoader) mods for [Schedule I](https://store.steampowered.com/app/3164500/Schedule_I/).
+Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 
-| Конфигурация | Ветка Steam | Рантайм | Файл |
+| | Mod | What it does |
+|---|---|---|
+| <img src="mods/Polyglot/assets/icon.png" width="64"> | **[Polyglot](mods/Polyglot)** | Play the whole game in 13 languages and switch between them instantly, in game. |
+| <img src="mods/WorldRates/assets/icon.png" width="64"> | **[World Rates](mods/WorldRates)** | Server-style rates like on Rust servers: XP, income and storage multipliers, tuned per world in a native in-game window. |
+
+<p>
+  <img src="docs/images/polyglot-language-picker.jpg" width="49%">
+  <img src="docs/images/worldrates-experience.jpg" width="49%">
+</p>
+
+## Installation
+
+1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) **0.7.3** (or 0.7.2/0.7.0 — 0.7.1 is known to break Schedule I mods).
+2. Download the mod from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases) — pick the ZIP for your game branch:
+   - `IL2CPP` — the default Steam branch (and `beta`).
+   - `Mono` — the `alternate` and `alternate-beta` branches.
+3. Extract it into the game folder, so the DLL ends up in `Schedule I/Mods/`.
+
+Don't install both runtime builds of a mod at the same time. The mods are independent of each other
+and work together (Polyglot also translates the World Rates window).
+
+Tested with Schedule I **0.4.6f13** and MelonLoader **0.7.3**.
+
+## Building from source
+
+Requirements: .NET SDK 6 or newer, the game with MelonLoader installed and started once
+(MelonLoader generates the IL2CPP assemblies the mods compile against).
+
+1. Copy `local.build.props.example` to `local.build.props` and set the game paths
+   (`MonoGamePath` is optional — only needed for the Mono builds).
+2. Build a mod for a branch:
+   ```bash
+   dotnet build mods/Polyglot/Polyglot.csproj -c Il2Cpp
+   dotnet build mods/WorldRates/WorldRates.csproj -c Mono
+   ```
+   With `AutomateLocalDeployment=true` the DLL is copied into the game's `Mods` folder.
+3. Release packages: `pwsh tools/package.ps1` → `dist/` (GitHub/Nexus ZIPs per branch and Thunderstore packages).
+
+| Configuration | Game branch | Runtime | Output |
 |---|---|---|---|
-| `Il2Cpp` | main (по умолчанию) | IL2CPP, `net6.0` | `<Mod>_Il2Cpp.dll` |
+| `Il2Cpp` | default | IL2CPP, `net6.0` | `<Mod>_Il2Cpp.dll` |
 | `Mono` | `alternate` | Mono, `netstandard2.1` | `<Mod>_Mono.dll` |
-| `Il2CppDev` / `MonoDev` | — | + встроенный тестовый стенд | не для публикации |
+| `Il2CppDev` / `MonoDev` | — | + in-game smoke-test harness | not for release |
 
-## Моды
-
-### Polyglot — много языков в одном моде
-
-- Перевод всей игры: интерфейс, предметы, квесты, диалоги, звонки, подсказки, уведомления.
-- Языки: English, Русский, Українська, Deutsch, Français, Español, Português (Brasil), Italiano,
-  Polski, Türkçe, 简体中文, 日本語, 한국어.
-- Переключение на лету, без перезапуска: **Настройки → Экран → Язык** (родной выпадающий список игры)
-  или клавиша **F9** (перебор языков).
-- Шрифты в стиле игры: кириллица, расширенная латиница и греческий рисуются тем же Open Sans,
-  что и оригинал; для CJK берутся системные шрифты Windows.
-- Перевод идёт в момент отрисовки: игра продолжает видеть свои английские строки, поэтому логика
-  не ломается, а смена языка мгновенная.
-- Свои переводы и правки: `<игра>/UserData/Polyglot/languages/<код>/*.txt` (перекрывают встроенные;
-  новая папка с новым кодом = новый язык). С `LogUntranslated = true` мод собирает непереведённые
-  строки в `UserData/Polyglot/untranslated_<код>.txt` — готовый файл для дозаполнения.
-
-Формат файла перевода:
-
-```
-// комментарий
-@name=Русский
-Continue=Продолжить
-Day {0}=День {0}                       {0},{1}… — числа
-It'll cost <PRICE>.=Это будет стоить <PRICE>.   плейсхолдеры игры подставляются обратно
-r:"^Sold (.+) to (.+)$"=Продано: $1 → $2     регулярки; группы тоже переводятся
-```
-
-### WorldRates — рейты мира, как на серверах Rust
-
-- **Опыт**: общий множитель и отдельно за каждый источник — свои сделки, сделки дилеров, пробники,
-  встречные предложения, урожай, новые миксы, квесты, побег от полиции, граффити, карманные кражи, прочее.
-- **Доход**: общий и по источникам — свои сделки (с бонусами), продажи дилеров, отмывание, ломбард, переработка.
-- **Хранилища**: стеллажи/полки/сейфы и багажники своих машин ×1–×4 (до 20 слотов, лимит интерфейса игры).
-- **Пресеты**: ×1 / ×2 / ×3 / ×5 / ×10 в один клик, «использовать для новых миров».
-- Окно встроено в игру (клон родного экрана настроек): меню паузы → **World Rates** или **F10**.
-  Всё применяется сразу, без перезапуска; настройки хранятся для каждого мира отдельно.
-- Предметы в хранилищах никогда не удаляются: уменьшение убирает только пустые слоты, а загрузка
-  сохранения расширяет хранилище под сохранённые предметы.
-
-Подробнее: [mods/Polyglot/README.md](mods/Polyglot/README.md), [mods/WorldRates/README.md](mods/WorldRates/README.md).
-
-## Релиз
+### In-game smoke tests
 
 ```bash
-pwsh tools/package.ps1
+pwsh tools/run-smoke.ps1 -Mod Polyglot -Scenario tour -Arg de -Runtime Il2Cpp
+pwsh tools/run-smoke.ps1 -Mod WorldRates -Scenario ui -Runtime Mono
 ```
 
-Собирает `dist/<Mod>-<версия>-IL2CPP.zip` и `-Mono.zip` (внутри `Mods/<Mod>_<рантайм>.dll`).
-Ставить только архив своей ветки игры: MelonLoader пытается загрузить все dll из `Mods`.
+The script builds the Dev configuration, starts the game with a **disposable** world copied from
+`StreamingAssets/DefaultSave` into `test-runs/` (your save slots are never touched), runs the
+scenario, takes screenshots and quits. Results: `test-runs/<run>/result.txt`, `smoke.log`,
+`*.png`, `MelonLoader.log`. Scenarios live in `mods/*/src/Dev/`.
 
-## Разработка
-
-1. .NET SDK 6+, MelonLoader 0.7.3 в папке игры, игру один раз запустить (генерация Il2Cpp-сборок).
-2. `local.build.props.example` → `local.build.props`, прописать пути (Mono-ветка опциональна).
-3. Сборка: `dotnet build mods/Polyglot/Polyglot.csproj -c Il2Cpp` (с `AutomateLocalDeployment=true`
-   dll копируется в `<игра>/Mods`). В Rider — выбрать конфигурацию в тулбаре.
-
-### Автотесты в игре
-
-```bash
-pwsh tools/run-smoke.ps1 -Mod Polyglot -Scenario inspect -Runtime Il2Cpp
-```
-
-Собирает Dev-версию, запускает игру, грузит **одноразовый** мир из `StreamingAssets/DefaultSave`
-в папку `test-runs/…` (слоты сохранений игрока не трогаются), выполняет сценарий, делает
-скриншоты и выходит. Результат: `test-runs/<run>/result.txt`, `smoke.log`, `*.png`, `MelonLoader.log`.
-
-### Корпус и переводы
+### Repository layout
 
 ```
-tools/corpus/extract_code.py       строки и шаблоны из декомпилированного кода игры
-Polyglot Dev-сценарии corpus,       дамп всех сериализованных строк (Mono-ветка, рефлексия)
-  corpus-tutorial
-tools/corpus/build_corpus.py       объединение, фильтрация, нормализация чисел → corpus/source.jsonl
-tools/corpus/make_chunks.py        разбиение на пачки для перевода
-tools/corpus/TRANSLATING.md        правила перевода (плейсхолдеры, теги, имена собственные, тон)
-tools/corpus/merge_translations.py валидация и сборка mods/Polyglot/languages/<код>.txt
+Directory.Build.props/.targets   shared build: configurations, game references, deployment
+shared/                          cross-runtime helpers linked into every mod (IL2CPP/Mono differences)
+shared/Dev/                      smoke-test harness (Dev builds only)
+mods/Polyglot/                   language mod: src/, languages/, fonts/, assets/
+mods/WorldRates/                 rates mod: src/, assets/
+tools/                           smoke-test runner, packaging, font and translation tooling
+docs/images/                     screenshots
 ```
 
-### Структура
+## Contributing
 
-```
-Directory.Build.props/.targets   общие настройки сборки, ссылки на игру, деплой
-shared/                          общий код (кросс-рантайм, поиск объектов, корутины)
-shared/Dev/                      тестовый стенд (только Dev-сборки)
-mods/Polyglot/                   мод языков: src/, languages/, fonts/ (Open Sans, Caveat — SIL OFL)
-tools/                           автотесты, корпус, сборка шрифтов
-```
+Bug reports and translation fixes are welcome — see [Polyglot → Translations](mods/Polyglot/README.md#translations)
+for how translation files work.
 
-## Лицензии
+## License
 
-Шрифты Open Sans и Caveat — SIL Open Font License 1.1 (`mods/Polyglot/fonts/OFL*.txt`).
+[MIT](LICENSE). Fonts bundled with Polyglot are under the SIL Open Font License, see
+[THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md). Not affiliated with TVGS.

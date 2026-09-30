@@ -1,0 +1,7 @@
+{
+    "name": "Polyglot",
+    "description": "Play Schedule I in 13 languages (RU, UK, DE, FR, ES, PT-BR, IT, PL, TR, ZH, JA, KO) and switch instantly in Settings or with F9. Fonts match the game's look. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}
