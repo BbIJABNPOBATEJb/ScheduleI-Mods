@@ -7,9 +7,9 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 |---|---|---|
 | <img src="mods/Polyglot/assets/icon.png" width="64"> | **[Polyglot](mods/Polyglot)** | Play the whole game in 13 languages and switch between them instantly, in game. |
 | <img src="mods/WorldRates/assets/icon.png" width="64"> | **[World Rates](mods/WorldRates)** | Server-style rates like on Rust servers: XP, income and storage multipliers, tuned per world in a native in-game window. |
-| <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)**<br><sub>not released yet</sub> | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
-| <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)**<br><sub>not released yet</sub> | 3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. |
-| <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)**<br><sub>not released yet</sub> | Mutes the game while minimized and pauses world sounds in the pause menu. |
+| <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)** | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
+| <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)** | 3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. |
+| <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)** | Mutes the game while minimized and pauses world sounds in the pause menu. |
 
 <p>
   <img src="docs/images/polyglot-language-picker.jpg" width="49%">
