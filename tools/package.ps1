@@ -4,10 +4,13 @@
 
   dist/<Mod>-<version>-IL2CPP.zip        Mods/<Mod>_Il2Cpp.dll + README/CHANGELOG   (GitHub / Nexus)
   dist/<Mod>-<version>-Mono.zip          Mods/<Mod>_Mono.dll   + README/CHANGELOG
-  dist/thunderstore/<Mod>-<version>.zip  manifest.json, icon.png, README.md, CHANGELOG.md, Mods/<Mod>_Il2Cpp.dll
+  dist/thunderstore/<Mod>-<version>.zip       manifest.json, icon.png, README.md, CHANGELOG.md, Mods/<Mod>_Il2Cpp.dll
+  dist/thunderstore/<Mod>_Mono-<version>.zip  the same for the Mono build
 
   One ZIP per runtime on purpose: MelonLoader tries to load every DLL in Mods, and the other
-  runtime's build fails to load. Thunderstore gets the IL2CPP build (default Steam branch).
+  runtime's build fails to load. On Thunderstore the IL2CPP build (default Steam branch) is the
+  package <Mod>, the Mono build (alternate branch) the package <Mod>_Mono.
+  Publish to Thunderstore with tools/publish_thunderstore.py.
 
 .EXAMPLE
   ./tools/package.ps1              # all mods
@@ -22,6 +25,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root "dist"
 $repoUrl = "https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods"
 $rawUrl = "https://raw.githubusercontent.com/BbIJABNPOBATEJb/ScheduleI-Mods/main"
+$tsUrl = "https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb"
 New-Item -ItemType Directory -Force (Join-Path $dist "thunderstore") | Out-Null
 
 # README links are relative to mods/<Mod>/ in the repo; inside packages they must be absolute.
@@ -81,25 +85,40 @@ foreach ($mod in $Mods) {
         New-Zip $stage $zip
         Write-Host "packed $zip"
 
+        # Thunderstore: one package per runtime. <Name> is the IL2CPP build, <Name>_Mono the Mono build.
+        $ts = Join-Path $dist "stage/$mod-$runtime-thunderstore"
+        Remove-Item -Recurse -Force $ts -ErrorAction SilentlyContinue
+        Copy-Item -Recurse $stage $ts
+        Copy-Item (Join-Path $modDir "assets/icon.png") $ts
+        $meta = Get-Content (Join-Path $modDir "thunderstore.json") -Raw | ConvertFrom-Json
+        $il2cppName = $meta.name
+        $monoName = "$($meta.name)_Mono"
         if ($runtime -eq "Il2Cpp") {
-            $ts = Join-Path $dist "stage/$mod-thunderstore"
-            Remove-Item -Recurse -Force $ts -ErrorAction SilentlyContinue
-            Copy-Item -Recurse $stage $ts
-            Copy-Item (Join-Path $modDir "assets/icon.png") $ts
-            $meta = Get-Content (Join-Path $modDir "thunderstore.json") -Raw | ConvertFrom-Json
-            if ($meta.description.Length -gt 250) { throw "$mod Thunderstore description is longer than 250 chars" }
-            $deps = ($meta.dependencies | ForEach-Object { '"' + $_ + '"' }) -join ", "
-            $manifest = "{`n" +
-                "    `"name`": `"$($meta.name)`",`n" +
-                "    `"version_number`": `"$version`",`n" +
-                "    `"website_url`": `"$repoUrl`",`n" +
-                "    `"description`": `"$($meta.description)`",`n" +
-                "    `"dependencies`": [$deps]`n}`n"
-            Write-Utf8 (Join-Path $ts "manifest.json") $manifest
-            $tsZip = Join-Path $dist "thunderstore/$mod-$version.zip"
-            New-Zip $ts $tsZip
-            Write-Host "packed $tsZip"
+            $tsName = $il2cppName
+            $description = $meta.description
+            $note = "> **IL2CPP build** for the default Steam branch. Playing on the ``alternate`` (Mono) branch? " +
+                "Install [$monoName]($tsUrl/$monoName/) instead."
         }
+        else {
+            $tsName = $monoName
+            $description = $meta.description -replace 'IL2CPP build\.', 'Mono build for the alternate branch.'
+            $note = "> **Mono build** for the ``alternate`` Steam branch. Playing on the default branch? " +
+                "Install [$il2cppName]($tsUrl/$il2cppName/) instead."
+        }
+        if ($description.Length -gt 250) { throw "$tsName Thunderstore description is longer than 250 chars" }
+        $lines = $readme -split "`n", 2
+        Write-Utf8 (Join-Path $ts "README.md") ($lines[0] + "`n`n" + $note + "`n" + $lines[1])
+        $deps = ($meta.dependencies | ForEach-Object { '"' + $_ + '"' }) -join ", "
+        $manifest = "{`n" +
+            "    `"name`": `"$tsName`",`n" +
+            "    `"version_number`": `"$version`",`n" +
+            "    `"website_url`": `"$repoUrl`",`n" +
+            "    `"description`": `"$description`",`n" +
+            "    `"dependencies`": [$deps]`n}`n"
+        Write-Utf8 (Join-Path $ts "manifest.json") $manifest
+        $tsZip = Join-Path $dist "thunderstore/$tsName-$version.zip"
+        New-Zip $ts $tsZip
+        Write-Host "packed $tsZip"
     }
 }
 Remove-Item -Recurse -Force (Join-Path $dist "stage") -ErrorAction SilentlyContinue

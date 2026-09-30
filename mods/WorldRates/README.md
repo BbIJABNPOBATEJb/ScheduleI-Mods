@@ -38,6 +38,10 @@ income and storage capacity — per source, per world, from a native in-game win
 
 ## Installation
 
+**With a mod manager** (r2modman, Thunderstore App): install [WorldRates](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/WorldRates/) for the default Steam branch or [WorldRates_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/WorldRates_Mono/) for the `alternate` branch.
+
+**Manually:**
+
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) 0.7.3 (0.7.1 is not supported).
 2. Download `WorldRates-<version>-IL2CPP.zip` (default Steam branch) or `WorldRates-<version>-Mono.zip`
    (`alternate` branch) from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases).
@@ -77,6 +81,10 @@ only loads its own slot count, so items in the extra slots would be lost.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
+
+## Credits
+
+Developed with AI assistance (Claude by Anthropic) and tested in game on both branches with automated in-game tests.
 
 ## License
 

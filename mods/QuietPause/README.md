@@ -18,6 +18,10 @@ translated by [Polyglot](../Polyglot).
 
 ## Installation
 
+**With a mod manager** (r2modman, Thunderstore App): install [QuietPause](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause/) for the default Steam branch or [QuietPause_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause_Mono/) for the `alternate` branch.
+
+**Manually:**
+
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) 0.7.3 (0.7.1 is not supported).
 2. Download `QuietPause-<version>-IL2CPP.zip` (default Steam branch) or `QuietPause-<version>-Mono.zip`
    (`alternate` branch) from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases).
@@ -38,6 +42,10 @@ MusicWhenPaused = false   # keep the music playing in the pause menu
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
+
+## Credits
+
+Developed with AI assistance (Claude by Anthropic) and tested in game on both branches with automated in-game tests.
 
 ## License
 

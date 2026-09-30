@@ -33,6 +33,10 @@ Polski · Türkçe · 简体中文 · 日本語 · 한국어**
 
 ## Installation
 
+**With a mod manager** (r2modman, Thunderstore App): install [Polyglot](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot/) for the default Steam branch or [Polyglot_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot_Mono/) for the `alternate` branch.
+
+**Manually:**
+
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) 0.7.3 (0.7.1 is not supported).
 2. Download `Polyglot-<version>-IL2CPP.zip` (default Steam branch) or `Polyglot-<version>-Mono.zip`
    (`alternate` branch) from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases).
@@ -86,6 +90,10 @@ fixes are welcome; per-language terminology is kept in [`corpus/tr/<code>/glossa
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
+
+## Credits
+
+Developed with AI assistance (Claude by Anthropic): the code and the translations were produced with AI, then checked in game on both branches with automated in-game tests. Native speakers' corrections are very welcome.
 
 ## License
 

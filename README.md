@@ -22,6 +22,10 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 
 ## Installation
 
+**With a mod manager** (r2modman, Thunderstore App): every mod is on [Thunderstore](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/) — `<Mod>` for the default Steam branch (IL2CPP), `<Mod>_Mono` for `alternate`.
+
+**Manually:**
+
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) **0.7.3** (or 0.7.2/0.7.0 — 0.7.1 is known to break Schedule I mods).
 2. Download the mod from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases) — pick the ZIP for your game branch:
    - `IL2CPP` — the default Steam branch (and `beta`).
@@ -87,6 +91,11 @@ docs/images/                     screenshots
 
 Bug reports and translation fixes are welcome — see [Polyglot → Translations](mods/Polyglot/README.md#translations)
 for how translation files work.
+
+## Credits
+
+The mods are developed with AI assistance (Claude by Anthropic); every release is tested in game on both
+branches with the smoke tests described above.
 
 ## License
 

@@ -37,6 +37,10 @@ it is. No more opening the map to find your next deal.
 
 ## Installation
 
+**With a mod manager** (r2modman, Thunderstore App): install [GuideArrows](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows/) for the default Steam branch or [GuideArrows_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows_Mono/) for the `alternate` branch.
+
+**Manually:**
+
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) 0.7.3 (0.7.1 is not supported).
 2. Download `GuideArrows-<version>-IL2CPP.zip` (default Steam branch) or `GuideArrows-<version>-Mono.zip`
    (`alternate` branch) from [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases).
@@ -62,6 +66,10 @@ e.g. `ToggleKey = "F7"` (`"None"` disables it), `Mode` (0 per kind, 1 nearest, 2
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
+
+## Credits
+
+Developed with AI assistance (Claude by Anthropic) and tested in game on both branches with automated in-game tests.
 
 ## License
 
