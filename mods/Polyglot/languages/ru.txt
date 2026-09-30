@@ -1,0 +1,13 @@
+// Polyglot test file (will be replaced by the full translation)
+Continue=Продолжить
+New Game=Новая игра
+Load Game=Загрузить игру
+Settings=Настройки
+Quit=Выход
+Credits=Авторы
+Language=Язык
+Display=Экран
+Graphics=Графика
+Audio=Звук
+Controls=Управление
+Day {0}=День {0}

@@ -1,0 +1,44 @@
+<Project>
+  <ItemGroup>
+    <Compile Include="$(RepoRoot)shared\*.cs" LinkBase="Shared" />
+    <Compile Include="$(RepoRoot)shared\Dev\**\*.cs" LinkBase="Shared\Dev" Condition="'$(IsDev)' == 'true'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MelonLoader" HintPath="$(MelonLoaderPath)\MelonLoader.dll" Private="false" />
+    <Reference Include="0Harmony" HintPath="$(MelonLoaderPath)\0Harmony.dll" Private="false" />
+  </ItemGroup>
+
+  <!-- IL2CPP: every generated proxy assembly is prefixed or Unity-owned, so referencing all of them is safe. -->
+  <ItemGroup Condition="'$(IsIl2Cpp)' == 'true'">
+    <Reference Include="$(MelonLoaderPath)\Il2CppInterop.Runtime.dll" Private="false" />
+    <Reference Include="$(MelonLoaderPath)\Il2CppInterop.Common.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\*.dll" Private="false" />
+  </ItemGroup>
+
+  <!-- Mono: Managed also contains the BCL (mscorlib, System.*, Mono.*), which must not be referenced. -->
+  <ItemGroup Condition="'$(IsMono)' == 'true'">
+    <Reference Include="$(GameAssembliesPath)\Assembly-CSharp.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\Assembly-CSharp-firstpass.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\ScheduleOne.Core.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\FishNet.Runtime.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\UnityEngine*.dll" Private="false" />
+    <Reference Include="$(GameAssembliesPath)\Unity.*.dll" Private="false" />
+  </ItemGroup>
+
+  <Target Name="ValidateGamePaths" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'$(IsIl2Cpp)' != 'true' and '$(IsMono)' != 'true'"
+           Text="Unknown configuration '$(Configuration)'. Use Il2Cpp, Mono, Il2CppDev or MonoDev." />
+    <Error Condition="'$(GamePath)' == ''"
+           Text="Game path for '$(Configuration)' is not set. Fill in local.build.props (see local.build.props.example)." />
+    <Error Condition="!Exists('$(MelonLoaderPath)\MelonLoader.dll')"
+           Text="MelonLoader not found in '$(MelonLoaderPath)'. Install MelonLoader into the game folder." />
+    <Error Condition="!Exists('$(GameAssembliesPath)\Assembly-CSharp.dll')"
+           Text="Game assemblies not found in '$(GameAssembliesPath)'. For IL2CPP, launch the game once with MelonLoader to generate them." />
+  </Target>
+
+  <Target Name="DeployToGame" AfterTargets="Build" Condition="'$(AutomateLocalDeployment)' == 'true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(GamePath)\Mods" />
+    <Message Importance="high" Text="Deployed $(TargetFileName) -> $(GamePath)\Mods" />
+  </Target>
+</Project>

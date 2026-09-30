@@ -1,0 +1,36 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mods", "mods", "{4CD1B84F-67FA-40E1-AECC-4FCE2880CEA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polyglot", "mods\Polyglot\Polyglot.csproj", "{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Il2Cpp|Any CPU = Il2Cpp|Any CPU
+		Mono|Any CPU = Mono|Any CPU
+		Il2CppDev|Any CPU = Il2CppDev|Any CPU
+		MonoDev|Any CPU = MonoDev|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2Cpp|Any CPU.ActiveCfg = Il2Cpp|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2Cpp|Any CPU.Build.0 = Il2Cpp|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Mono|Any CPU.ActiveCfg = Mono|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Mono|Any CPU.Build.0 = Mono|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2CppDev|Any CPU.ActiveCfg = Il2CppDev|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.Il2CppDev|Any CPU.Build.0 = Il2CppDev|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.MonoDev|Any CPU.ActiveCfg = MonoDev|Any CPU
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7}.MonoDev|Any CPU.Build.0 = MonoDev|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BDC5CE00-EBCD-40B5-AA6E-2D75DEACC9D7} = {4CD1B84F-67FA-40E1-AECC-4FCE2880CEA0}
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35DFA68A-DED3-4E15-A1F1-D032AE395ADF}
+	EndGlobalSection
+EndGlobal

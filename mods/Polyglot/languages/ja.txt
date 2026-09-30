@@ -1,0 +1,5 @@
+Continue=続ける
+New Game=ニューゲーム
+Settings=設定
+Quit=終了
+Language=言語

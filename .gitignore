@@ -6,6 +6,10 @@ artifacts/
 # Local machine paths (copy local.build.props.example)
 local.build.props
 
+# Smoke-test output, game-derived dumps
+test-runs/
+corpus/raw/
+
 # IDE
 .idea/
 .vs/

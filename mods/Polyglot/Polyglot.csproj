@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <EmbeddedResource Include="fonts\*.ttf" LogicalName="Polyglot.fonts.%(Filename)%(Extension)" />
+    <EmbeddedResource Include="languages\*.txt" LogicalName="Polyglot.languages.%(Filename)%(Extension)" />
+  </ItemGroup>
+</Project>

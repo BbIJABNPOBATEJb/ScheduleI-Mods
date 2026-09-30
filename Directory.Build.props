@@ -1,0 +1,54 @@
+<Project>
+  <!-- Machine-specific game paths (git-ignored). See local.build.props.example. -->
+  <Import Project="$(MSBuildThisFileDirectory)local.build.props" Condition="Exists('$(MSBuildThisFileDirectory)local.build.props')" />
+
+  <PropertyGroup>
+    <RepoRoot>$(MSBuildThisFileDirectory)</RepoRoot>
+    <Configurations>Il2Cpp;Mono;Il2CppDev;MonoDev</Configurations>
+    <Configuration Condition="'$(Configuration)' == ''">Il2Cpp</Configuration>
+    <Platforms>AnyCPU</Platforms>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Optimize>true</Optimize>
+    <DebugType>embedded</DebugType>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <BaseOutputPath>$(RepoRoot)artifacts\bin\$(MSBuildProjectName)\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(RepoRoot)artifacts\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <AutomateLocalDeployment Condition="'$(AutomateLocalDeployment)' == ''">false</AutomateLocalDeployment>
+    <IsIl2Cpp Condition="'$(Configuration)' == 'Il2Cpp' Or '$(Configuration)' == 'Il2CppDev'">true</IsIl2Cpp>
+    <IsMono Condition="'$(Configuration)' == 'Mono' Or '$(Configuration)' == 'MonoDev'">true</IsMono>
+    <IsDev Condition="'$(Configuration)' == 'Il2CppDev' Or '$(Configuration)' == 'MonoDev'">true</IsDev>
+    <!-- The project name is the mod name: mods/Polyglot/Polyglot.csproj -> Polyglot_Il2Cpp.dll / Polyglot_Mono.dll -->
+    <ModName>$(MSBuildProjectName)</ModName>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Main Steam branch: IL2CPP, MelonLoader net6 runtime -->
+  <PropertyGroup Condition="'$(IsIl2Cpp)' == 'true'">
+    <TargetFramework>net6.0</TargetFramework>
+    <RuntimeSuffix>Il2Cpp</RuntimeSuffix>
+    <AssemblyName>$(MSBuildProjectName)_Il2Cpp</AssemblyName>
+    <DefineConstants>$(DefineConstants);IL2CPP</DefineConstants>
+    <GamePath>$(Il2CppGamePath)</GamePath>
+    <MelonLoaderPath>$(GamePath)\MelonLoader\net6</MelonLoaderPath>
+    <GameAssembliesPath>$(GamePath)\MelonLoader\Il2CppAssemblies</GameAssembliesPath>
+  </PropertyGroup>
+
+  <!-- "alternate" Steam branch: Mono, MelonLoader net35 runtime -->
+  <PropertyGroup Condition="'$(IsMono)' == 'true'">
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <RuntimeSuffix>Mono</RuntimeSuffix>
+    <AssemblyName>$(MSBuildProjectName)_Mono</AssemblyName>
+    <DefineConstants>$(DefineConstants);MONO</DefineConstants>
+    <GamePath>$(MonoGamePath)</GamePath>
+    <MelonLoaderPath>$(GamePath)\MelonLoader\net35</MelonLoaderPath>
+    <GameAssembliesPath>$(GamePath)\Schedule I_Data\Managed</GameAssembliesPath>
+  </PropertyGroup>
+
+  <!-- Dev builds include the in-game smoke-test harness (shared/Dev). Never ship them. -->
+  <PropertyGroup Condition="'$(IsDev)' == 'true'">
+    <DefineConstants>$(DefineConstants);DEV</DefineConstants>
+  </PropertyGroup>
+</Project>
