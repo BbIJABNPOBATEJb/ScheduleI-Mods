@@ -426,3 +426,33 @@ Quest objectives use the du-imperative ("Kaufe {0}x Erde im Baumarkt", "Sprich m
 | Time ranges in compact labels | keep AM/PM ("{0}PM - {1}AM"); in sentences "{0} Uhr abends" / "{0} Uhr morgens" |
 | Customer "they" ("go talk to <NAME> - they'll like it") | avoid gendered pronouns: "Sprich mal mit <NAME> - dein Zeug kommt da gut an" |
 | Split sign / list fragments (runtime) | mirror the line split of the full translated label ("Town"/"Hall" → "Rat-"/"haus") |
+
+## Game texts and bundled mods UI (chunks 22–23)
+
+| English | German |
+|---|---|
+| Damage Indicator (mod title) | Schadensanzeige |
+| Guide Arrows / Guide arrows (mod title) | Zielpfeile |
+| Health (your health) | Gesundheit ("Deine Gesundheit") |
+| Health bar(s) | Lebensbalken |
+| Health number | Lebenspunkte |
+| Damage / Healing numbers | Schadenszahlen / Heilungszahlen |
+| Stun / stunned / Stun bars | Betäubung / betäubt / Betäubungsbalken |
+| KO (badge) / DEAD (badge) | KO / TOT ("KO-Symbol") |
+| Move and resize X | X verschieben und skalieren |
+| Reset all (settings) | Alles zurücksetzen / Alle Einstellungen zurücksetzen |
+| Max distance / Max arrows | Max. Entfernung / Max. Pfeile |
+| Target(s) (arrow) | Ziel / Ziele |
+| Kind (of target) / One per kind | Typ / Einer pro Typ |
+| Home base / counts as home | Basis / "als Basis gilt" |
+| "X color" (settings) | "Farbe für X" ("Farbe für Deals") |
+| Opacity / Spacing / Labels | Deckkraft / Abstand / Beschriftungen |
+| Units after numbers | unchanged: "{0} s", "{0} m", "{0} km", "{0} ft", "{0} mi" |
+| Phone clock "{0} AM Monday" | "{0} AM Montag" (AM/PM kept, weekday translated) |
+| "This customer has <COLOR><STANDARD></color> standards" | "Ansprüche dieses Kunden: <COLOR><STANDARD></color>" (quality word stands alone) |
+| Contacts web | Kontaktnetz |
+| Patrols (police) | Streifen |
+| The Deep End (quest) | Ins kalte Wasser |
+| Down to Business (quest) | Zur Sache |
+| Gearing up (lowercase key) | Aufrüsten |
+| ALL (${0}) | ALLES (${0}) |

@@ -1,0 +1,43 @@
+// Game texts found by tools/corpus/extract_assets.py + find_missing.py and by a tour on a progressed save.
+// Added with: python tools/corpus/append_keys.py tools/corpus/extra_game2_en.txt runtime
+What do you want to see in the next major Schedule I update?
+This is the vehicle you last drove. \nMust be within {0} meters.
+If a customer rejects a sample, you'll have to wait until <h1>tomorrow</h> before you can give them another.
+Remember to list your new product for sale in the <h1>product manager app</h>.
+There is a <h1>map</h> on your phone. Press <Input_OpenMap> to quickly open it.
+There are two types of currency: <h3>cash</h> and <h1>online balance</h>. Customers pay with cash, but most legal shops only accept card.
+Visit an <h1>ATM</h> to deposit or withdraw cash.
+Press and hold <Input_SecondaryClick> while hovering an object to pick it up.
+The Deep End
+Use the <h1>dealer management app</h> to assign customers to dealers.
+Product Name Here
+There is a <h2>curfew</h> between {0}PM and {1}AM. Police will <h2>arrest</h> you if you're seen outside.
+The purple area indicates the <h1>approximate area</h> of the customer.
+ALL (${0})
+Dead drops take time to fulfill, depending on the size of the order. The supplier will <h1>message you</h> when it's ready.
+Many different items can be used as a mixer. Consider buying a few different mixing ingredients for experimenting.
+Gearing up
+Down to Business
+Use the <h1>product manager app</h> on your phone to list products for sale.
+The compass at the top of your screen will show the location of all your tracked quests.
+Press <Input_TogglePhone> to open your phone.
+You've unlocked Chelsey as a customer. She will now start sending you deal offers.
+Every customer has their own preferences for drug type and effects.
+This is your <h1>contacts web</h>. This is where you can view all your customers and potential customers.
+The fastest way to unlock new customers is to give a <h1>free sample</h> to a friend of an existing customer.
+The law will be your foremost obstacle. You'll have to deal with patrols, body searches, vehicle checkpoints, curfews, and more.
+This customer has <COLOR><STANDARD></color> standards
+Name
+{0} AM Tuesday
+{0} AM Wednesday
+{0} AM Thursday
+{0} AM Friday
+{0} AM Saturday
+{0} AM Sunday
+{0} PM Monday
+{0} PM Tuesday
+{0} PM Wednesday
+{0} PM Thursday
+{0} PM Friday
+{0} PM Saturday
+{0} PM Sunday

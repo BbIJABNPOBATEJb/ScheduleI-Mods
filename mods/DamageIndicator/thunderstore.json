@@ -1,0 +1,7 @@
+{
+    "name": "DamageIndicator",
+    "description": "Health bars over characters after they take damage, your own movable health bar, floating damage numbers, stun bar and KO badges. Hidden until damage, fully configurable in game. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}

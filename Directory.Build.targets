@@ -2,6 +2,8 @@
   <ItemGroup>
     <Compile Include="$(RepoRoot)shared\*.cs" LinkBase="Shared" />
     <Compile Include="$(RepoRoot)shared\Dev\**\*.cs" LinkBase="Shared\Dev" Condition="'$(IsDev)' == 'true'" />
+    <!-- Settings screen / HUD toolkit, opt-in: <UseSharedUi>true</UseSharedUi> in the mod's csproj. -->
+    <Compile Include="$(RepoRoot)shared\UI\*.cs" LinkBase="Shared\UI" Condition="'$(UseSharedUi)' == 'true'" />
   </ItemGroup>
 
   <ItemGroup>

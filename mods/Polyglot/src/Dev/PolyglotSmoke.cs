@@ -136,6 +136,21 @@ internal static class PolyglotSmoke
         yield return 3f;
         yield return DevSmoke.Screenshot("01_menu");
 
+        // Composed texts: bullets, upper-cased templates, highlight colors.
+        foreach (var sample in new[]
+                 {
+                     "• Collect the stash near the fountain",
+                     "'DOCKS' REGION MUST BE UNLOCKED",
+                     "Deal for Kyle<color=#c0c0c0ff> (Begins in 5 min)</color>",
+                     "1x OG Kush, Behind Thompson construction and demolition",
+                     "At a <color=#88CBFF>mixing station</color>, you mix products with special <color=#88CBFF>ingredients</color> to create new mixes with <color=#88CBFF>unique effects</color>. Customers will pay more for these products.",
+                 })
+        {
+            var tr = Translator.Translate(sample);
+            DevSmoke.Log($"sample \"{sample}\" -> \"{tr}\"");
+            DevSmoke.Check(tr != sample, "not translated: " + sample);
+        }
+
         yield return DevSmoke.LoadDisposableSave();
         yield return DevSmoke.Screenshot("02_hud");
 
@@ -188,8 +203,37 @@ internal static class PolyglotSmoke
             ratesWindow.GetMethod("Toggle")?.Invoke(null, null);
             yield return 1f;
         }
+        // Settings screens of the other mods in this repository, when installed.
+        foreach (var modType in new[] { "DamageIndicator.DamageIndicatorMod", "GuideArrows.GuideArrowsMod" })
+        {
+            var type = AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType(modType)).FirstOrDefault(t => t != null);
+            var window = type?.GetProperty("Window", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static)?.GetValue(null);
+            if (window == null)
+                continue;
+            window.GetType().GetMethod("Open")?.Invoke(window, null);
+            yield return 1.5f;
+            yield return DevSmoke.Screenshot($"{shot++:00}_{modType.Split('.')[0]}");
+            window.GetType().GetMethod("Toggle")?.Invoke(window, null);
+            yield return 1f;
+        }
+
         pause.Resume();
         yield return 1f;
+
+        // A phone call with highlighted words (typewriter text).
+        var calls = UnityQuery.FindAllIncludingAssets<S1.ScriptableObjects.PhoneCallData>();
+        var callData = calls.FirstOrDefault(c => c.Stages != null && c.Stages.Length > 0 && c.Stages[0].Text.Contains("<h1>")) ?? calls.FirstOrDefault();
+        var callUi = S1.UI.Phone.CallInterface.Instance;
+        if (callData != null && callUi != null)
+        {
+            DevSmoke.Log($"Call: {callData.name}: {callData.Stages[0].Text}");
+            callUi.StartCall(callData, callData.CallerID, 0);
+            yield return 5f;
+            DevSmoke.Log($"Call text: {callUi.MainText.text}");
+            yield return DevSmoke.Screenshot($"{shot++:00}_call");
+            callUi.CompleteCall();
+            yield return 1f;
+        }
 
         MissLog.Flush();
         File.Copy(Path.Combine(LanguageCatalog.UserRoot, $"untranslated_{code}.txt"), Path.Combine(DevSmoke.OutDir, $"untranslated_{code}.txt"), true);

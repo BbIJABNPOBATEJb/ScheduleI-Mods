@@ -7,10 +7,17 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 |---|---|---|
 | <img src="mods/Polyglot/assets/icon.png" width="64"> | **[Polyglot](mods/Polyglot)** | Play the whole game in 13 languages and switch between them instantly, in game. |
 | <img src="mods/WorldRates/assets/icon.png" width="64"> | **[World Rates](mods/WorldRates)** | Server-style rates like on Rust servers: XP, income and storage multipliers, tuned per world in a native in-game window. |
+| <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)**<br><sub>not released yet</sub> | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
+| <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)**<br><sub>not released yet</sub> | 3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. |
+| <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)**<br><sub>not released yet</sub> | Mutes the game while minimized and pauses world sounds in the pause menu. |
 
 <p>
   <img src="docs/images/polyglot-language-picker.jpg" width="49%">
   <img src="docs/images/worldrates-experience.jpg" width="49%">
+</p>
+<p>
+  <img src="docs/images/guidearrows-hud.jpg" width="49%">
+  <img src="docs/images/damageindicator-hit.jpg" width="49%">
 </p>
 
 ## Installation
@@ -22,7 +29,7 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 3. Extract it into the game folder, so the DLL ends up in `Schedule I/Mods/`.
 
 Don't install both runtime builds of a mod at the same time. The mods are independent of each other
-and work together (Polyglot also translates the World Rates window).
+and work together (Polyglot also translates the other mods' windows).
 
 Tested with Schedule I **0.4.6f13** and MelonLoader **0.7.3**.
 
@@ -52,10 +59,11 @@ Requirements: .NET SDK 6 or newer, the game with MelonLoader installed and start
 ```bash
 pwsh tools/run-smoke.ps1 -Mod Polyglot -Scenario tour -Arg de -Runtime Il2Cpp
 pwsh tools/run-smoke.ps1 -Mod WorldRates -Scenario ui -Runtime Mono
+pwsh tools/run-smoke.ps1 -Mod GuideArrows -Scenario arrows -Save "<a backed-up SaveGame_N folder>"
 ```
 
 The script builds the Dev configuration, starts the game with a **disposable** world copied from
-`StreamingAssets/DefaultSave` into `test-runs/` (your save slots are never touched), runs the
+`StreamingAssets/DefaultSave` (or from `-Save`) into `test-runs/` (your save slots are never touched), runs the
 scenario, takes screenshots and quits. Results: `test-runs/<run>/result.txt`, `smoke.log`,
 `*.png`, `MelonLoader.log`. Scenarios live in `mods/*/src/Dev/`.
 
@@ -64,9 +72,13 @@ scenario, takes screenshots and quits. Results: `test-runs/<run>/result.txt`, `s
 ```
 Directory.Build.props/.targets   shared build: configurations, game references, deployment
 shared/                          cross-runtime helpers linked into every mod (IL2CPP/Mono differences)
+shared/UI/                       settings screens, HUD canvas and layout editor (opt-in per mod)
 shared/Dev/                      smoke-test harness (Dev builds only)
 mods/Polyglot/                   language mod: src/, languages/, fonts/, assets/
 mods/WorldRates/                 rates mod: src/, assets/
+mods/DamageIndicator/            health bars and damage numbers
+mods/GuideArrows/                3D guide arrows under the compass
+mods/QuietPause/                 background / pause audio
 tools/                           smoke-test runner, packaging, font and translation tooling
 docs/images/                     screenshots
 ```

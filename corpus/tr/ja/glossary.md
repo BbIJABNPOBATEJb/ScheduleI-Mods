@@ -456,3 +456,30 @@ Note: the real corpus keys for two effects are lowercase: "Anti-gravity" (反重
 | Control (key) | Ctrl |
 | Feds / federal agents | 連邦捜査官 |
 | Uncle (common noun in dialogue) | 叔父さん |
+
+## Added from chunks 22–23 (mod UIs: Damage Indicator, Guide Arrows, Quiet Pause)
+
+| English | Japanese |
+|---|---|
+| Damage Indicator (mod title) / Guide Arrows (mod title) | ダメージ表示 / ガイド矢印 |
+| General (settings tab) / Enabled | 一般 / 有効 |
+| Health / Health bar / Health number | 体力 / 体力バー / 体力の数値 |
+| Damage numbers / Healing numbers | ダメージ数値 / 回復数値 |
+| Stun / Stun bars / KO / DEAD (badges) | スタン / スタンバー / KO / 死亡 |
+| Characters (NPCs in general) | キャラクター |
+| Always / Never (visibility dropdown) | 常に / 表示しない |
+| Size / Duration / Stays for | サイズ / 持続時間 / 表示時間 |
+| Max distance / Distance / Labels / Opacity / Spacing | 最大距離 / 距離 / ラベル / 不透明度 / 間隔 |
+| Look (appearance settings tab) | 外観 |
+| Reset all / Reset all settings | すべてリセット / すべての設定をリセット |
+| Move and resize X | Xの移動とサイズ変更 |
+| Target (what a guide arrow points at) | ターゲット |
+| Home base | 拠点 |
+| Deals / Stashes / Quests / Potential customers (arrow kinds) | 取引 / 隠し場所 / クエスト / 見込み顧客; "X color" → "Xの色" |
+| Tracked quests | 追跡中のクエスト |
+| Background (game window unfocused) / Paused | 非アクティブ時 / 一時停止中 (as "Pause on focus lost" = 非アクティブ時に一時停止) |
+| Units after a number: {0} s / m / km / ft / mi | {0}秒 / {0}m / {0}km / {0}ft / {0}mi (no space) |
+| Phone clock "{0} AM Tuesday" ({0} is "h:mm", e.g. "7:52") | "火曜日 午前{0}" — no 時 after {0}, since {0} already has minutes |
+| Contacts web (phone contacts app) | 連絡先ネットワーク |
+| Dealer management app | 売人管理アプリ |
+| Customer standards template "This customer has <COLOR><STANDARD></color> standards" | この顧客の要求水準：<COLOR><STANDARD></color> |

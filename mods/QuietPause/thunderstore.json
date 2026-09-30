@@ -1,0 +1,7 @@
+{
+    "name": "QuietPause",
+    "description": "Mutes Schedule I while minimized or unfocused and pauses world sounds in the pause menu (menu clicks stay). Options in Settings > Audio. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}

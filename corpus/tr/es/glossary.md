@@ -431,3 +431,22 @@ and follow it strictly; add new recurring terms as you go (never change an exist
 | Ride the Bus: Higher/Lower, Inside/Outside, suits; blackjack dealer | Mayor/Menor, Dentro/Fuera, Corazones/Diamantes/Tréboles/Picas; la banca |
 | Chemistry tasks: beaker / boiling flask / burner / hopper / mould / plunger | vaso de precipitados / matraz de ebullición / quemador / tolva / molde / émbolo |
 | Code/data identifiers (CamelCase variables, asset paths, anim triggers, sound/cutscene ids, debug logs, behaviour ids with "(Inactive)") | copied unchanged; readable NPC behaviour names are translated ("Patrulla a pie", "Cacheo") |
+
+## Mod UI: Damage Indicator / Guide Arrows / Quiet Pause (chunks 22–23)
+
+| English | Spanish |
+|---|---|
+| Damage Indicator / Guide Arrows (mod titles) | Indicador de daño / Flechas guía |
+| Health / Health bar / Health number | salud / barra de salud / número de salud |
+| Damage numbers / Healing numbers | números de daño / números de curación |
+| Stun / stunned / knocked out | aturdimiento / aturdido / noqueado; badges KO → KO, DEAD → MUERTO |
+| After damage / While hurt (visibility options) | Tras recibir daño / Con heridas (avoids gendering the player) |
+| Move and resize / Reset all | Mover y redimensionar / Restablecer todo |
+| Target (arrow target) | objetivo |
+| Home base | base principal |
+| Tracked quests | misiones seguidas |
+| Max X (slider label) | X máx. ("Distancia máx.", "Flechas máx.") |
+| Unit suffixes {0} s / m / km / ft / mi | unchanged |
+| Mute in background / when paused | Silenciar en segundo plano / en pausa |
+| Contacts web | red de contactos |
+| Phone clock "{0} AM Monday" | "{0} AM lunes" (AM/PM kept, weekday lowercase) |

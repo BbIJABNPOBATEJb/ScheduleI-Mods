@@ -505,3 +505,23 @@ tutorial time notes, and the poll/bindings JSON blobs. Short generic words that 
 | Times: "{0}PM" (integer hour) / "{0} AM" (normalized "7:00") | 下午{0}点 / 上午{0} |
 | Curfew "{0}PM - {1}AM" | 晚上{0}点 - 凌晨{1}点 |
 | Sewer key holder descriptions ("the guy with …") | 那个……的家伙 |
+
+## Mod UI: Damage Indicator, Guide Arrows, Quiet Pause (added with chunks 22–23)
+
+| English | Chinese |
+|---|---|
+| Damage Indicator (mod title) / Guide Arrows (mod title, "Guide arrows") | 伤害显示 / 引导箭头 |
+| Health (points) / Health bar(s) / Health number | 生命值 / 血条 / 生命值数字 |
+| Damage numbers / Healing numbers | 伤害数字 / 治疗数字 |
+| Stun / Stun bars | 眩晕 / 眩晕条 |
+| KO (badge) / DEAD (badge) | KO / 死亡 |
+| General / Enabled / Show / Always / Never | 常规 / 启用 / 显示 / 始终 / 从不 |
+| Size / Duration / Opacity / Spacing / View angle / Labels / Look (section) | 大小 / 持续时间 / 不透明度 / 间距 / 视角 / 标签 / 外观 |
+| Reset all / Reset all settings | 全部重置 / 重置所有设置 |
+| Targets / Deals / Stashes / Potential customers / Home base | 目标 / 交易 / 藏货 / 潜在顾客 / 大本营 |
+| Contacts web (phone) | 人脉网 |
+| Mute in background / Mute when paused | 后台时静音 / 暂停时静音 |
+| Units after a number: "{0} s/m/km/ft/mi" | {0}秒 / {0}米 / {0}公里 / {0}英尺 / {0}英里 (no space) |
+| Phone clock "{0} AM Monday" / "{0} PM Monday" | 星期一上午{0} / 星期一下午{0} |
+| "This customer has <COLOR><STANDARD></color> standards" | 该顾客要求<COLOR><STANDARD></color> |
+| Quest titles: The Deep End / Down to Business | 深水区 / 言归正传 |

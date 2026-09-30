@@ -354,3 +354,27 @@ Note: actual corpus keys for three effects differ from the table above: "Anti-gr
 | `formal_address` (runtime token in Herbert's lines) | keep unchanged |
 | Player reply "Deal" / "Deal (<SIGNING_FEE>)" | 콜 / 콜 (<SIGNING_FEE>) |
 | Blackjack/AC shared key "Cool" | 쿨 (also AC mode); "Heat" → 난방 |
+
+## Mod UI (Damage Indicator / Guide Arrows / Quiet Pause) — chunks 22–23
+
+| English | Korean |
+|---|---|
+| Damage Indicator (mod title) | 피해 표시기 |
+| Guide Arrows / Guide arrows (mod title) | 길잡이 화살표 |
+| Health / Health bar / Health number | 체력 / 체력 바 / 체력 수치 |
+| Damage / Damage numbers / Healing numbers | 피해 / 피해 숫자 / 회복 숫자 |
+| Stun / Stun bars | 기절 / 기절 바 |
+| KO / DEAD (HUD badges) | KO / 사망 |
+| Enabled / General / Size / Opacity / Spacing / Look | 활성화 / 일반 / 크기 / 불투명도 / 간격 / 외형 |
+| Reset / Reset all | 초기화 / 모두 초기화 |
+| Always / Never (visibility dropdown) | 항상 / 안 함 |
+| Targets / Deals / Stashes / Potential customers / Home base | 대상 / 거래 / 은닉처 / 잠재 고객 / 본거지 |
+| "X color" | "X 색상" |
+| Green / Blue (also existing Red 빨간색, Yellow 노란색…) | 초록색 / 파란색 |
+| Tooltip "Seconds …" | "…시간(초)입니다." |
+| Unit suffixes after a number | "{0} s" → "{0}초"; m / km / ft / mi kept Latin, no space: "{0}m", "{0}km", "{0}ft", "{0}mi" |
+| Mute / Background (audio) / Volume | 음소거 / 백그라운드 / 볼륨 |
+| Contacts web (phone app) | 연락처 관계도 |
+| Phone clock "{0} AM Monday" | "월요일 오전 {0}시" (weekday + 오전/오후 + {0}시) |
+| Customer standards template "This customer has <COLOR><STANDARD></color> standards" | "이 고객의 기준: <COLOR><STANDARD></color>" |
+| Quest names: The Deep End / Down to Business | 깊은 물속으로 / 본격적인 사업 |

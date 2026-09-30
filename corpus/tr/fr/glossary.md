@@ -416,3 +416,35 @@ Items, equipment, clothing:
 | Jeans / Jorts / Cargo Pants / Overalls / Skirt / Long Skirt | Jean / Short en jean / Pantalon cargo / Salopette / Jupe / Jupe longue |
 | Sneakers / Dress Shoes / Combat Boots / Flats / Sandals | Baskets / Chaussures de ville / Rangers / Ballerines / Sandales |
 | Gold / Silver Chain, Gold / Silver Watch | Chaîne en or / en argent, Montre en or / en argent |
+
+## Additions from chunks 22–23 (mod UI: Damage Indicator, Guide Arrows, Quiet Pause)
+
+| English | French |
+|---|---|
+| Damage Indicator (mod title) | Indicateur de dégâts |
+| Guide Arrows (mod title) / arrow(s) | Flèches de guidage / flèche(s) |
+| Health / Your health | santé / Votre santé |
+| Health bar(s) | barre(s) de vie |
+| Health number | Santé en chiffres |
+| Damage / Healing numbers | Chiffres de dégâts / Chiffres de soin |
+| Stun bars / stunned / knocked out | Barres d'étourdissement / étourdi / assommé |
+| KO / DEAD (health-bar badges) | KO / MORT |
+| Characters (NPCs in general) | Personnages |
+| General / Enabled / Show / Look (settings) | Général / Activé / Afficher / Apparence |
+| Always / Never / While hurt / After damage | Toujours / Jamais / Si blessé / Après des dégâts |
+| Max distance / Max arrows | Distance max. / Flèches max. |
+| Reset all / Reset all settings | Tout réinitialiser / Réinitialiser tous les paramètres |
+| Move and resize ... | Déplacer et redimensionner ... |
+| Targets / Labels | Cibles / Libellés |
+| Home base | QG ("Couleur du QG") |
+| Potential customers | Clients potentiels |
+| Tracked quests only | Quêtes suivies uniquement |
+| Colors (dropdown) | masculine: Vert, Bleu, Rouge, Jaune, Blanc, Violet, Rose, Orange, Cyan |
+| Units after numbers | unchanged: "{0} s", "{0} m", "{0} km", "{0} ft", "{0} mi" |
+| Mute in background / Mute when paused | Couper le son en arrière-plan / Couper le son en pause |
+| Background volume / Music in pause menu | Volume en arrière-plan / Musique dans le menu pause |
+| Phone clock "{0} AM Tuesday" | "{0} AM mardi" (AM/PM kept, weekday lowercase: lundi ... dimanche) |
+| product manager app / dealer management app | appli Produits / appli Gestion des dealers |
+| contacts web | réseau de contacts |
+| Compass | boussole |
+| Quest names: Gearing up / Down to Business / The Deep End | S'équiper / Place aux affaires / Le grand bain |

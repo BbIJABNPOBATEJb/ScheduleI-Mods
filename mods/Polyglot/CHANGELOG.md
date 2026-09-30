@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.1.0 - 2026-09-30
+
+- Phone calls are translated on the default IL2CPP branch too (the game's call text processing is
+  compiled inline there; highlighted words are now matched either way).
+- Quest steps with a bullet ("• Collect the stash…"), dialogue options' upper-cased reasons
+  ("'DOCKS' REGION MUST BE UNLOCKED"), deal steps ("1x OG Kush, Behind the …") and deal titles with
+  their "(Begins in 5 min)" subtitle are translated.
+- About 150 new strings per language: tutorial hints and quest steps that are never loaded in the
+  scenes the corpus was built from (found by reading the game's asset files), the phone clock's
+  weekdays, and the settings of Damage Indicator, Guide Arrows and Quiet Pause.
+- Japanese: times read "午前7:52" instead of "午前7:52時"; a few leftover English words fixed in several languages.
+
 ## 1.0.0 - 2026-09-30
 
 - First public release.

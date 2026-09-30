@@ -378,3 +378,29 @@ the same English term always gets the translation listed here.
 | "(Owned)" on map POIs | "(Senin)": "Karavan (Senin)" |
 | Quality tiers as ColorFont names (Trash/Poor/Standard/Premium/Heavenly) | Çöp / Kötü / Standart / Premium / Cennetlik |
 | Albert Hoover (supplier) → player | formal "siz", "efendim" |
+
+## Mod UIs: Damage Indicator / Guide Arrows / Quiet Pause (added in chunk 22+)
+
+Settings labels in sentence case like the WorldRates UI ("Maks. mesafe", "Okları göster");
+tooltips are full sentences or "what it shows" noun clauses ("Bir sayının ekranda kaldığı saniye.").
+
+| English | Turkish |
+|---|---|
+| Damage Indicator / Guide Arrows (mod titles) | Hasar Göstergesi / Rehber Oklar ("Guide arrows" label → "Rehber oklar") |
+| Health / your health / health bar / health number | can / canın / can barı / can değeri |
+| Damage / damage numbers / healing numbers | hasar / hasar sayıları / iyileşme sayıları |
+| Stun / stunned / stun bar | sersemleme / sersemlemiş / sersemleme barı |
+| KO / knocked out; DEAD (badge) | KO / nakavt olan; ÖLÜ |
+| Enabled / General / Look (settings section) | Etkin / Genel / Görünüm |
+| Always / Never | Her zaman / Asla |
+| Max <x> | Maks. <x> ("Maks. mesafe", "Maks. ok") |
+| Target(s) | hedef(ler) |
+| Stashes (Guide Arrows target = dead drops holding items) | Zulalar / zula rengi (the mod means dead drops, so "zula", not "saklama yeri") |
+| Home base | ana üs |
+| Tracked quests | takip edilen görevler |
+| Mute / volume | sessize al / ses seviyesi |
+| Colors (dropdown) Green / Blue / Red / Yellow / White | Yeşil / Mavi / Kırmızı / Sarı / Beyaz |
+| Units after numbers: {0} s / m / km / ft / mi | {0} sn / {0} m / {0} km / {0} ft / {0} mil |
+| Phone clock "{0} AM Monday" | weekday first: "Pazartesi {0} AM" (Salı, Çarşamba, Perşembe, Cuma, Cumartesi, Pazar) |
+| "This customer has <COLOR><STANDARD></color> standards" | "Bu müşterinin standartları <COLOR><STANDARD></color>" |
+| Contacts web | kişi ağı |

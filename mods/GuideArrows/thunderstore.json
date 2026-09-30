@@ -1,0 +1,7 @@
+{
+    "name": "GuideArrows",
+    "description": "3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. Smooth, configurable, movable. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}

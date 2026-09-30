@@ -410,6 +410,28 @@ use exactly these words everywhere.
 | Payphone | telefono pubblico |
 | Uncle Nelson | Uncle Nelson (kept) |
 
+## Mod UI: Damage Indicator / Guide Arrows / Quiet Pause (added with chunk 22)
+
+| English | Italian |
+|---|---|
+| Damage Indicator / Guide Arrows (mod titles) | Indicatore danni / Frecce guida |
+| Health / Health bar(s) / Health number | salute / barra (barre) della salute / Valore salute |
+| Damage numbers / Healing numbers | Numeri dei danni / Numeri delle cure |
+| Stun bar / stunned | barra di stordimento / stordito |
+| KO / DEAD (badges) | KO / MORTO |
+| Target (of a guide arrow) | obiettivo ("Obiettivi", "l'obiettivo più vicino") |
+| Stashes (Guide Arrows target = dead drops with items) | Nascondigli |
+| Home base | base ("Colore base") |
+| Enabled / Show / Look / Size / Duration / Opacity / Spacing | Attivo / Mostra / Aspetto / Dimensione / Durata / Opacità / Spaziatura |
+| Max distance / Max arrows | Distanza max / Frecce max |
+| Reset all (settings) | Ripristina tutto / Ripristina tutte le impostazioni |
+| Drag / Mouse wheel / Right-click | Trascina / Rotellina / Clic destro |
+| Mute in background / when paused | Silenzia in background / Silenzia in pausa |
+| Units after numbers s / m / km / ft / mi | kept unchanged ("{0} s", "{0} km") |
+| Phone clock "{0} AM Tuesday" | "{0} AM martedì" (AM/PM kept, weekday lowercase) |
+| Contacts web | rete di contatti |
+| e.g. | es. |
+
 ## NPC register (who says "Lei")
 
 | NPC | Register |

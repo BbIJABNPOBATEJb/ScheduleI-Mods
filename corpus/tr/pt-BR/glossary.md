@@ -366,6 +366,29 @@ and keep using it.
 | Possession of controlled substances / Drug trafficking / Brandishing a weapon / Violating curfew | Posse de substâncias controladas / Tráfico de drogas / Porte ostensivo de arma / Violação do toque de recolher |
 | Split sign words in world (Bar, Hall, Liquor, Ticklers, Tower…) | keep unchanged (brands/sign fragments) |
 
+## Added while translating chunks 22–23 (Damage Indicator / Guide Arrows / Quiet Pause mods, tutorial hints)
+
+| English | pt-BR |
+|---|---|
+| Damage Indicator (mod title) / Guide Arrows (mod title, "Guide arrows") | Indicador de dano / Setas-guia |
+| Health / Health bar / Damage / Healing | vida / barra de vida / dano / cura |
+| Stun / stunned / Stun bars | atordoamento / atordoado / Barras de atordoamento |
+| KO / DEAD (HUD badges) | KO / MORTO |
+| Hit (damage hit) | golpe ("Todos os golpes") |
+| Reset (settings) / Reset all | Redefinir / Redefinir tudo |
+| Move and resize | Mover e redimensionar |
+| Target (arrow target) / Arrow | alvo / seta |
+| Stashes (arrow target = dead drops with items) | Esconderijos |
+| Home base | Base ("Cor da base") |
+| Tracked quests | missões acompanhadas ("acompanhar no diário") |
+| Look (settings section) / Labels / Opacity / Spacing | Aparência / Rótulos / Opacidade / Espaçamento |
+| Units after numbers: s / m / km / ft / mi | s / m / km / pés / mi |
+| Mute in background / when paused | Silenciar em segundo plano / ao pausar |
+| Phone clock "{0} AM Tuesday" | "Terça-feira, {0} AM" (weekday first, AM/PM kept) |
+| Contacts web | rede de contatos |
+| Dealer management app / Product manager app | app de gestão de traficantes / app Gerenciador de produtos |
+| Quests "The Deep End" / "Down to Business" | Batismo de fogo / Mãos à obra |
+
 ## Added while translating chunks 01–10 (UI, items, places)
 
 ### Mixing ingredients (item names as in corpus keys)

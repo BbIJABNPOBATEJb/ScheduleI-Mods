@@ -12,7 +12,8 @@ namespace Polyglot.Localization;
 ///
 /// Lookup order for a text (whitespace around it is preserved):
 ///   exact → numbers as {0},{1}… → &lt;PLACEHOLDER&gt; templates → regex rules → ALL-CAPS variant
-///   → per line (multi-line texts) → per segment between rich-text tags.
+///   (also of templates) → highlight colors back to &lt;h1&gt; tags → per line (multi-line texts)
+///   → without a leading list marker ("• ") → per segment between rich-text tags.
 /// </summary>
 internal static class Translator
 {
@@ -21,6 +22,14 @@ internal static class Translator
 
     private static readonly Regex Numbers = new(@"(?<![\p{L}\p{N}_#])\d+(?:[.,:]\d+)*", RegexOptions.Compiled);
     private static readonly Regex RichTag = new(@"<[^<>]+>", RegexOptions.Compiled);
+    private static readonly Regex ListMarker = new(@"^(?:[•·▪►\-–—*]+|\(?\d{1,2}[.)])\s+", RegexOptions.Compiled);
+
+    /// <summary>Texts the game assembles from separately translated parts; same in every language.</summary>
+    private static readonly RegexRule[] BuiltInRules =
+    {
+        // A deal's quest step: "2x OG Kush, 1x Meth, Behind the laundromat" (products, delivery location).
+        new(new Regex(@"^(\d+x [^,]+(?:, \d+x [^,]+)*), ([^,\d][^,]*)$", RegexOptions.Compiled), "$1, $2"),
+    };
 
     private static readonly Dictionary<string, string> Cache = new(StringComparer.Ordinal);
     private static readonly HashSet<string> Protected = new(StringComparer.Ordinal);
@@ -130,6 +139,12 @@ internal static class Translator
             if (applied != null)
                 return applied;
         }
+        foreach (var rule in BuiltInRules)
+        {
+            var applied = rule.TryApply(core, TranslateValue);
+            if (applied != null && applied != core)
+                return applied;
+        }
 
         if (IsAllCaps(core))
         {
@@ -137,6 +152,25 @@ internal static class Translator
                 return value.ToUpper(Current.Culture);
             if (numbers.Count > 0 && table.TryUpper(normalized.ToUpperInvariant(), out value))
                 return FillNumbers(value, numbers).ToUpper(Current.Culture);
+            // Filled-in templates the game upper-cases afterwards ("'DOCKS' REGION MUST BE UNLOCKED").
+            foreach (var template in table.UpperTemplates)
+            {
+                var applied = template.TryApply(core, TranslateValue);
+                if (applied != null)
+                    return applied.ToUpper(Current.Culture);
+            }
+        }
+
+        // Hints and phone calls replace <h1>…</h> with colors before display; the files keep <h1>.
+        if (core.IndexOf("<color=#", StringComparison.OrdinalIgnoreCase) >= 0
+            && HighlightTags.TryToTags(core, out var tagged, out var colors))
+        {
+            if (table.TryExact(tagged, out value))
+                return HighlightTags.FromTags(value, colors);
+            var tagNumbers = new List<string>();
+            var taggedNormalized = NormalizeNumbers(tagged, tagNumbers);
+            if (tagNumbers.Count > 0 && table.TryExact(taggedNormalized, out value))
+                return HighlightTags.FromTags(FillNumbers(value, tagNumbers), colors);
         }
         return null;
     }
@@ -159,6 +193,29 @@ internal static class Translator
                 }
             }
             return changed ? string.Join("\n", lines) : null;
+        }
+
+        // "• Collect the stash…": quest steps get a bullet when a quest has several.
+        var marker = ListMarker.Match(core);
+        if (marker.Success && marker.Length < core.Length)
+        {
+            var rest = core.Substring(marker.Length);
+            var tr = TranslateCore(rest, depth + 1, record: false);
+            if (tr != rest)
+                return marker.Value + tr;
+        }
+
+        // "Deal for Kyle<color=#c0c0c0ff> (Begins in 5 min)</color>": a title and a styled subtitle
+        // that the files know separately.
+        var firstTag = RichTag.Match(core);
+        if (firstTag.Success && firstTag.Index > 0 && HasLetter(core.Substring(0, firstTag.Index)))
+        {
+            var head = core.Substring(0, firstTag.Index);
+            var tail = core.Substring(firstTag.Index);
+            var trHead = TranslateCore(head, depth + 1, record: false);
+            var trTail = TranslateCore(tail, depth + 1, record: false);
+            if (trHead != head || trTail != tail)
+                return trHead + trTail;
         }
 
         if (core.IndexOf('<') >= 0 && RichTag.IsMatch(core))
@@ -185,8 +242,11 @@ internal static class Translator
         return tr != segment;
     }
 
-    /// <summary>Values captured by templates (names, items) are translated when a translation exists.</summary>
-    private static string TranslateValue(string value) => TranslateCore(value, MaxDepth, record: false);
+    /// <summary>
+    /// Values captured by templates (names, items) are translated when a translation exists. They may
+    /// carry a styled tail ("Kyle&lt;color=…&gt; (Begins in 5 min)&lt;/color&gt;"), so one level of splitting is allowed.
+    /// </summary>
+    private static string TranslateValue(string value) => TranslateCore(value, MaxDepth - 1, record: false);
 
     public static string NormalizeNumbers(string text, List<string>? found)
     {

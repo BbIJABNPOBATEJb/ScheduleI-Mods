@@ -14,13 +14,18 @@ internal sealed class TranslationTable
     private readonly Dictionary<string, string> _exact = new(StringComparer.Ordinal);
     private readonly Dictionary<string, string> _upper = new(StringComparer.Ordinal);
     private readonly List<PlaceholderTemplate> _templates = new();
+    private readonly List<PlaceholderTemplate> _upperTemplates = new();
     private readonly List<RegexRule> _regexes = new();
 
     public int ExactCount => _exact.Count;
     public int TemplateCount => _templates.Count;
     public int RegexCount => _regexes.Count;
     public IReadOnlyList<PlaceholderTemplate> Templates => _templates;
+    /// <summary>Templates for texts the game upper-cases after filling them in (e.g. dialogue choice reasons).</summary>
+    public IReadOnlyList<PlaceholderTemplate> UpperTemplates => _upperTemplates;
     public IReadOnlyList<RegexRule> Regexes => _regexes;
+
+    private static readonly Regex LowerCaseTag = new(@"<[a-z/]", RegexOptions.Compiled);
 
     // DialogueCanvas / WorldspaceDialogueRenderer recolor named colors before display.
     private static readonly (string Name, string Shown)[] DisplayedColors =
@@ -85,6 +90,14 @@ internal sealed class TranslationTable
         }
         // Most specific (longest literal prefix) first.
         _templates.Sort((a, b) => b.Prefix.Length.CompareTo(a.Prefix.Length));
+
+        // Upper-casing keeps <TOKEN> placeholders intact, but would turn rich-text tags into tokens.
+        _upperTemplates.Clear();
+        foreach (var template in _templates)
+        {
+            if (!LowerCaseTag.IsMatch(template.Key))
+                _upperTemplates.Add(new PlaceholderTemplate(template.Key.ToUpperInvariant(), template.Value));
+        }
     }
 
     public bool TryExact(string key, out string value) => _exact.TryGetValue(key, out value!);

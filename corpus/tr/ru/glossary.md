@@ -297,3 +297,22 @@ Style notes:
 | Output slot | ячейка результата |
 | Supplies source / supplies stash (botanist) | источник расходников |
 | Debug/internal ids (behaviour names, variables, asset paths, anim triggers, JSON blobs) | copied unchanged |
+
+## Added with chunks 22–23 (Damage Indicator / Guide Arrows / Quiet Pause mods, tutorial hints)
+
+| English | Russian |
+|---|---|
+| Damage Indicator (mod title) | Индикатор урона |
+| Guide Arrows / guide arrows (mod title) | Стрелки-указатели |
+| Health bar / Stun bar | полоска здоровья / полоска оглушения |
+| Damage / Healing numbers | цифры урона / цифры лечения |
+| KO / DEAD (badges) | KO / МЁРТВ |
+| Stashes (Guide Arrows target = dead drops with items) | тайники |
+| Home base | база |
+| Target (of an arrow) | цель |
+| Off (setting value) | Выкл. |
+| Units after numbers: s / m / km / ft / mi | с / м / км / фт / мил. |
+| Phone clock "{0} AM Tuesday" | "{0} AM, вторник" (AM/PM kept, weekday lowercase) |
+| product manager app / dealer management app | приложение «Товары» / приложение «Дилеры» |
+| Contacts web | сеть контактов |
+| Quest titles: Gearing Up / Down to Business / The Deep End | Снаряжаемся / За дело / В омут с головой |

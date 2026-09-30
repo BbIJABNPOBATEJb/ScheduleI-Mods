@@ -1,0 +1,118 @@
+// UI of Damage Indicator, Guide Arrows and Quiet Pause (settings screens, HUD texts).
+// Added with: python tools/corpus/append_keys.py tools/corpus/extra_mods2_en.txt ui
+Damage Indicator
+Guide Arrows
+General
+Enabled
+Stun bars
+Turns every health bar and damage number on or off.
+A yellow bar under the health bar while someone is stunned: tased, staggered by a heavy hit or knocked down. Knocked-out characters get a KO badge.
+Nobody's health is shown until they take damage (unless you change it below).
+Move and resize your health bar
+Reset all settings
+Your health
+Health bar
+When your own health bar is visible.
+While hurt
+After damage
+Always
+Never
+Width
+Size
+Stays for
+Seconds the bar stays after damage, or after you healed back to full.
+Health number
+Your health as a number on the bar.
+Damage numbers
+Damage you take pops up next to your bar.
+Healing numbers
+Healing (food, medicine) pops up in green. Slow regeneration is not shown.
+Characters
+Health bars
+Bars over the heads of other characters.
+After damage and in fights
+Seconds a bar stays after the character's last damage.
+Max distance
+Characters further away get no bar.
+Names
+The character's name above the bar.
+Health as a number on the bar.
+Show
+Numbers that pop up where a character is hit.
+All hits
+Only your hits
+Duration
+Seconds a number stays on screen.
+KO
+DEAD
+Drag to move  •  Mouse wheel to resize  •  Right-click to reset
+Reset all
+Guide arrows
+Show arrows
+Also toggled with the <KEY> key (see UserData/MelonPreferences.cfg).
+Arrows
+One arrow per kind points at the nearest target of each kind; or a single arrow to the nearest target of any kind; or arrows to the nearest few.
+One per kind
+Nearest only
+Nearest few
+Max arrows
+Hide when closer than
+An arrow disappears once you are this close to its target.
+Ignore further than
+Targets further away get no arrow. Off = no limit.
+Move and resize the arrows
+Targets
+Deals
+Stashes
+Quests
+Potential customers
+Home base
+Deals color
+Stashes color
+Quests color
+Potential customers color
+Home base color
+Customers waiting for a delivery you accepted.
+Dead drops with items in them (e.g. an order a supplier delivered).
+The current objectives of active quests.
+People you can win over with a free sample (friends of your customers).
+Your main property: where you last slept, or the one with the most valuable equipment.
+Tracked quests only
+Quest arrows only for quests you track in the journal.
+Which of your properties counts as home.
+Last slept (else best equipped)
+Last slept
+Best equipped
+Look
+Arrow size
+Spacing
+View angle
+How steeply the arrows are seen from above.
+Tilt towards height
+The arrow's nose points up or down at targets above or below you.
+Turn speed
+How quickly arrows swing to a new direction.
+Opacity
+Distance
+The distance under each arrow.
+Labels
+What the arrow points at: the customer's name, the quest step, the stash...
+Green
+Red
+Orange
+Yellow
+Purple
+Blue
+Cyan
+Pink
+White
+Off
+{0} s
+{0} m
+{0} km
+{0} ft
+{0} mi
+Mute in background
+Background volume
+Mute when paused
+Music in pause menu

@@ -15,7 +15,7 @@
 #>
 [CmdletBinding()]
 param(
-    [string[]] $Mods = @("Polyglot", "WorldRates")
+    [string[]] $Mods = @("Polyglot", "WorldRates", "DamageIndicator", "GuideArrows", "QuietPause")
 )
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot

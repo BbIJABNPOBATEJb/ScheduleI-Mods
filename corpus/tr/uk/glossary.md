@@ -371,3 +371,30 @@ Consult this before translating a chunk and follow it strictly. Add new recurrin
 | Town hall / Courthouse / Graveyard | міська рада / суд / цвинтар |
 | X's House / X's Room | Будинок X / Кімната X |
 | Brands kept Latin | Slop Shop, Pillville, The Piss Hut, Hyland Bank, Hyland Auto, Hyland Range, HAM Legal, Top Tattoo, Shred Shack |
+
+## Mod UIs: Damage Indicator, Guide Arrows, Quiet Pause (added with chunks 22–23)
+
+| English | Ukrainian |
+|---|---|
+| Damage Indicator (mod title) | Індикатор шкоди |
+| Guide Arrows / Guide arrows (mod title) | Стрілки-вказівники |
+| Damage / take damage | шкода / отримати шкоду ("Damage numbers" → "Числа шкоди", "After damage" → "Після шкоди") |
+| Health / Health bar | здоров'я / смужка здоров'я |
+| Healing numbers | Числа лікування |
+| Stun / Stun bars | оглушення / Смужки оглушення |
+| KO (badge) / DEAD (badge) | KO / ВБИТО |
+| Characters (NPCs + player) | персонажі |
+| Hits (damage numbers) | удари ("All hits" → "Усі удари") |
+| Target (arrow target) | ціль |
+| Stashes (Guide Arrows target = dead drops with items) | Схованки |
+| Home base | База ("Home base color" → "Колір бази") |
+| Last slept / Best equipped | Остання ночівля / Найкраще обладнання |
+| Max X | Макс. X ("Max distance" → "Макс. відстань") |
+| Opacity / Spacing / View angle | Непрозорість / Інтервал / Кут огляду |
+| Labels (text under arrows) | Підписи |
+| Reset all / Reset all settings | Скинути все / Скинути всі налаштування |
+| Mute in background / Mute when paused | Вимикати звук у фоні / Вимикати звук на паузі |
+| Unit keys after a number | "{0} s" → "{0} с", "{0} m" → "{0} м", "{0} km" → "{0} км", "{0} ft" → "{0} фт", "{0} mi" → "{0} миль" |
+| Phone clock "{0} AM Monday" | "{0} AM, понеділок" (AM/PM kept, weekday lowercase after a comma) |
+| Contacts web | мережа контактів |
+| Quest names | The Deep End → Головою у вир, Down to Business → Беремося до справи, Gearing up → Підготовка |

@@ -375,3 +375,21 @@ Bardzo niskie / Niskie / Umiarkowane / Wysokie / Bardzo wysokie.
 | `<NAME>` (friend of a customer) | keep uninflected, gender-neutral constructions: "Znam kogoś, komu twój towar może się spodobać: <NAME>." |
 | `<Employee>` (literal tag in locker subtitle) | keep exactly: "<Employee> będzie pobierać dniówkę z tej teczki." |
 | Internal/debug names (ColorFont keys, variables) | copy unchanged: Deselected, Selected, Future, ExpiringSoon, FadedText, *DropItemCount, Generic Dialogue |
+
+## Added while translating chunks 22–23 (Damage Indicator / Guide Arrows / Quiet Pause mods, extra game texts)
+
+| English | Polish |
+|---|---|
+| Damage Indicator (mod title) / Guide Arrows (mod title, "Guide arrows" HUD element) | Wskaźnik obrażeń / Strzałki nawigacyjne |
+| Health / Health bar / Damage / Healing | zdrowie / pasek zdrowia / obrażenia / leczenie ("Liczby obrażeń", "Liczby leczenia") |
+| Stun / stunned / knocked out | ogłuszenie / ogłuszony / znokautowany ("Paski ogłuszenia") |
+| KO / DEAD (HUD badges) | KO / NIE ŻYJE |
+| Mod setting toggles and labels | nouns: "Włączone", "Wyświetlanie", "Wyświetlanie strzałek", "Wyciszenie w tle", "Czas widoczności", "Maks. odległość", "Krycie" (Opacity), tab "Look" → "Wygląd", "General" → "Ogólne" |
+| "Seconds X stays..." tooltips | "Ile sekund X pozostaje widoczny..." |
+| Guide Arrows targets | Deals → Transakcje; Stashes (dead drops with items) → Skrytki; Quests → Zadania; Potential customers → Potencjalni klienci; Home base → Baza ("Kolor bazy") |
+| Mod color dropdown (shares keys with vehicle colors, nouns) | Green → Zieleń; Blue → Błękit (Red/Orange/Yellow/Purple/Cyan/Pink/White as in vehicle colors) |
+| Units after numbers | "{0} s", "{0} m", "{0} km", "{0} ft", "{0} mi" (unchanged) |
+| Phone clock "{0} AM Monday" | "{0} AM, poniedziałek" (AM/PM kept, weekday lowercase after a comma) |
+| Contacts web / compass | sieć kontaktów / kompas |
+| Quest names | Gearing up → Kompletowanie sprzętu; The Deep End → Na głęboką wodę; Down to Business → Czas na interesy |
+| "This customer has <COLOR><STANDARD></color> standards" | "Wymagania tego klienta: <COLOR><STANDARD></color>" (keeps the standard word nominative) |
