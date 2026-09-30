@@ -16,10 +16,21 @@ internal static class SafePatcher
     public static int Apply(HarmonyLib.Harmony harmony, MelonLogger.Instance log)
     {
         var failed = 0;
+#if DEV
+        // Bisecting crashes: S1_SKIP_PATCHES="DealPayment,QuestComplete" skips those patch classes.
+        var skip = (Environment.GetEnvironmentVariable("S1_SKIP_PATCHES") ?? "").Split(',');
+#endif
         foreach (var type in AccessTools.GetTypesFromAssembly(Assembly.GetExecutingAssembly()))
         {
             if (!type.GetCustomAttributes(typeof(HarmonyPatch), false).Any())
                 continue;
+#if DEV
+            if (skip.Contains(type.Name) || skip.Contains("*"))
+            {
+                log.Warning($"Patch {type.FullName} skipped (S1_SKIP_PATCHES)");
+                continue;
+            }
+#endif
             try
             {
                 harmony.CreateClassProcessor(type).Patch();

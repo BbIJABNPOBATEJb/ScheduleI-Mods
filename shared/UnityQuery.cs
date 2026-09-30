@@ -9,6 +9,21 @@ namespace S1Shared;
 
 internal static class UnityQuery
 {
+    /// <summary>A managed copy of a game list (IL2CPP lists don't support LINQ).</summary>
+#if IL2CPP
+    public static List<T> ToManaged<T>(Il2CppSystem.Collections.Generic.List<T>? list)
+    {
+        var result = new List<T>();
+        if (list == null)
+            return result;
+        for (var i = 0; i < list.Count; i++)
+            result.Add(list[i]);
+        return result;
+    }
+#else
+    public static List<T> ToManaged<T>(List<T>? list) => list == null ? new List<T>() : new List<T>(list);
+#endif
+
     /// <summary>All loaded objects of type T, including inactive ones and prefabs held in memory.</summary>
     public static List<T> FindAllIncludingAssets<T>() where T : Object
     {

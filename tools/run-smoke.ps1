@@ -14,6 +14,9 @@ param(
     [int] $TimeoutSeconds = 300,
     # Passed to the scenario as DevSmoke.Arg (e.g. a language code).
     [string] $Arg = "",
+    # A save folder to copy into the run and load instead of the game's default save
+    # (e.g. a backed-up SaveGame_1). The original is never modified.
+    [string] $Save = "",
     # Leave the Dev build in the game's Mods folder instead of redeploying the release build.
     [switch] $KeepDevBuild
 )
@@ -35,6 +38,10 @@ New-Item -ItemType Directory -Force $out | Out-Null
 
 $gameArgs = @("--s1dev-mod", $Mod, "--s1dev-scenario", $Scenario, "--s1dev-out", "`"$out`"", "--s1dev-timeout", $TimeoutSeconds)
 if ($Arg) { $gameArgs += @("--s1dev-arg", $Arg) }
+if ($Save) {
+    if (-not (Test-Path (Join-Path $Save "Game.json"))) { throw "$Save is not a save folder (no Game.json)" }
+    $gameArgs += @("--s1dev-save", "`"$((Resolve-Path $Save).Path)`"")
+}
 Write-Host "Launching $Runtime game: $runId"
 $process = Start-Process -FilePath (Join-Path $gamePath "Schedule I.exe") -WorkingDirectory $gamePath -ArgumentList $gameArgs -PassThru
 

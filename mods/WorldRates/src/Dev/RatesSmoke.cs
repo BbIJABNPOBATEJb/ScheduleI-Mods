@@ -23,6 +23,9 @@ internal static class RatesSmoke
             "inspect" => Inspect(),
             "ui" => Ui(),
             "income" => Income(),
+            "storage-save" => StorageSave(),
+            "complete-contract" => CompleteContract(),
+            "idle" => Idle(),
             _ => null,
         };
         if (body == null)
@@ -35,6 +38,58 @@ internal static class RatesSmoke
             runner.Tick();
             yield return null;
         }
+    }
+
+    /// <summary>Just lets the (copied) world run for a while: dealers deal, employees work.</summary>
+    private static IEnumerator Idle()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        for (var i = 0; i < 9; i++)
+        {
+            yield return 5f;
+            DevSmoke.Log($"alive {i * 5 + 5}s");
+        }
+        DevSmoke.Finish(true, "idle done");
+    }
+
+    /// <summary>With -Save of a progressed save: completes an active deal the way the game does.</summary>
+    private static IEnumerator CompleteContract()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 2f;
+        var contracts = S1Shared.UnityQuery.ToManaged(S1.Quests.Contract.Contracts);
+        DevSmoke.Log($"{contracts.Count} contracts");
+        var contract = contracts.First(c => c.State == S1.Quests.EQuestState.Active);
+        DevSmoke.Log($"Completing contract {contract.Title}");
+        contract.Complete(true);
+        DevSmoke.Log("Contract.Complete returned");
+        yield return 2f;
+        var quest = S1Shared.UnityQuery.ToManaged(S1.Quests.Quest.Quests).FirstOrDefault(q => q.State == S1.Quests.EQuestState.Active);
+        if (quest != null)
+        {
+            DevSmoke.Log($"Completing quest {quest.Title}");
+            quest.Complete(true);
+            DevSmoke.Log("Quest.Complete returned");
+        }
+        yield return 2f;
+        DevSmoke.Finish(true, "complete-contract done");
+    }
+
+    /// <summary>Loads a copied real save (-Save) and applies storage rates with a trace.</summary>
+    private static IEnumerator StorageSave()
+    {
+        StoragePatches.Trace = DevSmoke.Log;
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 2f;
+        DevSmoke.Log("manual ApplyAll x1");
+        StoragePatches.ApplyAll();
+        yield return 1f;
+        RatesState.Current.Set(RateCatalog.StorageFurniture, 2f);
+        RatesState.Current.Set(RateCatalog.StorageVehicles, 2f);
+        DevSmoke.Log("manual ApplyAll x2");
+        StoragePatches.ApplyAll();
+        yield return 20f;
+        DevSmoke.Finish(true, "storage-save done");
     }
 
     private static IEnumerator Inspect()

@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.1 - 2026-09-30
+
+- Fixed a crash (stack overflow) on the default IL2CPP branch when XP was awarded outside your own
+  actions, e.g. when a dealer completed a deal. XP is now scaled at a single safe point.
+- The "Storage capacity updated" log line no longer repeats while a slider is being dragged.
+- Plays nicely with other mods that add their own settings screens to the pause menu.
+
 ## 1.0.0 - 2026-09-30
 
 - First public release.

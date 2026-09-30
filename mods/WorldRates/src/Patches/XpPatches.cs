@@ -14,7 +14,6 @@ namespace WorldRates.Patches;
 internal static class XpPatches
 {
     private static string? _source;
-    private static bool _scaledByStub;
 
     public static bool DebugLog { get; set; }
 
@@ -38,31 +37,17 @@ internal static class XpPatches
         return scaled;
     }
 
-    // The public AddXP is a tiny RPC stub that IL2CPP may inline into callers, so the RPC writer is
-    // patched too; whichever runs first scales, the other sees the flag and leaves the value alone.
-    [HarmonyPatch(typeof(S1.Levelling.LevelManager), nameof(S1.Levelling.LevelManager.AddXP))]
-    private static class AddXpStub
-    {
-        private static void Prefix(ref int xp)
-        {
-            xp = Scale(xp);
-            _scaledByStub = true;
-        }
-
-        private static void Finalizer() => _scaledByStub = false;
-    }
-
+    // LevelManager.AddXP is a one-instruction stub that only forwards to its RPC writer. Hooking it
+    // (together with the writer) corrupted the neighbouring native code on IL2CPP and crashed the game
+    // with a stack overflow as soon as a dealer earned XP. Every XP award passes through the writer,
+    // synchronously within the source context, so the writer is the one place to scale.
     [HarmonyPatch]
     private static class AddXpWriter
     {
         private static MethodBase TargetMethod() => AccessTools.GetDeclaredMethods(typeof(S1.Levelling.LevelManager))
             .First(m => m.Name.StartsWith("RpcWriter___Server_AddXP", StringComparison.Ordinal));
 
-        private static void Prefix(ref int __0)
-        {
-            if (!_scaledByStub)
-                __0 = Scale(__0);
-        }
+        private static void Prefix(ref int __0) => __0 = Scale(__0);
     }
 
     // --- sources ---------------------------------------------------------------------------------

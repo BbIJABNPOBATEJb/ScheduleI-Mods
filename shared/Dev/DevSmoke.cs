@@ -22,6 +22,8 @@ internal static class DevSmoke
     public static string OutDir { get; private set; } = "";
     /// <summary>Free-form scenario parameter (--s1dev-arg), e.g. a language code.</summary>
     public static string Arg { get; private set; } = "";
+    /// <summary>Optional save folder (--s1dev-save) to copy and load instead of the default save.</summary>
+    public static string SaveSource { get; private set; } = "";
 
     private static float _deadline;
     private static bool _finished;
@@ -41,6 +43,7 @@ internal static class DevSmoke
                 case "--s1dev-out": outDir = args[++i]; break;
                 case "--s1dev-timeout": timeout = float.Parse(args[++i]); break;
                 case "--s1dev-arg": Arg = args[++i]; break;
+                case "--s1dev-save": SaveSource = args[++i]; break;
             }
         }
         if (!string.Equals(mod, modName, StringComparison.OrdinalIgnoreCase) || scenario == null || outDir == null)
@@ -54,6 +57,35 @@ internal static class DevSmoke
         _deadline = Time.realtimeSinceStartup + timeout;
         Log($"Smoke start: mod={modName} scenario={scenario} unity={Application.unityVersion} game={Application.version}");
         return true;
+    }
+
+    /// <summary>
+    /// Runs the scenario chosen on the command line; any exception fails the run. Start it from the
+    /// mod's CoRunner: <c>runner.Start(DevSmoke.RunScenario(name => name switch { ... }))</c>.
+    /// </summary>
+    public static IEnumerator RunScenario(Func<string, IEnumerator?> pick)
+    {
+        var body = pick(Scenario);
+        if (body == null)
+        {
+            Finish(false, "Unknown scenario " + Scenario);
+            yield break;
+        }
+        var runner = new CoRunner(ex => Finish(false, ex.ToString()));
+        runner.Start(body);
+        while (!_finished)
+        {
+            runner.Tick();
+            yield return null;
+        }
+    }
+
+    public static void Write(string fileName, string text) => File.WriteAllText(Path.Combine(OutDir, fileName), text);
+
+    public static void Check(bool condition, string failure)
+    {
+        if (!condition)
+            throw new InvalidOperationException(failure);
     }
 
     public static void Log(string message)
@@ -129,9 +161,16 @@ internal static class DevSmoke
 
     private static void CreateSaveFolder(string savePath, bool tutorial)
     {
-        var defaultSave = Path.Combine(Application.streamingAssetsPath, tutorial ? "DefaultTutorialSave" : "DefaultSave");
         if (Directory.Exists(savePath))
             Directory.Delete(savePath, true);
+        if (!tutorial && SaveSource.Length > 0)
+        {
+            // A copy of a real (e.g. backed-up) save: its own Game/Metadata files are kept.
+            CopyDirectory(Path.GetFullPath(SaveSource), savePath);
+            Log("Save copied from " + SaveSource);
+            return;
+        }
+        var defaultSave = Path.Combine(Application.streamingAssetsPath, tutorial ? "DefaultTutorialSave" : "DefaultSave");
         CopyDirectory(defaultSave, savePath);
         File.WriteAllText(Path.Combine(savePath, "Game.json"),
             "{\"DataType\":\"GameData\",\"DataVersion\":0,\"GameVersion\":\"" + Application.version +

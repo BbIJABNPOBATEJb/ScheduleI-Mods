@@ -121,7 +121,8 @@ internal static class RatesWindow
     private static void Build(S1.UI.PauseMenu pause)
     {
         var source = UnityQuery.GetComponentsInChildren<S1.UI.MainMenu.SettingsScreen>(pause, true)
-            .FirstOrDefault(s => s.name != ScreenName) ?? throw new InvalidOperationException("in-game Settings screen not found");
+            .FirstOrDefault(s => s.name != ScreenName && !s.name.EndsWith("ModScreen", StringComparison.Ordinal))
+            ?? throw new InvalidOperationException("in-game Settings screen not found");
 
         // Work on a clone parked under an inactive holder: nothing in it wakes up until it is ready.
         var holder = new GameObject("WorldRates Holder");

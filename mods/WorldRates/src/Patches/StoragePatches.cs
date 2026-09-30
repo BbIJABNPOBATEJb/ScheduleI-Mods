@@ -34,6 +34,10 @@ internal static class StoragePatches
 
     private static readonly Dictionary<int, Info> Known = new();
 
+#if DEV
+    public static Action<string>? Trace;
+#endif
+
     /// <summary>Applies the current multipliers to every tracked storage in the world.</summary>
     public static void ApplyAll()
     {
@@ -42,12 +46,26 @@ internal static class StoragePatches
         {
             if (!Known.TryGetValue(entity.GetInstanceID(), out var info))
                 continue;
+#if DEV
+            if (Trace != null)
+                Trace($"apply {UnityQuery.PathOf(entity.transform)} slots={entity.ItemSlots.Count} base={info.BaseSlots} target={TargetSlots(info)}");
+#endif
             if (Resize(entity, TargetSlots(info), info))
                 changed++;
         }
-        if (changed > 0)
-            MelonLogger.Msg($"Storage capacity updated on {changed} containers");
+        if (changed == 0)
+            return;
+        // Dragging a slider applies many times per second: log once it settles.
+        _pendingLog += changed;
+        if (Time.realtimeSinceStartup - _lastLog < 2f)
+            return;
+        MelonLogger.Msg($"Storage capacity updated on {_pendingLog} containers");
+        _pendingLog = 0;
+        _lastLog = Time.realtimeSinceStartup;
     }
+
+    private static int _pendingLog;
+    private static float _lastLog = -10f;
 
     public static string Describe()
     {
