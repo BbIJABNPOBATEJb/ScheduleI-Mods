@@ -42,6 +42,7 @@ PAGES = {
     "DamageIndicator": 2751,
     "QuietPause": 2752,
     "WorldRates": 2753,
+    "ElectricScooter": 2754,
 }
 # Archive label -> (a word in the name of the page's file it is a new version of, the name's suffix).
 RUNTIMES = {"IL2CPP": ("IL2CPP", "IL2CPP - default branch"), "Mono": ("Mono", "Mono - alternate branch")}

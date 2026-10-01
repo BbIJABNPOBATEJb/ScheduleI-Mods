@@ -25,7 +25,7 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 
 **With a mod manager** (r2modman, Thunderstore App): every mod is on [Thunderstore](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/) — `<Mod>` for the default Steam branch (IL2CPP), `<Mod>_Mono` for `alternate`.
 
-**Nexus Mods:** [Polyglot](https://www.nexusmods.com/schedule1/mods/2748) · [World Rates](https://www.nexusmods.com/schedule1/mods/2753) · [Damage Indicator](https://www.nexusmods.com/schedule1/mods/2751) · [Guide Arrows](https://www.nexusmods.com/schedule1/mods/2750) · [Quiet Pause](https://www.nexusmods.com/schedule1/mods/2752).
+**Nexus Mods:** [Polyglot](https://www.nexusmods.com/schedule1/mods/2748) · [World Rates](https://www.nexusmods.com/schedule1/mods/2753) · [Damage Indicator](https://www.nexusmods.com/schedule1/mods/2751) · [Guide Arrows](https://www.nexusmods.com/schedule1/mods/2750) · [Quiet Pause](https://www.nexusmods.com/schedule1/mods/2752) · [Electric Scooter](https://www.nexusmods.com/schedule1/mods/2754).
 
 **Manually:**
 
