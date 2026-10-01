@@ -1,0 +1,3 @@
+// Electric Scooter 1.0.0: the item's name and description
+Electric Scooter
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.

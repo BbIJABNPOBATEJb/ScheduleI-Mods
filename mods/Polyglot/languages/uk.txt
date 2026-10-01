@@ -4183,3 +4183,5 @@ Deal requests=Запити на угоду
 Dealer orders=Замовлення у дилерів
 How often customers text you asking for a deal. Order size stays the same.=Як часто клієнти пишуть вам із проханням про угоду. Розмір замовлення не змінюється.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=Як часто клієнти замовляють у ваших дилерів — тобто як швидко дилер продає виданий йому товар.
+Electric Scooter=Електросамокат
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=Електросамокат із великими колесами. Переїжджає бордюри, не забирає сил і обганяє будь-який скейтборд.

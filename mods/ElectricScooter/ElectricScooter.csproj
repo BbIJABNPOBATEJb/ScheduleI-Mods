@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <!-- The item's inventory icon (drawn by tools/make_media.py). -->
+    <EmbeddedResource Include="assets\item-icon.png" LogicalName="ElectricScooter.item-icon.png" />
+  </ItemGroup>
+</Project>

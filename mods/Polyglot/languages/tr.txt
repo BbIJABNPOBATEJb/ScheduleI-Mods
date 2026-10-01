@@ -4183,3 +4183,5 @@ Deal requests=Anlaşma talepleri
 Dealer orders=Satıcı siparişleri
 How often customers text you asking for a deal. Order size stays the same.=Müşterilerin anlaşma istemek için sana ne sıklıkla mesaj attığı. Sipariş miktarı aynı kalır.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=Müşterilerin satıcılarından ne sıklıkla sipariş verdiği, yani bir satıcının ona verdiğin ürünü ne kadar hızlı sattığı.
+Electric Scooter=Elektrikli Scooter
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=Büyük tekerlekli elektrikli scooter. Kaldırımlardan geçer, seni hiç yormaz ve her kaykayı geride bırakır.

@@ -4183,3 +4183,5 @@ Deal requests=取引の依頼
 Dealer orders=売人への注文
 How often customers text you asking for a deal. Order size stays the same.=顧客が取引を求めてメッセージを送ってくる頻度。注文量は変わりません。
 How often customers order from your dealers - how fast a dealer sells the product you give him.=顧客が売人に注文する頻度。売人が渡された商品を売りさばく速さです。
+Electric Scooter=電動キックボード
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=大きなタイヤの電動キックボード。縁石を乗り越え、スタミナを使わず、どのスケートボードよりも速い。

@@ -4183,3 +4183,5 @@ Deal requests=Prośby o transakcję
 Dealer orders=Zamówienia u dilerów
 How often customers text you asking for a deal. Order size stays the same.=Jak często klienci piszą do ciebie z prośbą o transakcję. Wielkość zamówienia się nie zmienia.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=Jak często klienci zamawiają u twoich dilerów – czyli jak szybko diler sprzedaje towar, który mu dajesz.
+Electric Scooter=Hulajnoga elektryczna
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=Hulajnoga elektryczna z dużymi kołami. Przejeżdża przez krawężniki, nie męczy i wyprzedza każdą deskorolkę.

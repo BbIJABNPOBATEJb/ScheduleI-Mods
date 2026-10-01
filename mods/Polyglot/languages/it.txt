@@ -4183,3 +4183,5 @@ Deal requests=Richieste di affari
 Dealer orders=Ordini agli spacciatori
 How often customers text you asking for a deal. Order size stays the same.=Quanto spesso i clienti ti scrivono per chiedere un affare. La quantità ordinata resta la stessa.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=Quanto spesso i clienti ordinano dai tuoi spacciatori: quanto in fretta uno spacciatore vende il prodotto che gli dai.
+Electric Scooter=Monopattino elettrico
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=Monopattino elettrico con ruote grandi. Supera i marciapiedi, non ti stanca mai e semina qualsiasi skateboard.

@@ -10,6 +10,7 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 | <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)** | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
 | <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)** | 3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. |
 | <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)** | Mutes the game while minimized and pauses world sounds in the pause menu. |
+| <img src="mods/ElectricScooter/assets/icon.png" width="64"> | **[Electric Scooter](mods/ElectricScooter)** | An electric scooter at the skate shop: rides like the Golden Skateboard, but rolls over curbs, uses no stamina and is 30% faster. *(not released yet)* |
 
 <p>
   <img src="docs/images/polyglot-language-picker.jpg" width="49%">
@@ -83,6 +84,7 @@ mods/WorldRates/                 rates mod: src/, assets/
 mods/DamageIndicator/            health bars and damage numbers
 mods/GuideArrows/                3D guide arrows under the compass
 mods/QuietPause/                 background / pause audio
+mods/ElectricScooter/            the scooter: item, shop entry, ride tuning, model
 tools/                           smoke-test runner, packaging, font and translation tooling
 docs/images/                     screenshots
 ```

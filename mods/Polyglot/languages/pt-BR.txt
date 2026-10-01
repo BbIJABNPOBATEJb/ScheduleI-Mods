@@ -4183,3 +4183,5 @@ Deal requests=Pedidos de negócio
 Dealer orders=Pedidos aos traficantes
 How often customers text you asking for a deal. Order size stays the same.=Com que frequência os clientes mandam mensagem pedindo um negócio. O tamanho do pedido não muda.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=Com que frequência os clientes pedem aos seus traficantes: a rapidez com que um traficante vende o produto que você entrega a ele.
+Electric Scooter=Patinete elétrico
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=Patinete elétrico de rodas grandes. Passa por cima do meio-fio, nunca cansa e deixa qualquer skate para trás.

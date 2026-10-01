@@ -159,6 +159,28 @@ internal static class DevSmoke
         Log("Game loaded");
     }
 
+    /// <summary>Saves the running (disposable) game and loads it again, like quitting to the menu and continuing.</summary>
+    public static IEnumerator SaveAndReload()
+    {
+        var saveManager = S1.Persistence.SaveManager.Instance;
+        var loadManager = S1.Persistence.LoadManager.Instance;
+        saveManager.Save();
+        yield return 1f;
+        yield return WaitUntil(() => !saveManager.IsSaving, 60f, "saving");
+        yield return 1f;
+        var info = loadManager.ActiveSaveInfo;
+        Log("Saved; reloading " + info.SavePath);
+        loadManager.StartGame(info, true, false);
+        var began = Time.realtimeSinceStartup;
+        while (!loadManager.IsLoading && Time.realtimeSinceStartup - began < 10f)
+            yield return null;
+        yield return WaitUntil(() => SceneManager.GetActiveScene().name == "Main" && !loadManager.IsLoading && loadManager.IsGameLoaded,
+            120f, "game reload");
+        yield return WaitUntil(() => S1.PlayerScripts.Player.Local != null, 30f, "local player");
+        yield return 3f;
+        Log("Game reloaded");
+    }
+
     private static void CreateSaveFolder(string savePath, bool tutorial)
     {
         if (Directory.Exists(savePath))

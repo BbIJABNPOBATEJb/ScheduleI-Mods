@@ -31,6 +31,10 @@ SHOTS = [
     ("guidearrows-labels.jpg", "GuideArrows-arrows-il2cpp-20260930-211843", "mode_nearest_labels.png", (460, 0, 1460, 260)),
     ("guidearrows-settings.jpg", "GuideArrows-arrows-il2cpp-20260930-211843", "settings_tab1.png", (480, 260, 1440, 820)),
     ("quietpause-settings.jpg", "QuietPause-audio-il2cpp-20260930-212727", "audio_settings.png", (480, 260, 1440, 820)),
+    ("electricscooter-ride.jpg", "ElectricScooter-ride-il2cpp-*", "curb_moving.png", (280, 100, 1380, 870)),
+    ("electricscooter-front.jpg", "ElectricScooter-ride-il2cpp-*", "scooter_front.png", (250, 0, 1350, 900)),
+    ("electricscooter-shop.jpg", "ElectricScooter-shop-il2cpp-*", "shop_choices.png", (460, 380, 1460, 1080)),
+    ("electricscooter-held.jpg", "ElectricScooter-shop-il2cpp-*", "held_after_reload.png", (380, 480, 1920, 1080)),
 ]
 
 
@@ -170,15 +174,80 @@ def quietpause_icon(size: int = 512) -> Image.Image:
     return icon
 
 
+def scooter(d: ImageDraw.ImageDraw, ox: float, oy: float, s: float) -> None:
+    """Side view of the electric scooter (facing right) in a 512-unit design space placed at (ox, oy)."""
+    gold, gold_dark, gold_light = (246, 190, 44), (196, 136, 22), (255, 226, 120)
+    dark, tyre, hub = (44, 47, 56), (20, 21, 25), (188, 194, 206)
+
+    def p(x, y):
+        return (ox + x * s, oy + y * s)
+
+    def line(a, b, width, fill):
+        d.line([p(*a), p(*b)], fill=fill, width=max(1, int(width * s)))
+        r = width * s / 2
+        for x, y in (p(*a), p(*b)):
+            d.ellipse((x - r, y - r, x + r, y + r), fill=fill)
+
+    def disc(c, r, fill):
+        x, y = p(*c)
+        d.ellipse((x - r * s, y - r * s, x + r * s, y + r * s), fill=fill)
+
+    # rear fender, battery pack under the deck
+    d.arc((*p(18, 300), *p(182, 464)), 185, 300, fill=dark, width=int(13 * s))
+    d.rounded_rectangle((*p(176, 338), *p(332, 372)), radius=int(10 * s), fill=dark)
+    # wheels
+    for cx in (100, 404):
+        disc((cx, 400), 72, tyre)
+        disc((cx, 400), 40, hub)
+        disc((cx, 400), 26, dark)
+        disc((cx, 400), 11, gold)
+    # deck with a highlight, tail and neck
+    line((92, 312), (150, 326), 20, gold_dark)
+    line((150, 326), (350, 326), 26, gold)
+    line((158, 319), (342, 319), 7, gold_light)
+    line((350, 326), (398, 306), 24, gold_dark)
+    # forks
+    line((404, 400), (398, 306), 13, dark)
+    line((100, 400), (92, 312), 13, dark)
+    # steering column, headlight, handlebar with grips
+    line((398, 306), (352, 96), 22, gold)
+    line((392, 290), (350, 100), 6, gold_light)
+    line((372, 150), (398, 146), 26, dark)
+    disc((404, 145), 9, (255, 244, 190))
+    line((300, 92), (404, 92), 16, dark)
+    line((292, 92), (326, 92), 24, tyre)
+    line((378, 92), (412, 92), 24, tyre)
+
+
+def scooter_item_icon(size: int = 256) -> Image.Image:
+    """In-game item icon of the Electric Scooter (transparent, like the game's own item icons)."""
+    big = Image.new("RGBA", (size * 4, size * 4), (0, 0, 0, 0))
+    scooter(ImageDraw.Draw(big), 6 * size / 64, -2 * size / 64, size * 4 / 512 * 0.98)
+    return big.resize((size, size), Image.LANCZOS)
+
+
+def electricscooter_icon(size: int = 512) -> Image.Image:
+    icon = rounded_bg(size * 2, (44, 40, 28), (18, 16, 12))
+    d = ImageDraw.Draw(icon)
+    s = size * 2 / 512
+    scooter(d, 34 * s, 4 * s, s * 0.86)
+    # lightning bolt: it is electric
+    bolt = [(86, 60), (150, 60), (122, 124), (166, 124), (78, 232), (104, 152), (62, 152)]
+    d.polygon([(x * s, y * s) for x, y in bolt], fill=(84, 231, 23))
+    return icon.resize((size, size), Image.LANCZOS)
+
+
 def icons() -> None:
     for name, make in (("Polyglot", polyglot_icon), ("WorldRates", worldrates_icon), ("DamageIndicator", damageindicator_icon),
-                       ("GuideArrows", guidearrows_icon), ("QuietPause", quietpause_icon)):
+                       ("GuideArrows", guidearrows_icon), ("QuietPause", quietpause_icon),
+                       ("ElectricScooter", electricscooter_icon)):
         assets = ROOT / "mods" / name / "assets"
         assets.mkdir(parents=True, exist_ok=True)
         big = make(512)
         big.save(assets / "icon-512.png")
         big.resize((256, 256), Image.LANCZOS).save(assets / "icon.png")  # Thunderstore size
         print(f"{name} icons")
+    scooter_item_icon().save(ROOT / "mods" / "ElectricScooter" / "assets" / "item-icon.png")
 
 
 if __name__ == "__main__":

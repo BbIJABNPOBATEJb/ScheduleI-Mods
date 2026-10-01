@@ -4183,3 +4183,5 @@ Deal requests=거래 요청
 Dealer orders=딜러 주문
 How often customers text you asking for a deal. Order size stays the same.=고객이 거래를 요청하는 문자를 보내는 빈도. 주문량은 그대로입니다.
 How often customers order from your dealers - how fast a dealer sells the product you give him.=고객이 딜러에게 주문하는 빈도, 즉 딜러가 받은 제품을 판매하는 속도.
+Electric Scooter=전동 킥보드
+Electric kick scooter with big wheels. Rolls over curbs, never wears you out and outruns any skateboard.=바퀴가 큰 전동 킥보드. 연석을 넘어가고, 지치지 않으며, 어떤 스케이트보드보다 빠릅니다.

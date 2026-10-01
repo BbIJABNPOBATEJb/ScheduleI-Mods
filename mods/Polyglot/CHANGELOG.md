@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2026-10-01
+
+- Translations for the new deal frequency rates of World Rates 1.1.0 and for the Electric Scooter mod.
+
 ## 1.1.0 - 2026-09-30
 
 - Phone calls are translated on the default IL2CPP branch too (the game's call text processing is

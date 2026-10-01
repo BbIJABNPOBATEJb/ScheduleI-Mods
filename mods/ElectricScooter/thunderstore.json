@@ -1,0 +1,7 @@
+{
+    "name": "ElectricScooter",
+    "description": "Electric scooter sold at the skate shop: rides like the Golden Skateboard but rolls over curbs instead of stopping, uses no stamina and is 30% faster. Own model, configurable. IL2CPP build.",
+    "dependencies": [
+        "LavaGang-MelonLoader-0.7.3"
+    ]
+}

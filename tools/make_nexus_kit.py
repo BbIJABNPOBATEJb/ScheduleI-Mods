@@ -46,9 +46,9 @@ MODS = {
         "page_name": "World Rates - XP Income and Storage Multipliers",
         "category": "Gameplay",
         "tagline": "Rust-style server rates:\nXP, income, storage.",
-        "summary": "Server-style rates like on Rust servers: multiply XP, income and storage capacity per source and "
-                   "per world, tuned live in a native in-game window (pause menu or F10). Presets x1-x10. "
-                   "IL2CPP and Mono.",
+        "summary": "Server-style rates like on Rust servers: multiply XP, income, deal frequency and storage capacity "
+                   "per source and per world, tuned live in a native in-game window (pause menu or F10). "
+                   "Presets x1-x10. IL2CPP and Mono.",
         "banner": ("docs/images/worldrates-experience.jpg", None),
         "gallery": ["worldrates-experience.jpg", "worldrates-deals.jpg", "worldrates-presets.jpg", "worldrates-storage-x2.jpg",
                     "worldrates-pause-menu.jpg", "worldrates-ru.jpg"],
@@ -91,6 +91,19 @@ MODS = {
         "banner": ("docs/images/quietpause-settings.jpg", None),
         "gallery": ["quietpause-settings.jpg"],
         "tags": "Audio, Quality of Life, Bug Fix, MelonLoader",
+        "credits": "Developed with AI assistance (Claude by Anthropic).",
+    },
+    "ElectricScooter": {
+        "page_name": "Electric Scooter - Rolls Over Curbs No Stamina 30 Percent Faster",
+        "category": "Gameplay",
+        "tagline": "A scooter that rolls\nover curbs. No stamina,\n30% faster.",
+        "summary": "An electric scooter sold at the skate shop for $5,000. Rides like the Golden Skateboard but rolls "
+                   "over curbs instead of stopping at them, uses no stamina and is 30% faster. Own model, "
+                   "configurable. IL2CPP and Mono.",
+        "banner": ("docs/images/electricscooter-ride.jpg", None),
+        "gallery": ["electricscooter-ride.jpg", "electricscooter-front.jpg", "electricscooter-shop.jpg",
+                    "electricscooter-held.jpg"],
+        "tags": "Gameplay, Vehicles, New Item, Configurable, MelonLoader",
         "credits": "Developed with AI assistance (Claude by Anthropic).",
     },
 }
