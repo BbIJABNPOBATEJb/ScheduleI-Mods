@@ -4179,3 +4179,7 @@ Name=名前
 {0} PM Friday=金曜日 午後{0}
 {0} PM Saturday=土曜日 午後{0}
 {0} PM Sunday=日曜日 午後{0}
+Deal requests=取引の依頼
+Dealer orders=売人への注文
+How often customers text you asking for a deal. Order size stays the same.=顧客が取引を求めてメッセージを送ってくる頻度。注文量は変わりません。
+How often customers order from your dealers - how fast a dealer sells the product you give him.=顧客が売人に注文する頻度。売人が渡された商品を売りさばく速さです。

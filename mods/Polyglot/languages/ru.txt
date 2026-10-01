@@ -4179,3 +4179,7 @@ Name=Название
 {0} PM Friday={0} PM, пятница
 {0} PM Saturday={0} PM, суббота
 {0} PM Sunday={0} PM, воскресенье
+Deal requests=Запросы на сделку
+Dealer orders=Заказы у дилеров
+How often customers text you asking for a deal. Order size stays the same.=Как часто клиенты пишут вам с просьбой о сделке. Размер заказа не меняется.
+How often customers order from your dealers - how fast a dealer sells the product you give him.=Как часто клиенты заказывают у ваших дилеров — то есть как быстро дилер продаёт выданный ему товар.

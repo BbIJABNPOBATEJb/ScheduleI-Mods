@@ -41,15 +41,20 @@ internal sealed class RateSettings
             Set(def.Id, 1f);
     }
 
-    /// <summary>Rust-style "xN server": all experience and income ×N, storage up to its maximum.</summary>
+    /// <summary>
+    /// Rust-style "xN server": all experience and income ×N, storage up to its maximum. Deal frequency
+    /// is a matter of taste (×10 floods the phone), so presets leave it alone; only "vanilla" resets it.
+    /// </summary>
     public void ApplyPreset(float n)
     {
         foreach (var def in RateCatalog.All)
         {
             if (def.Group == RateGroup.Storage)
                 Set(def.Id, Mathf.Clamp(n, def.Min, def.Max));
-            else
+            else if (def.Group != RateGroup.Deals)
                 Set(def.Id, def.IsGroupTotal ? n : 1f);
+            else if (Mathf.Approximately(n, 1f))
+                Set(def.Id, 1f);
         }
     }
 

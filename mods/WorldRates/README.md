@@ -3,14 +3,18 @@
 <img src="assets/icon-512.png" width="128" align="right">
 
 Server-style rates for **Schedule I**, like the "x2 / x3 / x10" servers in Rust: multiply XP,
-income and storage capacity — per source, per world, from a native in-game window, with no restart.
+income, deal frequency and storage capacity — per source, per world, from a native in-game window,
+with no restart.
 
 <p>
   <img src="../../docs/images/worldrates-experience.jpg" width="49%">
   <img src="../../docs/images/worldrates-presets.jpg" width="49%">
 </p>
 <p>
+  <img src="../../docs/images/worldrates-deals.jpg" width="49%">
   <img src="../../docs/images/worldrates-storage-x2.jpg" width="49%">
+</p>
+<p>
   <img src="../../docs/images/worldrates-pause-menu.jpg" width="40%">
 </p>
 
@@ -20,6 +24,7 @@ income and storage capacity — per source, per world, from a native in-game win
 |---|---|
 | **Experience** | *All experience*, plus per source: your deals, dealer deals, free samples, counter-offers, harvesting, new mixes, quests, escaping the police, graffiti, pickpocketing, other |
 | **Income** | *All income*, plus per source: your deals (bonuses included), dealer sales, laundering, pawn shop, recycling |
+| **Deals** | *Deal requests* — how often customers text you asking for a deal; *Dealer orders* — how often customers order from your dealers, i.e. how fast a dealer sells the product you give him. Off–×10 |
 | **Storage** | Placed storage (racks, shelves, safes, tables, briefcases…) and your own vehicles' trunks, ×1–×4 up to 20 slots |
 | **Presets** | Vanilla ×1 · All rates ×2 · ×3 · ×5 · ×10 · "use these rates for new worlds" |
 
@@ -28,6 +33,9 @@ income and storage capacity — per source, per world, from a native in-game win
 - Changes apply instantly. Every world keeps its own settings.
 - Deal payments are scaled before the game uses them, so the deal popup, bonuses, dealer cuts and
   the daily summary all show the boosted amounts.
+- Deal rates change how often customers order, not how much: order sizes stay as in the base game,
+  so ×2 is twice as many orders. "Off" stops new requests; running deals are not touched. The
+  ×2–×10 presets leave these two rates alone.
 - Storage is resized live. Items are never deleted: shrinking only removes empty slots at the end,
   and loading a save grows a storage back to the size its items need.
 - The window is built from the game's own Settings screen (tabs, sliders, tooltips), so it looks and

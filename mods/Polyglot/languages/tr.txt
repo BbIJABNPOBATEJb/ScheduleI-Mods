@@ -4179,3 +4179,7 @@ Name=Ad
 {0} PM Friday=Cuma {0} PM
 {0} PM Saturday=Cumartesi {0} PM
 {0} PM Sunday=Pazar {0} PM
+Deal requests=Anlaşma talepleri
+Dealer orders=Satıcı siparişleri
+How often customers text you asking for a deal. Order size stays the same.=Müşterilerin anlaşma istemek için sana ne sıklıkla mesaj attığı. Sipariş miktarı aynı kalır.
+How often customers order from your dealers - how fast a dealer sells the product you give him.=Müşterilerin satıcılarından ne sıklıkla sipariş verdiği, yani bir satıcının ona verdiğin ürünü ne kadar hızlı sattığı.

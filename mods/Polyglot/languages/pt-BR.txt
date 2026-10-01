@@ -4179,3 +4179,7 @@ Name=Nome
 {0} PM Friday=Sexta-feira, {0} PM
 {0} PM Saturday=Sábado, {0} PM
 {0} PM Sunday=Domingo, {0} PM
+Deal requests=Pedidos de negócio
+Dealer orders=Pedidos aos traficantes
+How often customers text you asking for a deal. Order size stays the same.=Com que frequência os clientes mandam mensagem pedindo um negócio. O tamanho do pedido não muda.
+How often customers order from your dealers - how fast a dealer sells the product you give him.=Com que frequência os clientes pedem aos seus traficantes: a rapidez com que um traficante vende o produto que você entrega a ele.

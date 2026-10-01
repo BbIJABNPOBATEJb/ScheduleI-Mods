@@ -159,8 +159,8 @@ internal static class RatesWindow
         SetText(root.transform, "Title", "World Rates");
         _worldLabel = UiKit.Find(root.transform, "Version") is { } version ? UiKit.Get<TMP_Text>(version) : null;
 
-        var groups = new[] { RateGroup.Experience, RateGroup.Income, RateGroup.Storage };
-        var tabTitles = new[] { "Experience", "Income", "Storage", "Presets" };
+        var groups = new[] { RateGroup.Experience, RateGroup.Income, RateGroup.Deals, RateGroup.Storage };
+        var tabTitles = new[] { "Experience", "Income", "Deals", "Storage", "Presets" };
         for (var i = 0; i < categories.Length; i++)
         {
             var toggle = categories[i].Toggle;
@@ -418,7 +418,7 @@ internal static class RatesWindow
     /// <summary>For per-source rows: the rate after the group's "all" multiplier, e.g. "×2 (×6)".</summary>
     private static string EffectiveSuffix(RateDef def, float v)
     {
-        if (def.IsGroupTotal || def.Group == RateGroup.Storage)
+        if (def.IsGroupTotal || (def.Group != RateGroup.Experience && def.Group != RateGroup.Income))
             return "";
         var total = RatesState.Current.Get(def.Group == RateGroup.Experience ? RateCatalog.XpAll : RateCatalog.IncomeAll);
         return Mathf.Approximately(total, 1f) ? "" : $" <color=#9A9A9A>({Format(v * total)})</color>";

@@ -4179,3 +4179,7 @@ Name=名称
 {0} PM Friday=星期五下午{0}
 {0} PM Saturday=星期六下午{0}
 {0} PM Sunday=星期日下午{0}
+Deal requests=交易请求
+Dealer orders=毒贩订单
+How often customers text you asking for a deal. Order size stays the same.=顾客发短信找你交易的频率。订单数量不变。
+How often customers order from your dealers - how fast a dealer sells the product you give him.=顾客向你的毒贩下单的频率，即毒贩卖掉你给他的货的速度。

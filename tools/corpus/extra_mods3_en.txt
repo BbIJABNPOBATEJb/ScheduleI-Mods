@@ -1,0 +1,5 @@
+// World Rates 1.1.0: deal frequency rates
+Deal requests
+Dealer orders
+How often customers text you asking for a deal. Order size stays the same.
+How often customers order from your dealers - how fast a dealer sells the product you give him.

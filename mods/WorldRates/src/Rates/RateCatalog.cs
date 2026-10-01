@@ -7,6 +7,7 @@ internal enum RateGroup
 {
     Experience,
     Income,
+    Deals,
     Storage,
 }
 
@@ -60,6 +61,10 @@ internal static class RateCatalog
     public const string IncomePawnShop = "income.pawn_shop";
     public const string IncomeRecycling = "income.recycling";
 
+    // Deal frequency
+    public const string DealsRequests = "deals.requests";
+    public const string DealsDealers = "deals.dealers";
+
     // Storage
     public const string StorageFurniture = "storage.furniture";
     public const string StorageVehicles = "storage.vehicles";
@@ -85,6 +90,9 @@ internal static class RateCatalog
         new RateDef(IncomeLaundering, RateGroup.Income, "Laundering", "Money returned by business laundering."),
         new RateDef(IncomePawnShop, RateGroup.Income, "Pawn shop", "Selling items at the pawn shop."),
         new RateDef(IncomeRecycling, RateGroup.Income, "Recycling", "Cash from the recycler."),
+
+        new RateDef(DealsRequests, RateGroup.Deals, "Deal requests", "How often customers text you asking for a deal. Order size stays the same."),
+        new RateDef(DealsDealers, RateGroup.Deals, "Dealer orders", "How often customers order from your dealers - how fast a dealer sells the product you give him."),
 
         new RateDef(StorageFurniture, RateGroup.Storage, "Placed storage", "Racks, shelves, safes and other placeable storage. Max 20 slots.", 1f, 4f, 0.25f),
         new RateDef(StorageVehicles, RateGroup.Storage, "Vehicle trunks", "Trunk capacity of vehicles. Max 20 slots.", 1f, 4f, 0.25f),

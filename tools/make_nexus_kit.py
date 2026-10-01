@@ -2,7 +2,8 @@
 
     fields.txt              every form field and what to put in it
     description.bbcode.txt  the mod's README converted to Nexus BBCode
-    banner.png              1280x720 primary image
+    banner-1920x1080.png    16:9 image
+    banner-1300x372.png     wide header image
     01_*.jpg ...            gallery screenshots
     <Mod>-<ver>-IL2CPP.zip / -Mono.zip   the files to upload (run tools/package.ps1 first)
 
@@ -49,7 +50,7 @@ MODS = {
                    "per world, tuned live in a native in-game window (pause menu or F10). Presets x1-x10. "
                    "IL2CPP and Mono.",
         "banner": ("docs/images/worldrates-experience.jpg", None),
-        "gallery": ["worldrates-experience.jpg", "worldrates-presets.jpg", "worldrates-storage-x2.jpg",
+        "gallery": ["worldrates-experience.jpg", "worldrates-deals.jpg", "worldrates-presets.jpg", "worldrates-storage-x2.jpg",
                     "worldrates-pause-menu.jpg", "worldrates-ru.jpg"],
         "tags": "Gameplay, Cheats / Balance, Configurable, MelonLoader",
         "credits": "Developed with AI assistance (Claude by Anthropic).",
@@ -245,8 +246,22 @@ def font(name: str, size: int) -> ImageFont.FreeTypeFont:
     return ImageFont.truetype(str(FONTS / name), size)
 
 
-def banner(mod: str, info: dict, title: str) -> Image.Image:
-    width, height = 1280, 720
+BANNERS = {"banner-1920x1080.png": (1920, 1080), "banner-1300x372.png": (1300, 372)}  # the sizes Nexus asks for
+
+
+def banner(mod: str, info: dict, title: str, size: tuple) -> Image.Image:
+    width, height = size
+    wide = width / height > 2.5  # a short strip: the icon sits beside the text instead of above it
+    k = 1 if wide else height / 720
+
+    def px(value: float) -> int:
+        return round(value * k)
+
+    area_x, icon_size, icon_at = (640, 150, (56, 52)) if wide else (px(470), px(190), (px(70), px(70)))
+    text_x, title_y, title_size, title_width = (236, 30, 68, 560) if wide else (px(70), px(300), px(84), px(620))
+    line_size, line_step, line_gap = (30, 40, 26) if wide else (px(36), px(48), px(34))
+    footer_x, footer_y, footer_size = (58, height - 60, 22) if wide else (px(72), height - px(70), px(24))
+
     image = Image.new("RGB", (width, height))
     draw = ImageDraw.Draw(image)
     for y in range(height):
@@ -257,7 +272,6 @@ def banner(mod: str, info: dict, title: str) -> Image.Image:
     shot = Image.open(ROOT / source).convert("RGB")
     if box:
         shot = shot.crop(box)
-    area_x = 470
     area_w = width - area_x
     scale = max(area_w / shot.width, height / shot.height)
     shot = shot.resize((round(shot.width * scale), round(shot.height * scale)), Image.LANCZOS)
@@ -266,25 +280,27 @@ def banner(mod: str, info: dict, title: str) -> Image.Image:
     shot = shot.crop((left, top, left + area_w, top + height))
     fade = Image.new("L", (area_w, height), 255)
     fade_draw = ImageDraw.Draw(fade)
-    for x in range(260):
-        fade_draw.line([(x, 0), (x, height)], fill=int(255 * (x / 260) ** 1.6))
+    fade_w = px(260)
+    for x in range(fade_w):
+        fade_draw.line([(x, 0), (x, height)], fill=int(255 * (x / fade_w) ** 1.6))
     image.paste(shot, (area_x, 0), fade)
 
-    icon = Image.open(ROOT / "mods" / mod / "assets" / "icon-512.png").convert("RGBA").resize((190, 190), Image.LANCZOS)
-    image.paste(icon, (70, 70), icon)
+    icon = Image.open(ROOT / "mods" / mod / "assets" / "icon-512.png").convert("RGBA")
+    icon = icon.resize((icon_size, icon_size), Image.LANCZOS)
+    image.paste(icon, icon_at, icon)
 
-    size = 84
-    while size > 40 and draw.textlength(title, font=font("OpenSans-Bold.ttf", size)) > 620:
-        size -= 2
-    draw.text((70, 300), title, font=font("OpenSans-Bold.ttf", size), fill=(255, 255, 255),
-              stroke_width=3, stroke_fill=(12, 14, 20))
-    y = 300 + size + 34
+    while title_size > px(40) and draw.textlength(title, font=font("OpenSans-Bold.ttf", title_size)) > title_width:
+        title_size -= 2
+    draw.text((text_x, title_y), title, font=font("OpenSans-Bold.ttf", title_size), fill=(255, 255, 255),
+              stroke_width=px(3), stroke_fill=(12, 14, 20))
+    y = title_y + title_size + line_gap
     for line in info["tagline"].split("\n"):
-        draw.text((72, y), line, font=font("OpenSans-SemiBold.ttf", 36), fill=(205, 214, 228),
-                  stroke_width=2, stroke_fill=(12, 14, 20))
-        y += 48
-    draw.text((72, height - 70), "Schedule I  •  MelonLoader  •  IL2CPP + Mono", font=font("OpenSans-Medium.ttf", 24),
-              fill=(150, 160, 178), stroke_width=2, stroke_fill=(12, 14, 20))
+        draw.text((text_x + px(2), y), line, font=font("OpenSans-SemiBold.ttf", line_size), fill=(205, 214, 228),
+                  stroke_width=px(2), stroke_fill=(12, 14, 20))
+        y += line_step
+    draw.text((footer_x, footer_y), "Schedule I  •  MelonLoader  •  IL2CPP + Mono",
+              font=font("OpenSans-Medium.ttf", footer_size), fill=(150, 160, 178),
+              stroke_width=px(2), stroke_fill=(12, 14, 20))
     return image
 
 
@@ -302,7 +318,8 @@ def build(mod: str) -> None:
 
     (out / "description.bbcode.txt").write_text(to_bbcode((mod_dir / "README.md").read_text(encoding="utf-8"), mod),
                                                 encoding="utf-8")
-    banner(mod, info, title).save(out / "banner.png")
+    for name, size in BANNERS.items():
+        banner(mod, info, title, size).save(out / name)
     for index, name in enumerate(info["gallery"], 1):
         shutil.copy(ROOT / "docs" / "images" / name, out / f"{index:02d}_{name}")
     for source, name in info.get("extra_gallery", []):
@@ -344,7 +361,7 @@ Tags (pick the closest ones the form offers): {info['tags']}
 AI tag (mandatory on Nexus): AI-Generated Content   (the code was written with an AI assistant; see chat notes)
 
 == Media ==
-Primary image:       banner.png
+Banners:             banner-1920x1080.png and banner-1300x372.png (use the one matching the size the field asks for)
 Gallery images:      the numbered files in this folder, in order
 
 == Files ==

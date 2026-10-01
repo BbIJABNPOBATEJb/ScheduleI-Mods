@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.0 - 2026-10-01
+
+- New **Deals** tab with two frequency rates (Off to ×10):
+  - **Deal requests** - how often customers text you asking for a deal.
+  - **Dealer orders** - how often customers order from your dealers, i.e. how fast a dealer
+    sells the product you give him.
+- Order sizes stay as in the base game: ×2 means twice as many orders, not bigger ones. Low rates
+  spread orders over several weeks, high rates add order windows during the day and shorten the
+  wait between a customer's deals.
+- The ×2–×10 presets leave the deal rates alone; "Vanilla ×1" resets them.
+
 ## 1.0.1 - 2026-09-30
 
 - Fixed a crash (stack overflow) on the default IL2CPP branch when XP was awarded outside your own

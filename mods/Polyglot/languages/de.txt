@@ -4179,3 +4179,7 @@ Name=Name
 {0} PM Friday={0} PM Freitag
 {0} PM Saturday={0} PM Samstag
 {0} PM Sunday={0} PM Sonntag
+Deal requests=Deal-Anfragen
+Dealer orders=Dealer-Bestellungen
+How often customers text you asking for a deal. Order size stays the same.=Wie oft Kunden dir wegen eines Deals schreiben. Die Bestellmenge bleibt gleich.
+How often customers order from your dealers - how fast a dealer sells the product you give him.=Wie oft Kunden bei deinen Dealern bestellen – also wie schnell ein Dealer die Ware verkauft, die du ihm gibst.
