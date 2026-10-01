@@ -33,7 +33,7 @@ Polski · Türkçe · 简体中文 · 日本語 · 한국어**
 
 ## Installation
 
-**With a mod manager** (r2modman, Thunderstore App): install [Polyglot](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot/) for the default Steam branch or [Polyglot_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot_Mono/) for the `alternate` branch.
+**With a mod manager** (r2modman, Thunderstore App): install [Polyglot](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot/) for the default Steam branch or [Polyglot_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/Polyglot_Mono/) for the `alternate` branch. Also on [Nexus Mods](https://www.nexusmods.com/schedule1/mods/2748).
 
 **Manually:**
 

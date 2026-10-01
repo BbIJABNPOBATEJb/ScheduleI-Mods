@@ -95,13 +95,23 @@ internal static class UiKit
     /// <summary>Sets a (possibly non-public) field on a game object; IL2CPP proxies expose it as a property.</summary>
     public static void SetMember(object target, string name, object? value)
     {
-        var type = target.GetType();
-        var property = AccessTools.Property(type, name);
-        if (property != null && property.CanWrite)
+        // Plain reflection: AccessTools logs a warning for every member it does not find.
+        const System.Reflection.BindingFlags flags = System.Reflection.BindingFlags.Instance | System.Reflection.BindingFlags.Public
+            | System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.DeclaredOnly;
+        for (var type = target.GetType(); type != null; type = type.BaseType)
         {
-            property.SetValue(target, value);
-            return;
+            var property = type.GetProperty(name, flags);
+            if (property != null && property.CanWrite)
+            {
+                property.SetValue(target, value);
+                return;
+            }
+            var field = type.GetField(name, flags);
+            if (field != null)
+            {
+                field.SetValue(target, value);
+                return;
+            }
         }
-        AccessTools.Field(type, name)?.SetValue(target, value);
     }
 }

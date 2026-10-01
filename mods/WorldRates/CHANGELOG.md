@@ -10,6 +10,8 @@
   spread orders over several weeks, high rates add order windows during the day and shorten the
   wait between a customer's deals.
 - The ×2–×10 presets leave the deal rates alone; "Vanilla ×1" resets them.
+- Works on the game's 0.4.7 beta: the income rate of deals was not applied there. The same build
+  still runs on 0.4.6.
 
 ## 1.0.1 - 2026-09-30
 

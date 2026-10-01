@@ -37,7 +37,7 @@ it is. No more opening the map to find your next deal.
 
 ## Installation
 
-**With a mod manager** (r2modman, Thunderstore App): install [GuideArrows](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows/) for the default Steam branch or [GuideArrows_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows_Mono/) for the `alternate` branch.
+**With a mod manager** (r2modman, Thunderstore App): install [GuideArrows](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows/) for the default Steam branch or [GuideArrows_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/GuideArrows_Mono/) for the `alternate` branch. Also on [Nexus Mods](https://www.nexusmods.com/schedule1/mods/2750).
 
 **Manually:**
 

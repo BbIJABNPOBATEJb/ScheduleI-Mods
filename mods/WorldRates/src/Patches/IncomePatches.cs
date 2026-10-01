@@ -33,9 +33,10 @@ internal static class IncomePatches
         private static readonly System.Reflection.PropertyInfo PaymentProperty =
             AccessTools.Property(typeof(S1.Quests.Contract), nameof(S1.Quests.Contract.Payment));
 
-        private static void Prefix(S1.UI.Handover.HandoverScreen.EHandoverOutcome outcome, S1.Quests.Contract contract, bool handoverByPlayer)
+        // Only the parameters both game versions have: 0.4.6 also passes an (unused) handover outcome first.
+        private static void Prefix(S1.Quests.Contract contract, bool handoverByPlayer)
         {
-            if (contract == null || outcome != S1.UI.Handover.HandoverScreen.EHandoverOutcome.Finalize)
+            if (contract == null)
                 return;
             if (!ScaledContracts.Add(contract.GetInstanceID()))
                 return;

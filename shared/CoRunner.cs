@@ -69,11 +69,12 @@ internal sealed class CoRunner
                 case IEnumerator nested:
                     r.Stack.Push(nested);
                     continue;
+                // Waits count from now, not from the start of the tick: the step itself may have taken long.
                 case float seconds:
-                    r.WaitUntil = now + seconds;
+                    r.WaitUntil = Time.realtimeSinceStartup + seconds;
                     return true;
                 case int seconds:
-                    r.WaitUntil = now + seconds;
+                    r.WaitUntil = Time.realtimeSinceStartup + seconds;
                     return true;
                 default:
                     return true;

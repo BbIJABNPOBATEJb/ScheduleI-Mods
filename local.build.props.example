@@ -8,6 +8,10 @@
     <!-- "alternate" Steam branch (Mono). Leave empty if you don't build the Mono version. -->
     <MonoGamePath></MonoGamePath>
 
+    <!-- Optional: separate copies of the game's beta branches for `run-smoke.ps1 -Beta`. -->
+    <Il2CppBetaGamePath></Il2CppBetaGamePath>
+    <MonoBetaGamePath></MonoBetaGamePath>
+
     <!-- Copy the built DLL into <game>\Mods after each build. -->
     <AutomateLocalDeployment>true</AutomateLocalDeployment>
   </PropertyGroup>

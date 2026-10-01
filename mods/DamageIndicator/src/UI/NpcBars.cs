@@ -237,9 +237,10 @@ internal sealed class NpcBars
 
     private static Vector3 HeadPosition(S1.NPCs.NPC npc)
     {
-        var avatar = npc.Avatar;
-        if (avatar != null && avatar.HeadBone != null)
-            return avatar.HeadBone.position + Vector3.up * 0.42f;
+        // The head bone through the look controller: Avatar.HeadBone itself is gone in game 0.4.7.
+        var look = npc.Avatar != null ? npc.Avatar.LookController : null;
+        if (look != null && look.HeadBone != null)
+            return look.HeadBone.position + Vector3.up * 0.42f;
         return npc.transform.position + Vector3.up * 2.1f;
     }
 

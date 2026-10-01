@@ -80,6 +80,37 @@ internal static class ScooterSmoke
 
     // --- shop and saves ------------------------------------------------------------------------------
 
+    /// <summary>
+    /// Opens the skate shop's dialogue. Done through reflection because the dialogue asset's type was
+    /// renamed between game versions (DialogueContainer in 0.4.6, Conversation in 0.4.7): 0.4.7 keeps it
+    /// in a field of the seller, 0.4.6 knows it by the asset's name.
+    /// </summary>
+    private static bool StartShopDialogue(S1.Dialogue.DialogueHandler handler, S1.Dialogue.DialogueController_SkateboardSeller seller)
+    {
+        var start = typeof(S1.Dialogue.DialogueHandler).GetMethods().FirstOrDefault(m =>
+            m.Name == "StartDialogue" && m.GetParameters().Length == 3 && m.GetParameters()[0].ParameterType != typeof(string));
+        if (start == null)
+            return false;
+        var type = start.GetParameters()[0].ParameterType;
+        var conversation = Member(seller, "_sellConversation");
+#if IL2CPP
+        if (conversation == null)
+        {
+            var cast = typeof(Il2CppInterop.Runtime.InteropTypes.Il2CppObjectBase).GetMethod("Cast")!.MakeGenericMethod(type);
+            foreach (var asset in Resources.FindObjectsOfTypeAll(Il2CppInterop.Runtime.Il2CppType.From(type)))
+                if (asset != null && asset.name == "Skateboard_Sell")
+                    conversation = cast.Invoke(asset, null);
+        }
+#else
+        if (conversation == null)
+            conversation = Resources.FindObjectsOfTypeAll(type).FirstOrDefault(asset => asset != null && asset.name == "Skateboard_Sell");
+#endif
+        if (conversation == null)
+            return false;
+        start.Invoke(handler, new[] { conversation, true, "ENTRY" });
+        return true;
+    }
+
     /// <summary>Buys the scooter through the seller's own dialogue, then saves, reloads and rides it.</summary>
     private static IEnumerator Shop()
     {
@@ -105,14 +136,12 @@ internal static class ScooterSmoke
         yield return 0.5f;
         DevSmoke.Check(seller.CheckChoice(ScooterItem.DisplayName, out reason), $"the scooter cannot be bought with $6000: {reason}");
 
-        var dialogue = UnityQuery.FindAllIncludingAssets<S1.Dialogue.DialogueContainer>().FirstOrDefault(c => c.name == "Skateboard_Sell");
-        DevSmoke.Check(dialogue != null, "the shop's dialogue was not found");
         // The hotbar would show through the long list of boards in the picture.
         var inventory = S1.PlayerScripts.PlayerInventory.Instance;
         inventory.SetInventoryEnabled(false);
-        handler.StartDialogue(dialogue, true, "ENTRY");
+        DevSmoke.Check(StartShopDialogue(handler, seller), "the shop's dialogue was not found");
         yield return 2.5f;
-        DevSmoke.Check(S1.Dialogue.DialogueHandler.ActiveDialogue != null, "the shop's dialogue did not open");
+        DevSmoke.Check(typeof(S1.Dialogue.DialogueHandler).GetProperty("ActiveDialogue")!.GetValue(null) != null, "the shop's dialogue did not open");
         yield return DevSmoke.Screenshot("shop_choices");
         var cash = money.cashBalance;
         seller.ChoiceCallback(ScooterItem.DisplayName);
@@ -396,13 +425,11 @@ internal static class ScooterSmoke
             DevSmoke.Log($"Seller offers '{option!.Name}' for ${F(option.Price)} ({seller.Options.Count} options)");
             DevSmoke.Check(Mathf.Approximately(option.Price, 5000f), "wrong price");
             // The dialogue window shows a fixed number of choices; anything beyond is silently dropped.
-            var dialogue = UnityQuery.FindAllIncludingAssets<S1.Dialogue.DialogueContainer>().FirstOrDefault(c => c.name == "Skateboard_Sell");
-            var entry = dialogue != null ? dialogue.GetDialogueNodeByLabel("ENTRY") : null;
-            var own = entry != null && entry.choices != null ? entry.choices.Length : -1;
+            // (The shop's own dialogue node has none: every choice is a board from the seller's list.)
             var canvas = S1.UI.DialogueCanvas.Instance;
             var shown = canvas != null ? Member(Member(canvas, "dialogueChoices")!, "Count") : null;
-            DevSmoke.Log($"Shop dialogue: {own} own choices + {seller.Options.Count} boards, the window shows up to {shown}");
-            DevSmoke.Check(own >= 0 && shown is int max && own + seller.Options.Count <= max, "the scooter does not fit into the shop's dialogue");
+            DevSmoke.Log($"Shop dialogue: {seller.Options.Count} boards, the window shows up to {shown}");
+            DevSmoke.Check(shown is int max && seller.Options.Count <= max, "the scooter does not fit into the shop's dialogue");
         }
 
         var golden = UnityQuery.TryCastTo<S1.Skating.Skateboard_Equippable>(S1.Registry.GetItem("goldenskateboard").Equippable, out var prefab)

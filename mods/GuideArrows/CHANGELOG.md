@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-10-01
+
+- Works on the game's 0.4.7 beta: the home arrow did not remember where you last slept there
+  (the game moved its sleep code). The same build still runs on 0.4.6.
+
 ## 1.0.0 - 2026-09-30
 
 - First release.

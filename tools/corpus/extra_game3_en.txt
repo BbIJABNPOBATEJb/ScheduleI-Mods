@@ -1,0 +1,238 @@
+// Game 0.4.7 beta: rewritten item descriptions, new clothing and furniture, special customers
+Heart Shades
+Swirly Mustache
+Cult Eye
+Alpha T-Shirt
+Green Tie-Dye T-Shirt
+Chest Hair
+Peace Sign
+Upper Body Collection
+Biker Mustache
+Beard Bushy
+Earpiece
+Rebel
+Crack Attack T-Shirt
+Sticky Note
+Stained Singlet
+Bateman Glasses
+Commie Glasses
+Flag Bandana
+Bandana
+Brokeleys
+Shutter Shades
+Hot T-Shirt
+Mesh Top
+Biker Jacket
+Leather Jacket
+Jersey
+Chain
+Star Shades
+Yellow Tie-Dye T-Shirt
+Pink Tie-Dye T-Shirt
+Aqua Tie-Dye T-Shirt
+Silver Aviators
+Gold Aviators
+Dotted Tie
+Cross Tie
+Checked Tie
+Striped Tie
+Tube Top
+Panzer Helmet
+Beer Hat
+Jet Helmet
+Wall-mounted metal sign that you can write on.
+Fun day at the beach for everyone.
+Very good girl.
+Ceramic toilet for disposing of waste matter.
+Wall-mounted wooden sign that you can write on.
+Persian Rug
+Hand-woven Persian rug. It really ties the room together.
+Black Rubber Mat ({0}x1)
+Black rubber floor mat measuring {0} by {1} tiles.
+Black Rubber Mat ({0}x2)
+Black Rubber Mat ({0}x4)
+Conference Table
+Big fancy conference table. You can place stuff on it.
+Square metal table. You can place stuff on it.
+Cozy single bed to slumber in.
+Square wooden table. You can place stuff on it.
+Antique lamp that can be placed on walls. Can't be used to grow plants, but it's great for seeing stuff.
+Standing floor lamp. Can be switched on and off.
+Very fancy full-spectrum grow light. Stimulates plant growth much faster than halogen. Must be placed on a suspension rack.
+Simple LED grow light. Emits a purple light that stimulates plant growth faster than halogen. Must be placed on a suspension rack.
+Minimalist lamp that can be placed on walls. Can't be used to grow plants, but it's great for seeing stuff.
+Fancy hand-woven fabric pot that keeps roots ventilated. Boosts plant growth speed, but also increases moisture drain.
+Small grow tent with a built-in light and pot. Plants grow faster but smaller.
+Special metal pot that preserves moisture. Soil loses moisture more slowly.
+Special-purpose laboratory oven for cooking or drying out substances.
+Upgraded mixing station with automatic ingredient insertion and faster mix times.
+Provides a sterile environment to inoculate grain bags with spore syringes.
+Upgraded packaging station with a rotary packing tool. Allows for much faster packing of products.
+Big metal locker. Can be assigned to employees or used for general storage.
+Big metal safe to store all your fancy stuff in.
+Huge metal storage closet with loads of item slots.
+Large metal storage closet with lots of item slots.
+Medium metal storage closet with a decent number of item slots.
+Small metal storage closet with a handful of item slots.
+Large multi-tier storage rack with lots of item slots.
+Medium multi-tier storage rack with a decent number of item slots.
+Small multi-tier storage rack with a handful of item slots.
+Wall-mounted shelf that you can place items on.
+When activated, waters the surrounding pots.
+When activated, fills the adjacent pot or grow tent with soil.
+When activated, waters the adjacent pot or grow tent.
+Browline Glasses
+Round Tinted Glasses
+Shady-looking shades.
+Big ol' heavy-duty stompers.
+Flats, typically worn by women, but men can wear them too.
+Traditional headwear for a chef. Perfect for concealing a rodent in.
+Cap that somebody drove over.
+Paisley Bandana
+Must-have for an aspiring kingpin.
+USA Bandana
+Blue Tie
+Brown Tie
+Green Tie
+Red Tie
+Blazer, sports jacket, suit jacket - who knows the difference?
+Very tough-looking vest. It doesn't actually block bullets, though.
+Aqua Tie-Dye Shirt
+Button-up shirt with permanently rolled sleeves.
+Dirty Tank Top
+Shirt of choice for internet music critics.
+Hot Shirt
+Molerats Jersey
+Purple Tie-Dye Shirt
+It's a T-shirt.
+Shirt with a V-shaped neck.
+Yellow Tie-Dye Shirt
+Solid gold wristwatch to tastefully display your wealth.
+Solid silver wristwatch to tastefully display your mild affluence.
+Fancy French champagne in a gold-plated bottle.
+Bar of solid gold. Extremely heavy and valuable.
+Aged Tennessee whiskey of the finest quality.
+Bag of sterilized grain with an injection port. Inject with mushroom spores to begin the cultivation process.
+Common ingredient used in a chemistry station.
+Organic explosive compound. Common ingredient in military-grade explosives.
+Old wood with some wheels nailed to it. Not fancy, but it rolls.
+Cruiser skateboard designed for high-speed, straight-line motion. Not particularly agile.
+Skateboard with big-ass wheels for off-road travel. Doesn't slow down when rolling over rough terrain.
+Classic double-kick popsicle skateboard. Use it to get around faster than on foot.
+Electric plant trimmers. Simply click and drag to harvest.
+Small handheld flashlight for illuminating stuff.
+Old key used to access the sewers under Hyland Point.
+Spray paint for drawing graffiti.
+Used to gather up trash, or to bag the contents of a trash can.
+Basic plant trimmers. Essential for harvesting plants.
+Improvised yet powerful explosive device.
+Big ol' cast-iron skillet. Great for cooking and for beating the shit out of people (but not at the same time).
+Single {0}-gauge shotgun shell.
+Legendary!
+Thanks dude!
+Woohoo!
+The party lives on!
+Hell yeah.
+Right on.
+Good stuff.
+Appreciate it.
+Excellent!
+Thanks buddy!
+Just what we needed!
+Hell yeah!
+Thank you, friend.
+Lovely.
+Perfect, thank you.
+You can use your management clipboard on each pot to assign its destination.
+I see him skulking around the docks at night every now and then. He needs to go. You do that for me, and I'll wire up anything you need.
+Good doing business with ya! Your new ride is waiting outside.
+That'll be a <SIGN_FEE> signing fee, and the employee's daily wage will be <DAILY_WAGE>.
+Got it. Where do you want them?
+Oh! And I remember hearing <color=blue><NPC_DESCRIPTION></color> has one! Sorry, Oscar isn't very good with names. Hope this helps.
+Hyland Medical (<PRICE>)
+No it ain't. In fact, ol' Nellie already owes us some serious cash...
+Refreshing can of Cuke that leaves you feeling energized. It's heaven in a can.
+Jerry can full of gasoline.
+Big jug of ethically sourced horse semen.
+Unusually large bean of mysterious origin.
+Antiseptic mouthwash for minty fresh breath.
+Mild over-the-counter painkiller.
+Single coca seed. Grows into a coca plant, which provides coca leaves, which can be turned into something else starting with coca.
+Single Granddaddy Purple marijuana seed.
+Single Green Crack marijuana seed.
+Single OG Kush marijuana seed.
+Single Sour Diesel marijuana seed.
+To get started, go purchase a <h1>mixing station</h> from Dan's Hardware. After that, you'll want to grab something to mix with your weed from the local Gas-Mart.
+Looks like you're gonna need somewhere low-key to stay for a while. Head over to the <h1>motel</h> and ask about getting a room.
+After that, you'll be needing some new equipment. There's a hardware store just northeast of the motel. Grab a <h1>grow tent, soil</h>, and <h1>watering can.</h>
+First things first, you're gonna need a business. Go check out <h1>Ray's Realty</h>. You're probably not gonna be buying out the casino any time soon, but there should be a cheap business for sale.
+Thomas and the last of his goons are holed up in Hyland Manor. It's a well-fortified old place, so attacking them head on is a death wish. Luckily, there might be another way...
+Close Buzz Cut
+The Businessman
+Poofy Wavey
+Long Wavey
+Baby Blue methamphetamine variant in liquid form. Use a lab oven to bake it into solid form.
+Biker Crank methamphetamine variant in liquid form. Use a lab oven to bake it into solid form.
+Glass methamphetamine variant in liquid form. Use a lab oven to bake it into solid form.
+Methamphetamine in liquid form. Use a lab oven to bake it into solid form.
+Old-school OG Kush. Offers a balanced, relaxing high with subtle physical effects.
+Potent classic with intense sedating and euphoric effects.
+Potent, highly energizing strain that leaves you with a focused buzz.
+Uplifting yet easy-going strain with mild cerebral effects.
+Classic American handgun.
+Magazine for the M1911 handgun.
+Contains rounds for the revolver.
+Cheap-ass revolver, probably made by communists in the {0}s. Needs to be manually cocked before each shot.
+Extra long-lasting soil that survives even more plantings before expiring.
+Long-lasting soil that survives multiple plantings before expiring.
+Big bag of smelly stuff that mushrooms love to grow in.
+Small plastic baggie for holding a small amount of product.
+Compressed brick of product. Holds far more than a jar.
+Clear glass jar for keeping various substances in. Holds more product than a baggie.
+Orgy Tent
+Hyland Medical Doctor's Office
+Light Lantern
+Reset cups
+Buy a mixing ingredient from Gas-Mart
+My friend Albert can hook you up with weed seeds. I've passed your number on to him.
+Grain bag that has been inoculated with a spore syringe. Ready to be combined with mushroom substrate in a mushroom bed.
+Instantly advances the plant's growth, but reduces its quality.
+Syringe containing mushroom spores suspended in sterile liquid. Must be injected into a grain bag to begin growing.
+Single leaf from a coca plant. The main ingredient in cocaine.
+Cheers!
+D-Pad/Down
+D-Pad/Left
+D-Pad/Up
+D-Pad/Right
+Base price:
+Favourite Drugs
+Effect
+Daily Buy Limit
+Their favourite drugs:
+Bonus Effects
+Accepted Drugs
+Trending effects bonus:
+Bikers
+Businessmen
+Hippies
+Party Bus
+The <NAME> have arrived.
+The <NAME> are coming to town...
+The <NAME> has arrived.
+The <NAME> is coming to town...
+Deal completed for the <NAME>
+Deal completed for the
+Hey boss, I've heard there's a Benzies deal happening in <NAME>, <LOCATION_DESCRIPTION>. Might be worth checking out.
+Buy item
+Insufficient
+Thanks, here's what you asked for.
+Buy limit reached
+Buy limit exceeded.
+Fair price: <PRICE>
+Offer Free Sample
+Only {0} sample product is required
+Sell
+Product type not wanted
+Base payment:
+Bonus effects:
+Customer Group

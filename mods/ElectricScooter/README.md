@@ -32,9 +32,9 @@ stamina and is 30% faster.
 
 ## Installation
 
-*Not released yet — it will appear in [Releases](https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods/releases)
-and on Thunderstore with the next batch of releases.* Until then, build it from source (see the
-[repository README](../../README.md)).
+**With a mod manager** (r2modman, Thunderstore App): install [ElectricScooter](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/ElectricScooter/) for the default Steam branch or [ElectricScooter_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/ElectricScooter_Mono/) for the `alternate` branch.
+
+**Manually:**
 
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) 0.7.3 (0.7.1 is not supported).
 2. Download `ElectricScooter-<version>-IL2CPP.zip` (default Steam branch) or `ElectricScooter-<version>-Mono.zip`

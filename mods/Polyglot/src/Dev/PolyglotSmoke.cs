@@ -144,6 +144,11 @@ internal static class PolyglotSmoke
                      "Deal for Kyle<color=#c0c0c0ff> (Begins in 5 min)</color>",
                      "1x OG Kush, Behind Thompson construction and demolition",
                      "At a <color=#88CBFF>mixing station</color>, you mix products with special <color=#88CBFF>ingredients</color> to create new mixes with <color=#88CBFF>unique effects</color>. Customers will pay more for these products.",
+                     // Game 0.4.7: reworded item descriptions and the special customer groups' announcements.
+                     "Single OG Kush marijuana seed.",
+                     "The <color=#FF5B5B>Bikers</color> have arrived.",
+                     "The <color=#51F409FF>Hippies</color> are coming to town...",
+                     "Deal completed for the <color=#FF5B5B>Bikers</color>",
                  })
         {
             var tr = Translator.Translate(sample);

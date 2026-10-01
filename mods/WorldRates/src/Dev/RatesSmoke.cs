@@ -27,6 +27,7 @@ internal static class RatesSmoke
             "complete-contract" => CompleteContract(),
             "idle" => Idle(),
             "deals" => Deals(),
+            "perf" => Perf(),
             _ => null,
         };
         if (body == null)
@@ -39,6 +40,30 @@ internal static class RatesSmoke
             runner.Tick();
             yield return null;
         }
+    }
+
+    /// <summary>How long the periodic storage scan takes (it runs every 15 seconds while playing).</summary>
+    private static IEnumerator Perf()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 5f;
+        var watch = new System.Diagnostics.Stopwatch();
+        for (var i = 0; i < 4; i++)
+        {
+            watch.Restart();
+            var found = UnityQuery.FindInScenes<S1.Storage.StorageEntity>().Count;
+            var find = watch.Elapsed.TotalMilliseconds;
+            watch.Restart();
+            StoragePatches.ApplyAll();
+            var apply = watch.Elapsed.TotalMilliseconds;
+            watch.Restart();
+            var described = StoragePatches.Describe().Length;
+            var describe = watch.Elapsed.TotalMilliseconds;
+            DevSmoke.Log($"scan {i}: {found} storages found in {find:0.0} ms, ApplyAll {apply:0.0} ms, Describe {describe:0.0} ms ({described} chars)");
+            DevSmoke.Check(apply < 250, $"the storage scan takes {apply:0} ms");
+            yield return 2f;
+        }
+        DevSmoke.Finish(true, "perf done");
     }
 
     /// <summary>Just lets the (copied) world run for a while: dealers deal, employees work.</summary>
@@ -88,6 +113,14 @@ internal static class RatesSmoke
 
     private static int OrdersPerWeek(S1.Economy.Customer c) => DemandPatches.VanillaOrdersPerWeek(c.CustomerData.MinOrdersPerWeek,
         c.CustomerData.MaxOrdersPerWeek, c.CurrentAddiction, c.NPC.RelationData.RelationDelta / 5f);
+
+    /// <summary>Sets the clock; the method was renamed between game versions (SetTimeAndSync in 0.4.6, SetTime_Server in 0.4.7).</summary>
+    private static void SetClock(S1.GameTime.TimeManager time, int hhmm)
+    {
+        var method = typeof(S1.GameTime.TimeManager).GetMethod("SetTimeAndSync") ?? typeof(S1.GameTime.TimeManager).GetMethod("SetTime_Server");
+        DevSmoke.Check(method != null, "no method to set the game clock");
+        method!.Invoke(time, new object[] { hhmm });
+    }
 
     private static void SetRates(float requests, float dealers)
     {
@@ -147,7 +180,7 @@ internal static class RatesSmoke
             if (((int)time.CurrentDay - (int)data.PreferredOrderDay + 7) % 7 % interval != 0)
                 continue;
             used.Add(c.NPC.ID);
-            time.SetTimeAndSync(S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 10));
+            SetClock(time, S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 10));
             SetCounters(c, 5000);
             SetRates(0f, 10f);
             DevSmoke.Check(!Minute(c), $"{c.NPC.FirstName}: a request was made with requests Off");
@@ -174,7 +207,7 @@ internal static class RatesSmoke
             var windows = DemandPatches.WindowsOn(perWeek, 10f, day);
             if (windows < 2)
                 continue;
-            time.SetTimeAndSync(S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 1440 / windows + 10));
+            SetClock(time, S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 1440 / windows + 10));
             SetCounters(c, 200);
             SetRates(1f, 1f);
             DevSmoke.Check(!Minute(c), $"{c.NPC.FirstName}: vanilla request outside the order window");
@@ -211,7 +244,7 @@ internal static class RatesSmoke
             if (windows < 2)
                 continue;
             var dealer = c.AssignedDealer;
-            time.SetTimeAndSync(S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 1440 / windows + 10));
+            SetClock(time, S1.GameTime.TimeManager.AddMinutesTo24HourTime(data.OrderTime, 1440 / windows + 10));
             SetCounters(c, 200);
             SetRates(1f, 1f);
             DevSmoke.Check(!Minute(c), $"{c.NPC.FirstName}: vanilla dealer order outside the order window");

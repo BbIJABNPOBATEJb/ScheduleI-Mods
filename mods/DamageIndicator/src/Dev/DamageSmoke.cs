@@ -99,7 +99,8 @@ internal static class DamageSmoke
 
     private static void Hit(S1.NPCs.NPC npc, Camera camera, float damage, float force, S1.Combat.EImpactType type)
     {
-        var point = npc.Avatar.HeadBone != null ? npc.Avatar.HeadBone.position - Vector3.up * 0.25f : npc.transform.position + Vector3.up * 1.4f;
+        var head = npc.Avatar.LookController != null ? npc.Avatar.LookController.HeadBone : null;
+        var point = head != null ? head.position - Vector3.up * 0.25f : npc.transform.position + Vector3.up * 1.4f;
         var impact = new S1.Combat.Impact(point, Flat(camera.transform.forward), force, damage, type,
             S1.PlayerScripts.Player.Local.NetworkObject, Random.Range(1, int.MaxValue));
         npc.ReceiveImpact(impact);

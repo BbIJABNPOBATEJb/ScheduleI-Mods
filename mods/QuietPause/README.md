@@ -18,7 +18,7 @@ translated by [Polyglot](../Polyglot).
 
 ## Installation
 
-**With a mod manager** (r2modman, Thunderstore App): install [QuietPause](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause/) for the default Steam branch or [QuietPause_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause_Mono/) for the `alternate` branch.
+**With a mod manager** (r2modman, Thunderstore App): install [QuietPause](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause/) for the default Steam branch or [QuietPause_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/QuietPause_Mono/) for the `alternate` branch. Also on [Nexus Mods](https://www.nexusmods.com/schedule1/mods/2752).
 
 **Manually:**
 

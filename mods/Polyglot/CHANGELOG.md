@@ -1,7 +1,11 @@
 # Changelog
 
-## 1.1.1 - 2026-10-01
+## 1.2.0 - 2026-10-01
 
+- Ready for the game's 0.4.7 beta: about 240 new strings per language - the item descriptions the
+  beta rewrote, new clothing, hairstyles and furniture, and the special customer groups (Bikers,
+  Hippies, Businessmen, Party Bus) with their screens and announcements. Game 0.4.6 stays fully
+  translated; the same build runs on both versions.
 - Translations for the new deal frequency rates of World Rates 1.1.0 and for the Electric Scooter mod.
 
 ## 1.1.0 - 2026-09-30

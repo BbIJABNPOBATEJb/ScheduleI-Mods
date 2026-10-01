@@ -33,7 +33,7 @@ nobody's health is shown until they actually take damage.
 
 ## Installation
 
-**With a mod manager** (r2modman, Thunderstore App): install [DamageIndicator](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/DamageIndicator/) for the default Steam branch or [DamageIndicator_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/DamageIndicator_Mono/) for the `alternate` branch.
+**With a mod manager** (r2modman, Thunderstore App): install [DamageIndicator](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/DamageIndicator/) for the default Steam branch or [DamageIndicator_Mono](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/DamageIndicator_Mono/) for the `alternate` branch. Also on [Nexus Mods](https://www.nexusmods.com/schedule1/mods/2751).
 
 **Manually:**
 

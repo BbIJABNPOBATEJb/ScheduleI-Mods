@@ -206,8 +206,14 @@ internal static class HomeTracker
     [HarmonyPatch]
     private static class SleepStartPatch
     {
-        private static MethodBase TargetMethod() =>
-            AccessTools.GetDeclaredMethods(typeof(S1.GameTime.TimeManager)).First(m => m.Name.StartsWith("RpcLogic___StartSleep", StringComparison.Ordinal));
+        private static MethodBase TargetMethod()
+        {
+            // Sleep starts in TimeManager in game 0.4.6 and in the new SleepController from 0.4.7 on.
+            var timeManager = typeof(S1.GameTime.TimeManager);
+            var owners = new[] { timeManager.Assembly.GetType(timeManager.Namespace + ".SleepController"), timeManager };
+            return owners.Where(type => type != null).SelectMany(type => AccessTools.GetDeclaredMethods(type))
+                .First(m => m.Name.StartsWith("RpcLogic___StartSleep", StringComparison.Ordinal));
+        }
 
         private static void Prefix()
         {

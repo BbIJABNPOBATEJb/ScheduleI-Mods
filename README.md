@@ -10,7 +10,7 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 | <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)** | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
 | <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)** | 3D arrows under the compass pointing at the nearest deal, stash, quest, potential customer and home base, each in its own color. |
 | <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)** | Mutes the game while minimized and pauses world sounds in the pause menu. |
-| <img src="mods/ElectricScooter/assets/icon.png" width="64"> | **[Electric Scooter](mods/ElectricScooter)** | An electric scooter at the skate shop: rides like the Golden Skateboard, but rolls over curbs, uses no stamina and is 30% faster. *(not released yet)* |
+| <img src="mods/ElectricScooter/assets/icon.png" width="64"> | **[Electric Scooter](mods/ElectricScooter)** | An electric scooter at the skate shop: rides like the Golden Skateboard, but rolls over curbs, uses no stamina and is 30% faster. |
 
 <p>
   <img src="docs/images/polyglot-language-picker.jpg" width="49%">
@@ -25,6 +25,8 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 
 **With a mod manager** (r2modman, Thunderstore App): every mod is on [Thunderstore](https://thunderstore.io/c/schedule-i/p/BbIJABNPOBATEJb/) — `<Mod>` for the default Steam branch (IL2CPP), `<Mod>_Mono` for `alternate`.
 
+**Nexus Mods:** [Polyglot](https://www.nexusmods.com/schedule1/mods/2748) · [World Rates](https://www.nexusmods.com/schedule1/mods/2753) · [Damage Indicator](https://www.nexusmods.com/schedule1/mods/2751) · [Guide Arrows](https://www.nexusmods.com/schedule1/mods/2750) · [Quiet Pause](https://www.nexusmods.com/schedule1/mods/2752).
+
 **Manually:**
 
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) **0.7.3** (or 0.7.2/0.7.0 — 0.7.1 is known to break Schedule I mods).
@@ -36,7 +38,7 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 Don't install both runtime builds of a mod at the same time. The mods are independent of each other
 and work together (Polyglot also translates the other mods' windows).
 
-Tested with Schedule I **0.4.6f13** and MelonLoader **0.7.3**.
+Tested with Schedule I **0.4.6f13** and the **0.4.7 beta** (0.4.7f7), MelonLoader **0.7.3**. One build of each mod runs on both game versions.
 
 ## Building from source
 
@@ -72,6 +74,15 @@ The script builds the Dev configuration, starts the game with a **disposable** w
 scenario, takes screenshots and quits. Results: `test-runs/<run>/result.txt`, `smoke.log`,
 `*.png`, `MelonLoader.log`. Scenarios live in `mods/*/src/Dev/`.
 
+**Other game versions.** Players also run a build on game versions it was not compiled against (the
+`beta` branch). Two tools cover that, given a separate copy of that game version
+(`Il2CppBetaGamePath` / `MonoBetaGamePath` in `local.build.props`):
+
+```bash
+pwsh tools/check-game-api.ps1 -Runtime Il2Cpp -GamePath "<beta game copy>"   # every game type/method the DLLs use still exists there
+pwsh tools/run-smoke.ps1 -Mod WorldRates -Scenario ui -Beta                  # the build made for the public game, run on the beta copy
+```
+
 ### Repository layout
 
 ```
@@ -85,7 +96,7 @@ mods/DamageIndicator/            health bars and damage numbers
 mods/GuideArrows/                3D guide arrows under the compass
 mods/QuietPause/                 background / pause audio
 mods/ElectricScooter/            the scooter: item, shop entry, ride tuning, model
-tools/                           smoke-test runner, packaging, font and translation tooling
+tools/                           smoke-test runner, packaging and publishing, game API check, font and translation tooling
 docs/images/                     screenshots
 ```
 

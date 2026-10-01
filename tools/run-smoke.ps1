@@ -18,7 +18,11 @@ param(
     # (e.g. a backed-up SaveGame_1). The original is never modified.
     [string] $Save = "",
     # Leave the Dev build in the game's Mods folder instead of redeploying the release build.
-    [switch] $KeepDevBuild
+    [switch] $KeepDevBuild,
+    # Run on the beta copy of the game (Il2CppBetaGamePath / MonoBetaGamePath in local.build.props).
+    # The mod is still built against the public game - the same binary players get - and that DLL
+    # is copied into the beta copy, so the run shows whether the released build works on the beta.
+    [switch] $Beta
 )
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
@@ -27,12 +31,19 @@ $root = Split-Path -Parent $PSScriptRoot
 $gamePath = if ($Runtime -eq "Il2Cpp") { $props.Project.PropertyGroup.Il2CppGamePath } else { $props.Project.PropertyGroup.MonoGamePath }
 if (-not $gamePath -or -not (Test-Path (Join-Path $gamePath "Schedule I.exe"))) { throw "Game path for $Runtime is not configured in local.build.props" }
 if (Get-Process "Schedule I" -ErrorAction SilentlyContinue) { throw "Schedule I is already running. Close it first." }
+$dllName = "${Mod}_$Runtime.dll"
+if ($Beta) {
+    $gamePath = if ($Runtime -eq "Il2Cpp") { $props.Project.PropertyGroup.Il2CppBetaGamePath } else { $props.Project.PropertyGroup.MonoBetaGamePath }
+    if (-not $gamePath -or -not (Test-Path (Join-Path $gamePath "Schedule I.exe"))) { throw "Beta game path for $Runtime is not configured in local.build.props" }
+    New-Item -ItemType Directory -Force (Join-Path $gamePath "Mods") | Out-Null
+}
 
 $project = Join-Path $root "mods/$Mod/$Mod.csproj"
 dotnet build $project -c "${Runtime}Dev" -nologo -v q -p:AutomateLocalDeployment=true | Out-Host
 if ($LASTEXITCODE -ne 0) { throw "Build failed" }
+if ($Beta) { Copy-Item (Join-Path $root "artifacts/bin/$Mod/${Runtime}Dev/$dllName") (Join-Path $gamePath "Mods/$dllName") -Force }
 
-$runId = "{0}-{1}{2}-{3}-{4}" -f $Mod, $Scenario, $(if ($Arg) { "-$Arg" } else { "" }), $Runtime.ToLower(), (Get-Date -Format "yyyyMMdd-HHmmss")
+$runId = "{0}-{1}{2}-{3}{4}-{5}" -f $Mod, $Scenario, $(if ($Arg) { "-$Arg" } else { "" }), $Runtime.ToLower(), $(if ($Beta) { "-beta" } else { "" }), (Get-Date -Format "yyyyMMdd-HHmmss")
 $out = Join-Path $root "test-runs/$runId"
 New-Item -ItemType Directory -Force $out | Out-Null
 
@@ -42,7 +53,7 @@ if ($Save) {
     if (-not (Test-Path (Join-Path $Save "Game.json"))) { throw "$Save is not a save folder (no Game.json)" }
     $gameArgs += @("--s1dev-save", "`"$((Resolve-Path $Save).Path)`"")
 }
-Write-Host "Launching $Runtime game: $runId"
+Write-Host "Launching $Runtime game$(if ($Beta) { ' (beta copy)' }): $runId"
 $process = Start-Process -FilePath (Join-Path $gamePath "Schedule I.exe") -WorkingDirectory $gamePath -ArgumentList $gameArgs -PassThru
 
 $deadline = (Get-Date).AddSeconds($TimeoutSeconds + 90)
@@ -61,6 +72,7 @@ $status = if (Test-Path $result) { (Get-Content $result -Raw).Trim() } else { "F
 
 if (-not $KeepDevBuild) {
     dotnet build $project -c $Runtime -nologo -v q -p:AutomateLocalDeployment=true | Out-Null
+    if ($Beta) { Copy-Item (Join-Path $root "artifacts/bin/$Mod/$Runtime/$dllName") (Join-Path $gamePath "Mods/$dllName") -Force }
 }
 
 Write-Host "---- $status"
