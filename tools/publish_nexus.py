@@ -30,6 +30,7 @@ import certifi
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 API = "https://api.nexusmods.com/v3"
+API_V1 = "https://api.nexusmods.com/v1"   # still the only place to read a page's changelogs
 GAME = "schedule1"
 USER_AGENT = "ScheduleI-Mods-publisher/1.0 (+https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods)"
 CONTEXT = ssl.create_default_context(cafile=certifi.where())
@@ -50,19 +51,30 @@ class Nexus:
     def __init__(self, key: str):
         self._key = key
 
-    def call(self, method: str, path: str, body=None):
-        data = json.dumps(body).encode("utf-8") if body is not None else None
+    def call(self, method: str, path: str, body=None, retry: bool = False, base: str = API):
+        """One API call. Reads (and calls that are safe to repeat: retry=True) are retried on server errors,
+        which the API returns now and then right after an upload."""
         headers = {"apikey": self._key, "Accept": "application/json", "User-Agent": USER_AGENT}
-        if data is not None:
+        data = None
+        if body is not None:
+            data = json.dumps(body).encode("utf-8")
             headers["Content-Type"] = "application/json"
-        request = urllib.request.Request(API + path, data=data, method=method, headers=headers)
-        try:
-            with urllib.request.urlopen(request, context=CONTEXT) as response:
-                text = response.read().decode("utf-8")
-        except urllib.error.HTTPError as error:
-            raise SystemExit(f"{method} {path}: HTTP {error.code}: {error.read().decode('utf-8', 'replace')[:600]}")
+        elif method != "GET":
+            data = b""   # a POST without a Content-Length gets "500 Internal Server Error" from the API
+        attempts = 6 if method == "GET" or retry else 1
+        for attempt in range(attempts):
+            request = urllib.request.Request(base + path, data=data, method=method, headers=headers)
+            try:
+                with urllib.request.urlopen(request, context=CONTEXT) as response:
+                    text = response.read().decode("utf-8")
+                break
+            except urllib.error.HTTPError as error:
+                detail = error.read().decode("utf-8", "replace")[:600]
+                if error.code < 500 or attempt == attempts - 1:
+                    raise SystemExit(f"{method} {path}: HTTP {error.code}: {detail}")
+                time.sleep(3)
         payload = json.loads(text) if text else {}
-        return payload.get("data", payload)
+        return payload.get("data", payload) if isinstance(payload, dict) else payload
 
 
 def put_archive(url: str, archive: pathlib.Path, md5: bytes) -> None:
@@ -123,29 +135,49 @@ def publish(nexus: Nexus, mod: str, do_publish: bool) -> None:
     if not do_publish:
         return
 
+    def has_version(mod_file) -> bool:
+        versions = nexus.call("GET", f"/mod-files/{mod_file['id']}/versions")["versions"]
+        return any(v["version"] == version and v.get("category") != "archived" for v in versions)
+
     for archive, mod_file, name in plan:
+        # Safe to run again after a failure: what is already there is not uploaded twice.
+        if has_version(mod_file):
+            print(f"    {archive.name}: version {version} is already on the page, skipped")
+            continue
         md5 = hashlib.md5(archive.read_bytes())
         upload = nexus.call("POST", "/uploads", {"size_bytes": archive.stat().st_size, "filename": archive.name,
-                                                 "md5": md5.hexdigest()})
+                                                 "md5": md5.hexdigest()}, retry=True)
         put_archive(upload["presigned_url"], archive, md5.digest())
-        nexus.call("POST", f"/uploads/{upload['id']}/finalise")
+        nexus.call("POST", f"/uploads/{upload['id']}/finalise", retry=True)
         for _ in range(60):
             if nexus.call("GET", f"/uploads/{upload['id']}")["state"] == "available":
                 break
             time.sleep(2)
         else:
             raise SystemExit(f"{archive.name}: the upload did not become available")
-        nexus.call("POST", f"/mod-files/{mod_file['id']}/versions", {
-            "upload_id": upload["id"],
-            "name": name,
-            "version": version,
-            "file_category": "main",
-            "update_mod_version": True,
-            "archive_existing_file": True,
-        })
+        try:
+            nexus.call("POST", f"/mod-files/{mod_file['id']}/versions", {
+                "upload_id": upload["id"],
+                "name": name,
+                "version": version,
+                "file_category": "main",
+                # The IL2CPP file is the one for the default game branch: it is the page's main download.
+                "primary_mod_manager_download": "IL2CPP" in archive.name,
+                "update_mod_version": True,
+                "archive_existing_file": True,
+            })
+        except SystemExit:
+            if not has_version(mod_file):   # the API may fail after having created the version
+                raise
         print(f"    uploaded {archive.name}")
-    nexus.call("POST", f"/mods/{page['id']}/changelogs", {"version": version, "changelog": changelog})
-    print("    changelog added")
+
+    # Changelogs can only be appended to: do not add the same entry twice.
+    existing = nexus.call("GET", f"/games/{GAME}/mods/{PAGES[mod]}/changelogs.json", base=API_V1)
+    if isinstance(existing, dict) and existing.get(version):
+        print("    changelog is already on the page")
+    else:
+        nexus.call("POST", f"/mods/{page['id']}/changelogs", {"version": version, "changelog": changelog})
+        print("    changelog added")
 
 
 def main() -> None:
