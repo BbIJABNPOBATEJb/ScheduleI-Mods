@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1 - 2026-10-03 (Thunderstore page only)
+
+- Screenshots of the outlines on the mod page. The mod itself is the same as 1.2.0 (it still reports
+  1.2.0 in game, so players with 1.2.0 from GitHub or Nexus play together as before).
+
 ## 1.2.0 - 2026-10-03
 
 - **All buyers and potential customers glow**, not only the ones the arrows point at: yellow and

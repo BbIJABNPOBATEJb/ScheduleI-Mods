@@ -15,12 +15,17 @@
 .EXAMPLE
   ./tools/package.ps1              # all mods
   ./tools/package.ps1 -Mods WorldRates
+  ./tools/package.ps1 -Mods GuideArrows -ThunderstoreVersion 1.2.1   # only the Thunderstore page changed
 #>
 [CmdletBinding()]
 param(
-    [string[]] $Mods = @("Polyglot", "WorldRates", "DamageIndicator", "GuideArrows", "QuietPause", "ElectricScooter")
+    [string[]] $Mods = @("Polyglot", "WorldRates", "DamageIndicator", "GuideArrows", "QuietPause", "ElectricScooter"),
+    # Version of the Thunderstore packages when only what Thunderstore shows changed (README, screenshots):
+    # Thunderstore takes a page from each new version only. The DLL keeps the mod's own version. One mod only.
+    [string] $ThunderstoreVersion = ""
 )
 $ErrorActionPreference = "Stop"
+if ($ThunderstoreVersion -and $Mods.Count -ne 1) { throw "-ThunderstoreVersion is for one mod at a time" }
 $root = Split-Path -Parent $PSScriptRoot
 $dist = Join-Path $root "dist"
 $repoUrl = "https://github.com/BbIJABNPOBATEJb/ScheduleI-Mods"
@@ -64,6 +69,7 @@ foreach ($mod in $Mods) {
     $project = Join-Path $modDir "$mod.csproj"
     $modInfo = Get-Content (Join-Path $modDir "src/ModInfo.cs") -Raw
     $version = [regex]::Match($modInfo, 'Version = "([^"]+)"').Groups[1].Value
+    $tsVersion = if ($ThunderstoreVersion) { $ThunderstoreVersion } else { $version }
     $readme = Get-PackageReadme $mod
 
     foreach ($runtime in @("Il2Cpp", "Mono")) {
@@ -111,12 +117,12 @@ foreach ($mod in $Mods) {
         $deps = ($meta.dependencies | ForEach-Object { '"' + $_ + '"' }) -join ", "
         $manifest = "{`n" +
             "    `"name`": `"$tsName`",`n" +
-            "    `"version_number`": `"$version`",`n" +
+            "    `"version_number`": `"$tsVersion`",`n" +
             "    `"website_url`": `"$repoUrl`",`n" +
             "    `"description`": `"$description`",`n" +
             "    `"dependencies`": [$deps]`n}`n"
         Write-Utf8 (Join-Path $ts "manifest.json") $manifest
-        $tsZip = Join-Path $dist "thunderstore/$tsName-$version.zip"
+        $tsZip = Join-Path $dist "thunderstore/$tsName-$tsVersion.zip"
         New-Zip $ts $tsZip
         Write-Host "packed $tsZip"
     }
