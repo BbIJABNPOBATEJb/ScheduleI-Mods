@@ -4430,3 +4430,8 @@ Outline targets=Contour des cibles
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=Les personnes et les planques visées par les flèches brillent d'un contour de la couleur de la flèche, même à travers les murs.
 Others' hits within=Coups des autres jusqu'à
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=Les coups des autres joueurs ou entre personnages n'affichent un chiffre et une barre qu'à cette distance de vous et seulement si rien ne bloque la vue. Vos propres coups s'affichent toujours.
+Outline all buyers and customers=Contour de tous les acheteurs et clients
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=Tous les acheteurs et clients potentiels alentour brillent, pas seulement ceux que visent les flèches.
+Outline range=Portée du contour
+How far away buyers and potential customers still glow. Off \= no limit.=Jusqu'à quelle distance les acheteurs et clients potentiels brillent encore. Désactivé = aucune limite.
+<NAME> (Unpackaged)=<NAME> (non emballé)

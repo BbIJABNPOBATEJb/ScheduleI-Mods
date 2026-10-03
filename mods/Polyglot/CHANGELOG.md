@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.2 - 2026-10-03
+
+- Product tooltips: translated effect names that are too wide for the two narrow columns (such as
+  "Антигравитационный" or "Вызывающий припадки") ran into each other. The effects are now listed in
+  one full-width column and the tooltip grows to fit them. In the other lists of effects (mixing
+  station, handover screen and others) a long name no longer breaks onto a second line.
+- "(Unpackaged)" after product names in tooltips is translated.
+- Translations for the new outline settings of Guide Arrows 1.2.0.
+
 ## 1.2.1 - 2026-10-03
 
 - Text messages: translations longer than the English no longer run out of their bubbles and over

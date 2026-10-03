@@ -35,6 +35,8 @@ internal static class Config
     public static Setting<int> HideWithin = null!;
     public static Setting<int> MaxDistance = null!;
     public static Setting<bool> Outline = null!;
+    public static Setting<bool> OutlineAll = null!;
+    public static Setting<int> OutlineRange = null!;
 
     public static Setting<bool> QuestsTrackedOnly = null!;
     public static Setting<int> SettingsVersion = null!;
@@ -68,6 +70,8 @@ internal static class Config
         HideWithin = Prefs.Add("HideWithin", 0, "Hide an arrow once you are closer than this (meters). 0 = never hide.");
         MaxDistance = Prefs.Add("MaxDistance", 0, "Ignore targets further away than this (meters). 0 = no limit.");
         Outline = Prefs.Add("Outline", true, "The people and stashes the arrows point at glow in the arrow's color, even through walls.");
+        OutlineAll = Prefs.Add("OutlineAll", true, "Every buyer and potential customer nearby glows, not only the ones the arrows point at.");
+        OutlineRange = Prefs.Add("OutlineRange", 100, "How far away buyers and potential customers still glow (meters). 0 = no limit.");
 
         QuestsTrackedOnly = Prefs.Add("QuestsTrackedOnly", true, "Quest arrows only for quests you track in the journal.");
         HomeMode = Prefs.Add("HomeMode", (int)Targets.HomeMode.Auto,

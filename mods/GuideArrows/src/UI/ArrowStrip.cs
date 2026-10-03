@@ -18,6 +18,12 @@ internal sealed class ArrowStrip
 {
     private const float TextHeight = 38f;
 
+    /// <summary>Most people of one kind glowing at once with "outline all" (the nearest ones).</summary>
+    private const int GlowAllPerKind = 12;
+
+    /// <summary>The kinds whose every target can glow, not only the one the arrow points at.</summary>
+    private static readonly TargetKind[] GlowAllKinds = { TargetKind.Buyer, TargetKind.Customer };
+
     private sealed class ArrowView
     {
         public string Key = "";
@@ -82,6 +88,9 @@ internal sealed class ArrowStrip
     }
 
 #if DEV
+    /// <summary>Smoke tests: the targets that have an arrow right now.</summary>
+    public IEnumerable<Target> ArrowTargets => _chosen.Select(c => c.Target);
+
     /// <summary>Smoke tests: freeze every arrow at this yaw/pitch to check orientation.</summary>
     public static float? DebugYaw;
     public static float DebugPitch;
@@ -169,18 +178,53 @@ internal sealed class ArrowStrip
                 continue;
             candidates.Add((target, d));
         }
-        // The same choice as if nothing were hidden nearby: what you walked up to keeps glowing.
         _near.Clear();
         Pick(candidates, _near);
-        candidates.RemoveAll(c => c.Item2 < hideWithin);
-        Pick(candidates, _chosen);
-
-        foreach (var (target, _) in _chosen)
-            _glowing.Add(target);
-        foreach (var (target, distance) in _near)
+        if (Config.ArrowMode == ArrowMode.PerKind)
         {
-            if (distance < hideWithin && !_glowing.Contains(target))
+            // Each arrow stands for the nearest target of its kind. Once you are there, that arrow hides
+            // (the target keeps glowing) instead of swinging round to the next nearest one.
+            foreach (var pick in _near)
+            {
+                _glowing.Add(pick.Target);
+                if (pick.Distance >= hideWithin)
+                    _chosen.Add(pick);
+            }
+        }
+        else
+        {
+            // Nearest targets you have not reached yet; what you walked up to keeps glowing.
+            var all = new List<(Target, float)>(candidates);
+            candidates.RemoveAll(c => c.Item2 < hideWithin);
+            Pick(candidates, _chosen);
+            foreach (var (target, _) in _chosen)
                 _glowing.Add(target);
+            foreach (var (target, distance) in _near)
+            {
+                if (distance < hideWithin && !_glowing.Contains(target))
+                    _glowing.Add(target);
+            }
+            candidates = all;
+        }
+        if (Config.OutlineAll.Value)
+            GlowEveryone(candidates);
+    }
+
+    /// <summary>Every buyer and potential customer around glows, not only the ones with an arrow.</summary>
+    private void GlowEveryone(List<(Target, float)> candidates)
+    {
+        var range = Config.OutlineRange.Value;
+        foreach (var kind in GlowAllKinds)
+        {
+            var near = candidates
+                .Where(c => c.Item1.Kind == kind && c.Item1.Highlight != null && (range <= 0 || c.Item2 <= range))
+                .OrderBy(c => c.Item2)
+                .Take(GlowAllPerKind);
+            foreach (var (target, _) in near)
+            {
+                if (!_glowing.Contains(target))
+                    _glowing.Add(target);
+            }
         }
     }
 

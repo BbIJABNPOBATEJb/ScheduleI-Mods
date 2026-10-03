@@ -1,0 +1,2 @@
+// Product names in item tooltips: "OG Kush (Unpackaged)" (ProductItemInstance.Name)
+<NAME> (Unpackaged)

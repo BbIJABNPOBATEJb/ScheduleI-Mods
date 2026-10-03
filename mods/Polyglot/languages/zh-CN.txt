@@ -4430,3 +4430,8 @@ Outline targets=目标描边
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=箭头所指的人和藏货点会以箭头颜色的轮廓发光，隔着墙也能看到。
 Others' hits within=他人攻击显示范围
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=其他玩家的攻击或角色之间的打斗，只有在距你这个范围内且视线未被遮挡时才显示数字和血条。你自己的攻击总是显示。
+Outline all buyers and customers=为所有买家和顾客描边
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=附近所有买家和潜在顾客都会发光，而不仅是箭头所指的人。
+Outline range=描边范围
+How far away buyers and potential customers still glow. Off \= no limit.=买家和潜在顾客在多远距离内仍会发光。关 = 无限制。
+<NAME> (Unpackaged)=<NAME>（未包装）

@@ -4430,3 +4430,8 @@ Outline targets=Ziele umranden
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=Personen und Verstecke, auf die die Pfeile zeigen, leuchten mit einem Umriss in der Pfeilfarbe – sogar durch Wände.
 Others' hits within=Fremde Treffer bis
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=Treffer anderer Spieler oder zwischen Figuren zeigen eine Zahl und einen Balken nur in dieser Entfernung zu dir und nur, wenn nichts die Sicht versperrt. Deine eigenen Treffer werden immer angezeigt.
+Outline all buyers and customers=Alle Käufer und Kunden umranden
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=Alle Käufer und potenziellen Kunden in der Nähe leuchten, nicht nur die, auf die die Pfeile zeigen.
+Outline range=Reichweite der Umrandung
+How far away buyers and potential customers still glow. Off \= no limit.=Bis zu welcher Entfernung Käufer und potenzielle Kunden noch leuchten. Aus = kein Limit.
+<NAME> (Unpackaged)=<NAME> (unverpackt)

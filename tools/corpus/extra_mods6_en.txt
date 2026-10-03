@@ -1,0 +1,5 @@
+// Guide Arrows 1.2.0: outlines on every buyer and potential customer
+Outline all buyers and customers
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.
+Outline range
+How far away buyers and potential customers still glow. Off = no limit.

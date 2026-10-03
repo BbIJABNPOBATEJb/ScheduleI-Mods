@@ -33,6 +33,7 @@ internal static class TextFitter
     /// <summary>Checks a slice of the tracked texts each frame.</summary>
     public static void Tick()
     {
+        EffectListFit.Tick();
         if (!Translator.Active)
             return;
         for (var n = 0; n < ChecksPerFrame && Tracked.Count > 0; n++)
@@ -46,7 +47,9 @@ internal static class TextFitter
                 continue;
             }
             _cursor++;
-            if (NeedsFit(text))
+            if (BrokenEffectList(text))
+                KeepLines(text);
+            else if (NeedsFit(text))
                 Fit(text);
         }
     }
@@ -61,6 +64,26 @@ internal static class TextFitter
             return false;
         var original = text.text;
         return !string.IsNullOrEmpty(original) && Translator.Translate(original) != original;
+    }
+
+    /// <summary>A list of effects where a long name broke onto a second line (see EffectListFit).</summary>
+    private static bool BrokenEffectList(TextMeshProUGUI text)
+    {
+        if (!text.isActiveAndEnabled || text.textWrappingMode == TextWrappingModes.NoWrap || text.textWrappingMode == TextWrappingModes.PreserveWhitespaceNoWrap)
+            return false;
+        var original = text.text;
+        if (string.IsNullOrEmpty(original))
+            return false;
+        var shown = Translator.Translate(original);
+        return shown != original && EffectListFit.IsEffectList(shown) && text.textInfo.lineCount > EffectListFit.ExplicitLines(shown);
+    }
+
+    /// <summary>One line per effect, the font shrinking to the widest one.</summary>
+    private static void KeepLines(TextMeshProUGUI text)
+    {
+        text.textWrappingMode = TextWrappingModes.NoWrap;
+        if (!text.enableAutoSizing)
+            Fit(text);
     }
 
     private static void Fit(TextMeshProUGUI text)

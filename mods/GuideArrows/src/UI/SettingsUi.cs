@@ -65,7 +65,11 @@ internal static class SettingsUi
             .Toggle("Labels", "What the arrow points at: the customer's name, the quest step, the stash...",
                 () => Config.ShowLabels.Value, v => Config.ShowLabels.Value = v)
             .Toggle("Outline targets", "The people and stashes the arrows point at glow in the arrow's color, even through walls.",
-                () => Config.Outline.Value, v => Config.Outline.Value = v);
+                () => Config.Outline.Value, v => Config.Outline.Value = v)
+            .Toggle("Outline all buyers and customers", "Every buyer and potential customer nearby glows, not only the ones the arrows point at.",
+                () => Config.OutlineAll.Value, v => Config.OutlineAll.Value = v)
+            .Slider("Outline range", "How far away buyers and potential customers still glow. Off = no limit.", 0f, 300f, 10f,
+                () => Config.OutlineRange.Value, v => Config.OutlineRange.Value = Mathf.RoundToInt(v), v => v <= 0f ? "Off" : Meters(v));
 
         window.SetSubtitle("v" + ModInfo.Version);
         return window;

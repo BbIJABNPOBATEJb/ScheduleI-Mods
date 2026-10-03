@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.2.0 - 2026-10-03
+
+- **All buyers and potential customers glow**, not only the ones the arrows point at: yellow and
+  purple outlines on everyone within 100 m (the 12 nearest of each). Can be turned off or given another
+  range (Look → Outline all buyers and customers, Outline range).
+- The arrow of a kind always points at its nearest target. Before, once you came closer than "Hide
+  when closer than" to it, the arrow swung round to the next nearest one, which looked as if the
+  nearest one was skipped; now that arrow hides while the target keeps glowing.
+
 ## 1.1.0 - 2026-10-03
 
 - New **buyers** arrow (yellow): the nearest of your customers who would buy from you right now -

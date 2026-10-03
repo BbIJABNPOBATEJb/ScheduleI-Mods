@@ -72,6 +72,34 @@ internal static class ArrowSmoke
         DevSmoke.Check(Render.TargetOutlines.Active.Any(a => a.Root == target.Highlight && a.Renderers > 0), "the target has no outline");
         yield return DevSmoke.Screenshot("outline_open");
 
+        // Every buyer and potential customer around glows, not only the one with the arrow.
+        var people = TargetScanner.Targets.Count(t => (t.Kind == TargetKind.Buyer || t.Kind == TargetKind.Customer) && t.Highlight != null
+            && Vector3.Distance(t.Position, player.transform.position) <= Config.OutlineRange.Value);
+        var glowing = Render.TargetOutlines.Active.Count();
+        DevSmoke.Log($"Buyers and potential customers within {Config.OutlineRange.Value} m: {people}, outlines: {glowing}");
+        DevSmoke.Check(people < 3 || glowing >= 3, "only the arrows' targets glow");
+
+        // Right next to the nearest one: its arrow hides instead of pointing at the next one; it keeps glowing.
+        Config.HideWithin.Value = 6;
+        {
+            var front = player.transform.position + player.transform.forward * 2.5f;
+            npc.Movement.Warp(front);
+            npc.Movement.Stop();
+            yield return 0.5f;
+            TargetScanner.Tick(Time.unscaledTime, force: true);
+            yield return 0.3f;
+            var nearest = TargetScanner.Targets.Where(t => t.Kind == target.Kind)
+                .OrderBy(t => Vector3.Distance(t.Position, player.transform.position)).First();
+            var arrow = GuideArrowsMod.Strip.ArrowTargets.FirstOrDefault(t => t.Kind == target.Kind);
+            DevSmoke.Log($"Next to '{nearest.Label}' ({Vector3.Distance(nearest.Position, player.transform.position):0.0} m): "
+                + (arrow != null ? $"arrow to '{arrow.Label}'" : "no arrow"));
+            var reached = Vector3.Distance(nearest.Position, player.transform.position) < Config.HideWithin.Value;
+            DevSmoke.Check(reached, "could not bring the target close");
+            DevSmoke.Check(arrow == null, "the arrow swung round to another target instead of hiding");
+            DevSmoke.Check(Render.TargetOutlines.Active.Any(a => a.Root == nearest.Highlight), "the reached target stopped glowing");
+            yield return DevSmoke.Screenshot("outline_reached");
+        }
+
         // Behind a building: the outline shows through it.
         npc.Movement.Stop();
         var hidden = OpenSpot(npc.transform.position, 14f, blocked: true);

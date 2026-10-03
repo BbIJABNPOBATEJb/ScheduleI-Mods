@@ -175,6 +175,8 @@ internal static class TextHooks
         private static void Prefix(UnityEngine.UI.Text __instance, out string? __state)
         {
             __state = LegacyText.SwapIn(__instance);
+            if ((__state != null && EffectListFit.IsEffectList(LegacyText.Get(__instance))) || EffectListFit.Knows(__instance))
+                EffectListFit.Notice(__instance);
             if (__state == null)
                 return;
             // Best fit only shrinks when the text doesn't fit, never below 60% of the designed size.
@@ -189,6 +191,9 @@ internal static class TextHooks
 
         private static void Finalizer(UnityEngine.UI.Text __instance, string? __state) => LegacyText.SwapOut(__instance, __state);
     }
+
+    /// <summary>The text a legacy uGUI Text holds (outside of drawing: the original, untranslated one).</summary>
+    internal static string LegacyOriginal(UnityEngine.UI.Text text) => LegacyText.Get(text);
 
     /// <summary>Layout (ContentSizeFitter etc.) must measure the translated text, not the English one.</summary>
     [HarmonyPatch(typeof(UnityEngine.UI.Text), nameof(UnityEngine.UI.Text.preferredWidth), MethodType.Getter)]

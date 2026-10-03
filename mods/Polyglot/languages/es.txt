@@ -4430,3 +4430,8 @@ Outline targets=Contorno de objetivos
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=Las personas y los alijos a los que apuntan las flechas brillan con un contorno del color de la flecha, incluso a través de las paredes.
 Others' hits within=Golpes ajenos hasta
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=Los golpes de otros jugadores o entre personajes solo muestran un número y una barra a esta distancia de ti y solo si nada te tapa la vista. Tus propios golpes se muestran siempre.
+Outline all buyers and customers=Contorno de todos los compradores y clientes
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=Todos los compradores y clientes potenciales cercanos brillan, no solo aquellos a los que apuntan las flechas.
+Outline range=Alcance del contorno
+How far away buyers and potential customers still glow. Off \= no limit.=Hasta qué distancia siguen brillando los compradores y clientes potenciales. Apagado = sin límite.
+<NAME> (Unpackaged)=<NAME> (sin empaquetar)

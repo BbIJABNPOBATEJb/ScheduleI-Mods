@@ -22,6 +22,7 @@ internal static class PolyglotSmoke
             "inspect" => Inspect(),
             "tour" => Tour(),
             "sms" => Sms(),
+            "effects" => Effects(),
 #if MONO
             "corpus" => Corpus(),
             "corpus-tutorial" => CorpusTutorial(),
@@ -43,6 +44,130 @@ internal static class PolyglotSmoke
             runner.Tick();
             yield return null;
         }
+    }
+
+    /// <summary>
+    /// Product effects with the longest translations in every panel that lists them: the product
+    /// manager, a customer's preferences in contacts and the item tooltip. Logs each label's box and lines.
+    /// </summary>
+    private static IEnumerator Effects()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 2f;
+        LanguageSwitcher.Apply(DevSmoke.Arg.Length > 0 ? DevSmoke.Arg : "ru", save: false);
+        yield return 1f;
+
+        var effects = UnityQuery.FindAllIncludingAssets<S1.Effects.Effect>()
+            .Where(e => e != null && !string.IsNullOrEmpty(e.Name))
+            .GroupBy(e => e.Name).Select(g => g.First())
+            .OrderByDescending(e => Translator.Translate(e.Name).Length).ToList();
+        DevSmoke.Log("Longest effects: " + string.Join(", ", effects.Take(8).Select(e => $"{e.Name} = {Translator.Translate(e.Name)}")));
+        var product = UnityQuery.ToManaged(S1.Product.ProductManager.DiscoveredProducts).First(p => p != null);
+        product.Properties.Clear();
+        foreach (var effect in effects.Take(8))
+            product.Properties.Add(effect);
+
+        var menu = S1.UI.GameplayMenu.Instance;
+        menu.SetScreen(S1.UI.GameplayMenu.EGameplayScreen.Phone);
+        menu.Open();
+        yield return 2f;
+        var products = S1.UI.Phone.ProductManagerApp.ProductManagerApp.Instance;
+        products.SetOpen(true);
+        yield return 1f;
+        products.DetailPanel.SetActiveProduct(product);
+        yield return 1f;
+        foreach (var label in products.DetailPanel.PropertyLabels)
+            LogLabel("product app", label);
+        yield return DevSmoke.Screenshot("effects_products");
+        products.SetOpen(false);
+        yield return 0.5f;
+
+        var customer = UnityQuery.ToManaged(S1.Economy.Customer.UnlockedCustomers).FirstOrDefault(c => c != null)
+            ?? UnityQuery.ToManaged(S1.Economy.Customer.LockedCustomers).First(c => c != null);
+        customer.CustomerData.PreferredProperties.Clear();
+        foreach (var effect in effects.Take(3))
+            customer.CustomerData.PreferredProperties.Add(effect);
+        var contacts = S1.UI.Phone.ContactsApp.ContactsApp.Instance;
+        contacts.SetOpen(true);
+        yield return 1f;
+        contacts.DetailPanel.Open(customer.NPC);
+        yield return 1f;
+        LogLabel("contacts", contacts.DetailPanel.PropertiesLabel);
+        yield return DevSmoke.Screenshot("effects_contacts");
+        contacts.SetOpen(false);
+        menu.Close();
+        yield return 1f;
+
+        // The item tooltip's own content, on a canvas of its own (3x): the game closes its tooltip
+        // panel whenever no inventory slot is hovered.
+        var canvasObject = new GameObject("Smoke Tooltip Canvas");
+        var tooltipCanvas = canvasObject.AddComponent<Canvas>();
+        tooltipCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        tooltipCanvas.sortingOrder = 5000;
+        tooltipCanvas.scaleFactor = 3f;
+        var box = new GameObject("Tooltip").AddComponent<RectTransform>();
+        box.SetParent(canvasObject.transform, false);
+        var content = UnityEngine.Object.Instantiate(product.CustomInfoContent, box);
+        var background = box.gameObject.AddComponent<UnityEngine.UI.Image>();
+        background.color = new Color(0.22f, 0.22f, 0.22f, 1f);
+        content.Initialize(product.GetDefaultInstance(1));
+        // Like the game's panel: sized from the content's height after Initialize.
+        box.sizeDelta = new Vector2(180f, content.Height);
+        DevSmoke.Log($"tooltip height {content.Height:0}");
+        yield return 1f;
+        Write("tooltip_layout.txt", DumpRects(box));
+        foreach (var label in UnityQuery.GetComponentsInChildren<TextMeshProUGUI>(box, false))
+            LogLabel("tooltip", label);
+        yield return DevSmoke.Screenshot("effects_tooltip");
+        UnityEngine.Object.Destroy(canvasObject);
+        LanguageSwitcher.Apply("en", save: false);
+        yield return 1f;
+        DevSmoke.Finish(true, "effects done");
+    }
+
+    private static string DumpRects(Transform root)
+    {
+        var sb = new StringBuilder();
+        void Walk(Transform t, int depth)
+        {
+            var r = UiKit.Get<RectTransform>(t);
+            sb.Append(' ', depth * 2).Append(t.name).Append(t.gameObject.activeSelf ? "" : " [inactive]");
+            if (r != null)
+                sb.Append($" pos={r.anchoredPosition} size={r.sizeDelta} rect={r.rect.size} min={r.anchorMin} max={r.anchorMax} pivot={r.pivot}");
+            sb.Append("  {");
+            foreach (var c in t.GetComponents<Component>())
+            {
+                if (c != null)
+                    sb.Append(UnityQuery.TypeName(c)).Append(' ');
+            }
+            sb.Append("}\n");
+            for (var i = 0; i < t.childCount; i++)
+                Walk(t.GetChild(i), depth + 1);
+        }
+        Walk(root, 0);
+        return sb.ToString();
+    }
+
+    private static void LogLabel(string where, UnityEngine.UI.Text? text)
+    {
+        if (text == null || !text.gameObject.activeInHierarchy)
+            return;
+        var rect = text.rectTransform.rect;
+        var shown = Translator.Translate(text.text);
+        var settings = text.GetGenerationSettings(rect.size);
+        var lines = text.cachedTextGenerator.lineCount;
+        var height = text.cachedTextGeneratorForLayout.GetPreferredHeight(shown, settings) / text.pixelsPerUnit;
+        DevSmoke.Log($"{where} [Text] box {rect.width:0}x{rect.height:0} font {text.fontSize} wrap={text.horizontalOverflow} bestFit={text.resizeTextForBestFit} "
+            + $"lines={lines} needs height {height:0}: \"{shown.Replace("\n", " | ")}\"");
+    }
+
+    private static void LogLabel(string where, TextMeshProUGUI? text)
+    {
+        if (text == null || !text.isActiveAndEnabled || string.IsNullOrEmpty(text.text))
+            return;
+        var rect = text.rectTransform.rect;
+        DevSmoke.Log($"{where} [TMP] {text.name} box {rect.width:0}x{rect.height:0} font {text.fontSize:0.#} wrap={text.textWrappingMode} auto={text.enableAutoSizing} "
+            + $"lines={text.textInfo.lineCount} overflow={text.isTextOverflowing}: \"{Translator.Translate(text.text).Replace("\n", " | ")}\"");
     }
 
     /// <summary>Text messages whose translation is much longer than the English: every bubble holds its text, none overlap.</summary>

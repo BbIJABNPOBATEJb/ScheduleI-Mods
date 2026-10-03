@@ -4430,3 +4430,8 @@ Outline targets=Подсветка целей
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=Люди и тайники, на которые указывают стрелки, светятся контуром цвета стрелки — даже сквозь стены.
 Others' hits within=Чужие удары в радиусе
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=Удары других игроков и драки персонажей показывают цифру и полоску здоровья только на таком расстоянии от вас и только если обзор ничем не закрыт. Ваши удары видны всегда.
+Outline all buyers and customers=Подсветка всех покупателей и клиентов
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=Светятся все покупатели и потенциальные клиенты поблизости, а не только те, на кого указывают стрелки.
+Outline range=Дальность подсветки
+How far away buyers and potential customers still glow. Off \= no limit.=На каком расстоянии покупатели и потенциальные клиенты ещё светятся. Выкл. = без ограничения.
+<NAME> (Unpackaged)=<NAME> (нерасфасованный)

@@ -4430,3 +4430,8 @@ Outline targets=Hedef dış çizgisi
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=Okların gösterdiği kişiler ve zulalar, okun renginde bir dış çizgiyle parlar — duvarların arkasından bile.
 Others' hits within=Başkalarının vuruşları
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=Diğer oyuncuların ya da karakterlerin birbirine vuruşları, sayıyı ve barı yalnızca sana bu kadar yakınken ve görüşünü hiçbir şey kapatmıyorsa gösterir. Kendi vuruşların her zaman görünür.
+Outline all buyers and customers=Tüm alıcılara ve müşterilere dış çizgi
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=Yalnızca okların gösterdikleri değil, yakındaki tüm alıcılar ve potansiyel müşteriler parlar.
+Outline range=Dış çizgi menzili
+How far away buyers and potential customers still glow. Off \= no limit.=Alıcıların ve potansiyel müşterilerin hangi uzaklığa kadar parlayacağı. Kapalı = sınır yok.
+<NAME> (Unpackaged)=<NAME> (paketlenmemiş)

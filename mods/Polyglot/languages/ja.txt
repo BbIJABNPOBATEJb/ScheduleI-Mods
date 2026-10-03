@@ -4430,3 +4430,8 @@ Outline targets=ターゲットの輪郭
 The people and stashes the arrows point at glow in the arrow's color, even through walls.=矢印が指す人や隠し場所が矢印の色の輪郭で光ります。壁越しでも見えます。
 Others' hits within=他人の攻撃の表示範囲
 Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.=他のプレイヤーの攻撃やキャラクター同士の攻撃は、この距離以内で視界が遮られていない場合にのみ数値とバーを表示します。自分の攻撃は常に表示されます。
+Outline all buyers and customers=すべての購入客と顧客に輪郭
+Every buyer and potential customer nearby glows, not only the ones the arrows point at.=矢印が指す人だけでなく、近くのすべての購入客と見込み顧客が光ります。
+Outline range=輪郭の範囲
+How far away buyers and potential customers still glow. Off \= no limit.=購入客と見込み顧客がどの距離まで光るか。オフ = 制限なし。
+<NAME> (Unpackaged)=<NAME>（未包装）

@@ -28,7 +28,8 @@ it is. No more opening the map to find your next deal.
   where you look and tilt up or down for targets above or below you. The distance is shown underneath
   (meters or feet, following the game's unit setting).
 - **Outlines**: the people and stashes the arrows point at glow in the arrow's color, visible through
-  walls and buildings, and keep glowing as you walk up to them.
+  walls and buildings, and keep glowing as you walk up to them. All buyers and potential customers
+  nearby glow too (yellow / purple), not only the ones with an arrow.
 - **One arrow per kind** (the nearest of each), **a single arrow** to the nearest target of any kind,
   or **arrows to the nearest few** targets.
 - Labels show who or what each arrow points at (the customer's name, the quest step...). Arrows
@@ -65,7 +66,8 @@ sleep somewhere, the property with the most valuable equipment is used.
 Everything in the in-game screen is also in `UserData/MelonPreferences.cfg` under `[GuideArrows]`,
 e.g. `ToggleKey = "F7"` (`"None"` disables it), `Mode` (0 per kind, 1 nearest, 2 nearest few),
 `Show<Kind>` / `Color<Kind>`, `ArrowSize`, `ViewAngle`, `TurnSpeed`, `HideWithin`, `MaxDistance`,
-`Outline` (`false` turns the outlines off).
+`Outline` (`false` turns the outlines off), `OutlineAll` and `OutlineRange` (outlines on every buyer and
+potential customer within this many meters).
 
 ## Changelog
 
