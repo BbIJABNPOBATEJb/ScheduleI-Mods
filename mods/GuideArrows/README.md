@@ -9,7 +9,14 @@ it is. No more opening the map to find your next deal.
   <img src="../../docs/images/guidearrows-hud.jpg" width="80%">
 </p>
 <p>
+  <img src="../../docs/images/guidearrows-glow-wall.jpg" width="49%">
+  <img src="../../docs/images/guidearrows-glow-street.jpg" width="49%">
+</p>
+<p>
+  <img src="../../docs/images/guidearrows-glow-stash.jpg" width="49%">
   <img src="../../docs/images/guidearrows-labels.jpg" width="49%">
+</p>
+<p>
   <img src="../../docs/images/guidearrows-settings.jpg" width="49%">
 </p>
 

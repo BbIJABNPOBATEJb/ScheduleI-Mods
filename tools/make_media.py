@@ -1,6 +1,7 @@
 """Builds README screenshots (docs/images) from smoke-test captures and draws the mod icons.
 
-Usage: python tools/make_media.py   (needs Pillow; screenshots come from test-runs/, see run-smoke.ps1)
+Usage: python tools/make_media.py [name ...]   (needs Pillow; screenshots come from test-runs/, see run-smoke.ps1)
+       With names, only the screenshots whose file name contains one of them are made (no icons).
 """
 import pathlib
 
@@ -30,6 +31,10 @@ SHOTS = [
     ("guidearrows-hud.jpg", "GuideArrows-arrows-il2cpp-20260930-211843", "arrows.png", (560, 0, 1360, 220)),
     ("guidearrows-labels.jpg", "GuideArrows-arrows-il2cpp-20260930-211843", "mode_nearest_labels.png", (460, 0, 1460, 260)),
     ("guidearrows-settings.jpg", "GuideArrows-arrows-il2cpp-20260930-211843", "settings_tab1.png", (480, 260, 1440, 820)),
+    # tools/run-smoke.ps1 -Mod GuideArrows -Scenario media -Beta (English UI), default save
+    ("guidearrows-glow-wall.jpg", "GuideArrows-media-il2cpp-beta-20261003-224906", "media_people_3_wall.png", (300, 40, 1500, 760)),
+    ("guidearrows-glow-street.jpg", "GuideArrows-media-il2cpp-beta-20261003-224906", "media_people_4_open.png", (200, 40, 1500, 820)),
+    ("guidearrows-glow-stash.jpg", "GuideArrows-media-il2cpp-beta-20261003-224906", "media_stash_6.png", (420, 40, 1500, 800)),
     ("quietpause-settings.jpg", "QuietPause-audio-il2cpp-20260930-212727", "audio_settings.png", (480, 260, 1440, 820)),
     ("electricscooter-ride.jpg", "ElectricScooter-ride-il2cpp-*", "curb_moving.png", (280, 100, 1380, 870)),
     ("electricscooter-front.jpg", "ElectricScooter-ride-il2cpp-*", "scooter_front.png", (250, 0, 1350, 900)),
@@ -45,9 +50,11 @@ def latest(pattern: str, file: str) -> pathlib.Path:
     return runs[-1] / file
 
 
-def screenshots() -> None:
+def screenshots(only: list[str]) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     for name, pattern, file, box in SHOTS:
+        if only and not any(part in name for part in only):
+            continue
         img = Image.open(latest(pattern, file)).convert("RGB").crop(box)
         img.save(OUT / name, quality=86, optimize=True)
         print(f"{name}: {img.size[0]}x{img.size[1]}")
@@ -251,5 +258,8 @@ def icons() -> None:
 
 
 if __name__ == "__main__":
-    screenshots()
-    icons()
+    import sys
+
+    screenshots(sys.argv[1:])
+    if len(sys.argv) == 1:
+        icons()

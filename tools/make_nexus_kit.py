@@ -76,7 +76,8 @@ MODS = {
                    "potential customer and home base, each in its own color. Smooth, configurable and movable. "
                    "IL2CPP and Mono.",
         "banner": ("test-runs/DamageIndicator-combat-il2cpp-20260930-211749/hud_plain.png", (520, 0, 1400, 500)),
-        "gallery": ["guidearrows-hud.jpg", "guidearrows-labels.jpg", "guidearrows-settings.jpg"],
+        "gallery": ["guidearrows-glow-wall.jpg", "guidearrows-glow-street.jpg", "guidearrows-glow-stash.jpg",
+                    "guidearrows-hud.jpg", "guidearrows-labels.jpg", "guidearrows-settings.jpg"],
         "extra_gallery": [("test-runs/DamageIndicator-combat-il2cpp-20260930-211749/hud_plain.png", "in-game.jpg")],
         "tags": "HUD, Navigation, Quality of Life, Configurable, MelonLoader",
         "credits": "Developed with AI assistance (Claude by Anthropic).",

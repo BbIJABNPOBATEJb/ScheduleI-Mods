@@ -1,4 +1,5 @@
 #if DEV
+using System;
 using System.Collections;
 using System.Linq;
 using GuideArrows.Targets;
@@ -18,8 +19,85 @@ internal static class ArrowSmoke
     {
         "arrows" => Arrows(),
         "outline" => Outline(),
+        "media" => Media(),
         _ => null,
     });
+
+    /// <summary>
+    /// Screenshots for the mod's pages (-Save with customers, English UI): a street where several buyers
+    /// and potential customers glow, people glowing through a building, and a glowing stash.
+    /// </summary>
+    private static IEnumerator Media()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 3f;
+        SetTime(DevSmoke.Arg.Length > 0 ? int.Parse(DevSmoke.Arg) : 1630);
+        Config.ShowLabels.Value = true;
+        Config.HideWithin.Value = 0;
+        Config.Outline.Value = true;
+        Config.OutlineAll.Value = true;
+        yield return 2f;
+
+        var player = S1.PlayerScripts.Player.Local;
+        var movement = S1.PlayerScripts.PlayerMovement.Instance;
+        TargetScanner.Tick(Time.unscaledTime, force: true);
+        var people = TargetScanner.Targets.Where(t => (t.Kind == TargetKind.Buyer || t.Kind == TargetKind.Customer) && t.Highlight != null).ToList();
+        DevSmoke.Log($"{people.Count} buyers and potential customers");
+        DevSmoke.Check(people.Count >= 2, "not enough people to show");
+
+        // Where buyers and potential customers are close together (both colors in one picture).
+        int Near(Vector3 at, TargetKind kind) => people.Count(o => o.Kind == kind && Vector3.Distance(o.Position, at) < 50f);
+        var best = people.OrderByDescending(p => Math.Min(Near(p.Position, TargetKind.Buyer), Near(p.Position, TargetKind.Customer)) * 10
+            + Near(p.Position, TargetKind.Buyer) + Near(p.Position, TargetKind.Customer)).First();
+        var group = people.Where(o => Vector3.Distance(o.Position, best.Position) < 50f).ToList();
+        var center = group.Aggregate(Vector3.zero, (sum, o) => sum + o.Position) / group.Count;
+        DevSmoke.Log($"Busiest spot {center}: {Near(best.Position, TargetKind.Buyer)} buyers, {Near(best.Position, TargetKind.Customer)} potential customers within 50 m");
+
+        var shot = 0;
+        foreach (var (distance, blocked) in new[] { (9f, true), (11f, true), (13f, true), (16f, true), (10f, false), (16f, false) })
+        {
+            var spot = OpenSpot(center, distance, blocked);
+            if (!spot.HasValue)
+                continue;
+            movement.Teleport(spot.Value + Vector3.up * 0.1f);
+            yield return 0.5f;
+            Face(player, center, 0f);
+            yield return 2.5f;
+            yield return DevSmoke.Screenshot($"media_people_{shot++}_{(blocked ? "wall" : "open")}");
+        }
+
+        // A glowing stash with its arrow.
+        var stash = TargetScanner.Targets.Where(t => t.Kind == TargetKind.Stash && t.Highlight != null)
+            .OrderBy(t => Vector3.Distance(t.Position, center)).FirstOrDefault();
+        if (stash != null)
+        {
+            foreach (var distance in new[] { 6f, 10f })
+            {
+                var spot = OpenSpot(stash.Position, distance, blocked: false);
+                if (!spot.HasValue)
+                    continue;
+                movement.Teleport(spot.Value + Vector3.up * 0.1f);
+                yield return 0.5f;
+                Face(player, stash.Position, 0f);
+                yield return 2.5f;
+                yield return DevSmoke.Screenshot($"media_stash_{distance:0}");
+            }
+        }
+        else
+        {
+            DevSmoke.Log("no stash with items in this save");
+        }
+        DevSmoke.Finish(true, "media done");
+    }
+
+    /// <summary>Sets the clock (SetTimeAndSync in game 0.4.6, SetTime_Server in 0.4.7).</summary>
+    private static void SetTime(int time)
+    {
+        var manager = S1.GameTime.TimeManager.Instance;
+        var method = typeof(S1.GameTime.TimeManager).GetMethod("SetTimeAndSync") ?? typeof(S1.GameTime.TimeManager).GetMethod("SetTime_Server");
+        method?.Invoke(manager, new object[] { time });
+        DevSmoke.Log($"Time set to {time}");
+    }
 
     /// <summary>
     /// Buyers and potential customers (who is left out and why), then the outline on the nearest one:
