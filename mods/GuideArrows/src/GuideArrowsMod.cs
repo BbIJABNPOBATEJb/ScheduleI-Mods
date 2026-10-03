@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using GuideArrows.Render;
 using GuideArrows.Targets;
 using GuideArrows.UI;
 using MelonLoader;
@@ -75,9 +77,13 @@ public sealed class GuideArrowsMod : MelonMod
         try
         {
             if (!Canvas.Tick())
+            {
+                TargetOutlines.Tick(Enumerable.Empty<(GameObject, Color)>());
                 return;
+            }
             TargetScanner.Tick(Time.unscaledTime);
             Strip.Tick(MainCamera());
+            TargetOutlines.Tick(Config.Outline.Value && WorldLoaded() ? Strip.Glowing : Enumerable.Empty<(GameObject, Color)>());
         }
         catch (Exception ex)
         {
@@ -87,7 +93,11 @@ public sealed class GuideArrowsMod : MelonMod
         }
     }
 
-    public override void OnSceneWasLoaded(int buildIndex, string sceneName) => Strip.Clear();
+    public override void OnSceneWasLoaded(int buildIndex, string sceneName)
+    {
+        Strip.Clear();
+        TargetOutlines.Clear();
+    }
 
     public override void OnApplicationQuit()
     {
@@ -95,6 +105,13 @@ public sealed class GuideArrowsMod : MelonMod
             Config.Prefs.RestoreLoadedValues(); // smoke test: leave the player's settings as they were
         else
             Config.Prefs.SaveNow();
+    }
+
+    /// <summary>Outlines only once the world has finished loading: people are still being set up before that.</summary>
+    private static bool WorldLoaded()
+    {
+        var loadManager = S1.Persistence.LoadManager.Instance;
+        return loadManager != null && loadManager.IsGameLoaded && !loadManager.IsLoading;
     }
 
     internal static Camera? MainCamera()

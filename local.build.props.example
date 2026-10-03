@@ -12,6 +12,9 @@
     <Il2CppBetaGamePath></Il2CppBetaGamePath>
     <MonoBetaGamePath></MonoBetaGamePath>
 
+    <!-- Optional: a copy of the main (IL2CPP) game for `run-smoke.ps1 -Parallel`, to run tests while playing. -->
+    <Il2CppPublicCopyPath></Il2CppPublicCopyPath>
+
     <!-- Copy the built DLL into <game>\Mods after each build. -->
     <AutomateLocalDeployment>true</AutomateLocalDeployment>
   </PropertyGroup>

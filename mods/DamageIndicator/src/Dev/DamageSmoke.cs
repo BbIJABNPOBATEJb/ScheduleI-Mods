@@ -16,8 +16,71 @@ internal static class DamageSmoke
     public static IEnumerator Run() => DevSmoke.RunScenario(name => name switch
     {
         "combat" => Combat(),
+        "witness" => Witness(),
         _ => null,
     });
+
+    /// <summary>
+    /// Others' hits (no player behind them) only show when seen up close; your own always show.
+    /// Characters out in the town are hit where they stand: one in plain view, one behind a wall, one far away.
+    /// </summary>
+    private static IEnumerator Witness()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 3f;
+        var camera = DamageIndicatorMod.MainCamera()!;
+        var eye = camera.transform.position;
+        var range = Config.OthersRange.Value;
+        var people = UnityQuery.ToManaged(S1.NPCs.NPCManager.NPCRegistry)
+            .Where(n => n != null && n.gameObject.activeInHierarchy && n.IsConscious && !n.isInBuilding && !n.IsInVehicle)
+            .ToList();
+        DevSmoke.Log($"{people.Count} people outdoors, others' hits range {range} m");
+
+        // In plain view: brought in front of the camera.
+        var seen = people.OrderBy(n => Vector3.Distance(n.transform.position, eye)).First();
+        seen.Movement.Warp(eye + Flat(camera.transform.forward) * 5f);
+        seen.Movement.Stop();
+        yield return 1f;
+        people.Remove(seen);
+        yield return Expect(seen, camera, byPlayer: false, shown: true, "in plain view, 5 m");
+
+        // Behind something solid, within range.
+        var hidden = people.FirstOrDefault(n => Distance(n, camera) < range - 3f && !Sight.Witnessed(camera, Probe(n), range));
+        if (hidden != null)
+        {
+            people.Remove(hidden);
+            yield return Expect(hidden, camera, byPlayer: false, shown: false, $"behind a wall, {Distance(hidden, camera):0} m");
+            yield return Expect(hidden, camera, byPlayer: true, shown: true, "behind a wall, your own hit");
+        }
+        else
+        {
+            DevSmoke.Log("no one behind a wall within range here: that case is not checked");
+        }
+
+        // Far away.
+        var far = people.Where(n => Distance(n, camera) > range + 10f).OrderBy(n => Distance(n, camera)).FirstOrDefault();
+        if (far != null)
+        {
+            yield return Expect(far, camera, byPlayer: false, shown: false, $"far away, {Distance(far, camera):0} m");
+            yield return Expect(far, camera, byPlayer: true, shown: true, "far away, your own hit");
+        }
+        yield return DevSmoke.Screenshot("witness");
+        DevSmoke.Finish(true, "witness done");
+    }
+
+    private static IEnumerator Expect(S1.NPCs.NPC npc, Camera camera, bool byPlayer, bool shown, string what)
+    {
+        var before = DamageIndicatorMod.Numbers.Spawned;
+        Hit(npc, camera, 5f, 20f, S1.Combat.EImpactType.Punch, byPlayer);
+        yield return 0.3f;
+        var spawned = DamageIndicatorMod.Numbers.Spawned > before;
+        DevSmoke.Log($"{(byPlayer ? "your" : "other's")} hit on {npc.FirstName} ({what}): number {(spawned ? "shown" : "not shown")}");
+        DevSmoke.Check(spawned == shown, $"{what}: the number should {(shown ? "" : "not ")}be shown");
+    }
+
+    private static NpcHit Probe(S1.NPCs.NPC npc) => new() { Npc = npc, Point = npc.transform.position + Vector3.up * 1.2f };
+
+    private static float Distance(S1.NPCs.NPC npc, Camera camera) => Vector3.Distance(npc.transform.position, camera.transform.position);
 
     private static IEnumerator Combat()
     {
@@ -97,12 +160,12 @@ internal static class DamageSmoke
         DevSmoke.Finish(true, $"combat done, {_hits} hit events");
     }
 
-    private static void Hit(S1.NPCs.NPC npc, Camera camera, float damage, float force, S1.Combat.EImpactType type)
+    private static void Hit(S1.NPCs.NPC npc, Camera camera, float damage, float force, S1.Combat.EImpactType type, bool byPlayer = true)
     {
         var head = npc.Avatar.LookController != null ? npc.Avatar.LookController.HeadBone : null;
         var point = head != null ? head.position - Vector3.up * 0.25f : npc.transform.position + Vector3.up * 1.4f;
         var impact = new S1.Combat.Impact(point, Flat(camera.transform.forward), force, damage, type,
-            S1.PlayerScripts.Player.Local.NetworkObject, Random.Range(1, int.MaxValue));
+            byPlayer ? S1.PlayerScripts.Player.Local.NetworkObject : null, Random.Range(1, int.MaxValue));
         npc.ReceiveImpact(impact);
         DevSmoke.Log($"Hit {npc.FirstName}: {damage} ({type}, force {force}) -> health {npc.Health.Health}");
     }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.1 - 2026-10-03
+
+- Text messages: translations longer than the English no longer run out of their bubbles and over
+  the next message. Bubbles are sized to the translated text.
+- Translations for the new settings of Guide Arrows 1.1.0 and Damage Indicator 1.0.2.
+
 ## 1.2.0 - 2026-10-01
 
 - Ready for the game's 0.4.7 beta: about 240 new strings per language - the item descriptions the

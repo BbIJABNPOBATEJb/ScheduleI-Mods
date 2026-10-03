@@ -10,16 +10,18 @@ internal enum TargetKind
     Quest = 2,
     Customer = 3,
     Home = 4,
+    Buyer = 5,
 }
 
 internal static class TargetKinds
 {
     public static readonly TargetKind[] All =
-        { TargetKind.Deal, TargetKind.Stash, TargetKind.Quest, TargetKind.Customer, TargetKind.Home };
+        { TargetKind.Deal, TargetKind.Buyer, TargetKind.Stash, TargetKind.Quest, TargetKind.Customer, TargetKind.Home };
 
     public static string Name(TargetKind kind) => kind switch
     {
         TargetKind.Deal => "Deals",
+        TargetKind.Buyer => "Buyers",
         TargetKind.Stash => "Stashes",
         TargetKind.Quest => "Quests",
         TargetKind.Customer => "Potential customers",
@@ -30,9 +32,10 @@ internal static class TargetKinds
     public static string Hint(TargetKind kind) => kind switch
     {
         TargetKind.Deal => "Customers waiting for a delivery you accepted.",
+        TargetKind.Buyer => "Your customers who would buy from you right now: no deal arranged or offered, not served by one of your dealers, and no purchase in the last few hours.",
         TargetKind.Stash => "Dead drops with items in them (e.g. an order a supplier delivered).",
         TargetKind.Quest => "The current objectives of active quests.",
-        TargetKind.Customer => "People you can win over with a free sample (friends of your customers).",
+        TargetKind.Customer => "People you can win over with a free sample (friends of your customers), except those who already turned you down today.",
         TargetKind.Home => "Your main property: where you last slept, or the one with the most valuable equipment.",
         _ => "",
     };
@@ -40,6 +43,7 @@ internal static class TargetKinds
     public static int DefaultColor(TargetKind kind) => kind switch
     {
         TargetKind.Deal => Palette.Green,
+        TargetKind.Buyer => Palette.Yellow,
         TargetKind.Stash => Palette.Red,
         TargetKind.Quest => Palette.Orange,
         TargetKind.Customer => Palette.Purple,
@@ -78,6 +82,9 @@ internal sealed class Target
     public string Label = "";
     public Transform? Anchor;
     public Vector3 Fixed;
+
+    /// <summary>The object whose outline glows in the arrow's color (a person, a stash); none for places.</summary>
+    public GameObject? Highlight;
 
     public Vector3 Position => Anchor != null ? Anchor.position : Fixed;
 }

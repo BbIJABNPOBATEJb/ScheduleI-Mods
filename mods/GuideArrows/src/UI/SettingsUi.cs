@@ -22,7 +22,7 @@ internal static class SettingsUi
             .Slider("Max arrows", null, 1f, 8f, 1f,
                 () => Config.MaxArrows.Value, v => Config.MaxArrows.Value = Mathf.RoundToInt(v), Whole)
             .Slider("Hide when closer than", "An arrow disappears once you are this close to its target.", 0f, 50f, 1f,
-                () => Config.HideWithin.Value, v => Config.HideWithin.Value = Mathf.RoundToInt(v), Meters)
+                () => Config.HideWithin.Value, v => Config.HideWithin.Value = Mathf.RoundToInt(v), v => v <= 0f ? "Off" : Meters(v))
             .Slider("Ignore further than", "Targets further away get no arrow. Off = no limit.", 0f, 2000f, 50f,
                 () => Config.MaxDistance.Value, v => Config.MaxDistance.Value = Mathf.RoundToInt(v), v => v <= 0f ? "Off" : Meters(v))
             .Button("Move and resize the arrows", editLayout)
@@ -63,7 +63,9 @@ internal static class SettingsUi
             .Toggle("Distance", "The distance under each arrow.",
                 () => Config.ShowDistance.Value, v => Config.ShowDistance.Value = v)
             .Toggle("Labels", "What the arrow points at: the customer's name, the quest step, the stash...",
-                () => Config.ShowLabels.Value, v => Config.ShowLabels.Value = v);
+                () => Config.ShowLabels.Value, v => Config.ShowLabels.Value = v)
+            .Toggle("Outline targets", "The people and stashes the arrows point at glow in the arrow's color, even through walls.",
+                () => Config.Outline.Value, v => Config.Outline.Value = v);
 
         window.SetSubtitle("v" + ModInfo.Version);
         return window;

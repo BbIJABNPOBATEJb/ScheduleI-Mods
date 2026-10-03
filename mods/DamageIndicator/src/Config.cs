@@ -53,6 +53,7 @@ internal static class Config
     public static Setting<int> Numbers = null!;
     public static Setting<float> NumberScale = null!;
     public static Setting<float> NumberDuration = null!;
+    public static Setting<int> OthersRange = null!;
 
     public static readonly Vector2 DefaultPlayerBarPos = new(0.5f, 0.155f);
 
@@ -85,6 +86,8 @@ internal static class Config
         Numbers = Prefs.Add("DamageNumbers", (int)NumbersFor.All, "Floating damage numbers on characters: 0 = all hits, 1 = only your hits, 2 = off.");
         NumberScale = Prefs.Add("NumberScale", 1f, "Size of damage numbers.");
         NumberDuration = Prefs.Add("NumberDuration", 1.2f, "Seconds a damage number stays on screen.");
+        OthersRange = Prefs.Add("OthersHitsRange", 30,
+            "Hits by others (other players, fights between characters) only show a number and a bar within this distance (meters) and when nothing blocks your view. Your own hits always show.");
     }
 
     public static PlayerBarMode PlayerBarMode => (PlayerBarMode)Mathf.Clamp(PlayerBar.Value, 0, 3);

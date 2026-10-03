@@ -34,8 +34,10 @@ internal static class Config
     public static Setting<bool> ShowLabels = null!;
     public static Setting<int> HideWithin = null!;
     public static Setting<int> MaxDistance = null!;
+    public static Setting<bool> Outline = null!;
 
     public static Setting<bool> QuestsTrackedOnly = null!;
+    public static Setting<int> SettingsVersion = null!;
     public static Setting<int> HomeMode = null!;
 
     private static readonly Dictionary<TargetKind, Setting<bool>> KindOn = new();
@@ -62,9 +64,10 @@ internal static class Config
         TurnSpeed = Prefs.Add("TurnSpeed", 7f, "How quickly arrows turn to a new direction.");
         Opacity = Prefs.Add("Opacity", 95, "Arrow opacity in percent.");
         ShowDistance = Prefs.Add("ShowDistance", true, "Show the distance under each arrow.");
-        ShowLabels = Prefs.Add("ShowLabels", false, "Show what the arrow points at (customer, quest, stash...).");
-        HideWithin = Prefs.Add("HideWithin", 6, "Hide an arrow once you are closer than this (meters).");
+        ShowLabels = Prefs.Add("ShowLabels", true, "Show what the arrow points at (customer, quest, stash...).");
+        HideWithin = Prefs.Add("HideWithin", 0, "Hide an arrow once you are closer than this (meters). 0 = never hide.");
         MaxDistance = Prefs.Add("MaxDistance", 0, "Ignore targets further away than this (meters). 0 = no limit.");
+        Outline = Prefs.Add("Outline", true, "The people and stashes the arrows point at glow in the arrow's color, even through walls.");
 
         QuestsTrackedOnly = Prefs.Add("QuestsTrackedOnly", true, "Quest arrows only for quests you track in the journal.");
         HomeMode = Prefs.Add("HomeMode", (int)Targets.HomeMode.Auto,
@@ -76,6 +79,24 @@ internal static class Config
             KindColor[kind] = Prefs.Add("Color" + kind, TargetKinds.DefaultColor(kind),
                 "Color: 0 green, 1 red, 2 orange, 3 yellow, 4 purple, 5 blue, 6 cyan, 7 pink, 8 white.");
         }
+
+        SettingsVersion = Prefs.Add("SettingsVersion", 0, "Which defaults the settings above were last updated to (do not change).");
+        UpdateDefaults();
+    }
+
+    /// <summary>
+    /// Settings saved by 1.0.x still hold that version's defaults: arrows hid within 6 m and had no labels.
+    /// Those move to the new defaults; values the player chose stay.
+    /// </summary>
+    private static void UpdateDefaults()
+    {
+        if (SettingsVersion.Value >= 2)
+            return;
+        if (HideWithin.Value == 6)
+            HideWithin.Value = HideWithin.Default;
+        if (!ShowLabels.Value)
+            ShowLabels.Value = ShowLabels.Default;
+        SettingsVersion.Value = 2;
     }
 
     public static ArrowMode ArrowMode => (ArrowMode)Mathf.Clamp(Mode.Value, 0, 2);

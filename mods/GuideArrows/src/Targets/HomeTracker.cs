@@ -43,11 +43,26 @@ internal static class HomeTracker
     public static void Tick()
     {
         var loadManager = S1.Persistence.LoadManager.Instance;
-        var path = loadManager != null && loadManager.IsGameLoaded ? loadManager.LoadedGameFolderPath : null;
-        if (string.IsNullOrEmpty(path))
-            path = null;
+        string? path = null;
+        if (loadManager != null && loadManager.IsGameLoaded)
+        {
+            path = loadManager.LoadedGameFolderPath;
+            if (string.IsNullOrEmpty(path))
+                path = JoinedWorld();
+        }
         if (path != _worldPath)
             SwitchWorld(path);
+    }
+
+    /// <summary>
+    /// In someone else's game there is no save folder of your own: that world is told apart by the
+    /// host's organisation name and world seed, which the host sends to everyone who joins.
+    /// </summary>
+    private static string JoinedWorld()
+    {
+        var game = S1.DevUtilities.GameManager.Instance;
+        var name = game != null ? game.OrganisationName : "";
+        return "joined/" + S1.DevUtilities.GameManager.Seed.ToString(CultureInfo.InvariantCulture) + "_" + name;
     }
 
     public static Target? Current(HomeMode mode)

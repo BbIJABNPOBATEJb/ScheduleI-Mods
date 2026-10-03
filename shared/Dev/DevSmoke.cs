@@ -51,6 +51,8 @@ internal static class DevSmoke
 
         Active = true;
         Scenario = scenario;
+        if (Array.IndexOf(args, "--s1dev-background") >= 0)
+            DevBackground.Start(modName);
         OutDir = Path.GetFullPath(outDir);
         Directory.CreateDirectory(OutDir);
         _log = new StreamWriter(Path.Combine(OutDir, "smoke.log"), append: false) { AutoFlush = true };
@@ -98,6 +100,8 @@ internal static class DevSmoke
     /// <summary>Call every frame; fails the run when the deadline passes.</summary>
     public static void CheckTimeout()
     {
+        if (DevBackground.Active)
+            DevBackground.Tick();
         if (Active && !_finished && Time.realtimeSinceStartup > _deadline)
             Finish(false, $"Timeout in scene '{SceneManager.GetActiveScene().name}'");
     }
@@ -153,7 +157,7 @@ internal static class DevSmoke
 
         var scene = tutorial ? "Tutorial" : "Main";
         yield return WaitUntil(() => SceneManager.GetActiveScene().name == scene && !loadManager.IsLoading && loadManager.IsGameLoaded,
-            120f, "game load");
+            300f, "game load");
         yield return WaitUntil(() => S1.PlayerScripts.Player.Local != null, 30f, "local player");
         yield return 3f;
         Log("Game loaded");

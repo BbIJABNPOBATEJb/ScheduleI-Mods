@@ -21,6 +21,7 @@ internal static class PolyglotSmoke
         {
             "inspect" => Inspect(),
             "tour" => Tour(),
+            "sms" => Sms(),
 #if MONO
             "corpus" => Corpus(),
             "corpus-tutorial" => CorpusTutorial(),
@@ -41,6 +42,86 @@ internal static class PolyglotSmoke
         {
             runner.Tick();
             yield return null;
+        }
+    }
+
+    /// <summary>Text messages whose translation is much longer than the English: every bubble holds its text, none overlap.</summary>
+    private static IEnumerator Sms()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 2f;
+        LanguageSwitcher.Apply("ru", save: false);
+        yield return 1f;
+
+        var npc = UnityQuery.ToManaged(S1.NPCs.NPCManager.NPCRegistry).First(n => n != null && n.MSGConversation != null);
+        var conversation = npc.MSGConversation;
+        DevSmoke.Log($"Conversation with {npc.FirstName}");
+        var texts = new[]
+        {
+            ("Click a product to list/unlist it. Customers will only buy listed products.", false),
+            ("Used to mix product with ingredients to create unique new products.", true),
+            ("A big jug of ethically sourced horse semen.", false),
+            ("Open the map app to see your potential customers", false),
+            ("Place the soil bag and seed vial in the motel room trash can", true),
+        };
+        foreach (var (text, mine) in texts)
+        {
+            DevSmoke.Check(Translator.Translate(text) != text, "not translated: " + text);
+            var sender = mine ? S1.Messaging.Message.ESenderType.Player : S1.Messaging.Message.ESenderType.Other;
+            conversation.SendMessage(new S1.Messaging.Message(text, sender, true), false, false);
+        }
+
+        var menu = S1.UI.GameplayMenu.Instance;
+        menu.SetScreen(S1.UI.GameplayMenu.EGameplayScreen.Phone);
+        menu.Open();
+        yield return 2f;
+        S1.UI.Phone.Messages.MessagesApp.Instance.SetOpen(true);
+        yield return 1f;
+        conversation.SetOpen(true);
+        yield return 1.5f;
+        yield return DevSmoke.Screenshot("sms_ru");
+        CheckBubbles(conversation, texts.Length);
+
+        // Another language while the conversation is open, then opened again.
+        LanguageSwitcher.Apply("de", save: false);
+        yield return 1f;
+        conversation.SetOpen(false);
+        yield return 0.5f;
+        conversation.SetOpen(true);
+        yield return 1.5f;
+        yield return DevSmoke.Screenshot("sms_de");
+        CheckBubbles(conversation, texts.Length);
+
+        conversation.SetOpen(false);
+        menu.Close();
+        LanguageSwitcher.Apply("en", save: false);
+        yield return 1f;
+        DevSmoke.Finish(true, "sms done");
+    }
+
+    private static void CheckBubbles(S1.Messaging.MSGConversation conversation, int last)
+    {
+        var bubbles = Text.MessageBubbleFit.Bubbles(conversation);
+        DevSmoke.Check(bubbles.Count >= last, $"only {bubbles.Count} bubbles");
+        var checkedFrom = bubbles.Count - last;
+        for (var i = checkedFrom; i < bubbles.Count; i++)
+        {
+            var bubble = bubbles[i];
+            var content = Text.MessageBubbleFit.Content(bubble)!;
+            var shown = Translator.Translate(content.text);
+            var settings = content.GetGenerationSettings(new Vector2(content.GetPixelAdjustedRect().size.x, 0f));
+            settings.resizeTextForBestFit = false;
+            var needed = content.cachedTextGeneratorForLayout.GetPreferredHeight(shown, settings) / content.pixelsPerUnit;
+            var room = content.GetPixelAdjustedRect().size.y;
+            DevSmoke.Log($"bubble {i}: height {bubble.Height:0}, text needs {needed:0} of {room:0}: \"{shown}\"");
+            DevSmoke.Check(needed <= room + 2f, $"bubble {i}: the text does not fit ({needed:0} > {room:0})");
+            if (i > checkedFrom)
+            {
+                var above = bubbles[i - 1];
+                var aboveBottom = above.Container.anchoredPosition.y - above.Height / 2f;
+                var top = bubble.Container.anchoredPosition.y + bubble.Height / 2f;
+                DevSmoke.Check(top <= aboveBottom + 1f, $"bubble {i} overlaps the one above ({top:0} > {aboveBottom:0})");
+            }
         }
     }
 

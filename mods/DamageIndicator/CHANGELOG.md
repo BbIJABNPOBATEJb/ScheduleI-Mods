@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2 - 2026-10-03
+
+- Damage numbers and health bars from other people's hits (other players in multiplayer, fights
+  between characters) no longer show up across the whole map: only within 30 m and when nothing
+  blocks your view (Damage numbers → Others' hits within). Your own hits always show.
+
 ## 1.0.1 - 2026-10-01
 
 - Works on the game's 0.4.7 beta: health bars over characters broke there because the game's

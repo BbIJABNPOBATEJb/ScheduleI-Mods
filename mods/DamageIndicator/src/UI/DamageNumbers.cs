@@ -32,6 +32,11 @@ internal sealed class DamageNumbers
 
     public DamageNumbers(HudCanvas canvas) => _canvas = canvas;
 
+#if DEV
+    /// <summary>Smoke tests: numbers spawned so far.</summary>
+    public int Spawned { get; private set; }
+#endif
+
     public void SpawnWorld(Vector3 world, string text, Color color, float size) =>
         Spawn(text, color, size, item =>
         {
@@ -105,6 +110,9 @@ internal sealed class DamageNumbers
     {
         if (_canvas.Root == null)
             return;
+#if DEV
+        Spawned++;
+#endif
         if (_active.Count >= MaxActive)
         {
             Recycle(_active[0]);

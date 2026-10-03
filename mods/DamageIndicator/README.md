@@ -22,7 +22,8 @@ nobody's health is shown until they actually take damage.
   stays until you are healed. Move it anywhere on the screen and resize it with the mouse.
 - **Damage numbers** pop up where a character is hit: white for your hits, grey for others',
   yellow `KO` for a knock-out blow, red for a killing blow. Damage you take and healing you get
-  (food, medicine) pop up next to your bar.
+  (food, medicine) pop up next to your bar. Hits by others (other players, fights between
+  characters) only show when you see them: nearby and not behind a wall.
 - **Stun bar** (yellow) under the health bar. Schedule I has no stun meter, so it shows the real stun
   states the game uses: tased (2 s), staggered by a heavy hit, knocked down — plus a **KO** badge
   for knocked-out characters and **DEAD** for dead ones.
@@ -61,6 +62,7 @@ Everything in the in-game screen is also in `UserData/MelonPreferences.cfg` unde
 | `NpcHideDelay` / `PlayerHideDelay` | `6` / `4` | Seconds a bar stays |
 | `NpcMaxDistance` | `60` | No bars for characters further away (m) |
 | `DamageNumbers` | `0` | 0 all hits, 1 only yours, 2 off |
+| `OthersHitsRange` | `30` | Others' hits show a number and a bar only this close (m) and in sight |
 | `StunBars` | `true` | Yellow stun bar and KO badge |
 
 ## Changelog

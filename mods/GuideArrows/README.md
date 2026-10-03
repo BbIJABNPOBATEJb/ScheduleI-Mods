@@ -18,18 +18,21 @@ it is. No more opening the map to find your next deal.
 | Color (default) | Points at |
 |---|---|
 | 🟢 Green | **Deals** — customers waiting for a delivery you accepted |
+| 🟡 Yellow | **Buyers** — your customers who would buy from you right now (no deal pending, not served by your dealers, no purchase in the last few hours) |
 | 🔴 Red | **Stashes** — dead drops with items in them (e.g. a supplier's order) |
 | 🟠 Orange | **Quests** — the current objectives of your tracked quests |
-| 🟣 Purple | **Potential customers** — people you can win over with a free sample |
+| 🟣 Purple | **Potential customers** — people you can offer a free sample to right now (not those who turned you down today) |
 | 🔵 Blue | **Home base** — the property you last slept in, or the one with the most valuable equipment |
 
 - The arrows are real 3D, glassy and lit the same day and night. They turn smoothly relative to
   where you look and tilt up or down for targets above or below you. The distance is shown underneath
   (meters or feet, following the game's unit setting).
+- **Outlines**: the people and stashes the arrows point at glow in the arrow's color, visible through
+  walls and buildings, and keep glowing as you walk up to them.
 - **One arrow per kind** (the nearest of each), **a single arrow** to the nearest target of any kind,
   or **arrows to the nearest few** targets.
-- Arrows hide when you get close, can ignore far targets, and optionally show labels (the
-  customer's name, the quest step...).
+- Labels show who or what each arrow points at (the customer's name, the quest step...). Arrows
+  can hide when you get close and ignore far targets.
 - **Everything is configurable** in a native in-game screen (pause menu → **Guide Arrows**): kinds,
   colors, size, spacing, view angle, turn speed, opacity... Drag the row anywhere and resize it with
   the mouse. **F7** shows/hides the arrows.
@@ -61,7 +64,8 @@ sleep somewhere, the property with the most valuable equipment is used.
 
 Everything in the in-game screen is also in `UserData/MelonPreferences.cfg` under `[GuideArrows]`,
 e.g. `ToggleKey = "F7"` (`"None"` disables it), `Mode` (0 per kind, 1 nearest, 2 nearest few),
-`Show<Kind>` / `Color<Kind>`, `ArrowSize`, `ViewAngle`, `TurnSpeed`, `HideWithin`, `MaxDistance`.
+`Show<Kind>` / `Color<Kind>`, `ArrowSize`, `ViewAngle`, `TurnSpeed`, `HideWithin`, `MaxDistance`,
+`Outline` (`false` turns the outlines off).
 
 ## Changelog
 

@@ -64,7 +64,9 @@ internal static class SettingsUi
             .Slider("Size", null, 0.5f, 2.5f, 0.1f,
                 () => Config.NumberScale.Value, v => Config.NumberScale.Value = v, Percent)
             .Slider("Duration", "Seconds a number stays on screen.", 0.5f, 3f, 0.1f,
-                () => Config.NumberDuration.Value, v => Config.NumberDuration.Value = v, Seconds);
+                () => Config.NumberDuration.Value, v => Config.NumberDuration.Value = v, Seconds)
+            .Slider("Others' hits within", "Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.", 5f, 100f, 5f,
+                () => Config.OthersRange.Value, v => Config.OthersRange.Value = Mathf.RoundToInt(v), Meters);
 
         window.SetSubtitle("v" + ModInfo.Version);
         return window;

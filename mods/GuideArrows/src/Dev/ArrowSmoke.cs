@@ -17,8 +17,136 @@ internal static class ArrowSmoke
     public static IEnumerator Run() => DevSmoke.RunScenario(name => name switch
     {
         "arrows" => Arrows(),
+        "outline" => Outline(),
         _ => null,
     });
+
+    /// <summary>
+    /// Buyers and potential customers (who is left out and why), then the outline on the nearest one:
+    /// in plain view and from behind a building. Needs a save with customers (-Save).
+    /// </summary>
+    private static IEnumerator Outline()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 3f;
+        TargetScanner.Tick(Time.unscaledTime, force: true);
+        foreach (var kind in TargetKinds.All)
+        {
+            var list = TargetScanner.Targets.Where(t => t.Kind == kind).ToList();
+            DevSmoke.Log($"{kind}: {list.Count} targets, {list.Count(t => t.Highlight != null)} to outline"
+                + (list.Count > 0 ? " e.g. " + string.Join(", ", list.Take(5).Select(t => $"'{t.Label}'")) : ""));
+        }
+        LogCustomers();
+
+        // Someone who turned you down today is no potential customer until tomorrow.
+        var potential = TargetScanner.Targets.FirstOrDefault(t => t.Kind == TargetKind.Customer);
+        if (potential != null)
+        {
+            var customer = UiKit.Get<S1.Economy.Customer>(potential.Anchor!)!;
+            UiKit.SetMember(customer, "sampleOfferedToday", true);
+            TargetScanner.Tick(Time.unscaledTime, force: true);
+            DevSmoke.Check(TargetScanner.Targets.All(t => t.Key != potential.Key), "a customer who refused today still has an arrow");
+            UiKit.SetMember(customer, "sampleOfferedToday", false);
+            TargetScanner.Tick(Time.unscaledTime, force: true);
+            DevSmoke.Check(TargetScanner.Targets.Any(t => t.Key == potential.Key), "the customer did not come back");
+            DevSmoke.Log($"'{potential.Label}' left out after refusing a sample, back the next day");
+        }
+
+        var player = S1.PlayerScripts.Player.Local;
+        var target = TargetScanner.Targets.Where(t => (t.Kind == TargetKind.Buyer || t.Kind == TargetKind.Customer) && t.Highlight != null)
+            .OrderBy(t => Vector3.Distance(t.Position, player.transform.position)).FirstOrDefault();
+        DevSmoke.Check(target != null, "no buyer or potential customer to outline");
+        DevSmoke.Log($"Outline test on {target!.Kind} '{target.Label}'");
+        var npc = UiKit.Get<S1.NPCs.NPC>(target.Anchor!)!;
+        var movement = S1.PlayerScripts.PlayerMovement.Instance;
+
+        // In plain view, 9 m away.
+        npc.Movement.Stop();
+        var open = OpenSpot(npc.transform.position, 9f, blocked: false);
+        DevSmoke.Check(open.HasValue, "no open spot near the target");
+        movement.Teleport(open!.Value + Vector3.up * 0.1f);
+        yield return 0.5f;
+        Face(player, npc.transform.position, 0f);
+        yield return 2f;
+        LogOutlines();
+        DevSmoke.Check(Render.TargetOutlines.Active.Any(a => a.Root == target.Highlight && a.Renderers > 0), "the target has no outline");
+        yield return DevSmoke.Screenshot("outline_open");
+
+        // Behind a building: the outline shows through it.
+        npc.Movement.Stop();
+        var hidden = OpenSpot(npc.transform.position, 14f, blocked: true);
+        if (hidden.HasValue)
+        {
+            movement.Teleport(hidden.Value + Vector3.up * 0.1f);
+            yield return 0.5f;
+            Face(player, npc.transform.position, 0f);
+            yield return 2f;
+            LogOutlines();
+            yield return DevSmoke.Screenshot("outline_wall");
+        }
+        else
+        {
+            DevSmoke.Log("no spot with a wall in between found here");
+        }
+
+        // Off: outlines fade away.
+        Config.Outline.Value = false;
+        yield return 1f;
+        DevSmoke.Check(!Render.TargetOutlines.Active.Any(), "outlines stayed after turning them off");
+        yield return DevSmoke.Screenshot("outline_off");
+        Config.Outline.Value = true;
+        DevSmoke.Finish(true, "outline done");
+    }
+
+    private static void LogCustomers()
+    {
+        var locked = UnityQuery.ToManaged(S1.Economy.Customer.LockedCustomers).Where(c => c != null).ToList();
+        var marked = locked.Where(c => c.potentialCustomerPoI != null && c.potentialCustomerPoI.enabled).ToList();
+        DevSmoke.Log($"Locked customers: {locked.Count}, marked as potential: {marked.Count}");
+        foreach (var c in marked.Take(12))
+        {
+            var npc = c.NPC;
+            DevSmoke.Log($"    {npc.FirstName}: conscious={npc.IsConscious} inBuilding={npc.isInBuilding} inVehicle={npc.IsInVehicle} "
+                + $"approachable={c.CustomerData.CanBeDirectlyApproached} awaitingDelivery={c.IsAwaitingDelivery}");
+        }
+        var unlocked = UnityQuery.ToManaged(S1.Economy.Customer.UnlockedCustomers).Where(c => c != null).ToList();
+        DevSmoke.Log($"Unlocked customers: {unlocked.Count}");
+        foreach (var c in unlocked.Take(12))
+        {
+            var npc = c.NPC;
+            DevSmoke.Log($"    {npc.FirstName}: dealer={(c.AssignedDealer != null ? c.AssignedDealer.FirstName : "-")} contract={c.CurrentContract != null} "
+                + $"offered={c.OfferedContractInfo != null} sinceDeal={c.TimeSinceLastDealCompleted} sinceOffer={c.TimeSinceInstantDealOffered} "
+                + $"inBuilding={npc.isInBuilding} inVehicle={npc.IsInVehicle}");
+        }
+    }
+
+    private static void LogOutlines()
+    {
+        foreach (var (root, renderers, alpha) in Render.TargetOutlines.Active)
+            DevSmoke.Log($"    outline on '{root.name}': {renderers} meshes, alpha {alpha:0.00}");
+    }
+
+    /// <summary>A walkable spot at about this distance from the target, with or without something solid in between.</summary>
+    private static Vector3? OpenSpot(Vector3 target, float distance, bool blocked)
+    {
+        var head = target + Vector3.up * 1.6f;
+        for (var i = 0; i < 36; i++)
+        {
+            var dir = Quaternion.Euler(0f, i * 10f, 0f) * Vector3.forward;
+            var above = target + dir * distance + Vector3.up * 30f;
+            if (!Physics.Raycast(above, Vector3.down, out var ground, 60f, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore))
+                continue;
+            if (Mathf.Abs(ground.point.y - target.y) > 1.5f)
+                continue; // a roof or a ditch
+            var eye = ground.point + Vector3.up * 1.6f;
+            var wall = Physics.Linecast(eye, head, out var hit, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore)
+                && UnityQuery.GetComponentInParent<S1.NPCs.NPC>(hit.collider) == null
+                && UnityQuery.GetComponentInParent<S1.PlayerScripts.Player>(hit.collider) == null;
+            if (wall == blocked)
+                return ground.point;
+        }
+        return null;
+    }
 
     private static void Face(S1.PlayerScripts.Player player, Vector3 point, float extraYaw)
     {
@@ -97,6 +225,24 @@ internal static class ArrowSmoke
         yield return DevSmoke.Screenshot("mode_nearest_labels");
         Config.Mode.Value = (int)ArrowMode.PerKind;
         Config.ShowLabels.Value = false;
+
+        // A stash glows (stashes are part of the map's merged meshes: only their own parts are outlined).
+        var stash = TargetScanner.Targets.Where(t => t.Kind == TargetKind.Stash && t.Highlight != null)
+            .OrderBy(t => Vector3.Distance(t.Position, player.transform.position)).FirstOrDefault();
+        if (stash != null)
+        {
+            var spot = OpenSpot(stash.Position, 7f, blocked: false);
+            if (spot.HasValue)
+            {
+                S1.PlayerScripts.PlayerMovement.Instance.Teleport(spot.Value + Vector3.up * 0.1f);
+                yield return 0.5f;
+                Face(player, stash.Position, 0f);
+                yield return 2.5f;
+                LogOutlines();
+                DevSmoke.Check(Render.TargetOutlines.Active.All(a => a.Renderers < 64), "an outline covers far too many meshes");
+                yield return DevSmoke.Screenshot("stash_outline");
+            }
+        }
 
         // Sleeping remembers the home base.
         HomeTracker.OnSleepStart();

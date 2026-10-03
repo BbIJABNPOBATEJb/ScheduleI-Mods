@@ -43,6 +43,8 @@ internal sealed class ArrowStrip
     private readonly HudCanvas _canvas;
     private readonly List<ArrowView> _views = new();
     private readonly List<(Target Target, float Distance)> _chosen = new();
+    private readonly List<(Target Target, float Distance)> _near = new();
+    private readonly List<Target> _glowing = new();
     private RectTransform? _root;
 
     public ArrowStrip(HudCanvas canvas)
@@ -65,6 +67,19 @@ internal sealed class ArrowStrip
     public bool Preview { get; set; }
 
     public int VisibleCount => _views.Count(v => v.Wanted);
+
+    /// <summary>The targets that glow: those with an arrow, and those you came close enough to that their arrow went away.</summary>
+    public IEnumerable<(GameObject Root, Color Color)> Glowing
+    {
+        get
+        {
+            foreach (var target in _glowing)
+            {
+                if (target.Highlight != null)
+                    yield return (target.Highlight, Config.ColorOf(target.Kind));
+            }
+        }
+    }
 
 #if DEV
     /// <summary>Smoke tests: freeze every arrow at this yaw/pitch to check orientation.</summary>
@@ -96,6 +111,7 @@ internal sealed class ArrowStrip
         var show = Preview || (Config.Enabled.Value && camera != null && player != null && CompassVisible());
 
         _chosen.Clear();
+        _glowing.Clear();
         if (Preview)
             ChoosePreview();
         else if (show)
@@ -149,10 +165,27 @@ internal sealed class ArrowStrip
         foreach (var target in TargetScanner.Targets)
         {
             var d = Vector3.Distance(from, target.Position);
-            if (d < hideWithin || (maxDistance > 0 && d > maxDistance))
+            if (maxDistance > 0 && d > maxDistance)
                 continue;
             candidates.Add((target, d));
         }
+        // The same choice as if nothing were hidden nearby: what you walked up to keeps glowing.
+        _near.Clear();
+        Pick(candidates, _near);
+        candidates.RemoveAll(c => c.Item2 < hideWithin);
+        Pick(candidates, _chosen);
+
+        foreach (var (target, _) in _chosen)
+            _glowing.Add(target);
+        foreach (var (target, distance) in _near)
+        {
+            if (distance < hideWithin && !_glowing.Contains(target))
+                _glowing.Add(target);
+        }
+    }
+
+    private static void Pick(List<(Target, float)> candidates, List<(Target Target, float Distance)> into)
+    {
         var max = Mathf.Clamp(Config.MaxArrows.Value, 1, 8);
         switch (Config.ArrowMode)
         {
@@ -160,17 +193,17 @@ internal sealed class ArrowStrip
                 foreach (var kind in TargetKinds.All)
                 {
                     var best = candidates.Where(c => c.Item1.Kind == kind).OrderBy(c => c.Item2).FirstOrDefault();
-                    if (best.Item1 != null && _chosen.Count < max)
-                        _chosen.Add(best);
+                    if (best.Item1 != null && into.Count < max)
+                        into.Add(best);
                 }
                 break;
             case ArrowMode.Nearest:
                 var nearest = candidates.OrderBy(c => c.Item2).FirstOrDefault();
                 if (nearest.Item1 != null)
-                    _chosen.Add(nearest);
+                    into.Add(nearest);
                 break;
             default:
-                _chosen.AddRange(candidates.OrderBy(c => c.Item2).Take(max)
+                into.AddRange(candidates.OrderBy(c => c.Item2).Take(max)
                     .OrderBy(c => (int)c.Item1.Kind).ThenBy(c => c.Item2));
                 break;
         }
@@ -255,7 +288,11 @@ internal sealed class ArrowStrip
         var label = Config.ShowLabels.Value ? LabelFor(target) : "";
         view.Label.gameObject.SetActive(label.Length > 0);
         if (label.Length > 0)
+        {
             view.Label.text = label;
+            // As wide as one arrow's place in the row, so that long names do not run into the next one.
+            view.Label.rectTransform.sizeDelta = new Vector2(Mathf.Max(48f, size + Config.Spacing.Value - 6f), 20f);
+        }
     }
 
     private static string LabelFor(Target target) =>

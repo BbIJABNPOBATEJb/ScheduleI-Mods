@@ -107,6 +107,9 @@ public sealed class DamageIndicatorMod : MelonMod
 
     private static void OnNpcHit(NpcHit hit)
     {
+        // Your own hits always show. Someone else's only when you saw it: nearby and not behind a wall.
+        if (!hit.ByLocalPlayer && !Sight.Witnessed(MainCamera(), hit, Config.OthersRange.Value))
+            return;
         NpcBars.OnHit(hit);
         var mode = Config.NumbersFor;
         if (!Config.Enabled.Value || mode == NumbersFor.Off || (mode == NumbersFor.Yours && !hit.ByLocalPlayer))

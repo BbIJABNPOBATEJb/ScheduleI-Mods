@@ -1,0 +1,9 @@
+// Guide Arrows 1.1.0: buyers arrow, outlines; Damage Indicator 1.0.2: others' hits range
+Buyers
+Buyers color
+Your customers who would buy from you right now: no deal arranged or offered, not served by one of your dealers, and no purchase in the last few hours.
+People you can win over with a free sample (friends of your customers), except those who already turned you down today.
+Outline targets
+The people and stashes the arrows point at glow in the arrow's color, even through walls.
+Others' hits within
+Hits by other players or between characters show a number and a bar only this close to you, and only if nothing blocks your view. Your own hits always show.
