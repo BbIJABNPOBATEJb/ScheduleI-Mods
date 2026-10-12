@@ -18,7 +18,9 @@ param(
     [Parameter(Mandatory)] [string] $GamePath,
     [string[]] $Mods = @("Polyglot", "WorldRates", "DamageIndicator", "GuideArrows", "QuietPause", "ElectricScooter"),
     # Build configuration whose output is checked: the release one by default, "Dev" adds the smoke-test code.
-    [string] $Suffix = ""
+    [string] $Suffix = "",
+    # Folder laid out like artifacts/bin (<Mod>/<Runtime>/<Mod>_<Runtime>.dll), e.g. DLLs taken from released ZIPs.
+    [string] $BinRoot = ""
 )
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
@@ -41,7 +43,8 @@ $parameters.AssemblyResolver = $resolver
 $gameAssemblies = "^(Assembly-CSharp|Assembly-CSharp-firstpass|ScheduleOne\.Core|FishNet\.Runtime)$"
 $failed = 0
 foreach ($mod in $Mods) {
-    $dll = Join-Path $root "artifacts/bin/$mod/$Runtime$Suffix/${mod}_$Runtime.dll"
+    $bin = if ($BinRoot) { $BinRoot } else { Join-Path $root "artifacts/bin" }
+    $dll = Join-Path $bin "$mod/$Runtime$Suffix/${mod}_$Runtime.dll"
     if (-not (Test-Path $dll)) { throw "$dll not found: build the mod first" }
     $module = [Mono.Cecil.ModuleDefinition]::ReadModule($dll, $parameters)
     $missing = New-Object System.Collections.Generic.List[string]
