@@ -1,16 +1,22 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using DamageIndicator.Combat;
 using S1Shared.UI;
 using UnityEngine;
 
 namespace DamageIndicator.UI;
 
-/// <summary>Health bars over characters' heads, shown after they take damage (or while they fight you).</summary>
+/// <summary>
+/// Health bars over characters' heads, shown after they take damage (or while they fight you), or
+/// all the time over everyone near you that you can see.
+/// </summary>
 internal sealed class NpcBars
 {
     private const float FlinchStun = 1.25f; // NPC heavy flinch (impact force ≥ 100, below ragdoll)
     private const float CombatScanInterval = 0.5f;
+    private const float AroundScanInterval = 0.5f;
+    private const float SightInterval = 0.3f;
 
     private sealed class Entry
     {
@@ -20,6 +26,9 @@ internal sealed class NpcBars
         public float StunUntil;
         public float StunTotal = 1f;
         public bool InCombat;
+        public bool Around;
+        public bool InSight;
+        public float SightCheckAt;
         public float Alpha;
         public float Distance;
     }
@@ -31,8 +40,14 @@ internal sealed class NpcBars
     private readonly List<Entry> _visible = new();
     private RectTransform? _layer;
     private float _nextCombatScan;
+    private float _nextAroundScan;
 
     public NpcBars(HudCanvas canvas) => _canvas = canvas;
+
+#if DEV
+    /// <summary>Smoke tests: bars on screen now, and whose.</summary>
+    public IEnumerable<S1.NPCs.NPC> Shown => _visible.Select(e => e.Npc);
+#endif
 
     public void OnHit(NpcHit hit)
     {
@@ -63,6 +78,11 @@ internal sealed class NpcBars
             _nextCombatScan = now + CombatScanInterval;
             ScanCombat();
         }
+        if (mode == NpcBarMode.Always && camera != null && now >= _nextAroundScan)
+        {
+            _nextAroundScan = now + AroundScanInterval;
+            ScanAround(camera);
+        }
 
         _visible.Clear();
         _remove.Clear();
@@ -75,8 +95,9 @@ internal sealed class NpcBars
                 _remove.Add(pair.Key);
                 continue;
             }
+            var recent = now - entry.LastDamage < Config.NpcHideDelay.Value;
             var want = mode != NpcBarMode.Never && camera != null && Config.Enabled.Value
-                && (now - entry.LastDamage < Config.NpcHideDelay.Value || (mode == NpcBarMode.InCombat && entry.InCombat));
+                && (recent || (mode == NpcBarMode.InCombat && entry.InCombat) || (mode == NpcBarMode.Always && Shows(entry, camera!, now)));
             Vector3 screen = default;
             if (want)
             {
@@ -90,7 +111,7 @@ internal sealed class NpcBars
             {
                 if (entry.View != null)
                     Release(entry);
-                if (now - entry.LastDamage > 60f && !entry.InCombat)
+                if (now - entry.LastDamage > 60f && !entry.InCombat && !entry.Around)
                     _remove.Add(pair.Key);
                 continue;
             }
@@ -172,6 +193,46 @@ internal sealed class NpcBars
                 // NPCs that are still spawning have no behaviour yet.
             }
         }
+    }
+
+    /// <summary>"Always": everyone within the max distance who is out in the open.</summary>
+    private void ScanAround(Camera camera)
+    {
+        var eye = camera.transform.position;
+        var range = Config.NpcMaxDistance.Value;
+        foreach (var entry in _entries.Values)
+            entry.Around = false;
+        foreach (var npc in S1Shared.UnityQuery.ToManaged(S1.NPCs.NPCManager.NPCRegistry))
+        {
+            try
+            {
+                if (npc == null || !npc.gameObject.activeInHierarchy || npc.isInBuilding || !npc.isVisible)
+                    continue;
+                if (Vector3.Distance(eye, npc.transform.position) > range)
+                    continue;
+                Get(npc).Around = true;
+            }
+            catch (Exception)
+            {
+                // NPCs that are still spawning.
+            }
+        }
+    }
+
+    /// <summary>A bar for someone around you that you can see; the dead keep theirs only right after the blow.</summary>
+    private static bool Shows(Entry entry, Camera camera, float now)
+    {
+        if (!entry.Around)
+            return false;
+        var health = entry.Npc.Health;
+        if (health != null && health.IsDead)
+            return false;
+        if (now >= entry.SightCheckAt)
+        {
+            entry.SightCheckAt = now + SightInterval;
+            entry.InSight = Combat.Sight.CanSee(camera, entry.Npc);
+        }
+        return entry.InSight;
     }
 
     private static bool IsFighting(S1.NPCs.NPC npc, S1.PlayerScripts.Player local)

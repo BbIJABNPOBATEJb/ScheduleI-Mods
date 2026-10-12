@@ -16,6 +16,7 @@ internal enum NpcBarMode
     AfterDamage = 0,
     InCombat = 1,
     Never = 2,
+    Always = 3,
 }
 
 internal enum NumbersFor
@@ -74,7 +75,7 @@ internal static class Config
         PlayerHideDelay = Prefs.Add("PlayerHideDelay", 4f, "Seconds your bar stays after damage / after healing to full.");
 
         NpcBars = Prefs.Add("NpcBars", (int)NpcBarMode.AfterDamage,
-            "Health bars over characters: 0 = after they take damage, 1 = also while they fight you, 2 = never.");
+            "Health bars over characters: 0 = after they take damage, 1 = also while they fight you, 2 = never, 3 = always (everyone near you that you can see).");
         NpcBarScale = Prefs.Add("NpcBarScale", 1f, "Size of health bars over characters.");
         NpcHideDelay = Prefs.Add("NpcHideDelay", 6f, "Seconds a character's bar stays after the last damage.");
         NpcMaxDistance = Prefs.Add("NpcMaxDistance", 60, "Characters further away than this (meters) get no bar.");
@@ -91,6 +92,6 @@ internal static class Config
     }
 
     public static PlayerBarMode PlayerBarMode => (PlayerBarMode)Mathf.Clamp(PlayerBar.Value, 0, 3);
-    public static NpcBarMode NpcBarMode => (NpcBarMode)Mathf.Clamp(NpcBars.Value, 0, 2);
+    public static NpcBarMode NpcBarMode => (NpcBarMode)Mathf.Clamp(NpcBars.Value, 0, 3);
     public static NumbersFor NumbersFor => (NumbersFor)Mathf.Clamp(Numbers.Value, 0, 2);
 }

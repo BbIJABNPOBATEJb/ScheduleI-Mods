@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.0 - 2026-10-12
+
+- Health bars can stay on over every character near you that you can see, not only after they take
+  damage (Characters → Health bars → Always). Characters behind walls, indoors or further than
+  "Max distance" get none.
+- Tested with game 0.4.7 (now the default Steam branch).
+
 ## 1.0.2 - 2026-10-03
 
 - Damage numbers and health bars from other people's hits (other players in multiplayer, fights

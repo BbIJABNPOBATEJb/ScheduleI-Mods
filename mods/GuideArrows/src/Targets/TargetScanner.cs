@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using MelonLoader;
 using S1Shared;
 using UnityEngine;
@@ -37,6 +38,7 @@ internal static class TargetScanner
             return;
         Scan(TargetKind.Deal, ScanDeals);
         Scan(TargetKind.Buyer, ScanBuyers);
+        Scan(TargetKind.Dealer, ScanDealers);
         Scan(TargetKind.Stash, ScanStashes);
         Scan(TargetKind.Quest, ScanQuests);
         Scan(TargetKind.Customer, ScanCustomers);
@@ -199,6 +201,25 @@ internal static class TargetScanner
                 Label = npc.FirstName,
                 Anchor = npc.transform,
                 Highlight = Body(npc),
+            });
+        }
+    }
+
+    /// <summary>Your recruited dealers you can go and see now (to give them product or collect their cash).</summary>
+    private static void ScanDealers()
+    {
+        foreach (var dealer in UnityQuery.ToManaged(S1.Economy.Dealer.AllPlayerDealers))
+        {
+            if (dealer == null || !dealer.IsRecruited || !CanTalkTo(dealer))
+                continue;
+            var cash = Mathf.RoundToInt(dealer.Cash);
+            Found.Add(new Target
+            {
+                Kind = TargetKind.Dealer,
+                Key = "dealer:" + dealer.GetInstanceID(),
+                Label = cash > 0 ? dealer.FirstName + " $" + cash.ToString("N0", CultureInfo.InvariantCulture) : dealer.FirstName,
+                Anchor = dealer.transform,
+                Highlight = Body(dealer),
             });
         }
     }

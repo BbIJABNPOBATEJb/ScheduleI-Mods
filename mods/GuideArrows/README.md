@@ -26,6 +26,7 @@ it is. No more opening the map to find your next deal.
 |---|---|
 | 🟢 Green | **Deals** — customers waiting for a delivery you accepted |
 | 🟡 Yellow | **Buyers** — your customers who would buy from you right now (no deal pending, not served by your dealers, no purchase in the last few hours) |
+| 🩵 Cyan | **Dealers** — your recruited dealers you can go and talk to now; the label shows the cash they hold for you |
 | 🔴 Red | **Stashes** — dead drops with items in them (e.g. a supplier's order) |
 | 🟠 Orange | **Quests** — the current objectives of your tracked quests |
 | 🟣 Purple | **Potential customers** — people you can offer a free sample to right now (not those who turned you down today) |

@@ -1,0 +1,52 @@
+// Game 0.4.7f12: names in the rebuilt appearance system (character creator, barber, clothes) and the new mix name check
+Name already in use
+Female Underwear
+Male Underwear
+Eye Shadow
+Face Tattoos {0}
+Agape
+Frown Pout
+Slight Pout
+Open Mouth Smile
+Slight Frown
+Smile
+Smug Pout
+Swirl
+Old person wrinkles
+Tired eyes
+Law Abiding Citizen
+Forehead Cross
+Upper Body Tattoos
+Button-up Shirt
+Chest Hair {0}
+Taco Ticklers T-Shirt
+Flannel Button-up Shirt
+Gas Mart T-Shirt
+Hazmat Suit
+Nipples
+Button-up Shirt (Rolled)
+Tucked T-Shirt
+Tony
+Shoulder Length Hair
+Santa Hat
+Long Curly Hair
+Taco Ticklers Cap
+Police Tactical Vest
+Long Slicked Back
+Fringe Ponytail
+Mid Fringe
+Close Buzz cut
+Police Cap
+Priest Gown
+Respirator
+Open Vest
+Polex
+Mutton Chops
+Full Beard
+Handlebar
+Soul Patch
+Chevron Mustache
+Rectangular Frame Glasses
+The Legend Sunglasses
+Oakleys
+Medium Skirt

@@ -1,0 +1,4 @@
+// Guide Arrows 1.3.0 (dealers arrow), Damage Indicator 1.1.0 (bars always on)
+Dealers color
+Your recruited dealers, when they are out where you can talk to them. The label shows the cash they hold for you.
+Always (everyone in sight)

@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.2.3 - 2026-10-12
+
+- Game 0.4.7 (now the default Steam branch): the names in the rebuilt appearance editor are
+  translated - hairstyles, facial expressions, makeup, tattoos, clothes, accessories and the new
+  facial hair - and the new message when a mix name is already taken. The conversations of 0.4.7
+  were already translated in 1.2.0.
+- Translations for Guide Arrows 1.3.0 (dealers arrow) and Damage Indicator 1.1.0 (health bars always on).
+
 ## 1.2.2 - 2026-10-03
 
 - Product tooltips: translated effect names that are too wide for the two narrow columns (such as

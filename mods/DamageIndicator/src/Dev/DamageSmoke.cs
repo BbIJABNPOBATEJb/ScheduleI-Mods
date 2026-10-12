@@ -17,6 +17,7 @@ internal static class DamageSmoke
     {
         "combat" => Combat(),
         "witness" => Witness(),
+        "always" => Always(),
         _ => null,
     });
 
@@ -66,6 +67,42 @@ internal static class DamageSmoke
         }
         yield return DevSmoke.Screenshot("witness");
         DevSmoke.Finish(true, "witness done");
+    }
+
+    /// <summary>Health bars over everyone in sight, without any damage; nobody indoors or behind walls.</summary>
+    private static IEnumerator Always()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 3f;
+        var camera = DamageIndicatorMod.MainCamera()!;
+        var eye = camera.transform.position;
+        var people = UnityQuery.ToManaged(S1.NPCs.NPCManager.NPCRegistry)
+            .Where(n => n != null && n.gameObject.activeInHierarchy && n.IsConscious && !n.isInBuilding && !n.IsInVehicle)
+            .OrderBy(n => Vector3.Distance(n.transform.position, eye)).ToList();
+        // Someone right in front of you, so there is a person to see wherever the save starts.
+        var front = people.First();
+        front.Movement.Warp(eye + Flat(camera.transform.forward) * 6f);
+        front.Movement.Stop();
+        yield return 1f;
+        foreach (var npc in people.Take(8))
+            DevSmoke.Log($"    {npc.FirstName}: {Vector3.Distance(npc.transform.position, eye):0} m, visible={npc.isVisible}, in sight={Sight.CanSee(camera, npc)}");
+
+        Config.NpcBars.Value = (int)NpcBarMode.Always;
+        yield return 2f;
+        var shown = DamageIndicatorMod.NpcBars.Shown.ToList();
+        DevSmoke.Log($"{shown.Count} bars: " + string.Join(", ", shown.Select(n => $"{n.FirstName} {Vector3.Distance(n.transform.position, eye):0} m")));
+        DevSmoke.Check(shown.Contains(front), $"{front.FirstName}, right in front of you, has no bar");
+        foreach (var npc in shown)
+        {
+            DevSmoke.Check(!npc.isInBuilding, $"{npc.FirstName} is indoors but has a bar");
+            DevSmoke.Check(Sight.CanSee(camera, npc), $"{npc.FirstName} cannot be seen but has a bar");
+        }
+        yield return DevSmoke.Screenshot("always_bars");
+
+        Config.NpcBars.Value = (int)NpcBarMode.AfterDamage;
+        yield return 1.5f;
+        DevSmoke.Check(!DamageIndicatorMod.NpcBars.Shown.Any(), "bars stayed after switching back to 'after damage'");
+        DevSmoke.Finish(true, $"always done, {shown.Count} bars");
     }
 
     private static IEnumerator Expect(S1.NPCs.NPC npc, Camera camera, bool byPlayer, bool shown, string what)

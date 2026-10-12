@@ -54,7 +54,7 @@ internal static class Config
         ToggleKey = Prefs.Add("ToggleKey", KeyCode.F7, "Key that shows/hides the arrows. None disables it.");
         Mode = Prefs.Add("Mode", (int)ArrowMode.PerKind,
             "0 = one arrow per kind (the nearest of each), 1 = a single arrow to the nearest target, 2 = arrows to the nearest few targets.");
-        MaxArrows = Prefs.Add("MaxArrows", 5, "Most arrows shown at once.");
+        MaxArrows = Prefs.Add("MaxArrows", 7, "Most arrows shown at once.");
 
         PosX = Prefs.Add("PositionX", DefaultPos.x, "Horizontal position of the arrows (0 = left, 1 = right).");
         PosY = Prefs.Add("PositionY", DefaultPos.y, "Vertical position of the arrows (0 = bottom, 1 = top). Default: under the compass.");
@@ -89,18 +89,23 @@ internal static class Config
     }
 
     /// <summary>
-    /// Settings saved by 1.0.x still hold that version's defaults: arrows hid within 6 m and had no labels.
-    /// Those move to the new defaults; values the player chose stay.
+    /// Settings saved by older versions still hold their defaults; those move to the new ones, values
+    /// the player chose stay. 1.0.x: arrows hid within 6 m and had no labels. Before 1.3.0: at most
+    /// 5 arrows (one kind short once dealers came).
     /// </summary>
     private static void UpdateDefaults()
     {
-        if (SettingsVersion.Value >= 2)
-            return;
-        if (HideWithin.Value == 6)
-            HideWithin.Value = HideWithin.Default;
-        if (!ShowLabels.Value)
-            ShowLabels.Value = ShowLabels.Default;
-        SettingsVersion.Value = 2;
+        if (SettingsVersion.Value < 2)
+        {
+            if (HideWithin.Value == 6)
+                HideWithin.Value = HideWithin.Default;
+            if (!ShowLabels.Value)
+                ShowLabels.Value = ShowLabels.Default;
+        }
+        if (SettingsVersion.Value < 3 && MaxArrows.Value == 5)
+            MaxArrows.Value = MaxArrows.Default;
+        if (SettingsVersion.Value < 3)
+            SettingsVersion.Value = 3;
     }
 
     public static ArrowMode ArrowMode => (ArrowMode)Mathf.Clamp(Mode.Value, 0, 2);

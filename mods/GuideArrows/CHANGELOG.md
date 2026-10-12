@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 - 2026-10-12
+
+- New **dealers** arrow (cyan): the nearest of your recruited dealers you can go and talk to. Its
+  label shows the cash they are holding for you; they glow like the other targets.
+- Up to 7 arrows by default (one per kind); settings that still had the old default of 5 are updated.
+- Tested with game 0.4.7 (now the default Steam branch).
+
 ## 1.2.1 - 2026-10-03 (Thunderstore page only)
 
 - Screenshots of the outlines on the mod page. The mod itself is the same as 1.2.0 (it still reports

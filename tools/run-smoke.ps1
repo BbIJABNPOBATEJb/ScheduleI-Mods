@@ -24,9 +24,12 @@ param(
     # is copied into the beta copy, so the run shows whether the released build works on the beta.
     [switch] $Beta,
     # Run while someone plays: on a copy of the game (Il2CppPublicCopyPath for the public IL2CPP game),
-    # as a small silent window kept behind the player's game, watching and stopping only its own
-    # process. The folder of a running game is never used.
-    [switch] $Parallel
+    # watching and stopping only its own process. The folder of a running game is never used.
+    [switch] $Parallel,
+    # The old way: the game in front, with the player's display settings (fullscreen) and sound.
+    # By default the test game keeps out of the way: a small silent window on another virtual desktop
+    # (or behind everything when there is only one desktop) that hands the keyboard back.
+    [switch] $Foreground
 )
 $ErrorActionPreference = "Stop"
 $root = Split-Path -Parent $PSScriptRoot
@@ -68,9 +71,29 @@ if ($Save) {
     if (-not (Test-Path (Join-Path $Save "Game.json"))) { throw "$Save is not a save folder (no Game.json)" }
     $gameArgs += @("--s1dev-save", "`"$((Resolve-Path $Save).Path)`"")
 }
-if ($Parallel) {
-    # A window, not the fullscreen the shared display settings ask for; no MelonLoader console.
-    $gameArgs += @("--s1dev-background", "-screen-fullscreen", "0", "-screen-width", "1280", "-screen-height", "720", "--melonloader.hideconsole")
+Add-Type -Namespace SmokeRun -Name Win32 -MemberDefinition @'
+[DllImport("user32.dll")] public static extern System.IntPtr GetForegroundWindow();
+[DllImport("user32.dll")] public static extern uint GetWindowThreadProcessId(System.IntPtr hWnd, out uint processId);
+'@ -ErrorAction SilentlyContinue
+
+if (-not $Foreground) {
+    # A window, not the fullscreen the shared display settings ask for; no MelonLoader console; the
+    # keyboard goes back to the window that has it now.
+    $gameArgs += @("-screen-fullscreen", "0", "-screen-width", "1280", "-screen-height", "720", "--melonloader.hideconsole")
+    $gameArgs += @("--s1dev-focus", [SmokeRun.Win32]::GetForegroundWindow().ToInt64())
+    # The game moves its window to another virtual desktop (it can only move its own windows).
+    $desktopKey = [Microsoft.Win32.Registry]::CurrentUser.OpenSubKey("Software\Microsoft\Windows\CurrentVersion\Explorer\VirtualDesktops")
+    $ids = if ($desktopKey) { $desktopKey.GetValue("VirtualDesktopIDs") } else { $null }
+    if ($ids -and $ids.Length -ge 32) {
+        $guids = for ($i = 0; $i -lt $ids.Length; $i += 16) { ([guid]::new([byte[]]$ids[$i..($i + 15)])).ToString() }
+        $gameArgs += @("--s1dev-desktops", ($guids -join ","))
+    }
+    else {
+        Write-Host "Only one virtual desktop: the test window stays behind the others (Win+Ctrl+D makes a second one)"
+        $gameArgs += "--s1dev-background"
+    }
+    # Silent, except for the scenario that checks the sound itself.
+    if ($Mod -ne "QuietPause") { $gameArgs += "--s1dev-mute" }
 }
 
 # Both games keep their settings in the same registry key; the test game must not leave its window size there.
@@ -82,11 +105,6 @@ if ($key) {
     $key.Close()
 }
 
-Add-Type -Namespace SmokeRun -Name Win32 -MemberDefinition @'
-[DllImport("user32.dll")] public static extern System.IntPtr GetForegroundWindow();
-[DllImport("user32.dll")] public static extern uint GetWindowThreadProcessId(System.IntPtr hWnd, out uint processId);
-'@ -ErrorAction SilentlyContinue
-
 Write-Host "Launching $Runtime game$(if ($Beta) { ' (beta copy)' })$(if ($Parallel) { ' next to the running game' }): $runId"
 $process = Start-Process -FilePath (Join-Path $gamePath "Schedule I.exe") -WorkingDirectory $gamePath -ArgumentList $gameArgs -PassThru
 
@@ -94,22 +112,24 @@ $deadline = (Get-Date).AddSeconds($TimeoutSeconds + 90)
 $samples = 0; $inFront = 0
 while ((Get-Date) -lt $deadline) {
     Start-Sleep -Seconds 2
+    $samples++
+    $owner = [uint32]0
+    [void][SmokeRun.Win32]::GetWindowThreadProcessId([SmokeRun.Win32]::GetForegroundWindow(), [ref] $owner)
     if ($Parallel) {
         # Only this run's own process: the other one is somebody playing.
-        $samples++
-        $owner = [uint32]0
-        [void][SmokeRun.Win32]::GetWindowThreadProcessId([SmokeRun.Win32]::GetForegroundWindow(), [ref] $owner)
         if ($owner -eq $process.Id) { $inFront++ }
         if ($process.HasExited) { break }
         continue
     }
+    $foregroundProcess = Get-Process -Id $owner -ErrorAction SilentlyContinue
+    if ($foregroundProcess -and $foregroundProcess.ProcessName -eq "Schedule I") { $inFront++ }
     $running = Get-Process "Schedule I" -ErrorAction SilentlyContinue
     if (-not $running -and (Test-Path (Join-Path $out "result.txt"))) { break }
     if (-not $running -and $process.HasExited -and ((Get-Date) - $process.StartTime).TotalSeconds -gt 20) { break }
 }
+if (-not $Foreground) { Write-Host "Test window had the focus in $inFront of $samples checks" }
 if ($Parallel) {
     if (-not $process.HasExited) { Write-Warning "Test game still running after timeout, killing it"; Stop-Process -Id $process.Id -Force; Start-Sleep 2 }
-    Write-Host "Test window had the focus in $inFront of $samples checks"
 }
 else {
     $left = Get-Process "Schedule I" -ErrorAction SilentlyContinue

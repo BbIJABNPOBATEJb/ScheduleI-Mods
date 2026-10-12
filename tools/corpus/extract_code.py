@@ -1,7 +1,7 @@
 """Extracts user-facing string literals from the decompiled game code.
 
 Input : decompiled Assembly-CSharp (ilspycmd -p output), default S:/S1Modding/decompiled/Assembly-CSharp
-Output: corpus/raw/code_strings.jsonl  {"text", "src", "kind"}
+Output: corpus/raw/code_strings.jsonl (or the second argument)  {"text", "src", "kind"}
 
 Interpolated strings become templates: every {expr} hole turns into a <TOKEN> placeholder named
 after the expression ({npc.FirstName} -> <FIRST_NAME>), which Polyglot matches at runtime.
@@ -13,7 +13,7 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[2]
 SRC = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "S:/S1Modding/decompiled/Assembly-CSharp")
-OUT = ROOT / "corpus" / "raw" / "code_strings.jsonl"
+OUT = pathlib.Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "corpus" / "raw" / "code_strings.jsonl"
 
 SKIP_DIRS = ("Beautify", "LiquidVolume", "FishNet", "FishySteamworks", "SFB", "ItemIconCreator",
              "Properties", "ScheduleOne.Development", "ScheduleOne.Experimental", "Pathfinding",

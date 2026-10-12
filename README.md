@@ -7,8 +7,8 @@ Every mod is built for both game branches (IL2CPP and Mono) from the same code.
 |---|---|---|
 | <img src="mods/Polyglot/assets/icon.png" width="64"> | **[Polyglot](mods/Polyglot)** | Play the whole game in 13 languages and switch between them instantly, in game. |
 | <img src="mods/WorldRates/assets/icon.png" width="64"> | **[World Rates](mods/WorldRates)** | Server-style rates like on Rust servers: XP, income, deal frequency and storage multipliers, tuned per world in a native in-game window. |
-| <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)** | Health bars and floating damage numbers, hidden until someone takes damage; stun bar and KO badges; your own movable health bar. |
-| <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)** | 3D arrows under the compass pointing at the nearest deal, buyer, stash, quest, potential customer and home base, each in its own color; what they point at glows through walls. |
+| <img src="mods/DamageIndicator/assets/icon.png" width="64"> | **[Damage Indicator](mods/DamageIndicator)** | Health bars and floating damage numbers, after damage or always on; stun bar and KO badges; your own movable health bar. |
+| <img src="mods/GuideArrows/assets/icon.png" width="64"> | **[Guide Arrows](mods/GuideArrows)** | 3D arrows under the compass pointing at the nearest deal, buyer, dealer, stash, quest, potential customer and home base, each in its own color; what they point at glows through walls. |
 | <img src="mods/QuietPause/assets/icon.png" width="64"> | **[Quiet Pause](mods/QuietPause)** | Mutes the game while minimized and pauses world sounds in the pause menu. |
 | <img src="mods/ElectricScooter/assets/icon.png" width="64"> | **[Electric Scooter](mods/ElectricScooter)** | An electric scooter at the skate shop: rides like the Golden Skateboard, but rolls over curbs, uses no stamina and is 30% faster. |
 

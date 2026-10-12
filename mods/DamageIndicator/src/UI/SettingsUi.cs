@@ -44,7 +44,7 @@ internal static class SettingsUi
 
         window.Tab("Characters")
             .Choice("Health bars", "Bars over the heads of other characters.",
-                new[] { "After damage", "After damage and in fights", "Never" },
+                new[] { "After damage", "After damage and in fights", "Never", "Always (everyone in sight)" },
                 () => Config.NpcBars.Value, v => Config.NpcBars.Value = v)
             .Slider("Size", null, 0.5f, 2f, 0.1f,
                 () => Config.NpcBarScale.Value, v => Config.NpcBarScale.Value = v, Percent)

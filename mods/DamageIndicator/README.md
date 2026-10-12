@@ -18,6 +18,7 @@ nobody's health is shown until they actually take damage.
 
 - **Health bars over characters** as soon as they take damage (from you, the police, anyone), fading
   out a few seconds later. The part just lost flashes white and drains away, so every hit reads at a glance.
+  Or keep them on all the time over everyone near you that you can see (Characters → Health bars → Always).
 - **Your own health bar**, hidden while you are at full health; it appears when you get hurt and
   stays until you are healed. Move it anywhere on the screen and resize it with the mouse.
 - **Damage numbers** pop up where a character is hit: white for your hits, grey for others',
@@ -58,7 +59,7 @@ Everything in the in-game screen is also in `UserData/MelonPreferences.cfg` unde
 |---|---|---|
 | `PlayerBar` | `0` | Your bar: 0 while hurt, 1 after damage, 2 always, 3 never |
 | `PlayerBarX`, `PlayerBarY`, `PlayerBarScale`, `PlayerBarWidth` | above the hotbar | Position (0–1 of the screen), size, width |
-| `NpcBars` | `0` | Characters: 0 after damage, 1 also while they fight you, 2 never |
+| `NpcBars` | `0` | Characters: 0 after damage, 1 also while they fight you, 2 never, 3 always (everyone near you in sight) |
 | `NpcHideDelay` / `PlayerHideDelay` | `6` / `4` | Seconds a bar stays |
 | `NpcMaxDistance` | `60` | No bars for characters further away (m) |
 | `DamageNumbers` | `0` | 0 all hits, 1 only yours, 2 off |

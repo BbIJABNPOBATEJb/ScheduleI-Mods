@@ -51,8 +51,7 @@ internal static class DevSmoke
 
         Active = true;
         Scenario = scenario;
-        if (Array.IndexOf(args, "--s1dev-background") >= 0)
-            DevBackground.Start(modName);
+        DevBackground.Start(modName, args);
         OutDir = Path.GetFullPath(outDir);
         Directory.CreateDirectory(OutDir);
         _log = new StreamWriter(Path.Combine(OutDir, "smoke.log"), append: false) { AutoFlush = true };

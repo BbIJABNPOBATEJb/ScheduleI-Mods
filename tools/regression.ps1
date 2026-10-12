@@ -31,6 +31,7 @@ $tests = @(
     @("WorldRates", "complete-contract", "", $true),
     @("DamageIndicator", "combat", "", $false),
     @("DamageIndicator", "witness", "", $false),
+    @("DamageIndicator", "always", "", $false),
     @("GuideArrows", "arrows", "", $false),
     @("GuideArrows", "outline", "", $true),
     @("ElectricScooter", "ride", "", $false),

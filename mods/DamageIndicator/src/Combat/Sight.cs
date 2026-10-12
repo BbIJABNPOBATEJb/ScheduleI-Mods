@@ -18,6 +18,13 @@ internal static class Sight
         return Clear(eye, point) || Clear(eye, Head(hit.Npc));
     }
 
+    /// <summary>Whether the character's head or body can be seen from the camera (nothing solid in between).</summary>
+    public static bool CanSee(Camera camera, S1.NPCs.NPC npc)
+    {
+        var eye = camera.transform.position;
+        return Clear(eye, Head(npc)) || Clear(eye, npc.transform.position + Vector3.up * 1.2f);
+    }
+
     private static Vector3 Head(S1.NPCs.NPC npc)
     {
         var look = npc.Avatar != null ? npc.Avatar.LookController : null;

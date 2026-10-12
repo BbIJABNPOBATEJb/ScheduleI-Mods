@@ -2,6 +2,7 @@
 
     python tools/corpus/find_missing.py              # summary per class + samples
     python tools/corpus/find_missing.py --write out.txt [Class ...]   # write keys of these classes
+    python tools/corpus/find_missing.py --assets corpus/raw/assets-047.jsonl ...   # another game version's dump
 
 Only classes that hold player-visible text are considered (TEXT_CLASSES).
 """
@@ -28,9 +29,13 @@ TEXT_CLASSES = {
 
 
 def main() -> None:
+    assets = ROOT / "corpus" / "raw" / "assets.jsonl"
+    if len(sys.argv) > 2 and sys.argv[1] == "--assets":
+        assets = pathlib.Path(sys.argv[2])
+        del sys.argv[1:3]
     source = {json.loads(line)["key"] for line in open(ROOT / "corpus" / "source.jsonl", encoding="utf-8")}
     missing = defaultdict(dict)
-    for line in open(ROOT / "corpus" / "raw" / "assets.jsonl", encoding="utf-8"):
+    for line in open(assets, encoding="utf-8"):
         row = json.loads(line)
         if row["class"] not in TEXT_CLASSES or not useful(row["text"]):
             continue

@@ -11,17 +11,19 @@ internal enum TargetKind
     Customer = 3,
     Home = 4,
     Buyer = 5,
+    Dealer = 6,
 }
 
 internal static class TargetKinds
 {
     public static readonly TargetKind[] All =
-        { TargetKind.Deal, TargetKind.Buyer, TargetKind.Stash, TargetKind.Quest, TargetKind.Customer, TargetKind.Home };
+        { TargetKind.Deal, TargetKind.Buyer, TargetKind.Dealer, TargetKind.Stash, TargetKind.Quest, TargetKind.Customer, TargetKind.Home };
 
     public static string Name(TargetKind kind) => kind switch
     {
         TargetKind.Deal => "Deals",
         TargetKind.Buyer => "Buyers",
+        TargetKind.Dealer => "Dealers",
         TargetKind.Stash => "Stashes",
         TargetKind.Quest => "Quests",
         TargetKind.Customer => "Potential customers",
@@ -33,6 +35,7 @@ internal static class TargetKinds
     {
         TargetKind.Deal => "Customers waiting for a delivery you accepted.",
         TargetKind.Buyer => "Your customers who would buy from you right now: no deal arranged or offered, not served by one of your dealers, and no purchase in the last few hours.",
+        TargetKind.Dealer => "Your recruited dealers, when they are out where you can talk to them. The label shows the cash they hold for you.",
         TargetKind.Stash => "Dead drops with items in them (e.g. an order a supplier delivered).",
         TargetKind.Quest => "The current objectives of active quests.",
         TargetKind.Customer => "People you can win over with a free sample (friends of your customers), except those who already turned you down today.",
@@ -44,6 +47,7 @@ internal static class TargetKinds
     {
         TargetKind.Deal => Palette.Green,
         TargetKind.Buyer => Palette.Yellow,
+        TargetKind.Dealer => Palette.Cyan,
         TargetKind.Stash => Palette.Red,
         TargetKind.Quest => Palette.Orange,
         TargetKind.Customer => Palette.Purple,
