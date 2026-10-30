@@ -12,14 +12,19 @@ import argparse
 import json
 import pathlib
 import re
+import ssl
 import subprocess
 import sys
 import urllib.error
 import urllib.request
 
+import certifi
+
 REPO = "BbIJABNPOBATEJb/ScheduleI-Mods"
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 RAW = f"https://raw.githubusercontent.com/{REPO}/main/docs/images/"
+# Python's bundled CA list may lack the roots GitHub's certificates chain to.
+CTX = ssl.create_default_context(cafile=certifi.where())
 
 INSTALL = """### Installation
 1. Install [MelonLoader](https://github.com/LavaGang/MelonLoader/releases) **0.7.3** (0.7.1 is not supported).
@@ -62,7 +67,7 @@ def api(token: str, method: str, url: str, data=None, content_type="application/
     if data is not None:
         req.add_header("Content-Type", content_type)
     try:
-        with urllib.request.urlopen(req) as r:
+        with urllib.request.urlopen(req, context=CTX) as r:
             return json.loads(r.read() or b"{}")
     except urllib.error.HTTPError as e:
         raise SystemExit(f"{method} {url}: {e.code} {e.read().decode('utf-8', 'replace')[:400]}")
