@@ -36,7 +36,7 @@ SHOTS = [
     ("guidearrows-glow-street.jpg", "GuideArrows-media-il2cpp-beta-20261003-224906", "media_people_4_open.png", (200, 40, 1500, 820)),
     ("guidearrows-glow-stash.jpg", "GuideArrows-media-il2cpp-beta-20261003-224906", "media_stash_6.png", (420, 40, 1500, 800)),
     ("quietpause-settings.jpg", "QuietPause-audio-il2cpp-20260930-212727", "audio_settings.png", (480, 260, 1440, 820)),
-    ("electricscooter-ride.jpg", "ElectricScooter-ride-il2cpp-*", "curb_moving.png", (280, 100, 1380, 870)),
+    ("electricscooter-ride.jpg", "ElectricScooter-ride-il2cpp-*", "curb_moving.png", (230, 0, 1330, 820)),
     ("electricscooter-front.jpg", "ElectricScooter-ride-il2cpp-*", "scooter_front.png", (250, 0, 1350, 900)),
     ("electricscooter-shop.jpg", "ElectricScooter-shop-il2cpp-*", "shop_choices.png", (460, 380, 1460, 1080)),
     ("electricscooter-held.jpg", "ElectricScooter-shop-il2cpp-*", "held_after_reload.png", (380, 480, 1920, 1080)),
@@ -44,7 +44,8 @@ SHOTS = [
 
 
 def latest(pattern: str, file: str) -> pathlib.Path:
-    runs = sorted((p for p in RUNS.glob(pattern) if (p / file).exists()), key=lambda p: p.name)
+    # By the run's time stamp at the end of the name ("...-il2cpp-beta-<stamp>" would sort after "...-il2cpp-<stamp>").
+    runs = sorted((p for p in RUNS.glob(pattern) if (p / file).exists()), key=lambda p: p.name[-15:])
     if not runs:
         raise FileNotFoundError(f"{pattern}/{file}")
     return runs[-1] / file

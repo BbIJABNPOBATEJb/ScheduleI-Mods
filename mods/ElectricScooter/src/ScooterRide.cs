@@ -72,10 +72,11 @@ internal static class ScooterRide
     {
         _board = board;
         Tune(board);
-        // The game spawned the board at a skateboard's height; put it on its wheels at once.
-        var lift = board.transform.up * (HoverHeight - VanillaHoverHeight);
-        board.transform.position += lift;
-        board.Rb.position += lift;
+        // The game spawned the board at a skateboard's height; put it on its wheels at once. (The body
+        // follows the moved transform: lifting both would lift it twice, and it would drop from there.)
+        var position = board.transform.position + board.transform.up * (HoverHeight - VanillaHoverHeight);
+        board.transform.position = position;
+        board.Rb.position = position;
         var movement = S1.PlayerScripts.PlayerMovement.Instance;
         _stamina = movement != null ? Mathf.Max(movement.CurrentStaminaReserve, MinPushStamina) : MinPushStamina;
         ScooterModel.Dress(board);

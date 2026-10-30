@@ -339,15 +339,38 @@ internal static class ScooterSmoke
         inventory.Equip(slot!);
         yield return 0.6f;
         DevSmoke.Check(UnityQuery.TryCastTo<S1.Skating.Skateboard_Equippable>(inventory.Equippable, out var equippable), $"{itemId} is not held as a skateboard");
+        // Now and then the player drops through the ground after the teleport, already before the scooter
+        // is taken in hand: put him back rather than test the ride in free fall.
+        for (var tries = 0; tries < 3 && player.transform.position.y < lane.Start.y - 1f; tries++)
+        {
+            DevSmoke.Log($"The player fell through the ground (y {F(player.transform.position.y)}) before getting on {itemId}: teleporting again");
+            movement.Teleport(lane.Start + Vector3.up * 0.15f);
+            yield return 1f;
+            player.transform.rotation = Quaternion.LookRotation(lane.Direction, Vector3.up);
+        }
         if (screenshot != null)
             yield return DevSmoke.Screenshot(screenshot + "_held");
         equippable.Mount();
         yield return DevSmoke.WaitUntil(() => player.ActiveSkateboard != null, 5f, "mounting " + itemId);
         var board = player.ActiveSkateboard;
-        yield return 0.8f;
+        var settle = new StringBuilder();
+        var mounted = Time.time;
+        // The scooter is put on its wheels at once: never higher than that, no drop from above.
+        var highest = board != null ? board.transform.position.y + (itemId == ScooterItem.Id ? ScooterRide.HoverHeight - 0.096f : 0f) + 0.08f : 0f;
+        var top = 0f;
+        while (board != null && Time.time - mounted < 0.8f)
+        {
+            top = Mathf.Max(top, board.transform.position.y);
+            settle.Append($" {F(Time.time - mounted)}s:{F(board.transform.position.y)}m/v{F(board.Rb.velocity.y)}/h{F(board.CurentSettings.HoverHeight)}/{F(Vector3.Angle(board.transform.up, Vector3.up))}°");
+            yield return null;
+        }
+        DevSmoke.Log($"After mounting {itemId} (time: height / vertical speed / hover setting / tilt):{settle}; still riding: {board != null}");
+        DevSmoke.Check(board != null, $"thrown off {itemId} right after mounting");
+        DevSmoke.Check(top <= highest, $"{itemId} jumped up to {F(top)} m on mounting (at most {F(highest)} expected)");
         if (screenshot != null)
         {
             DevSmoke.Log("Riding model: " + ScooterModel.Describe(board.transform));
+            DevSmoke.Log("Rider pose: " + ScooterModel.DescribePose(board));
             SideShot(board.transform, new Vector3(-2.6f, 0.9f, 0.3f), screenshot + "_left");
             SideShot(board.transform, new Vector3(1.6f, 1.2f, 2.2f), screenshot + "_front");
             SideShot(board.transform, new Vector3(1.4f, 1.3f, -2.0f), screenshot + "_rear");
@@ -358,6 +381,7 @@ internal static class ScooterSmoke
         var slowSince = -1f;
         result.MinStamina = movement.CurrentStaminaReserve;
         var shot = false;
+        var pushShot = false;
         while (Time.time - began < 22f)
         {
             if (board == null)
@@ -387,6 +411,12 @@ internal static class ScooterSmoke
                 ScreenCapture.CaptureScreenshot(System.IO.Path.Combine(DevSmoke.OutDir, screenshot + "_riding.png"));
                 SideShot(board.transform, new Vector3(-2.6f, 0.8f, 0.6f), screenshot + "_moving");
                 DevSmoke.Log($"Held model while riding ({screenshot}): riding {equippable.IsRiding}, container {UnityQuery.PathOf(equippable.ModelContainer)} at {V(equippable.ModelContainer.localPosition)}, raised {V(equippable.ModelPosition_Raised.localPosition)}, lowered {V(equippable.ModelPosition_Lowered.localPosition)}");
+            }
+            // Halfway through a push: the moment the skateboarder kicks the road.
+            if (screenshot != null && !pushShot && result.Seconds > 1.5f && board.TimeSincePushStart > 0.35f && board.TimeSincePushStart < 0.55f)
+            {
+                pushShot = true;
+                SideShot(board.transform, new Vector3(-2.6f, 0.8f, 0.6f), screenshot + "_push");
             }
             if (travelled >= lane.Length - 5f)
             {
@@ -440,6 +470,12 @@ internal static class ScooterSmoke
 
         // Straight line: speed and stamina.
         var flat = FindLane(home, mask, 75f, withCurb: false);
+        if (flat == null)
+        {
+            // A real save may start indoors: the street by the new game's start has both kinds of lanes.
+            home = new Vector3(-30f, 0f, 50f);
+            flat = FindLane(home, mask, 75f, withCurb: false);
+        }
         DevSmoke.Check(flat != null, "no straight paved lane found near the start");
         DevSmoke.Log($"Flat lane of {F(flat!.Length)} m from {V(flat.Start)} towards {V(flat.Direction)}; player was at {V(home)}");
         var goldenFlat = new RideResult();
@@ -469,6 +505,9 @@ internal static class ScooterSmoke
         yield return RideLane(ScooterItem.Id, curb, scooterCurb, "curb");
         DevSmoke.Log("Electric scooter, curb: " + Describe(scooterCurb));
         DevSmoke.Check(scooterCurb.Finished && scooterCurb.StuckSeconds < 0.5f, "the scooter got stuck at the curb");
+        // The whole ride took over a minute in one scene: the shop looked for its seller once.
+        DevSmoke.Log($"Skate shop searches: {ScooterShop.Searches}");
+        DevSmoke.Check(ScooterShop.Searches == 1, $"the shop searched for the seller {ScooterShop.Searches} times");
         DevSmoke.Finish(true, "ride done");
     }
 

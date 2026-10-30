@@ -41,6 +41,7 @@ internal static class ScooterModel
         _riddenAnimation = board.Animation;
         if (_ridden == null)
             return;
+        Pose(board, _ridden);
         // The speed trails of the skateboard's rear wheels move down to where the scooter's wheel meets the road.
         var effects = UiKit.Get<S1.Skating.SkateboardEffects>(board);
         if (effects == null || effects.Trails == null)
@@ -218,6 +219,77 @@ internal static class ScooterModel
 
     private static bool _handsFailed;
 
+    /// <summary>Feet: how far apart (each from the middle) and how far the left one is ahead of the right.</summary>
+    private const float FootSpread = 0.075f;
+    private const float FootStagger = 0.1f;
+
+    /// <summary>
+    /// The rider stands on the scooter facing forward, feet side by side, instead of sideways like on a
+    /// skateboard; and he no longer kicks the road (the motor pushes). The rider's body follows targets
+    /// on the board (feet, knees, pelvis, spine, hands) and looks at a point to the front right: the
+    /// hips and feet are turned forward, the feet and knees put on the narrow deck, and the point moved
+    /// straight ahead. A push moves the body from a resting set of targets to a kicking one; both are
+    /// made the resting one.
+    /// </summary>
+    private static void Pose(S1.Skating.Skateboard board, Transform parts)
+    {
+        try
+        {
+            var animation = board.Animation;
+            foreach (var set in new[]
+                     {
+                         animation.PelvisContainerAlignment, animation.PelvisAlignment, animation.SpineContainerAlignment, animation.SpineAlignment,
+                         animation.LeftFootAlignment, animation.RightFootAlignment, animation.LeftLegBendTarget, animation.RightLegBendTarget,
+                         animation.LeftHandAlignment, animation.RightHandAlignment,
+                     })
+            {
+                if (set != null && set.Default != null)
+                    set.Animated = set.Default;
+            }
+            var up = parts.up;
+            var hips = Vector3.ProjectOnPlane(animation.PelvisAlignment.Transform.forward, up);
+            var turn = Quaternion.AngleAxis(Vector3.SignedAngle(hips, parts.forward, up), up);
+            // The pelvis container carries the spine and the hands with it.
+            Turn(animation.PelvisContainerAlignment, turn);
+            Turn(animation.LeftFootAlignment, turn);
+            Turn(animation.RightFootAlignment, turn);
+            if (animation.AvatarFaceTarget != null)
+                animation.AvatarFaceTarget.position = parts.TransformPoint(new Vector3(0f, 1.7f, 2f));
+            Put(animation.LeftFootAlignment, parts, -FootSpread, FootStagger / 2f);
+            Put(animation.RightFootAlignment, parts, FootSpread, -FootStagger / 2f);
+            // Knees bend forward, over the toes.
+            PutAt(animation.LeftLegBendTarget, parts.TransformPoint(new Vector3(-0.12f, 0.45f, 0.8f)));
+            PutAt(animation.RightLegBendTarget, parts.TransformPoint(new Vector3(0.12f, 0.45f, 0.8f)));
+        }
+        catch (Exception ex)
+        {
+            MelonLogger.Warning($"Electric Scooter: the rider keeps the skateboard stance: {ex.Message}");
+        }
+    }
+
+    /// <summary>A foot on the deck at x / z in the deck's frame, at the height the game gave it.</summary>
+    private static void Put(S1.Skating.SkateboardAnimation.AlignmentSet set, Transform parts, float x, float z)
+    {
+        var height = parts.InverseTransformPoint(set.Transform.parent.TransformPoint(set.Default.localPosition)).y;
+        PutAt(set, parts.TransformPoint(new Vector3(x, height, z)));
+    }
+
+    private static void Turn(S1.Skating.SkateboardAnimation.AlignmentSet set, Quaternion turn)
+    {
+        var local = Quaternion.Inverse(set.Transform.parent.rotation) * turn * set.Transform.rotation;
+        set.Default.localRotation = local;
+        set.Animated = set.Default;
+        set.Transform.localRotation = local;
+    }
+
+    private static void PutAt(S1.Skating.SkateboardAnimation.AlignmentSet set, Vector3 world)
+    {
+        var local = set.Transform.parent.InverseTransformPoint(world);
+        set.Default.localPosition = local;
+        set.Animated = set.Default;
+        set.Transform.localPosition = local;
+    }
+
     private static void Place(S1.Skating.SkateboardAnimation animation, Vector3 grip, params S1.Skating.SkateboardAnimation.AlignmentSet[] sets)
     {
         var local = animation.HandContainer.InverseTransformPoint(grip);
@@ -247,6 +319,25 @@ internal static class ScooterModel
             if (child.name is "Column" or "Handlebar" or "Tyre")
                 sb.AppendLine().Append($"  {child.name}: {root.InverseTransformPoint(child.position)} up {root.InverseTransformDirection(child.up)} size {child.lossyScale}");
         }
+        return sb.ToString();
+    }
+
+    /// <summary>Where the rider's targets are, in the deck's frame (x right, y up, z forward).</summary>
+    public static string DescribePose(S1.Skating.Skateboard board)
+    {
+        var parts = FindParts(board.transform);
+        if (parts == null)
+            return "no parts";
+        var a = board.Animation;
+        string At(Transform? t) => t == null ? "none" : $"{parts.InverseTransformPoint(t.position).ToString("F3")} forward {parts.InverseTransformDirection(t.forward).ToString("F2")}";
+        var sb = new System.Text.StringBuilder();
+        sb.Append($"player container {At(board.PlayerContainer)}; targets {UnityQuery.PathOf(board.PlayerContainer.parent)}; face target {At(a.AvatarFaceTarget)}; push animation on {(a.IKAnimation != null ? UnityQuery.PathOf(a.IKAnimation.transform) : "none")}");
+        foreach (var (name, set) in new[]
+                 {
+                     ("pelvis", a.PelvisAlignment), ("spine", a.SpineAlignment), ("left foot", a.LeftFootAlignment), ("right foot", a.RightFootAlignment),
+                     ("left knee", a.LeftLegBendTarget), ("right knee", a.RightLegBendTarget), ("left hand", a.LeftHandAlignment), ("right hand", a.RightHandAlignment),
+                 })
+            sb.AppendLine().Append($"  {name}: {At(set.Transform)}; resting {set.Default.name}, animated {(set.Animated != null ? UnityQuery.PathOf(set.Animated) : "none")}");
         return sb.ToString();
     }
 #endif

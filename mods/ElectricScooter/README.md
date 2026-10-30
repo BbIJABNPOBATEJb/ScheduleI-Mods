@@ -23,11 +23,12 @@ stamina and is 30% faster.
   the same steering, braking and jumping.
 - **Does not stop at curbs.** Skateboards ride so low that every curb of Hyland Point (9 cm) stops
   them. The scooter rides on big wheels and clears steps up to 20 cm.
-- **No stamina.** It is electric: pushing off costs nothing, so you never have to stop and catch
-  your breath.
+- **No stamina.** It is electric: the motor pushes while you just stand, so you never have to
+  stop and catch your breath.
 - **30% faster** than the Golden Skateboard — top speed and acceleration alike.
-- Its own look: big wheels, steering column with a handlebar (your character holds on to it), headlight
-  and a battery under the deck. In your hands it is carried folded.
+- Its own look: big wheels, steering column with a handlebar, headlight and a battery under the
+  deck. Your character stands facing forward with both hands on the handlebar instead of sideways
+  like on a skateboard. In your hands it is carried folded.
 - Translated into all [Polyglot](../Polyglot) languages.
 
 ## Installation
@@ -56,7 +57,7 @@ InfiniteStamina = true  # riding does not use stamina
 ```
 
 Edit the file while the game is closed. If you change the values with an in-game preferences
-editor, they apply the next time you get on the scooter.
+editor, they apply the next time you get on the scooter (the price: the next time you load a save).
 
 ## Multiplayer
 
