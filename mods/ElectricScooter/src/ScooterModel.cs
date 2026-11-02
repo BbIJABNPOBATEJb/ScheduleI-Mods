@@ -9,7 +9,8 @@ namespace ElectricScooter;
 /// <summary>
 /// The scooter's looks, built in code on top of the Golden Skateboard's model: the skateboard trucks
 /// are swapped for two big wheels at the ends of the deck, and a steering column with a handlebar is
-/// added at the front. Used for the board being ridden and for the one held in the hands.
+/// added at the front. Used for the board being ridden and for the one held in the hands, the local
+/// player's and, in multiplayer, the other players' (see <see cref="ScooterSync"/>).
 /// </summary>
 internal static class ScooterModel
 {
@@ -28,44 +29,57 @@ internal static class ScooterModel
     private static Material? _gold, _dark, _tyre, _steel;
     private static bool _failed;
 
-    /// <summary>Dresses the board the player rides.</summary>
-    public static void Dress(S1.Skating.Skateboard board)
+    /// <summary>Dresses the board the local player rides; returns the scooter's parts.</summary>
+    public static Transform? Dress(S1.Skating.Skateboard board)
+    {
+        var parts = DressBoard(board, ScooterRide.HoverHeight);
+        _ridden = parts;
+        _riddenBoard = parts != null ? board : null;
+        return parts;
+    }
+
+    /// <summary>Dresses the board another player rides, built for that player's hover height.</summary>
+    public static Transform? DressRemote(S1.Skating.Skateboard board, float hoverHeight) => DressBoard(board, hoverHeight);
+
+    private static Transform? DressBoard(S1.Skating.Skateboard board, float hover)
     {
         var visuals = UiKit.Get<S1.Skating.SkateboardVisuals>(board);
         var truck = FindTruck(board.transform);
         if (visuals == null || visuals.Board == null || truck == null)
-            return;
+            return null;
         // The parts lean with the deck but are laid out in the trucks' frame: x right, y up, z forward.
-        var hover = ScooterRide.HoverHeight;
-        _ridden = Build(visuals.Board, truck.parent, truck, hover, folded: false);
-        _riddenAnimation = board.Animation;
-        if (_ridden == null)
-            return;
-        Pose(board, _ridden);
+        var parts = Build(board.transform, visuals.Board, truck.parent, truck, hover, folded: false);
+        if (parts == null)
+            return null;
+        Pose(board, parts);
         // The speed trails of the skateboard's rear wheels move down to where the scooter's wheel meets the road.
         var effects = UiKit.Get<S1.Skating.SkateboardEffects>(board);
         if (effects == null || effects.Trails == null)
-            return;
+            return parts;
         for (var i = 0; i < effects.Trails.Length; i++)
         {
             var trail = effects.Trails[i];
             if (trail == null)
                 continue;
             var side = i % 2 == 0 ? -0.02f : 0.02f;
-            trail.transform.position = _ridden.TransformPoint(new Vector3(side, Ground(hover) + 0.015f, -WheelOffset));
+            trail.transform.position = parts.TransformPoint(new Vector3(side, Ground(hover) + 0.015f, -WheelOffset));
             trail.Clear();
         }
+        return parts;
     }
 
     private static Transform? _ridden;
-    private static S1.Skating.SkateboardAnimation? _riddenAnimation;
+    private static S1.Skating.Skateboard? _riddenBoard;
 
-    /// <summary>Dresses the board held in the hands (first-person view model): the scooter is carried folded.</summary>
-    public static void DressHeld(S1.Skating.Skateboard_Equippable equippable)
+    /// <summary>
+    /// Dresses a board held in the hands: the local player's first-person view model, or the board in
+    /// another player's hands. The scooter is carried folded.
+    /// </summary>
+    public static void DressHeld(Transform prop, float hoverHeight)
     {
-        var truck = FindTruck(equippable.transform);
+        var truck = FindTruck(prop);
         if (truck != null)
-            Build(truck.parent, truck.parent, truck, ScooterRide.HoverHeight, folded: true);
+            Build(prop, truck.parent, truck.parent, truck, hoverHeight, folded: true);
     }
 
     public static bool IsDressed(Transform root) => FindParts(root) != null;
@@ -90,12 +104,48 @@ internal static class ScooterModel
     {
         foreach (var renderer in UnityQuery.GetComponentsInChildren<MeshRenderer>(root, false))
         {
-            if (!renderer.name.StartsWith("Truck", StringComparison.Ordinal) || UiKit.Find(renderer.transform, "Wheel") == null)
+            if (!renderer.name.StartsWith("Truck", StringComparison.Ordinal) || !HasWheel(renderer.transform))
                 continue;
             if (Owns(root, renderer.transform))
                 return renderer.transform;
         }
         return null;
+    }
+
+    private static bool HasWheel(Transform truck)
+    {
+        foreach (var t in UnityQuery.GetComponentsInChildren<Transform>(truck, true))
+            if (t.name.StartsWith("Wheel", StringComparison.Ordinal))
+                return true;
+        return false;
+    }
+
+    /// <summary>
+    /// Hides wheel meshes that are not part of the trucks (RebornReaper saw skateboard wheels under the
+    /// scooter of another player in multiplayer). Only the renderers: colliders and physics stay.
+    /// </summary>
+    private static void HideWheels(Transform root, Transform parts)
+    {
+        var rootId = root.GetInstanceID();
+        var partsId = parts.GetInstanceID();
+        foreach (var renderer in UnityQuery.GetComponentsInChildren<MeshRenderer>(root, true))
+        {
+            if (!Owns(root, renderer.transform))
+                continue;
+            var wheel = false;
+            for (var t = renderer.transform; t != null && t.GetInstanceID() != rootId; t = t.parent)
+            {
+                if (t.GetInstanceID() == partsId)
+                {
+                    wheel = false;
+                    break;
+                }
+                if (t.name.StartsWith("Wheel", StringComparison.OrdinalIgnoreCase))
+                    wheel = true;
+            }
+            if (wheel)
+                renderer.enabled = false;
+        }
     }
 
     // The layout, in the board's frame (x right, y up, z forward; the deck's top is at y = 0).
@@ -114,7 +164,7 @@ internal static class ScooterModel
         ? new Vector3(0f, crown.y + 0.05f, crown.z - (HandlebarHeight - crown.y))
         : new Vector3(0f, HandlebarHeight, WheelOffset - HandlebarRake);
 
-    private static Transform? Build(Transform parent, Transform frame, Transform truck, float hoverHeight, bool folded)
+    private static Transform? Build(Transform root, Transform parent, Transform frame, Transform truck, float hoverHeight, bool folded)
     {
         if (_failed)
             return null;
@@ -135,6 +185,7 @@ internal static class ScooterModel
                 if (child.name.StartsWith("Truck", StringComparison.Ordinal))
                     child.gameObject.SetActive(false);
             }
+            HideWheels(root, parts);
 
             var radius = Radius(hoverHeight);
             var axle = Ground(hoverHeight) + radius;
@@ -196,12 +247,12 @@ internal static class ScooterModel
     /// </summary>
     public static void HoldHandlebar()
     {
-        if (_handsFailed || _ridden == null || _riddenAnimation == null)
+        if (_handsFailed || _ridden == null || _riddenBoard == null || RiderPose.Holds(_riddenBoard))
             return;
         try
         {
-            var animation = _riddenAnimation;
-            if (animation.HandContainer == null)
+            var animation = _riddenBoard.Animation;
+            if (animation == null || animation.HandContainer == null)
                 return;
             var top = HandlebarCentre(Crown(ScooterRide.HoverHeight), false) + Vector3.up * 0.025f;
             var reach = Vector3.right * (HandlebarWidth / 2f - 0.05f);
@@ -218,6 +269,52 @@ internal static class ScooterModel
     }
 
     private static bool _handsFailed;
+
+    /// <summary>
+    /// Raises the handlebar of a ridden scooter by this much (metres) above the model's own height, so
+    /// the rider's hands reach it standing straight (RebornReaper's fix: bringing the rider down to the
+    /// bar made him crouch). The column grows; the bar, grips and headlight move up with it.
+    /// </summary>
+    public static void RaiseHandlebar(Transform parts, float metres)
+    {
+        Transform? bar = null;
+        for (var i = 0; i < parts.childCount; i++)
+            if (parts.GetChild(i).name == "Handlebar")
+                bar = parts.GetChild(i);
+        if (bar == null)
+            return;
+        var wanted = parts.InverseTransformVector(parts.up * metres).y;
+        var step = new Vector3(0f, wanted - (bar.localPosition.y - HandlebarHeight), 0f);
+        if (Mathf.Abs(step.y) < 1e-4f)
+            return;
+        for (var i = 0; i < parts.childCount; i++)
+        {
+            var child = parts.GetChild(i);
+            switch (child.name)
+            {
+                case "Handlebar":
+                case "Grip":
+                    child.localPosition += step;
+                    break;
+                case "Headlight":
+                    // It sits 78% of the way up the column.
+                    child.localPosition += step * 0.78f;
+                    break;
+                case "Column":
+                    // The bottom end stays at the fork crown, the top goes up.
+                    var half = child.localRotation * Vector3.up * (child.localScale.y / 2f);
+                    var low = child.localPosition - half;
+                    var high = child.localPosition + half;
+                    if (high.y < low.y)
+                        (low, high) = (high, low);
+                    high += step;
+                    child.localPosition = (low + high) / 2f;
+                    child.localRotation = Quaternion.FromToRotation(Vector3.up, (high - low).normalized);
+                    child.localScale = new Vector3(child.localScale.x, (high - low).magnitude, child.localScale.z);
+                    break;
+            }
+        }
+    }
 
     /// <summary>Feet: how far apart (each from the middle) and how far the left one is ahead of the right.</summary>
     private const float FootSpread = 0.075f;

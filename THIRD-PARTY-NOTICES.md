@@ -11,6 +11,11 @@ The fonts are static instances cut from the variable fonts and subset to Latin, 
 Cyrillic, Greek and Vietnamese by [`tools/fonts/build_fonts.py`](tools/fonts/build_fonts.py).
 Neither font declares a Reserved Font Name, so the subsets keep their original family names.
 
+## Code from other modders
+
+- Electric Scooter's riding pose (`mods/ElectricScooter/src/RiderPose.cs`) is ported from
+  RebornReaper's ElectricScooter add-on, with his permission and credit.
+
 ## Runtime dependencies (not included)
 
 - [MelonLoader](https://github.com/LavaGang/MelonLoader) (Apache-2.0) and the Harmony/Il2CppInterop

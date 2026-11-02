@@ -33,9 +33,15 @@ public sealed class ElectricScooterMod : MelonMod
         ScooterShop.Tick();
         ScooterRide.Tick();
         DressHeldScooter();
+        ScooterSync.Tick();
 #if DEV
         DevSmoke.CheckTimeout();
 #endif
+    }
+
+    public override void OnLateUpdate()
+    {
+        RiderPose.LateTick();
     }
 
     private int _dressedHeld;
@@ -51,6 +57,6 @@ public sealed class ElectricScooterMod : MelonMod
             return;
         _dressedHeld = equippable.GetInstanceID();
         if (UnityQuery.TryCastTo<S1.Skating.Skateboard_Equippable>(equippable, out var board) && !ScooterModel.IsDressed(board.transform))
-            ScooterModel.DressHeld(board);
+            ScooterModel.DressHeld(board.transform, ScooterRide.HoverHeight);
     }
 }

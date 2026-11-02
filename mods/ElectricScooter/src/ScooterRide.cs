@@ -28,6 +28,9 @@ internal static class ScooterRide
     /// <summary>True while the local player rides the scooter.</summary>
     public static bool Riding => _board != null;
 
+    /// <summary>The board of the scooter the local player rides, or null.</summary>
+    public static S1.Skating.Skateboard? Board => _board;
+
     /// <summary>Hover height that lets a curb of the configured step height pass under the board.</summary>
     public static float HoverHeight => Config.StepHeight + ColliderDrop;
 
@@ -79,7 +82,9 @@ internal static class ScooterRide
         board.Rb.position = position;
         var movement = S1.PlayerScripts.PlayerMovement.Instance;
         _stamina = movement != null ? Mathf.Max(movement.CurrentStaminaReserve, MinPushStamina) : MinPushStamina;
-        ScooterModel.Dress(board);
+        var parts = ScooterModel.Dress(board);
+        if (parts != null)
+            RiderPose.Track(S1.PlayerScripts.Player.Local, board, parts);
     }
 
     private static void Tune(S1.Skating.Skateboard board)

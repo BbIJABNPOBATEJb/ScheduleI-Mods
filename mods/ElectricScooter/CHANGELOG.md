@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.2.0 - 2026-11-02
+
+- A new riding pose by RebornReaper, ported from his ElectricScooter add-on: the rider stands
+  upright, one foot ahead of the other, with the palms on the grips and the fingers round them.
+  The handlebar comes up to the hands instead of the rider crouching down to it, and the pose stays
+  still while you ride: no pushing, crouching or jumping animation.
+- Multiplayer: players who have the mod now see your scooter, in your hands and under your feet,
+  and your riding pose. Before, they saw a Golden Skateboard.
+- Skateboard wheels are hidden more thoroughly, also those outside the skateboard's trucks.
+
 ## 1.1.0 - 2026-10-31
 
 - Fixed a short stutter every 3 seconds on big saves: the mod kept looking for the skate shop's

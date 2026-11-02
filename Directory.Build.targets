@@ -24,6 +24,8 @@
     <Reference Include="$(GameAssembliesPath)\Assembly-CSharp-firstpass.dll" Private="false" />
     <Reference Include="$(GameAssembliesPath)\ScheduleOne.Core.dll" Private="false" />
     <Reference Include="$(GameAssembliesPath)\FishNet.Runtime.dll" Private="false" />
+    <!-- FinalIK, the characters' IK rig. -->
+    <Reference Include="$(GameAssembliesPath)\RootMotion.dll" Private="false" />
     <Reference Include="$(GameAssembliesPath)\UnityEngine*.dll" Private="false" />
     <Reference Include="$(GameAssembliesPath)\Unity.*.dll" Private="false" />
   </ItemGroup>

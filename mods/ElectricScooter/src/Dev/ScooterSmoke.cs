@@ -306,6 +306,56 @@ internal static class ScooterSmoke
         DevSmoke.Log($"Side shot {name}.png");
     }
 
+    /// <summary>Skateboard wheel meshes still drawn under the root (the scooter's own parts are not counted).</summary>
+    private static int VisibleWheels(Transform root)
+    {
+        var count = 0;
+        foreach (var renderer in UnityQuery.GetComponentsInChildren<MeshRenderer>(root, true))
+        {
+            if (!renderer.enabled || !renderer.gameObject.activeInHierarchy)
+                continue;
+            var wheel = false;
+            for (var t = renderer.transform; t != null && t != root; t = t.parent)
+            {
+                if (t.name == "ElectricScooter Parts")
+                {
+                    wheel = false;
+                    break;
+                }
+                if (t.name.StartsWith("Wheel", System.StringComparison.OrdinalIgnoreCase))
+                    wheel = true;
+            }
+            if (wheel)
+                count++;
+        }
+        return count;
+    }
+
+    /// <summary>The rider stands in the scooter pose: palms on the grips, feet on the deck, legs (almost) straight.</summary>
+    private static void CheckPose(S1.Skating.Skateboard board, string when)
+    {
+        var pose = RiderPose.Describe(board, out var hand, out var straightest, out var bent, out var feet);
+        DevSmoke.Log($"Scooter rider {when}: {pose ?? "not held in the scooter pose"}");
+        DevSmoke.Check(pose != null, $"the rider is not held in the scooter pose {when}");
+        DevSmoke.Check(hand < 0.06f, $"a palm is {F(hand)} m off its grip {when}");
+        DevSmoke.Check(feet, $"the rider's feet are off the deck {when}");
+        DevSmoke.Check(bent > 150f, $"the rider's knees are bent to {F(bent)}° {when}");
+    }
+
+    /// <summary>Where the deck, the trucks and their parents sit and point, relative to the root.</summary>
+    private static void Frames(StringBuilder sb, Transform root)
+    {
+        sb.AppendLine($"    {root.name}:");
+        foreach (var t in UnityQuery.GetComponentsInChildren<Transform>(root, true))
+        {
+            if (!(t.name is "GoldSkateboardVisual" or "GoldSkateboard" or "Model" or "Skateboard" or "BoardContainer" or "Board" || t.name.StartsWith("Truck") || t.name.StartsWith("Wheel")))
+                continue;
+            var mesh = UiKit.Get<MeshFilter>(t);
+            var bounds = mesh != null && mesh.sharedMesh != null ? $", mesh bounds {mesh.sharedMesh.bounds.center.ToString("F3")} size {mesh.sharedMesh.bounds.size.ToString("F3")}" : "";
+            sb.AppendLine($"      {UnityQuery.PathOf(t)}: pos {root.InverseTransformPoint(t.position).ToString("F3")} right {root.InverseTransformDirection(t.right).ToString("F2")} up {root.InverseTransformDirection(t.up).ToString("F2")} forward {root.InverseTransformDirection(t.forward).ToString("F2")} scale {t.lossyScale.ToString("F3")}{bounds}");
+        }
+    }
+
     private static S1.PlayerScripts.HotbarSlot? SlotWith(string id)
     {
         foreach (var slot in UnityQuery.ToManaged(S1.PlayerScripts.PlayerInventory.Instance.hotbarSlots))
@@ -350,6 +400,24 @@ internal static class ScooterSmoke
         }
         if (screenshot != null)
             yield return DevSmoke.Screenshot(screenshot + "_held");
+        if (itemId == ScooterItem.Id)
+        {
+            // The board in the avatar's hands is what the other players see. Dress it the way their
+            // games do when the scooter is announced.
+            var prop = player.Avatar.CurrentEquippable;
+            DevSmoke.Check(prop != null, "the avatar holds nothing: other players would not see the scooter in the hands");
+            if (screenshot != null)
+                DevSmoke.Log("Board in the avatar's hands (what other players see): " + UnityQuery.DumpHierarchy(prop!.transform, 6));
+            ScooterModel.DressHeld(prop!.transform, ScooterRide.HoverHeight);
+            DevSmoke.Check(ScooterModel.IsDressed(prop.transform), "the board in the avatar's hands could not be dressed as a scooter");
+            DevSmoke.Check(VisibleWheels(prop.transform) == 0, $"{VisibleWheels(prop.transform)} skateboard wheels show on the scooter in the avatar's hands");
+            if (screenshot != null)
+            {
+                player.SetThirdPersonMeshesVisibility(true);
+                SideShot(player.transform, new Vector3(-0.9f, 1.4f, 1.5f), screenshot + "_others_held");
+                player.SetThirdPersonMeshesVisibility(false);
+            }
+        }
         equippable.Mount();
         yield return DevSmoke.WaitUntil(() => player.ActiveSkateboard != null, 5f, "mounting " + itemId);
         var board = player.ActiveSkateboard;
@@ -366,7 +434,18 @@ internal static class ScooterSmoke
         }
         DevSmoke.Log($"After mounting {itemId} (time: height / vertical speed / hover setting / tilt):{settle}; still riding: {board != null}");
         DevSmoke.Check(board != null, $"thrown off {itemId} right after mounting");
+        if (board == null)
+            yield break;
         DevSmoke.Check(top <= highest, $"{itemId} jumped up to {F(top)} m on mounting (at most {F(highest)} expected)");
+        if (itemId == ScooterItem.Id)
+        {
+            CheckPose(board, "after mounting");
+            DevSmoke.Check(VisibleWheels(board.transform) == 0, $"{VisibleWheels(board.transform)} skateboard wheels show under the ridden scooter");
+        }
+        else
+        {
+            DevSmoke.Check(RiderPose.Describe(board, out _, out _, out _, out _) == null, $"the {itemId} rider got the scooter pose");
+        }
         if (screenshot != null)
         {
             DevSmoke.Log("Riding model: " + ScooterModel.Describe(board.transform));
@@ -382,6 +461,7 @@ internal static class ScooterSmoke
         result.MinStamina = movement.CurrentStaminaReserve;
         var shot = false;
         var pushShot = false;
+        var posed = false;
         while (Time.time - began < 22f)
         {
             if (board == null)
@@ -404,6 +484,11 @@ internal static class ScooterSmoke
             else
             {
                 slowSince = -1f;
+            }
+            if (itemId == ScooterItem.Id && !posed && result.Seconds > 3f)
+            {
+                posed = true;
+                CheckPose(board, "while riding");
             }
             if (screenshot != null && !shot && result.Seconds > 2.2f)
             {
@@ -508,6 +593,9 @@ internal static class ScooterSmoke
         // The whole ride took over a minute in one scene: the shop looked for its seller once.
         DevSmoke.Log($"Skate shop searches: {ScooterShop.Searches}");
         DevSmoke.Check(ScooterShop.Searches == 1, $"the shop searched for the seller {ScooterShop.Searches} times");
+        // In a game of one the announcements come back to the local player (and are dropped there).
+        DevSmoke.Log($"Scooter announcements: {ScooterSync.Sent} sent, {ScooterSync.Echoes} came back");
+        DevSmoke.Check(ScooterSync.Sent >= 4 && ScooterSync.Echoes == ScooterSync.Sent, "the scooter was not announced to other players");
         DevSmoke.Finish(true, "ride done");
     }
 
@@ -568,6 +656,15 @@ internal static class ScooterSmoke
             DevSmoke.Write("equippable_hierarchy.txt", UnityQuery.DumpHierarchy(equippable.transform, 12));
             sb.AppendLine("  -- golden equippable prefab --");
             Renderers(sb, equippable.transform);
+            sb.AppendLine("  -- frames (relative to each root): ridden board, view model, the avatar's prop --");
+            Frames(sb, board.transform);
+            Frames(sb, equippable.transform);
+            if (equippable.AvatarEquippable != null)
+            {
+                sb.AppendLine($"    avatar prop asset path '{equippable.AvatarEquippable.AssetPath}'");
+                Frames(sb, equippable.AvatarEquippable.transform);
+                DevSmoke.Write("avatar_prop_hierarchy.txt", UnityQuery.DumpHierarchy(equippable.AvatarEquippable.transform, 12));
+            }
             var animation = board.Animation;
             sb.AppendLine($"    hands: L lowered {V(animation.LeftHandLoweredAlignment.Transform.localPosition)} raised {V(animation.LeftHandRaisedAlignment.Transform.localPosition)}, R lowered {V(animation.RightHandLoweredAlignment.Transform.localPosition)} raised {V(animation.RightHandRaisedAlignment.Transform.localPosition)}; hand container {UnityQuery.PathOf(animation.HandContainer)}");
         }

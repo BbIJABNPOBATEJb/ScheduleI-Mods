@@ -27,8 +27,11 @@ stamina and is 30% faster.
   stop and catch your breath.
 - **30% faster** than the Golden Skateboard — top speed and acceleration alike.
 - Its own look: big wheels, steering column with a handlebar, headlight and a battery under the
-  deck. Your character stands facing forward with both hands on the handlebar instead of sideways
-  like on a skateboard. In your hands it is carried folded.
+  deck. In your hands it is carried folded.
+- **Rides like a scooter, not a skateboard**: your character stands upright facing forward, one
+  foot ahead of the other, palms on the grips and fingers round them, instead of standing sideways
+  and kicking the road.
+- **Multiplayer**: other players who have the mod see your scooter and how you ride it.
 - Translated into all [Polyglot](../Polyglot) languages.
 
 ## Installation
@@ -61,10 +64,13 @@ editor, they apply the next time you get on the scooter (the price: the next tim
 
 ## Multiplayer
 
-Not tested in multiplayer yet. By design the rider's own game simulates the ride, so the scooter
-should work for whoever has the mod; players without it would see a Golden Skateboard floating a
-little higher than usual. Everyone who may handle the item (shared storage, handing it over) needs
-the mod.
+The rider's own game simulates the ride, so the scooter works for whoever has the mod. Since 1.2.0
+it also tells the other players' games that the board in your hands or under your feet is a
+scooter, and those with the mod build it there and pose you on it. Players without the mod see a
+Golden Skateboard floating a little higher than usual. Everyone who may handle the item (shared
+storage, handing it over) needs the mod.
+
+The multiplayer part is new and has not been tried in a real lobby yet; please report how it goes.
 
 ## Uninstalling
 
@@ -77,7 +83,11 @@ See [CHANGELOG.md](CHANGELOG.md).
 
 ## Credits
 
-Developed with AI assistance (Claude by Anthropic) and tested in game on both branches with automated in-game tests.
+- RebornReaper: the riding pose (stance, palms and fingers on the grips, raised handlebar) and the
+  multiplayer visuals come from his ElectricScooter add-on, used with his permission; he also found
+  the shop stutter fixed in 1.1.0.
+- Developed with AI assistance (Claude by Anthropic) and tested in game on both branches with
+  automated in-game tests.
 
 ## License
 
