@@ -26,6 +26,7 @@ stamina and is 30% faster.
 - **No stamina.** It is electric: the motor pushes while you just stand, so you never have to
   stop and catch your breath.
 - **30% faster** than the Golden Skateboard — top speed and acceleration alike.
+- **Off-road if you like**: turn on `OffRoad` and grass and gravel no longer slow it down.
 - Its own look: big wheels, steering column with a handlebar, headlight and a battery under the
   deck. In your hands it is carried folded.
 - **Rides like a scooter, not a skateboard**: your character stands upright facing forward, one
@@ -57,6 +58,7 @@ Price = 5000            # price at the skate shop, $
 SpeedPercent = 130      # speed compared to the Golden Skateboard, % (50-300)
 StepHeightCm = 20       # how high a curb it rolls over, cm (10-40); the wheels grow with it
 InfiniteStamina = true  # riding does not use stamina
+OffRoad = false         # full speed on grass and gravel (skateboards slow down there)
 ```
 
 Edit the file while the game is closed. If you change the values with an in-game preferences

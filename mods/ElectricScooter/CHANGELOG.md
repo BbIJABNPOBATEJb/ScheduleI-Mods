@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0 - 2026-11-10
+
+- New option `OffRoad` (off by default): the scooter rides over grass and gravel at full speed
+  instead of slowing down there like the skateboards. Thanks to oOArachneOo for the idea.
+
 ## 1.2.0 - 2026-11-02
 
 - A new riding pose by RebornReaper, ported from his ElectricScooter add-on: the rider stands

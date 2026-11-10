@@ -17,6 +17,7 @@ internal static class ScooterSmoke
     {
         "inspect" => Inspect(),
         "ride" => Ride(),
+        "offroad" => OffRoad(),
         "shop" => Shop(),
         _ => null,
     });
@@ -213,7 +214,7 @@ internal static class ScooterSmoke
     /// Looks around the player for a straight stretch of paved ground: the longest flat one, or
     /// (withCurb) one with one step up — the highest found, 8 to 24 cm — in the middle and flat ground around it.
     /// </summary>
-    private static Lane? FindLane(Vector3 around, int mask, float maxLength, bool withCurb)
+    private static Lane? FindLane(Vector3 around, int mask, float maxLength, bool withCurb, bool terrain = false)
     {
         const float step = 0.5f;
         Lane? best = null;
@@ -229,7 +230,7 @@ internal static class ScooterSmoke
                 origins++;
                 var tag = first.collider.gameObject.tag;
                 tags[tag] = tags.TryGetValue(tag, out var n) ? n + 1 : 1;
-                if (tag == "Terrain")
+                if ((tag == "Terrain") != terrain)
                     continue;
                 paved++;
                 for (var dir = 0; dir < 8; dir++)
@@ -241,7 +242,7 @@ internal static class ScooterSmoke
                     var length = 0f;
                     for (var t = step; t <= maxLength; t += step)
                     {
-                        if (!Ground(first.point + direction * t, y + 1.2f, mask, out var hit) || hit.collider.gameObject.tag == "Terrain")
+                        if (!Ground(first.point + direction * t, y + 1.2f, mask, out var hit) || (hit.collider.gameObject.tag == "Terrain") != terrain)
                             break;
                         var rise = hit.point.y - y;
                         if (withCurb && curbAt == 0f && rise >= 0.08f && rise <= 0.24f && t >= 9f)
@@ -256,7 +257,7 @@ internal static class ScooterSmoke
                         y = hit.point.y;
                         length = t;
                     }
-                    if (withCurb ? (curbAt == 0f || length < curbAt + 8f) : length < 30f)
+                    if (withCurb ? (curbAt == 0f || length < curbAt + 8f) : length < (terrain ? 25f : 30f))
                         continue;
                     if (best != null && (withCurb ? best.CurbHeight >= curbHeight : best.Length >= length))
                         continue;
@@ -270,7 +271,7 @@ internal static class ScooterSmoke
                 }
             }
         }
-        DevSmoke.Log($"Lane search (curb {withCurb}): {origins} ground points, {paved} paved, {blocked} lanes blocked; ground tags: " +
+        DevSmoke.Log($"Lane search (curb {withCurb}, terrain {terrain}): {origins} ground points, {paved} matching, {blocked} lanes blocked; ground tags: " +
             string.Join(", ", tags.Select(kv => kv.Key + " x" + kv.Value)) +
             (best != null ? $"; best {F(best.Length)} m" : "; nothing found"));
         return best;
@@ -437,6 +438,8 @@ internal static class ScooterSmoke
         if (board == null)
             yield break;
         DevSmoke.Check(top <= highest, $"{itemId} jumped up to {F(top)} m on mounting (at most {F(highest)} expected)");
+        var slows = itemId != ScooterItem.Id || !Config.OffRoad;
+        DevSmoke.Check(board.SlowOnTerrain == slows, $"{itemId} {(slows ? "does not slow down" : "still slows down")} on grass (off-road {Config.OffRoad})");
         if (itemId == ScooterItem.Id)
         {
             CheckPose(board, "after mounting");
@@ -597,6 +600,48 @@ internal static class ScooterSmoke
         DevSmoke.Log($"Scooter announcements: {ScooterSync.Sent} sent, {ScooterSync.Echoes} came back");
         DevSmoke.Check(ScooterSync.Sent >= 4 && ScooterSync.Echoes == ScooterSync.Sent, "the scooter was not announced to other players");
         DevSmoke.Finish(true, "ride done");
+    }
+
+    /// <summary>Grass: the scooter slows down there like a skateboard, unless OffRoad is on.</summary>
+    private static IEnumerator OffRoad()
+    {
+        yield return DevSmoke.LoadDisposableSave();
+        yield return 4f;
+        var golden = UnityQuery.TryCastTo<S1.Skating.Skateboard_Equippable>(S1.Registry.GetItem("goldenskateboard").Equippable, out var prefab)
+            ? prefab.SkateboardPrefab : null;
+        DevSmoke.Check(golden != null, "golden skateboard prefab not found");
+        var mask = golden!.GroundDetectionMask.value;
+        var home = S1.PlayerScripts.Player.Local.transform.position;
+        var grass = FindLane(home, mask, 45f, withCurb: false, terrain: true);
+        if (grass == null)
+        {
+            home = new Vector3(-30f, 0f, 50f);
+            grass = FindLane(home, mask, 45f, withCurb: false, terrain: true);
+        }
+        DevSmoke.Check(grass != null, "no straight lane on grass or gravel found near the start");
+        DevSmoke.Log($"Grass lane of {F(grass!.Length)} m from {V(grass.Start)} towards {V(grass.Direction)}");
+        try
+        {
+            Config.OffRoadOverride = false;
+            var slowed = new RideResult();
+            yield return RideLane(ScooterItem.Id, grass, slowed, null);
+            DevSmoke.Log("Scooter on grass, off-road off: " + Describe(slowed));
+            Config.OffRoadOverride = true;
+            var free = new RideResult();
+            yield return RideLane(ScooterItem.Id, grass, free, "offroad");
+            DevSmoke.Log("Scooter on grass, off-road on: " + Describe(free));
+            // The third second: both are still going (the lane may end at something in the grass).
+            var second = Mathf.Min(3, Mathf.Min(slowed.SpeedBySecond.Count, free.SpeedBySecond.Count)) - 1;
+            DevSmoke.Check(second >= 2, "the rides on grass were too short to compare");
+            var ratio = free.SpeedBySecond[second] / Mathf.Max(slowed.SpeedBySecond[second], 0.1f);
+            DevSmoke.Log($"After {second + 1} s on grass: {F(free.SpeedBySecond[second])} km/h off-road, {F(slowed.SpeedBySecond[second])} km/h without, ratio {F(ratio)}");
+            DevSmoke.Check(ratio > 1.4f, $"off-road mode is not faster on grass (ratio {F(ratio)})");
+        }
+        finally
+        {
+            Config.OffRoadOverride = null;
+        }
+        DevSmoke.Finish(true, "offroad done");
     }
 
     /// <summary>Saves a sprite's texture area as PNG (through a render texture: game textures are not readable).</summary>

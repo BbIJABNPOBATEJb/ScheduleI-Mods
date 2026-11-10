@@ -102,6 +102,8 @@ internal static class ScooterRide
         settings.Hover_P = 120f;
         settings.Hover_I = 5f;
         settings.Hover_D = 2f;
+        // The game drags a board back on grass and gravel ("Terrain" ground) unless it is told not to.
+        board.SlowOnTerrain = !Config.OffRoad;
 #if IL2CPP
         board._settings = settings;
 #else
